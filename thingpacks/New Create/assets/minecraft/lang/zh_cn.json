@@ -1,0 +1,18 @@
+{
+	"item.minecraft.iron_sword": "铸铁剑",
+	"item.minecraft.iron_pickaxe": "铸铁镐",
+	"item.minecraft.iron_axe": "铸铁斧",
+	"item.minecraft.iron_hoe": "铸铁锄",
+	"item.minecraft.iron_shovel": "铸铁锹",
+	"item.minecraft.iron_helmet": "铸铁帽子",
+	"item.minecraft.iron_chestplate": "铸铁胸甲",
+	"item.minecraft.iron_leggings": "铸铁裤腿",
+	"item.minecraft.iron_boots": "铸铁靴子",
+	"block.minecraft.crafting_table": "工作台",
+	"block.minecraft.furnace": "黑石熔炉",
+	"block.minecraft.soul_campfire": "灵魂篝火",
+	"block.minecraft.campfire": "篝火",
+	"advancements.story.obtain_armor.description": "用铸铁盔甲来保护你自己",
+	"subtitles.item.armor.equip_iron": "铸铁盔甲:铿锵",
+	"container.furnace": "黑石熔炉"
+}

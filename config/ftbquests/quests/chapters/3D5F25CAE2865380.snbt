@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3D5F25CAE2865380"
+	group: ""
+	icon: "minecraft:clock"
+	id: "3D5F25CAE2865380"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		id: "111B9834A26450CD"
+		subtitle: "&b玩齿轮玩的"
+		tasks: [{
+			id: "06DC023D96CA849C"
+			item: "minecraft:clock"
+			type: "item"
+		}]
+		title: "&6没啥卵用的钟（确信）"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&3&k ???"
+}

@@ -1,0 +1,1 @@
+function new_create:initialize

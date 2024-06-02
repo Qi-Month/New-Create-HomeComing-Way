@@ -1,0 +1,782 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "no21"
+	group: ""
+	icon: "create:wrench"
+	id: "1B2DCAFA2439A323"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["57B10D84AF8804DC"]
+			description: [
+				"&a通过你的不懈努力，你突然脑洞大开(不是物理)&r"
+				"&a发现了新的物品：&r&e安山合金&r"
+				"&b至此你开始了新的旅途&r"
+			]
+			id: "20B347816F814F10"
+			rewards: [{
+				count: 4
+				id: "32955AE9E1946D39"
+				item: "farmersdelight:salmon_roll"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "6A29EE59895D4EF1"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "&3No.2-1 开端"
+			x: -13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["20B347816F814F10"]
+			id: "0D90E2B1E5186F01"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "56B7B108A13F3B62"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "&3一切的开始！"
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["20B347816F814F10"]
+			description: ["&b&m玩机械动力怎么能少了这两样东西呢?&r&r"]
+			id: "7DAD61611E155064"
+			tasks: [
+				{
+					id: "1506CB3BD1BF68A9"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "3F30F93EB93026D8"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "&b工具!"
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			description: ["&b为何不做一条齿轮产线？&r"]
+			id: "1A09D4635FED3126"
+			tasks: [{
+				id: "264C903412668C1A"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "&3动力锯"
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			id: "54D1253B1BBB0CA4"
+			tasks: [{
+				id: "7C653C3F23475828"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
+				title: "黄铜"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			description: [
+				"&4CPU(危)&r"
+				"&b不推荐开光影运行风车&r"
+				"&a可能会造成不必要的卡顿&r"
+			]
+			id: "04A33BA59DBA29ED"
+			tasks: [{
+				id: "3C6D0D18641E3FF5"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			title: "&6大风车！"
+			x: -9.80952380952381d
+			y: 0.6428571428571459d
+		}
+		{
+			dependencies: ["54D1253B1BBB0CA4"]
+			id: "1F23917DBF624EE0"
+			tasks: [{
+				id: "3236F88C65B116A7"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "&4指你咋滴！"
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["04A33BA59DBA29ED"]
+			id: "02599F5C97F87B02"
+			tasks: [{
+				id: "6E7AEF79CD4735B8"
+				item: "create:white_sail"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20B347816F814F10"]
+			id: "45A8978CA9C2F92A"
+			tasks: [{
+				id: "08B9430440DB3AE6"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["45A8978CA9C2F92A"]
+			id: "2CF0A7D1D5E5247D"
+			tasks: [{
+				id: "545DF791D1C95E3F"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			id: "5D3F84762ED61E6A"
+			tasks: [{
+				id: "31F05A2744B0186A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:slimeballs"
+					}
+				}
+				title: "粘液球"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D3F84762ED61E6A"]
+			id: "0917E13D77AF98C1"
+			tasks: [{
+				id: "7296EDDB1BE8CD02"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&2打个∠先"
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1F23917DBF624EE0"]
+			id: "34A1D0679852D9C1"
+			tasks: [{
+				id: "37AD8977497EA0B4"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			title: "&6第一块粉色钻石"
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["34A1D0679852D9C1"]
+			id: "66E133258A1C7B7B"
+			tasks: [{
+				id: "6955EA4003FB358E"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "&5不能导电"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A09D4635FED3126"]
+			description: ["{image:new_create:textures/images/3.png width:50 height:50 align:1}"]
+			id: "73561804225FF7A6"
+			rewards: [
+				{
+					count: 4
+					id: "4C41D12E75A8A0F4"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "08570BBBD162FE4B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "&31..1..4..."
+			tasks: [
+				{
+					count: 256L
+					id: "2A84EF298955226A"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "05E2ABBB72D5EBB1"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			title: "&4事动力(悲"
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["66E133258A1C7B7B"]
+			id: "486C9B56954BA447"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "099DBAF827214FE0"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "&4Pro Max升级版"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1A09D4635FED3126"
+				"1F23917DBF624EE0"
+			]
+			id: "5AAA4CA194571891"
+			rewards: [{
+				count: 64
+				id: "4136BFC9A98A0C33"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 512L
+				id: "70D870DC09A6A2C0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "&3树场启动!"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45A8978CA9C2F92A"]
+			id: "6B2F686717DD843E"
+			tasks: [{
+				id: "00AF5A450248CD15"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "&5也许你需要来点应力"
+			x: -12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B2F686717DD843E"]
+			id: "6DFBC5FD742BF0EA"
+			tasks: [{
+				id: "3ABC355774ADDAC7"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "&6更强大的Power!"
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["486C9B56954BA447"]
+			id: "1D5BA975FF84BAF7"
+			tasks: [{
+				id: "064FF77ABF777AA5"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "&3不够精密"
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1D5BA975FF84BAF7"]
+			id: "539C27AC7BDA8727"
+			tasks: [{
+				id: "4353947EB7DB1F3E"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "&6Crafting Table - 3"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F23917DBF624EE0"]
+			id: "65F1A3A80971DFEC"
+			tasks: [{
+				id: "22F5E82FB3BFED00"
+				item: "create_dd:infernal_mechanism"
+				type: "item"
+			}]
+			title: "&3好烫！"
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["65F1A3A80971DFEC"]
+			description: ["{image:new_create:textures/images/1.png width:75 height:75 align:1}"]
+			id: "5F846849DADC8AE5"
+			subtitle: "&a就是不让你用蒸汽引擎&r"
+			tasks: [{
+				id: "3F75221D72774378"
+				item: "create_dd:furnace_engine"
+				type: "item"
+			}]
+			title: "&6终极Power!"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["22EF721A6422F327"]
+			id: "5C114910264DE84F"
+			tasks: [{
+				count: 2L
+				id: "5EBF42008646CBD1"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "&6一对大家伙！"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5C114910264DE84F"]
+			id: "670C5F4A9F98CAA8"
+			tasks: [{
+				id: "06E81AA4487395D9"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/coal_coke"
+					}
+				}
+				title: "Any #forge:dusts/coal_coke"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			id: "5BE2081DBA1307AA"
+			tasks: [{
+				id: "47DED520B506223A"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -10.89285714285716d
+			y: 0.6607142857142847d
+		}
+		{
+			dependencies: ["670C5F4A9F98CAA8"]
+			id: "494D4872B69E33F4"
+			tasks: [{
+				id: "31BAA68F495D28D7"
+				item: "new_create:coking_coal_rod"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"494D4872B69E33F4"
+				"22F5E5229A1402A9"
+			]
+			id: "38636D2545C44520"
+			tasks: [{
+				id: "042F3C052BF6B430"
+				item: "new_create:carbon_rod"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5C114910264DE84F"]
+			id: "1B77C78FF4A1F107"
+			tasks: [{
+				id: "06DAD52FCEDD59F5"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/coal"
+					}
+				}
+				title: "Any #forge:dusts/coal"
+				type: "item"
+			}]
+			title: "煤粉"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1B77C78FF4A1F107"]
+			id: "22F5E5229A1402A9"
+			tasks: [{
+				id: "362D0358DE4D3247"
+				item: "new_create:carbon_plate"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			id: "4257988E35C9FD55"
+			tasks: [{
+				id: "28EA6077D15654E4"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4257988E35C9FD55"]
+			id: "5F800E5B51B445F6"
+			tasks: [
+				{
+					id: "288629D6D4258588"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:wires/copper"
+						}
+					}
+					title: "Any #forge:wires/copper"
+					type: "item"
+				}
+				{
+					id: "62AAC8E61EFAE2E8"
+					item: "createaddition:spool"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F800E5B51B445F6"]
+			id: "2352278FF3B01957"
+			tasks: [{
+				id: "5A27A21F96232301"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2352278FF3B01957"]
+			id: "13C2EFD34762991F"
+			tasks: [{
+				id: "0DB406B71C6023E5"
+				item: "immersiveengineering:coil_lv"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"38636D2545C44520"
+				"13C2EFD34762991F"
+				"460E7915B6C733EA"
+				"675821C6A6BF5D79"
+			]
+			id: "6959B15D3B53F1DA"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3575C08D7DCB1667"
+				item: "create_new_age:generator_coil"
+				type: "item"
+			}]
+			title: "&4新时代！"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["38636D2545C44520"]
+			id: "460E7915B6C733EA"
+			tasks: [{
+				id: "4A2E931D139824AB"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
+			title: "&3获取！"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["65F1A3A80971DFEC"]
+			id: "616A61BB6BC7681D"
+			subtitle: "&4蒸汽引擎被禁用&r"
+			tasks: [{
+				id: "50F2E1E2C38A1D4E"
+				title: "&4注意！"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"22F5E5229A1402A9"
+				"13C2EFD34762991F"
+				"539C27AC7BDA8727"
+			]
+			id: "675821C6A6BF5D79"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "26A069312D55A5BE"
+				item: "new_create:inductive_mechanism"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["539C27AC7BDA8727"]
+			id: "22EF721A6422F327"
+			subtitle: "&b&m玩构件玩的"
+			tasks: [{
+				id: "496AC7DDB8AC801B"
+				item: "new_create:kinetic_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F23917DBF624EE0"]
+			id: "03281B3D8E89E49F"
+			tasks: [{
+				id: "591CAA5B7EAF69EB"
+				item: "create_dd:integrated_mechanism"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["03281B3D8E89E49F"]
+			description: [
+				"                         &2回来吧虚空飞轮&r"
+				"                         &4我最骄傲的BUG&r"
+				"                         &9历历在目的应力&r"
+			]
+			id: "76FD34FCE1582049"
+			tasks: [{
+				id: "742D171B02A60381"
+				item: "create_dd:flywheel"
+				type: "item"
+			}]
+			title: "&6梦回飞轮!"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7EEC8440A5ECEEEA"]
+			id: "0712EE16A99BF165"
+			tasks: [{
+				id: "13B44BC931251FB9"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0712EE16A99BF165"]
+			id: "24E3E0BA22419818"
+			tasks: [{
+				id: "1CAA0AE44EA2FD80"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C114910264DE84F"]
+			id: "7EEC8440A5ECEEEA"
+			tasks: [{
+				id: "6B50180BF0970E53"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/obsidian"
+					}
+				}
+				title: "Any #forge:dusts/obsidian"
+				type: "item"
+			}]
+			title: "黑曜石粉末"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5C114910264DE84F"]
+			id: "260A96BFFF557F7A"
+			tasks: [{
+				id: "2E22C28316297DE8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/iron"
+					}
+				}
+				title: "Any #forge:dusts/iron"
+				type: "item"
+			}]
+			title: "铁粉"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["260A96BFFF557F7A"]
+			id: "26E4F1B18E33BC23"
+			tasks: [{
+				id: "7D100DB6E61429B1"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/steel"
+					}
+				}
+				title: "Any #forge:dusts/steel"
+				type: "item"
+			}]
+			title: "钢粉"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26E4F1B18E33BC23"]
+			id: "2AC46F4E8D1CA776"
+			tasks: [{
+				id: "61EB58C4D24EF694"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "&6钢锭量产"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["486C9B56954BA447"]
+			id: "371B3D4C9196C8BB"
+			shape: "rsquare"
+			tasks: [{
+				id: "1350D16C5C11D9FE"
+				item: "create_mechanical_extruder:mechanical_extruder"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["371B3D4C9196C8BB"]
+			id: "641D9AB445D95A5F"
+			rewards: [{
+				count: 32
+				id: "46F32D73906371B5"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 256L
+				id: "553183B1C3B91A24"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "刷安山岩"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1D5BA975FF84BAF7"]
+			id: "0F5B696D9B636C16"
+			rewards: [{
+				count: 3
+				id: "3E69BB11C62B80D3"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6CC077C0F39AE0B3"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			title: "&b砂纸Pro Max"
+			x: -4.5d
+			y: 0.5d
+		}
+	]
+	title: "&6机械的曙光"
+}

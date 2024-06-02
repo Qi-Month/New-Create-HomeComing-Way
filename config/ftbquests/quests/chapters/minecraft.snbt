@@ -1,0 +1,2362 @@
+{
+	autofocus_id: "189F0180B440F084"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "minecraft"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "new_create:flint_axe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "702CD7931A4A3E44"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/tall_seagrass_bottom"
+			rotation: 0.0d
+			width: 0.05263157894736842d
+			x: 31.5d
+			y: 5.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 66.5d
+			y: 16.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&b欢迎游玩&r"
+				"&4New Create&r"
+				"&2您将从最原始的阶段开始发展&r"
+				""
+			]
+			icon: "new_create:cast_iron_ingot"
+			id: "75C1C1D7BC5E550D"
+			rewards: [
+				{
+					count: 16
+					id: "3C1F4F13B2216C4C"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					command: "/give @p minecraft:player_head{SkullOwner:{Name:'TYX_CnJiu'}}"
+					icon: {
+						Count: 1b
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Name: "xiaolizi_"
+							}
+						}
+					}
+					id: "4C8D9B77B48F2655"
+					title: "栗子"
+					type: "command"
+				}
+				{
+					command: "/give @p minecraft:player_head{SkullOwner:{Name:'Qi_Month'}}"
+					icon: {
+						Count: 1b
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Name: "Qi_Month"
+							}
+						}
+					}
+					id: "6B56FAA04D5B46E5"
+					title: "柒月"
+					type: "command"
+				}
+				{
+					command: "/gamerule keepInventory true"
+					icon: "minecraft:command_block"
+					id: "51667A8957405A43"
+					title: "&c死亡不掉落"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "55DED86C0855FE5C"
+				type: "checkmark"
+			}]
+			title: "&bWelcome to the  New Create"
+			x: 30.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["75C1C1D7BC5E550D"]
+			description: ["&b通过破坏草丛有几率掉落&r"]
+			id: "7B74B177D551BAD5"
+			rewards: [{
+				count: 9
+				id: "57395D24951C95DF"
+				item: "new_create:grass_fiber"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "1031F517F2CB754A"
+				item: "new_create:grass_fiber"
+				type: "item"
+			}]
+			title: "&3杂草获取"
+			x: 32.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["75C1C1D7BC5E550D"]
+			description: ["&5挖掘沙砾有几率掉落&r"]
+			id: "5C5120075EDB3ECF"
+			rewards: [{
+				count: 8
+				id: "6C235C1E452C6B86"
+				item: "new_create:flint_knapp"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "315107B42CFC0A8B"
+				item: "new_create:flint_knapp"
+				type: "item"
+			}]
+			title: "&3小燧石"
+			x: 32.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["5C5120075EDB3ECF"]
+			id: "7ACAFC58C12C9D34"
+			rewards: [{
+				count: 6
+				id: "3D576EF452523CDA"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65216F0E1D66E312"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			title: "&3合成燧石"
+			x: 34.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["7B74B177D551BAD5"]
+			description: [""]
+			id: "11E001D323FC5722"
+			rewards: [{
+				count: 3
+				id: "53B2738209F55F05"
+				item: "new_create:grass_string"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FDEA9277218678B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:string"
+					}
+				}
+				title: "Any #forge:string"
+				type: "item"
+			}]
+			title: "&3草绳"
+			x: 34.5d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"11E001D323FC5722"
+				"7ACAFC58C12C9D34"
+			]
+			id: "1B5BBBF90F96D167"
+			rewards: [
+				{
+					count: 4
+					id: "6A1CD9E3C4242CE6"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3AD0BFB861588B45"
+					item: "new_create:grass_string"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6DD700552F5F531D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/knives"
+					}
+				}
+				title: "小刀"
+				type: "item"
+			}]
+			title: "&1多功能工具"
+			x: 36.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["366BC6C1AD97484E"]
+			id: "5E0A98F312F8A995"
+			rewards: [{
+				count: 4
+				id: "7BA320AE6633440D"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			subtitle: "&6解锁更多合成&r"
+			tasks: [{
+				id: "5753699CD3ED0098"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "&6Crafting Table!"
+			x: 38.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"5E0A98F312F8A995"
+				"4926BA40480454AE"
+			]
+			description: ["&a合成你的第一把镐子！&r"]
+			id: "7239DB54A7FD4EE8"
+			rewards: [
+				{
+					count: 8
+					id: "59F4CAFFFFC12E73"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E38890885C94ED0"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3F6700D320F059C8"
+				item: {
+					Count: 1b
+					id: "new_create:flint_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3挖矿时间"
+			x: 38.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"5E0A98F312F8A995"
+				"4926BA40480454AE"
+			]
+			description: ["&a获取更多木头&r"]
+			id: "33EF23C3B61A384E"
+			rewards: [{
+				count: 16
+				id: "14DC32F8C25A61E3"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E374B48F3CC062C"
+				item: {
+					Count: 1b
+					id: "new_create:flint_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3伐木"
+			x: 39.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"5E0A98F312F8A995"
+				"4926BA40480454AE"
+			]
+			description: ["&2更快的获取燧石&r"]
+			id: "1AC1EB6F7D19CA5D"
+			rewards: [{
+				count: 16
+				id: "6A902DE0EFD9D7C2"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FB72A6034F4DF6A"
+				item: {
+					Count: 1b
+					id: "new_create:flint_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3高效工作"
+			x: 36.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["7239DB54A7FD4EE8"]
+			description: ["{image:new_create:textures/images/2.png width:50 height:50 align:1}"]
+			id: "29F8B46988F72E7C"
+			rewards: [{
+				count: 16
+				id: "481E915ADB80636F"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			subtitle: "&c是谁让你觉得可以抽卡的,是原神吗("
+			tasks: [{
+				id: "579D495AB3C4C589"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				title: "圆石"
+				type: "item"
+			}]
+			title: "&b原始人,起洞!"
+			x: 36.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["5E0A98F312F8A995"]
+			id: "59FF50A102176A58"
+			tasks: [{
+				id: "6D8C6053558EDB12"
+				item: "extendedcrafting:handheld_table"
+				type: "item"
+			}]
+			title: "&b这东西好用哩"
+			x: 39.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["1AC1EB6F7D19CA5D"]
+			description: ["&2挖沙工&r"]
+			id: "0C061E76C5FD235C"
+			rewards: [{
+				count: 32
+				id: "2C2B26500EC89FC9"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "4FC73587A09A03FB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gravel"
+					}
+				}
+				title: "Any #forge:gravel"
+				type: "item"
+			}]
+			title: "&3沙砾"
+			x: 34.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1B5BBBF90F96D167"]
+			id: "730438679F2E34EF"
+			tasks: [{
+				id: "59DF0D24E9F369CA"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "new_create:hammer"
+					}
+				}
+				title: "任意锤子"
+				type: "item"
+			}]
+			title: "&3锤子"
+			x: 38.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["730438679F2E34EF"]
+			description: [
+				"&6制作一个营火&r"
+				"&2用来烧制&r &4食物&r &2或&r &4物品&r"
+			]
+			id: "46CE046E36D1E9EC"
+			rewards: [
+				{
+					count: 4
+					id: "6DEEF2C2E1CB17CE"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "4F39339DA10E3E4C"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "78D35E80D0A79F0B"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "09E2E2FB77C16247"
+					item: {
+						Count: 1b
+						id: "new_create:tinder"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&b烧制物品！"
+			x: 36.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["46CE046E36D1E9EC"]
+			description: [
+				"&9将石头放置在营火上&r"
+				"&b烧制&r&425s&r&b获得&r"
+			]
+			id: "6E8D524A504AD514"
+			rewards: [{
+				count: 2
+				id: "0D6BD8325656E402"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "1144CE76CDDF2E4F"
+				item: "new_create:charred_cobblestone"
+				type: "item"
+			}]
+			title: "&3烧制物品其一"
+			x: 35.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6E8D524A504AD514"]
+			description: [
+				"&d幸苦这么久&r"
+				"&2&m终于进入新阶段了&r&r"
+			]
+			id: "4E2DA87949EAE5F7"
+			subtitle: "明明毫无意义(吗?)"
+			tasks: [{
+				id: "3CA0160D69C33C79"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&b石制工具套件"
+			x: 33.5d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"1B5BBBF90F96D167"
+				"79316DB94D602795"
+			]
+			description: [
+				"&2你惊奇的发现&r"
+				"&6可以用燧石小刀将原木切成木板！&r"
+			]
+			id: "366BC6C1AD97484E"
+			rewards: [{
+				count: 4
+				id: "611B8451AE29537E"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "4BA36E193FA0B561"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
+				type: "item"
+			}]
+			title: "&3第一块木板"
+			x: 38.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5E0A98F312F8A995"]
+			description: [
+				"&a制作一把锯子&r"
+				"&b更方便的合成木棍&r"
+			]
+			id: "4926BA40480454AE"
+			rewards: [{
+				count: 8
+				id: "66629AFCB8607305"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "12152E00A8DEB658"
+					item: { Count: 4b, id: "minecraft:stick" }
+					type: "item"
+				}
+				{
+					id: "5851CD707AA47678"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "new_create:saw"
+						}
+					}
+					title: "任意锯子"
+					type: "item"
+				}
+			]
+			title: "&3锯子"
+			x: 38.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"46CE046E36D1E9EC"
+				"2AC2EFDD8EAAA7D4"
+			]
+			description: ["&a将粘土放上营火烧制成红砖&r"]
+			id: "59A06A813564EA72"
+			rewards: [{
+				count: 16
+				id: "3C4CD5A4FA6AEE55"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3438037D2DF5091C"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			title: "&3烧制物品其二"
+			x: 36.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["59A06A813564EA72"]
+			description: [
+				"&a恭喜你发现了新的合成方式&r"
+				"&9通过合金窑，你可以烧制铜锭&r"
+				"&a进入铜器时代！&r"
+			]
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:alloy_smelter"
+				tag: { }
+			}
+			id: "17A15D75F1EC5311"
+			rewards: [
+				{
+					id: "43C17610244AA3F8"
+					item: "farmersdelight:hot_cocoa"
+					type: "item"
+				}
+				{
+					id: "48DA5FC8FC24136F"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2715B39EFD8060FF"
+					item: { Count: 8b, id: "immersiveengineering:alloybrick" }
+					type: "item"
+				}
+				{
+					id: "3C17350DF09BC811"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3合金窑"
+			x: 38.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["17A15D75F1EC5311"]
+			description: [
+				"&a获取你的第一块金属！&r"
+				"&a奖励你一箱马铃薯~&r"
+			]
+			id: "2BB8EC9F1782C4DE"
+			rewards: [{
+				id: "6B8EB2EF24A3F6B9"
+				item: "farmersdelight:potato_crate"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B5081C558A4CD42"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "铜锭"
+				type: "item"
+			}]
+			title: "&3第一块金属"
+			x: 39.5d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"730438679F2E34EF"
+				"2BB8EC9F1782C4DE"
+			]
+			id: "69F096A8B3BEFF94"
+			subtitle: "&2要步入工业时代了吗?(bushi)"
+			tasks: [{
+				id: "55DC675B9D16FE11"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/copper"
+					}
+				}
+				title: "Any #forge:plates/copper"
+				type: "item"
+			}]
+			title: "&3第一块铜板!"
+			x: 39.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["69F096A8B3BEFF94"]
+			description: [""]
+			id: "25E790CA72DE9B02"
+			rewards: [{
+				count: 32
+				id: "5EB112FE5E563206"
+				item: "minecraft:smooth_stone"
+				type: "item"
+			}]
+			subtitle: "&6一般般.."
+			tasks: [{
+				id: "5C987E7B453F5ADB"
+				item: "minecraft:stonecutter"
+				type: "item"
+			}]
+			title: "&9额...机器?"
+			x: 38.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2D745F08BA3F92F7"]
+			description: ["{image:new_create:textures/images/1.png width:50 height:50 align:1}"]
+			id: "2D16703D178AB2C0"
+			rewards: [{
+				count: 4
+				id: "1003F4CA7A852AB7"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			subtitle: "&a合成齿轮？！&r"
+			tasks: [
+				{
+					id: "4E23945FBA6AACBA"
+					item: "new_create:in_cogwheel"
+					type: "item"
+				}
+				{
+					id: "6702E6E234DFF25E"
+					item: "new_create:in_large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "76CB502AE9CE4AF8"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:shaft_add"
+						}
+					}
+					title: "Any #create:shaft_add"
+					type: "item"
+				}
+			]
+			title: "&b是齿轮!他加了齿轮!"
+			x: 35.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["2D16703D178AB2C0"]
+			description: ["&a※你已经掌握了齿轮合成的方法&r"]
+			id: "5A260B030BEC3846"
+			rewards: [
+				{
+					id: "3D5E5501A9E7BB85"
+					item: {
+						Count: 1b
+						id: "new_create:iron_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "52B9BEE22DC46193"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
+			subtitle: "&5物理知识:大小齿轮变速!"
+			tasks: [
+				{
+					count: 4L
+					id: "2D50A178A2288CC0"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "75242E3FE9E16C98"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "&3齿轮"
+			x: 36.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			description: [
+				"&a制作一个&2石磨&r&a和&2手摇曲柄&r&r"
+				"&d可以进行一些矿物的简单获取&r"
+			]
+			id: "38383DFF428AF0E9"
+			rewards: [{
+				count: 4
+				id: "7CA914BBEE67468E"
+				item: "farmersdelight:kelp_roll_slice"
+				type: "item"
+			}]
+			subtitle: "&9冷知识:石磨下面可以输入应力"
+			tasks: [
+				{
+					id: "38EEA0F86071EC7A"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "1E5F71EF586EB038"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			title: "&b磨磨磨!"
+			x: 35.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["38383DFF428AF0E9"]
+			id: "6B3FB60CBF3CB68A"
+			subtitle: "用石磨磨碎"
+			tasks: [{
+				id: "2CB6652C5DAB3F9A"
+				item: "create:crushed_raw_tin"
+				type: "item"
+			}]
+			x: 36.5d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"54D3E82DA2242218"
+				"42B17692177022C8"
+			]
+			id: "2515602CF3C6878B"
+			tasks: [{
+				id: "77B2E1EFCF6AACCE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "青铜"
+				type: "item"
+			}]
+			x: 38.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["11E001D323FC5722"]
+			icon: {
+				Count: 1b
+				id: "new_create:flint_handaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "68802C8BBFF5305F"
+			rewards: [{
+				count: 4
+				id: "4D44BB6B4E789C8C"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			subtitle: "Mini~"
+			tasks: [
+				{
+					id: "104017C1CBCB4870"
+					item: {
+						Count: 1b
+						id: "new_create:flint_handaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5113040F7B3B2996"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
+			title: "小小的也很可爱!"
+			x: 34.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["68802C8BBFF5305F"]
+			id: "79316DB94D602795"
+			rewards: [{
+				count: 2
+				id: "4858000B54D1222A"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "056097A533170903"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "任意一种木头"
+				type: "item"
+			}]
+			x: 36.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2BB8EC9F1782C4DE"]
+			description: [
+				"{image:new_create:textures/images/1.png width:50 height:50 align:1}"
+				""
+			]
+			id: "54D3E82DA2242218"
+			subtitle: "&b铜太软了!不适合做工具啊!(没错我就是不让你用"
+			tasks: [{
+				id: "5020FE8FABA1B60D"
+				type: "checkmark"
+			}]
+			title: "&6铜工具?"
+			x: 39.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2515602CF3C6878B"]
+			description: ["&a观察一个野生铁矿&r"]
+			id: "7EC0F60AA1929893"
+			rewards: [{
+				count: 8
+				id: "47C10794E0410E1D"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "&2这东西或许有用"
+			tasks: [
+				{
+					icon: "minecraft:iron_ore"
+					id: "345D75D3B8AA449E"
+					observe_type: 1
+					timer: 0L
+					to_observe: "#minecraft:iron_ores"
+					type: "observation"
+				}
+				{
+					id: "3AC3744A99373501"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3这是什么?看一下"
+			x: 39.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["2515602CF3C6878B"]
+			id: "2C50439ADFBC4767"
+			tasks: [{
+				id: "63BC03E2027A60C5"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			title: "&6 Creafing Table - 2"
+			x: 38.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["2515602CF3C6878B"]
+			id: "4256CEC6F890C8D1"
+			tasks: [{
+				id: "4F9D594E1FAD33F0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/bronze"
+					}
+				}
+				title: "Any #forge:plates/bronze"
+				type: "item"
+			}]
+			title: "青铜板"
+			x: 37.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"2C50439ADFBC4767"
+				"4256CEC6F890C8D1"
+				"5A260B030BEC3846"
+			]
+			id: "3DBE4D0DD20AE7F9"
+			rewards: [{
+				count: 8
+				id: "4A781602BEC256FB"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "17E9642589F17BE2"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "57BEDC19050824E2"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "咕噜噜?"
+			x: 38.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["38383DFF428AF0E9"]
+			id: "4E7E549AC8058BC9"
+			tasks: [{
+				id: "1F094792A3B78991"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			id: "01297601A65A9627"
+			rewards: [{
+				id: "3E8D974F5DC4E58C"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:lava"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 17L
+					id: "4428E2D12BDBAFED"
+					item: "new_create:charred_cobblestone"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "0857D2F625595D3F"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "751501C951D81130"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					id: "7736476B5FCA9940"
+					item: "minecraft:clay"
+					type: "item"
+				}
+			]
+			title: "做一下准备"
+			x: 33.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["01297601A65A9627"]
+			id: "1D45C9BA70CFB5DA"
+			tasks: [{
+				id: "6B2E4584AAA02846"
+				item: "melter:melter"
+				type: "item"
+			}]
+			x: 33.5d
+			y: 23.5d
+		}
+		{
+			dependencies: [
+				"4E7E549AC8058BC9"
+				"1D45C9BA70CFB5DA"
+				"0B6372CB96B584E4"
+			]
+			description: ["{image:new_create:textures/images/12.png width:230 height:135 align:1}"]
+			id: "2D745F08BA3F92F7"
+			tasks: [{
+				id: "4FBD9FF5174F89CE"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "new_create:embalming_fluid"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 33.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["6E8D524A504AD514"]
+			id: "2AC2EFDD8EAAA7D4"
+			subtitle: "或许你得多挖点"
+			tasks: [{
+				count: 32L
+				id: "27E8FA1AE99BAAF7"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:clay"
+					}
+				}
+				title: "黏土"
+				type: "item"
+			}]
+			x: 35.0d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"6B3FB60CBF3CB68A"
+				"17A15D75F1EC5311"
+			]
+			id: "42B17692177022C8"
+			tasks: [{
+				id: "22E51EF85BDD7183"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/tin"
+					}
+				}
+				title: "锡"
+				type: "item"
+			}]
+			title: "锡"
+			x: 38.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["25E790CA72DE9B02"]
+			id: "5FEA45A825190C61"
+			rewards: [{
+				count: 32
+				id: "034B0ACB43B26A86"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "30DC7EEEEAA69527"
+					item: "new_create:in_large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3BC2504A0AF4646E"
+					item: "new_create:in_cogwheel"
+					type: "item"
+				}
+			]
+			title: "加油!"
+			x: 39.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4256CEC6F890C8D1"]
+			hide_dependency_lines: false
+			id: "17441F3276DFB9CA"
+			rewards: [{
+				count: 9
+				id: "558CC8C50432E6B1"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&b挺有意思的不是吗"
+			tasks: [{
+				id: "2FAD2161086013A5"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			x: 36.25d
+			y: 23.75d
+		}
+		{
+			dependencies: ["2BB8EC9F1782C4DE"]
+			icon: "immersiveengineering:blastbrick"
+			id: "3A473E646F259743"
+			tasks: [{
+				count: 27L
+				id: "4B3A65445A6A5408"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			x: 41.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["2BB8EC9F1782C4DE"]
+			id: "57903FCA47EF155F"
+			tasks: [{
+				count: 27L
+				id: "6742BBDB7CEA3BFE"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			x: 41.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["706944B05AB03623"]
+			id: "109C2B766057C39C"
+			tasks: [{
+				id: "2F568331EBB71263"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "new_create:working_fluid"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 41.5d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"3DBE4D0DD20AE7F9"
+				"109C2B766057C39C"
+				"7EC0F60AA1929893"
+			]
+			id: "797CC6360C318986"
+			tasks: [{
+				id: "2B33DB728792E832"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/iron"
+					}
+				}
+				title: "铁!"
+				type: "item"
+			}]
+			title: "铁锭"
+			x: 41.5d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"3A473E646F259743"
+				"797CC6360C318986"
+			]
+			dependency_requirement: "one_completed"
+			id: "3ED4088F5DEB249F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7B36110120CC2812"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
+					}
+				}
+				title: "Any #forge:ingots/cast_iron"
+				type: "item"
+			}]
+			title: "铸铁!"
+			x: 46.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"7EC0F60AA1929893"
+				"3DBE4D0DD20AE7F9"
+			]
+			id: "706944B05AB03623"
+			tasks: [{
+				id: "19969851DF9BF447"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:slag"
+					}
+				}
+				title: "Any #forge:slag"
+				type: "item"
+			}]
+			title: "矿渣"
+			x: 39.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["57903FCA47EF155F"]
+			id: "603D7BE6F9FED860"
+			tasks: [{
+				id: "6C59E797EDB6E339"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			x: 41.5d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"603D7BE6F9FED860"
+				"14D8A85A958660A7"
+			]
+			description: [
+				"&b多余的杂酚油，搭配搅拌器制作防腐木板&r"
+				"&a第二种制作齿轮的方法&r"
+			]
+			id: "4EE63A4D36E8A6C4"
+			tasks: [{
+				id: "79142482CB1A7D84"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: 43.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["751A430A5BF08E1C"]
+			hide_dependency_lines: true
+			icon: "minecraft:netherrack"
+			id: "20A872AC6608D6F4"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2793497E06464B1D"
+				type: "dimension"
+			}]
+			title: "&6下届！"
+			x: 51.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "0331E2E5A91C4EA0"
+			tasks: [{
+				id: "212AE53270DF77D9"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/diamond"
+					}
+				}
+				title: "钻石"
+				type: "item"
+			}]
+			title: "&6亮闪闪！"
+			x: 46.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0331E2E5A91C4EA0"]
+			id: "751A430A5BF08E1C"
+			tasks: [{
+				id: "67D24C5C6605E307"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:obsidian"
+					}
+				}
+				title: "黑曜石"
+				type: "item"
+			}]
+			x: 46.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["1EACACB42DF82DF3"]
+			hide_dependency_lines: true
+			icon: "minecraft:end_stone"
+			id: "7D20A5EC9D4FD648"
+			size: 3.0d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "6CBB9A5F6BAB8CBE"
+				type: "dimension"
+			}]
+			title: "&6欢迎来到末地！"
+			x: 58.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "2A43BD5F277E422A"
+			rewards: [{
+				id: "311DF4DDF106C43A"
+				item: "create:depot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10C36FF61504792E"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "&3铛！"
+			x: 53.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"2A43BD5F277E422A"
+				"534623D5AD19B5EA"
+			]
+			id: "6792817D07E7A2CC"
+			tasks: [
+				{
+					id: "36B045355C67268D"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "070A22FFDF16BE30"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "&6黑奴"
+			x: 54.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["638114AF83959CA5"]
+			id: "20D375F0BE743E81"
+			tasks: [{
+				id: "66EEDFDD270E659B"
+				item: "new_create:andesite_compound_fluid_bucket"
+				type: "item"
+			}]
+			x: 56.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["6792817D07E7A2CC"]
+			id: "62864688AD6F3A16"
+			tasks: [{
+				id: "7440FA79D2BAA8FF"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/blaze"
+					}
+				}
+				title: "&b烈焰棒"
+				type: "item"
+			}]
+			x: 55.0d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"62864688AD6F3A16"
+				"185B971C0C0CA690"
+			]
+			dependency_requirement: "one_completed"
+			id: "1EACACB42DF82DF3"
+			tasks: [{
+				id: "5FCCDE5F43934E59"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 56.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "2A28868E8B9E784C"
+			tasks: [{
+				id: "6A907CEE86A252F3"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			title: "&3带点土特产"
+			x: 52.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["2A43BD5F277E422A"]
+			id: "534623D5AD19B5EA"
+			tasks: [{
+				id: "0791AFB06FA174EE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/cast_iron"
+					}
+				}
+				title: "Any #forge:plates/cast_iron"
+				type: "item"
+			}]
+			title: "&3更硬的板!"
+			x: 53.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["534623D5AD19B5EA"]
+			id: "1B430050B27D9128"
+			subtitle: "不要忘记前面的置物台哦"
+			tasks: [{
+				id: "6F1ACC78E12FFFF6"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 54.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"20D375F0BE743E81"
+				"1B430050B27D9128"
+			]
+			dependency_requirement: "one_completed"
+			id: "57B10D84AF8804DC"
+			tasks: [{
+				id: "0662BFA496519A84"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "&6开启新纪元！"
+			x: 56.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["7D20A5EC9D4FD648"]
+			id: "11121D82A0A66FC5"
+			tasks: [{
+				id: "33F6248505DCB75B"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "&6结束了？"
+			x: 60.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["11121D82A0A66FC5"]
+			id: "17BAC81D175530D4"
+			rewards: [{
+				count: 16
+				id: "3666936A71F1B827"
+				item: {
+					Count: 1b
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Flight: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0096BB5582DED60E"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&4道路千万条，安全第一条"
+			x: 60.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "16D16B70B7048697"
+			subtitle: "&6Or PVE Boss"
+			tasks: [{
+				entity: "minecraft:piglin_brute"
+				id: "7F00A807C47DFDD8"
+				type: "kill"
+				value: 100L
+			}]
+			title: "&6还是PVE大佬"
+			x: 52.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["6792817D07E7A2CC"]
+			id: "638114AF83959CA5"
+			subtitle: "一点金属和黏土"
+			tasks: [{
+				count: 8L
+				id: "33E41938E35013FB"
+				item: "new_create:andesite_compound"
+				type: "item"
+			}]
+			title: "&3准备准备?"
+			x: 55.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["2A28868E8B9E784C"]
+			id: "56EF12FBD4DD7951"
+			tasks: [{
+				id: "612C1F9CCB54EA83"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			title: "&6粉色宝石"
+			x: 52.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["11121D82A0A66FC5"]
+			id: "4B2FE37EFA5F3ED0"
+			tasks: [{
+				count: 4L
+				id: "6088E903A584E0D3"
+				item: "minecraft:end_crystal"
+				type: "item"
+			}]
+			title: "&4复活吧！我的爱人！"
+			x: 60.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["70E24EA51D964DA0"]
+			id: "7EE352FE28FE7321"
+			rewards: [
+				{
+					count: 2
+					id: "769BCAE3DCA003CD"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "13E61311CA338C57"
+					item: "waystones:warp_scroll"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5C5106DB1747D5AD"
+				type: "checkmark"
+			}]
+			title: "&6快速回家"
+			x: 34.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5E0A98F312F8A995"]
+			id: "70E24EA51D964DA0"
+			tasks: [{
+				id: "1CDA6BA491079C27"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "Any #minecraft:beds"
+				type: "item"
+			}]
+			title: "&3好好睡觉"
+			x: 36.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7D20A5EC9D4FD648"]
+			id: "2141155022DF472D"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "2B8BF65E5A420F85"
+				type: "kill"
+				value: 100L
+			}]
+			title: "&4又或是PVE大佬"
+			x: 59.837574404761895d
+			y: 16.321428571428577d
+		}
+		{
+			dependencies: ["56EF12FBD4DD7951"]
+			id: "1A3179CD594FE26C"
+			rewards: [{
+				count: 2
+				id: "7EA5801272486977"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F8E6BDC4F97CBC7"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/redstone"
+						}
+					}
+					title: "Any #forge:storage_blocks/redstone"
+					type: "item"
+				}
+				{
+					id: "20FFCB44D6C01805"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/quartz"
+						}
+					}
+					title: "Any #forge:gems/quartz"
+					type: "item"
+				}
+			]
+			title: "&3高效合成"
+			x: 53.539955357142844d
+			y: 20.517857142857146d
+		}
+		{
+			dependencies: ["6792817D07E7A2CC"]
+			icon: "create:steam_engine"
+			id: "685D9D553A6C2A4D"
+			subtitle: "&4非常抱歉,蒸汽引擎被禁用啦!!!&r"
+			tasks: [{
+				id: "10DAD177326E59F9"
+				title: "&4被骗啦!"
+				type: "checkmark"
+			}]
+			title: "&4蒸汽引擎"
+			x: 54.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["62864688AD6F3A16"]
+			id: "185B971C0C0CA690"
+			tasks: [{
+				id: "2FFB1FFC3847588E"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 55.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["1A3179CD594FE26C"]
+			id: "7EBFCC585E0CFA61"
+			tasks: [{
+				id: "0203C2F8466C335D"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 54.5d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"7EBFCC585E0CFA61"
+				"57B10D84AF8804DC"
+			]
+			id: "66A3B9A7108CF0D5"
+			tasks: [{
+				id: "795CC43EB62D2611"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 56.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["66A3B9A7108CF0D5"]
+			id: "04B6919DE003197C"
+			tasks: [{
+				id: "610DC3E3787525FB"
+				item: "create_new_age:generator_coil"
+				type: "item"
+			}]
+			x: 56.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["66A3B9A7108CF0D5"]
+			id: "240B6094033926D5"
+			tasks: [{
+				id: "07A092A1D589A3BF"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 57.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "6A07C6743F676627"
+			tasks: [
+				{
+					id: "113713DE186687F1"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "72F94EC791F0AE04"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "576269F83F46AA4F"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+				{
+					id: "0EB5CFFBC215CB87"
+					item: "pipez:universal_pipe"
+					type: "item"
+				}
+				{
+					id: "21087739397286EC"
+					item: "pipez:gas_pipe"
+					type: "item"
+				}
+				{
+					id: "62F8448DA50D4D29"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			title: "&3各种管道"
+			x: 48.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["751A430A5BF08E1C"]
+			id: "6CE2020A2C487224"
+			tasks: [
+				{
+					id: "5007D4B6E4C27C3C"
+					item: "new_create:log_pile"
+					type: "item"
+				}
+				{
+					id: "4BDBD61EB0959449"
+					item: {
+						Count: 1b
+						id: "new_create:tinder"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6生火"
+			x: 47.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["66A3B9A7108CF0D5"]
+			id: "6F45D5E1B4B9BA35"
+			tasks: [{
+				id: "5BCAA122A53EA7EF"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 57.0d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"6792817D07E7A2CC"
+				"2A43BD5F277E422A"
+			]
+			id: "7224B2B81B276B73"
+			tasks: [{
+				id: "43A696CCEE88B375"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
+					}
+				}
+				title: "铸铁"
+				type: "item"
+			}]
+			title: "&6也许你需要量产"
+			x: 53.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7224B2B81B276B73"]
+			description: [
+				"&4原版的熔炉貌似烧不了任何东西&r"
+				"&a冶炼矿物只能靠高炉了!&r"
+				"&b对着高炉(熔炉核心)按住[W]进行思索,观看建造过程&r"
+			]
+			id: "426228B1FE272FAE"
+			tasks: [
+				{
+					id: "5BC7CEA47EBC1E92"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+				{
+					id: "65FA3F64592F3C92"
+					item: "new_create:furnace_core"
+					type: "item"
+				}
+			]
+			title: "&6高炉合成"
+			x: 52.5d
+			y: 16.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["75C1C1D7BC5E550D"]
+			disable_toast: true
+			icon: "minecraft:dirt"
+			id: "189F0180B440F084"
+			rewards: [{
+				id: "4851D914099278E8"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			subtitle: "&b为了防止实在脸黑,你可以用9个泥土或9个沙子合成一个砂砾"
+			tasks: [{
+				consume_items: true
+				count: 9L
+				id: "0BC751EC058C20D7"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "&b非洲人就是你"
+			x: 27.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "3FC68420B4E84A79"
+			rewards: [{
+				count: 48
+				id: "6400BD07B22A4BC8"
+				item: "new_create:cast_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "42ED46A81010ADF6"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "309446247685F7F9"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F98114521B7FE35"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2857DA2843D488EA"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "591780113958E0C7"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7611052289590266"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77A04A74E8AB1517"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FEA0A32EFAD9BCC"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D97FBCEE19874A"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铸铁套"
+			x: 48.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["5E0A98F312F8A995"]
+			id: "12B7F124F25AF827"
+			subtitle: "&b勉强能用"
+			tasks: [{
+				id: "7BDC6CB643B073CA"
+				item: {
+					Count: 1b
+					id: "new_create:flint_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c防身"
+			x: 39.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			id: "553BBA981FDA9EBA"
+			tasks: [{
+				id: "4E08E9C68FE50536"
+				item: "caupona:clay_cistern"
+				type: "item"
+			}]
+			title: "这玩意还挺好看的"
+			x: 33.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["553BBA981FDA9EBA"]
+			id: "46AB72C31B2C5522"
+			tasks: [
+				{
+					id: "4728DC60575395EF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:stew_pot"
+						}
+					}
+					title: "汤锅"
+					type: "item"
+				}
+				{
+					id: "360E44C321367305"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:stoves"
+						}
+					}
+					title: "&b任意灶台"
+					type: "item"
+				}
+			]
+			title: "&b煲汤..?"
+			x: 32.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["46AB72C31B2C5522"]
+			description: ["{image:new_create:textures/images/11.png width:230 height:135 align:1}"]
+			id: "0B6372CB96B584E4"
+			tasks: [
+				{
+					id: "05EEBCCA6F2EF88E"
+					item: {
+						Count: 1b
+						id: "ceramicbucket:ceramic_bucket"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "thermal:latex"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "1EB17A7C188EF17E"
+					item: "ceramicbucket:ceramic_bucket"
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "0384CAA33C39BFAA"
+					item: "ceramicbucket:unfired_clay_bucket"
+					type: "item"
+				}
+			]
+			title: "好黏.."
+			x: 32.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["797CC6360C318986"]
+			id: "14D8A85A958660A7"
+			subtitle: "&b这玩意比黏土的好使多了"
+			tasks: [{
+				id: "1C63B44F811D6F58"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 43.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["75C1C1D7BC5E550D"]
+			hide: true
+			icon: "new_create:gechangzuguo"
+			id: "05FFB9C4A2FC377C"
+			rewards: [
+				{
+					id: "4E2A200ABCBEBB35"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "62557FCC1542010A"
+					item: "new_create:gechangzuguo"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "&c五星红旗迎风飘扬"
+			tasks: [{
+				id: "5E77AD93348DFDC3"
+				type: "checkmark"
+			}]
+			title: "&c红色!"
+			x: 30.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7EC0F60AA1929893"]
+			id: "460C89002A0E5E1C"
+			rewards: [{
+				count: 8
+				id: "2A69BB3D6C850584"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4A070AE36C1AE62E"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00722D883BBADF51"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&a青铜Tools"
+			x: 40.5d
+			y: 22.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["75C1C1D7BC5E550D"]
+			disable_toast: true
+			id: "7ED6CDB5CAAED4E8"
+			rewards: [{
+				id: "1D824D3944371C9B"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			subtitle: "&b为了防止实在脸黑,你可以用9个泥土或9个沙子合成一个砂砾"
+			tasks: [{
+				consume_items: true
+				count: 9L
+				id: "3558280320F0C978"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:sand"
+					}
+				}
+				title: "沙子"
+				type: "item"
+			}]
+			title: "&b非洲人就是你"
+			x: 27.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["33EF23C3B61A384E"]
+			id: "5DD0FF0A19997210"
+			rewards: [{
+				count: 32
+				id: "1FD8FFBB9CC9C08F"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "3F3F9DD734EADBD5"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "原木"
+				type: "item"
+			}]
+			title: "更多!"
+			x: 39.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "4A932B57DA5B2F56"
+			subtitle: "让我用吧!"
+			tasks: [{
+				id: "0D22ED5B3D642CFF"
+				item: {
+					Count: 1b
+					id: "new_create:metal_detector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c我不想努力了"
+			x: 46.0d
+			y: 24.5d
+		}
+	]
+	title: "&6火与石之歌"
+}

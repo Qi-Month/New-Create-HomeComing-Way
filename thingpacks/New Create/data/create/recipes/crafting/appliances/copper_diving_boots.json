@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"G": {
+			"item": "create:andesite_alloy"
+		},
+		"P": {
+			"tag": "forge:plates/brass"
+		}
+	},
+	"pattern": [
+		"P P",
+		"P P",
+		"G G"
+	],
+	"result": {
+		"item": "create:copper_diving_boots"
+	},
+	"show_notification": true
+}

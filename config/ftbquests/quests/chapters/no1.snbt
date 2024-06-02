@@ -1,0 +1,480 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "no1"
+	group: ""
+	icon: "thermal:machine_furnace"
+	id: "25FC0F4076CF1414"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C6690A3F29A7A98"]
+			id: "37CB5D8FF3EBE1F7"
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "29865ECE5D6F5453"
+				item: "thermal:energy_cell_frame"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["37CB5D8FF3EBE1F7"]
+			id: "57D1D29330B51315"
+			tasks: [{
+				id: "3EC125D02DCEBF8D"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["37CB5D8FF3EBE1F7"]
+			id: "0321E033B2D080B8"
+			tasks: [{
+				id: "389588AF03057611"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"57D1D29330B51315"
+				"0321E033B2D080B8"
+			]
+			dependency_requirement: "one_completed"
+			id: "741F01395998E3C5"
+			tasks: [{
+				id: "5C1FEC318534B413"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tar"
+					}
+				}
+				title: "Any #forge:tar"
+				type: "item"
+			}]
+			title: "焦油"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["57D1D29330B51315"]
+			id: "48D4E4D7F258F284"
+			tasks: [{
+				id: "16B6BC734F2C4B30"
+				item: "thermal:heavy_oil_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57D1D29330B51315"]
+			id: "3E74927AB92F6930"
+			tasks: [{
+				id: "4FE38F7612A6690D"
+				item: "thermal:light_oil_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"48D4E4D7F258F284"
+				"3E74927AB92F6930"
+			]
+			dependency_requirement: "one_completed"
+			id: "7F503F3E9FCF5B90"
+			tasks: [{
+				id: "2A0A19CB0B5B5765"
+				item: "thermal:refined_fuel_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7F503F3E9FCF5B90"
+				"741F01395998E3C5"
+			]
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:mixer"
+				tag: { }
+			}
+			id: "2F5EF5768AC4284A"
+			tasks: [{
+				id: "7948117D1D82E2BB"
+				title: "&6混合器"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F5EF5768AC4284A"]
+			id: "5B5AB021C4F4BFB8"
+			tasks: [{
+				id: "45C8A764B8A289B4"
+				item: "new_create:high_grade_refined_oil_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B5AB021C4F4BFB8"]
+			id: "0EA3064E886C9157"
+			tasks: [{
+				count: 128L
+				id: "410733C2EFCFC523"
+				item: "immersiveengineering:toolupgrade_revolver_electro"
+				type: "item"
+			}]
+			title: "&6电子管量产"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B5AB021C4F4BFB8"]
+			id: "696726FEA75D95E4"
+			tasks: [{
+				id: "48D944A197227EC5"
+				item: "thermal:fluid_cell_frame"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["696726FEA75D95E4"]
+			id: "6DF67AF650313D57"
+			tasks: [{
+				id: "5276EBC234BCB9A3"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2F5EF5768AC4284A"
+				"5B5AB021C4F4BFB8"
+				"008E3859A0DE7117"
+			]
+			id: "627E37F5B45CFC17"
+			tasks: [{
+				id: "56CC4D582DADBB37"
+				item: "new_create:mithril_fluid_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"627E37F5B45CFC17"
+				"6DF67AF650313D57"
+			]
+			id: "72E7BB363904DD98"
+			tasks: [{
+				id: "644C7DA1F4A5C652"
+				item: "create_dd:mithril_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37CB5D8FF3EBE1F7"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:crusher"
+				tag: { }
+			}
+			id: "013311E6F1722D52"
+			tasks: [{
+				id: "7631B0CA6626B2D2"
+				title: "&6粉碎机"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["013311E6F1722D52"]
+			id: "008E3859A0DE7117"
+			tasks: [{
+				id: "04CF0576ED69209F"
+				item: "mekanism:dust_emerald"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72E7BB363904DD98"]
+			id: "7B85EDD5B12A2552"
+			tasks: [{
+				id: "6720860EA6A76425"
+				item: "create_dd:mithril_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7B85EDD5B12A2552"
+				"149A937936D08DE9"
+			]
+			id: "5F0AFF91451D6835"
+			tasks: [{
+				id: "1480303AD9C8AAB5"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73DEE011EAF7D46A"]
+			id: "149A937936D08DE9"
+			tasks: [{
+				id: "0A9BECD8624C6079"
+				item: "thermal:rose_gold_gear"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"637A003C17ED085E"
+				"6671B5400A00D016"
+			]
+			id: "73DEE011EAF7D46A"
+			tasks: [{
+				count: 4L
+				id: "2A7FFE22C657F9C7"
+				item: "thermal:rose_gold_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73835F2AF14AC407"]
+			id: "285B90A0250D5EA3"
+			tasks: [{
+				id: "69AE63467EB68CE7"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			title: "又双叒叕是新炉子"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"55E2844C773D925A"
+				"093DD3F380F8FE42"
+			]
+			description: ["{image:new_create:textures/images/6.png width:50 height:50 align:1}"]
+			id: "6671B5400A00D016"
+			subtitle: "&c有点阴间了"
+			tasks: [{
+				id: "43E7E8F0EE823C48"
+				item: "new_create:infernal_mechanism"
+				type: "item"
+			}]
+			title: "&c多多少少有点邪门?"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "55E2844C773D925A"
+			subtitle: "&c下界的两种作物"
+			tasks: [
+				{
+					id: "0FC71B2F1E90DB1F"
+					item: "minecraft:weeping_vines"
+					type: "item"
+				}
+				{
+					id: "39D5E2BB7200E25D"
+					item: "minecraft:twisting_vines"
+					type: "item"
+				}
+			]
+			title: "&b这不是皇室战争"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02C702D9B6C35B1C"]
+			id: "093DD3F380F8FE42"
+			tasks: [{
+				id: "298286D82A179498"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/soul_sand"
+					}
+				}
+				title: "Any #forge:dusts/soul_sand"
+				type: "item"
+			}]
+			title: "&b闻起来有点像薄荷"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["68FA0865F8329BEF"]
+			id: "02C702D9B6C35B1C"
+			tasks: [{
+				id: "0F9408BEB0E5382C"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			title: "&6古希腊掌管震动的神"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "68FA0865F8329BEF"
+			tasks: [{
+				id: "3C84309C36AFE6D7"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			title: "&b这东西威力老大了捏"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["149A937936D08DE9"]
+			id: "162AD456A9098EBC"
+			rewards: [{
+				count: 4
+				id: "4A6F9CB932FE1D4B"
+				item: "create:basin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "&b这里的风景呀真好看"
+			tasks: [{
+				id: "1B283AD7E46B1703"
+				item: "vintageimprovements:centrifuge"
+				type: "item"
+			}]
+			title: "&b大风车吱呀吱哟哟地转"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["162AD456A9098EBC"]
+			description: ["{image:new_create:textures/images/7.png width:50 height:50 align:1}"]
+			id: "0CE928327BB29A80"
+			rewards: [{
+				id: "0B6837DE930143BF"
+				item: {
+					Count: 1b
+					id: "new_create:radiant_sword"
+					tag: {
+						Damage: 0
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"纯粹骨钉(迫真)\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "纯粹!"
+			tasks: [{
+				id: "76E3EF25DFB82BED"
+				item: "new_create:pure_quartz"
+				type: "item"
+			}]
+			title: "&c纯粹!"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"637A003C17ED085E"
+				"0CE928327BB29A80"
+			]
+			id: "73835F2AF14AC407"
+			subtitle: "还记得前面的电弧炉吗?"
+			tasks: [{
+				id: "20ACA71DC5274538"
+				item: "new_create:saw_silicon"
+				type: "item"
+			}]
+			title: "&c化学最好的一集"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["285B90A0250D5EA3"]
+			id: "21F3B9E76EFFCE3B"
+			tasks: [{
+				id: "7818620561CF794D"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			title: "硅?"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"21F3B9E76EFFCE3B"
+				"0F5B696D9B636C16"
+			]
+			id: "015E76603457CFF2"
+			shape: "hexagon"
+			tasks: [{
+				id: "551F7043D5F60DE3"
+				item: "new_create:silicon_crystal"
+				type: "item"
+			}]
+			title: "硅!"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"015E76603457CFF2"
+				"0CE928327BB29A80"
+			]
+			id: "17D831D19003A069"
+			tasks: [{
+				id: "369941605B2C2FF7"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			title: "&b它电我!"
+			x: 3.0d
+			y: 1.0d
+		}
+	]
+	title: "&6工业大发展"
+}

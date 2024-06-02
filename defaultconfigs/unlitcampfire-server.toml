@@ -1,0 +1,41 @@
+
+[unlitcampfire]
+	#Whether the lit time of a campfire should be affected by the sleep time.
+	soulCampfireAffectedBySleepTime = false
+	#The Factor of particle count of a soul campfire during rain. (2: doubled particles count (default); 1: same particle count)
+	#Range: 1 ~ 10
+	soulCampfireRainParticleFactor = 2
+	#Whether the contained items should be dropped when a campfire goes out by itself or by rain.
+	campfireDropsItemsWhenUnlitByTimeOrRain = true
+	#Whether generated soul campfires should be lit infinitely.
+	generatedSoulCampfireIsLitInfinitely = true
+	#Whether the lit time of a campfire could be extended with combustible/burnable items.
+	campfireAddingBurnables = true
+	#The time (ticks) a campfire burns until it goes out during rain. (160 ticks [default]; 0: it goes out immediately; -1: it burns during rain).
+	#Range: -1 ~ 2000000
+	campfireRainUnlitTime = 160
+	#The time (ticks) a campfire burns until it goes out by itself. (2000 ticks default; 0 means it burns forever)
+	#Range: 0 ~ 2000000
+	campfireLitTime = 2000
+	#The Factor of particle count of a campfire during rain. (2: doubled particles count [default]; 1: same particle count)
+	#Range: 1 ~ 10
+	campfireRainParticleFactor = 2
+	#Whether the lit time of a campfire should be affected by the sleep time.
+	campfireAffectedBySleepTime = false
+	#The time (ticks) a soul campfire burns until it goes out during rain. (0: it goes out immediately; -1: it burns during rain [default]).
+	#Range: -1 ~ 2000000
+	soulCampfireRainUnlitTime = -1
+	#Whether the contained items should be dropped when a soul campfire goes out by itself or by rain.
+	soulCampfireDropsItemsWhenUnlitByTimeOrRain = true
+	#The time (ticks) a soul campfire burns until it goes out by itself. (2000 ticks default; 0 means it burns forever)
+	#Range: 0 ~ 2000000
+	soulCampfireLitTime = 2000
+	#Whether generated campfires should be lit infinitely.
+	generatedCampfireIsLitInfinitely = true
+	#Whether the lit time of a soul campfire could be extended with combustible/burnable items.
+	soulCampfireAddingBurnables = true
+	#Whether a campfire should be destroyed when it goes out by itself.
+	campfireBreaksWhenUnlitByTime = false
+	#Whether a soul campfire should be destroyed when it goes out by itself.
+	soulCampfireBreaksWhenUnlitByTime = false
+

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"G": {
+			"tag": "forge:glass"
+		},
+		"P": {
+			"tag": "forge:plates/brass"
+		}
+	},
+	"pattern": [
+		"PPP",
+		"PGP"
+	],
+	"result": {
+		"item": "create:copper_diving_helmet"
+	},
+	"show_notification": true
+}

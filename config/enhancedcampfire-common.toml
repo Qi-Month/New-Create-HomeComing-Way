@@ -1,0 +1,7 @@
+#Defines whether campfires will keep the cooked items or not.
+CAMPFIRE_KEEPS_ITEMS = true
+#Defines whether soul campfires will cook faster than normal campfires or not.
+SOUL_CAMPFIRE_COOKS_FASTER = true
+#Defines whether hoppers work with campfires or not.
+CAMPFIRE_SUPPORT_HOPPERS = true
+

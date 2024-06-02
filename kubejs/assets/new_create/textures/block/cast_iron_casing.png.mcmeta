@@ -1,0 +1,9 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [
+			"new_create:block/cast_iron_casing_ctm"
+		]
+	}
+}
