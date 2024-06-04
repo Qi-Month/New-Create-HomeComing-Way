@@ -167,7 +167,13 @@ ServerEvents.recipes(e => {
 		'ratatouille:salt',
 		'createdieselgenerators:crafting/engine_piston',
 		'create:crafting/kinetics/cogwheel',
-		'immersiveengineering:crafting/electrum_mix'
+		'immersiveengineering:crafting/electrum_mix',
+		'create:crushing/iron_ore',
+		'create:crushing/mercury_iron_ore',
+		'create:crushing/glacio_iron_ore',
+		'create:crushing/moon_iron_ore',
+		'create:crushing/deepslate_iron_ore',
+		'create:crushing/mars_iron_ore'
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })

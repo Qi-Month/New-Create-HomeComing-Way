@@ -1,7 +1,7 @@
 BlockEvents.rightClicked(e => {
 	const { player, block, item } = e
 
-	// Fire!!!!!😡😡😡😡
+	// Fire!!!😡😡😡😡
 	let RightClickEvents = (BlockId, BlockSet) => {
 		if (player.mainHandItem == 'new_create:tinder' &&
 			block.id == BlockId) {

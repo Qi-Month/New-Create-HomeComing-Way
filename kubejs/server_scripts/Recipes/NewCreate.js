@@ -398,8 +398,6 @@ ServerEvents.recipes(e => {
 		'9x create:zinc_nugget'
 	])
 
-
-
 	// 纯净石英
 	e.custom({
 		"type": "vintageimprovements:centrifugation",
@@ -452,7 +450,6 @@ ServerEvents.recipes(e => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
 			kubejs.shapeless(`9x ${Output}`, [`${Input}`])
-			minecraft.stonecutting(`9x ${Output}`, [`${Input}`])
 		})
 	}
 
@@ -467,4 +464,4 @@ ServerEvents.recipes(e => {
 		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		minecraft.stonecutting(`6x ${Output}`, [`${Input}`])
 	})
-})	
+})

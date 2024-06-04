@@ -10,8 +10,8 @@ BlockEvents.leftClicked(event => {
 
 	if (player.mainHandItem.id !== 'minecraft:flint') return
 
-	Ingredient.of('#forge:stone').getItemIds().some(stoneId => {
-		if (block.id === stoneId) {
+	Ingredient.of('#forge:stone').getItemIds().some(StoneId => {
+		if (block.id === StoneId) {
 			handleFlintKnapping(event)
 			return true
 		}

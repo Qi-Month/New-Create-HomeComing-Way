@@ -14,7 +14,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 燧石剑(Plus Pro Max Super Update😋)
-	campfire_cooking(Item.of('new_create:flint_sword', "{Damage:0,RepairCost:2,display:{Name:'{\"text\":\"§c燧石剑(Plus Pro Max Super Update)\"}'}}").enchant('minecraft:fire_aspect', 1), [
+	campfire_cooking(Item.of('new_create:flint_sword', "{Damage:0,RepairCost:2,display:{Name:'{\"text\":\"§cAn Absolutely Fair Judgment\"}'}}").enchant('minecraft:fire_aspect', 1), [
 		'new_create:flint_sword'
 	]).cookingTime(1200)
 
