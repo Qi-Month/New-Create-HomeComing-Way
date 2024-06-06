@@ -24,7 +24,7 @@ StartupEvents.registry('fluid', e => {
 		// 秘银液
 		['mithril_fluid', 0x2E8B57],
 		// 玫瑰金溶液
-		['rose_gold_fluid', 0xFF69B4]
+		['rose_gold_fluid', 0xFF69B4],
 	]
 	Fluid.forEach(([Name, Color]) => {
 		e.create(ModID + Name)
@@ -35,7 +35,22 @@ StartupEvents.registry('fluid', e => {
 			.stillTexture(ModID + 'fluid/still')
 	})
 
-	
+	// MoltenFluid
+	let MoltenFluid = [
+		// 铁
+		['iron', 0xDC143C]
+	]
+	MoltenFluid.forEach(([Name, Color]) => {
+		e.create(ModID + 'molten_' + Name)
+			.tag(ModID + 'fluid')
+			.tag(ModID + 'molten_fluid')
+			.thickTexture(Color)
+			.bucketColor(Color)
+			.flowingTexture(ModID + 'fluid/flowing')
+			.stillTexture(ModID + 'fluid/still')
+	})
+
+
 	// 特殊注册
 
 	// 液态灵魂

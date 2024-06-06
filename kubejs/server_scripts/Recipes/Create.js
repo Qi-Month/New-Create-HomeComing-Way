@@ -844,6 +844,16 @@ ServerEvents.recipes(e => {
 		B: 'create:belt_connector'
 	}).id('vintageimprovements:craft/grinder_belt')
 
+	// 工作盆盖板 
+	kubejs.shaped('createdieselgenerators:basin_lid', [
+		'CCC',
+		'CIC',
+		'CCC'
+	], {
+		C: 'new_create:charred_cobblestone',
+		I: '#forge:ingots/copper'
+	})
+
 	// 砂带磨床
 	kubejs.shaped('vintageimprovements:belt_grinder', [
 		'GGG',

@@ -288,18 +288,21 @@ ServerEvents.recipes(e => {
 	})
 
 	// 熔融玻璃
-	melter.melting(Fluid.of('new_create:glass', 50), [
-		'#forge:sand'
-	]).minimumHeat(2)
-
-	create.mixing(Fluid.of('new_create:glass', 100), [
-		'#forge:sand'
-	]).heated()
+	melter.melting(Fluid.of('new_create:glass', 500), [
+		'#minecraft:sand'
+	]).minimumHeat(1)
 
 	// 玻璃
-	create.mixing('minecraft:glass', [
-		Fluid.of('new_create:glass', 50)
-	])
+	e.custom({
+		"type": "createdieselgenerators:basin_fermenting",
+		"ingredients": [
+			{ "fluid": "new_create:glass", "amount": 1000 }
+		],
+		"processingTime": 100,
+		"results": [
+			{ "item": "minecraft:glass" }
+		]
+	})
 
 	// 粘土缸→烧制粘土缸
 	minecraft.campfire_cooking('caupona:stew_pot', [
@@ -437,18 +440,18 @@ ServerEvents.recipes(e => {
 			return e.forEachRecipe({
 				type: Type,
 				output: Output
-			}, recipe => {
-				var Output = recipe.getOriginalRecipeResult().getId()
-				var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+			}, Recipes => {
+				var Output = Recipes.getOriginalRecipeResult().getId()
+				var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 				kubejs.shapeless(Input, [`9x ${Output}`])
 			})
 		} else return e.forEachRecipe({
 			type: Type,
 			output: Output,
 			input: Input
-		}, recipe => {
-			var Output = recipe.getOriginalRecipeResult().getId()
-			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		}, Recipes => {
+			var Output = Recipes.getOriginalRecipeResult().getId()
+			var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 			kubejs.shapeless(`9x ${Output}`, [`${Input}`])
 		})
 	}
@@ -456,12 +459,23 @@ ServerEvents.recipes(e => {
 	// logs => 6x planks for StoneCutting
 	// ☝亖人栗子有中文不用放洋屁☝🤣
 	e.forEachRecipe({
-		type: 'crafting_shapeless',
+		type: 'minecraft:crafting_shapeless',
 		output: '#minecraft:planks',
 		input: '#minecraft:logs'
-	}, recipe => {
-		var Output = recipe.getOriginalRecipeResult().getId()
-		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+	}, Recipes => {
+		var Output = Recipes.getOriginalRecipeResult().getId()
+		var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		minecraft.stonecutting(`6x ${Output}`, [`${Input}`])
+	})
+
+	// 粉末处理(高炉)*这个毕竟是遍历的产物,多多少少肯定会有一点冲突的*
+	e.forEachRecipe({
+		type: 'minecraft:blasting',
+		output: '#forge:ingots',
+		input: '#forge:dusts'
+	}, Recipes => {
+		let Output = Recipes.getOriginalRecipeResult().getId()
+		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		minecraft.blasting(Output, [Input])
 	})
 })

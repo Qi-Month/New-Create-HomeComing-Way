@@ -91,6 +91,7 @@
 	"item.new_create.egg_mixture_fluid_bucket": "鸡蛋混合液桶",
 	"item.new_create.processor_press": "空白压印模板",
 	"item.new_create.tinder": "火绒",
+	"item.new_create.molten_iron_bucket": "熔融铁桶",
 	"block.new_create.charred_cobblestone": "烧焦圆石",
 	"block.new_create.cast_iron_block": "铸铁块",
 	"block.new_create.furnace_core": "高炉核心",
@@ -114,6 +115,7 @@
 	"block.new_create.egg_mixture_fluid": "鸡蛋混合液",
 	"block.new_create.dust": "尘土",
 	"block.new_create.log_pile": "原木堆",
+	"fluid.new_create.molten_iron": "熔融铁",
 	"fluid.new_create.andesite_compound_fluid": "安山混合液",
 	"fluid.new_create.embalming_fluid": "防腐液",
 	"fluid.new_create.working_fluid": "加工液",
@@ -128,5 +130,6 @@
 	"fluid.new_create.mithril_fluid": "秘银溶液",
 	"fluid.new_create.rose_gold_fluid": "玫瑰金溶液",
 	"fluid.new_create.glass": "熔融玻璃",
-	"fluid.new_create.egg_mixture_fluid": "鸡蛋混合液"
+	"fluid.new_create.egg_mixture_fluid": "鸡蛋混合液",
+	"fluid.new_create.molten_iron": "熔融铁"
 }

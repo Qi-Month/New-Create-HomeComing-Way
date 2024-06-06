@@ -111,7 +111,7 @@ ServerEvents.recipes(e => {
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: '#new_create:hammer',
-		E: '#forge:tools/knives'
+		E: '#forge:tools/knives'	
 	})
 		.damageIngredient('#new_create:hammer')
 		.damageIngredient('#forge:tools/knives')
