@@ -1,24 +1,24 @@
 StartupEvents.registry('item', e => {
-	const ModID = 'new_create:'
+	const MODID = 'new_create:'
 	let Food = [
 		['chaochi', 'uncommon', false, 3, 0.5], // 炒祺
 	]
-	Food.forEach(([Name, Rarity, Glow, Hunger, Saturation]) => {
-		e.create(ModID + Name)
-			.rarity(Rarity)
-			.glow(Glow)
-			.tag(ModID + 'items')
-			.tag(ModID + 'food')
+	Food.forEach(([name, rarity, glow, hunger, saturation]) => {
+		e.create(MODID + name)
+			.rarity(rarity)
+			.glow(glow)
+			.tag(MODID + 'items')
+			.tag(MODID + 'food')
 			.food(food => {
-				food.hunger(Hunger)
-				food.saturation(Saturation)
+				food.hunger(hunger)
+				food.saturation(saturation)
 			})
 	})
 })
 
 // Modify
 ItemEvents.modification(e => {
-	e.modify(ModID + 'chaochi', item => {
+	e.modify(MODID + 'chaochi', item => {
 		item.foodProperties = food => {
 			food.alwaysEdible(true)
 			food.fastToEat(true)

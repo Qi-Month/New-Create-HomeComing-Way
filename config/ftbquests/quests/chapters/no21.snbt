@@ -350,32 +350,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1F23917DBF624EE0"]
-			id: "65F1A3A80971DFEC"
-			tasks: [{
-				id: "22F5E82FB3BFED00"
-				item: "create_dd:infernal_mechanism"
-				type: "item"
-			}]
-			title: "&3好烫！"
-			x: -8.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["65F1A3A80971DFEC"]
-			description: ["{image:new_create:textures/images/1.png width:75 height:75 align:1}"]
-			id: "5F846849DADC8AE5"
-			subtitle: "&a就是不让你用蒸汽引擎&r"
-			tasks: [{
-				id: "3F75221D72774378"
-				item: "create_dd:furnace_engine"
-				type: "item"
-			}]
-			title: "&6终极Power!"
-			x: -8.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["22EF721A6422F327"]
 			id: "5C114910264DE84F"
 			tasks: [{
@@ -562,18 +536,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["65F1A3A80971DFEC"]
-			id: "616A61BB6BC7681D"
-			subtitle: "&4蒸汽引擎被禁用&r"
-			tasks: [{
-				id: "50F2E1E2C38A1D4E"
-				title: "&4注意！"
-				type: "checkmark"
-			}]
-			x: -7.0d
-			y: -1.5d
-		}
-		{
 			dependencies: [
 				"22F5E5229A1402A9"
 				"13C2EFD34762991F"
@@ -601,34 +563,6 @@
 			}]
 			x: -2.5d
 			y: 2.0d
-		}
-		{
-			dependencies: ["1F23917DBF624EE0"]
-			id: "03281B3D8E89E49F"
-			tasks: [{
-				id: "591CAA5B7EAF69EB"
-				item: "create_dd:integrated_mechanism"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["03281B3D8E89E49F"]
-			description: [
-				"                         &2回来吧虚空飞轮&r"
-				"                         &4我最骄傲的BUG&r"
-				"                         &9历历在目的应力&r"
-			]
-			id: "76FD34FCE1582049"
-			tasks: [{
-				id: "742D171B02A60381"
-				item: "create_dd:flywheel"
-				type: "item"
-			}]
-			title: "&6梦回飞轮!"
-			x: -6.0d
-			y: -0.5d
 		}
 		{
 			dependencies: ["7EEC8440A5ECEEEA"]

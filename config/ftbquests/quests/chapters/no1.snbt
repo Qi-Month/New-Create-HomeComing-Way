@@ -190,8 +190,8 @@
 			]
 			id: "72E7BB363904DD98"
 			tasks: [{
-				id: "644C7DA1F4A5C652"
-				item: "create_dd:mithril_ingot"
+				id: "41E902FA7306CD66"
+				item: "new_create:mithril_ingot"
 				type: "item"
 			}]
 			x: -1.0d
@@ -229,8 +229,8 @@
 			dependencies: ["72E7BB363904DD98"]
 			id: "7B85EDD5B12A2552"
 			tasks: [{
-				id: "6720860EA6A76425"
-				item: "create_dd:mithril_casing"
+				id: "071F1864F4DD8633"
+				item: "new_create:mithril_sheet"
 				type: "item"
 			}]
 			x: 0.0d

@@ -278,7 +278,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Minecraft Version:1.20.1 Forge-47.2.20%n%Modpack Version:0.8.6-Gamma-Interesting Fix
+  source = Modloader: 1.20.1 Forge-47.2.30%n%Modpack Version: Alpha-0.8.8
   text_border = 0
   case_mode = normal
   source_mode = direct

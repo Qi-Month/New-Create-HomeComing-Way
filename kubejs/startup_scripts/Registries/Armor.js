@@ -1,6 +1,6 @@
-const ModID = 'new_create:'
+const MODID = 'new_create:'
 ItemEvents.armorTierRegistry(e => {
-	e.add(ModID + 'radiant', armor => {
+	e.add(MODID + 'radiant', armor => {
 		armor.durabilityMultiplier = 70 // 耐久系数,具体得上wiki看公式
 		armor.slotProtections = [6, 8, 10, 6] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
 		armor.toughness = 4  // 韧性
@@ -14,14 +14,14 @@ ItemEvents.armorTierRegistry(e => {
 // 身上的贴图要放在assets/new_create/textures/models/armor
 // .tier()方法要在前面跟上ModID
 StartupEvents.registry('item', e => {
-	let Item = (Name, Type, Rarity, Tire, Glow) => {
-		e.create(ModID + Name, Type)
-			.tag(ModID + 'items')
+	let Item = (name, type, rarity, tire, glow) => {
+		e.create(MODID + name, type)
+			.tag(MODID + 'items')
 			.tag('forge:armor')
-			.tag(ModID + 'armor')
-			.rarity(Rarity)
-			.tier(ModID + Tire)
-			.glow(Glow)
+			.tag(MODID + 'armor')
+			.rarity(rarity)
+			.tier(MODID + tire)
+			.glow(glow)
 	}
 	// 光辉套
 	Item('radiant_helmet', 'helmet', 'epic', 'radiant', true)

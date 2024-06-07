@@ -1251,33 +1251,7 @@
 			y: 20.5d
 		}
 		{
-			dependencies: ["706944B05AB03623"]
-			id: "109C2B766057C39C"
-			tasks: [{
-				id: "2F568331EBB71263"
-				item: {
-					Count: 1b
-					id: "ceramicbucket:ceramic_bucket"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "new_create:working_fluid"
-						}
-					}
-				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
-			x: 41.5d
-			y: 23.0d
-		}
-		{
-			dependencies: [
-				"3DBE4D0DD20AE7F9"
-				"109C2B766057C39C"
-				"7EC0F60AA1929893"
-			]
+			dependencies: ["3DBE4D0DD20AE7F9"]
 			id: "797CC6360C318986"
 			tasks: [{
 				id: "2B33DB728792E832"
@@ -1326,18 +1300,18 @@
 				"3DBE4D0DD20AE7F9"
 			]
 			id: "706944B05AB03623"
-			tasks: [{
-				id: "19969851DF9BF447"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:slag"
-					}
+			tasks: [
+				{
+					id: "23A7422B439EDC76"
+					item: "createmetallurgy:casting_table"
+					type: "item"
 				}
-				title: "Any #forge:slag"
-				type: "item"
-			}]
+				{
+					id: "46E88704FDF960A3"
+					item: "createmetallurgy:graphite_ingot_mold"
+					type: "item"
+				}
+			]
 			title: "矿渣"
 			x: 39.5d
 			y: 25.0d
@@ -1546,7 +1520,7 @@
 						value: "forge:plates/cast_iron"
 					}
 				}
-				title: "Any #forge:plates/cast_iron"
+				title: "铸铁板"
 				type: "item"
 			}]
 			title: "&3更硬的板!"
@@ -1774,20 +1748,6 @@
 			y: 20.517857142857146d
 		}
 		{
-			dependencies: ["6792817D07E7A2CC"]
-			icon: "create:steam_engine"
-			id: "685D9D553A6C2A4D"
-			subtitle: "&4非常抱歉,蒸汽引擎被禁用啦!!!&r"
-			tasks: [{
-				id: "10DAD177326E59F9"
-				title: "&4被骗啦!"
-				type: "checkmark"
-			}]
-			title: "&4蒸汽引擎"
-			x: 54.5d
-			y: 16.5d
-		}
-		{
 			dependencies: ["62864688AD6F3A16"]
 			id: "185B971C0C0CA690"
 			tasks: [{
@@ -1940,7 +1900,7 @@
 			}]
 			title: "&6也许你需要量产"
 			x: 53.5d
-			y: 16.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["7224B2B81B276B73"]
@@ -1963,8 +1923,8 @@
 				}
 			]
 			title: "&6高炉合成"
-			x: 52.5d
-			y: 16.0d
+			x: 54.5d
+			y: 16.5d
 		}
 		{
 			can_repeat: true

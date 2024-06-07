@@ -1,6 +1,6 @@
 StartupEvents.registry('item', e => {
-	const ModID = 'new_create:'
-	let Item = [
+	const MODID = 'new_create:'
+	let item = [
 		['flint_knapp', 'common', false], // 燧石碎片
 		['rainbow_ingot', 'epic', false], // 彩虹锭
 		['plastic_sheet', 'common', false], // 塑料板
@@ -48,16 +48,20 @@ StartupEvents.registry('item', e => {
 		['silicon_crystal', 'common', false], // 硅晶
 		['white_flour', 'common', false], // 白面
 		['processor_press', 'common', false], // 空白压印模板
+		['mithril_ingot', 'common', false], // 秘银锭
+		['mithril_sheet', 'common', false], // 秘银板
+		['lapis_sheet', 'common', false], // 青金石板
+		['integrated_circuit', 'common', false], // 集成电路板
 	]
-	Item.forEach(([Name, Rarity, Glow]) => {
-		e.create(ModID + Name)
-			.rarity(Rarity)
-			.glow(Glow)
-			.tag(ModID + 'items')
+	item.forEach(([name, rarity, glow]) => {
+		e.create(MODID + name)
+			.rarity(rarity)
+			.glow(glow)
+			.tag(MODID + 'items')
 	})
 
 	// 半成品注册
-	let In_Item = [
+	let inItem = [
 		'abstruse_mechanism', // 幽静构件(未完成)
 		'calculation_mechanism', // 计算构件(未完成)
 		'inductive_mechanism', // 电磁构件(未完成)
@@ -66,9 +70,9 @@ StartupEvents.registry('item', e => {
 		'sealed_mechanism', // 密封构件(未完成)
 		'sturdy_mechanism', // 坚固构件(未完成)
 	]
-	In_Item.forEach(Name => {
-		e.create(ModID + 'in_' + Name, 'create:sequenced_assembly')
-			.tag(ModID + 'items')
-			.tag(ModID + 'incomplete_items')
+	inItem.forEach(name => {
+		e.create(MODID + 'in_' + name, 'create:sequenced_assembly')
+			.tag(MODID + 'items')
+			.tag(MODID + 'incomplete_items')
 	})
 })

@@ -1,5 +1,5 @@
 StartupEvents.registry('item', e => {
-	const ModID = 'new_create:'
+	const MODID = 'new_create:'
 	let Tool = [
 		// 燧石剑
 		['flint_sword', 'sword', 'common', false, 2, 120, 2, 0],
@@ -39,41 +39,41 @@ StartupEvents.registry('item', e => {
 		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 12, 4]
 	]
 	Tool.forEach(([
-		Name, // ItemId
-		Type, // 工具类型	
-		Rarity, // 稀有度
-		Glow, // 发光
-		Damage, // 基础伤害(所填数值+3=游戏内面板)
-		Use, // 耐久
-		Speed, // 挖掘速度
-		Setlevel // 工具等级
+		name, // ItemId
+		type, // 工具类型	
+		rarity, // 稀有度
+		glow, // 发光
+		damage, // 基础伤害(所填数值+3=游戏内面板)
+		use, // 耐久
+		speed, // 挖掘速度
+		setlevel // 工具等级
 	]) => {
-		e.create(ModID + Name, Type)
-			.attackDamageBaseline(Damage)
-			.rarity(Rarity)
-			.glow(Glow)
+		e.create(MODID + name, type)
+			.attackDamageBaseline(damage)
+			.rarity(rarity)
+			.glow(glow)
 			.unstackable()
 			.tag('forge:tools')
-			.tag(ModID + 'items')
-			.tag(ModID + 'tools')
+			.tag(MODID + 'items')
+			.tag(MODID + 'tools')
 			.modifyTier(tool => {
-				tool.uses = Use
-				tool.speed = Speed
-				tool.setLevel(Setlevel)
+				tool.uses = use
+				tool.speed = speed
+				tool.setLevel(setlevel)
 			})
 	})
 
 	// 特殊注册
 
 	// 火绒
-	e.create(ModID + 'tinder', 'axe')
+	e.create(MODID + 'tinder', 'axe')
 		.attackDamageBaseline(-1)
 		.rarity('common')
 		.glow(false)
 		.unstackable()
 		.tag('forge:tools')
-		.tag(ModID + 'items')
-		.tag(ModID + 'tools')
+		.tag(MODID + 'items')
+		.tag(MODID + 'tools')
 		.modifyTier(tool => { 
 			tool.uses = 8
 		})

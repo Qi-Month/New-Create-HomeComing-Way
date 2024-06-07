@@ -67,6 +67,9 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
+  "mcjtylib": {
+    "jadeaddons": true
+  },
   "unlitcampfire": {
     "campfireinfo": true
   },

@@ -173,7 +173,8 @@ ServerEvents.recipes(e => {
 		'create:crushing/glacio_iron_ore',
 		'create:crushing/moon_iron_ore',
 		'create:crushing/deepslate_iron_ore',
-		'create:crushing/mars_iron_ore'
+		'create:crushing/mars_iron_ore',
+		'createmetallurgy:alloying/alloying_steel'
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })
@@ -201,10 +202,10 @@ ServerEvents.recipes(e => {
 	e.remove({ output: '#forge:gears', type: "minecraft:crafting_shaped" })
 
 	// Mod合成表
-	let Remove_Mods_recipes = [
+	let RemoveModsRecipes = [
 
 	]
-	Remove_Mods_recipes.forEach(Type => {
+	RemoveModsRecipes.forEach(Type => {
 		e.remove({ mod: Type })
 	})
 })

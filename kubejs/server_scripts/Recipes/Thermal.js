@@ -111,12 +111,11 @@ ServerEvents.recipes(e => {
 	kubejs.shaped('thermal:machine_chiller', [
 		'AFA',
 		'BCB',
-		'DED'
+		'AEA'
 	], {
-		A: '#forge:plates/industrial_iron',
+		A: '#forge:plates/cast_iron',
 		B: '#forge:gears/constantan',
 		C: 'thermal:machine_frame',
-		D: '#forge:plates/cast_iron',
 		E: 'immersiveengineering:circuit_board',
 		F: 'thermal:rf_coil'
 	})
@@ -142,7 +141,7 @@ ServerEvents.recipes(e => {
 		'EEE'
 	], {
 		A: '#forge:plates/nickel',
-		B: 'create_dd:infernal_mechanism',
+		B: 'new_create:infernal_mechanism',
 		C: 'thermal:rf_coil',
 		D: 'thermal:energy_cell_frame',
 		E: '#forge:plates/industrial_iron'
@@ -163,7 +162,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 秘银锭
-	thermal.bottler('create_dd:mithril_ingot', [
+	thermal.bottler('new_crete:mithril_ingot', [
 		Fluid.of('new_create:mithril_fluid', 500),
 		'#forge:ingots/silver'
 	]).energy(2000)
@@ -174,10 +173,10 @@ ServerEvents.recipes(e => {
 		'CDE',
 		'FGF'
 	], {
-		A: 'create_dd:mithril_ingot',
+		A: 'new_create:mithril_ingot',
 		B: 'thermal:redstone_servo',
 		C: 'minecraft:water_bucket',
-		D: 'create_dd:mithril_casing',
+		D: 'new_create:mithril_casing',
 		E: 'minecraft:lava_bucket',
 		F: '#forge:ingots/invar',
 		G: '#forge:gears/rose_gold'

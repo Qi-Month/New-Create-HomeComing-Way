@@ -148,7 +148,7 @@ ServerEvents.recipes(e => {
 		F: '#forge:gems/fluix',
 		C: 'create:brass_casing',
 		O: 'create_new_age:overcharged_diamond',
-		I: 'create_dd:integrated_circuit',
+		I: 'new_create:integrated_circuit',
 		G: 'create_new_age:overcharged_golden_sheet'
 	}).id('ae2:network/blocks/inscribers')
 })

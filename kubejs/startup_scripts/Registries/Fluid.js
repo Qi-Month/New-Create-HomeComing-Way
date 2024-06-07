@@ -1,6 +1,6 @@
 StartupEvents.registry('fluid', e => {
-	const ModID = 'new_create:'
-	let Fluid = [
+	const MODID = 'new_create:'
+	let fluid = [
 		// 安山合金溶液
 		['andesite_compound_fluid', 0x808080],
 		// 防腐液
@@ -26,52 +26,36 @@ StartupEvents.registry('fluid', e => {
 		// 玫瑰金溶液
 		['rose_gold_fluid', 0xFF69B4],
 	]
-	Fluid.forEach(([Name, Color]) => {
-		e.create(ModID + Name)
-			.tag(ModID + 'fluid')
-			.thickTexture(Color)
-			.bucketColor(Color)
-			.flowingTexture(ModID + 'fluid/flowing')
-			.stillTexture(ModID + 'fluid/still')
+	fluid.forEach(([name, color]) => {
+		e.create(MODID + name)
+			.thickTexture(color)
+			.bucketColor(color)
+			.flowingTexture(MODID + 'fluid/flowing')
+			.stillTexture(MODID + 'fluid/still')
+			.tag(MODID + 'fluid')
 	})
-
-	// MoltenFluid
-	let MoltenFluid = [
-		// 铁
-		['iron', 0xDC143C]
-	]
-	MoltenFluid.forEach(([Name, Color]) => {
-		e.create(ModID + 'molten_' + Name)
-			.tag(ModID + 'fluid')
-			.tag(ModID + 'molten_fluid')
-			.thickTexture(Color)
-			.bucketColor(Color)
-			.flowingTexture(ModID + 'fluid/flowing')
-			.stillTexture(ModID + 'fluid/still')
-	})
-
 
 	// 特殊注册
 
 	// 液态灵魂
-	e.create(ModID + 'soul')
-		.tag(ModID + 'fluid')
+	e.create(MODID + 'soul')
+		.tag(MODID + 'fluid')
 		.noBucket()
 		.noBlock()
-		.flowingTexture(ModID + 'fluid/soul_flowing')
-		.stillTexture(ModID + 'fluid/soul_still')
+		.flowingTexture(MODID + 'fluid/soul_flowing')
+		.stillTexture(MODID + 'fluid/soul_still')
 
 	// 熔融玻璃
-	e.create(ModID + 'glass')
-		.tag(ModID + 'fluid')
+	e.create(MODID + 'glass')
+		.tag(MODID + 'fluid')
 		.noBlock()
-		.flowingTexture(ModID + 'fluid/glass_flowing')
-		.stillTexture(ModID + 'fluid/glass_still')
+		.flowingTexture(MODID + 'fluid/glass_flowing')
+		.stillTexture(MODID + 'fluid/glass_still')
 
 	// 鸡蛋混合液
-	e.create(ModID + 'egg_mixture_fluid')
-		.tag(ModID + 'fluid')
+	e.create(MODID + 'egg_mixture_fluid')
+		.tag(MODID + 'fluid')
 		.noBlock()
-		.flowingTexture(ModID + 'fluid/egg_mixture_fluid_flowing')
-		.stillTexture(ModID + 'fluid/egg_mixture_fluid_stilling')
+		.flowingTexture(MODID + 'fluid/egg_mixture_fluid_flowing')
+		.stillTexture(MODID + 'fluid/egg_mixture_fluid_stilling')
 })

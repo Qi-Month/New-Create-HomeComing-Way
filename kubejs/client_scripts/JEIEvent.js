@@ -16,6 +16,7 @@ JEIEvents.addItems(e => {
 // 隐藏JEI内Item
 JEIEvents.hideItems(e => {
 	let Item = [
+		'createmetallurgy:mechanical_belt_grinder',
 		'extendedcrafting:singularity',
 		'extendedcrafting:crystaltine_catalyst',
 		'extendedcrafting:enhanced_ender_catalyst',

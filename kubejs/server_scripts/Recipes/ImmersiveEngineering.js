@@ -153,15 +153,6 @@ ServerEvents.recipes(e => {
 		C: 'minecraft:redstone'
 	}).id('immersiveengineering:crafting/conveyor_basic')
 
-	// 工业机壳
-	e.custom({
-		"type": "immersiveengineering:metal_press",
-		"energy": 2400,
-		"input": { "base_ingredient": { "tag": 'forge:plates/industrial_iron' }, "count": 4 },
-		"mold": 'new_create:mold_block',
-		"result": { "item": 'create_dd:industrial_casing' }
-	})
-
 	// 金属模具:块
 	e.custom({
 		"type": "immersiveengineering:blueprint",
@@ -180,15 +171,6 @@ ServerEvents.recipes(e => {
 		"result": { "fluid": "new_create:mixed_gasoline", "amount": 40 }
 	})
 
-	// 钢机壳
-	e.custom({
-		"type": "immersiveengineering:metal_press",
-		"energy": 2400,
-		"input": { "base_ingredient": { "tag": 'forge:ingots/steel' }, "count": 4 },
-		"mold": 'new_create:mold_block',
-		"result": { "item": 'create_dd:steel_casing' }
-	})
-
 	// 真空管
 	e.custom({
 		"type": "immersiveengineering:blueprint",
@@ -205,14 +187,13 @@ ServerEvents.recipes(e => {
 	// 加强电子管
 	kubejs.shaped('immersiveengineering:toolupgrade_revolver_electro', [
 		'AAA',
-		'DED',
+		'D D',
 		'BCB'
 	], {
 		A: 'immersiveengineering:electron_tube',
 		B: '#forge:rods/copper',
 		C: '#forge:wires/copper',
-		D: 'new_create:carbon_plate',
-		E: 'create_dd:calculation_mechanism'
+		D: 'new_create:carbon_plate'
 	}).id('immersiveengineering:crafting/toolupgrade_revolver_electro')
 
 	// 流体管道

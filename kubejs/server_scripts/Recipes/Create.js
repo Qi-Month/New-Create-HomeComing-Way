@@ -416,36 +416,6 @@ ServerEvents.recipes(e => {
 		D: '#new_create:saw'
 	}).damageIngredient('#new_create:saw').damageIngredient('#new_create:hammer')
 
-	// 工业铁锭
-	create.compacting('2x create_dd:industrial_iron_ingot', [
-		'2x new_create:cast_iron_ingot',
-		Fluid.of('new_create:working_fluid', 100)
-	]).heated()
-
-	// 余烬合金
-	kubejs.shaped('create_dd:ember_alloy', [
-		'AB',
-		'BC'
-	], {
-		A: 'create:cinder_flour',
-		B: 'minecraft:nether_brick',
-		C: 'minecraft:blaze_powder'
-	})
-
-	// 飞轮引擎
-	create.mechanical_crafting('create_dd:furnace_engine', [
-		'AAFB',
-		'ACDE',
-		'AAFB'
-	], {
-		A: 'create_dd:industrial_casing',
-		B: 'create:copper_casing',
-		C: 'create_dd:infernal_mechanism',
-		D: 'create:shaft',
-		E: 'createdieselgenerators:engine_piston',
-		F: '#forge:ingots/zinc'
-	})
-
 	// 电磁构件
 	create.sequenced_assembly([
 		'new_create:inductive_mechanism'
@@ -673,20 +643,11 @@ ServerEvents.recipes(e => {
 	], {
 		A: 'create:shaft',
 		B: '#forge:plates/iron',
-		C: 'create_dd:calculation_mechanism',
+		C: 'new_create:calculation_mechanism',
 		D: 'create:andesite_alloy',
 		E: '#forge:plates/zinc',
-		F: 'create_dd:industrial_casing'
+		F: 'new_create:industrial_casing'
 	})
-
-	// 集成构建
-	create.sequenced_assembly(
-		'create_dd:integrated_mechanism',
-		'create_dd:integrated_circuit', [
-		create.deploying('create_dd:integrated_circuit', ['create_dd:integrated_circuit', 'create:electron_tube']),
-		create.deploying('create_dd:integrated_circuit', ['create_dd:integrated_circuit', '#forge:gears/gold']),
-		create.deploying('create_dd:integrated_circuit', ['create_dd:integrated_circuit', 'minecraft:lapis_lazuli'])
-	]).loops(1).transitionalItem('create_dd:integrated_mechanism')
 
 	// 分馏控制器
 	kubejs.shaped('4x createdieselgenerators:distillation_controller', [
@@ -722,13 +683,13 @@ ServerEvents.recipes(e => {
 
 	// 机器框架
 	create.item_application('thermal:machine_frame', [
-		'create_dd:steel_casing',
+		'new_create:steel_casing',
 		'thermal:rf_coil'
 	])
 
 	// 智能构建
 	create.sequenced_assembly([
-		'create_dd:calculation_mechanism'
+		'new_create:calculation_mechanism'
 	], '#forge:plates/steel', [
 		create.pressing('#forge:plates/steel', '#forge:plates/steel'),
 		create.deploying('#forge:plates/steel', ['immersiveengineering:plate_duroplast', 'immersiveengineering:plate_duroplast']),
@@ -797,12 +758,12 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
-			"top": { "item": 'create_dd:lapis_sheet' },
+			"top": { "item": 'new_create:lapis_sheet' },
 			"bottom": { "item": 'create_new_age:overcharged_golden_sheet' },
 			"middle": { "item": 'ae2:printed_silicon' },
 		},
 		"mode": "inscribe",
-		"result": { "item": 'create_dd:integrated_circuit' }
+		"result": { "item": 'new_create:integrated_circuit' }
 	}).id('create_dd:sequenced_assembly/integrated_circuit')
 
 	// 造石机
@@ -844,6 +805,11 @@ ServerEvents.recipes(e => {
 		B: 'create:belt_connector'
 	}).id('vintageimprovements:craft/grinder_belt')
 
+	// 秘银板
+	create.pressing('new_create:mithril_sheet', [
+		'new_create:mithril_ingot'
+	])
+
 	// 工作盆盖板 
 	kubejs.shaped('createdieselgenerators:basin_lid', [
 		'CCC',
@@ -852,6 +818,40 @@ ServerEvents.recipes(e => {
 	], {
 		C: 'new_create:charred_cobblestone',
 		I: '#forge:ingots/copper'
+	})
+
+	// 铸造盆
+	kubejs.shaped('2x createmetallurgy:casting_basin', [
+		'A A',
+		'A A',
+		'AAA'
+	], {
+		A: '#forge:ingots/andesite_alloy'
+	}).id('createmetallurgy:casting_basin')
+
+	kubejs.shaped('createmetallurgy:casting_basin', [
+		'C C',
+		'C C',
+		'CCC'
+	], {
+		C: 'new_create:charred_cobblestone'
+	})
+
+	// 铸造台
+	kubejs.shaped('2x createmetallurgy:casting_table', [
+		'AAA',
+		'A A',
+		'A A'
+	], {
+		A: '#forge:ingots/andesite_alloy'
+	}).id('createmetallurgy:casting_table')
+
+	kubejs.shaped('createmetallurgy:casting_table', [
+		'CCC',
+		'C C',
+		'C C'
+	], {
+		C: 'new_create:charred_cobblestone'
 	})
 
 	// 砂带磨床

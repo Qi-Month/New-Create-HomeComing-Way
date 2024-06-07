@@ -1,5 +1,5 @@
 StartupEvents.registry('block', e => {
-	const ModID = 'new_create:'
+	const MODID = 'new_create:'
 	// 工具类型
 	const ToolType = {
 		sword: 'minecraft:mineable/sword',
@@ -13,7 +13,7 @@ StartupEvents.registry('block', e => {
 		wooden: 'minecraft:needs_wooden_tool',
 		stone: 'minecraft:needs_stone_tool',
 		iron: 'minecraft:needs_iron_tool',
-		golded: 'minecraft:needs_gold_tool',
+		gold: 'minecraft:needs_gold_tool',
 		diamond: 'minecraft:needs_diamond_tool',
 		nether: 'forge:needs_netherite_tool'
 	}
@@ -33,20 +33,21 @@ StartupEvents.registry('block', e => {
 		// 尘土
 		['dust', 'sand', 1, 1, 'shovel', 'wooden'],
 		// 原木堆
-		['log_pile', 'wood', 1.5, 1.5, 'axe', 'wooden']
+		['log_pile', 'wood', 1.5, 1.5, 'axe', 'wooden'],
+		// 工业机壳
+		['industrial_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
+		// 钢机壳
+		['steel_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
 	]
-	Block.forEach(([Name, SoundType, Hardness, ResisTance, Tool, Grade]) => {
-		e.create(ModID + Name)
-			.soundType(SoundType)
-			.hardness(Hardness)
-			.resistance(ResisTance)
-			.tagBlock(ToolType[Tool])
-			.tagBlock(MininGlevel[Grade])
-			.tagItem(ModID + 'items')
-			.tagItem(ModID + 'blocks')
+	Block.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
+		e.create(MODID + name)
+			.soundType(soundType)
+			.hardness(hardness)
+			.resistance(resisTance)
+			.tagBlock(ToolType[tool])
+			.tagBlock(MininGlevel[grade])
+			.tagItem(MODID + 'items')
+			.tagItem(MODID + 'blocks')
 			.requiresTool(true)
 	})
-
-	// 特殊注册
-	e.create('create_dd:striated_ores_ocean')
 })
