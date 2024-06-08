@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:alloy_smelter')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:alloy_smelter')
 		.scene('immersiveengineering:alloy_smelter', '合金窑', 'new_create:ie_2', (scene, utils) => {
 			// 显示底盘
 			scene.showBasePlate()

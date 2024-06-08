@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create(['ae2:crafting_terminal', 'ae2:controller', 'ae2:drive'])
+Ponder.registry((event) => {
+	event.create(['ae2:crafting_terminal', 'ae2:controller', 'ae2:drive'])
 		.scene('ae:storage', '简易存储搭建', 'new_create:storage', (scene, utils) => {
 			// 
 			scene.showBasePlate()

@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:diesel_generator')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:diesel_generator')
 		.scene('immersiveengineering:diesel_generator', '柴油发电机', 'new_create:ie_1', (scene, utils) => {
 			// 钢脚手架
 			const steel_scaffolding_standard = 'immersiveengineering:steel_scaffolding_standard'

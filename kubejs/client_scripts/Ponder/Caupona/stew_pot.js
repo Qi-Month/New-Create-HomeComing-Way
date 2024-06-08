@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create([
+Ponder.registry((event) => {
+	event.create([
 		'caupona:mud_kitchen_stove',
 		'caupona:stone_brick_kitchen_stove',
 		'caupona:brick_kitchen_stove',

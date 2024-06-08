@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:fermenter')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:fermenter')
 		.scene('immersiveengineering:fermenter', '工业发酵机', 'new_create:ie_1', (scene, utils) => {
 			// 钢脚手架
 			const steel_scaffolding_standard = 'immersiveengineering:steel_scaffolding_standard'

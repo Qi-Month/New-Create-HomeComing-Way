@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:refinery')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:refinery')
 		.scene('immersiveengineering:refinery', '炼油厂', 'new_create:ie_1', (scene, utils) => {
 			// 红石工程块
 			const rs_engineering = 'immersiveengineering:rs_engineering'

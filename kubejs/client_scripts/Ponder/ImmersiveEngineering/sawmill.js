@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:sawmill')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:sawmill')
 		.scene('immersiveengineering:sawmill', '锯木机', 'new_create:ie_1', (scene, utils) => {
 			// 红石工程块
 			const rs_engineering = 'immersiveengineering:rs_engineering'

@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create(['minecraft:campfire', 'new_create:tinder'])
+Ponder.registry((event) => {
+	event.create(['minecraft:campfire', 'new_create:tinder'])
 		.scene('minecraft:stick', '生火', (scene, until) => {
 			scene.showBasePlate()
 			scene.idle(20)

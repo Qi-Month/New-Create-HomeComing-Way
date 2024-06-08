@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:coke_oven')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:coke_oven')
 		.scene('immersiveengineering:coke_oven', '焦炉', 'new_create:ie_1', (scene, utils) => {
 			// 显示底盘
 			scene.showBasePlate()

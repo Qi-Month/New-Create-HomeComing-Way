@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:auto_workbench')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:auto_workbench')
 		.scene('immersiveengineering:auto_workbench', '自动化工程师装配台', 'new_create:ie_1', (scene, utils) => {
 			// 防腐木半砖
 			const slab_treated_wood_horizontal = 'immersiveengineering:slab_treated_wood_horizontal'

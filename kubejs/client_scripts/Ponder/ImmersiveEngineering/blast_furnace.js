@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:blast_furnace')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:blast_furnace')
 		.scene('immersiveengineering:blast_furnace', '高炉', 'new_create:ie_1', (scene, utils) => {
 			// 显示底盘
 			scene.showBasePlate()

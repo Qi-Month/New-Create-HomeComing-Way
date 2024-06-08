@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:squeezer')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:squeezer')
 		.scene('immersiveengineering:squeezer', '工业挤压机', 'new_create:ie_1', (scene, utils) => {
 			// 钢脚手架
 			const steel_scaffolding_standard = 'immersiveengineering:steel_scaffolding_standard'

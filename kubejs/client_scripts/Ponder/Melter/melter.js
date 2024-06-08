@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('melter:melter')
+Ponder.registry((event) => {
+	event.create('melter:melter')
 		// 搭建
 		.scene('melter:melter', '搭建', 'new_create:melter', (scene, utils) => {
 			scene.showBasePlate()

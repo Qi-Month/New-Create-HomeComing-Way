@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('new_create:furnace_core')
+Ponder.registry((event) => {
+	event.create('new_create:furnace_core')
 		.scene('new_create:furnace_core', '熔炉核心合成', 'new_create:furnace_core', (scene, utils) => {
 			scene.showBasePlate()
 			scene.idle(20)

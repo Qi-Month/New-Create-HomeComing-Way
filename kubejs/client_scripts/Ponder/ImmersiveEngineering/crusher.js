@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:crusher')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:crusher')
 		.scene('immersiveengineering:crusher', '粉碎机', 'new_create:ie_1', (scene, utils) => {
 			// 红石工程块
 			const rs_engineering = 'immersiveengineering:rs_engineering'

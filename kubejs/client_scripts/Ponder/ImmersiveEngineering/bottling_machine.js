@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:bottling_machine')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:bottling_machine')
 		.scene('immersiveengineering:bottling_machine', '灌装机', 'new_create:ie_1', (scene, utils) => {
 			// 钢脚手架
 			const steel_scaffolding_standard = 'immersiveengineering:steel_scaffolding_standard'

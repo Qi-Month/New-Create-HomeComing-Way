@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:assembler')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:assembler')
 		.scene('immersiveengineering:assembler', '装配机', 'new_create:ie_1', (scene, utils) => {
 			// 铁板块
 			const sheetmetal_iron = 'immersiveengineering:sheetmetal_iron'

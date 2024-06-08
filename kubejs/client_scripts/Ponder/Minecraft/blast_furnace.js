@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('minecraft:blast_furnace')
+Ponder.registry((event) => {
+	event.create('minecraft:blast_furnace')
 		.scene('minecraft:blast_furnace', '原版高炉建造', 'new_create:blast_furnace', (scene, utils) => {
 			// 底盘
 			// scene.configureBasePlate(0, 0, 5)

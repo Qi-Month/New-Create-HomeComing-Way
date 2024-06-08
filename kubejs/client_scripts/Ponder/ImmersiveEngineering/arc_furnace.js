@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:arc_furnace')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:arc_furnace')
 		.scene('immersiveengineering:arc_furnace', '电弧炉', 'new_create:ie_1', (scene, utils) => {
 			// 炼药锅
 			const cauldron = 'minecraft:cauldron'

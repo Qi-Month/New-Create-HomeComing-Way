@@ -1,5 +1,5 @@
-Ponder.registry(e => {
-	e.create('immersiveengineering:metal_press')
+Ponder.registry((event) => {
+	event.create('immersiveengineering:metal_press')
 		.scene(
 			'immersiveengineering:metal_press',
 			'金属冲压机',
