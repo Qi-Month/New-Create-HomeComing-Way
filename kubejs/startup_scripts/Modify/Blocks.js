@@ -1,10 +1,10 @@
-BlockEvents.modification(e => {
+BlockEvents.modification((event) => {
 	// Fix
-	e.modify('melter:melter', modify => {
+	event.modify('melter:melter', modify => {
 		modify.destroySpeed = 1
 	})
 })
-BlockEvents.modification(e => {
+BlockEvents.modification((event) => {
 	let woodsNameSpace = [
 		'dark_oak', 'oak', 'acacia', 'birch', 'jungle',
 		'spruce', 'mangrove', 'cherry', 'coconut', 'walnut',
@@ -32,7 +32,7 @@ BlockEvents.modification(e => {
 		'warped_stem', 'stripped_warped_stem', 'warped_hyphae', 'stripped_warped_hyphae'
 	]
 	woods.forEach(name => {
-		e.modify(`minecraft:${name}`, modify => {
+		event.modify(`minecraft:${name}`, modify => {
 			modify.requiresTool = true
 		})
 	})

@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	const { create } = e.recipes
 	// 铸模声明
 	const cast = {
@@ -19,7 +19,7 @@ ServerEvents.recipes(e => {
 		['forge:nuggets', 'createmetallurgy:graphite_nugget_mold']
 	]
 	castRecipes.forEach(([tag, results]) => {
-		e.custom({
+		event.custom({
 			"type": "createmetallurgy:casting_in_table",
 			"ingredients": [
 				{ "fluid": "createmetallurgy:molten_gold", "amount": 90 },
@@ -38,7 +38,7 @@ ServerEvents.recipes(e => {
 		['createmetallurgy:molten_brass', 90, 'ingot', 'create:brass_ingot', 90]
 	]
 	tableRecipes.forEach(([fluid, amount, mold, results, time]) => {
-		e.custom({
+		event.custom({
 			"type": "createmetallurgy:casting_in_table",
 			"ingredients": [
 				{ "fluid": fluid, "amount": amount },
@@ -54,7 +54,7 @@ ServerEvents.recipes(e => {
 
 	]
 	basinRecipes.forEach(([fluid, amount, results, time]) => {
-		e.custom({
+		event.custom({
 			"type": "createmetallurgy:casting_in_basin",
 			"ingredients": [{ "fluid": fluid, "amount": amount }],
 			"results": [{ "item": results }],
@@ -68,7 +68,7 @@ ServerEvents.recipes(e => {
 		['forge:graphite_molds', 'createmetallurgy:molten_gold', 90, 'heated', 90]
 	]
 	meltingRecipes.forEach(([tag, fluid, amount, heatedType, time]) => {
-		e.custom({
+		event.custom({
 			"type": "createmetallurgy:melting",
 			"ingredients": [{ "tag": tag }],
 			"results": [{ "fluid": fluid, "amount": amount }],

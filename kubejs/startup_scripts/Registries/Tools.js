@@ -1,4 +1,4 @@
-StartupEvents.registry('item', e => {
+StartupEvents.registry('item', (event) => {
 	const MODID = 'new_create:'
 	let tool = [
 		// 燧石剑
@@ -48,7 +48,7 @@ StartupEvents.registry('item', e => {
 		speed, // 挖掘速度
 		setlevel // 工具等级
 	]) => {
-		e.create(MODID + name, type)
+		event.create(MODID + name, type)
 			.attackDamageBaseline(damage)
 			.rarity(rarity)
 			.glow(glow)
@@ -66,7 +66,7 @@ StartupEvents.registry('item', e => {
 	// 特殊注册
 
 	// 火绒
-	e.create(MODID + 'tinder', 'axe')
+	event.create(MODID + 'tinder', 'axe')
 		.attackDamageBaseline(-1)
 		.rarity('common')
 		.glow(false)
@@ -74,7 +74,7 @@ StartupEvents.registry('item', e => {
 		.tag('forge:tools')
 		.tag(MODID + 'items')
 		.tag(MODID + 'tools')
-		.modifyTier(tool => { 
+		.modifyTier(tool => {
 			tool.uses = 8
 		})
 })

@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	const {
 		create,
 		create_mechanical_extruder,
@@ -7,10 +7,10 @@ ServerEvents.recipes(e => {
 		melter,
 		minecraft,
 		thermal
-	} = e.recipes
+	} = event.recipes
 
 	// 木板
-	e.forEachRecipe({
+	event.forEachRecipe({
 		type: 'crafting_shapeless',
 		input: '#minecraft:logs',
 		output: '#minecraft:planks'

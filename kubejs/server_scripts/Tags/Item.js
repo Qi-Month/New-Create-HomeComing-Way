@@ -1,6 +1,6 @@
-ServerEvents.tags('item', e => {
+ServerEvents.tags('item', (event) => {
 	// 木质工具
-	e.add('forge:tools/wooden', [
+	event.add('forge:tools/wooden', [
 		'minecraft:wooden_shovel',
 		'minecraft:wooden_pickaxe',
 		'minecraft:wooden_axe',
@@ -10,17 +10,17 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 线
-	e.add('forge:string', [
+	event.add('forge:string', [
 		'new_create:grass_string'
 	])
 
 	//烧焦圆石
-	e.add('forge:cobblestone', [
+	event.add('forge:cobblestone', [
 		'new_create:charred_cobblestone'
 	])
 
 	// 草
-	e.add('new_create:grass', [
+	event.add('new_create:grass', [
 		'minecraft:grass',
 		'minecraft:fern',
 		'minecraft:tall_grass',
@@ -30,37 +30,37 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 锯子
-	e.add('new_create:saw', [
+	event.add('new_create:saw', [
 		'new_create:flint_saw',
 		'new_create:iron_saw',
 		'new_create:diamond_saw'
 	])
 
 	// 锤子
-	e.add('new_create:hammer', [
+	event.add('new_create:hammer', [
 		'new_create:stone_hammer',
 		'new_create:iron_hammer',
 		'new_create:diamond_hammer'
 	])
 
 	// 工具
-	e.add('new_create:tools', [
+	event.add('new_create:tools', [
 		'#forge:hammer',
 		'#forge:saw'
 	])
 
-	e.add('forge:tools', [
+	event.add('forge:tools', [
 		'#new_create:tools'
 	])
 
 	//合成轴承
-	e.add('create:shaft_add', [
+	event.add('create:shaft_add', [
 		'new_create:primary_bearing',
 		'create:shaft'
 	])
 
 	// 铜工具
-	e.add('forge:tools/copper', [
+	event.add('forge:tools/copper', [
 		'create_sa:copper_sword',
 		'create_sa:copper_pickaxe',
 		'create_sa:copper_axe',
@@ -69,7 +69,7 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 燧石工具
-	e.add('forge:tools/flint', [
+	event.add('forge:tools/flint', [
 		'new_create:flint_sword',
 		'new_create:flint_pickaxe',
 		'new_create:flint_axe',
@@ -78,24 +78,24 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 安山金属粒
-	e.add('forge:andesite/nuggets', [
+	event.add('forge:andesite/nuggets', [
 		'#forge:nuggets/iron',
 		'#forge:nuggets/zinc'
 	])
 
 	// 橡胶
-	e.add('forge:cured_rubber', [
+	event.add('forge:cured_rubber', [
 		'thermal:cured_rubber',
 		'create_dd:rubber'
 	])
 
 	// 光辉石
-	e.add('forge:ingots/refined_radiance', [
+	event.add('forge:ingots/refined_radiance', [
 		'create:refined_radiance'
 	])
 
 	// 冲压模具
-	e.add('immersiveengineering:mold', [
+	event.add('immersiveengineering:mold', [
 		'immersiveengineering:mold_unpacking',
 		'immersiveengineering:mold_plate',
 		'immersiveengineering:mold_gear',
@@ -108,65 +108,65 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 杂酚油桶
-	e.add('forge:creosote_bucket', [
+	event.add('forge:creosote_bucket', [
 		'thermal:creosote_bucket',
 		'immersiveengineering:creosote_bucket',
 		'new_create:embalming_fluid_bucket'
 	])
 
 	// 铸铁锭
-	e.add('forge:ingots/cast_iron', [
+	event.add('forge:ingots/cast_iron', [
 		'new_create:cast_iron_ingot'
 	])
 
 	// 铸铁块
-	e.add('forge:storage_blocks/cast_iron', [
+	event.add('forge:storage_blocks/cast_iron', [
 		'new_create:cast_iron_block'
 	])
 
 	// 铸铁板
-	e.add('forge:plates/cast_iron', [
+	event.add('forge:plates/cast_iron', [
 		'new_create:cast_iron_sheet'
 	])
 
 	// 机壳
-	e.add('create:casing', [
+	event.add('create:casing', [
 		'new_create:cast_iron_casing'
 	])
 
 	// 石英
-	e.add('forge:gems/quartz', [
+	event.add('forge:gems/quartz', [
 		'new_create:pure_quartz'
 	])
 
 	// 硅
-	e.add('forge:silicon', [
+	event.add('forge:silicon', [
 		'new_create:silicon_crystal'
 	])
 
 	// 沙子
-	e.add('forge:sand', [
+	event.add('forge:sand', [
 		'#minecraft:sand'
 	])
 
 	// 汤锅
-	e.add('caupona:stew_pot', [
+	event.add('caupona:stew_pot', [
 		'caupona:stew_pot',
 		'caupona:lead_stew_pot'
 	])
 
 	// 秘银锭
-	e.add('forge:ingots/mithril', [
+	event.add('forge:ingots/mithril', [
 		'new_create:mithril_ingot'
 	])
 
 	// 秘银板
-	e.add('forge:plates/mithril', [
+	event.add('forge:plates/mithril', [
 		'new_create:mithril_sheet'
 	])
 
 	// 空气
-	e.add('minecraft:air', [
+	event.add('minecraft:air', [
 		'minecraft:air'
 	])
 })

@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	const {
 		create,
 		create_mechanical_extruder,
@@ -7,7 +7,7 @@ ServerEvents.recipes(e => {
 		melter,
 		minecraft,
 		thermal
-	} = e.recipes
+	} = event.recipes
 
 	// 橡胶
 	create.compacting('2x thermal:rubber', [
@@ -47,7 +47,7 @@ ServerEvents.recipes(e => {
 	}).id('thermal:device_tree_extractor')
 
 	// 樱花
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:cherry_log',
 		"leaves": 'minecraft:cherry_leaves',
@@ -55,7 +55,7 @@ ServerEvents.recipes(e => {
 	}).id('thermal:devices/tree_extractor/tree_extractor_cherry')
 
 	//金合欢
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:acacia_log',
 		"leaves": 'minecraft:acacia_leaves',
@@ -63,7 +63,7 @@ ServerEvents.recipes(e => {
 	}).id('thermal:devices/tree_extractor/tree_extractor_acacia')
 
 	// 白桦
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:birch_log',
 		"leaves": 'minecraft:birch_leaves',
@@ -71,7 +71,7 @@ ServerEvents.recipes(e => {
 	}).id('thermal:devices/tree_extractor/tree_extractor_birch')
 
 	// 橡树
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:oak_log',
 		"leaves": 'minecraft:oak_leaves',
@@ -79,7 +79,7 @@ ServerEvents.recipes(e => {
 	}).id('thermal:devices/tree_extractor/tree_extractor_oak')
 
 	// 云杉
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:spruce_log',
 		"leaves": 'minecraft:spruce_leaves',
@@ -87,7 +87,7 @@ ServerEvents.recipes(e => {
 	}).id('thermal:devices/tree_extractor/tree_extractor_spruce')
 
 	//丛林
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": "minecraft:jungle_log",
 		"leaves": "minecraft:jungle_leaves",
@@ -95,7 +95,7 @@ ServerEvents.recipes(e => {
 	})
 
 	//深色
-	e.custom({
+	event.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": "minecraft:dark_oak_log",
 		"leaves": "minecraft:dark_oak_leaves",
@@ -220,7 +220,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 灵魂沙粉末
-	e.custom({
+	event.custom({
 		"type": "vintageimprovements:vibrating",
 		"ingredients": [{ "tag": "minecraft:soul_fire_base_blocks" }],
 		"results": [

@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	const {
 		create,
 		create_mechanical_extruder,
@@ -7,10 +7,10 @@ ServerEvents.recipes(e => {
 		melter,
 		minecraft,
 		thermal
-	} = e.recipes
+	} = event.recipes
 
 	// 铜锭
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": "forge:raw_materials/copper" },
 		"input1": { "tag": "minecraft:coals" },
@@ -19,7 +19,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铸铁
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": "forge:ingots/iron" },
 		"input1": { "tag": "forge:ingots/iron" },
@@ -28,7 +28,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铸铁板
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": "forge:plates/iron" },
 		"input1": { "tag": "forge:plates/iron" },
@@ -90,7 +90,7 @@ ServerEvents.recipes(e => {
 	]).id('createaddition:create.filling/treated_wood_planks')
 
 	// 锡锭
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": { "item": 'create:crushed_raw_tin' },
 		"input1": { "tag": "minecraft:coals" },
@@ -99,7 +99,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 青铜锭
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": 'forge:ingots/copper', "count": 3 },
 		"input1": { "tag": 'forge:ingots/tin' },
@@ -130,7 +130,7 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:crafting/cokebrick')
 
 	// 矿渣
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:blast_furnace",
 		"input": { "tag": "minecraft:logs" },
 		"result": { "item": "thermal:coal_coke" },
@@ -163,7 +163,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 混合汽油
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:refinery",
 		"energy": 240,
 		"input0": { "tag": "forge:industrial_fuel", "amount": 20 },
@@ -172,7 +172,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 真空管
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:blueprint",
 		"category": "components",
 		"inputs": [
@@ -213,7 +213,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 高级精炼油
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:mixer",
 		"energy": 2000,
 		"fluid": { "tag": 'thermal:refined_fuel', "amount": 500 },
@@ -222,7 +222,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 秘银溶液
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:mixer",
 		"energy": 2000,
 		"fluid": { "amount": 250, "tag": 'forge:high_grade_refined_oil' },
@@ -237,7 +237,7 @@ ServerEvents.recipes(e => {
 	]).heated()
 
 	// 粗硅
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:arc_furnace",
 		"additives": [{ "tag": "forge:dusts/coal_coke" }],
 		"input": { "item": "new_create:pure_quartz" },

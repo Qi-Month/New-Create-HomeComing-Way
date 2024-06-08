@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	const {
 		create,
 		create_mechanical_extruder,
@@ -10,7 +10,7 @@ ServerEvents.recipes(e => {
 	} = e.recipes
 
 	// 硅板
-	e.custom({
+	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
 			"middle": { "item": "new_create:silicon_crystal" },

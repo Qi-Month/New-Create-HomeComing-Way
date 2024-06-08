@@ -1,4 +1,4 @@
-StartupEvents.registry('block', e => {
+StartupEvents.registry('block', (event) => {
 	const MODID = 'new_create:'
 	// 工具类型
 	const ToolType = {
@@ -40,7 +40,7 @@ StartupEvents.registry('block', e => {
 		['steel_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
 	]
 	Block.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
-		e.create(MODID + name)
+		event.create(MODID + name)
 			.soundType(soundType)
 			.hardness(hardness)
 			.resistance(resisTance)

@@ -1,6 +1,6 @@
 let Timeout = false
 
-BlockEvents.leftClicked(event => {
+BlockEvents.leftClicked((event) => {
 	const { player, block, server } = event
 
 	if (Timeout) {

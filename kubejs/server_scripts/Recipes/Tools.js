@@ -1,6 +1,6 @@
-ServerEvents.recipes(e => {
-	const { shaped, shapeless } = e.recipes.kubejs
-	const { campfire_cooking } = e.recipes.minecraft
+ServerEvents.recipes((event) => {
+	const { shaped, shapeless } = event.recipes.kubejs
+	const { campfire_cooking } = event.recipes.minecraft
 
 	// 燧石剑
 	shaped('new_create:flint_sword', [

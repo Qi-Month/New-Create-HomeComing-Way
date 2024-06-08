@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	// 删除Item
 	let Output = [
 		'#forge:tools/wooden',
@@ -123,7 +123,7 @@ ServerEvents.recipes(e => {
 		'ae2:charger'
 	]
 	Output.forEach(Item => {
-		e.remove({ output: Item })
+		event.remove({ output: Item })
 	})
 
 	// Input
@@ -131,7 +131,7 @@ ServerEvents.recipes(e => {
 
 	]
 	Input.forEach(Item => {
-		e.remove({ input: Item })
+		event.remove({ input: Item })
 	})
 
 	// Thermal Mechines
@@ -143,7 +143,7 @@ ServerEvents.recipes(e => {
 		'thermal:machine_centrifuge', 'thermal:machine_insolator', 'thermal:machine_smelter',
 	]
 	ThermalMechines.forEach(remove => {
-		e.remove({ output: remove })
+		event.remove({ output: remove })
 	})
 
 	// 删除id
@@ -178,7 +178,7 @@ ServerEvents.recipes(e => {
 		'createmetallurgy:alloying/alloying_steel'
 	]
 	Remove_ID.forEach(ID => {
-		e.remove({ id: ID })
+		event.remove({ id: ID })
 	})
 
 	// Mek
@@ -186,7 +186,7 @@ ServerEvents.recipes(e => {
 
 	]
 	MekItem.forEach(Item => {
-		e.remove({ output: Item })
+		event.remove({ output: Item })
 	})
 
 	// Type
@@ -197,17 +197,17 @@ ServerEvents.recipes(e => {
 		'createmetallurgy:melting'
 	]
 	RemoveType.forEach(Type => {
-		e.remove({ type: Type })
+		event.remove({ type: Type })
 	})
 
 	// 移除所有工作台合成齿轮配方
-	e.remove({ output: '#forge:gears', type: "minecraft:crafting_shaped" })
+	event.remove({ output: '#forge:gears', type: "minecraft:crafting_shaped" })
 
 	// Mod合成表
 	let RemoveModsRecipes = [
 
 	]
 	RemoveModsRecipes.forEach(Type => {
-		e.remove({ mod: Type })
+		event.remove({ mod: Type })
 	})
 })

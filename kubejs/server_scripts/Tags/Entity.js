@@ -1,3 +1,3 @@
-ServerEvents.tags('entity_type', e => {
+ServerEvents.tags('entity_type', (event) => {
 
 })

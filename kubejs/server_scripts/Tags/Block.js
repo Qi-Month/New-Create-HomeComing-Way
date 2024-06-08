@@ -1,6 +1,6 @@
-ServerEvents.tags('block', e => {
+ServerEvents.tags('block', (event) => {
 	// 扳手可拆卸
-	e.add('create:wrench_pickup', [
+	event.add('create:wrench_pickup', [
 		'new_create:cast_iron_casing',
 		'flopper:flopper',
 		'#caupona:stew_pot',
@@ -9,10 +9,10 @@ ServerEvents.tags('block', e => {
 	])
 
 	// 木镐
-	e.add('minecraft:needs_wooden_tool', [
+	event.add('minecraft:needs_wooden_tool', [
 		'flopper:flopper'
 	])
-	e.add('minecraft:mineable/pickaxe', [
+	event.add('minecraft:mineable/pickaxe', [
 		'flopper:flopper'
 	])
 })

@@ -1,4 +1,4 @@
-StartupEvents.registry('item', e => {
+StartupEvents.registry('item', (event) => {
 	const MODID = 'new_create:'
 	let item = [
 		['flint_knapp', 'common', false], // 燧石碎片
@@ -54,7 +54,7 @@ StartupEvents.registry('item', e => {
 		['integrated_circuit', 'common', false], // 集成电路板
 	]
 	item.forEach(([name, rarity, glow]) => {
-		e.create(MODID + name)
+		event.create(MODID + name)
 			.rarity(rarity)
 			.glow(glow)
 			.tag(MODID + 'items')
@@ -71,7 +71,7 @@ StartupEvents.registry('item', e => {
 		'sturdy_mechanism', // 坚固构件(未完成)
 	]
 	inItem.forEach(name => {
-		e.create(MODID + 'in_' + name, 'create:sequenced_assembly')
+		event.create(MODID + 'in_' + name, 'create:sequenced_assembly')
 			.tag(MODID + 'items')
 			.tag(MODID + 'incomplete_items')
 	})

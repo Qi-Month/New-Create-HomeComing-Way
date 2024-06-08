@@ -1,5 +1,5 @@
-BlockEvents.rightClicked(e => {
-	const { player, block, item } = e
+BlockEvents.rightClicked((event) => {
+	const { player, block, item } = event
 
 	// Fire!!!😡😡😡😡
 	let RightClickEvents = (BlockId, BlockSet) => {

@@ -1,4 +1,4 @@
-StartupEvents.registry('fluid', e => {
+StartupEvents.registry('fluid', (event) => {
 	const MODID = 'new_create:'
 	let fluid = [
 		// 安山合金溶液
@@ -41,7 +41,7 @@ StartupEvents.registry('fluid', e => {
 		['bronze', 0xC48C5E]
 	]
 	moltenFluid.forEach(([name, color]) => {
-		e.create(MODID + 'molten_' + name)
+		event.create(MODID + 'molten_' + name)
 			.thickTexture(color)
 			.bucketColor(color)
 			.flowingTexture(MODID + 'fluid/flowing')
@@ -52,7 +52,7 @@ StartupEvents.registry('fluid', e => {
 	// 特殊注册
 
 	// 液态灵魂
-	e.create(MODID + 'soul')
+	event.create(MODID + 'soul')
 		.tag(MODID + 'fluid')
 		.noBucket()
 		.noBlock()
@@ -60,14 +60,14 @@ StartupEvents.registry('fluid', e => {
 		.stillTexture(MODID + 'fluid/soul_still')
 
 	// 熔融玻璃
-	e.create(MODID + 'glass')
+	event.create(MODID + 'glass')
 		.tag(MODID + 'fluid')
 		.noBlock()
 		.flowingTexture(MODID + 'fluid/glass_flowing')
 		.stillTexture(MODID + 'fluid/glass_still')
 
 	// 鸡蛋混合液
-	e.create(MODID + 'egg_mixture_fluid')
+	event.create(MODID + 'egg_mixture_fluid')
 		.tag(MODID + 'fluid')
 		.noBlock()
 		.flowingTexture(MODID + 'fluid/egg_mixture_fluid_flowing')

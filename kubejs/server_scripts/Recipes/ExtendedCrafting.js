@@ -1,5 +1,5 @@
-ServerEvents.recipes(e => {
-	const { shaped_table, shapeless_table } = e.recipes.extendedcrafting
+ServerEvents.recipes((event) => {
+	const { shaped_table, shapeless_table } = event.recipes.extendedcrafting
 
 	// 动力搅拌机
 	shaped_table('create:mechanical_mixer', [

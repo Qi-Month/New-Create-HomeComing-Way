@@ -1,6 +1,6 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((event) => {
 	// 充电金锭
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "item": "minecraft:gold_ingot" },
 		"result": { "item": 'create_new_age:overcharged_gold' },
@@ -9,7 +9,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 充电铁锭
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "item": "minecraft:iron_ingot" },
 		"result": { "item": 'create_new_age:overcharged_iron' },
@@ -18,7 +18,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 充电钻石
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "item": "minecraft:diamond" },
 		"result": { "item": 'create_new_age:overcharged_diamond' },
@@ -27,7 +27,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 充电金板
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "tag": 'forge:plates/gold' },
 		"result": { "item": 'create_new_age:overcharged_golden_sheet' },
@@ -36,7 +36,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 充电铁板
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "tag": 'forge:plates/iron' },
 		"result": { "item": 'create_new_age:overcharged_iron_sheet' },
@@ -45,7 +45,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 充能赛特斯石英水晶
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "item": 'ae2:certus_quartz_crystal' },
 		"result": { "item": 'ae2:charged_certus_quartz_crystal' },
@@ -54,7 +54,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 红石工程块
-	e.custom({
+	event.custom({
 		"type": "createaddition:charging",
 		"input": { "item": 'immersiveengineering:heavy_engineering' },
 		"result": { "item": 'immersiveengineering:rs_engineering', "count": 2 },
@@ -63,7 +63,7 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:crafting/rs_engineering')
 
 	// 原油蒸馏
-	e.custom({
+	event.custom({
 		"type": "createdieselgenerators:distillation",
 		"ingredients": [{ "fluidTag": "forge:crude_oil", "amount": 200 }],
 		"heatRequirement": "heated",

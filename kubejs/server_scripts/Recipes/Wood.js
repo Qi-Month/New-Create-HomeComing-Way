@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
 	let logIDs = Ingredient.of('#minecraft:logs').getItemIds()
 	let Recipes = logIDs.map(logID => {
 		let [namespace, item] = logID.split(':')

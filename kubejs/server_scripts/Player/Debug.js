@@ -1,6 +1,6 @@
 const playerName = [/* "toleave" , */ "Qi_Month"]
-ItemEvents.rightClicked(e => {
-	const { item, player, server } = e
+ItemEvents.rightClicked((event) => {
+	const { item, player, server } = event
 	const itemID = item.id
 
 	for (let i = 0; i < playerName.length; i++) {
