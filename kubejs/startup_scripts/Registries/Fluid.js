@@ -35,6 +35,20 @@ StartupEvents.registry('fluid', e => {
 			.tag(MODID + 'fluid')
 	})
 
+	// 金属
+	let moltenFluid = [
+		// 青铜
+		['bronze', 0xC48C5E]
+	]
+	moltenFluid.forEach(([name, color]) => {
+		e.create(MODID + 'molten_' + name)
+			.thickTexture(color)
+			.bucketColor(color)
+			.flowingTexture(MODID + 'fluid/flowing')
+			.stillTexture(MODID + 'fluid/still')
+			.tag(MODID + 'fluid')
+	})
+
 	// 特殊注册
 
 	// 液态灵魂

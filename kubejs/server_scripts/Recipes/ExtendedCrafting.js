@@ -62,7 +62,7 @@ ServerEvents.recipes(e => {
 		C: '#forge:ingots/brass',
 		D: 'create:brass_hand',
 		E: '#minecraft:planks',
-		F: '#forge:ingots/andesite_alloy'
+		F: 'create:andesite_alloy'
 	})
 
 	// 轧机
@@ -76,7 +76,7 @@ ServerEvents.recipes(e => {
 		B: 'create:shaft',
 		C: 'create:andesite_casing',
 		D: 'new_create:carbon_plate',
-		E: '#forge:ingots/andesite_alloy'
+		E: 'create:andesite_alloy'
 	})
 
 	// 电容

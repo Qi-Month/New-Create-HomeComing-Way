@@ -113,6 +113,7 @@ ServerEvents.recipes(e => {
 		'create_dd:mithril_ingot',
 		'thermal:emerald_dust',
 		'thermal:device_rock_gen',
+		'#forge:graphite_molds',
 		'thermal:rose_gold_ingot',
 		'thermal:fluid_cell_frame',
 		'thermal_extra:soul_sand_dust',
@@ -193,6 +194,7 @@ ServerEvents.recipes(e => {
 		'createaddition:charging',
 		'minecraft:smelting',
 		'create_new_age:energising',
+		'createmetallurgy:melting'
 	]
 	RemoveType.forEach(Type => {
 		e.remove({ type: Type })

@@ -154,4 +154,19 @@ ServerEvents.tags('item', e => {
 		'caupona:stew_pot',
 		'caupona:lead_stew_pot'
 	])
+
+	// 秘银锭
+	e.add('forge:ingots/mithril', [
+		'new_create:mithril_ingot'
+	])
+
+	// 秘银板
+	e.add('forge:plates/mithril', [
+		'new_create:mithril_sheet'
+	])
+
+	// 空气
+	e.add('minecraft:air', [
+		'minecraft:air'
+	])
 })

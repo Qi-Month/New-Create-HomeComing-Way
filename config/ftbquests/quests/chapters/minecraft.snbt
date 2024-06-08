@@ -2175,8 +2175,8 @@
 				item: "minecraft:bucket"
 				type: "item"
 			}]
-			x: 43.5d
-			y: 25.0d
+			x: 41.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]

@@ -1,6 +1,6 @@
 StartupEvents.registry('item', e => {
 	const MODID = 'new_create:'
-	let Tool = [
+	let tool = [
 		// 燧石剑
 		['flint_sword', 'sword', 'common', false, 2, 120, 2, 0],
 		// 燧石镐
@@ -38,7 +38,7 @@ StartupEvents.registry('item', e => {
 		// 光辉锹
 		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 12, 4]
 	]
-	Tool.forEach(([
+	tool.forEach(([
 		name, // ItemId
 		type, // 工具类型	
 		rarity, // 稀有度

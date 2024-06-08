@@ -89,15 +89,6 @@ ServerEvents.recipes(e => {
 		'#new_create:hammer'
 	]).damageIngredient('#new_create:hammer')
 
-	// 早期出矿
-	create.milling([
-		Item.of('create:crushed_raw_iron').withChance(0.2),
-		Item.of('create:crushed_raw_copper').withChance(0.3),
-		Item.of('create:crushed_raw_zinc').withChance(0.1),
-		Item.of('create:crushed_raw_tin').withChance(0.25),
-		Item.of('create:crushed_raw_silver').withChance(0.05)
-	], '#forge:gravel')
-
 	// 粗锡=>粉碎锡
 	create.milling([
 		Item.of('2x create:crushed_raw_tin').withCount(1),
@@ -826,7 +817,7 @@ ServerEvents.recipes(e => {
 		'A A',
 		'AAA'
 	], {
-		A: '#forge:ingots/andesite_alloy'
+		A: 'create:andesite_alloy'
 	}).id('createmetallurgy:casting_basin')
 
 	kubejs.shaped('createmetallurgy:casting_basin', [
@@ -843,7 +834,7 @@ ServerEvents.recipes(e => {
 		'A A',
 		'A A'
 	], {
-		A: '#forge:ingots/andesite_alloy'
+		A: 'create:andesite_alloy'
 	}).id('createmetallurgy:casting_table')
 
 	kubejs.shaped('createmetallurgy:casting_table', [
@@ -853,6 +844,24 @@ ServerEvents.recipes(e => {
 	], {
 		C: 'new_create:charred_cobblestone'
 	})
+
+	// 熔铸盖
+	kubejs.shaped('createmetallurgy:glassed_foundry_lid', [
+		'C C',
+		'CGC',
+		'G G'
+	], {
+		C: 'new_create:charred_cobblestone',
+		G: '#forge:glass'
+	})
+
+	kubejs.shaped('createmetallurgy:glassed_foundry_lid', [
+		'AGA',
+		'G G'
+	], {
+		A: 'create:andesite_alloy',
+		G: '#forge:glass'
+	}).id('createmetallurgy:glassed_foundry_lid')
 
 	// 砂带磨床
 	kubejs.shaped('vintageimprovements:belt_grinder', [

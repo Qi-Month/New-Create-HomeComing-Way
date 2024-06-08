@@ -7,7 +7,7 @@ ItemEvents.tooltip(tip => {
 		// 纯净石英
 		['new_create:pure_quartz', 'tooltip.nc.pure_quartz'],
 		// 手枪
-		['immersiveengineering:toolupgrade_revolver_electro', 'tooltip.ie.toolupgrade_revolver_electro'],
+		['immersiveengineering:revolver', 'tooltip.ie.revolver'],
 		// 木棍
 		['minecraft:stick', 'tooltip.mc.stick'],
 		// 熔化锅

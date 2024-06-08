@@ -21,14 +21,14 @@ ServerEvents.recipes(e => {
 	}).id('ae2:inscriber/silicon_print')
 
 	// 压印模板
-	let ProcessorPressRecipes = [
+	let processorPressRecipes = [
 		'ae2:logic_processor_press',
 		'ae2:engineering_processor_press',
 		'ae2:silicon_press',
 		'ae2:calculation_processor_press',
 		'ae2:name_press'
 	]
-	ProcessorPressRecipes.forEach(Output => {
+	processorPressRecipes.forEach(Output => {
 		immersiveengineering.blueprint(Output, [
 			'new_create:processor_press',
 			'immersiveengineering:wirecutter'
