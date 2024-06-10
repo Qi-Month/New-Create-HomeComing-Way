@@ -489,7 +489,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 电镀锌
-	e.custom({
+	event.custom({
 		"type": "create_new_age:energising",
 		"energy_needed": 1200,
 		"ingredients": [{ "tag": "forge:ingots/zinc" }],
@@ -746,7 +746,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 集成电路板
-	e.custom({
+	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
 			"top": { "item": 'new_create:lapis_sheet' },
@@ -771,7 +771,7 @@ ServerEvents.recipes((event) => {
 	}).id('create_mechanical_extruder:mechanical_extruder')
 
 	// 硅晶
-	e.custom({
+	event.custom({
 		"type": "create:sequenced_assembly",
 		"ingredient": { "item": "ae2:silicon" },
 		"results": [{ "item": "new_create:silicon_crystal" }],

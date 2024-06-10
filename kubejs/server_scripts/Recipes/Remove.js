@@ -175,7 +175,8 @@ ServerEvents.recipes((event) => {
 		'create:crushing/moon_iron_ore',
 		'create:crushing/deepslate_iron_ore',
 		'create:crushing/mars_iron_ore',
-		'createmetallurgy:alloying/alloying_steel'
+		'createmetallurgy:alloying/alloying_steel',
+		'createmetallurgy:casting_in_table/casting_gold_plate'
 	]
 	Remove_ID.forEach(ID => {
 		event.remove({ id: ID })

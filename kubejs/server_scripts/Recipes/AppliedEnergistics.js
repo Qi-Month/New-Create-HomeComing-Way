@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		melter,
 		minecraft,
 		thermal
-	} = e.recipes
+	} = event.recipes
 
 	// 硅板
 	event.custom({

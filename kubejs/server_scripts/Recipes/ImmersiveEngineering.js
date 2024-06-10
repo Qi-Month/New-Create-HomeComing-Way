@@ -154,7 +154,7 @@ ServerEvents.recipes((event) => {
 	}).id('immersiveengineering:crafting/conveyor_basic')
 
 	// 金属模具:块
-	e.custom({
+	event.custom({
 		"type": "immersiveengineering:blueprint",
 		"category": "molds",
 		"inputs": [{ "base_ingredient": { "tag": "forge:plates/steel" }, "count": 3 },

@@ -21,7 +21,7 @@ BlockEvents.modification((event) => {
 		]
 
 		logNames.forEach(name => {
-			e.modify(`minecraft:${name}`, modify => {
+			event.modify(`minecraft:${name}`, modify => {
 				modify.requiresTool = true
 			})
 		})

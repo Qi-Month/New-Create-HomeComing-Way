@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 			originalRecipeIngredients,
 			originalRecipeResult
 		} = Recipes
-		e.shapeless(
+		kubejs.shapeless(
 			originalRecipeResult.withCount(2),
 			originalRecipeIngredients.toArray().concat(['#forge:tools/knives'])
 		).damageIngredient('#forge:tools/knives').id(Recipes.getId())
@@ -280,7 +280,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 防腐液 
-	e.custom({
+	event.custom({
 		"type": "caupona:boiling",
 		"from": "thermal:latex",
 		"time": 200,
@@ -288,21 +288,9 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 熔融玻璃
-	melter.melting(Fluid.of('new_create:glass', 500), [
+	melter.melting(Fluid.of('new_create:glass', 405), [
 		'#minecraft:sand'
 	]).minimumHeat(1)
-
-	// 玻璃
-	e.custom({
-		"type": "createdieselgenerators:basin_fermenting",
-		"ingredients": [
-			{ "fluid": "new_create:glass", "amount": 1000 }
-		],
-		"processingTime": 100,
-		"results": [
-			{ "item": "minecraft:glass" }
-		]
-	})
 
 	// 粘土缸→烧制粘土缸
 	minecraft.campfire_cooking('caupona:stew_pot', [
@@ -402,7 +390,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 纯净石英
-	e.custom({
+	event.custom({
 		"type": "vintageimprovements:centrifugation",
 		"ingredients": [{ "tag": "forge:sand" }],
 		"results": [
@@ -423,6 +411,11 @@ ServerEvents.recipes((event) => {
 		C: '#forge:plates/iron'
 	}).id('minecraft:bucket')
 
+	// 铁熔化
+	create.mixing(Fluid.of('createmetallurgy:molten_iron', 90), [
+		'3x create:crushed_raw_iron'
+	]).heatLevel('melt')
+
 	// Fix Thermal tin_block <=> tin_ingot crafting
 	kubejs.shapeless('9x thermal:tin_ingot', [
 		'thermal:tin_block'
@@ -437,7 +430,7 @@ ServerEvents.recipes((event) => {
 	// Fixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Recipes
 	function fixRecipes(Type, Output, Input) {
 		if (Input == null) {
-			return e.forEachRecipe({
+			return event.forEachRecipe({
 				type: Type,
 				output: Output
 			}, Recipes => {
@@ -445,7 +438,7 @@ ServerEvents.recipes((event) => {
 				var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 				kubejs.shapeless(Input, [`9x ${Output}`])
 			})
-		} else return e.forEachRecipe({
+		} else return event.forEachRecipe({
 			type: Type,
 			output: Output,
 			input: Input
@@ -458,7 +451,7 @@ ServerEvents.recipes((event) => {
 
 	// logs => 6x planks for StoneCutting
 	// ☝亖人栗子有中文不用放洋屁☝🤣
-	e.forEachRecipe({
+	event.forEachRecipe({
 		type: 'minecraft:crafting_shapeless',
 		output: '#minecraft:planks',
 		input: '#minecraft:logs'
@@ -469,7 +462,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 粉末处理(高炉)*这个毕竟是遍历的产物,多多少少肯定会有一点冲突的*
-	e.forEachRecipe({
+	event.forEachRecipe({
 		type: 'minecraft:blasting',
 		output: '#forge:ingots',
 		input: '#forge:dusts'

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	const { create } = e.recipes
+	const { create } = event.recipes
 	// 铸模声明
 	const cast = {
 		ingot: 'createmetallurgy:graphite_ingot_mold',
@@ -35,7 +35,9 @@ ServerEvents.recipes((event) => {
 		// 铁锭
 		['createmetallurgy:molten_iron', 90, 'ingot', 'minecraft:iron_ingot', 90],
 		// 黄铜
-		['createmetallurgy:molten_brass', 90, 'ingot', 'create:brass_ingot', 90]
+		['createmetallurgy:molten_brass', 90, 'ingot', 'create:brass_ingot', 90],
+		// 金板修复
+		['createmetallurgy:molten_gold', 90, 'plate', 'create:golden_sheet', 80]
 	]
 	tableRecipes.forEach(([fluid, amount, mold, results, time]) => {
 		event.custom({
@@ -51,7 +53,8 @@ ServerEvents.recipes((event) => {
 
 	// 浇筑盆
 	let basinRecipes = [
-
+		// 玻璃
+		['new_create:glass', 810, 'minecraft:glass', 120]
 	]
 	basinRecipes.forEach(([fluid, amount, results, time]) => {
 		event.custom({

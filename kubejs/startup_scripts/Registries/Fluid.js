@@ -27,7 +27,7 @@ StartupEvents.registry('fluid', (event) => {
 		['rose_gold_fluid', 0xFF69B4],
 	]
 	fluid.forEach(([name, color]) => {
-		e.create(MODID + name)
+		event.create(MODID + name)
 			.thickTexture(color)
 			.bucketColor(color)
 			.flowingTexture(MODID + 'fluid/flowing')
