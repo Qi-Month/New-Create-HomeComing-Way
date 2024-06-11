@@ -12,4 +12,5 @@ BlockEvents.rightClicked((event) => {
 	RightClickEvents('new_create:log_pile', 'minecraft:fire')
 	RightClickEvents('minecraft:campfire', 'minecraft:campfire', { lit: true })
 	RightClickEvents('minecraft:soul_campfire', 'minecraft:soul_campfire', { lit: true })
+	RightClickEvents('minecraft:coal_block', 'new_create:heat_coal_block')
 })

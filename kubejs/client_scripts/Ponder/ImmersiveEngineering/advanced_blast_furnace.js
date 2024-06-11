@@ -5,7 +5,7 @@ Ponder.registry((event) => {
 			scene.showBasePlate()
 			scene.idle(20)
 			//
-			scene.world.setBlocks([4, 1, 4, 6, 3, 6], 'new_create:blastbrick_reinforced')
+			scene.world.setBlocks([4, 1, 4, 6, 3, 6], 'immersiveengineering:blastbrick_reinforced')
 			scene.world.setBlocks([5, 4, 5], 'minecraft:hopper')
 			// 设置坐标数组
 			let blocks = [
@@ -22,10 +22,10 @@ Ponder.registry((event) => {
 				[6, 3, 4], [5, 3, 4], [4, 3, 4],
 			]
 			for (let block of blocks) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
-			scene.world.showSection([5, 4, 5], Direction.down)
+			scene.world.showSection([5, 4, 5], Direction.DOWN)
 			scene.idle(20)
 			// 锤子
 			scene.addKeyframe()

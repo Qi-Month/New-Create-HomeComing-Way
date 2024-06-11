@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 	minecraft.campfire_cooking('thermal:cured_rubber', [
 		'thermal:rubber'
 	]).xp(10)
-	
+
 	minecraft.smoking('thermal:cured_rubber', [
 		'thermal:rubber'
 	])
@@ -218,6 +218,18 @@ ServerEvents.recipes((event) => {
 		D: 'thermal:energy_cell_frame',
 		E: 'new_create:cast_electron_tube'
 	})
+
+	// 斯特林能源炉
+	kubejs.shaped('thermal:dynamo_stirling', [
+		' C ',
+		'IJI',
+		'SSS'
+	], {
+		C: '#forge:ingots/copper',
+		I: '#forge:ingots/iron',
+		S: '#forge:stone',
+		J: 'new_create:charred_cobblestone'
+	}).id('thermal:dynamo_stirling')
 
 	// 灵魂沙粉末
 	event.custom({

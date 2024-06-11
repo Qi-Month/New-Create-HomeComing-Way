@@ -143,7 +143,7 @@ ServerEvents.tags('item', (event) => {
 	event.add('forge:storage_blocks/steel', [
 		'createmetallurgy:steel_block'
 	])
-	
+
 	// 硅
 	event.add('forge:silicon', [
 		'new_create:silicon_crystal'
@@ -152,6 +152,23 @@ ServerEvents.tags('item', (event) => {
 	// 沙子
 	event.add('forge:sand', [
 		'#minecraft:sand'
+	])
+
+	// RS存储元件
+	event.add('refinedstorage:storage_part', [
+		'refinedstorage:1k_storage_part',
+		'refinedstorage:4k_storage_part',
+		'refinedstorage:16k_storage_part',
+		'refinedstorage:64k_storage_part',
+		'refinedstorage:64k_fluid_storage_part',
+		'refinedstorage:256k_fluid_storage_part',
+		'refinedstorage:1024k_fluid_storage_part',
+		'refinedstorage:4096k_fluid_storage_part'
+	])
+
+	// 铁轨
+	event.add('minecraft:rails', [
+		'create:controller_rail'
 	])
 
 	// 汤锅
@@ -163,5 +180,15 @@ ServerEvents.tags('item', (event) => {
 	// 空气
 	event.add('minecraft:air', [
 		'minecraft:air'
+	])
+
+	// Forge锭
+	event.add('forge:ingots', [
+		'#forge:ingots/cast_iron'
+	])
+
+	// Forge板
+	event.add('forge:plates', [
+		'#forge:plates/cast_iron'
 	])
 })

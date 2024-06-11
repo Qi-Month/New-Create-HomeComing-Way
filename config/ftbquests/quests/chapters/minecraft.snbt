@@ -526,7 +526,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 4L
+				count: 8L
 				id: "4BA36E193FA0B561"
 				item: {
 					Count: 1b
@@ -1035,6 +1035,11 @@
 					item: "create:basin"
 					type: "item"
 				}
+				{
+					id: "33F23B625AA5F9A3"
+					item: "new_create:heat_coal_block"
+					type: "item"
+				}
 			]
 			title: "咕噜噜?"
 			x: 38.0d
@@ -1312,7 +1317,7 @@
 					type: "item"
 				}
 			]
-			title: "矿渣"
+			title: "金属冶炼"
 			x: 39.5d
 			y: 25.0d
 		}
@@ -2181,7 +2186,7 @@
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
 			hide: true
-			icon: "new_create:gechangzuguo"
+			icon: "minecraft:jukebox"
 			id: "05FFB9C4A2FC377C"
 			rewards: [
 				{
@@ -2190,19 +2195,20 @@
 					type: "item"
 				}
 				{
-					id: "62557FCC1542010A"
-					item: "new_create:gechangzuguo"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "50BCB8FEE5599039"
+					table_id: 3670173260558797320L
+					type: "choice"
 				}
 			]
 			shape: "gear"
 			size: 3.0d
-			subtitle: "&c五星红旗迎风飘扬"
 			tasks: [{
 				id: "5E77AD93348DFDC3"
+				title: "选一张"
 				type: "checkmark"
 			}]
-			title: "&c红色!"
+			title: "选一张?"
 			x: 30.0d
 			y: 14.0d
 		}
@@ -2316,6 +2322,60 @@
 			title: "&c我不想努力了"
 			x: 46.0d
 			y: 24.5d
+		}
+		{
+			dependencies: ["706944B05AB03623"]
+			id: "1D09EB7F2A052899"
+			rewards: [{
+				count: 16
+				id: "2ED3910B6FF700EF"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "76C7707A779D943F"
+					item: "createmetallurgy:graphite_blank_mold"
+					type: "item"
+				}
+				{
+					id: "3250DA5C7483CAFC"
+					item: "createmetallurgy:graphite_ingot_mold"
+					type: "item"
+				}
+				{
+					id: "452935BB969F51FE"
+					item: "createmetallurgy:graphite_nugget_mold"
+					type: "item"
+				}
+				{
+					id: "395D4882C242F9E9"
+					item: "createmetallurgy:graphite_plate_mold"
+					type: "item"
+				}
+			]
+			title: "匠...匠魂..?"
+			x: 40.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["797CC6360C318986"]
+			description: ["{image:new_create:textures/images/13.png width:150 height:117 align:1}"]
+			id: "58F802CA1B72AB77"
+			rewards: [{
+				id: "54CBDBA008EC3450"
+				type: "xp"
+				xp: 1
+			}]
+			subtitle: "你可以把铁轨丢到加热的工作盆和搅拌器中"
+			tasks: [{
+				id: "1C80AF508F5F5526"
+				title: "还记得匠魂中熔化铁轨的配方吗?"
+				type: "checkmark"
+			}]
+			title: "我该如何大量获得铁和金?"
+			x: 43.5d
+			y: 25.0d
 		}
 	]
 	title: "&6火与石之歌"

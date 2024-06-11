@@ -121,16 +121,9 @@ ServerEvents.recipes((event) => {
 		'G',
 		'C'
 	], {
-		C: '#forge:ingots/copper',
+		C: '#forge:ingots/cast_iron',
 		G: '#forge:glass'
 	}).id('create:crafting/kinetics/fluid_tank')
-
-	// 铁锭
-	create.mixing('minecraft:iron_ingot', [
-		Item.of('create:crushed_raw_iron'),
-		Item.of('#forge:dusts/coal'),
-		Fluid.of('new_create:working_fluid', 250)
-	])
 
 	// 煤粉
 	create.milling([
@@ -150,7 +143,7 @@ ServerEvents.recipes((event) => {
 		'ABA',
 		' A '
 	], {
-		A: "new_create:cast_iron_sheet",
+		A: 'new_create:cast_iron_sheet',
 		B: '#create:shaft_add'
 	})
 
@@ -160,8 +153,8 @@ ServerEvents.recipes((event) => {
 		'ABA',
 		' A '
 	], {
-		A: "new_create:cast_iron_sheet",
-		B: "minecraft:netherrack"
+		A: 'new_create:cast_iron_sheet',
+		B: 'minecraft:netherrack'
 	})
 
 	// 扳手
@@ -203,8 +196,8 @@ ServerEvents.recipes((event) => {
 		'BCB',
 		' R '
 	], {
-		A: "minecraft:copper_ingot",
-		B: "new_create:cast_iron_sheet",
+		A: '#forge:ingots/cast_iron',
+		B: 'new_create:cast_iron_sheet',
 		C: 'create:fluid_tank',
 		R: '#forge:cured_rubber'
 	})
@@ -237,9 +230,9 @@ ServerEvents.recipes((event) => {
 		'DED',
 		'FSF'
 	], {
-		D: "new_create:cast_iron_sheet",
-		E: "new_create:cast_iron_ingot",
-		F: "create:andesite_casing",
+		D: 'new_create:cast_iron_sheet',
+		E: 'new_create:cast_iron_ingot',
+		F: 'create:andesite_casing',
 		S: '#create:shaft_add'
 	})
 
@@ -255,10 +248,10 @@ ServerEvents.recipes((event) => {
 		'BCB',
 		'DDD'
 	], {
-		A: "#minecraft:planks",
-		B: "#minecraft:logs",
-		C: "create:andesite_casing",
-		D: "new_create:charred_cobblestone"
+		A: '#minecraft:planks',
+		B: '#minecraft:logs',
+		C: 'create:andesite_casing',
+		D: 'new_create:charred_cobblestone'
 	})
 
 	// 电子管
@@ -378,7 +371,7 @@ ServerEvents.recipes((event) => {
 	create.compacting('new_create:coking_coal_rod', [
 		'4x immersiveengineering:dust_coke',
 		'#create:shaft_add',
-		Fluid.of("minecraft:lava", 25)
+		Fluid.of('minecraft:lava', 25)
 	]).heated()
 
 	// 发电机线圈
@@ -490,10 +483,10 @@ ServerEvents.recipes((event) => {
 
 	// 电镀锌
 	event.custom({
-		"type": "create_new_age:energising",
-		"energy_needed": 1200,
-		"ingredients": [{ "tag": "forge:ingots/zinc" }],
-		"results": [{ "item": "new_create:plating_zinc_ingot" }]
+		'type': 'create_new_age:energising',
+		'energy_needed': 1200,
+		'ingredients': [{ 'tag': 'forge:ingots/zinc' }],
+		'results': [{ 'item': 'new_create:plating_zinc_ingot' }]
 	})
 
 	// 锌加工液
@@ -572,6 +565,30 @@ ServerEvents.recipes((event) => {
 		Fluid.of('new_create:cast_iron_fluid', 100)
 	])
 
+	// 蒸汽引擎
+	create.sequenced_assembly(
+		'create:steam_engine',
+		'#forge:storage_blocks/cast_iron', [
+		create.pressing('create:steam_engine', [
+			'create:steam_engine'
+		]),
+		create.deploying('create:steam_engine', [
+			'create:steam_engine',
+			'#forge:ingots/brass'
+		]),
+		create.deploying('create:steam_engine', [
+			'create:steam_engine',
+			'#forge:plates/brass'
+		]),
+		create.pressing('create:steam_engine', [
+			'create:steam_engine'
+		]),
+		create.deploying('create:steam_engine', [
+			'create:steam_engine',
+			'#forge:ingots/steel'
+		])
+	]).loops(3).transitionalItem('ad_astra:steel_ingot').id('create:crafting/kinetics/steam_engine')
+	
 	// 铸铁电子管
 	create.filling('new_create:cast_electron_tube', [
 		'new_create:zinc_electron_tube',
@@ -740,21 +757,21 @@ ServerEvents.recipes((event) => {
 	}).id('vintageimprovements:craft/vibrating_table')
 
 	// 铸铁机壳
-	create.filling('new_create:cast_iron_casing', [
-		Fluid.of('new_create:cast_iron_fluid', 100),
-		'#forge:treated_wood'
+	create.item_application('new_create:cast_iron_casing', [
+		'#forge:treated_wood',
+		'#forge:plates/cast_iron'
 	])
 
 	// 集成电路板
 	event.custom({
-		"type": "ae2:inscriber",
-		"ingredients": {
-			"top": { "item": 'new_create:lapis_sheet' },
-			"bottom": { "item": 'create_new_age:overcharged_golden_sheet' },
-			"middle": { "item": 'ae2:printed_silicon' },
+		'type': 'ae2:inscriber',
+		'ingredients': {
+			'top': { 'item': 'new_create:lapis_sheet' },
+			'bottom': { 'item': 'create_new_age:overcharged_golden_sheet' },
+			'middle': { 'item': 'ae2:printed_silicon' },
 		},
-		"mode": "inscribe",
-		"result": { "item": 'new_create:integrated_circuit' }
+		'mode': 'inscribe',
+		'result': { 'item': 'new_create:integrated_circuit' }
 	}).id('create_dd:sequenced_assembly/integrated_circuit')
 
 	// 造石机
@@ -772,18 +789,18 @@ ServerEvents.recipes((event) => {
 
 	// 硅晶
 	event.custom({
-		"type": "create:sequenced_assembly",
-		"ingredient": { "item": "ae2:silicon" },
-		"results": [{ "item": "new_create:silicon_crystal" }],
-		"sequence": [{
-			"type": "vintageimprovements:polishing",
-			"ingredients": [{ "item": "ae2:silicon" }],
-			"results": [{ "item": "new_create:silicon_crystal" }],
-			"speed_limits": 3,
-			"processingTime": 20
+		'type': 'create:sequenced_assembly',
+		'ingredient': { 'item': 'ae2:silicon' },
+		'results': [{ 'item': 'new_create:silicon_crystal' }],
+		'sequence': [{
+			'type': 'vintageimprovements:polishing',
+			'ingredients': [{ 'item': 'ae2:silicon' }],
+			'results': [{ 'item': 'new_create:silicon_crystal' }],
+			'speed_limits': 3,
+			'processingTime': 20
 		}],
-		"loops": 5,
-		"transitionalItem": { "item": "ae2:silicon" }
+		'loops': 5,
+		'transitionalItem': { 'item': 'ae2:silicon' }
 	})
 
 	// 砂带
@@ -895,4 +912,56 @@ ServerEvents.recipes((event) => {
 		Item.of('ae2:certus_quartz_dust').withChance(0.125),
 		Item.of('ae2:ender_dust').withChance(0.125)
 	], 'new_create:dust')
+
+	// 管道
+	kubejs.shaped('create:fluid_pipe', [
+		'IPI'
+	], {
+		I: '#forge:ingots/cast_iron',
+		P: '#forge:plates/cast_iron'
+	}).id('create:crafting/kinetics/fluid_pipe')
+
+	kubejs.shaped('4x create:fluid_pipe', [
+		'I',
+		'P',
+		'I'
+	], {
+		I: '#forge:ingots/cast_iron',
+		P: '#forge:plates/cast_iron'
+	}).id('create:crafting/kinetics/fluid_pipe_vertical')
+
+	// 软管滑轮
+	kubejs.shaped('create:hose_pulley', [
+		'C',
+		'D',
+		'P'
+	], {
+		C: 'new_create:cast_iron_casing',
+		D: 'minecraft:dried_kelp_block',
+		P: '#forge:plates/cast_iron'
+	}).id('create:crafting/kinetics/hose_pulley')
+
+	// 分液池
+	kubejs.shaped('create:item_drain', [
+		'I',
+		'C'
+	], {
+		I: "minecraft:iron_bars",
+		C: 'new_create:cast_iron_casing'
+	}).id('create:crafting/kinetics/item_drain')
+
+	// 流体接口
+	kubejs.shapeless('create:portable_fluid_interface', [
+		'new_create:cast_iron_casing',
+		'create:chute'
+	]).id('create:crafting/kinetics/portable_fluid_interface')
+
+	// 蒸汽笛
+	kubejs.shaped('create:steam_whistle', [
+		'P',
+		'I'
+	], {
+		P: '#forge:plates/gold',
+		I: '#forge:ingots/cast_iron'
+	}).id('create:crafting/kinetics/steam_whistle')
 })

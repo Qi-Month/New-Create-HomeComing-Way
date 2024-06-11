@@ -374,7 +374,7 @@
 						value: "forge:dusts/coal_coke"
 					}
 				}
-				title: "Any #forge:dusts/coal_coke"
+				title: "焦炭粉"
 				type: "item"
 			}]
 			x: -0.5d
@@ -549,8 +549,8 @@
 				item: "new_create:inductive_mechanism"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 3.75d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["539C27AC7BDA8727"]
@@ -598,7 +598,7 @@
 						value: "forge:dusts/obsidian"
 					}
 				}
-				title: "Any #forge:dusts/obsidian"
+				title: "黑曜石粉末"
 				type: "item"
 			}]
 			title: "黑曜石粉末"
@@ -655,7 +655,7 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "&6钢锭量产"
+				title: "&6钢锭"
 				type: "item"
 			}]
 			x: -1.0d
@@ -710,6 +710,19 @@
 			title: "&b砂纸Pro Max"
 			x: -4.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["2AC46F4E8D1CA776"]
+			id: "0C62BE100AF4735F"
+			tasks: [{
+				count: 9L
+				id: "08883FFDFF226B73"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "锅炉锅炉!"
+			x: 0.0d
+			y: -1.0d
 		}
 	]
 	title: "&6机械的曙光"

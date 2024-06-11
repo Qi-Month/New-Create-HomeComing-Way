@@ -1,5 +1,5 @@
-ItemEvents.tooltip(tip => {
-	let Tooltip = [
+ItemEvents.tooltip((tip) => {
+	let tooltip = [
 		// 草绳
 		['new_create:grass_string', 'tooltip.nc.grass_string'],
 		// 杂草
@@ -23,9 +23,15 @@ ItemEvents.tooltip(tip => {
 		// 石磨
 		['create:millstone', 'tooltip.cr.millstone'],
 		// 探矿仗
-		['new_create:metal_detector', 'tooltip.nc.metal_detector']
+		['new_create:metal_detector', 'tooltip.nc.metal_detector'],
+		// 浇筑台
+		['createmetallurgy:casting_table', 'tooltip.ct.info'],
+		// 浇筑盆
+		['createmetallurgy:casting_basin', 'tooltip.ct.info'],
+		// 热煤块
+		['new_create:heat_coal_block', 'tooltip.nc.heat_coal_block']
 	]
-	Tooltip.forEach(([Name, Key]) => {
-		tip.add(Name, [Text.translate(Key)])
+	tooltip.forEach(([name, key]) => {
+		tip.add(name, [Text.translate(key)])
 	})
 })

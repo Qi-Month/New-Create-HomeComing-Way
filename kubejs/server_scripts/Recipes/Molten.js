@@ -65,19 +65,25 @@ ServerEvents.recipes((event) => {
 		})
 	})
 
-	// 熔化
-	let meltingRecipes = [
-		// 铸模回收
-		['forge:graphite_molds', 'createmetallurgy:molten_gold', 90, 'heated', 90]
+	// 融化
+	let meltRecipes = [
+		// 铸模
+		['createmetallurgy:molten_gold', 90, '#forge:graphite_molds'],
+		// 普通铁轨
+		['createmetallurgy:molten_iron', 30, 'minecraft:rail'],
+		// 侦查铁轨
+		['createmetallurgy:molten_iron', 30, 'minecraft:detector_rail'],
+		// 激活铁轨
+		['createmetallurgy:molten_iron', 90, 'minecraft:activator_rail'],
+		// 充能铁轨
+		['createmetallurgy:molten_gold', 30, 'minecraft:powered_rail'],
+		// 控制铁轨
+		['createmetallurgy:molten_gold', 90, 'create:controller_rail']
 	]
-	meltingRecipes.forEach(([tag, fluid, amount, heatedType, time]) => {
-		event.custom({
-			"type": "createmetallurgy:melting",
-			"ingredients": [{ "tag": tag }],
-			"results": [{ "fluid": fluid, "amount": amount }],
-			"heatRequirement": heatedType,
-			"processingTime": time
-		})
+	meltRecipes.forEach(([fluid, amount, input]) => {
+		create.mixing(Fluid.of(fluid, amount), [
+			input
+		]).heatLevel('melt')
 	})
 
 	// 黄铜

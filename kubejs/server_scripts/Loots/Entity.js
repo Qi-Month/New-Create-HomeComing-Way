@@ -1,4 +1,4 @@
-LootJS.modifiers(loots => {
+LootJS.modifiers((loots) => {
 	const All = Ingredient.all
 	// 删除铁傀儡掉落铁锭
 	loots.addEntityLootModifier('minecraft:iron_golem')

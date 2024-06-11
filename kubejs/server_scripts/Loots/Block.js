@@ -1,4 +1,4 @@
-LootJS.modifiers(loots => {
+LootJS.modifiers((loots) => {
 	let All = Ingredient.all
 	// 土豆
 	loots.addBlockLootModifier('minecraft:potato')
@@ -78,8 +78,13 @@ LootJS.modifiers(loots => {
 	loots.addBlockLootModifier('#minecraft:leavesf')
 		.addAlternativesLoot(
 			LootEntry.of('minecraft:stick')
-				.when(loots => loots.randomChance(0.15)),
+				.when(loots => loots.randomChance(0.3)),
 			LootEntry.of('minecraft:apple')
 				.when(loots => loots.randomChance(0.2))
 		)
+
+	// 热煤块
+	loots.addBlockLootModifier('new_create:heat_coal_block')
+		.removeLoot(All)
+		.addLoot('minecraft:coal_block')
 })

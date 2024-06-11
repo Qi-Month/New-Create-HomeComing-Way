@@ -57,7 +57,7 @@ Ponder.registry((event) => {
 				[7, 1, 3], [6, 1, 3], [5, 1, 3], [4, 1, 3], [3, 1, 3],
 			]
 			for (let block of blocks_1) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.idle(20)
@@ -86,7 +86,7 @@ Ponder.registry((event) => {
 				[7, 2, 3], [6, 2, 3], [5, 2, 3], [4, 2, 3], [3, 2, 3],
 			]
 			for (let block of blocks_2) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.idle(20)
@@ -113,7 +113,7 @@ Ponder.registry((event) => {
 				[7, 3, 3], [6, 3, 3], [5, 3, 3], [4, 3, 3], [3, 3, 3],
 			]
 			for (let block of blocks_3) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.idle(20)
@@ -144,7 +144,7 @@ Ponder.registry((event) => {
 				[7, 5, 3], [6, 5, 3], [5, 5, 3], [4, 5, 3], [3, 5, 3],
 			]
 			for (let block of blocks_end) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			// 关键帧

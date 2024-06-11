@@ -1,4 +1,4 @@
-LootJS.modifiers(loots => {
+LootJS.modifiers((loots) => {
 	let ToolLoots = [
 		// 圆石=>砂砾
 		['#forge:cobblestone', '#new_create:hammer', 'minecraft:gravel', 0.5],

@@ -1,4 +1,4 @@
-LootJS.modifiers(loots => {
+LootJS.modifiers((loots) => {
 	// 删除箱子战利品
 	let ChestLoots = [
 		'minecraft:iron_ingot',

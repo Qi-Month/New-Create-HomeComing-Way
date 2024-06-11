@@ -411,7 +411,12 @@ ServerEvents.recipes((event) => {
 		C: '#forge:plates/iron'
 	}).id('minecraft:bucket')
 
-	// 铁熔化
+	// 热煤块
+	minecraft.campfire_cooking('new_create:heat_coal_block', [
+		'#forge:storage_blocks/coal'
+	]).cookingTime(200)
+
+	// 熔融铁
 	create.mixing(Fluid.of('createmetallurgy:molten_iron', 90), [
 		'3x create:crushed_raw_iron'
 	]).heatLevel('melt')

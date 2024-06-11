@@ -20,7 +20,7 @@ Ponder.registry((event) => {
 				[3, 3, 1], [3, 3, 2], [3, 3, 3],
 			]
 			for (let block of blocks) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.addKeyframe()
@@ -33,7 +33,7 @@ Ponder.registry((event) => {
 			scene.idle(20)
 			scene.world.setBlocks([1, 1, 1, 3, 3, 3,], "minecraft:air")
 			scene.idle(5)
-			scene.world.createItemEntity([2, 1, 2], Direction.down, "2x minecraft:blast_furnace")
+			scene.world.createItemEntity([2, 1, 2], Direction.DOWN, "2x minecraft:blast_furnace")
 			scene.idle(20)
 		})
 })

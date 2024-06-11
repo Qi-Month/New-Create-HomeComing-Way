@@ -27,6 +27,10 @@ ServerEvents.recipes((event) => {
 		"time": 150
 	})
 
+	immersiveengineering.blast_furnace('new_create:cast_iron_ingot', [
+		'#forge:ingots/iron'
+	]).time(500)
+
 	// 铸铁板
 	event.custom({
 		"type": "immersiveengineering:alloy",
@@ -35,6 +39,10 @@ ServerEvents.recipes((event) => {
 		"result": { "base_ingredient": { "item": "new_create:cast_iron_sheet" }, "conut": 1 },
 		"time": 150
 	})
+
+	immersiveengineering.blast_furnace('new_create:cast_iron_sheet', [
+		'#forge:plates/iron'
+	]).time(500)
 
 	// 工程师锤
 	kubejs.shaped("immersiveengineering:hammer", [

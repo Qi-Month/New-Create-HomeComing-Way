@@ -50,7 +50,7 @@ Ponder.registry((event) => {
 					[5, 3, 5],
 				]
 				for (let block of blocks) {
-					scene.world.showSection(block, Direction.down)
+					scene.world.showSection(block, Direction.DOWN)
 					scene.idle(2)
 				}
 				scene.idle(20)

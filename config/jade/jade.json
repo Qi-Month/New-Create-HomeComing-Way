@@ -20,7 +20,7 @@
     "builtinCamouflage": true
   },
   "overlay": {
-    "activeTheme": "jade:waila",
+    "activeTheme": "jade:dark",
     "themesHash": -328442023,
     "overlayPosX": 0.5,
     "overlayPosY": 1.0,
@@ -30,7 +30,7 @@
     "overlaySquare": true,
     "flipMainHand": false,
     "autoScaleThreshold": 0.4,
-    "alpha": 0.7,
+    "alpha": 1.0,
     "iconMode": "CENTERED",
     "animation": true,
     "disappearingDelay": 0.0

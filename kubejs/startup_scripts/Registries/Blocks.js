@@ -38,6 +38,8 @@ StartupEvents.registry('block', (event) => {
 		['industrial_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
 		// 钢机壳
 		['steel_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
+		// 热煤块
+		['heat_coal_block', 'stone', 1.5, 1.5, 'pickaxe', 'wooden']
 	]
 	Block.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
 		event.create(MODID + name)

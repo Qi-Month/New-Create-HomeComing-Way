@@ -72,7 +72,6 @@ ServerEvents.recipes((event) => {
 		'extendedcrafting:basic_table',
 		'create:water_wheel',
 		'create:large_water_wheel',
-		'create:steam_engine',
 		'create:create.crushing_wheel',
 		'create_new_age:generator_coil',
 		'immersiveengineering:dust_coke',

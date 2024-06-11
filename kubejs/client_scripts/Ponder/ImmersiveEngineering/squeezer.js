@@ -37,7 +37,7 @@ Ponder.registry((event) => {
 				[6, 1, 4], [5, 1, 4], [4, 1, 4],
 			]
 			for (let block of blocks_1) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.idle(20)
@@ -58,7 +58,7 @@ Ponder.registry((event) => {
 				[6, 2, 4], [5, 2, 4], [4, 2, 4],
 			]
 			for (let block of blocks_2) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.idle(20)
@@ -81,7 +81,7 @@ Ponder.registry((event) => {
 				[6, 3, 4], [5, 3, 4], [4, 3, 4],
 			]
 			for (let block of blocks_3) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(2)
 			}
 			scene.idle(20)
