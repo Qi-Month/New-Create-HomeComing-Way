@@ -1,27 +1,29 @@
-let Timeout = false
+let Timeout = false;
 
 BlockEvents.leftClicked((event) => {
 	const { player, block, server } = event
 
 	if (Timeout) {
-		server.tell(Text.translate('info.nc.flint'))
+		server.tell(Text.translate("info.nc.flint"))
 		return
 	}
 
-	if (player.mainHandItem.id !== 'minecraft:flint') return
+	if (player.mainHandItem.id !== "minecraft:flint") return;
 
-	Ingredient.of('#forge:stone').getItemIds().some(StoneId => {
-		if (block.id === StoneId) {
-			handleFlintKnapping(event)
-			return true
-		}
-	})
+	Ingredient.of("#forge:stone")
+		.getItemIds()
+		.some((StoneId) => {
+			if (block.id === StoneId) {
+				handleFlintKnapping(event)
+				return true
+			}
+		})
 })
 
 function handleFlintKnapping(event) {
-	const { player, block, item, server } = event
+	const { block, item } = event
 	let Random = Math.floor(Math.random() * 4) + 1
-	let Entity = block.createEntity('item')
+	let Entity = block.createEntity("item")
 
 	Timeout = true
 	setTimeout(() => {
