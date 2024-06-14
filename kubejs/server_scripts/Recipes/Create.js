@@ -1,7 +1,6 @@
 ServerEvents.recipes((event) => {
 	const {
 		create,
-		create_mechanical_extruder,
 		immersiveengineering,
 		kubejs,
 		melter,
@@ -34,10 +33,15 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 安山岩
-	create_mechanical_extruder.extruding('minecraft:andesite', [
-		Fluid.of('new_create:andesite_compound_fluid'),
-		Fluid.of('minecraft:lava')
-	])
+	event.custom({
+		"type": "create_mechanical_extruder:extruding",
+		"ingredients": [
+			{ "fluid": 'new_create:andesite_compound_fluid' },
+			{ "fluid": 'minecraft:lava' }
+		],
+		"catalyst": { "item": 'minecraft:andesite' },
+		"result": { "item": 'minecraft:andesite' }
+	})
 
 	// 小齿轮(半成品)
 	minecraft.stonecutting('2x new_create:in_cogwheel', [
@@ -256,9 +260,9 @@ ServerEvents.recipes((event) => {
 
 	// 电子管
 	kubejs.shaped('create:electron_tube', [
-		' A ',
-		' B ',
-		' C '
+		'A',
+		'B',
+		'C'
 	], {
 		A: 'create:polished_rose_quartz',
 		B: '#forge:plates/iron',
@@ -442,6 +446,17 @@ ServerEvents.recipes((event) => {
 		F: 'new_create:inductive_mechanism'
 	})
 
+	// 铸铁手部零件
+	kubejs.shaped('create:brass_hand', [
+		'BIB',
+		'PPP',
+		' P '
+	], {
+		I: '#forge:ingots/brass',
+		P: '#forge:plates/cast_iron',
+		B: '#forge:plates/brass'
+	}).id('create:crafting/kinetics/brass_hand')
+
 	// 碳刷
 	kubejs.shaped('create_new_age:carbon_brushes', [
 		'AAA',
@@ -588,7 +603,7 @@ ServerEvents.recipes((event) => {
 			'#forge:ingots/steel'
 		])
 	]).loops(3).transitionalItem('ad_astra:steel_ingot').id('create:crafting/kinetics/steam_engine')
-	
+
 	// 铸铁电子管
 	create.filling('new_create:cast_electron_tube', [
 		'new_create:zinc_electron_tube',
@@ -597,8 +612,8 @@ ServerEvents.recipes((event) => {
 
 	// 钢粉
 	create.mixing('2x immersiveengineering:dust_steel', [
-		'2x immersiveengineering:dust_iron',
-		'2x mekanism:dust_coal',
+		'2x #forge:dusts/iron',
+		'2x #forge:dusts/coal',
 		Fluid.of('new_create:working_fluid', 125)
 	]).heated()
 
@@ -887,7 +902,7 @@ ServerEvents.recipes((event) => {
 		'CSC'
 	], {
 		G: 'vintageimprovements:grinder_belt',
-		A: '#forge:andesite_alloy',
+		A: 'create:andesite_alloy',
 		M: 'create:precision_mechanism',
 		C: 'create:andesite_casing',
 		S: '#create:shaft_add'
@@ -964,4 +979,8 @@ ServerEvents.recipes((event) => {
 		P: '#forge:plates/gold',
 		I: '#forge:ingots/cast_iron'
 	}).id('create:crafting/kinetics/steam_whistle')
+
+	create.compacting('minecraft:sandstone', [
+		'#forge:storage_blocks/netherite'
+	]).heatLevel('frozen')
 })

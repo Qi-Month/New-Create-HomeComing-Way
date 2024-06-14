@@ -295,11 +295,11 @@ customization {
 customization {
   path = FancyMenu/title.png
   orientation = top-left
-  x = 161
-  width = 287
+  x = 16
+  width = 220
   action = addtexture
   actionid = aaacb27e-d682-43fe-8fc2-97d2c2ba894c1710210874566
-  y = 56
-  height = 44
+  y = 38
+  height = 33
 }
 

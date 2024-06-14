@@ -1,7 +1,7 @@
 StartupEvents.registry('block', (event) => {
 	const MODID = 'new_create:'
 	// 工具类型
-	const ToolType = {
+	const toolType = {
 		sword: 'minecraft:mineable/sword',
 		pickaxe: 'minecraft:mineable/pickaxe',
 		axe: 'minecraft:mineable/axe',
@@ -9,7 +9,7 @@ StartupEvents.registry('block', (event) => {
 		hoe: 'minecraft:mineable/hoe'
 	}
 	// 挖掘等级
-	const MininGlevel = {
+	const excavationLevel = {
 		wooden: 'minecraft:needs_wooden_tool',
 		stone: 'minecraft:needs_stone_tool',
 		iron: 'minecraft:needs_iron_tool',
@@ -19,7 +19,7 @@ StartupEvents.registry('block', (event) => {
 	}
 
 	// 定义方块
-	let Block = [
+	let block = [
 		// 烧焦圆石
 		['charred_cobblestone', 'stone', 3, 3, 'pickaxe', 'wooden'],
 		// 铸铁块
@@ -41,13 +41,13 @@ StartupEvents.registry('block', (event) => {
 		// 热煤块
 		['heat_coal_block', 'stone', 1.5, 1.5, 'pickaxe', 'wooden']
 	]
-	Block.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
+	block.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
 		event.create(MODID + name)
 			.soundType(soundType)
 			.hardness(hardness)
 			.resistance(resisTance)
-			.tagBlock(ToolType[tool])
-			.tagBlock(MininGlevel[grade])
+			.tagBlock(toolType[tool])
+			.tagBlock(excavationLevel[grade])
 			.tagItem(MODID + 'items')
 			.tagItem(MODID + 'blocks')
 			.requiresTool(true)

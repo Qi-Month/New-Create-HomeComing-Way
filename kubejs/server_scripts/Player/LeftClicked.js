@@ -3,6 +3,7 @@ let Timeout = false;
 BlockEvents.leftClicked((event) => {
 	const { player, block, server } = event
 
+	// 敲击燧石并在聊天栏发送信息(Key)
 	if (Timeout) {
 		server.tell(Text.translate("info.nc.flint"))
 		return
@@ -10,6 +11,7 @@ BlockEvents.leftClicked((event) => {
 
 	if (player.mainHandItem.id !== "minecraft:flint") return;
 
+	// 获取Tag下的全部id
 	Ingredient.of("#forge:stone")
 		.getItemIds()
 		.some((StoneId) => {
@@ -20,6 +22,7 @@ BlockEvents.leftClicked((event) => {
 		})
 })
 
+// 生成产物燧石碎片
 function handleFlintKnapping(event) {
 	const { block, item } = event
 	let Random = Math.floor(Math.random() * 4) + 1

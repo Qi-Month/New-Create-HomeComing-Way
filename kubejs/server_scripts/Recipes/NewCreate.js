@@ -421,6 +421,18 @@ ServerEvents.recipes((event) => {
 		'3x create:crushed_raw_iron'
 	]).heatLevel('melt')
 
+	// 高炉
+	kubejs.shaped('minecraft:blast_furnace', [
+		'III',
+		'PCP',
+		'SSS'
+	], {
+		S: 'minecraft:smooth_stone',
+		P: '#forge:plates/cast_iron',
+		I: '#forge:ingots/cast_iron',
+		C: '#forge:storage_blocks/coal'
+	})
+
 	// Fix Thermal tin_block <=> tin_ingot crafting
 	kubejs.shapeless('9x thermal:tin_ingot', [
 		'thermal:tin_block'
@@ -474,6 +486,28 @@ ServerEvents.recipes((event) => {
 	}, Recipes => {
 		let Output = Recipes.getOriginalRecipeResult().getId()
 		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
-		minecraft.blasting(Output, [Input])
+		minecraft.blasting(Output, [`${Input}`])
 	})
+
+	/*
+	event.forEachRecipe({
+		type: 'create:compacting',
+		output: '#forge:dusts',
+		input: '#create:crushed_raw_materials'
+	}, Recipes => {
+		let Output = Recipes.getOriginalRecipeResult().getId()
+		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		create.compacting(Output, [`${Input}`])
+	})
+
+	event.forEachRecipe({
+		type: 'create:compacting',
+		output: '#forge:dusts',
+		input: '#forge:ores'
+	}, Recipes => {
+		let Output = Recipes.getOriginalRecipeResult().getId()
+		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		create.compacting(Output, [`${Input}`])
+	})
+	*/
 })

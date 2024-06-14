@@ -1,6 +1,6 @@
 BlockEvents.modification((event) => {
 	// Fix
-	event.modify('melter:melter', modify => {
+	event.modify('melter:melter', (modify) => {
 		modify.destroySpeed = 1
 	})
 })
@@ -12,16 +12,15 @@ BlockEvents.modification((event) => {
 		'rubberwood', 'rose', 'smoked', 'spirit', 'rubber',
 		'walnut', 'fig', 'wolfberry'
 	]
-	woodsNameSpace.forEach(type => {
+	woodsNameSpace.forEach((type) => {
 		let logNames = [
 			`${type}_log`,
 			`${type}_wood`,
 			`stripped_${type}_log`,
 			`stripped_${type}_wood`
 		]
-
-		logNames.forEach(name => {
-			event.modify(`minecraft:${name}`, modify => {
+		logNames.forEach((name) => {
+			event.modify(`minecraft:${name}`, (modify) => {
 				modify.requiresTool = true
 			})
 		})
@@ -31,8 +30,8 @@ BlockEvents.modification((event) => {
 		'crimson_stem', 'stripped_crimson_stem', 'crimson_hyphae', 'stripped_crimson_hyphae',
 		'warped_stem', 'stripped_warped_stem', 'warped_hyphae', 'stripped_warped_hyphae'
 	]
-	woods.forEach(name => {
-		event.modify(`minecraft:${name}`, modify => {
+	woods.forEach((name) => {
+		event.modify(`minecraft:${name}`, (modify) => {
 			modify.requiresTool = true
 		})
 	})

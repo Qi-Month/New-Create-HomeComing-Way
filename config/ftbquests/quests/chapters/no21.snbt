@@ -182,6 +182,12 @@
 		{
 			dependencies: ["5D3F84762ED61E6A"]
 			id: "0917E13D77AF98C1"
+			rewards: [{
+				count: 2
+				id: "4B9A2AA5B3C27E57"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7296EDDB1BE8CD02"
 				item: {
@@ -239,7 +245,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&31..1..4..."
+			subtitle: "&b1..1..4..."
 			tasks: [
 				{
 					count: 256L
@@ -414,7 +420,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5C114910264DE84F"]
@@ -433,7 +439,7 @@
 			}]
 			title: "煤粉"
 			x: -1.5d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1B77C78FF4A1F107"]
@@ -443,8 +449,8 @@
 				item: "new_create:carbon_plate"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0D90E2B1E5186F01"]
@@ -479,8 +485,8 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
-			y: 5.0d
+			x: -10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F800E5B51B445F6"]
@@ -490,8 +496,8 @@
 				item: "createaddition:copper_spool"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: -8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2352278FF3B01957"]
@@ -502,7 +508,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -520,7 +526,7 @@
 				type: "item"
 			}]
 			title: "&4新时代！"
-			x: -2.0d
+			x: -3.5d
 			y: 6.0d
 		}
 		{
@@ -543,14 +549,14 @@
 			]
 			id: "675821C6A6BF5D79"
 			shape: "gear"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "26A069312D55A5BE"
 				item: "new_create:inductive_mechanism"
 				type: "item"
 			}]
 			x: -3.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["539C27AC7BDA8727"]
@@ -723,6 +729,34 @@
 			title: "锅炉锅炉!"
 			x: 0.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["0C62BE100AF4735F"]
+			icon: "createoreexcavation:drilling_machine"
+			id: "14D51DA805F70A55"
+			rewards: [{
+				count: 32
+				id: "55A5CB560A5D3CFD"
+				item: "ad_astra:steel_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "105F0151607CFA62"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "6C970E0BE3BB664A"
+					item: "createoreexcavation:vein_finder"
+					type: "item"
+				}
+			]
+			title: "我不要挖矿!"
+			x: 0.5d
+			y: 0.5d
 		}
 	]
 	title: "&6机械的曙光"

@@ -1732,7 +1732,7 @@
 							value: "forge:storage_blocks/redstone"
 						}
 					}
-					title: "Any #forge:storage_blocks/redstone"
+					title: "红石块"
 					type: "item"
 				}
 				{
@@ -1744,7 +1744,7 @@
 							value: "forge:gems/quartz"
 						}
 					}
-					title: "Any #forge:gems/quartz"
+					title: "石英"
 					type: "item"
 				}
 			]
@@ -2070,25 +2070,6 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["5E0A98F312F8A995"]
-			id: "12B7F124F25AF827"
-			subtitle: "&b勉强能用"
-			tasks: [{
-				id: "7BDC6CB643B073CA"
-				item: {
-					Count: 1b
-					id: "new_create:flint_sword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&c防身"
-			x: 39.5d
-			y: 16.0d
-		}
-		{
 			dependencies: ["2AC2EFDD8EAAA7D4"]
 			id: "553BBA981FDA9EBA"
 			tasks: [{
@@ -2376,6 +2357,20 @@
 			title: "我该如何大量获得铁和金?"
 			x: 43.5d
 			y: 25.0d
+		}
+		{
+			dependencies: ["5E0A98F312F8A995"]
+			description: ["我们加入了RS,能源问题你可以选择做个斯特林能源炉解决"]
+			icon: "refinedstorage:1k_storage_disk"
+			id: "0DD56188BB282F5E"
+			tasks: [{
+				id: "159FF9075E7596B8"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			title: "我想放东西怎么办?!"
+			x: 39.5d
+			y: 16.0d
 		}
 	]
 	title: "&6火与石之歌"

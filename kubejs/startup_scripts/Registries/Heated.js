@@ -1,4 +1,12 @@
 CreateHeatJS.registerHeatEvent((event) => {
-	event.registerHeatLevel('melt', 1, 0xFFA500)
-	event.registerHeatSource('melt', 'new_create:heat_coal_block')
+	let heatLevel = [
+		// 熔化
+		['melt', 1, 0xFF8C00, 'new_create:heat_coal_block'],
+		// 冻结
+		['frozen', -1, 0x87CEFA, 'minecraft:blue_ice']
+	]
+	heatLevel.forEach(([name, level, color, block]) => {
+		event.registerHeatLevel(name, level, color)
+		event.registerHeatSource(name, block)
+	})
 })

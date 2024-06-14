@@ -163,18 +163,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"0A0EDACAFB3D3068"
-				"67FFB4B41933E001"
-			]
+			dependencies: ["0A0EDACAFB3D3068"]
 			id: "08D0B71A89D8ABC5"
 			tasks: [{
 				id: "0622AD99CC901B8E"
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["08D0B71A89D8ABC5"]
@@ -184,8 +181,8 @@
 				item: "immersiveengineering:circuit_board"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.5200892857142847d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1C67E14D40E8D649"]
@@ -196,7 +193,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["103EBB625BFD8005"]
@@ -207,7 +204,7 @@
 				type: "item"
 			}]
 			title: "&6Puls"
-			x: 0.0d
+			x: -0.5d
 			y: 1.5d
 		}
 		{
@@ -219,7 +216,7 @@
 				type: "item"
 			}]
 			title: "&6一代更比一代强!"
-			x: 1.5d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
@@ -230,59 +227,10 @@
 				title: "&6防腐木板量产"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
-			dependencies: ["7224B2B81B276B73"]
-			id: "75C35519F8EA4B3D"
-			tasks: [
-				{
-					count: 2L
-					id: "7D4D93F035AAEA04"
-					item: "new_create:cast_iron_block"
-					type: "item"
-				}
-				{
-					id: "1FAE071C4E791E03"
-					item: "minecraft:glass"
-					type: "item"
-				}
-				{
-					count: 14L
-					id: "3659EB557C24DBE0"
-					item: "minecraft:smooth_stone"
-					type: "item"
-				}
-				{
-					id: "20B6A7E40D769D6B"
-					item: "new_create:furnace_core"
-					type: "item"
-				}
-				{
-					id: "1B82D4523F8DFB58"
-					item: {
-						Count: 1b
-						id: "immersiveengineering:hammer"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "5EC56C890EA2692A"
-					item: "minecraft:stone"
-					type: "item"
-				}
-			]
-			title: "高炉,预备!"
-			x: 2.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["75C35519F8EA4B3D"]
 			id: "110D68CF4B2C954B"
 			tasks: [{
 				id: "0809A26498716CC2"
@@ -291,17 +239,6 @@
 			}]
 			x: 2.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["110D68CF4B2C954B"]
-			id: "67FFB4B41933E001"
-			tasks: [{
-				id: "2FAC66F1F45B2FD8"
-				item: "thermal:electrum_ingot"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -397,7 +334,6 @@
 			y: 2.535621279761905d
 		}
 		{
-			dependencies: ["67FFB4B41933E001"]
 			hide_dependency_lines: true
 			id: "7AE62C3E07FAAA6E"
 			tasks: [{
@@ -447,7 +383,7 @@
 			}]
 			title: "&6不懂就问"
 			x: 1.5d
-			y: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3A4EF78AE3210A5E"]

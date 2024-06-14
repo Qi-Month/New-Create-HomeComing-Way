@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 		// 激活铁轨
 		['createmetallurgy:molten_iron', 90, 'minecraft:activator_rail'],
 		// 充能铁轨
-		['createmetallurgy:molten_gold', 30, 'minecraft:powered_rail'],
+		['createmetallurgy:molten_gold', 30, 'minecraft:powered_rail'],	
 		// 控制铁轨
 		['createmetallurgy:molten_gold', 90, 'create:controller_rail']
 	]
@@ -91,9 +91,4 @@ ServerEvents.recipes((event) => {
 		Fluid.of('createmetallurgy:molten_zinc', 90),
 		Fluid.of('new_create:molten_bronze', 90)
 	]).heated().id('createmetallurgy:alloying/alloying_brass')
-
-	// 铸模回收
-	create.mixing(Fluid.of('createmetallurgy:molten_gold', 90), [
-		'#forge:graphite_molds'
-	])
 })

@@ -72,4 +72,9 @@ StartupEvents.registry('fluid', (event) => {
 		.noBlock()
 		.flowingTexture(MODID + 'fluid/egg_mixture_fluid_flowing')
 		.stillTexture(MODID + 'fluid/egg_mixture_fluid_stilling')
+
+	// 黑曜石
+	event.create(MODID + 'obsidian')
+		.flowingTexture(MODID + 'fluid/obsidian_flowing')
+		.stillTexture(MODID + 'fluid/obsidian_still')
 })
