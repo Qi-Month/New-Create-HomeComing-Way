@@ -11,7 +11,7 @@ ItemEvents.modification((event) => {
 		['minecraft:iron_boots', 400]
 	]
 	toolDamage.forEach(([name, maxDamage]) => {
-		event.modify(name, modify => {
+		event.modify(name, (modify) => {
 			modify.maxDamage = maxDamage
 		})
 	})

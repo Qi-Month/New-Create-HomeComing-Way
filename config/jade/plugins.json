@@ -73,6 +73,10 @@
   "unlitcampfire": {
     "campfireinfo": true
   },
+  "uti": {
+    "entity_name": true,
+    "object_name": true
+  },
   "custommachinery": {
     "machine_component_provider": true
   },
