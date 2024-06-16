@@ -1,5 +1,4 @@
-let Timeout = false;
-
+let Timeout = false
 BlockEvents.leftClicked((event) => {
 	const { player, block, server } = event
 

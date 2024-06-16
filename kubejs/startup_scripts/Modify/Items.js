@@ -15,4 +15,4 @@ ItemEvents.modification((event) => {
 			modify.maxDamage = maxDamage
 		})
 	})
-})
+})	

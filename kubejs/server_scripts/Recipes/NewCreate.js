@@ -416,11 +416,6 @@ ServerEvents.recipes((event) => {
 		'#forge:storage_blocks/coal'
 	]).cookingTime(200)
 
-	// 熔融铁
-	create.mixing(Fluid.of('createmetallurgy:molten_iron', 90), [
-		'3x create:crushed_raw_iron'
-	]).heatLevel('melt')
-
 	// 高炉
 	kubejs.shaped('minecraft:blast_furnace', [
 		'III',

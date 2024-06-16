@@ -1,6 +1,6 @@
 const MODID = 'new_create:'
-ItemEvents.armorTierRegistry(e => {
-	e.add(MODID + 'radiant', armor => {
+ItemEvents.armorTierRegistry((event) => {
+	event.add(MODID + 'radiant', (armor) => {
 		armor.durabilityMultiplier = 70 // 耐久系数,具体得上wiki看公式
 		armor.slotProtections = [6, 8, 10, 6] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
 		armor.toughness = 4  // 韧性

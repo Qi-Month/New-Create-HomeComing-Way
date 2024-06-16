@@ -14,7 +14,9 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 燧石剑(Plus Pro Max Super Update😋)
-	campfire_cooking(Item.of('new_create:flint_sword', "{Damage:0,RepairCost:2,display:{Name:'{\"text\":\"§cAn Absolutely Fair Judgment\"}'}}").enchant('minecraft:fire_aspect', 1), [
+	campfire_cooking(Item.of('new_create:flint_sword',
+		"{Damage:0,RepairCost:2,display:{Name:'{\"text\":\"§cAn Absolutely Fair Judgment\"}'}}")
+		.enchant('minecraft:fire_aspect', 2), [
 		'new_create:flint_sword'
 	]).cookingTime(1200)
 
@@ -111,7 +113,7 @@ ServerEvents.recipes((event) => {
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: '#new_create:hammer',
-		E: '#forge:tools/knives'	
+		E: '#forge:tools/knives'
 	})
 		.damageIngredient('#new_create:hammer')
 		.damageIngredient('#forge:tools/knives')

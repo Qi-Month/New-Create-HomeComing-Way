@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	const { create } = event.recipes
 	// 铸模声明
-	const cast = {
+	const CAST = {
 		ingot: 'createmetallurgy:graphite_ingot_mold',
 		nugget: 'createmetallurgy:graphite_nugget_mold',
 		plate: 'createmetallurgy:graphite_plate_mold'
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 			"type": "createmetallurgy:casting_in_table",
 			"ingredients": [
 				{ "fluid": fluid, "amount": amount },
-				{ "item": cast[mold] },
+				{ "item": CAST[mold] },
 			],
 			"results": [{ "item": results, }],
 			"processingTime": time
@@ -76,9 +76,13 @@ ServerEvents.recipes((event) => {
 		// 激活铁轨
 		['createmetallurgy:molten_iron', 90, 'minecraft:activator_rail'],
 		// 充能铁轨
-		['createmetallurgy:molten_gold', 30, 'minecraft:powered_rail'],	
+		['createmetallurgy:molten_gold', 30, 'minecraft:powered_rail'],
 		// 控制铁轨
-		['createmetallurgy:molten_gold', 90, 'create:controller_rail']
+		['createmetallurgy:molten_gold', 90, 'create:controller_rail'],
+		// 金
+		['createmetallurgy:molten_gold', 90, 'minecraft:raw_gold'],
+		// 铁
+		['createmetallurgy:molten_iron', 90, '3x create:crushed_raw_iron']
 	]
 	meltRecipes.forEach(([fluid, amount, input]) => {
 		create.mixing(Fluid.of(fluid, amount), [
