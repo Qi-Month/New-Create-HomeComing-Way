@@ -56,7 +56,7 @@ StartupEvents.registry('item', (event) => {
 			.tag('forge:tools')
 			.tag(MODID + 'items')
 			.tag(MODID + 'tools')
-			.modifyTier(tool => {
+			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
 				tool.setLevel(setlevel)
@@ -74,7 +74,7 @@ StartupEvents.registry('item', (event) => {
 		.tag('forge:tools')
 		.tag(MODID + 'items')
 		.tag(MODID + 'tools')
-		.modifyTier(tool => {
+		.modifyTier((tool) => {
 			tool.uses = 8
 		})
 })

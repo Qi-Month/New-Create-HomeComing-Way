@@ -37,7 +37,9 @@ ServerEvents.recipes((event) => {
 		// 黄铜
 		['createmetallurgy:molten_brass', 90, 'ingot', 'create:brass_ingot', 90],
 		// 金板修复
-		['createmetallurgy:molten_gold', 90, 'plate', 'create:golden_sheet', 80]
+		['createmetallurgy:molten_gold', 90, 'plate', 'create:golden_sheet', 80],
+		// 青铜
+		['new_create:molten_bronze', 90, 'ingot', 'thermal:bronze_ingot', 80]
 	]
 	tableRecipes.forEach(([fluid, amount, mold, results, time]) => {
 		event.custom({
@@ -54,7 +56,11 @@ ServerEvents.recipes((event) => {
 	// 浇筑盆
 	let basinRecipes = [
 		// 玻璃
-		['new_create:glass', 810, 'minecraft:glass', 120]
+		['new_create:glass', 810, 'minecraft:glass', 120],
+		// 黑曜石
+		['new_create:obsidian', 810, 'minecraft:obsidian', 120],
+		// 青铜
+		['new_create:molten_bronze', 810, 'thermal:bronze_block', 120]
 	]
 	basinRecipes.forEach(([fluid, amount, results, time]) => {
 		event.custom({
@@ -80,9 +86,15 @@ ServerEvents.recipes((event) => {
 		// 控制铁轨
 		['createmetallurgy:molten_gold', 90, 'create:controller_rail'],
 		// 金
-		['createmetallurgy:molten_gold', 90, 'minecraft:raw_gold'],
+		['createmetallurgy:molten_gold', 120, 'minecraft:raw_gold'],
 		// 铁
-		['createmetallurgy:molten_iron', 90, '3x create:crushed_raw_iron']
+		['createmetallurgy:molten_iron', 90, '3x create:crushed_raw_iron'],
+		// 铜
+		['createmetallurgy:molten_copper', 120, '#forge:raw_materials/copper'],
+		// 锌
+		['createmetallurgy:molten_zinc', 90, '3x create:crushed_raw_zinc'],
+		// 锡
+		['new_create:molten_tin', 120, '#forge:raw_materials/tin']
 	]
 	meltRecipes.forEach(([fluid, amount, input]) => {
 		create.mixing(Fluid.of(fluid, amount), [
@@ -94,5 +106,11 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of('createmetallurgy:molten_brass', 180), [
 		Fluid.of('createmetallurgy:molten_zinc', 90),
 		Fluid.of('new_create:molten_bronze', 90)
-	]).heated().id('createmetallurgy:alloying/alloying_brass')
+	]).heated()
+
+	// 青铜
+	create.mixing(Fluid.of('new_create:molten_bronze', 180), [
+		Fluid.of('new_create:molten_tin', 90),
+		Fluid.of('createmetallurgy:molten_copper', 90)
+	]).heated()
 })

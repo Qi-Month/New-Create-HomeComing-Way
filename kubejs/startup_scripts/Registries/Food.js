@@ -9,7 +9,7 @@ StartupEvents.registry('item', (event) => {
 			.glow(glow)
 			.tag(MODID + 'items')
 			.tag(MODID + 'food')
-			.food(food => {
+			.food((food) => {
 				food.hunger(hunger)
 				food.saturation(saturation)
 			})
@@ -18,7 +18,7 @@ StartupEvents.registry('item', (event) => {
 
 // Modify
 ItemEvents.modification(event => {
-	event.modify(MODID + 'chaochi', item => {
+	event.modify(MODID + 'chaochi', (item) => {
 		item.foodProperties = food => {
 			food.alwaysEdible(true)
 			food.fastToEat(true)

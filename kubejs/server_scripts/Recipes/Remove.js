@@ -172,6 +172,7 @@ ServerEvents.recipes((event) => {
 		'create:crushing/mercury_iron_ore',
 		'create:crushing/glacio_iron_ore',
 		'create:crushing/moon_iron_ore',
+		'createmetallurgy:alloying/alloying_brass',
 		'create:crushing/deepslate_iron_ore',
 		'create:crushing/mars_iron_ore',
 		'createmetallurgy:alloying/alloying_steel',

@@ -1,5 +1,6 @@
 StartupEvents.registry('fluid', (event) => {
 	const MODID = 'new_create:'
+	const PATH = 'block/fluid/'
 	let fluid = [
 		// 安山合金溶液
 		['andesite_compound_fluid', 0x808080],
@@ -30,23 +31,26 @@ StartupEvents.registry('fluid', (event) => {
 		event.create(MODID + name)
 			.thickTexture(color)
 			.bucketColor(color)
-			.flowingTexture(MODID + 'fluid/flowing')
-			.stillTexture(MODID + 'fluid/still')
+			.flowingTexture(MODID + PATH + 'flowing')
+			.stillTexture(MODID + PATH + 'still')
 			.tag(MODID + 'fluid')
 	})
 
 	// 金属
 	let moltenFluid = [
 		// 青铜
-		['bronze', 0xC48C5E]
+		['bronze', 0xC48C5E],
+		// 锡
+		['tin', 0xADD8E6]
 	]
 	moltenFluid.forEach(([name, color]) => {
 		event.create(MODID + 'molten_' + name)
 			.thickTexture(color)
 			.bucketColor(color)
-			.flowingTexture(MODID + 'fluid/flowing')
-			.stillTexture(MODID + 'fluid/still')
+			.flowingTexture(MODID + PATH + 'flowing')
+			.stillTexture(MODID + PATH + 'still')
 			.tag(MODID + 'fluid')
+			.tag(MODID + 'molten_metal')
 	})
 
 	// 特殊注册
@@ -56,25 +60,25 @@ StartupEvents.registry('fluid', (event) => {
 		.tag(MODID + 'fluid')
 		.noBucket()
 		.noBlock()
-		.flowingTexture(MODID + 'fluid/soul_flowing')
-		.stillTexture(MODID + 'fluid/soul_still')
+		.flowingTexture(MODID + PATH + 'soul_flowing')
+		.stillTexture(MODID + PATH + 'soul_still')
 
 	// 熔融玻璃
 	event.create(MODID + 'glass')
 		.tag(MODID + 'fluid')
 		.noBlock()
-		.flowingTexture(MODID + 'fluid/glass_flowing')
-		.stillTexture(MODID + 'fluid/glass_still')
+		.flowingTexture(MODID + PATH + 'glass_flowing')
+		.stillTexture(MODID + PATH + 'glass_still')
 
 	// 鸡蛋混合液
 	event.create(MODID + 'egg_mixture_fluid')
 		.tag(MODID + 'fluid')
 		.noBlock()
-		.flowingTexture(MODID + 'fluid/egg_mixture_fluid_flowing')
-		.stillTexture(MODID + 'fluid/egg_mixture_fluid_stilling')
+		.flowingTexture(MODID + PATH + 'egg_mixture_fluid_flowing')
+		.stillTexture(MODID + PATH + 'egg_mixture_fluid_stilling')
 
 	// 黑曜石
 	event.create(MODID + 'obsidian')
-		.flowingTexture(MODID + 'fluid/obsidian_flowing')
-		.stillTexture(MODID + 'fluid/obsidian_still')
+		.flowingTexture(MODID + PATH + 'obsidian_flowing')
+		.stillTexture(MODID + PATH + 'obsidian_still')
 })
