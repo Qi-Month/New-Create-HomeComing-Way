@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 	} = event.recipes
 
 	let logIDs = Ingredient.of('#minecraft:logs').getItemIds()
-	let Recipes = logIDs.map(logID => {
+	let Recipes = logIDs.map((logID) => {
 		let [namespace, item] = logID.split(':')
 		let strippedLogID = `${namespace}:stripped_${item}`
 		return {
@@ -28,6 +28,18 @@ ServerEvents.recipes((event) => {
 	})
 	Recipes.forEach(recipe => event.custom(recipe))
 
+	// 木板
+	event.forEachRecipe({
+		type: 'crafting_shapeless',
+		input: '#minecraft:logs',
+		output: '#minecraft:planks'
+	}, (Recipes) => {
+		let { originalRecipeIngredients, originalRecipeResult } = Recipes
+		kubejs.shapeless(
+			originalRecipeResult.withCount(2),
+			originalRecipeIngredients.toArray().concat(['#forge:tools/knives'])
+		).damageIngredient('#forge:tools/knives').id(Recipes.getId())
+	})
 
 	// Fix Thermal tin_block <=> tin_ingot crafting
 	kubejs.shapeless('9x thermal:tin_ingot', [
@@ -46,7 +58,7 @@ ServerEvents.recipes((event) => {
 			return event.forEachRecipe({
 				type: Type,
 				output: Output
-			}, Recipes => {
+			}, (Recipes) => {
 				var Output = Recipes.getOriginalRecipeResult().getId()
 				var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 				kubejs.shapeless(Input, [`9x ${Output}`])
@@ -55,7 +67,7 @@ ServerEvents.recipes((event) => {
 			type: Type,
 			output: Output,
 			input: Input
-		}, Recipes => {
+		}, (Recipes) => {
 			var Output = Recipes.getOriginalRecipeResult().getId()
 			var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 			kubejs.shapeless(`9x ${Output}`, [`${Input}`])
@@ -79,7 +91,7 @@ ServerEvents.recipes((event) => {
 		type: 'minecraft:blasting',
 		output: '#forge:ingots',
 		input: '#forge:dusts'
-	}, Recipes => {
+	}, (Recipes) => {
 		let Output = Recipes.getOriginalRecipeResult().getId()
 		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		minecraft.blasting(Output, [`${Input}`])
@@ -90,7 +102,7 @@ ServerEvents.recipes((event) => {
 		type: 'create:compacting',
 		output: '#forge:dusts',
 		input: '#create:crushed_raw_materials'
-	}, Recipes => {
+	}, (Recipes) => {
 		let Output = Recipes.getOriginalRecipeResult().getId()
 		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		create.compacting(Output, [`${Input}`])
@@ -100,7 +112,7 @@ ServerEvents.recipes((event) => {
 		type: 'create:compacting',
 		output: '#forge:dusts',
 		input: '#forge:ores'
-	}, Recipes => {
+	}, (Recipes) => {
 		let Output = Recipes.getOriginalRecipeResult().getId()
 		let Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		create.compacting(Output, [`${Input}`])

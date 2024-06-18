@@ -3,10 +3,10 @@ BlockEvents.rightClicked((event) => {
 
 	// Fire!!!😡😡😡😡
 	let RightClickEvents = (BlockId, BlockSet) => {
-		if (player.mainHandItem == 'new_create:tinder' &&
+		if (player.mainHandItem.hurtAndBreak == 'new_create:tinder' &&
 			block.id == BlockId) {
 			block.set(BlockSet)
-			item.damageValue += 1
+			// item.damageValue += 1
 		}
 	}
 	RightClickEvents('new_create:log_pile', 'minecraft:fire')

@@ -66,15 +66,12 @@ StartupEvents.registry('item', (event) => {
 	// 特殊注册
 
 	// 火绒
-	event.create(MODID + 'tinder', 'axe')
-		.attackDamageBaseline(-1)
+	event.create(MODID + 'tinder')
 		.rarity('common')
 		.glow(false)
+		.maxDamage(8)
 		.unstackable()
 		.tag('forge:tools')
 		.tag(MODID + 'items')
 		.tag(MODID + 'tools')
-		.modifyTier((tool) => {
-			tool.uses = 8
-		})
 })

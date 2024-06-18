@@ -9,22 +9,6 @@ ServerEvents.recipes((event) => {
 		thermal
 	} = event.recipes
 
-	// 木板
-	event.forEachRecipe({
-		type: 'crafting_shapeless',
-		input: '#minecraft:logs',
-		output: '#minecraft:planks'
-	}, Recipes => {
-		let {
-			originalRecipeIngredients,
-			originalRecipeResult
-		} = Recipes
-		kubejs.shapeless(
-			originalRecipeResult.withCount(2),
-			originalRecipeIngredients.toArray().concat(['#forge:tools/knives'])
-		).damageIngredient('#forge:tools/knives').id(Recipes.getId())
-	})
-
 	// 黏土
 	create.splashing(Item.of('minecraft:clay_ball').withChance(0.5), [
 		'new_create:dust'
@@ -281,10 +265,10 @@ ServerEvents.recipes((event) => {
 
 	// 防腐液 
 	event.custom({
-		"type": "caupona:boiling",
-		"from": "thermal:latex",
-		"time": 200,
-		"to": "new_create:embalming_fluid"
+		'type': 'caupona:boiling',
+		'from': 'thermal:latex',
+		'time': 200,
+		'to': 'new_create:embalming_fluid'
 	})
 
 	// 熔融玻璃
@@ -309,11 +293,11 @@ ServerEvents.recipes((event) => {
 		'EFE'
 	], {
 		A: '#forge:ingots/bronze',
-		B: "#new_create:hammer",
-		D: "#new_create:saw",
-		C: "minecraft:crafting_table",
-		E: "new_create:charred_cobblestone",
-		F: "minecraft:smooth_stone",
+		B: '#new_create:hammer',
+		D: '#new_create:saw',
+		C: 'minecraft:crafting_table',
+		E: 'new_create:charred_cobblestone',
+		F: 'minecraft:smooth_stone',
 		P: '#forge:plates/bronze'
 	})
 
@@ -391,16 +375,16 @@ ServerEvents.recipes((event) => {
 
 	// 纯净石英
 	event.custom({
-		"type": "vintageimprovements:centrifugation",
-		"ingredients": [{ "tag": "forge:sand" }],
-		"results": [
-			{ "item": "new_create:pure_quartz", "chance": 0.18 },
-			{ "item": "minecraft:stick", "chance": 0.4 },
-			{ "item": "minecraft:dead_bush", "chance": 0.3 },
-			{ "item": 'minecraft:gold_nugget', "chance": 0.3 },
-			{ "item": 'createaddition:electrum_nugget', "chance": 0.3 },
-			{ "item": 'new_create:saw_silicon', "chance": 0.025 }
-		], "processingTime": 250
+		'type': 'vintageimprovements:centrifugation',
+		'ingredients': [{ 'tag': 'forge:sand' }],
+		'results': [
+			{ 'item': 'new_create:pure_quartz', 'chance': 0.18 },
+			{ 'item': 'minecraft:stick', 'chance': 0.4 },
+			{ 'item': 'minecraft:dead_bush', 'chance': 0.3 },
+			{ 'item': 'minecraft:gold_nugget', 'chance': 0.3 },
+			{ 'item': 'createaddition:electrum_nugget', 'chance': 0.3 },
+			{ 'item': 'new_create:saw_silicon', 'chance': 0.025 }
+		], 'processingTime': 250
 	})
 
 	// 铁桶

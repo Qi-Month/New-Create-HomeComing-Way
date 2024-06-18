@@ -65,7 +65,7 @@ StartupEvents.registry('item', (event) => {
 		'abstruse_mechanism', // 幽静构件(未完成)
 		'calculation_mechanism', // 计算构件(未完成)
 		'inductive_mechanism', // 电磁构件(未完成)
-		'infernal_mechanism', // 下届构件(未完成)
+		'infernal_mechanism', // 下界构件(未完成)
 		'kinetic_mechanism', // 动力构件(未完成)
 		'sealed_mechanism', // 密封构件(未完成)
 		'sturdy_mechanism', // 坚固构件(未完成)
