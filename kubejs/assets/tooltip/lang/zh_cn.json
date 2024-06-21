@@ -20,5 +20,6 @@
 	"jei.mt.melter": "§b热量等级:\n§b1级:火把\n§b2级:营火\n§b4级:熔岩\n§b8级:烈焰人燃烧室(熄灭)\n§b10级:烈焰人燃烧室(加热)\n§b16级:烈焰人燃烧室(超级加热)",
 	"ore.nc.osmium": "锇矿脉",
 	"ore.nc.aluminum": "铝土矿脉",
-	"scheme.nc.structure": "§b结构不完整,请使用[思索]查看完整结构"
+	"scheme.nc.structure.1": "§b结构不完整,请使用[思索]查看完整结构",
+	"scheme.nc.structure.2": "§b方向错了捏"
 }

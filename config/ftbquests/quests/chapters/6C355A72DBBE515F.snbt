@@ -225,6 +225,29 @@
 			x: 4.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["31E32B65ACBB7A96"]
+			description: [
+				"但是因为Mod的特殊性会有下图这种一闪一闪的问题"
+				""
+				"{image:new_create:textures/images/14.png width:125 height:125 align:1}"
+			]
+			icon: "minecraft:diamond"
+			id: "515CCDA61DB02087"
+			rewards: [{
+				id: "2C9FCD484AD88744"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				id: "1FB15D16BF1B69C1"
+				title: "资源包界面内置了自制的矿石发光资源包"
+				type: "checkmark"
+			}]
+			title: "关于矿石发光"
+			x: 4.5d
+			y: 0.0d
+		}
 	]
 	title: "&b声明"
 }

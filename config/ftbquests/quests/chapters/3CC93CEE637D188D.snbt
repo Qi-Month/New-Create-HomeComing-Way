@@ -1,0 +1,509 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3CC93CEE637D188D"
+	group: "29FEE0816C5CB526"
+	icon: "create:cogwheel"
+	id: "3CC93CEE637D188D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19EBCC3BE555DF14"]
+			description: [
+				"&9将石头放置在营火上&r"
+				"&b烧制&r&425s&r&b获得&r"
+			]
+			id: "6E8D524A504AD514"
+			rewards: [{
+				count: 2
+				id: "0D6BD8325656E402"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "1144CE76CDDF2E4F"
+				item: "new_create:charred_cobblestone"
+				type: "item"
+			}]
+			title: "&3烧制物品其一"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["49C24E9C5878D6F4"]
+			id: "2AC2EFDD8EAAA7D4"
+			subtitle: "或许你得多挖点"
+			tasks: [{
+				count: 32L
+				id: "27E8FA1AE99BAAF7"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:clay"
+					}
+				}
+				title: "黏土"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			id: "01297601A65A9627"
+			rewards: [{
+				id: "3E8D974F5DC4E58C"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:lava"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 17L
+					id: "4428E2D12BDBAFED"
+					item: "new_create:charred_cobblestone"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "0857D2F625595D3F"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "751501C951D81130"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					id: "7736476B5FCA9940"
+					item: "minecraft:clay"
+					type: "item"
+				}
+			]
+			title: "做一下准备"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			id: "553BBA981FDA9EBA"
+			tasks: [{
+				id: "4E08E9C68FE50536"
+				item: "caupona:clay_cistern"
+				type: "item"
+			}]
+			title: "这玩意还挺好看的"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			description: [
+				"&a制作一个&2石磨&r&a和&2手摇曲柄&r&r"
+				"&d可以进行一些矿物的简单获取&r"
+			]
+			icon: "create:millstone"
+			id: "38383DFF428AF0E9"
+			rewards: [{
+				count: 4
+				id: "7CA914BBEE67468E"
+				item: "farmersdelight:kelp_roll_slice"
+				type: "item"
+			}]
+			subtitle: "&9冷知识:石磨下面可以输入应力"
+			tasks: [
+				{
+					id: "38EEA0F86071EC7A"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "1E5F71EF586EB038"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			title: "&b磨磨磨!"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["553BBA981FDA9EBA"]
+			id: "46AB72C31B2C5522"
+			tasks: [
+				{
+					id: "4728DC60575395EF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:stew_pot"
+						}
+					}
+					title: "汤锅"
+					type: "item"
+				}
+				{
+					id: "360E44C321367305"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:stoves"
+						}
+					}
+					title: "&b任意灶台"
+					type: "item"
+				}
+			]
+			title: "&b煲汤..?"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["01297601A65A9627"]
+			id: "1D45C9BA70CFB5DA"
+			tasks: [{
+				id: "6B2E4584AAA02846"
+				item: "melter:melter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4E7E549AC8058BC9"
+				"1D45C9BA70CFB5DA"
+				"46AB72C31B2C5522"
+			]
+			description: ["{image:new_create:textures/images/12.png width:230 height:135 align:1}"]
+			id: "2D745F08BA3F92F7"
+			tasks: [{
+				id: "4FBD9FF5174F89CE"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "new_create:embalming_fluid"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["38383DFF428AF0E9"]
+			id: "4E7E549AC8058BC9"
+			tasks: [{
+				id: "1F094792A3B78991"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"25E790CA72DE9B02"
+				"5A830A590B380A15"
+				"4564B8B1C6B93986"
+			]
+			description: ["{image:new_create:textures/images/1.png width:50 height:50 align:1}"]
+			id: "2D16703D178AB2C0"
+			rewards: [{
+				count: 4
+				id: "1003F4CA7A852AB7"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			subtitle: "&a合成齿轮？！&r"
+			tasks: [
+				{
+					id: "4E23945FBA6AACBA"
+					item: "new_create:in_cogwheel"
+					type: "item"
+				}
+				{
+					id: "6702E6E234DFF25E"
+					item: "new_create:in_large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "76CB502AE9CE4AF8"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:shaft_add"
+						}
+					}
+					title: "Any #create:shaft_add"
+					type: "item"
+				}
+			]
+			title: "&b是齿轮!他加了齿轮!"
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2D16703D178AB2C0"]
+			description: ["&a※你已经掌握了齿轮合成的方法&r"]
+			id: "5A260B030BEC3846"
+			rewards: [
+				{
+					id: "3D5E5501A9E7BB85"
+					item: {
+						Count: 1b
+						id: "new_create:iron_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "52B9BEE22DC46193"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.5d
+			subtitle: "&5物理知识:大小齿轮变速!"
+			tasks: [
+				{
+					count: 4L
+					id: "2D50A178A2288CC0"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "75242E3FE9E16C98"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "&3齿轮"
+			x: 17.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["19EBCC3BE555DF14"]
+			description: ["&a将粘土放上营火烧制成红砖&r"]
+			id: "59A06A813564EA72"
+			rewards: [{
+				count: 16
+				id: "3C4CD5A4FA6AEE55"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3438037D2DF5091C"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			title: "&3烧制物品其二"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["59A06A813564EA72"]
+			description: [
+				"&a恭喜你发现了新的合成方式&r"
+				"&9通过合金窑，你可以烧制铜锭&r"
+				"&a进入铜器时代！&r"
+			]
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:alloy_smelter"
+				tag: { }
+			}
+			id: "17A15D75F1EC5311"
+			rewards: [
+				{
+					id: "43C17610244AA3F8"
+					item: "farmersdelight:hot_cocoa"
+					type: "item"
+				}
+				{
+					id: "48DA5FC8FC24136F"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2715B39EFD8060FF"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+				{
+					id: "3C17350DF09BC811"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3合金窑"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["17A15D75F1EC5311"]
+			description: [
+				"&a获取你的第一块金属！&r"
+				"&a奖励你一箱马铃薯~&r"
+			]
+			id: "2BB8EC9F1782C4DE"
+			rewards: [{
+				id: "6B8EB2EF24A3F6B9"
+				item: "farmersdelight:potato_crate"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B5081C558A4CD42"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "铜锭"
+				type: "item"
+			}]
+			title: "&3第一块金属"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"730438679F2E34EF"
+				"2BB8EC9F1782C4DE"
+			]
+			id: "69F096A8B3BEFF94"
+			subtitle: "&2要步入工业时代了吗?(bushi)"
+			tasks: [{
+				id: "55DC675B9D16FE11"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/copper"
+					}
+				}
+				title: "Any #forge:plates/copper"
+				type: "item"
+			}]
+			title: "&3第一块铜板!"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["69F096A8B3BEFF94"]
+			description: [""]
+			id: "25E790CA72DE9B02"
+			rewards: [{
+				count: 32
+				id: "5EB112FE5E563206"
+				item: "minecraft:smooth_stone"
+				type: "item"
+			}]
+			subtitle: "&6一般般.."
+			tasks: [{
+				id: "5C987E7B453F5ADB"
+				item: "minecraft:stonecutter"
+				type: "item"
+			}]
+			title: "&9额...机器?"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2D745F08BA3F92F7"]
+			id: "5A830A590B380A15"
+			tasks: [{
+				id: "7BC814F89FF5CEF1"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"730438679F2E34EF"
+				"4926BA40480454AE"
+			]
+			description: [
+				"&6制作一个营火&r"
+				"&2用来烧制&r &4食物&r &2或&r &4物品&r"
+			]
+			id: "19EBCC3BE555DF14"
+			rewards: [
+				{
+					count: 4
+					id: "36EC7C1B11EAC894"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "260BF6B89A90F5E9"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "3D515F4EE6ECAAE1"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			title: "&b烧制物品！"
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6E8D524A504AD514"]
+			id: "4564B8B1C6B93986"
+			tasks: [{
+				id: "43EA478FAFA30BDD"
+				item: "new_create:primary_bearing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+	]
+	title: "&6第二节 齿轮的美梦"
+}

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "no1"
-	group: ""
+	group: "1C13CB3518C6DB10"
 	icon: "thermal:machine_furnace"
 	id: "25FC0F4076CF1414"
-	order_index: 4
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -18,8 +18,8 @@
 				item: "thermal:energy_cell_frame"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.5d
+			x: -12.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["37CB5D8FF3EBE1F7"]
@@ -29,8 +29,8 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["37CB5D8FF3EBE1F7"]
@@ -40,8 +40,8 @@
 				item: "thermal:machine_pyrolyzer"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -0.5d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -63,36 +63,29 @@
 				type: "item"
 			}]
 			title: "焦油"
-			x: -4.5d
-			y: -0.5d
+			x: -6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["57D1D29330B51315"]
 			id: "48D4E4D7F258F284"
-			tasks: [{
-				id: "16B6BC734F2C4B30"
-				item: "thermal:heavy_oil_bucket"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["57D1D29330B51315"]
-			id: "3E74927AB92F6930"
-			tasks: [{
-				id: "4FE38F7612A6690D"
-				item: "thermal:light_oil_bucket"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"48D4E4D7F258F284"
-				"3E74927AB92F6930"
+			tasks: [
+				{
+					id: "16B6BC734F2C4B30"
+					item: "thermal:heavy_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "77334126DE7AD9D5"
+					item: "thermal:light_oil_bucket"
+					type: "item"
+				}
 			]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["48D4E4D7F258F284"]
 			dependency_requirement: "one_completed"
 			id: "7F503F3E9FCF5B90"
 			tasks: [{
@@ -101,7 +94,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -119,8 +112,8 @@
 				title: "&6混合器"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2F5EF5768AC4284A"]
@@ -131,7 +124,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5B5AB021C4F4BFB8"]
@@ -144,7 +137,7 @@
 			}]
 			title: "&6电子管量产"
 			x: -2.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5B5AB021C4F4BFB8"]
@@ -155,7 +148,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["696726FEA75D95E4"]
@@ -165,8 +158,8 @@
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -181,7 +174,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -194,8 +187,8 @@
 				item: "new_create:mithril_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["37CB5D8FF3EBE1F7"]
@@ -211,8 +204,8 @@
 				title: "&6粉碎机"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["013311E6F1722D52"]
@@ -222,8 +215,8 @@
 				item: "mekanism:dust_emerald"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.5d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["72E7BB363904DD98"]
@@ -233,8 +226,8 @@
 				item: "new_create:mithril_sheet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -247,8 +240,8 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["73DEE011EAF7D46A"]
@@ -258,8 +251,8 @@
 				item: "thermal:rose_gold_gear"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -273,8 +266,8 @@
 				item: "thermal:rose_gold_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["73835F2AF14AC407"]
@@ -285,8 +278,8 @@
 				type: "item"
 			}]
 			title: "又双叒叕是新炉子"
-			x: 2.0d
-			y: 3.0d
+			x: 9.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -302,8 +295,8 @@
 				type: "item"
 			}]
 			title: "&c多多少少有点邪门?"
-			x: 1.0d
-			y: 2.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			id: "55E2844C773D925A"
@@ -321,8 +314,8 @@
 				}
 			]
 			title: "&b这不是皇室战争"
-			x: 1.0d
-			y: 3.0d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["02C702D9B6C35B1C"]
@@ -340,8 +333,8 @@
 				type: "item"
 			}]
 			title: "&b闻起来有点像薄荷"
-			x: 0.0d
-			y: 3.0d
+			x: 3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["68FA0865F8329BEF"]
@@ -352,8 +345,8 @@
 				type: "item"
 			}]
 			title: "&6古希腊掌管震动的神"
-			x: -1.0d
-			y: 3.0d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
 			id: "68FA0865F8329BEF"
@@ -363,8 +356,8 @@
 				type: "item"
 			}]
 			title: "&b这东西威力老大了捏"
-			x: -2.0d
-			y: 3.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["149A937936D08DE9"]
@@ -384,8 +377,8 @@
 				type: "item"
 			}]
 			title: "&b大风车吱呀吱哟哟地转"
-			x: 2.0d
-			y: 0.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["162AD456A9098EBC"]
@@ -413,8 +406,8 @@
 				type: "item"
 			}]
 			title: "&c纯粹!"
-			x: 2.0d
-			y: 1.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -429,8 +422,8 @@
 				type: "item"
 			}]
 			title: "&c化学最好的一集"
-			x: 2.0d
-			y: 2.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["285B90A0250D5EA3"]
@@ -441,8 +434,8 @@
 				type: "item"
 			}]
 			title: "硅?"
-			x: 3.0d
-			y: 3.0d
+			x: 10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -457,23 +450,8 @@
 				type: "item"
 			}]
 			title: "硅!"
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"015E76603457CFF2"
-				"0CE928327BB29A80"
-			]
-			id: "17D831D19003A069"
-			tasks: [{
-				id: "369941605B2C2FF7"
-				item: "ae2:fluix_crystal"
-				type: "item"
-			}]
-			title: "&b它电我!"
-			x: 3.0d
-			y: 1.0d
+			x: 12.0d
+			y: 2.5d
 		}
 	]
 	title: "&6工业大发展"

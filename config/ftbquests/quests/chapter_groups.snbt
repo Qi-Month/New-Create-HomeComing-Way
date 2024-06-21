@@ -1,3 +1,8 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "29FEE0816C5CB526", title: "&7第一章 安山时代" }
+		{ id: "07F1CAC005DFF915", title: "第二章 机械革命" }
+		{ id: "7883EB8AF9923823", title: "第三章 电光初现" }
+		{ id: "1C13CB3518C6DB10", title: "第四章 工业长路" }
+	]
 }

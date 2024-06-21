@@ -1,0 +1,666 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "61"
+	group: "29FEE0816C5CB526"
+	icon: "new_create:cast_iron_ingot"
+	id: "7D7E28A6C0D83B78"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2BB8EC9F1782C4DE"]
+			icon: "immersiveengineering:blastbrick"
+			id: "3A473E646F259743"
+			tasks: [{
+				count: 27L
+				id: "4B3A65445A6A5408"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["38383DFF428AF0E9"]
+			id: "6B3FB60CBF3CB68A"
+			shape: "pentagon"
+			size: 2.5d
+			subtitle: "用石磨磨碎"
+			tasks: [{
+				id: "2CB6652C5DAB3F9A"
+				item: "create:crushed_raw_tin"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4256CEC6F890C8D1"]
+			hide_dependency_lines: false
+			id: "17441F3276DFB9CA"
+			rewards: [{
+				count: 9
+				id: "558CC8C50432E6B1"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&b挺有意思的不是吗"
+			tasks: [{
+				id: "2FAD2161086013A5"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			x: 5.625d
+			y: 5.625d
+		}
+		{
+			dependencies: [
+				"6B3FB60CBF3CB68A"
+				"17A15D75F1EC5311"
+			]
+			id: "42B17692177022C8"
+			tasks: [{
+				id: "22E51EF85BDD7183"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/tin"
+					}
+				}
+				title: "锡"
+				type: "item"
+			}]
+			title: "锡"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BB8EC9F1782C4DE"]
+			description: [
+				"{image:new_create:textures/images/1.png width:50 height:50 align:1}"
+				""
+			]
+			id: "54D3E82DA2242218"
+			subtitle: "&b铜太软了!不适合做工具啊!(没错我就是不让你用"
+			tasks: [{
+				id: "5020FE8FABA1B60D"
+				type: "checkmark"
+			}]
+			title: "&6铜工具?"
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"54D3E82DA2242218"
+				"42B17692177022C8"
+			]
+			id: "2515602CF3C6878B"
+			tasks: [{
+				id: "77B2E1EFCF6AACCE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "青铜"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2515602CF3C6878B"]
+			id: "2C50439ADFBC4767"
+			tasks: [{
+				id: "63BC03E2027A60C5"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			title: "&6 Creafing Table - 2"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2515602CF3C6878B"]
+			id: "4256CEC6F890C8D1"
+			tasks: [{
+				id: "4F9D594E1FAD33F0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/bronze"
+					}
+				}
+				title: "Any #forge:plates/bronze"
+				type: "item"
+			}]
+			title: "青铜板"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2C50439ADFBC4767"
+				"4256CEC6F890C8D1"
+				"5A260B030BEC3846"
+			]
+			id: "3DBE4D0DD20AE7F9"
+			rewards: [{
+				count: 8
+				id: "4A781602BEC256FB"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "17E9642589F17BE2"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "57BEDC19050824E2"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "33F23B625AA5F9A3"
+					item: "new_create:heat_coal_block"
+					type: "item"
+				}
+			]
+			title: "咕噜噜?"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7EC0F60AA1929893"
+				"3DBE4D0DD20AE7F9"
+			]
+			id: "706944B05AB03623"
+			tasks: [
+				{
+					id: "23A7422B439EDC76"
+					item: "createmetallurgy:casting_table"
+					type: "item"
+				}
+				{
+					id: "46E88704FDF960A3"
+					item: "createmetallurgy:graphite_ingot_mold"
+					type: "item"
+				}
+			]
+			title: "金属冶炼"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2515602CF3C6878B"]
+			description: ["&a观察一个野生铁矿&r"]
+			id: "7EC0F60AA1929893"
+			rewards: [{
+				count: 8
+				id: "47C10794E0410E1D"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "&2这东西或许有用"
+			tasks: [
+				{
+					icon: "minecraft:iron_ore"
+					id: "345D75D3B8AA449E"
+					observe_type: 1
+					timer: 0L
+					to_observe: "#minecraft:iron_ores"
+					type: "observation"
+				}
+				{
+					id: "3AC3744A99373501"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3这是什么?看一下"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["706944B05AB03623"]
+			id: "1D09EB7F2A052899"
+			rewards: [{
+				count: 16
+				id: "2ED3910B6FF700EF"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "76C7707A779D943F"
+					item: "createmetallurgy:graphite_blank_mold"
+					type: "item"
+				}
+				{
+					id: "3250DA5C7483CAFC"
+					item: "createmetallurgy:graphite_ingot_mold"
+					type: "item"
+				}
+				{
+					id: "452935BB969F51FE"
+					item: "createmetallurgy:graphite_nugget_mold"
+					type: "item"
+				}
+				{
+					id: "395D4882C242F9E9"
+					item: "createmetallurgy:graphite_plate_mold"
+					type: "item"
+				}
+			]
+			title: "匠...匠魂..?"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7EC0F60AA1929893"]
+			id: "460C89002A0E5E1C"
+			rewards: [{
+				count: 8
+				id: "2A69BB3D6C850584"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4A070AE36C1AE62E"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00722D883BBADF51"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&a青铜Tools"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3DBE4D0DD20AE7F9"]
+			id: "797CC6360C318986"
+			tasks: [{
+				id: "2B33DB728792E832"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/iron"
+					}
+				}
+				title: "铁!"
+				type: "item"
+			}]
+			title: "铁锭"
+			x: -7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["797CC6360C318986"]
+			id: "14D8A85A958660A7"
+			subtitle: "&b这玩意比黏土的好使多了"
+			tasks: [{
+				id: "1C63B44F811D6F58"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57903FCA47EF155F"]
+			id: "603D7BE6F9FED860"
+			tasks: [{
+				id: "6C59E797EDB6E339"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2BB8EC9F1782C4DE"]
+			id: "57903FCA47EF155F"
+			tasks: [{
+				count: 27L
+				id: "6742BBDB7CEA3BFE"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"603D7BE6F9FED860"
+				"14D8A85A958660A7"
+			]
+			description: [
+				"&b多余的杂酚油，搭配搅拌器制作防腐木板&r"
+				"&a第二种制作齿轮的方法&r"
+			]
+			id: "4EE63A4D36E8A6C4"
+			tasks: [{
+				id: "79142482CB1A7D84"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["797CC6360C318986"]
+			description: ["{image:new_create:textures/images/13.png width:150 height:117 align:1}"]
+			id: "58F802CA1B72AB77"
+			rewards: [{
+				id: "54CBDBA008EC3450"
+				type: "xp"
+				xp: 1
+			}]
+			subtitle: "你可以把铁轨丢到加热的工作盆和搅拌器中"
+			tasks: [{
+				id: "1C80AF508F5F5526"
+				title: "还记得匠魂中熔化铁轨的配方吗?"
+				type: "checkmark"
+			}]
+			title: "我该如何大量获得铁和金?"
+			x: -7.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"3A473E646F259743"
+				"797CC6360C318986"
+			]
+			dependency_requirement: "one_completed"
+			id: "3ED4088F5DEB249F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7B36110120CC2812"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
+					}
+				}
+				title: "Any #forge:ingots/cast_iron"
+				type: "item"
+			}]
+			title: "铸铁!"
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "4A932B57DA5B2F56"
+			subtitle: "让我用吧!"
+			tasks: [{
+				id: "0D22ED5B3D642CFF"
+				item: {
+					Count: 1b
+					id: "new_create:metal_detector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c我不想努力了"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "0331E2E5A91C4EA0"
+			tasks: [{
+				id: "212AE53270DF77D9"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/diamond"
+					}
+				}
+				title: "钻石"
+				type: "item"
+			}]
+			title: "&6亮闪闪！"
+			x: -8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "3FC68420B4E84A79"
+			rewards: [{
+				count: 48
+				id: "6400BD07B22A4BC8"
+				item: "new_create:cast_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "42ED46A81010ADF6"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "309446247685F7F9"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F98114521B7FE35"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2857DA2843D488EA"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "591780113958E0C7"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7611052289590266"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77A04A74E8AB1517"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FEA0A32EFAD9BCC"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D97FBCEE19874A"
+					item: {
+						Count: 1b
+						id: "new_create:cast_iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铸铁套"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0331E2E5A91C4EA0"]
+			id: "751A430A5BF08E1C"
+			tasks: [{
+				id: "67D24C5C6605E307"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:obsidian"
+					}
+				}
+				title: "黑曜石"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["751A430A5BF08E1C"]
+			id: "6CE2020A2C487224"
+			tasks: [
+				{
+					id: "5007D4B6E4C27C3C"
+					item: "new_create:log_pile"
+					type: "item"
+				}
+				{
+					id: "4BDBD61EB0959449"
+					item: {
+						Count: 1b
+						id: "new_create:tinder"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6生火"
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "6A07C6743F676627"
+			tasks: [
+				{
+					id: "113713DE186687F1"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "72F94EC791F0AE04"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "576269F83F46AA4F"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+				{
+					id: "0EB5CFFBC215CB87"
+					item: "pipez:universal_pipe"
+					type: "item"
+				}
+				{
+					id: "21087739397286EC"
+					item: "pipez:gas_pipe"
+					type: "item"
+				}
+				{
+					id: "62F8448DA50D4D29"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			title: "&3各种管道"
+			x: -5.0d
+			y: 9.0d
+		}
+	]
+	title: "&6第三节 冶金新纪元"
+}

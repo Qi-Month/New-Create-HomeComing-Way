@@ -5,7 +5,7 @@
 	group: ""
 	icon: "minecraft:clock"
 	id: "3D5F25CAE2865380"
-	order_index: 8
+	order_index: 4
 	quest_links: [ ]
 	quests: [{
 		id: "111B9834A26450CD"

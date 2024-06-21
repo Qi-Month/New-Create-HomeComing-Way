@@ -5,7 +5,7 @@
 	group: ""
 	icon: "artifacts:eternal_steak"
 	id: "731DD2E5F2D6330C"
-	order_index: 9
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

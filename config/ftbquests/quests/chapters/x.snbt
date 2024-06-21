@@ -1,0 +1,282 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "x"
+	group: "1C13CB3518C6DB10"
+	id: "677BDF95CC3260F2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0FFDD1889DBAD879"]
+			id: "41763712CAA3C152"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "56303C4FB56AB94E"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["41763712CAA3C152"]
+			description: ["&4给孩子吃点好的补补身体！&r"]
+			id: "398A640C804C1DC6"
+			tasks: [
+				{
+					id: "719791F63ABAE238"
+					item: "createaddition:straw"
+					type: "item"
+				}
+				{
+					icon: "create:blaze_burner"
+					id: "23E1F8472A2FB356"
+					observe_type: 0
+					timer: 0L
+					title: "&6给烈焰人喂食原油"
+					to_observe: "create:blaze_burner"
+					type: "observation"
+				}
+				{
+					id: "739DA3291360A316"
+					item: "createdieselgenerators:crude_oil_bucket"
+					type: "item"
+				}
+			]
+			title: "&4行行好吧！"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"41763712CAA3C152"
+				"339486C0A55ADDB5"
+			]
+			id: "77901ACF5BAB7B18"
+			tasks: [{
+				id: "104880FEAD855FEB"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["77901ACF5BAB7B18"]
+			id: "2D88E78573250089"
+			tasks: [{
+				id: "5E06C9E21B60F8D9"
+				item: "new_create:kerosene_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77901ACF5BAB7B18"]
+			id: "1EB8339555BCDB68"
+			tasks: [{
+				id: "72044B669238A9BD"
+				item: "createdieselgenerators:diesel_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77901ACF5BAB7B18"]
+			id: "4FE4E7B453E29469"
+			tasks: [{
+				id: "7858DA2C596ACFA4"
+				item: "createdieselgenerators:gasoline_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77901ACF5BAB7B18"]
+			id: "22D49972B51452CE"
+			tasks: [{
+				id: "6E3DC82BB5411F6D"
+				item: "new_create:industrial_fuel_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4FE4E7B453E29469"
+				"22D49972B51452CE"
+			]
+			id: "448028825B010947"
+			tasks: [{
+				id: "581C15894D6E8029"
+				title: "&6炼油厂"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["448028825B010947"]
+			id: "6D487531D83FC806"
+			tasks: [{
+				id: "35EE64BB3684784C"
+				item: "new_create:mixed_gasoline_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5A3B8D588B2DFB69"]
+			id: "6A726C92FF74F0C0"
+			tasks: [{
+				id: "32A4CCE0F8AED48A"
+				item: "new_create:plastic_sheet"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"6D487531D83FC806"
+				"414DA18E21CBEBD9"
+			]
+			id: "5A3B8D588B2DFB69"
+			tasks: [{
+				id: "3C2163B5A84A0828"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3D5DB5F7999E9CFE"]
+			dependency_requirement: "all_started"
+			id: "414DA18E21CBEBD9"
+			tasks: [{
+				id: "19E806E6F0B8D0D6"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0FFDD1889DBAD879"]
+			id: "3D5DB5F7999E9CFE"
+			tasks: [{
+				id: "674544FBC0D25CAD"
+				item: "create_things_and_misc:rose_quartz_sheet"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6A726C92FF74F0C0"
+				"15E7755859821187"
+			]
+			id: "575494C93DAD95D5"
+			tasks: [{
+				id: "3879B144C8AAFC8C"
+				item: "immersiveengineering:electron_tube"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["575494C93DAD95D5"]
+			id: "322E0F6897A2D5FB"
+			tasks: [{
+				id: "197F63D33F1062AB"
+				item: "immersiveengineering:toolupgrade_revolver_electro"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"322E0F6897A2D5FB"
+				"26BD9F56C7AB50E3"
+				"53F81B1B25C91DD4"
+			]
+			id: "7DB50F72D65346B2"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1C6690A3F29A7A98"
+				item: "thermal:energy_cell_frame"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0FFDD1889DBAD879"]
+			id: "15E7755859821187"
+			tasks: [{
+				id: "0BD31AABEA1C16DF"
+				item: "thermal:nickel_plate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31663E31F37FBD9D"]
+			id: "26BD9F56C7AB50E3"
+			tasks: [{
+				id: "6B2D23B2B621024F"
+				item: "thermal:lumium_plate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0FFDD1889DBAD879"]
+			id: "53F81B1B25C91DD4"
+			tasks: [{
+				id: "7D991D0CB8C97EEE"
+				item: "thermal:lead_plate"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0FFDD1889DBAD879"]
+			id: "31663E31F37FBD9D"
+			tasks: [{
+				id: "03CCA7B3A1530E0E"
+				item: "thermal:lumium_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0FFDD1889DBAD879"]
+			id: "339486C0A55ADDB5"
+			tasks: [{
+				id: "533F70FCCC66AB79"
+				item: "thermal:invar_gear"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+	]
+	title: "&6 炼油与铺垫"
+}

@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5AE1CF7E2A53A49E"
+	group: "29FEE0816C5CB526"
+	icon: "create:andesite_alloy"
+	id: "5AE1CF7E2A53A49E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["751A430A5BF08E1C"]
+			hide_dependency_lines: true
+			icon: "minecraft:netherrack"
+			id: "20A872AC6608D6F4"
+			rewards: [{
+				count: 5
+				id: "216416B0F595833A"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2793497E06464B1D"
+				type: "dimension"
+			}]
+			title: "&6下届！"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "2A28868E8B9E784C"
+			tasks: [{
+				id: "6A907CEE86A252F3"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			title: "&3带点土特产"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "16D16B70B7048697"
+			rewards: [{
+				id: "2B9D258A1822175F"
+				item: {
+					Count: 1b
+					id: "minecraft:golden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&6Or PVE Boss"
+			tasks: [{
+				entity: "minecraft:piglin_brute"
+				id: "7F00A807C47DFDD8"
+				type: "kill"
+				value: 100L
+			}]
+			title: "&6还是PVE大佬"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "6792817D07E7A2CC"
+			tasks: [
+				{
+					id: "36B045355C67268D"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "070A22FFDF16BE30"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "&6黑奴"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2A28868E8B9E784C"]
+			id: "56EF12FBD4DD7951"
+			tasks: [{
+				id: "612C1F9CCB54EA83"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			title: "&6粉色宝石"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5A8DC2AA997D9470"
+				"20D375F0BE743E81"
+				"5A62DDD36E032CE4"
+			]
+			id: "1B430050B27D9128"
+			subtitle: "不要忘记前面的置物台哦"
+			tasks: [{
+				id: "6F1ACC78E12FFFF6"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["56EF12FBD4DD7951"]
+			id: "1A3179CD594FE26C"
+			rewards: [{
+				count: 2
+				id: "7EA5801272486977"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F8E6BDC4F97CBC7"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/redstone"
+						}
+					}
+					title: "红石块"
+					type: "item"
+				}
+				{
+					id: "20FFCB44D6C01805"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/quartz"
+						}
+					}
+					title: "石英"
+					type: "item"
+				}
+			]
+			title: "&3高效合成"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6792817D07E7A2CC"]
+			id: "638114AF83959CA5"
+			subtitle: "一点金属和黏土"
+			tasks: [{
+				count: 8L
+				id: "33E41938E35013FB"
+				item: "new_create:andesite_compound"
+				type: "item"
+			}]
+			title: "&3准备准备?"
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "62864688AD6F3A16"
+			tasks: [{
+				id: "7440FA79D2BAA8FF"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/blaze"
+					}
+				}
+				title: "&b烈焰棒"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"638114AF83959CA5"
+				"3524375EE2AAD6B3"
+			]
+			id: "20D375F0BE743E81"
+			tasks: [{
+				id: "66EEDFDD270E659B"
+				item: "new_create:andesite_compound_fluid_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["1B430050B27D9128"]
+			dependency_requirement: "one_completed"
+			id: "57B10D84AF8804DC"
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "0662BFA496519A84"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "&6开启新纪元！"
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6792817D07E7A2CC"]
+			id: "3524375EE2AAD6B3"
+			tasks: [{
+				id: "27BD1A37426D491B"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "准备搅拌"
+			x: -1.5d
+			y: -7.0d
+		}
+		{
+			id: "5A8DC2AA997D9470"
+			tasks: [
+				{
+					id: "1BA829370D72BFAC"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "6BB49A090FD6079A"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "5AD377760C949C88"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "我是马里奥管道工"
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["62864688AD6F3A16"]
+			dependency_requirement: "one_completed"
+			id: "1EACACB42DF82DF3"
+			tasks: [{
+				id: "5FCCDE5F43934E59"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["01FE40365637AA86"]
+			id: "2141155022DF472D"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "2B8BF65E5A420F85"
+				type: "kill"
+				value: 100L
+			}]
+			title: "&4又或是PVE大佬"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["11121D82A0A66FC5"]
+			id: "4B2FE37EFA5F3ED0"
+			tasks: [{
+				count: 4L
+				id: "6088E903A584E0D3"
+				item: "minecraft:end_crystal"
+				type: "item"
+			}]
+			title: "&4复活吧！我的爱人！"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["01FE40365637AA86"]
+			id: "11121D82A0A66FC5"
+			tasks: [{
+				id: "33F6248505DCB75B"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "&6结束了？"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11121D82A0A66FC5"]
+			id: "17BAC81D175530D4"
+			rewards: [{
+				count: 128
+				id: "3666936A71F1B827"
+				item: {
+					Count: 1b
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Flight: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0096BB5582DED60E"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&4道路千万条，安全第一条"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1EACACB42DF82DF3"]
+			icon: "minecraft:end_stone"
+			id: "01FE40365637AA86"
+			subtitle: "你问我来末地有啥用？我也不知道"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "33853EA9939B686C"
+				type: "dimension"
+			}]
+			title: "欢迎来到末地"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["01FE40365637AA86"]
+			id: "5DB01E140410B107"
+			tasks: [{
+				count: 64L
+				id: "44BCCFB021B39908"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			title: "或者是种田大佬"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20A872AC6608D6F4"]
+			id: "015016440233C7E3"
+			tasks: [{
+				count: 64L
+				id: "6D084361F0D009BD"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "或者是挖矿大佬"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "5A62DDD36E032CE4"
+			tasks: [{
+				id: "4BFF60F3832E74B1"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -8.5d
+		}
+	]
+	title: "&6第四节 炼狱合金梦"
+}

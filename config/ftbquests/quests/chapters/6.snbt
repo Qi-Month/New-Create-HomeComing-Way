@@ -1,0 +1,90 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6"
+	group: "07F1CAC005DFF915"
+	icon: "create:mechanical_arm"
+	id: "1AD1C6CC8C01C1A8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5AAA4CA194571891"]
+			id: "55111185C5307602"
+			tasks: [{
+				count: 512L
+				id: "44CE0EFE8621C8D3"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "&6树场"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3A473E646F259743"
+				"55111185C5307602"
+			]
+			id: "1A85E207AA87B16C"
+			tasks: [
+				{
+					count: 128L
+					id: "017E224BE6C5F314"
+					item: "immersiveengineering:slag"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "19F2891D283791D3"
+					item: "immersiveengineering:coal_coke"
+					type: "item"
+				}
+			]
+			title: "&5矿渣量产"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A85E207AA87B16C"]
+			id: "350A56E5147E87CC"
+			tasks: [{
+				count: 10L
+				id: "0D50B3019A24270D"
+				item: "new_create:working_fluid_bucket"
+				type: "item"
+			}]
+			title: "&5加工液量产"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["350A56E5147E87CC"]
+			id: "25598A1289E07375"
+			tasks: [{
+				count: 128L
+				id: "4A13ADF2FD033949"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "Any #forge:ingots/copper"
+				type: "item"
+			}]
+			title: "&5铜锭量产"
+			x: -1.0d
+			y: 2.0d
+		}
+	]
+	title: "&6小插曲 开启自动化"
+}

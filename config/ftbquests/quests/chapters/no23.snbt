@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "no23"
-	group: ""
+	group: "7883EB8AF9923823"
 	icon: {
 		Count: 1b
 		id: "immersiveengineering:wirecutter"
@@ -11,397 +11,11 @@
 		}
 	}
 	id: "71430DA3593987FF"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6959B15D3B53F1DA"]
-			id: "58118D754E67D822"
-			tasks: [{
-				id: "7F2D9A6997FB1063"
-				item: "create_new_age:generator_coil"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["58118D754E67D822"]
-			id: "23307DC6434DC928"
-			tasks: [{
-				id: "62E2A5B90311058B"
-				item: "create_new_age:carbon_brushes"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"7C43B6168E6D80E1"
-				"695B6A8765FF64D5"
-			]
-			description: ["{image:#FFFFFF width:100 height:100 align:1}"]
-			id: "439B67F0239B0130"
-			tasks: [{
-				id: "37AB5A9A95CBF566"
-				item: "createaddition:electric_motor"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0712EE16A99BF165"]
-			id: "582C90B229E925ED"
-			tasks: [
-				{
-					id: "0DCCFEFBD141F743"
-					item: "minecraft:lightning_rod"
-					type: "item"
-				}
-				{
-					id: "462E1DD036829955"
-					item: "create:railway_casing"
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"23307DC6434DC928"
-				"582C90B229E925ED"
-			]
-			id: "103EBB625BFD8005"
-			tasks: [{
-				id: "63539AC078FD4B41"
-				item: "create_new_age:energiser_t1"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"1B430050B27D9128"
-				"240B6094033926D5"
-			]
-			id: "74E72AD95A38ACE0"
-			tasks: [{
-				id: "580DD8260BFD3DAC"
-				item: "create:spout"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["103EBB625BFD8005"]
-			id: "3E073FC5B24E8DA1"
-			tasks: [{
-				id: "517F668EDB730301"
-				item: "new_create:plating_zinc_ingot"
-				type: "item"
-			}]
-			x: 0.452380952380949d
-			y: 0.5718005952380913d
-		}
-		{
-			dependencies: ["3E073FC5B24E8DA1"]
-			id: "56FC7B94E78611DF"
-			tasks: [{
-				id: "3C94DA1DC8CD982E"
-				item: "new_create:zinc_fluid_bucket"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"56FC7B94E78611DF"
-				"74E72AD95A38ACE0"
-			]
-			id: "7C43B6168E6D80E1"
-			tasks: [{
-				id: "614575C4381E2229"
-				item: "new_create:zinc_electron_tube"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"08D0B71A89D8ABC5"
-				"1B1094269CB6A281"
-			]
-			id: "695B6A8765FF64D5"
-			subtitle: "古希腊掌管铝板的神"
-			tasks: [{
-				id: "4706A619864B7E3B"
-				item: "createaddition:capacitor"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"4EE63A4D36E8A6C4"
-				"39E914E2273A4310"
-			]
-			id: "0A0EDACAFB3D3068"
-			tasks: [{
-				id: "58F1C12727C5B523"
-				item: "immersiveengineering:workbench"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["0A0EDACAFB3D3068"]
-			id: "08D0B71A89D8ABC5"
-			tasks: [{
-				id: "0622AD99CC901B8E"
-				item: "immersiveengineering:component_electronic"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["08D0B71A89D8ABC5"]
-			id: "1C67E14D40E8D649"
-			tasks: [{
-				id: "6A16BBF1EEF8DC4F"
-				item: "immersiveengineering:circuit_board"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["1C67E14D40E8D649"]
-			id: "1B1094269CB6A281"
-			tasks: [{
-				id: "2727175F03489B8E"
-				item: "immersiveengineering:logic_circuit"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["103EBB625BFD8005"]
-			id: "6345D4923272CC38"
-			tasks: [{
-				id: "41AD4D3FE3333427"
-				item: "create_new_age:energiser_t2"
-				type: "item"
-			}]
-			title: "&6Puls"
-			x: -0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["6345D4923272CC38"]
-			id: "43066A0D2D64BB27"
-			tasks: [{
-				id: "435B24C563104250"
-				item: "create_new_age:energiser_t3"
-				type: "item"
-			}]
-			title: "&6一代更比一代强!"
-			x: 0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["4EE63A4D36E8A6C4"]
-			id: "39E914E2273A4310"
-			tasks: [{
-				id: "7CB000BF250D6F8C"
-				title: "&6防腐木板量产"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: 2.5d
-		}
-		{
-			id: "110D68CF4B2C954B"
-			tasks: [{
-				id: "0809A26498716CC2"
-				item: "minecraft:blast_furnace"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"33F5A9C5D6F8ED62"
-				"113B30972B23CD10"
-			]
-			description: ["{image:new_create:textures/images/4.png width:100 height:100 align:1}"]
-			id: "1C64E58F82BAF3FA"
-			subtitle: "&4古希腊掌管机壳的神&r"
-			tasks: [{
-				id: "7A0775094F6149F3"
-				item: "createaddition:tesla_coil"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"3A473E646F259743"
-				"55111185C5307602"
-			]
-			id: "1A85E207AA87B16C"
-			tasks: [
-				{
-					count: 128L
-					id: "017E224BE6C5F314"
-					item: "immersiveengineering:slag"
-					type: "item"
-				}
-				{
-					count: 128L
-					id: "19F2891D283791D3"
-					item: "immersiveengineering:coal_coke"
-					type: "item"
-				}
-			]
-			title: "&5矿渣量产"
-			x: 8.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["1A85E207AA87B16C"]
-			id: "350A56E5147E87CC"
-			tasks: [{
-				count: 10L
-				id: "0D50B3019A24270D"
-				item: "new_create:working_fluid_bucket"
-				type: "item"
-			}]
-			title: "&5加工液量产"
-			x: 8.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["350A56E5147E87CC"]
-			id: "25598A1289E07375"
-			tasks: [{
-				count: 128L
-				id: "4A13ADF2FD033949"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/copper"
-					}
-				}
-				title: "Any #forge:ingots/copper"
-				type: "item"
-			}]
-			title: "&5铜锭量产"
-			x: 7.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["5AAA4CA194571891"]
-			id: "55111185C5307602"
-			tasks: [{
-				count: 512L
-				id: "44CE0EFE8621C8D3"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
-				}
-				title: "Any #minecraft:logs"
-				type: "item"
-			}]
-			title: "&6树场"
-			x: 7.500000000000007d
-			y: 2.535621279761905d
-		}
-		{
-			hide_dependency_lines: true
-			id: "7AE62C3E07FAAA6E"
-			tasks: [{
-				id: "49F13384707472C4"
-				item: "immersiveengineering:heavy_engineering"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"0791AFB06FA174EE"
-				"6B5081C558A4CD42"
-			]
-			id: "3A4EF78AE3210A5E"
-			tasks: [{
-				id: "4B8E979F4F56F154"
-				item: "immersiveengineering:light_engineering"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"1C64E58F82BAF3FA"
-				"7AE62C3E07FAAA6E"
-			]
-			id: "705C326DBEE9FEC8"
-			tasks: [{
-				id: "10CFF0241B43C7DF"
-				item: "immersiveengineering:rs_engineering"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0A0EDACAFB3D3068"]
-			description: ["&a看看你的工程师手册还在不在!!!&r"]
-			id: "79D77C6A41240468"
-			tasks: [{
-				id: "12F8D748F943E629"
-				item: "immersiveengineering:manual"
-				type: "item"
-			}]
-			title: "&6不懂就问"
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3A4EF78AE3210A5E"]
-			id: "47892024F2D9E987"
-			tasks: [{
-				id: "7D948DA655E5D6B7"
-				item: "immersiveengineering:conveyor_basic"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"705C326DBEE9FEC8"
-				"3A4EF78AE3210A5E"
-				"47892024F2D9E987"
-			]
+			dependencies: ["705C326DBEE9FEC8"]
 			description: [
 				"&a你可以在JEI里面搜索金属冲压机的合成配方&r"
 				"&c切记是关于金属冲压机的合成配方!!!&r"
@@ -416,8 +30,8 @@
 				type: "checkmark"
 			}]
 			title: "&6金属冲压机"
-			x: 7.5d
-			y: -0.5d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["48D8D3CE8FBCA2C3"]
@@ -427,44 +41,8 @@
 				item: "immersiveengineering:mold_gear"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["439B67F0239B0130"]
-			id: "113B30972B23CD10"
-			tasks: [{
-				id: "34FAB67C950463FF"
-				item: "create_things_and_misc:vibration_mechanism"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7BE6C15697F9757C"]
-			id: "33F5A9C5D6F8ED62"
-			tasks: [{
-				id: "05E0782A4AF5F07E"
-				item: "new_create:cast_electron_tube"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"7C43B6168E6D80E1"
-				"74E72AD95A38ACE0"
-			]
-			id: "7BE6C15697F9757C"
-			tasks: [{
-				id: "5FCE3ABF1EDE7983"
-				item: "new_create:cast_iron_fluid_bucket"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -1.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["33E9A5642CBC42C6"]
@@ -475,7 +53,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["584DFC54C3D05D3B"]
@@ -485,8 +63,8 @@
 				item: "createdieselgenerators:oil_scanner"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.0d
+			x: 11.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -503,7 +81,7 @@
 				{
 					count: 7L
 					id: "35F823DAB8EDAE56"
-					item: { Count: 7b, id: "create:metal_girder" }
+					item: "create:metal_girder"
 					type: "item"
 				}
 				{
@@ -530,13 +108,24 @@
 				{
 					count: 6L
 					id: "57AD1D18A41D4FC0"
-					item: { Count: 6b, id: "create:copper_scaffolding" }
+					item: "create:copper_scaffolding"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "11A3D02394FE5D75"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "26CFCD1B0918BE0B"
+					item: "createdieselgenerators:pumpjack_hole"
 					type: "item"
 				}
 			]
 			title: "&6oil !"
-			x: 10.5d
-			y: 0.0d
+			x: 11.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["48D8D3CE8FBCA2C3"]
@@ -546,38 +135,26 @@
 				item: "new_create:mold_block"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 0.0d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["3F4B0B88F1B80CB1"]
+			dependencies: [
+				"3F4B0B88F1B80CB1"
+				"28CBB93704345791"
+			]
 			id: "686456E632BCC324"
 			tasks: [{
 				count: 2L
 				id: "5AA8F15DF560DBC2"
-				item: { Count: 2b, id: "createdieselgenerators:pumpjack_crank" }
+				item: "createdieselgenerators:pumpjack_crank"
 				type: "item"
 			}]
 			x: 9.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["686456E632BCC324"]
-			description: ["&bPS:一座油田够你吃一年了(&r"]
-			id: "354B075BFB6580E1"
-			tasks: [{
-				id: "38D65D7E96A11973"
-				item: "createdieselgenerators:pumpjack_hole"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"7A376F5312180CCE"
-				"354B075BFB6580E1"
-			]
+			dependencies: ["7A376F5312180CCE"]
 			description: [
 				"                          &a万事俱备！开抽！&r"
 				"{image:new_create:textures/images/5.png width:100 height:100 align:1}"
@@ -588,293 +165,33 @@
 				title: "&6滋生霉菌！"
 				type: "checkmark"
 			}]
-			x: 10.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0FFDD1889DBAD879"]
-			id: "41763712CAA3C152"
-			tasks: [{
-				id: "56303C4FB56AB94E"
-				item: "createdieselgenerators:crude_oil_bucket"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["41763712CAA3C152"]
-			description: ["&4给孩子吃点好的补补身体！&r"]
-			id: "398A640C804C1DC6"
-			tasks: [
-				{
-					id: "719791F63ABAE238"
-					item: "createaddition:straw"
-					type: "item"
-				}
-				{
-					icon: "create:blaze_burner"
-					id: "23E1F8472A2FB356"
-					observe_type: 0
-					timer: 0L
-					title: "&6给烈焰人喂食原油"
-					to_observe: "create:blaze_burner"
-					type: "observation"
-				}
-				{
-					id: "739DA3291360A316"
-					item: "createdieselgenerators:crude_oil_bucket"
-					type: "item"
-				}
-			]
-			title: "&4行行好吧！"
-			x: 11.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["41763712CAA3C152"]
-			id: "77901ACF5BAB7B18"
-			tasks: [{
-				id: "104880FEAD855FEB"
-				item: "createdieselgenerators:distillation_controller"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["77901ACF5BAB7B18"]
-			id: "4FE4E7B453E29469"
-			tasks: [{
-				id: "7858DA2C596ACFA4"
-				item: "createdieselgenerators:gasoline_bucket"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["77901ACF5BAB7B18"]
-			id: "1EB8339555BCDB68"
-			tasks: [{
-				id: "72044B669238A9BD"
-				item: "createdieselgenerators:diesel_bucket"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["77901ACF5BAB7B18"]
-			id: "2D88E78573250089"
-			tasks: [{
-				id: "5E06C9E21B60F8D9"
-				item: "new_create:kerosene_bucket"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["77901ACF5BAB7B18"]
-			id: "22D49972B51452CE"
-			tasks: [{
-				id: "6E3DC82BB5411F6D"
-				item: "new_create:industrial_fuel_bucket"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"4FE4E7B453E29469"
-				"22D49972B51452CE"
-			]
-			id: "448028825B010947"
-			tasks: [{
-				id: "581C15894D6E8029"
-				title: "&6炼油厂"
-				type: "checkmark"
-			}]
-			x: 11.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["448028825B010947"]
-			id: "6D487531D83FC806"
-			tasks: [{
-				id: "35EE64BB3684784C"
-				item: "new_create:mixed_gasoline_bucket"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["5A3B8D588B2DFB69"]
-			id: "6A726C92FF74F0C0"
-			tasks: [{
-				id: "32A4CCE0F8AED48A"
-				item: "new_create:plastic_sheet"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["6A726C92FF74F0C0"]
-			id: "575494C93DAD95D5"
-			tasks: [{
-				id: "3879B144C8AAFC8C"
-				item: "immersiveengineering:electron_tube"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["575494C93DAD95D5"]
-			id: "322E0F6897A2D5FB"
-			tasks: [{
-				id: "197F63D33F1062AB"
-				item: "immersiveengineering:toolupgrade_revolver_electro"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"322E0F6897A2D5FB"
-				"28CBB93704345791"
-			]
-			id: "7DB50F72D65346B2"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "1C6690A3F29A7A98"
-				item: "thermal:energy_cell_frame"
-				type: "item"
-			}]
 			x: 13.0d
-			y: 9.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["6BD5E537AB96529E"]
-			id: "414DA18E21CBEBD9"
-			tasks: [{
-				id: "19E806E6F0B8D0D6"
-				item: "thermal:rf_coil"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"6D487531D83FC806"
-				"414DA18E21CBEBD9"
-			]
-			id: "5A3B8D588B2DFB69"
-			tasks: [{
-				id: "3C2163B5A84A0828"
-				item: "thermal:machine_chiller"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["2417C6728C7512FC"]
-			id: "6BD5E537AB96529E"
-			tasks: [{
-				count: 16L
-				id: "2C2DD77EA7821918"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["5E64FB6BCCC2DCC2"]
-			id: "2417C6728C7512FC"
-			tasks: [{
-				id: "5DFDD5357A56D5A0"
-				item: "new_create:rose_quartz_fluid_bucket"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3DBE4D0DD20AE7F9"]
-			id: "5E64FB6BCCC2DCC2"
-			tasks: [
-				{
-					count: 4L
-					id: "46AAFADDA5D9BAD8"
-					item: "minecraft:quartz"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "37261BDCA14AD0BF"
-					item: "minecraft:redstone"
-					type: "item"
-				}
-			]
-			x: 9.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"4EF9DC3C984883CE"
-				"575494C93DAD95D5"
-			]
+			dependencies: ["6F585CAC89A82037"]
 			id: "28CBB93704345791"
 			tasks: [{
 				id: "55D7D758374CD0B1"
 				item: "new_create:calculation_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 7.5d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6F585CAC89A82037"]
-			id: "4EF9DC3C984883CE"
-			tasks: [{
-				id: "00341EB3E68AD313"
-				item: "immersiveengineering:component_electronic_adv"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["7539FEA03D853768"]
+			dependencies: [
+				"1E3D5A1D6BDFAD43"
+				"61CA7746367E38CA"
+			]
 			id: "6F585CAC89A82037"
 			tasks: [{
 				id: "1009A0847A574E86"
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["48D8D3CE8FBCA2C3"]
-			hide_dependency_lines: true
-			id: "7539FEA03D853768"
-			tasks: [{
-				id: "7D0397220E5C26DF"
-				title: "&6灌装机"
-				type: "checkmark"
-			}]
-			x: 11.0d
-			y: 8.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7DB50F72D65346B2"]
@@ -912,8 +229,42 @@
 				}
 			]
 			title: "&4????"
-			x: 8.5d
-			y: 1.0d
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1C64E58F82BAF3FA"]
+			id: "705C326DBEE9FEC8"
+			tasks: [
+				{
+					id: "10CFF0241B43C7DF"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "590842B72E3E8CE0"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "76EDE3C3C5450197"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "6FE3031AB2D31E73"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "1B425C08873DDBB1"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+			]
+			title: "沉浸之始"
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["705C326DBEE9FEC8"]
@@ -925,9 +276,42 @@
 				type: "checkmark"
 			}]
 			title: "&b大大大大大大"
-			x: 8.5d
-			y: -2.0d
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["32CE25CEBEB1372F"]
+			id: "1E3D5A1D6BDFAD43"
+			tasks: [{
+				id: "21FE3884CA03F296"
+				item: "immersiveengineering:phenolic_resin_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["705C326DBEE9FEC8"]
+			id: "32CE25CEBEB1372F"
+			tasks: [{
+				id: "62580CA4F154FE4F"
+				title: "灌注机"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["705C326DBEE9FEC8"]
+			id: "61CA7746367E38CA"
+			tasks: [{
+				id: "4E3E6DB9344F78CC"
+				title: "灌装机"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -3.0d
 		}
 	]
-	title: "&6能源与机械"
+	title: "&6第二节 大家伙问世"
 }
