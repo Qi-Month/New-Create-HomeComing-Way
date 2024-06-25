@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 		type: 'minecraft:crafting_shapeless',
 		output: '#minecraft:planks',
 		input: '#minecraft:logs'
-	}, Recipes => {
+	}, (Recipes) => {
 		var Output = Recipes.getOriginalRecipeResult().getId()
 		var Input = Recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		minecraft.stonecutting(`6x ${Output}`, [`${Input}`])

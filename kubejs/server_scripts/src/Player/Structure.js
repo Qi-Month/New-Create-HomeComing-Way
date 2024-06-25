@@ -15,10 +15,10 @@ BlockEvents.rightClicked((event) => {
 		}
 		$PatchouliAPI.get().showMultiblock(
 			$PatchouliAPI.get().getMultiblock('new_create:blast_furnace'),
-			null, event.block.pos, expectedRotations[player.facing]
+			null, block.pos, expectedRotations[player.facing]
 		)
 	}
-	if (block == 'minecraft:blast_furnace' && !player.shiftKeyDown) {
+	if (block === 'minecraft:blast_furnace' && !player.shiftKeyDown) {
 		let rotation2 = global.MULTIBLOCK.blastFurnace().validate(level, pos)
 		if (rotation2 === null) {
 			player.statusMessage = Text.translate('scheme.nc.structure.1')

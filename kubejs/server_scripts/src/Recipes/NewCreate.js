@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
 
 	// 铸铁煎锅
 	create.filling('caupona:lead_frying_pan', [
-		Fluid.of('new_create:cast_iron_fluid', 300),
+		Fluid.of('new_create:molten_cast_iron', 300),
 		'caupona:copper_frying_pan'
 	]).id('caupona:crafting/lead_frying_pan')
 

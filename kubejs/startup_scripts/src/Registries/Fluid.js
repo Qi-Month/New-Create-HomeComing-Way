@@ -10,8 +10,6 @@ StartupEvents.registry('fluid', (event) => {
 		['working_fluid', 0xF5F5F5],
 		// 锌溶液
 		['zinc_fluid', 0xB9E9C1],
-		// 铸铁溶液
-		['cast_iron_fluid', 0x3E3E3E],
 		// 煤油
 		['kerosene', 0xFFD700],
 		// 工业燃油
@@ -41,7 +39,10 @@ StartupEvents.registry('fluid', (event) => {
 		// 青铜
 		['bronze', 0xC48C5E],
 		// 锡
-		['tin', 0xADD8E6]
+		['tin', 0xADD8E6],
+		// 铸铁溶液
+		['cast_iron', 0x3E3E3E],
+		// ['cast_iron_fluid', 0x3E3E3E],
 	]
 	moltenFluid.forEach(([name, color]) => {
 		event.create(MODID + 'molten_' + name)

@@ -4,17 +4,13 @@ const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI')
 const $Character = Java.loadClass('java.lang.Character')
 // 多方块所需要的方块
 // 使用global变量方便游戏里面的调试修改,以下同理
-global.blast_furnace_block = {
-	B: Block.getBlock('minecraft:stone_bricks'),
-	F: Block.getBlock('minecraft:blast_furnace')
-}
-// 创建结构,注意字符0是必须的，0是中心方块的标识符
 global.blastFurnaceBlock = {
 	B: 'minecraft:stone_bricks',
 	Y: 'minecraft:lava',
 	Z: 'minecraft:blast_furnace'
 }
 // 声明结构
+// 创建结构,注意字符0是必须的，0是中心方块的标识符
 global.blastFurnace = () =>
 	$PatchouliAPI.get().makeMultiblock([
 		['___', '___', '___'],

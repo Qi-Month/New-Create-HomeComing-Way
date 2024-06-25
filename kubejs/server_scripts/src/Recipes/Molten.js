@@ -39,7 +39,9 @@ ServerEvents.recipes((event) => {
 		// 金板修复
 		['createmetallurgy:molten_gold', 90, 'plate', 'create:golden_sheet', 80],
 		// 青铜
-		['new_create:molten_bronze', 90, 'ingot', 'thermal:bronze_ingot', 80]
+		['new_create:molten_bronze', 90, 'ingot', 'thermal:bronze_ingot', 90],
+		// 铸铁
+		['new_create:molten_cast_iron', 90, 'ingot', 'new_create:cast_iron_ingot', 90]
 	]
 	tableRecipes.forEach(([fluid, amount, mold, results, time]) => {
 		event.custom({
@@ -56,11 +58,13 @@ ServerEvents.recipes((event) => {
 	// 浇筑盆
 	let basinRecipes = [
 		// 玻璃
-		['new_create:glass', 810, 'minecraft:glass', 120],
+		['new_create:glass', 810, 'minecraft:glass', 180],
 		// 黑曜石
-		['new_create:obsidian', 810, 'minecraft:obsidian', 120],
+		['new_create:obsidian', 810, 'minecraft:obsidian', 180],
 		// 青铜
-		['new_create:molten_bronze', 810, 'thermal:bronze_block', 120]
+		['new_create:molten_bronze', 810, 'thermal:bronze_block', 180],
+		// 铸铁
+		['new_create:molten_cast_iron', 810, 'new_create:cast_iron_block', 180]
 	]
 	basinRecipes.forEach(([fluid, amount, results, time]) => {
 		event.custom({
@@ -94,7 +98,9 @@ ServerEvents.recipes((event) => {
 		// 锌
 		['createmetallurgy:molten_zinc', 90, '3x create:crushed_raw_zinc'],
 		// 锡
-		['new_create:molten_tin', 120, '#forge:raw_materials/tin']
+		['new_create:molten_tin', 120, '#forge:raw_materials/tin'],
+		// 铸铁
+		['new_create:molten_cast_iron', 90, '#forge:ingots/cast_iron']
 	]
 	meltRecipes.forEach(([fluid, amount, input]) => {
 		create.mixing(Fluid.of(fluid, amount), [

@@ -592,7 +592,7 @@ ServerEvents.recipes((event) => {
 	// 铸铁电子管
 	create.filling('new_create:cast_electron_tube', [
 		'new_create:zinc_electron_tube',
-		Fluid.of('new_create:cast_iron_fluid', 125)
+		Fluid.of('new_create:molten_cast_iron', 125)
 	])
 
 	// 钢粉
