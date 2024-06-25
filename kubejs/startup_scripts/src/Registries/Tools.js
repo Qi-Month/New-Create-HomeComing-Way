@@ -1,6 +1,6 @@
 StartupEvents.registry('item', (event) => {
 	const MODID = 'new_create:'
-	let tool = [
+	let toolRegisters = [
 		// 燧石剑
 		['flint_sword', 'sword', 'common', false, 2, 120, 2, 0],
 		// 燧石镐
@@ -48,7 +48,7 @@ StartupEvents.registry('item', (event) => {
 		// 铸铁锄
 		['cast_iron_hoe', 'hoe', 'common', false, 2, 550, 6, 2]
 	]
-	tool.forEach(([
+	toolRegisters.forEach(([
 		name, // ItemId
 		type, // 工具类型	
 		rarity, // 稀有度
@@ -56,7 +56,7 @@ StartupEvents.registry('item', (event) => {
 		damage, // 基础伤害(所填数值+3=游戏内面板)
 		use, // 耐久
 		speed, // 挖掘速度
-		setlevel // 工具等级
+		setLevel // 工具等级
 	]) => {
 		event.create(MODID + name, type)
 			.attackDamageBaseline(damage)
@@ -69,7 +69,7 @@ StartupEvents.registry('item', (event) => {
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
-				tool.setLevel(setlevel)
+				tool.setLevel(setLevel)
 			})
 	})
 

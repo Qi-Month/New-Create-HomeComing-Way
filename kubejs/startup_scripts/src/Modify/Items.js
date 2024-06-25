@@ -1,3 +1,4 @@
+/*
 ItemEvents.modification((event) => {
 	let toolDamage = [
 		['minecraft:iron_sword', 450],
@@ -15,4 +16,5 @@ ItemEvents.modification((event) => {
 			modify.maxDamage = maxDamage
 		})
 	})
-})	
+})
+*/

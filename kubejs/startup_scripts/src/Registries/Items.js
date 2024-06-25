@@ -1,6 +1,8 @@
+// const $RARITY = require('net.minecraft.world.item.Rarity')
+
 StartupEvents.registry('item', (event) => {
 	const MODID = 'new_create:'
-	let item = [
+	let itemRegisters = [
 		['flint_knapp', 'common', false], // 燧石碎片
 		['rainbow_ingot', 'epic', false], // 彩虹锭
 		['plastic_sheet', 'common', false], // 塑料板
@@ -54,7 +56,7 @@ StartupEvents.registry('item', (event) => {
 		['integrated_circuit', 'common', false], // 集成电路板
 		['multi_block_detector', 'epic', true], // 多方块检测器
 	]
-	item.forEach(([name, rarity, glow]) => {
+	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(MODID + name)
 			.rarity(rarity)
 			.glow(glow)
@@ -62,7 +64,7 @@ StartupEvents.registry('item', (event) => {
 	})
 
 	// 半成品注册
-	let inItem = [
+	let inItemRegisters = [
 		'abstruse_mechanism', // 幽静构件(未完成)
 		'calculation_mechanism', // 计算构件(未完成)
 		'inductive_mechanism', // 电磁构件(未完成)
@@ -71,7 +73,7 @@ StartupEvents.registry('item', (event) => {
 		'sealed_mechanism', // 密封构件(未完成)
 		'sturdy_mechanism', // 坚固构件(未完成)
 	]
-	inItem.forEach(name => {
+	inItemRegisters.forEach(name => {
 		event.create(MODID + 'in_' + name, 'create:sequenced_assembly')
 			.tag(MODID + 'items')
 			.tag(MODID + 'incomplete_items')

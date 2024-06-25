@@ -1,4 +1,5 @@
 StartupEvents.registry('block', (event) => {
+	// ModID声明如果选择不更改ModID(默认即'kubejs')直接把ModID这个变量取消
 	const MODID = 'new_create:'
 	// 工具类型
 	const toolType = {
@@ -9,7 +10,7 @@ StartupEvents.registry('block', (event) => {
 		hoe: 'minecraft:mineable/hoe'
 	}
 	// 挖掘等级
-	const excavationLevel = {
+	const miningLevel = {
 		wooden: 'minecraft:needs_wooden_tool',
 		stone: 'minecraft:needs_stone_tool',
 		iron: 'minecraft:needs_iron_tool',
@@ -19,7 +20,7 @@ StartupEvents.registry('block', (event) => {
 	}
 
 	// 定义方块
-	let block = [
+	let blockRegisters = [
 		// 烧焦圆石
 		['charred_cobblestone', 'stone', 3, 3, 'pickaxe', 'wooden'],
 		// 铸铁块
@@ -41,13 +42,13 @@ StartupEvents.registry('block', (event) => {
 		// 热煤块
 		['heat_coal_block', 'stone', 1.5, 1.5, 'pickaxe', 'wooden']
 	]
-	block.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
+	blockRegisters.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
 		event.create(MODID + name)
 			.soundType(soundType)
 			.hardness(hardness)
 			.resistance(resisTance)
 			.tagBlock(toolType[tool])
-			.tagBlock(excavationLevel[grade])
+			.tagBlock(miningLevel[grade])
 			.tagItem(MODID + 'items')
 			.tagItem(MODID + 'blocks')
 			.requiresTool(true)
