@@ -1,6 +1,7 @@
 StartupEvents.registry('block', (event) => {
 	// ModID声明如果选择不更改ModID(默认即'kubejs')直接把ModID这个变量取消
 	const MODID = 'new_create:'
+
 	// 工具类型
 	const toolType = {
 		sword: 'minecraft:mineable/sword',
@@ -9,6 +10,7 @@ StartupEvents.registry('block', (event) => {
 		shovel: 'minecraft:mineable/shovel',
 		hoe: 'minecraft:mineable/hoe'
 	}
+	
 	// 挖掘等级
 	const miningLevel = {
 		wooden: 'minecraft:needs_wooden_tool',

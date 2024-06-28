@@ -17,9 +17,9 @@ StartupEvents.registry('item', (event) => {
 })
 
 // Modify
-ItemEvents.modification(event => {
+ItemEvents.modification((event) => {
 	event.modify(MODID + 'chaochi', (item) => {
-		item.foodProperties = food => {
+		item.foodProperties = (food) => {
 			food.alwaysEdible(true)
 			food.fastToEat(true)
 		}

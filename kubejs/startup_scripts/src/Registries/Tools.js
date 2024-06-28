@@ -77,8 +77,6 @@ StartupEvents.registry('item', (event) => {
 
 	// 火绒
 	event.create(MODID + 'tinder')
-		.rarity('common')
-		.glow(false)
 		.maxDamage(8)
 		.unstackable()
 		.tag('forge:tools')

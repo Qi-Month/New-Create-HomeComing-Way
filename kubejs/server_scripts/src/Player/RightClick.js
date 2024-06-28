@@ -6,7 +6,7 @@ BlockEvents.rightClicked((event) => {
 		if (player.mainHandItem == 'new_create:tinder' &&
 			block.id == BlockId) {
 			block.set(BlockSet)
-			item.hurtAndBreak(1, event.player, (entity) => entity.broadcastBreakEvent(event.hand))
+			item.hurtAndBreak(1, player, (entity) => entity.broadcastBreakEvent(event.hand))
 		}
 	}
 	RightClickEvents('new_create:log_pile', 'minecraft:fire')

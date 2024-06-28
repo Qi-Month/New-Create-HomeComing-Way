@@ -8,7 +8,7 @@ JEIEvents.addItems((event) => {
 		'createdieselgenerators:pumpjack_hole',
 		'thermal:rf_coil'
 	]
-	Item.forEach(Item => {
+	Item.forEach((Item) => {
 		event.add(Item)
 	})
 })
@@ -55,7 +55,7 @@ JEIEvents.hideItems((event) => {
 		'alltheores:invar_ore_hammer',
 		'alltheores:platinum_ore_hammer'
 	]
-	Item.forEach(Item => {
+	Item.forEach((Item) => {
 		event.hide(Item)
 	})
 })

@@ -95,7 +95,7 @@
 					type: "command"
 				}
 			]
-			shape: "pentagon"
+			shape: "gear"
 			size: 2.5d
 			tasks: [{
 				id: "55DED86C0855FE5C"
@@ -217,7 +217,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "&6解锁更多合成&r"
 			tasks: [{
 				id: "5753699CD3ED0098"

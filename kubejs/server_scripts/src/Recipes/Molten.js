@@ -109,14 +109,14 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 黄铜
-	create.mixing(Fluid.of('createmetallurgy:molten_brass', 180), [
-		Fluid.of('createmetallurgy:molten_zinc', 90),
-		Fluid.of('new_create:molten_bronze', 90)
+	create.mixing(Fluid.of('createmetallurgy:molten_brass', 6), [
+		Fluid.of('createmetallurgy:molten_zinc', 3),
+		Fluid.of('new_create:molten_bronze', 3)
 	]).heated()
 
 	// 青铜
-	create.mixing(Fluid.of('new_create:molten_bronze', 180), [
-		Fluid.of('new_create:molten_tin', 90),
-		Fluid.of('createmetallurgy:molten_copper', 90)
+	create.mixing(Fluid.of('new_create:molten_bronze', 6), [
+		Fluid.of('new_create:molten_tin', 3),
+		Fluid.of('createmetallurgy:molten_copper', 3)
 	]).heated()
 })

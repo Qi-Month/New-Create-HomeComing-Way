@@ -73,7 +73,7 @@ StartupEvents.registry('item', (event) => {
 		'sealed_mechanism', // 密封构件(未完成)
 		'sturdy_mechanism', // 坚固构件(未完成)
 	]
-	inItemRegisters.forEach(name => {
+	inItemRegisters.forEach((name) => {
 		event.create(MODID + 'in_' + name, 'create:sequenced_assembly')
 			.tag(MODID + 'items')
 			.tag(MODID + 'incomplete_items')
