@@ -6,7 +6,8 @@ CreateHeatJS.registerHeatEvent((event) => {
 		['frozen', -1, 0x87CEFA, 'minecraft:blue_ice']
 	]
 	heatLevel.forEach(([name, level, color, block]) => {
-		event.registerHeatLevel(name, level, color)
-		event.registerHeatSource(name, block)
+		event.registerHeat(name, level, color)
+			.addHeatSource(block)
+			.register()
 	})
 })

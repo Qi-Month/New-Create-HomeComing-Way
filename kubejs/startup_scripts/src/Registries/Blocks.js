@@ -1,5 +1,5 @@
 StartupEvents.registry('block', (event) => {
-	// ModID声明如果选择不更改ModID(默认即'kubejs')直接把ModID这个变量取消
+	// ModID声明如果选择不更改ModID(默认即"kubejs")直接把ModID这个变量取消
 	const MODID = 'new_create:'
 
 	// 工具类型

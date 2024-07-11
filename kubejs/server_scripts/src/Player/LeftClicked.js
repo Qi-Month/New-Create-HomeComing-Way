@@ -8,7 +8,9 @@ BlockEvents.leftClicked((event) => {
 		return
 	}
 
-	if (player.mainHandItem.id !== "minecraft:flint") return;
+	if (player.mainHandItem.id !== "minecraft:flint") {
+		return
+	}
 
 	// 获取Tag下的全部id
 	Ingredient.of("#forge:stone")

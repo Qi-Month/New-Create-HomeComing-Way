@@ -140,6 +140,11 @@
 		"version": "7.0.0"
 	},
 	{
+		"modid": "alltheores",
+		"name": "AllTheOres",
+		"version": "2.2.4"
+	},
+	{
 		"modid": "betterpingdisplay",
 		"name": "Better Ping Display",
 		"version": "1.1"
@@ -323,11 +328,6 @@
 		"modid": "jsonthings",
 		"name": "Json Things",
 		"version": "0.9.1"
-	},
-	{
-		"modid": "dungeons_arise",
-		"name": "When Dungeons Arise",
-		"version": "2.1.58-1.20.x"
 	},
 	{
 		"modid": "awesomedungeonocean",
@@ -682,7 +682,7 @@
 	{
 		"modid": "mixinextras",
 		"name": "MixinExtras",
-		"version": "0.3.5"
+		"version": "0.2.0-rc.2"
 	},
 	{
 		"modid": "bookshelf",
@@ -698,11 +698,6 @@
 		"modid": "memorysweep",
 		"name": "MemorySweep",
 		"version": "1.0.0"
-	},
-	{
-		"modid": "capejs",
-		"name": "CapeJS",
-		"version": "1.0.0-1.20.1"
 	},
 	{
 		"modid": "betterbeaconplacement",
@@ -723,6 +718,11 @@
 		"modid": "melody",
 		"name": "Melody",
 		"version": "1.0.2"
+	},
+	{
+		"modid": "create_tab_fix",
+		"name": "Create Tab Fix",
+		"version": "1.0.0+forge-1.20.1"
 	},
 	{
 		"modid": "fabric_api",
@@ -825,6 +825,11 @@
 		"version": "2001.1.5"
 	},
 	{
+		"modid": "kubejsadditions",
+		"name": "KubeJS Addditions (Forge)",
+		"version": "4.3.2"
+	},
+	{
 		"modid": "ftbteams",
 		"name": "FTB Teams",
 		"version": "2001.1.4"
@@ -862,7 +867,7 @@
 	{
 		"modid": "probejs",
 		"name": "ProbeJS",
-		"version": "5.9.3"
+		"version": "7.0.0"
 	},
 	{
 		"modid": "polylib",
@@ -1025,6 +1030,11 @@
 		"version": "1.0.23"
 	},
 	{
+		"modid": "create_bic_bit",
+		"name": "Create Bitterballen",
+		"version": "0.0.86"
+	},
+	{
 		"modid": "mcjtylib",
 		"name": "McJtyLib",
 		"version": "1.20-8.0.5"
@@ -1133,6 +1143,11 @@
 		"modid": "notradepls",
 		"name": "No Trade Pls",
 		"version": "1.0.0"
+	},
+	{
+		"modid": "textanimator",
+		"name": "Text Animator",
+		"version": "2.3.3"
 	},
 	{
 		"modid": "iceberg",
