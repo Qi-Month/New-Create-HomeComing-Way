@@ -56,6 +56,14 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },

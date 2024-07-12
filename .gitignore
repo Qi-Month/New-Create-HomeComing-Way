@@ -44,3 +44,5 @@ mods
 exports
 kubejs.zip
 /.probe
+/Warehouse
+caxton_impl.dll

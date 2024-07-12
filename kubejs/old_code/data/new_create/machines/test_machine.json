@@ -1,0 +1,15 @@
+{
+	"name": "machine.new_create.test_machine",
+	"appearance": {
+		"block": "new_create:machine/test_machine",
+		"hardness": 1,
+		"tool_type": [
+			"minecraft:mineable/pickaxe",
+			"forge:mineable/paxel"
+		],
+		"mining_level": "minecraft:needs_stone_tool",
+		"running": {
+			"block": "new_create:machine/test_machine"
+		}
+	}
+}
