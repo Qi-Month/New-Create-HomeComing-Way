@@ -1,4 +1,9 @@
 {
+	"item.minecraft.stone_sword": "焦黑石剑",
+	"item.minecraft.stone_pickaxe": "焦黑石镐",
+	"item.minecraft.stone_axe": "焦黑石斧",
+	"item.minecraft.stone_shovel": "焦黑石锹",
+	"item.minecraft.stone_hoe": "焦黑石锄",
 	"block.minecraft.crafting_table": "工作台",
 	"block.minecraft.furnace": "黑石熔炉",
 	"block.minecraft.soul_campfire": "灵魂篝火",

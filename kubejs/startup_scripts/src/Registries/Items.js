@@ -54,7 +54,11 @@ StartupEvents.registry('item', (event) => {
 		['mithril_sheet', 'common', false], // 秘银板
 		['lapis_sheet', 'common', false], // 青金石板
 		['integrated_circuit', 'common', false], // 集成电路板
-		['multi_block_detector', 'epic', true], // 多方块检测器
+		['multi_block_detector', 'epic', true], // 多方块解构显示器
+		['stone_sheet', 'common', false], // 石板
+		['deepslate_stone_sheet', 'common', false], // 深板岩石板
+		['unpolished_stone_sheet', 'common', false], // 未打磨的石板
+		['unpolished_deepslate_stone_sheet', 'common', false], // 未打磨的深板岩石板
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(MODID + name)

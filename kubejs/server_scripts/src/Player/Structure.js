@@ -1,27 +1,11 @@
-// const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI')
+const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI')
 
-const { $PatchouliAPI } = require("packages/vazkii/patchouli/api/PatchouliAPI")
+// const { $PatchouliAPI } = require("packages/vazkii/patchouli/api/PatchouliAPI")
 
 BlockEvents.rightClicked((event) => {
-	const { level, block, player, item } = event
+	const { level, block, player } = event
 	const { pos } = block
 	const facing = block.properties.facing
-
-	// 显示多方块结构
-	if (item.id === 'new_create:multi_block_detector') {
-		const expectedRotations = {
-			'north': 'CLOCKWISE_180',
-			'east': 'COUNTERCLOCKWISE_90',
-			'south': 'NONE',
-			'west': 'CLOCKWISE_90',
-			'down': 'NONE',
-			'up': 'NONE',
-		}
-		$PatchouliAPI.get().showMultiblock(
-			$PatchouliAPI.get().getMultiblock('new_create:blast_furnace'),
-			null, block.pos, expectedRotations[player.facing]
-		)
-	}
 
 	// 判定结构
 	if (block === 'minecraft:blast_furnace' && !player.shiftKeyDown) {

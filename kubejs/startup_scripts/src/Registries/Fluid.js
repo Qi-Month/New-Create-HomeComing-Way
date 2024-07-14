@@ -1,6 +1,7 @@
 StartupEvents.registry('fluid', (event) => {
 	const MODID = 'new_create:'
 	const PATH = 'block/fluid/'
+	
 	let fluid = [
 		// 安山合金溶液
 		['andesite_compound_fluid', 0x808080],
