@@ -15,7 +15,9 @@ StartupEvents.registry('item', (event) => {
 		['kinetic_mechanism', 'common', false], // 动力构件
 		['andesite_compound', 'common', false], // 安山混合物
 		['grass_string', 'common', false], // 草绳
-		['grass_fiber', 'common', false], // 杂草
+		['grass_fiber', 'common', false], // 嫩草
+		['hay', 'common', false], // 干草
+		['drying_web', 'common', false], // 晾干网
 		['egg_shell', 'common', false], // 蛋壳
 		['in_cogwheel', 'common', false], // 齿轮(未完成)
 		['in_large_cogwheel', 'common', false], // 大齿轮(未完成)]

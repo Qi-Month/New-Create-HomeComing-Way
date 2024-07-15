@@ -4,6 +4,8 @@ ItemEvents.tooltip((tip) => {
 		['new_create:grass_string', 'nc.grass_string'],
 		// 杂草
 		['new_create:grass_fiber', 'nc.grass_fiber'],
+		// 干草
+		['new_create:hay', 'nc.hay'],
 		// 纯净石英
 		['new_create:pure_quartz', 'nc.pure_quartz'],
 		// 手枪
@@ -27,7 +29,9 @@ ItemEvents.tooltip((tip) => {
 		// 浇筑盆
 		['createmetallurgy:casting_basin', 'ct.info'],
 		// 热煤块
-		['new_create:heat_coal_block', 'nc.heat_coal_block']
+		['new_create:heat_coal_block', 'nc.heat_coal_block'],
+		// 晒干架
+		['youkaishomecoming:drying_rack', 'yc.drying_rack']
 	]
 	tooltip.forEach(([name, key]) => {
 		tip.add(name, Text.translate('tooltip.' + key))

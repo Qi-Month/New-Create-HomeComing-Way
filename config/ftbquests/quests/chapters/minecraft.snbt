@@ -126,7 +126,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["2724D01A3173C113"]
+			dependencies: ["75C1C1D7BC5E550D"]
 			description: ["&5挖掘沙砾有几率掉落&r"]
 			id: "5C5120075EDB3ECF"
 			rewards: [{
@@ -142,40 +142,11 @@
 				type: "item"
 			}]
 			title: "&3小燧石"
-			x: 34.0d
+			x: 32.0d
 			y: 18.0d
 		}
 		{
-			dependencies: ["7B74B177D551BAD5"]
-			description: [""]
-			id: "11E001D323FC5722"
-			rewards: [{
-				count: 3
-				id: "53B2738209F55F05"
-				item: "new_create:grass_string"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1FDEA9277218678B"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:string"
-					}
-				}
-				title: "Any #forge:string"
-				type: "item"
-			}]
-			title: "&3草绳"
-			x: 34.0d
-			y: 20.0d
-		}
-		{
-			dependencies: [
-				"5C5120075EDB3ECF"
-				"11E001D323FC5722"
-			]
+			dependencies: ["5C5120075EDB3ECF"]
 			id: "1B5BBBF90F96D167"
 			rewards: [
 				{
@@ -204,7 +175,7 @@
 				type: "item"
 			}]
 			title: "&1多功能工具"
-			x: 36.0d
+			x: 34.0d
 			y: 18.0d
 		}
 		{
@@ -397,10 +368,7 @@
 			y: 21.0d
 		}
 		{
-			dependencies: [
-				"1B5BBBF90F96D167"
-				"68802C8BBFF5305F"
-			]
+			dependencies: ["1B5BBBF90F96D167"]
 			description: [
 				"&2你惊奇的发现&r"
 				"&6可以用燧石小刀将原木切成木板！&r"
@@ -439,8 +407,8 @@
 				}
 			]
 			title: "&3第一块木板"
-			x: 37.5d
-			y: 19.0d
+			x: 36.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -478,48 +446,6 @@
 			title: "&3锯子"
 			x: 41.5d
 			y: 17.0d
-		}
-		{
-			dependencies: [
-				"11E001D323FC5722"
-				"5C5120075EDB3ECF"
-			]
-			icon: {
-				Count: 1b
-				id: "new_create:flint_handaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "68802C8BBFF5305F"
-			rewards: [{
-				count: 4
-				id: "4D44BB6B4E789C8C"
-				item: "minecraft:flint"
-				type: "item"
-			}]
-			subtitle: "Mini~"
-			tasks: [
-				{
-					id: "104017C1CBCB4870"
-					item: {
-						Count: 1b
-						id: "new_create:flint_handaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5113040F7B3B2996"
-					item: "minecraft:stick"
-					type: "item"
-				}
-			]
-			title: "小小的也很可爱!"
-			x: 36.0d
-			y: 20.0d
 		}
 		{
 			id: "7EE352FE28FE7321"
@@ -666,23 +592,6 @@
 			y: 18.5d
 		}
 		{
-			dependencies: ["75C1C1D7BC5E550D"]
-			id: "2724D01A3173C113"
-			rewards: [{
-				count: 3
-				id: "424507994F80F907"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "15E731AA933AB4FF"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
-			x: 32.0d
-			y: 18.0d
-		}
-		{
 			id: "094F8688282C7E6F"
 			optional: true
 			rewards: [{
@@ -741,6 +650,37 @@
 			title: "&b普罗米修斯"
 			x: 51.0d
 			y: 19.0d
+		}
+		{
+			id: "1B4E1D468841CE14"
+			tasks: [{
+				id: "2E93E7232A8A241B"
+				item: "new_create:hay"
+				type: "item"
+			}]
+			title: "干草"
+			x: 36.0d
+			y: 22.5d
+		}
+		{
+			id: "28E47369E04246A4"
+			tasks: [{
+				id: "649041EF8DB687F7"
+				item: "youkaishomecoming:drying_rack"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 22.5d
+		}
+		{
+			id: "2A2E9B781C59A914"
+			tasks: [{
+				id: "0A00714C35223369"
+				item: "new_create:grass_string"
+				type: "item"
+			}]
+			x: 38.0d
+			y: 22.5d
 		}
 	]
 	title: "&6第一节 火与石之歌"

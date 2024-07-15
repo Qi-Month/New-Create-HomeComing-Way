@@ -1,7 +1,8 @@
 ServerEvents.recipes((event) => {
 	// 输出
 	let output = [
-		'#forge:tools/wooden'
+		'#forge:tools/wooden',
+		'#forge:graphite_molds'
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })

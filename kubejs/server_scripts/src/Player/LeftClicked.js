@@ -1,3 +1,4 @@
+/*
 let Timeout = false
 BlockEvents.leftClicked((event) => {
 	const { player, block, server } = event
@@ -40,3 +41,4 @@ function handleFlintKnapping(event) {
 		Timeout = false
 	}, 2000)
 }
+*/

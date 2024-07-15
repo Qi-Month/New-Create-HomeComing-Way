@@ -1,14 +1,14 @@
 new Schema('createmetallurgy:casting_in_basin')
-	.simpleKey('results', 'outputItemArray')
+	.simpleKey('result', 'outputItem')
 	.simpleKey('ingredients', 'inputFluidOrItemArray')
 	.simpleKey('processingTime', 'doubleNumber', 100)
-	.simpleKey('mold_consumed', 'bool', true)
+	.simpleKey('mold_consumed', 'bool', false)
 
 new Schema('createmetallurgy:casting_in_table')
-	.simpleKey('results', 'outputItemArray')
+	.simpleKey('result', 'outputItem')
 	.simpleKey('ingredients', 'inputFluidOrItemArray')
 	.simpleKey('processingTime', 'doubleNumber', 100)
-	.simpleKey('mold_consumed', 'bool', true)
+	.simpleKey('mold_consumed', 'bool', false)
 
 new Schema('createmetallurgy:grinding')
 	.simpleKey('results', 'outputItemArray')

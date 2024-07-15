@@ -31,4 +31,37 @@ ServerEvents.recipes((event) => {
 		'#forge:cobblestone/deepslate',
 		'#new_create:hammer'
 	]).damageIngredient('#new_create:hammer')
+
+	// 晾干网
+	kubejs.shaped('new_create:drying_web', [
+		'HGH',
+		'GGG',
+		'HGH'
+	], {
+		H: 'new_create:hay',
+		G: 'new_create:grass_string'
+	})
+
+	// 晾干架
+	kubejs.shaped('youkaishomecoming:drying_rack', [
+		'PRP',
+		'RDR',
+		'PRP'
+	], {
+		P: '#minecraft:planks',
+		R: '#forge:rods/wooden',
+		D: 'new_create:drying_web'
+	}).id('youkaishomecoming:drying_rack_from_bamboo_block_stonecutting')
+
+	// 干草
+	event.custom({
+		"type": "youkaishomecoming:drying_rack",
+		"category": "misc",
+		"cookingtime": 200,
+		"experience": 0.0,
+		"ingredient": {
+			"item": "new_create:grass_fiber"
+		},
+		"result": "new_create:hay"
+	})
 })
