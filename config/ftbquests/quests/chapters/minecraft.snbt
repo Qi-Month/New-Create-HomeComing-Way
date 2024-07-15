@@ -682,6 +682,16 @@
 			x: 38.0d
 			y: 22.5d
 		}
+		{
+			id: "6D307AB343FB38CA"
+			tasks: [{
+				id: "3456F386C44A0B8D"
+				item: "new_create:drying_web"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 21.0d
+		}
 	]
 	title: "&6第一节 火与石之歌"
 }
