@@ -8,10 +8,6 @@ ServerEvents.recipes((event) => {
 		'minecraft:stone_hoe'
 	]
 	stoneTools.forEach((input) => {
-		event.replaceInput(
-			input,
-			'#minecraft:stone_tool_materials',
-			'new_create:charred_cobblestone'
-		)
+		event.replaceInput(input, '#minecraft:stone_tool_materials', 'new_create:charred_cobblestone')
 	})
 })

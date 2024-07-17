@@ -1,0 +1,6 @@
+// 1.20.1	2024-07-17T03:06:44.5626875	Loot Tables
+466c837568515e812133f89c4b92921a88044660 data/mm/loot_tables/blocks/coke_oven.json
+889d5d3086f727b1a6fd011b832f09c95c8d509b data/mm/loot_tables/blocks/coke_oven_fluid_input.json
+55d036c266c5f4625d4826ae03a5ce72ae974d36 data/mm/loot_tables/blocks/coke_oven_fluid_output.json
+eb119b1ebcedb3214efad2d03ba4b5f94d1ebbd2 data/mm/loot_tables/blocks/coke_oven_item_input.json
+6edaddd963a5ec7eddf0e16155b119f993ea481f data/mm/loot_tables/blocks/coke_oven_item_output.json

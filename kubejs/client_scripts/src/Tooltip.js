@@ -31,7 +31,9 @@ ItemEvents.tooltip((tip) => {
 		// 热煤块
 		['new_create:heat_coal_block', 'nc.heat_coal_block'],
 		// 晒干架
-		['youkaishomecoming:drying_rack', 'yc.drying_rack']
+		['youkaishomecoming:drying_rack', 'yc.drying_rack'],
+		// 过滤器
+		['pipez:filter_destination_tool', 'pp.filter_destination_tool']
 	]
 	tooltip.forEach(([name, key]) => {
 		tip.add(name, Text.translate('tooltip.' + key))

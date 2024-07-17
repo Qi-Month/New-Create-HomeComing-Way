@@ -1,7 +1,6 @@
-//反射PatchouliAPI
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI')
-//反射可以创建Java字符的类
 const $Character = Java.loadClass('java.lang.Character')
+
 // 多方块所需要的方块
 // 使用global变量方便游戏里面的调试修改,以下同理
 global.blastFurnaceBlock = {

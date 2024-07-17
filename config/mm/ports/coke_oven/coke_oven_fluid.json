@@ -1,0 +1,11 @@
+{
+	"id": "coke_oven_fluid",
+	"controllerIds": "mm:coke_oven",
+	"name": "Fluid",
+	"type": "mm:fluid",
+	"config": {
+		"rows": 1,
+		"columns": 1,
+		"slotCapacity": 64000
+	}
+}

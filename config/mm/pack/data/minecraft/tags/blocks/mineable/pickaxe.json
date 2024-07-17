@@ -1,0 +1,9 @@
+{
+  "values": [
+    "mm:coke_oven",
+    "mm:coke_oven_fluid_input",
+    "mm:coke_oven_fluid_output",
+    "mm:coke_oven_item_input",
+    "mm:coke_oven_item_output"
+  ]
+}

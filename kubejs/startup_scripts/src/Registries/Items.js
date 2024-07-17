@@ -5,7 +5,6 @@ StartupEvents.registry('item', (event) => {
 	let itemRegisters = [
 		['flint_knapp', 'common', false], // 燧石碎片
 		['rainbow_ingot', 'epic', false], // 彩虹锭
-		['plastic_sheet', 'common', false], // 塑料板
 		['mold_block', 'common', false], // 冲压模具-块
 		['plating_zinc_ingot', 'common', false], // 电镀锌
 		['cast_electron_tube', 'common', false], // 铸铁电子管

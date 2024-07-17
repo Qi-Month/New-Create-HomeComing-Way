@@ -59,9 +59,7 @@ ServerEvents.recipes((event) => {
 		"category": "misc",
 		"cookingtime": 200,
 		"experience": 0.0,
-		"ingredient": {
-			"item": "new_create:grass_fiber"
-		},
-		"result": "new_create:hay"
+		"ingredient": { "item": "new_create:grass_fiber" },
+		"result": { "item": "new_create:hay" }
 	})
 })

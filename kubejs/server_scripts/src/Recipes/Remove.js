@@ -2,7 +2,8 @@ ServerEvents.recipes((event) => {
 	// 输出
 	let output = [
 		'#forge:tools/wooden',
-		'#forge:graphite_molds'
+		'#forge:graphite_molds',
+		'pipez:filter_destination_tool'
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })

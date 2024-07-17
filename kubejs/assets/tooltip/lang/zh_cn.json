@@ -16,6 +16,7 @@
 	"tooltip.ct.info": "§b同时兼容注液器",
 	"tooltip.nc.heat_coal_block": "§b也可以用火绒",
 	"tooltip.yc.drying_rack": "§b可以和漏斗交互",
+	"tooltip.pp.filter_destination_tool": "§b该物品会导致莫名的卡顿,已移除",
 	"create.recipe.heat_requirement.melt": "熔化",
 	"create.recipe.heat_requirement.frozen": "冻结",
 	"jei.nc.chaochi": "§b垣曲炒祺(食其)是垣曲劳动人民长期与大自然和谐相处的产物。过去,人们出远门,有一个难题不好解决,那就是水土不服,常常拉肚子。于是,垣曲人就创造出了这种独特的食品,解决了这一难题。炒祺里带着家乡的水、家乡的土、家乡的面,又耐放易存,几个月都不腐不坏,每天吃一点,就平平安安换了肚子。人们发现,由于炒祺用垣曲独有的白土及绿色原料制作,具有健胃养胃之功效。所以才得以时代流传而不败。成了全国绝无仅有的§l§c国家级非物质文化遗产",

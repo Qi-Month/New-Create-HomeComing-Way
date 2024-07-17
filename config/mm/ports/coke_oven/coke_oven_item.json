@@ -1,0 +1,10 @@
+{
+	"id": "coke_oven_item",
+	"controllerIds": "mm:coke_oven",
+	"name": "Item",
+	"type": "mm:item",
+	"config": {
+		"rows": 3,
+		"columns": 3
+	}
+}

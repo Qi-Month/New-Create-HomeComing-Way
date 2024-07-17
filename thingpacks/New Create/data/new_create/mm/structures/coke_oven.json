@@ -1,0 +1,40 @@
+{
+	"name": "Coke Oven",
+	"controllerIds": "mm:coke_oven",
+	"layout": [
+		[
+			"111",
+			"111",
+			"111"
+		],
+		[
+			"111",
+			"111",
+			"111"
+		],
+		[
+			"141",
+			"213",
+			"1C1"
+		],
+		[
+			"111",
+			"111",
+			"111"
+		]
+	],
+	"key": {
+		"1": {
+			"block": "immersiveengineering:cokebrick"
+		},
+		"2": {
+			"block": "mm:coke_oven_item_input"
+		},
+		"3": {
+			"block": "mm:coke_oven_item_output"
+		},
+		"4": {
+			"block": "mm:coke_oven_fluid_output"
+		}
+	}
+}

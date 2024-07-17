@@ -43,7 +43,6 @@ StartupEvents.registry('fluid', (event) => {
 		['tin', 0xADD8E6],
 		// 铸铁溶液
 		['cast_iron', 0x3E3E3E],
-		// ['cast_iron_fluid', 0x3E3E3E],
 	]
 	moltenFluid.forEach(([name, color]) => {
 		event.create(MODID + 'molten_' + name)

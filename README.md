@@ -1,4 +1,4 @@
-# This is a Minecraft ModPack
-> Pack Name : New Create
-
-> By Qi-Month & 栗子!
+# New Create
+> * 作者
+    * Qi Month
+  *

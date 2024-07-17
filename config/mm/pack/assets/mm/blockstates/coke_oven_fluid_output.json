@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/coke_oven_fluid_output"
+    }
+  }
+}
