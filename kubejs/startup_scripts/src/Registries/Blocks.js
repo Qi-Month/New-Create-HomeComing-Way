@@ -24,31 +24,31 @@ StartupEvents.registry('block', (event) => {
 	// 定义方块
 	let blockRegisters = [
 		// 烧焦圆石
-		['charred_cobblestone', 'stone', 3, 3, 'pickaxe', 'wooden'],
+		['charred_cobblestone', 'stone', 3, 'pickaxe', 'wooden'],
 		// 铸铁块
-		['cast_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
+		['cast_iron_block', 'metal', 5, 'pickaxe', 'stone'],
 		// 高炉核心
-		['furnace_core', 'stone', 3, 3, 'pickaxe', 'wooden'],
+		['furnace_core', 'stone', 3, 'pickaxe', 'wooden'],
 		// 充电铁块
-		['charge_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
+		['charge_iron_block', 'metal', 5, 'pickaxe', 'stone'],
 		// 铸铁机壳
-		['cast_iron_casing', 'wood', 5, 5, 'pickaxe', 'wooden'],
+		['cast_iron_casing', 'wood', 5, 'pickaxe', 'wooden'],
 		// 尘土
-		['dust', 'sand', 1, 1, 'shovel', 'wooden'],
+		['dust', 'sand', 1, 'shovel', 'wooden'],
 		// 原木堆
-		['log_pile', 'wood', 1.5, 1.5, 'axe', 'wooden'],
+		['log_pile', 'wood', 1.5, 'axe', 'wooden'],
 		// 工业机壳
-		['industrial_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
+		['industrial_casing', 'metal', 1.5, 'pickaxe', 'stone'],
 		// 钢机壳
-		['steel_casing', 'metal', 1.5, 1.5, 'pickaxe', 'stone'],
+		['steel_casing', 'metal', 1.5, 'pickaxe', 'stone'],
 		// 热煤块
-		['heat_coal_block', 'stone', 1.5, 1.5, 'pickaxe', 'wooden']
+		['heat_coal_block', 'stone', 1.5, 'pickaxe', 'wooden']
 	]
-	blockRegisters.forEach(([name, soundType, hardness, resistance, tool, level]) => {
+	blockRegisters.forEach(([name, soundType, hardness, tool, level]) => {
 		event.create(MODID + name)
 			.soundType(soundType)
 			.hardness(hardness)
-			.resistance(resistance)
+			.resistance(hardness)
 			.tagBlock(toolType[tool])
 			.tagBlock(miningLevel[level])
 			.tagItem(MODID + 'items')

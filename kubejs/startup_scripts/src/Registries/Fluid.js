@@ -2,7 +2,7 @@ StartupEvents.registry('fluid', (event) => {
 	const MODID = 'new_create:'
 	const PATH = 'block/fluid/'
 	
-	let fluid = [
+	let fluidRegisters = [
 		// 安山合金溶液
 		['andesite_compound_fluid', 0x808080],
 		// 防腐液
@@ -26,7 +26,7 @@ StartupEvents.registry('fluid', (event) => {
 		// 玫瑰金溶液
 		['rose_gold_fluid', 0xFF69B4],
 	]
-	fluid.forEach(([name, color]) => {
+	fluidRegisters.forEach(([name, color]) => {
 		event.create(MODID + name)
 			.thickTexture(color)
 			.bucketColor(color)

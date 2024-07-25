@@ -1,8 +1,15 @@
 {
-	"block.mm.coke_oven": "Coke Oven",
-	"block.mm.coke_oven_fluid_input": "Fluid Input",
-	"block.mm.coke_oven_fluid_output": "Fluid Output",
-	"block.mm.coke_oven_item_input": "Item Input",
-	"block.mm.coke_oven_item_output": "Item Output",
-	"item.mm.blueprint": "Blueprint"
+  "block.mm.coke_oven": "Coke Oven",
+  "block.mm.coke_oven_fluid_input": "Fluid Input",
+  "block.mm.coke_oven_fluid_output": "Fluid Output",
+  "block.mm.coke_oven_item_input": "Item Input",
+  "block.mm.coke_oven_item_output": "Item Output",
+  "block.mm.steam_engine": "Steam Engine",
+  "block.mm.steam_engine_air_input": "Air Input",
+  "block.mm.steam_engine_air_output": "Air Output",
+  "block.mm.steam_engine_fluid_input": "Fluid Input",
+  "block.mm.steam_engine_fluid_output": "Fluid Output",
+  "block.mm.steam_engine_stress_input": "Stress Input",
+  "block.mm.steam_engine_stress_output": "Stress Output",
+  "item.mm.blueprint": "Blueprint"
 }

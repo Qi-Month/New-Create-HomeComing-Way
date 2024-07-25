@@ -10,6 +10,7 @@ ServerEvents.recipes((event) => {
 		create_mechanical_extruder,
 		kubejs,
 		thermal,
+		minecraft,
 		immersiveengineering
 	} = event.recipes
 

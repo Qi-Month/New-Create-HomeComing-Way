@@ -8,9 +8,8 @@ LootJS.modifiers((loots) => {
 	loots.addBlockLootModifier('minecraft:gravel')
 		.removeLoot(all)
 		.addAlternativesLoot(
-			LootEntry.of('new_create:flint_knapp').when((loots) =>
-				loots.randomChance(0.3)
-			),
+			LootEntry.of('new_create:flint_knapp')
+				.when((loots) => loots.randomChance(0.3)),
 			LootEntry.of('minecraft:flint').when((loots) => loots.randomChance(0.15)),
 			LootEntry.of('minecraft:gravel').when((loots) => loots.randomChance(1))
 		)

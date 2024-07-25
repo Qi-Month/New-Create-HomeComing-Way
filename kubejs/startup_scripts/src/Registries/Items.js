@@ -1,5 +1,3 @@
-// const $RARITY = require('net.minecraft.world.item.Rarity')
-
 StartupEvents.registry('item', (event) => {
 	const MODID = 'new_create:'
 	let itemRegisters = [
@@ -84,3 +82,4 @@ StartupEvents.registry('item', (event) => {
 			.tag(MODID + 'incomplete_items')
 	})
 })
+

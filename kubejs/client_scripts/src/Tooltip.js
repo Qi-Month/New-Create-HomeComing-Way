@@ -1,4 +1,4 @@
-ItemEvents.tooltip((tip) => {
+ItemEvents.tooltip((event) => {
 	let tooltip = [
 		// 草绳
 		['new_create:grass_string', 'nc.grass_string'],
@@ -36,6 +36,6 @@ ItemEvents.tooltip((tip) => {
 		['pipez:filter_destination_tool', 'pp.filter_destination_tool']
 	]
 	tooltip.forEach(([name, key]) => {
-		tip.add(name, Text.translate('tooltip.' + key))
+		event.add(name, Text.translate('tooltip.' + key))
 	})
 })

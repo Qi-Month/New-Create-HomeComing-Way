@@ -1,6 +1,13 @@
-// 1.20.1	2024-07-17T03:06:44.5626875	Loot Tables
+// 1.20.1	2024-07-18T22:34:20.0863716	Loot Tables
 466c837568515e812133f89c4b92921a88044660 data/mm/loot_tables/blocks/coke_oven.json
 889d5d3086f727b1a6fd011b832f09c95c8d509b data/mm/loot_tables/blocks/coke_oven_fluid_input.json
 55d036c266c5f4625d4826ae03a5ce72ae974d36 data/mm/loot_tables/blocks/coke_oven_fluid_output.json
 eb119b1ebcedb3214efad2d03ba4b5f94d1ebbd2 data/mm/loot_tables/blocks/coke_oven_item_input.json
 6edaddd963a5ec7eddf0e16155b119f993ea481f data/mm/loot_tables/blocks/coke_oven_item_output.json
+3a4d1c3dd793387f1bd53ae610c5d9aeca7bb8cb data/mm/loot_tables/blocks/steam_engine.json
+2b343352523c8185a6e4e52da4f03286b7a98ba9 data/mm/loot_tables/blocks/steam_engine_air_input.json
+5796f1f53fbc74b0be1ecc4909667759a0ec0809 data/mm/loot_tables/blocks/steam_engine_air_output.json
+64673a3d653be34c93bb20412c6242c277827f41 data/mm/loot_tables/blocks/steam_engine_fluid_input.json
+27f8a8a137794c40c53ac12044ebabeb817c9874 data/mm/loot_tables/blocks/steam_engine_fluid_output.json
+f9e36a7af54439e41b2d3222d455fc3f85645e86 data/mm/loot_tables/blocks/steam_engine_stress_input.json
+3a6dbbb736e38d2fced7920c45428cb36166ef4b data/mm/loot_tables/blocks/steam_engine_stress_output.json
