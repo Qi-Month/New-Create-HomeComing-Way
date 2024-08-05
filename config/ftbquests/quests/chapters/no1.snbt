@@ -5,7 +5,7 @@
 	group: "1C13CB3518C6DB10"
 	icon: "thermal:machine_furnace"
 	id: "25FC0F4076CF1414"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -53,7 +53,7 @@
 			tasks: [{
 				id: "5C1FEC318534B413"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tar"
@@ -102,7 +102,7 @@
 				"741F01395998E3C5"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "immersiveengineering:mixer"
 				tag: { }
 			}
@@ -194,7 +194,7 @@
 			dependencies: ["37CB5D8FF3EBE1F7"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "immersiveengineering:crusher"
 				tag: { }
 			}
@@ -323,7 +323,7 @@
 			tasks: [{
 				id: "298286D82A179498"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:dusts/soul_sand"
@@ -387,7 +387,7 @@
 			rewards: [{
 				id: "0B6837DE930143BF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "new_create:radiant_sword"
 					tag: {
 						Damage: 0

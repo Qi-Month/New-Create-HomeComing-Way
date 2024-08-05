@@ -1,16 +1,13 @@
 StartupEvents.registry('fluid', (event) => {
 	const MODID = 'new_create:'
 	const PATH = 'block/fluid/'
-	
+	const otherRegistrations = MODID + PATH
+
 	let fluidRegisters = [
-		// 安山合金溶液
-		['andesite_compound_fluid', 0x808080],
 		// 防腐液
 		['embalming_fluid', 0x8B4513],
 		// 加工液
 		['working_fluid', 0xF5F5F5],
-		// 锌溶液
-		['zinc_fluid', 0xB9E9C1],
 		// 煤油
 		['kerosene', 0xFFD700],
 		// 工业燃油
@@ -21,17 +18,13 @@ StartupEvents.registry('fluid', (event) => {
 		['rose_quartz_fluid', 0xFF1493],
 		// 精炼油
 		['high_grade_refined_oil', 0xDAA520],
-		// 秘银液
-		['mithril_fluid', 0x2E8B57],
-		// 玫瑰金溶液
-		['rose_gold_fluid', 0xFF69B4],
 	]
 	fluidRegisters.forEach(([name, color]) => {
 		event.create(MODID + name)
-			.thickTexture(color)
+			.thinTexture(color)
 			.bucketColor(color)
-			.flowingTexture(MODID + PATH + 'flowing')
-			.stillTexture(MODID + PATH + 'still')
+			.flowingTexture(otherRegistrations + 'flowing')
+			.stillTexture(otherRegistrations + 'still')
 			.tag(MODID + 'fluid')
 	})
 
@@ -42,16 +35,25 @@ StartupEvents.registry('fluid', (event) => {
 		// 锡
 		['tin', 0xADD8E6],
 		// 铸铁溶液
-		['cast_iron', 0x3E3E3E],
+		['cast_iron', 0x333333],
+		// 玫瑰金
+		['rose_gold', 0xFF69B4],
+		// 秘银液
+		['mithril', 0x2E8B57],
+		// 安山合金
+		['andesite_alloy', 0x808080],
 	]
 	moltenFluid.forEach(([name, color]) => {
 		event.create(MODID + 'molten_' + name)
-			.thickTexture(color)
+			.thinTexture(color)
 			.bucketColor(color)
-			.flowingTexture(MODID + PATH + 'flowing')
-			.stillTexture(MODID + PATH + 'still')
+			.flowingTexture(otherRegistrations + 'flowing')
+			.stillTexture(otherRegistrations + 'still')
 			.tag(MODID + 'fluid')
-			.tag(MODID + 'molten_metal')
+			.tag(MODID + 'molten_materials')
+			.tag(`forge:molten_${name}`)
+			.tag('forge:molten_materials')
+			.tag("minecraft:lava")
 	})
 
 	// 特殊注册
@@ -61,25 +63,25 @@ StartupEvents.registry('fluid', (event) => {
 		.tag(MODID + 'fluid')
 		.noBucket()
 		.noBlock()
-		.flowingTexture(MODID + PATH + 'soul_flowing')
-		.stillTexture(MODID + PATH + 'soul_still')
+		.flowingTexture(otherRegistrations + 'soul_flowing')
+		.stillTexture(otherRegistrations + 'soul_still')
 
 	// 熔融玻璃
 	event.create(MODID + 'glass')
 		.tag(MODID + 'fluid')
 		.noBlock()
-		.flowingTexture(MODID + PATH + 'glass_flowing')
-		.stillTexture(MODID + PATH + 'glass_still')
+		.flowingTexture(otherRegistrations + 'glass_flowing')
+		.stillTexture(otherRegistrations + 'glass_still')
 
 	// 鸡蛋混合液
 	event.create(MODID + 'egg_mixture_fluid')
 		.tag(MODID + 'fluid')
 		.noBlock()
-		.flowingTexture(MODID + PATH + 'egg_mixture_fluid_flowing')
-		.stillTexture(MODID + PATH + 'egg_mixture_fluid_stilling')
+		.flowingTexture(otherRegistrations + 'egg_mixture_fluid_flowing')
+		.stillTexture(otherRegistrations + 'egg_mixture_fluid_stilling')
 
 	// 黑曜石
 	event.create(MODID + 'obsidian')
-		.flowingTexture(MODID + PATH + 'obsidian_flowing')
-		.stillTexture(MODID + PATH + 'obsidian_still')
+		.flowingTexture(otherRegistrations + 'obsidian_flowing')
+		.stillTexture(otherRegistrations + 'obsidian_still')
 })

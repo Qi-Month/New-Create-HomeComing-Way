@@ -58,6 +58,10 @@ StartupEvents.registry('item', (event) => {
 		['deepslate_stone_sheet', 'common', false], // 深板岩石板
 		['unpolished_stone_sheet', 'common', false], // 未打磨的石板
 		['unpolished_deepslate_stone_sheet', 'common', false], // 未打磨的深板岩石板
+		["wooden_blank_mold", 'common', false], // 空白木质铸模
+		["wooden_ingot_mold", 'common', false], // 锭木质铸模
+		["wooden_plate_mold", 'common', false], // 板木质铸模
+		["wooden_nugget_mold", 'common', false], // 粒木质铸模
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(MODID + name)

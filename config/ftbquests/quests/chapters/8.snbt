@@ -80,7 +80,7 @@
 			tasks: [{
 				id: "574689752E6B6C50"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:backpack"
 					tag: {
 						contentsUuid: [I;
@@ -107,7 +107,7 @@
 			tasks: [{
 				id: "3B3088B8FF3E3DCA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:iron_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -134,7 +134,7 @@
 			tasks: [{
 				id: "041F8921206DC04C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:gold_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -161,7 +161,7 @@
 			tasks: [{
 				id: "1E8C62D79FD4184A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:diamond_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -188,7 +188,7 @@
 			tasks: [{
 				id: "03E4D974106CE9E2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:netherite_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -212,7 +212,7 @@
 			tasks: [{
 				id: "1EC7EC17D69E0466"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "constructionwand:stone_wand"
 					tag: {
 						Damage: 0
@@ -233,7 +233,7 @@
 			tasks: [{
 				id: "7F1EDE46DA961283"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "constructionwand:iron_wand"
 					tag: {
 						Damage: 0
@@ -254,7 +254,7 @@
 			tasks: [{
 				id: "287E7E4640D4825C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "constructionwand:diamond_wand"
 					tag: {
 						Damage: 0
@@ -275,7 +275,7 @@
 			tasks: [{
 				id: "40CFE6609CCA51D3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "constructionwand:infinity_wand"
 					tag: {
 						wand_options: { }
@@ -345,7 +345,7 @@
 			tasks: [{
 				id: "51B741453ADFD630"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -367,7 +367,7 @@
 				{
 					id: "623DD4390C749D0E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "functionalstorage:linking_tool"
 						tag: { }
 					}
@@ -452,7 +452,7 @@
 			tasks: [{
 				id: "415B067542894191"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "waystones:warp_stone"
 					tag: {
 						Damage: 0

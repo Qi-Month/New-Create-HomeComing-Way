@@ -119,14 +119,14 @@ ServerEvents.tags('item', (event) => {
 		'new_create:cast_iron_ingot'
 	])
 
-	// 铸铁块
-	event.add('forge:storage_blocks/cast_iron', [
-		'new_create:cast_iron_block'
-	])
-
 	// 铸铁板
 	event.add('forge:plates/cast_iron', [
 		'new_create:cast_iron_sheet'
+	])
+
+	// 铸铁块
+	event.add('forge:storage_blocks/cast_iron', [
+		'new_create:cast_iron_block'
 	])
 
 	// 机壳
@@ -190,5 +190,10 @@ ServerEvents.tags('item', (event) => {
 	// Forge板
 	event.add('forge:plates', [
 		'#forge:plates/cast_iron'
+	])
+
+	// 青铜板
+	event.add('forge:plates/bronze', [
+		'steampowered:bronze_sheet'
 	])
 })

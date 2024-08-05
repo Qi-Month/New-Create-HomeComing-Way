@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "steampowered:block/boiler/cast_iron_top",
+    "side": "steampowered:block/boiler/cast_iron_side"
+  }
+}

@@ -4,7 +4,7 @@
 	filename: "no23"
 	group: "7883EB8AF9923823"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "immersiveengineering:wirecutter"
 		tag: {
 			Damage: 0
@@ -201,7 +201,7 @@
 			rewards: [{
 				id: "6B7AE1750716CBDB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:wirecutter"
 					tag: {
 						Damage: 0
@@ -214,7 +214,7 @@
 				{
 					id: "5B360BF99AFB23A7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:wirecutter"
 						tag: {
 							Damage: 0

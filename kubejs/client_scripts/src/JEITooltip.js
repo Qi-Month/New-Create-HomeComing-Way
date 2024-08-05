@@ -1,9 +1,9 @@
 JEIEvents.information(info => {
-	let Info = [
+	let addJEIInfo = [
 		['melter:melter', 'jei.mt.melter'],
 		['new_create:chaochi', 'jei.nc.chaochi']
 	]
-	Info.forEach(([Name, Key]) => {
+	addJEIInfo.forEach(([Name, Key]) => {
 		info.addItem(Name, Text.translate(Key))
 	})
 })

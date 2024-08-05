@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["66E133258A1C7B7B"]
+			dependencies: ["54D1253B1BBB0CA4"]
 			id: "486C9B56954BA447"
 			shape: "hexagon"
 			size: 1.5d
@@ -20,7 +20,7 @@
 			}]
 			title: "&4Pro Max升级版"
 			x: -3.0d
-			y: 0.75d
+			y: 1.5d
 		}
 		{
 			dependencies: ["486C9B56954BA447"]
@@ -32,26 +32,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["371B3D4C9196C8BB"]
-			id: "641D9AB445D95A5F"
-			rewards: [{
-				count: 32
-				id: "46F32D73906371B5"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				count: 256L
-				id: "553183B1C3B91A24"
-				item: "minecraft:andesite"
-				type: "item"
-			}]
-			title: "量产安山岩"
-			x: -3.0d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["486C9B56954BA447"]
@@ -106,7 +87,7 @@
 			}]
 			title: "&b砂纸Pro Max"
 			x: -3.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["22EF721A6422F327"]
@@ -127,7 +108,7 @@
 			tasks: [{
 				id: "6B50180BF0970E53"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:dusts/obsidian"
@@ -146,7 +127,7 @@
 			tasks: [{
 				id: "2E22C28316297DE8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:dusts/iron"
@@ -156,11 +137,11 @@
 				type: "item"
 			}]
 			title: "铁粉"
-			x: 5.0d
+			x: 4.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["7EEC8440A5ECEEEA"]
+			dependencies: ["4C94DB9A9438BB63"]
 			id: "0712EE16A99BF165"
 			shape: "gear"
 			size: 2.5d
@@ -169,8 +150,8 @@
 				item: "create:railway_casing"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.75d
+			x: 7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0712EE16A99BF165"]
@@ -180,8 +161,8 @@
 				item: "create:track_station"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.0d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["260A96BFFF557F7A"]
@@ -189,7 +170,7 @@
 			tasks: [{
 				id: "7D100DB6E61429B1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:dusts/steel"
@@ -199,7 +180,7 @@
 				type: "item"
 			}]
 			title: "钢粉"
-			x: 6.5d
+			x: 6.0d
 			y: 0.5d
 		}
 		{
@@ -208,7 +189,7 @@
 			tasks: [{
 				id: "61EB58C4D24EF694"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/steel"
@@ -217,7 +198,7 @@
 				title: "&6钢锭"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.5d
 			y: 0.5d
 		}
 		{
@@ -230,7 +211,7 @@
 				type: "item"
 			}]
 			title: "锅炉锅炉!"
-			x: 9.5d
+			x: 9.0d
 			y: 0.5d
 		}
 		{
@@ -258,8 +239,45 @@
 				}
 			]
 			title: "我不要挖矿!"
-			x: 11.0d
+			x: 10.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["486C9B56954BA447"]
+			id: "5098B41B89742F26"
+			shape: "rsquare"
+			subtitle: "你也不想手动给蒸汽机放燃料吧"
+			tasks: [{
+				id: "06B801775F3D48E2"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D5BA975FF84BAF7"]
+			id: "75D5A141CF6FB985"
+			shape: "rsquare"
+			subtitle: "变速！"
+			tasks: [{
+				id: "6C3B4EF7132E749D"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EEC8440A5ECEEEA"]
+			id: "4C94DB9A9438BB63"
+			tasks: [{
+				id: "4C3EAD307EEED615"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
 		}
 	]
 	title: "&6第二节 黄铜新纪元"

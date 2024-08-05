@@ -4,7 +4,7 @@
 	filename: "no41"
 	group: ""
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "mekanism:atomic_disassembler"
 		tag: {
 			mekData: {

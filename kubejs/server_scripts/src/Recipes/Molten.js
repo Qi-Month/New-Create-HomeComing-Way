@@ -23,4 +23,14 @@ ServerEvents.recipes((event) => {
 		Fluid.of('createmetallurgy:molten_gold', 90),
 		'#forge:plates'
 	]).processingTime(60).mold_consumed(true)
+
+	// 熔融铸铁
+	create.mixing(Fluid.of("new_create:molten_cast_iron", 90), [
+		'#forge:ingots/cast_iron'
+	]).heatLevel("melt")
+
+	createmetallurgy.casting_in_basin("create:andesite_casing", [
+		Fluid.of("new_create:molten_andesite_alloy", 90),
+		'#minecraft:planks'
+	]).processingTime(60).mold_consumed(true)
 })

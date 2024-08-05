@@ -48,7 +48,7 @@
 			rewards: [{
 				id: "2B9D258A1822175F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:golden_axe"
 					tag: {
 						Damage: 0
@@ -89,6 +89,7 @@
 		{
 			dependencies: ["2A28868E8B9E784C"]
 			id: "56EF12FBD4DD7951"
+			subtitle: "请你好好的看着我，我很重要plz"
 			tasks: [{
 				id: "612C1F9CCB54EA83"
 				item: "create:rose_quartz"
@@ -127,7 +128,7 @@
 				{
 					id: "0F8E6BDC4F97CBC7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:storage_blocks/redstone"
@@ -139,7 +140,7 @@
 				{
 					id: "20FFCB44D6C01805"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:gems/quartz"
@@ -170,10 +171,11 @@
 		{
 			dependencies: ["20A872AC6608D6F4"]
 			id: "62864688AD6F3A16"
+			subtitle: "番外开始喽"
 			tasks: [{
 				id: "7440FA79D2BAA8FF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:rods/blaze"
@@ -306,7 +308,7 @@
 				count: 128
 				id: "3666936A71F1B827"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:firework_rocket"
 					tag: {
 						Fireworks: {
@@ -319,7 +321,7 @@
 			tasks: [{
 				id: "0096BB5582DED60E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:elytra"
 					tag: {
 						Damage: 0
@@ -382,5 +384,5 @@
 			y: -8.5d
 		}
 	]
-	title: "&6第四节 炼狱合金梦"
+	title: "&6第四节 地狱冒险之旅"
 }

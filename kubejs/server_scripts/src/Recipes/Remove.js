@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 
 	// ModRecipes
 	let mod = [
-		'mekanism'
+		// 'mekanism'
 	]
 	mod.forEach((modid) => {
 		event.remove({ mod: modid })

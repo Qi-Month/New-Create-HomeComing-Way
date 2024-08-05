@@ -1,6 +1,6 @@
 // 添加Item到JEI
 JEIEvents.addItems((event) => {
-	let Item = [
+	let addItem = [
 		'create:shadow_steel',
 		'create:shadow_steel_casing',
 		'create:refined_radiance',
@@ -8,14 +8,14 @@ JEIEvents.addItems((event) => {
 		'createdieselgenerators:pumpjack_hole',
 		'thermal:rf_coil'
 	]
-	Item.forEach((Item) => {
+	addItem.forEach((Item) => {
 		event.add(Item)
 	})
 })
 
 // 隐藏JEI内Item
 JEIEvents.hideItems((event) => {
-	let Item = [
+	let removeItem = [
 		'createmetallurgy:mechanical_belt_grinder',
 		'extendedcrafting:singularity',
 		'extendedcrafting:crystaltine_catalyst',
@@ -55,12 +55,7 @@ JEIEvents.hideItems((event) => {
 		'alltheores:invar_ore_hammer',
 		'alltheores:platinum_ore_hammer'
 	]
-	Item.forEach((Item) => {
+	removeItem.forEach((Item) => {
 		event.hide(Item)
 	})
-})
-
-// 隐藏配方
-JEIEvents.removeRecipes((event) => {
-	event.remove('minecraft:campfire_cooking', 'minecraft:kjs/new_create_flint_sword_2')
 })

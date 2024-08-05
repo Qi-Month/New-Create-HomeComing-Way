@@ -27,8 +27,6 @@ StartupEvents.registry('block', (event) => {
 		['charred_cobblestone', 'stone', 3, 'pickaxe', 'wooden'],
 		// 铸铁块
 		['cast_iron_block', 'metal', 5, 'pickaxe', 'stone'],
-		// 高炉核心
-		['furnace_core', 'stone', 3, 'pickaxe', 'wooden'],
 		// 充电铁块
 		['charge_iron_block', 'metal', 5, 'pickaxe', 'stone'],
 		// 铸铁机壳

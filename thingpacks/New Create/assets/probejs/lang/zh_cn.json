@@ -1,6 +1,6 @@
 {
 	"probejs.dump.start": "ProbeJS 类型生成已启动",
-	"probejs.dump.snippets_generated": "VSCode快捷脚本已生成",
+	"probejs.dump.snippets_generated": "VS Code快捷脚本已生成",
 	"probejs.dump.mod_changed": "检测到模组环境变动",
 	"probejs.dump.decompiling": "反编译模组中,这可能需要一段时间",
 	"probejs.dump.decompiled_x_class": "已反编译 %s 个类",

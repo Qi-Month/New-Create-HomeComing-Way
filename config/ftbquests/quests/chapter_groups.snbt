@@ -1,5 +1,6 @@
 {
 	chapter_groups: [
+		{ id: "758274A9759BEEE0", title: "探索之旅" }
 		{ id: "29FEE0816C5CB526", title: "&7第一章 安山时代" }
 		{ id: "07F1CAC005DFF915", title: "第二章 机械革命" }
 		{ id: "7883EB8AF9923823", title: "第三章 电光初现" }

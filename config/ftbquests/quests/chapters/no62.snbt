@@ -4,7 +4,7 @@
 	filename: "no62"
 	group: ""
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "sgjourney:milky_way_stargate"
 		tag: {
 			BlockEntityTag: {
@@ -14,11 +14,7 @@
 	}
 	id: "1EB80EB6050AF185"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 10.0d
-		hover: [ ]
 		image: "sgjourney:item/classic_stargate"
 		rotation: 0.0d
 		width: 10.0d

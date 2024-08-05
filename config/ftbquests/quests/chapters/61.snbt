@@ -5,7 +5,7 @@
 	group: "29FEE0816C5CB526"
 	icon: "new_create:cast_iron_ingot"
 	id: "7D7E28A6C0D83B78"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -18,7 +18,7 @@
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -9.0d
 			y: 4.0d
 		}
 		{
@@ -36,27 +36,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["4256CEC6F890C8D1"]
-			hide_dependency_lines: false
-			id: "17441F3276DFB9CA"
-			rewards: [{
-				count: 9
-				id: "558CC8C50432E6B1"
-				item: "create:fluid_tank"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.25d
-			subtitle: "&b挺有意思的不是吗"
-			tasks: [{
-				id: "2FAD2161086013A5"
-				item: "flopper:flopper"
-				type: "item"
-			}]
-			x: 5.625d
-			y: 5.625d
-		}
-		{
 			dependencies: [
 				"6B3FB60CBF3CB68A"
 				"17A15D75F1EC5311"
@@ -65,7 +44,7 @@
 			tasks: [{
 				id: "22E51EF85BDD7183"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/tin"
@@ -76,7 +55,7 @@
 			}]
 			title: "锡"
 			x: -1.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2BB8EC9F1782C4DE"]
@@ -103,7 +82,7 @@
 			tasks: [{
 				id: "77B2E1EFCF6AACCE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/bronze"
@@ -117,23 +96,11 @@
 		}
 		{
 			dependencies: ["2515602CF3C6878B"]
-			id: "2C50439ADFBC4767"
-			tasks: [{
-				id: "63BC03E2027A60C5"
-				item: "extendedcrafting:advanced_table"
-				type: "item"
-			}]
-			title: "&6 Creafing Table - 2"
-			x: -1.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["2515602CF3C6878B"]
 			id: "4256CEC6F890C8D1"
 			tasks: [{
 				id: "4F9D594E1FAD33F0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:plates/bronze"
@@ -143,64 +110,8 @@
 				type: "item"
 			}]
 			title: "青铜板"
-			x: 5.5d
+			x: 1.0d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"2C50439ADFBC4767"
-				"4256CEC6F890C8D1"
-				"5A260B030BEC3846"
-			]
-			id: "3DBE4D0DD20AE7F9"
-			rewards: [{
-				count: 8
-				id: "4A781602BEC256FB"
-				item: "thermal:bronze_ingot"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "17E9642589F17BE2"
-					item: "create:mechanical_mixer"
-					type: "item"
-				}
-				{
-					id: "57BEDC19050824E2"
-					item: "create:basin"
-					type: "item"
-				}
-				{
-					id: "33F23B625AA5F9A3"
-					item: "new_create:heat_coal_block"
-					type: "item"
-				}
-			]
-			title: "咕噜噜?"
-			x: 1.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"7EC0F60AA1929893"
-				"3DBE4D0DD20AE7F9"
-			]
-			id: "706944B05AB03623"
-			tasks: [
-				{
-					id: "23A7422B439EDC76"
-					item: "createmetallurgy:casting_table"
-					type: "item"
-				}
-				{
-					id: "46E88704FDF960A3"
-					item: "createmetallurgy:graphite_ingot_mold"
-					type: "item"
-				}
-			]
-			title: "金属冶炼"
-			x: -0.5d
-			y: 3.0d
 		}
 		{
 			dependencies: ["2515602CF3C6878B"]
@@ -225,7 +136,7 @@
 				{
 					id: "3AC3744A99373501"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:bronze_pickaxe"
 						tag: {
 							Damage: 0
@@ -235,43 +146,8 @@
 				}
 			]
 			title: "&3这是什么?看一下"
-			x: -0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["706944B05AB03623"]
-			id: "1D09EB7F2A052899"
-			rewards: [{
-				count: 16
-				id: "2ED3910B6FF700EF"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "76C7707A779D943F"
-					item: "createmetallurgy:graphite_blank_mold"
-					type: "item"
-				}
-				{
-					id: "3250DA5C7483CAFC"
-					item: "createmetallurgy:graphite_ingot_mold"
-					type: "item"
-				}
-				{
-					id: "452935BB969F51FE"
-					item: "createmetallurgy:graphite_nugget_mold"
-					type: "item"
-				}
-				{
-					id: "395D4882C242F9E9"
-					item: "createmetallurgy:graphite_plate_mold"
-					type: "item"
-				}
-			]
-			title: "匠...匠魂..?"
-			x: 1.0d
-			y: 3.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7EC0F60AA1929893"]
@@ -286,7 +162,7 @@
 				{
 					id: "4A070AE36C1AE62E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:bronze_axe"
 						tag: {
 							Damage: 0
@@ -297,7 +173,7 @@
 				{
 					id: "00722D883BBADF51"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:bronze_shovel"
 						tag: {
 							Damage: 0
@@ -308,15 +184,15 @@
 			]
 			title: "&a青铜Tools"
 			x: 1.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["3DBE4D0DD20AE7F9"]
+			dependencies: ["7EC0F60AA1929893"]
 			id: "797CC6360C318986"
 			tasks: [{
 				id: "2B33DB728792E832"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/iron"
@@ -326,30 +202,7 @@
 				type: "item"
 			}]
 			title: "铁锭"
-			x: -7.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["797CC6360C318986"]
-			id: "14D8A85A958660A7"
-			subtitle: "&b这玩意比黏土的好使多了"
-			tasks: [{
-				id: "1C63B44F811D6F58"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["57903FCA47EF155F"]
-			id: "603D7BE6F9FED860"
-			tasks: [{
-				id: "6C59E797EDB6E339"
-				item: "immersiveengineering:creosote_bucket"
-				type: "item"
-			}]
-			x: -10.0d
+			x: -1.5d
 			y: 4.0d
 		}
 		{
@@ -361,26 +214,8 @@
 				item: "immersiveengineering:cokebrick"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"603D7BE6F9FED860"
-				"14D8A85A958660A7"
-			]
-			description: [
-				"&b多余的杂酚油，搭配搅拌器制作防腐木板&r"
-				"&a第二种制作齿轮的方法&r"
-			]
-			id: "4EE63A4D36E8A6C4"
-			tasks: [{
-				id: "79142482CB1A7D84"
-				item: "immersiveengineering:treated_wood_horizontal"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 6.0d
+			x: -11.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["797CC6360C318986"]
@@ -398,8 +233,8 @@
 				type: "checkmark"
 			}]
 			title: "我该如何大量获得铁和金?"
-			x: -7.0d
-			y: 13.5d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -413,7 +248,7 @@
 			tasks: [{
 				id: "7B36110120CC2812"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/cast_iron"
@@ -423,8 +258,8 @@
 				type: "item"
 			}]
 			title: "铸铁!"
-			x: -7.0d
-			y: 7.0d
+			x: -5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3ED4088F5DEB249F"]
@@ -433,7 +268,7 @@
 			tasks: [{
 				id: "0D22ED5B3D642CFF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "new_create:metal_detector"
 					tag: {
 						Damage: 0
@@ -442,8 +277,8 @@
 				type: "item"
 			}]
 			title: "&c我不想努力了"
-			x: -5.0d
-			y: 7.0d
+			x: -3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3ED4088F5DEB249F"]
@@ -451,7 +286,7 @@
 			tasks: [{
 				id: "212AE53270DF77D9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:gems/diamond"
@@ -461,8 +296,8 @@
 				type: "item"
 			}]
 			title: "&6亮闪闪！"
-			x: -8.5d
-			y: 7.0d
+			x: -5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3ED4088F5DEB249F"]
@@ -478,7 +313,7 @@
 				{
 					id: "42ED46A81010ADF6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_sword"
 						tag: {
 							Damage: 0
@@ -489,7 +324,7 @@
 				{
 					id: "309446247685F7F9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_pickaxe"
 						tag: {
 							Damage: 0
@@ -500,7 +335,7 @@
 				{
 					id: "2F98114521B7FE35"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_axe"
 						tag: {
 							Damage: 0
@@ -511,7 +346,7 @@
 				{
 					id: "2857DA2843D488EA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_shovel"
 						tag: {
 							Damage: 0
@@ -522,7 +357,7 @@
 				{
 					id: "591780113958E0C7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_hoe"
 						tag: {
 							Damage: 0
@@ -533,7 +368,7 @@
 				{
 					id: "7611052289590266"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_helmet"
 						tag: {
 							Damage: 0
@@ -544,7 +379,7 @@
 				{
 					id: "77A04A74E8AB1517"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_chestplate"
 						tag: {
 							Damage: 0
@@ -555,7 +390,7 @@
 				{
 					id: "1FEA0A32EFAD9BCC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_leggings"
 						tag: {
 							Damage: 0
@@ -566,7 +401,7 @@
 				{
 					id: "03D97FBCEE19874A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:cast_iron_boots"
 						tag: {
 							Damage: 0
@@ -577,7 +412,7 @@
 			]
 			title: "铸铁套"
 			x: -5.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0331E2E5A91C4EA0"]
@@ -585,7 +420,7 @@
 			tasks: [{
 				id: "67D24C5C6605E307"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:obsidian"
@@ -594,8 +429,8 @@
 				title: "黑曜石"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 5.5d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["751A430A5BF08E1C"]
@@ -609,7 +444,7 @@
 				{
 					id: "4BDBD61EB0959449"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "new_create:tinder"
 						tag: {
 							Damage: 0
@@ -619,8 +454,8 @@
 				}
 			]
 			title: "&6生火"
-			x: -8.5d
-			y: 4.0d
+			x: -8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3ED4088F5DEB249F"]
@@ -658,9 +493,139 @@
 				}
 			]
 			title: "&3各种管道"
-			x: -5.0d
-			y: 9.0d
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"730438679F2E34EF"
+				"4926BA40480454AE"
+			]
+			description: [
+				"&6制作一个营火&r"
+				"&2用来烧制&r &4食物&r &2或&r &4物品&r"
+			]
+			id: "19EBCC3BE555DF14"
+			rewards: [
+				{
+					count: 4
+					id: "36EC7C1B11EAC894"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "260BF6B89A90F5E9"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "3D515F4EE6ECAAE1"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			title: "&b烧制物品！"
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19EBCC3BE555DF14"]
+			description: ["&a将粘土放上营火烧制成红砖&r"]
+			id: "59A06A813564EA72"
+			rewards: [{
+				count: 16
+				id: "3C4CD5A4FA6AEE55"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3438037D2DF5091C"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			title: "&3砖！"
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59A06A813564EA72"]
+			description: [
+				"&a恭喜你发现了新的合成方式&r"
+				"&9通过合金窑，你可以烧制铜锭&r"
+				"&a进入铜器时代！&r"
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:alloy_smelter"
+				tag: { }
+			}
+			id: "17A15D75F1EC5311"
+			rewards: [
+				{
+					id: "43C17610244AA3F8"
+					item: "farmersdelight:hot_cocoa"
+					type: "item"
+				}
+				{
+					id: "48DA5FC8FC24136F"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2715B39EFD8060FF"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+				{
+					id: "3C17350DF09BC811"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3合金窑"
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17A15D75F1EC5311"]
+			description: [
+				"&a获取你的第一块金属！&r"
+				"&a奖励你一箱马铃薯~&r"
+			]
+			id: "2BB8EC9F1782C4DE"
+			rewards: [{
+				id: "6B8EB2EF24A3F6B9"
+				item: "farmersdelight:potato_crate"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B5081C558A4CD42"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "铜锭"
+				type: "item"
+			}]
+			title: "&3第一块金属"
+			x: -9.0d
+			y: 0.5d
 		}
 	]
-	title: "&6第三节 冶金新纪元"
+	title: "&6第二节 冶金新纪元"
 }

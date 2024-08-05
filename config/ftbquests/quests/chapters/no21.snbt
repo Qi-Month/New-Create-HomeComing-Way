@@ -31,8 +31,8 @@
 				type: "item"
 			}]
 			title: "&3No.2-1 开端"
-			x: -18.0d
-			y: 2.25d
+			x: -17.25d
+			y: 1.5d
 		}
 		{
 			dependencies: ["20B347816F814F10"]
@@ -46,7 +46,7 @@
 			}]
 			title: "&3一切的开始！"
 			x: -10.5d
-			y: 2.25d
+			y: 1.5d
 		}
 		{
 			dependencies: ["20B347816F814F10"]
@@ -78,8 +78,8 @@
 				type: "item"
 			}]
 			title: "&3动力锯"
-			x: -8.0d
-			y: 3.5d
+			x: -9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0D90E2B1E5186F01"]
@@ -87,7 +87,7 @@
 			tasks: [{
 				id: "7C653C3F23475828"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/brass"
@@ -96,7 +96,7 @@
 				title: "黄铜"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -5.5d
 			y: 1.5d
 		}
 		{
@@ -122,7 +122,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["54D1253B1BBB0CA4"]
+			dependencies: [
+				"54D1253B1BBB0CA4"
+				"66E133258A1C7B7B"
+			]
 			id: "1F23917DBF624EE0"
 			rewards: [{
 				id: "2961D38896E2E5CB"
@@ -135,8 +138,8 @@
 				type: "item"
 			}]
 			title: "&4指你咋滴！"
-			x: -6.0d
-			y: 1.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			id: "02599F5C97F87B02"
@@ -157,11 +160,12 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["45A8978CA9C2F92A"]
 			id: "2CF0A7D1D5E5247D"
+			subtitle: "别忘记我，"
 			tasks: [{
 				id: "545DF791D1C95E3F"
 				item: "create:belt_connector"
@@ -181,7 +185,7 @@
 			tasks: [{
 				id: "7296EDDB1BE8CD02"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:super_glue"
 					tag: {
 						Damage: 0
@@ -194,7 +198,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1F23917DBF624EE0"]
 			id: "34A1D0679852D9C1"
 			tasks: [{
 				id: "37AD8977497EA0B4"
@@ -202,8 +205,8 @@
 				type: "item"
 			}]
 			title: "&6第一块粉色钻石"
-			x: -4.5d
-			y: 1.5d
+			x: -7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["34A1D0679852D9C1"]
@@ -214,74 +217,8 @@
 				type: "item"
 			}]
 			title: "&5不能导电"
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1A09D4635FED3126"]
-			description: ["{image:new_create:textures/images/3.png width:50 height:50 align:1}"]
-			id: "73561804225FF7A6"
-			rewards: [
-				{
-					count: 4
-					id: "4C41D12E75A8A0F4"
-					item: "minecraft:enchanted_golden_apple"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "08570BBBD162FE4B"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-			]
-			subtitle: "&b1..1..4..."
-			tasks: [
-				{
-					count: 256L
-					id: "2A84EF298955226A"
-					item: "create:large_cogwheel"
-					type: "item"
-				}
-				{
-					count: 256L
-					id: "05E2ABBB72D5EBB1"
-					item: "create:cogwheel"
-					type: "item"
-				}
-			]
-			title: "&4事动力(悲"
-			x: -8.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"1A09D4635FED3126"
-				"1F23917DBF624EE0"
-			]
-			id: "5AAA4CA194571891"
-			rewards: [{
-				count: 64
-				id: "4136BFC9A98A0C33"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				count: 512L
-				id: "70D870DC09A6A2C0"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
-				}
-				title: "Any #minecraft:logs"
-				type: "item"
-			}]
-			title: "&3树场启动!"
-			x: -6.0d
-			y: 3.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -295,8 +232,8 @@
 				type: "item"
 			}]
 			title: "&5也许你需要来点应力"
-			x: -13.0d
-			y: 4.0d
+			x: -12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B2F686717DD843E"]
@@ -307,7 +244,7 @@
 				type: "item"
 			}]
 			title: "&6更强大的Power!"
-			x: -13.0d
+			x: -12.5d
 			y: 5.5d
 		}
 		{
@@ -319,7 +256,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["04A33BA59DBA29ED"]
@@ -331,6 +268,41 @@
 			}]
 			x: -8.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6DFBC5FD742BF0EA"]
+			id: "404DE2EFF2836D18"
+			tasks: [{
+				count: 320L
+				id: "651DB0263F2392FB"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "&6又或者是水车仙人"
+			x: -12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			id: "14293053C2EC5903"
+			tasks: [{
+				id: "276A55B8A2A43299"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D90E2B1E5186F01"]
+			id: "4257988E35C9FD55"
+			tasks: [{
+				id: "28EA6077D15654E4"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
 		}
 	]
 	title: "&6第一节 机械的曙光"

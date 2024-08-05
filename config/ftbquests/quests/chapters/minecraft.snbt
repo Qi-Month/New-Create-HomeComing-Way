@@ -5,7 +5,7 @@
 	filename: "minecraft"
 	group: "29FEE0816C5CB526"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "new_create:flint_axe"
 		tag: {
 			Damage: 0
@@ -14,11 +14,7 @@
 	id: "702CD7931A4A3E44"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
 			image: "minecraft:block/tall_seagrass_bottom"
 			rotation: 0.0d
 			width: 0.05263157894736842d
@@ -26,11 +22,7 @@
 			y: 5.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
 			image: "minecraft:block/nether_portal"
 			rotation: 0.0d
 			width: 0.03125d
@@ -60,7 +52,7 @@
 				{
 					command: "/give @p minecraft:player_head{SkullOwner:{Name:'TYX_CnJiu'}}"
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:player_head"
 						tag: {
 							SkullOwner: {
@@ -75,7 +67,7 @@
 				{
 					command: "/give @p minecraft:player_head{SkullOwner:{Name:'Qi_Month'}}"
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:player_head"
 						tag: {
 							SkullOwner: {
@@ -122,8 +114,8 @@
 				type: "item"
 			}]
 			title: "&3杂草获取"
-			x: 32.0d
-			y: 20.0d
+			x: 30.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
@@ -142,8 +134,8 @@
 				type: "item"
 			}]
 			title: "&3小燧石"
-			x: 32.0d
-			y: 18.0d
+			x: 32.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["5C5120075EDB3ECF"]
@@ -165,7 +157,7 @@
 			tasks: [{
 				id: "6DD700552F5F531D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tools/knives"
@@ -176,7 +168,7 @@
 			}]
 			title: "&1多功能工具"
 			x: 34.0d
-			y: 18.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["366BC6C1AD97484E"]
@@ -220,7 +212,7 @@
 			tasks: [{
 				id: "3F6700D320F059C8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "new_create:flint_pickaxe"
 					tag: {
 						Damage: 0
@@ -245,7 +237,7 @@
 			tasks: [{
 				id: "0E374B48F3CC062C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "new_create:flint_axe"
 					tag: {
 						Damage: 0
@@ -270,7 +262,7 @@
 			tasks: [{
 				id: "2FB72A6034F4DF6A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "new_create:flint_shovel"
 					tag: {
 						Damage: 0
@@ -296,7 +288,7 @@
 			tasks: [{
 				id: "579D495AB3C4C589"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:cobblestone"
@@ -335,7 +327,7 @@
 				count: 32L
 				id: "4FC73587A09A03FB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:gravel"
@@ -354,7 +346,7 @@
 			tasks: [{
 				id: "59DF0D24E9F369CA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "new_create:hammer"
@@ -385,7 +377,7 @@
 					count: 8L
 					id: "4BA36E193FA0B561"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:planks"
@@ -397,7 +389,7 @@
 				{
 					id: "5DA46FBFEC259657"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:logs"
@@ -408,7 +400,7 @@
 			]
 			title: "&3第一块木板"
 			x: 36.0d
-			y: 18.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -433,7 +425,7 @@
 				{
 					id: "5851CD707AA47678"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "new_create:saw"
@@ -514,7 +506,7 @@
 				count: 9L
 				id: "3558280320F0C978"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:sand"
@@ -540,7 +532,7 @@
 				count: 32L
 				id: "3F3F9DD734EADBD5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:logs"
@@ -639,7 +631,7 @@
 			tasks: [{
 				id: "0DCA137A56CFE836"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "new_create:tinder"
 					tag: {
 						Damage: 0
@@ -659,8 +651,8 @@
 				type: "item"
 			}]
 			title: "干草"
-			x: 36.0d
-			y: 22.5d
+			x: 37.0d
+			y: 17.0d
 		}
 		{
 			id: "28E47369E04246A4"
@@ -669,8 +661,8 @@
 				item: "youkaishomecoming:drying_rack"
 				type: "item"
 			}]
-			x: 34.0d
-			y: 22.5d
+			x: 35.5d
+			y: 17.0d
 		}
 		{
 			id: "2A2E9B781C59A914"
@@ -679,8 +671,8 @@
 				item: "new_create:grass_string"
 				type: "item"
 			}]
-			x: 38.0d
-			y: 22.5d
+			x: 38.5d
+			y: 17.0d
 		}
 		{
 			id: "6D307AB343FB38CA"
@@ -690,7 +682,7 @@
 				type: "item"
 			}]
 			x: 34.0d
-			y: 21.0d
+			y: 17.0d
 		}
 	]
 	title: "&6第一节 火与石之歌"

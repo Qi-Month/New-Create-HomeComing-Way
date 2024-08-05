@@ -37,7 +37,7 @@
 				"&b查资料,查攻略,不懂的就问"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:iron_sword"
 				tag: {
 					Damage: 0
@@ -222,8 +222,8 @@
 				type: "checkmark"
 			}]
 			title: "关于传送带"
-			x: 4.0d
-			y: 2.0d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["31E32B65ACBB7A96"]

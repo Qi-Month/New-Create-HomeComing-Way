@@ -24,14 +24,11 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: -2.5d
 			y: -12.5d
 		}
 		{
-			dependencies: [
-				"23307DC6434DC928"
-				"582C90B229E925ED"
-			]
+			dependencies: ["23307DC6434DC928"]
 			id: "103EBB625BFD8005"
 			tasks: [{
 				id: "63539AC078FD4B41"
@@ -90,11 +87,12 @@
 		{
 			dependencies: ["4257988E35C9FD55"]
 			id: "5F800E5B51B445F6"
+			subtitle: "记得做轧机哦"
 			tasks: [
 				{
 					id: "288629D6D4258588"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:wires/copper"
@@ -176,7 +174,7 @@
 			tasks: [{
 				id: "06DAD52FCEDD59F5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:dusts/coal"
@@ -195,7 +193,7 @@
 			tasks: [{
 				id: "06E81AA4487395D9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:dusts/coal_coke"
@@ -251,66 +249,30 @@
 				type: "item"
 			}]
 			title: "&3获取！"
-			x: -3.0d
+			x: -5.0d
 			y: -11.0d
-		}
-		{
-			dependencies: ["0D90E2B1E5186F01"]
-			id: "4257988E35C9FD55"
-			tasks: [{
-				id: "28EA6077D15654E4"
-				item: "createaddition:rolling_mill"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -9.0d
 		}
 		{
 			dependencies: ["3E073FC5B24E8DA1"]
 			id: "56FC7B94E78611DF"
 			tasks: [{
 				id: "3C94DA1DC8CD982E"
-				item: "new_create:zinc_fluid_bucket"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["1B430050B27D9128"]
-			id: "74E72AD95A38ACE0"
-			tasks: [{
-				id: "580DD8260BFD3DAC"
-				item: "create:spout"
+				item: "createmetallurgy:molten_zinc_bucket"
 				type: "item"
 			}]
 			x: 2.5d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
-			dependencies: [
-				"56FC7B94E78611DF"
-				"74E72AD95A38ACE0"
-			]
+			dependencies: ["56FC7B94E78611DF"]
 			id: "7C43B6168E6D80E1"
 			tasks: [{
 				id: "614575C4381E2229"
 				item: "new_create:zinc_electron_tube"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["74E72AD95A38ACE0"]
-			id: "7BE6C15697F9757C"
-			tasks: [{
-				id: "5FCE3ABF1EDE7983"
-				item: "new_create:cast_iron_fluid_bucket"
-				type: "item"
-			}]
 			x: 2.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0A0EDACAFB3D3068"]
@@ -326,7 +288,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["4EE63A4D36E8A6C4"]
 			id: "0A0EDACAFB3D3068"
 			tasks: [{
 				id: "58F1C12727C5B523"
@@ -381,10 +342,14 @@
 				item: "createaddition:capacitor"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
+			dependencies: [
+				"695B6A8765FF64D5"
+				"7C43B6168E6D80E1"
+			]
 			id: "113B30972B23CD10"
 			tasks: [{
 				id: "34FAB67C950463FF"
@@ -392,24 +357,10 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["7BE6C15697F9757C"]
-			id: "33F5A9C5D6F8ED62"
-			tasks: [{
-				id: "05E0782A4AF5F07E"
-				item: "new_create:cast_electron_tube"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"33F5A9C5D6F8ED62"
-				"113B30972B23CD10"
-			]
+			dependencies: ["113B30972B23CD10"]
 			description: ["{image:new_create:textures/images/4.png width:100 height:100 align:1}"]
 			id: "1C64E58F82BAF3FA"
 			shape: "gear"
@@ -424,5 +375,5 @@
 			y: 0.5d
 		}
 	]
-	title: "&6第一节 能源与机械"
+	title: "&6第一节 能源的曲折之路"
 }
