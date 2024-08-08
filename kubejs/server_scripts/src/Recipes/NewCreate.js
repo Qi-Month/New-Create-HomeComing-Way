@@ -63,4 +63,34 @@ ServerEvents.recipes((event) => {
 		"ingredient": { "item": "new_create:grass_fiber" },
 		"result": { "item": "new_create:hay" }
 	})
+
+	// 草绳
+	kubejs.shapeless('new_create:grass_string', [
+		'3x new_create:hay'
+	])
+
+	// 模具
+	kubejs.shaped('3x new_create:wooden_blank_mold', [
+		"PR",
+		"RP"
+	], {
+		P: '#minecraft:planks',
+		R: '#forge:rods/wooden'
+	})
+
+	kubejs.shaped('3x new_create:wooden_blank_mold', [
+		"RP",
+		"PR"
+	], {
+		P: '#minecraft:planks',
+		R: '#forge:rods/wooden'
+	})
+	let woodenCast = [
+		'new_create:wooden_ingot_mold',
+		'new_create:wooden_plate_mold',
+		'new_create:wooden_nugget_mold'
+	]
+	woodenCast.forEach((output) => {
+		minecraft.stonecutting(output, 'new_create:wooden_blank_mold')
+	})
 })

@@ -10,4 +10,8 @@ ServerEvents.recipes((event) => {
 	stoneTools.forEach((input) => {
 		event.replaceInput(input, '#minecraft:stone_tool_materials', 'new_create:charred_cobblestone')
 	})
+
+	// 齿轮
+	event.replaceInput({}, "create:cogwheel", "#create:cogwheel")
+	event.replaceInput({}, "create:large_cogwheel", "#create:large_cogwheel")
 })

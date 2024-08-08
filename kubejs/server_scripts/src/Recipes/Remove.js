@@ -3,7 +3,9 @@ ServerEvents.recipes((event) => {
 	let output = [
 		'#forge:tools/wooden',
 		'#forge:graphite_molds',
-		'pipez:filter_destination_tool'
+		'pipez:filter_destination_tool',
+		"createmetallurgy:mechanical_belt_grinder",
+		'#alltheores:ore_hammers'
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
@@ -11,7 +13,7 @@ ServerEvents.recipes((event) => {
 
 	// 输入
 	let input = [
-
+		'#alltheores:ore_hammers'
 	]
 	input.forEach((item) => {
 		event.remove({ input: item })

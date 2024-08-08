@@ -53,7 +53,6 @@ StartupEvents.registry('fluid', (event) => {
 			.tag(MODID + 'molten_materials')
 			.tag(`forge:molten_${name}`)
 			.tag('forge:molten_materials')
-			.tag("minecraft:lava")
 	})
 
 	// 特殊注册
@@ -67,7 +66,7 @@ StartupEvents.registry('fluid', (event) => {
 		.stillTexture(otherRegistrations + 'soul_still')
 
 	// 熔融玻璃
-	event.create(MODID + 'glass')
+	event.create(MODID + 'molten_glass')
 		.tag(MODID + 'fluid')
 		.noBlock()
 		.flowingTexture(otherRegistrations + 'glass_flowing')
@@ -81,7 +80,8 @@ StartupEvents.registry('fluid', (event) => {
 		.stillTexture(otherRegistrations + 'egg_mixture_fluid_stilling')
 
 	// 黑曜石
-	event.create(MODID + 'obsidian')
+	event.create(MODID + 'molten_obsidian')
 		.flowingTexture(otherRegistrations + 'obsidian_flowing')
 		.stillTexture(otherRegistrations + 'obsidian_still')
+		.tag(MODID + 'fluid')
 })

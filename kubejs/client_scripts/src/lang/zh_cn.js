@@ -152,7 +152,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["mithril", "秘银"],
 		["bronze", "青铜"],
 		["tin", "锡"],
-		["obsidian", "黑曜石"]
+		["obsidian", "黑曜石"]	
 	]
 	for (let i = 0; i < moltenFluidResourceLang.length; i++) {
 		event.add(`block.${MODID}.molten_${moltenFluidResourceLang[i][0]}`, "熔融" + moltenFluidResourceLang[i][1])
