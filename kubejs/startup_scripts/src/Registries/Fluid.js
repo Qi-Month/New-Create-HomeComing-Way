@@ -31,7 +31,7 @@ StartupEvents.registry('fluid', (event) => {
 	// 金属
 	let moltenFluid = [
 		// 青铜
-		['bronze', 0xC48C5E],
+		['bronze', 0xE08125],
 		// 锡
 		['tin', 0xADD8E6],
 		// 铸铁溶液

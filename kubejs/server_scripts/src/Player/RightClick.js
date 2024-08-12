@@ -6,7 +6,6 @@ BlockEvents.rightClicked((event) => {
 		['new_create:log_pile', 'minecraft:fire'],
 		['minecraft:campfire', 'minecraft:campfire', { lit: true }],
 		['minecraft:soul_campfire', 'minecraft:soul_campfire', { lit: true }],
-		['minecraft:coal_block', 'new_create:heat_coal_block']
 	]
 	blockRightClick.forEach(([blockID, blockSet]) => {
 		if (player.mainHandItem === 'new_create:tinder' && block.id === blockID) {

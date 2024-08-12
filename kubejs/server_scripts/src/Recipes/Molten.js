@@ -1,5 +1,8 @@
 ServerEvents.recipes((event) => {
 	const { create, createmetallurgy } = event.recipes
+	// 热量
+	let heated = "heated"
+	let superheated = "superheated"
 
 	// 浇筑&融化
 
@@ -25,6 +28,31 @@ ServerEvents.recipes((event) => {
 		Fluid.of('createmetallurgy:molten_gold', 90),
 		'#forge:plates'
 	]).processingTime(60).mold_consumed(true)
+
+	// 铁轨
+	create.mixing(Fluid.of("createmetallurgy:molten_iron", 30), [
+		"minecraft:rail"
+	]).heatLevel("melt")
+
+	// 激活铁轨
+	create.mixing(Fluid.of("createmetallurgy:molten_iron", 90), [
+		"minecraft:activator_rail"
+	]).heatLevel("melt")
+
+	// 探测铁轨
+	create.mixing(Fluid.of("createmetallurgy:molten_iron", 30), [
+		"minecraft:detector_rail"
+	]).heatLevel("melt")
+
+	// 动力铁轨
+	create.mixing(Fluid.of("createmetallurgy:molten_gold", 30), [
+		"minecraft:powered_rail"
+	]).heatLevel("melt")
+
+	// 控制铁轨
+	create.mixing(Fluid.of("createmetallurgy:molten_gold", 30), [
+		"create:controller_rail"
+	]).heatLevel("melt")
 
 	// 熔融
 	let meltingRecipes = [
@@ -66,5 +94,19 @@ ServerEvents.recipes((event) => {
 		createmetallurgy.casting_in_basin(block, [
 			Fluid.of(fluid, 810)
 		]).processingTime(60).mold_consumed(false)
+	})
+
+	// 合金搅拌
+	let alloyRecipes = [
+		// 青铜
+		["new_create:molten_bronze", ["createmetallurgy:molten_copper", "new_create:molten_tin"]],
+		// 黄铜
+		["createmetallurgy:molten_brass", ["createmetallurgy:molten_zinc", "createmetallurgy:molten_copper"]]
+	]
+	alloyRecipes.forEach(([output, [input_1, input_2]]) => {
+		createmetallurgy.alloying(Fluid.of(output, 10), [
+			Fluid.of(input_1, 5),
+			Fluid.of(input_2, 5)
+		]).heatRequirement(heated).processingTime(10)
 	})
 })

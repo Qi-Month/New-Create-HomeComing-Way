@@ -5,7 +5,9 @@ ServerEvents.recipes((event) => {
 		'#forge:graphite_molds',
 		'pipez:filter_destination_tool',
 		"createmetallurgy:mechanical_belt_grinder",
-		'#alltheores:ore_hammers'
+		'#alltheores:ore_hammers',
+		'#create:metal_cogwheel',
+		'#create:metal_large_cogwheel'
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
@@ -21,7 +23,7 @@ ServerEvents.recipes((event) => {
 
 	// 配方类型
 	let recipeType = [
-
+		"createmetallurgy:alloying"
 	]
 	recipeType.forEach((type) => {
 		event.remove({ type: type })

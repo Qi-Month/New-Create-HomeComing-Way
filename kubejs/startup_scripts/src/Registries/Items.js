@@ -2,7 +2,6 @@ StartupEvents.registry('item', (event) => {
 	const MODID = 'new_create:'
 	let itemRegisters = [
 		['flint_knapp', 'common', false], // 燧石碎片
-		['rainbow_ingot', 'epic', false], // 彩虹锭
 		['mold_block', 'common', false], // 冲压模具-块
 		['plating_zinc_ingot', 'common', false], // 电镀锌
 		['cast_electron_tube', 'common', false], // 铸铁电子管
@@ -18,20 +17,6 @@ StartupEvents.registry('item', (event) => {
 		['egg_shell', 'common', false], // 蛋壳
 		['in_cogwheel', 'common', false], // 齿轮(未完成)
 		['in_large_cogwheel', 'common', false], // 大齿轮(未完成)]
-		/*
-		['rainbow_mooncoin', 'epic', false], // 彩虹月币
-		['mooncoin', 'rare', false], // 月币
-		['0', 'uncommon', false],
-		['1', 'uncommon', false],
-		['2', 'uncommon', false],
-		['3', 'uncommon', false],
-		['4', 'uncommon', false],
-		['5', 'uncommon', false],
-		['6', 'uncommon', false],
-		['7', 'uncommon', false],
-		['8', 'uncommon', false],
-		['9', 'uncommon', false],
-		*/
 		['in_chaochi', 'common', false], // 未加工的炒琪
 		['cast_iron_ingot', 'common', false], // 铸铁锭
 		['primary_bearing', 'common', false], // 合成轴承

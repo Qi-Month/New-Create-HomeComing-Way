@@ -135,7 +135,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["soul", "液态灵魂"],
 		["high_grade_refined_oil", "高级精炼油"],
 		["egg_mixture_fluid", "鸡蛋混合液"],
-		["rose_quartz_fluid", "玫瑰石英溶液"]
+		["rose_quartz_fluid", "玫瑰石英溶液"],
 	]
 	for (let i = 0; i < fluidResourceLang.length; i++) {
 		event.add(`block.${MODID}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
@@ -152,7 +152,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["mithril", "秘银"],
 		["bronze", "青铜"],
 		["tin", "锡"],
-		["obsidian", "黑曜石"]	
+		["obsidian", "黑曜石"],
+		["glass", "玻璃"]
 	]
 	for (let i = 0; i < moltenFluidResourceLang.length; i++) {
 		event.add(`block.${MODID}.molten_${moltenFluidResourceLang[i][0]}`, "熔融" + moltenFluidResourceLang[i][1])
@@ -195,6 +196,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	let jeiInfoLang = [
 		["nc.chaochi", "垣曲炒祺(食其)是垣曲劳动人民长期与大自然和谐相处的产物。过去,人们出远门,有一个难题不好解决,那就是水土不服,常常拉肚子.于是,垣曲人就创造出了这种独特的食品,解决了这一难题.炒祺里带着家乡的水、家乡的土、家乡的面,又耐放易存,几个月都不腐不坏,每天吃一点,就平平安安换了肚子.人们发现,由于炒祺用垣曲独有的白土及绿色原料制作,具有健胃养胃之功效.所以才得以时代流传而不败.成了全国绝无仅有的§l§c国家非物质级[文化遗产"],
 		["mt.melter", "热量等级,\n1级,火把\n2级,营火\n4级,熔岩"],
+		["nc.heat_coal_block", "在灼热的深渊中,黑暗的核心有时会被火焰赐予新的生命,变得更加炙热和沉重\n\n其中所富含的能量甚至可以让火焰在上方无限燃烧"]
 	]
 	jeiInfoLang.forEach(([key, text]) => {
 		event.add("jei." + key, "§b" + text)

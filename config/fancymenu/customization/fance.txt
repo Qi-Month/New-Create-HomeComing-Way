@@ -26,7 +26,7 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   orientation = mid-left
-  x = 16
+  x = 303
   action = movebutton
   y = -11
 }
@@ -46,7 +46,7 @@ customization {
 customization {
   identifier = %id=376322%
   orientation = mid-left
-  x = 120
+  x = 407
   action = movebutton
   y = -37
 }
@@ -60,7 +60,7 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   orientation = mid-left
-  x = 120
+  x = 407
   action = movebutton
   y = 15
 }
@@ -83,14 +83,26 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = FancyMenu/config_2.png
-  backgroundnormal = FancyMenu/config.png
+  backgroundhovered = config/fancymenu/assets/config_2.png
+  backgroundnormal = config/fancymenu/assets/config.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = sethoverlabel
+  label = 
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = setbuttondescription
+  description = 选项
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   orientation = mid-left
-  x = 16
+  x = 303
   action = movebutton
   y = 39
 }
@@ -105,25 +117,19 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   action = setbuttonlabel
-  value = 退 出
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  action = sethoverlabel
-  label = 退 出
+  value = 退出
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   action = setbuttondescription
-  description = 退 出
+  description = 退出
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = mid-left
-  x = 120
+  x = 407
   action = movebutton
   y = -11
 }
@@ -137,7 +143,7 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   orientation = mid-left
-  x = 16
+  x = 303
   action = movebutton
   y = -37
 }
@@ -152,7 +158,7 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-left
-  x = 16
+  x = 303
   action = movebutton
   y = 15
 }
@@ -168,6 +174,12 @@ customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   action = setbuttonlabel
   value = Mods
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = setbuttondescription
+  description = 模组列表
 }
 
 customization {
@@ -266,7 +278,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Modloader: 1.20.1 Forge-47.2.30%n%Modpack Version: Alpha-0.8.9
+  source = ModLoader: 1.20.1 Forge-47.2.30%n%ModPack Version: Alpha-0.8.9
   text_border = 0
   case_mode = normal
   source_mode = direct
@@ -281,13 +293,13 @@ customization {
 }
 
 customization {
-  path = FancyMenu/title.png
+  path = config/fancymenu/assets/title.png
   orientation = top-left
-  x = 16
-  width = 220
+  x = 53
+  width = 204
   action = addtexture
   actionid = aaacb27e-d682-43fe-8fc2-97d2c2ba894c1710210874566
-  y = 38
-  height = 33
+  y = 20
+  height = 67
 }
 

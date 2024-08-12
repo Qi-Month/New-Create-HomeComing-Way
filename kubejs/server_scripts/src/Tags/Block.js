@@ -15,4 +15,15 @@ ServerEvents.tags('block', (event) => {
 	event.add('minecraft:mineable/pickaxe', [
 		'flopper:flopper'
 	])
+
+	// 无限燃烧
+	event.add("minecraft:infiniburn_end", [
+		"new_create:heat_coal_block"
+	])
+	event.add("minecraft:infiniburn_overworld", [
+		"new_create:heat_coal_block"
+	])
+	event.add("minecraft:infiniburn_nether", [
+		"new_create:heat_coal_block"
+	])
 })

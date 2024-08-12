@@ -38,6 +38,7 @@ ServerEvents.recipes((event) => {
 	create.mixing('new_create:andesite_compound', [
 		'4x #forge:andesite/nuggets',
 		'4x #forge:clay',
+		"2x minecraft:andesite",
 		Fluid.of('minecraft:water', 1000)
 	])
 
@@ -62,4 +63,50 @@ ServerEvents.recipes((event) => {
 		P: '#forge:plates/cast_iron',
 		B: '#forge:plates/brass'
 	}).id('create:crafting/kinetics/brass_hand')
+
+	// 坚固搅拌器
+	kubejs.shaped('createmetallurgy:sturdy_whisk', [
+		"BBB",
+		"SBS",
+		"TST"
+	], {
+		B: '#forge:plates/brass',
+		S: '#forge:plates/obsidian',
+		T: '#forge:plates/tungsten'
+	}).id("createmetallurgy:sturdy_whisk")
+
+	// 熔铸搅拌器
+	kubejs.shaped("createmetallurgy:foundry_mixer", [
+		" P ",
+		"CBC",
+		" S "
+	], {
+		P: "create:piston_extension_pole",
+		C: "#create:metal_cogwheel",
+		S: 'createmetallurgy:sturdy_whisk',
+		B: "create:brass_casing"
+	}).id("createmetallurgy:foundry_mixer")
+
+	// 金属齿轮
+	let metalCogwheelRecipes = [
+		"bronze",
+		"cast_iron",
+		"steel"
+	]
+	metalCogwheelRecipes.forEach((metal) => {
+		// 小
+		kubejs.shapeless(`steampowered:${metal}_cogwheel`, [
+			"create:shaft",
+			`#forge:plates/${metal}`
+		])
+		// 大
+		kubejs.shapeless(`steampowered:${metal}_large_cogwheel`, [
+			`steampowered:${metal}_cogwheel`,
+			`#forge:plates/${metal}`
+		])
+		kubejs.shapeless(`steampowered:${metal}_large_cogwheel`, [
+			"create:shaft",
+			`2x #forge:plates/${metal}`
+		])
+	})
 })

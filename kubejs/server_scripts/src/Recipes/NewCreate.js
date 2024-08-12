@@ -3,7 +3,6 @@ ServerEvents.recipes((event) => {
 		create,
 		createmetallurgy,
 		create_bic_bit,
-		create_new_age,
 		createaddition,
 		createdieselgenerators,
 		createoreexcavation,
@@ -65,7 +64,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 草绳
-	kubejs.shapeless('new_create:grass_string', [
+	kubejs.shapeless('3x new_create:grass_string', [
 		'3x new_create:hay'
 	])
 
@@ -85,6 +84,7 @@ ServerEvents.recipes((event) => {
 		P: '#minecraft:planks',
 		R: '#forge:rods/wooden'
 	})
+
 	let woodenCast = [
 		'new_create:wooden_ingot_mold',
 		'new_create:wooden_plate_mold',
@@ -93,4 +93,9 @@ ServerEvents.recipes((event) => {
 	woodenCast.forEach((output) => {
 		minecraft.stonecutting(output, 'new_create:wooden_blank_mold')
 	})
+
+	// 热煤
+	minecraft.campfire_cooking("new_create:heat_coal_block", [
+		"minecraft:coal_block"
+	])
 })

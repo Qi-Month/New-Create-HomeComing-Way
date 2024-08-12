@@ -16,8 +16,6 @@ ItemEvents.tooltip((event) => {
 		['melter:melter', 'mt.melter'],
 		// 高炉
 		['minecraft:blast_furnace', 'mc.blast_furnace'],
-		// 高炉核心
-		['new_create:furnace_core', 'nc.furnace_core'],
 		// 合成轴承
 		['new_create:primary_bearing', 'nc.primary_bearing'],
 		// 石磨
@@ -28,8 +26,6 @@ ItemEvents.tooltip((event) => {
 		['createmetallurgy:casting_table', 'ct.info'],
 		// 浇筑盆
 		['createmetallurgy:casting_basin', 'ct.info'],
-		// 热煤块
-		['new_create:heat_coal_block', 'nc.heat_coal_block'],
 		// 晒干架
 		['youkaishomecoming:drying_rack', 'yc.drying_rack'],
 		// 过滤器
