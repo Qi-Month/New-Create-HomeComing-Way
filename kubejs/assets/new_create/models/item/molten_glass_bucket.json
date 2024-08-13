@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "new_create:item/glass_bucket"
+		"layer0": "new_create:item/molten_glass_bucket"
 	}
 }

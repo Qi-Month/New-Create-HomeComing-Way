@@ -208,12 +208,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		["frozen", "冻结"],
 	]
 	heatedTip.forEach(([key, text]) => {
-		event.add("create.recipe.heat_requirement." + key, "" + text)
+		event.add("create.recipe.heat_requirement." + key, + text)
 	})
 
 	// 其它
 	let otherTipLang = [
-		["message.new_create.welcome", "欢迎 %s 来到New Create!"],
+		["message.new_create.welcome", "欢迎 §b%s§b §b来到New Create!"],
 		["info.nc.flint", "正在敲击燧石"],
 		["ore.nc.osmium", "锇矿脉"],
 		["ore.nc.aluminum", "铝土矿脉"],

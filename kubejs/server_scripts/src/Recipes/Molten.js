@@ -82,10 +82,10 @@ ServerEvents.recipes((event) => {
 
 	// 批量
 	let moltenRecipes_1 = [
-		['new_create:cast_iron_ingot', "new_create:cast_iron_block", "new_create:molten_cast_iron"],
-		['create:andesite_alloy', "create:andesite_alloy_block", "new_create:molten_andesite_alloy"]
+		[['new_create:cast_iron_ingot', "new_create:cast_iron_block"], "new_create:molten_cast_iron"],
+		[['create:andesite_alloy', "create:andesite_alloy_block"], "new_create:molten_andesite_alloy"]
 	]
-	moltenRecipes_1.forEach(([ingot, block, fluid]) => {
+	moltenRecipes_1.forEach(([[ingot, block], fluid]) => {
 		createmetallurgy.casting_in_table(ingot, [
 			Fluid.of(fluid, 90),
 			"createmetallurgy:graphite_ingot_mold"

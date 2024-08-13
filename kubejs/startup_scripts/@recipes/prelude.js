@@ -131,8 +131,8 @@ Schema.prototype = {
 	}
 }
 
-StartupEvents.recipeSchemaRegistry(event => {
-	probejs$$Schemas.forEach(schema => {
+StartupEvents.recipeSchemaRegistry((event) => {
+	probejs$$Schemas.forEach((schema) => {
 		schema.register(event)
 	})
 })

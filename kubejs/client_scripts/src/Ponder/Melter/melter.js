@@ -86,9 +86,9 @@ Ponder.registry((event) => {
 
 			scene.showControls(
 				30,
-				utils.grid.at(2, 2, 2),
+				[2, 3, 2],
 				'down'
-			).withItem('new_create:glass_bucket')
+			).withItem('new_create:molten_glass_bucket')
 			scene.idleSeconds(1)
 		})
 })
