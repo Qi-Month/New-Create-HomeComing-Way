@@ -53,4 +53,15 @@ StartupEvents.registry("block", (event) => {
 			.tagItem(MODID + "blocks")
 			.requiresTool(true)
 	})
+
+	// 工业铁块墙
+	event.create(MODID + "industrial_iron_block_wall", "wall")
+		.soundType("metal")
+		.hardness(3)
+		.resistance(3)
+		.tagBlock(toolType["pickaxe"])
+		.tagBlock(miningLevel["wooden"])
+		.tagItem(MODID + "items")
+		.tagItem(MODID + "blocks")
+		.requiresTool(true)
 })

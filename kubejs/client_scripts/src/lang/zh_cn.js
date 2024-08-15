@@ -120,6 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["industrial_casing", "工业机壳"],
 		["steel_casing", "钢机壳"],
 		["heat_coal_block", "热煤块"],
+		["industrial_iron_block_wall", "工业铁块墙"]
 	]
 	for (let i = 0; i < blockResourceLang.length; i++) {
 		event.add(`block.${MODID}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
@@ -141,6 +142,15 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${MODID}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
 		event.add(`fluid.${MODID}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
 		event.add(`item.${MODID}.${fluidResourceLang[i][0]}_bucket`, fluidResourceLang[i][1] + "桶")
+	}
+
+	// 机器
+	let machineResourceLang = [
+		["firmament", "苍穹 - 817型"],
+	]
+	for (let i = 0; i < machineResourceLang.length; i++) {
+		event.add(`block.${MODID}.${machineResourceLang[i][0]}`, machineResourceLang[i][1] + " 控制器")
+		event.add(`machine.${MODID}.${machineResourceLang[i][0]}`, machineResourceLang[i][1] + " 控制器")
 	}
 
 	// 熔融金属
@@ -213,7 +223,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 其它
 	let otherTipLang = [
-		["message.new_create.welcome", "欢迎 §b%s§b §b来到New Create!"],
+		["message.new_create.welcome", "欢迎 %s 来到New Create!"],
 		["info.nc.flint", "正在敲击燧石"],
 		["ore.nc.osmium", "锇矿脉"],
 		["ore.nc.aluminum", "铝土矿脉"],

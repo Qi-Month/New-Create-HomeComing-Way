@@ -130,6 +130,8 @@
   "treechop:plugin": null,
   "uti:object_name": null,
   "uti:entity_name": null,
+  "custommachinery:machine_server_data_provider": null,
+  "custommachinery:machine_component_provider": null,
   "waystones:waystone": null,
   "mm:controller_progress": null,
   "minecraft:brewing_stand": null,

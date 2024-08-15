@@ -11,8 +11,9 @@ BlockEvents.rightClicked((event) => {
 		if (player.mainHandItem === 'new_create:tinder' && block.id === blockID) {
 			block.set(blockSet)
 			if (item.getDamageValue() < item.getMaxDamage() - 1) {
-				item.hurtAndBreak(1, player,
-					(entity) => entity.broadcastBreakEvent(event.hand))
+				item.hurtAndBreak(1, player, (entity) => {
+					return entity.broadcastBreakEvent(event.hand)
+				})
 			} else {
 				item.count--
 				player.broadcastBreakEvent(event.hand)

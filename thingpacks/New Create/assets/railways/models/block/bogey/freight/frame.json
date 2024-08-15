@@ -1,0 +1,1 @@
+{"parent":"block/block","loader":"forge:obj","porting_lib:loader":"porting_lib:obj","flip_v":true,"model":"railways:models/block/bogey/freight/frame.obj","textures":{"0":"railways:block/bogeys/standard/freight_body"}}
