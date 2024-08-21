@@ -5,11 +5,10 @@
 	group: "07F1CAC005DFF915"
 	icon: "create:mechanical_arm"
 	id: "1AD1C6CC8C01C1A8"
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3A473E646F259743"]
 			id: "1A85E207AA87B16C"
 			tasks: [
 				{

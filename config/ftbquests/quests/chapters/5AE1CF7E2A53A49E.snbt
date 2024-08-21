@@ -5,7 +5,7 @@
 	group: "29FEE0816C5CB526"
 	icon: "create:andesite_alloy"
 	id: "5AE1CF7E2A53A49E"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -70,19 +70,13 @@
 		{
 			dependencies: ["20A872AC6608D6F4"]
 			id: "6792817D07E7A2CC"
-			tasks: [
-				{
-					id: "36B045355C67268D"
-					item: "create:empty_blaze_burner"
-					type: "item"
-				}
-				{
-					id: "070A22FFDF16BE30"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			title: "&6黑奴"
+			subtitle: "煤炭块，我不做煤炭块啦！！"
+			tasks: [{
+				id: "0987AAE1C92AA768"
+				item: "new_create:heat_coal_block"
+				type: "item"
+			}]
+			title: "&6变身吧，煤炭君！"
 			x: -1.0d
 			y: -5.0d
 		}
@@ -98,22 +92,6 @@
 			title: "&6粉色宝石"
 			x: -4.5d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"5A8DC2AA997D9470"
-				"20D375F0BE743E81"
-				"5A62DDD36E032CE4"
-			]
-			id: "1B430050B27D9128"
-			subtitle: "不要忘记前面的置物台哦"
-			tasks: [{
-				id: "6F1ACC78E12FFFF6"
-				item: "create:spout"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -10.0d
 		}
 		{
 			dependencies: ["56EF12FBD4DD7951"]
@@ -165,8 +143,8 @@
 				type: "item"
 			}]
 			title: "&3准备准备?"
-			x: -0.5d
-			y: -7.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["20A872AC6608D6F4"]
@@ -188,21 +166,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"638114AF83959CA5"
-				"3524375EE2AAD6B3"
-			]
-			id: "20D375F0BE743E81"
-			tasks: [{
-				id: "66EEDFDD270E659B"
-				item: "new_create:andesite_compound_fluid_bucket"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["1B430050B27D9128"]
+			dependencies: ["436E31C8E4EC4FC9"]
 			dependency_requirement: "one_completed"
 			id: "57B10D84AF8804DC"
 			shape: "gear"
@@ -219,14 +183,21 @@
 		{
 			dependencies: ["6792817D07E7A2CC"]
 			id: "3524375EE2AAD6B3"
-			tasks: [{
-				id: "27BD1A37426D491B"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "27BD1A37426D491B"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "418A66479D3F2C77"
+					item: "create:basin"
+					type: "item"
+				}
+			]
 			title: "准备搅拌"
-			x: -1.5d
-			y: -7.0d
+			x: -2.0d
+			y: -7.5d
 		}
 		{
 			id: "5A8DC2AA997D9470"
@@ -248,8 +219,8 @@
 				}
 			]
 			title: "我是马里奥管道工"
-			x: -2.5d
-			y: -8.5d
+			x: -1.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["62864688AD6F3A16"]
@@ -374,15 +345,252 @@
 			y: -1.0d
 		}
 		{
-			id: "5A62DDD36E032CE4"
+			dependencies: [
+				"638114AF83959CA5"
+				"3524375EE2AAD6B3"
+				"5A8DC2AA997D9470"
+			]
+			id: "436E31C8E4EC4FC9"
+			tasks: [
+				{
+					id: "15300B351853C609"
+					item: "createmetallurgy:casting_table"
+					type: "item"
+				}
+				{
+					id: "3E19E2C9C1D38210"
+					item: "createmetallurgy:graphite_ingot_mold"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["436E31C8E4EC4FC9"]
+			dependency_requirement: "one_completed"
+			id: "3ED4088F5DEB249F"
 			tasks: [{
-				id: "4BFF60F3832E74B1"
-				item: "thermal:cured_rubber"
+				id: "7B36110120CC2812"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
+					}
+				}
+				title: "Any #forge:ingots/cast_iron"
 				type: "item"
 			}]
-			x: 0.5d
+			title: "铸铁!"
+			x: -2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "3FC68420B4E84A79"
+			rewards: [{
+				count: 48
+				id: "6400BD07B22A4BC8"
+				item: "new_create:cast_iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "42ED46A81010ADF6"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "309446247685F7F9"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F98114521B7FE35"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2857DA2843D488EA"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "591780113958E0C7"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7611052289590266"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77A04A74E8AB1517"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FEA0A32EFAD9BCC"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D97FBCEE19874A"
+					item: {
+						Count: 1
+						id: "new_create:cast_iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铸铁套"
+			x: -4.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "6A07C6743F676627"
+			tasks: [
+				{
+					id: "113713DE186687F1"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "72F94EC791F0AE04"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "576269F83F46AA4F"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+				{
+					id: "0EB5CFFBC215CB87"
+					item: "pipez:universal_pipe"
+					type: "item"
+				}
+				{
+					id: "21087739397286EC"
+					item: "pipez:gas_pipe"
+					type: "item"
+				}
+				{
+					id: "62F8448DA50D4D29"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			title: "&3各种管道"
+			x: -4.5d
 			y: -8.5d
 		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "4A932B57DA5B2F56"
+			subtitle: "让我用吧!"
+			tasks: [{
+				id: "0D22ED5B3D642CFF"
+				item: {
+					Count: 1
+					id: "new_create:metal_detector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c我不想努力了"
+			x: -4.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["015016440233C7E3"]
+			id: "1566F7712250D0B7"
+			rewards: [{
+				id: "2FDB95C7922EA989"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:fire_protection"
+							lvl: 4s
+						}]
+						RepairCost: 1
+						Unbreakable: 1b
+						display: {
+							Name: "{\"text\":\"终极奋斗\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 114514L
+				id: "58B91EBE69FDDE34"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			title: "又或者是挖矿之神"
+			x: -2.0d
+			y: 0.5d
+		}
 	]
-	title: "&6第四节 地狱冒险之旅"
+	title: "&6第三节 烈狱合金记"
 }

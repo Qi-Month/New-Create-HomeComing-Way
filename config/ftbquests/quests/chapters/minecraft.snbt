@@ -651,8 +651,8 @@
 				type: "item"
 			}]
 			title: "干草"
-			x: 37.0d
-			y: 17.0d
+			x: 36.0d
+			y: 17.5d
 		}
 		{
 			id: "28E47369E04246A4"
@@ -661,8 +661,8 @@
 				item: "youkaishomecoming:drying_rack"
 				type: "item"
 			}]
-			x: 35.5d
-			y: 17.0d
+			x: 34.0d
+			y: 17.5d
 		}
 		{
 			id: "2A2E9B781C59A914"
@@ -671,8 +671,8 @@
 				item: "new_create:grass_string"
 				type: "item"
 			}]
-			x: 38.5d
-			y: 17.0d
+			x: 38.0d
+			y: 17.5d
 		}
 		{
 			id: "6D307AB343FB38CA"
@@ -681,8 +681,8 @@
 				item: "new_create:drying_web"
 				type: "item"
 			}]
-			x: 34.0d
-			y: 17.0d
+			x: 32.5d
+			y: 17.5d
 		}
 	]
 	title: "&6第一节 火与石之歌"

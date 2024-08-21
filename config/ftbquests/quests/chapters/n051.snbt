@@ -11,6 +11,451 @@
 	id: "248148146110FDCA"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"42197A6BAB858952"
+				"43A3095E8D791B34"
+			]
+			id: "25B32029AE6C6E87"
+			subtitle: "别忘了燃料"
+			tasks: [{
+				id: "5CFEF6E07683EE71"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["191A73F57F5EBA08"]
+			id: "42197A6BAB858952"
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "7E8AF383843E2E74"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5FD07F14D02A590D"]
+			id: "43A3095E8D791B34"
+			tasks: [
+				{
+					id: "7127E9D5ADD68983"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "610AD64CC3D6E594"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66073A7FABE55F30"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32322F4C3816EC9A"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "航天服"
+			x: -6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["25B32029AE6C6E87"]
+			icon: "ad_astra:moon_globe"
+			id: "51235BE5526FCA95"
+			rewards: [
+				{
+					id: "439C974D47E8E335"
+					item: "ad_astra:moon_globe"
+					type: "item"
+				}
+				{
+					id: "4003C32793014A17"
+					item: "ad_astra:earth_globe"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "ad_astra:moon"
+				id: "4DF3D6C813D71FE3"
+				type: "dimension"
+			}]
+			title: "月球"
+			x: -4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0631C95D0E48648D"]
+			id: "5D85461C843CB6B5"
+			tasks: [{
+				id: "18E6D46266548CEB"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"65A9CDEED198E1B1"
+				"2831FEBBC4543A29"
+			]
+			id: "5C806EF9DF940811"
+			tasks: [{
+				id: "3EF5DFC2968B1DDB"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0BAA2BA06193B9AF"]
+			id: "3F9D2FCAE5158E3D"
+			tasks: [{
+				id: "0039E5986D6B2B7B"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["51235BE5526FCA95"]
+			id: "0631C95D0E48648D"
+			tasks: [{
+				id: "5F81565AE00B691D"
+				item: "ad_astra:raw_desh"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["499C88D5B72738C0"]
+			id: "65A9CDEED198E1B1"
+			tasks: [{
+				id: "5739E7B4235661A6"
+				item: "ad_astra:raw_ostrum"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5557930FECD63F4C"]
+			id: "0BAA2BA06193B9AF"
+			tasks: [{
+				id: "009E034CBC45A587"
+				item: "ad_astra:raw_calorite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5D85461C843CB6B5"]
+			icon: "ad_astra:mars_globe"
+			id: "499C88D5B72738C0"
+			rewards: [{
+				id: "6937F19FA46948C8"
+				item: "ad_astra:mars_globe"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:mars"
+				id: "59AE0E3EEFB27AC9"
+				type: "dimension"
+			}]
+			title: "火星"
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5C806EF9DF940811"]
+			icon: "ad_astra:venus_globe"
+			id: "5557930FECD63F4C"
+			rewards: [{
+				id: "04A8567286F914F6"
+				item: "ad_astra:venus_globe"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:venus"
+				id: "7369E6D617A78609"
+				type: "dimension"
+			}]
+			title: "金星"
+			x: 4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5C806EF9DF940811"]
+			icon: "ad_astra:mercury_globe"
+			id: "616CCB7665BE415B"
+			rewards: [{
+				id: "06A04A27850C5370"
+				item: "ad_astra:mercury_globe"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "0DE5EE6459F51F61"
+				type: "dimension"
+			}]
+			title: "水星"
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3F9D2FCAE5158E3D"]
+			icon: "ad_astra:glacio_globe"
+			id: "3CBDFC077564717B"
+			rewards: [{
+				id: "1A1CA9956E1E31ED"
+				item: "ad_astra:glacio_globe"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				id: "6DEB03B42D5B54DC"
+				type: "dimension"
+			}]
+			title: "半人马星系 霜原星"
+			x: 9.0d
+			y: -9.5d
+		}
+		{
+			id: "191A73F57F5EBA08"
+			rewards: [
+				{
+					id: "029C71C746B297E6"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "ad_astra:astrodux"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "106D72E99540B3FB"
+					item: "ad_astra:earth_globe"
+					type: "item"
+				}
+			]
+			subtitle: "我们的目标是星辰大海"
+			tasks: [{
+				id: "510EED20F770FF49"
+				title: "外太空之旅"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			id: "5FD07F14D02A590D"
+			tasks: [{
+				id: "50CEB5DDC4F7C22F"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"25B32029AE6C6E87"
+				"5C806EF9DF940811"
+				"5D85461C843CB6B5"
+				"3F9D2FCAE5158E3D"
+			]
+			icon: "sgjourney:classic_stargate"
+			id: "2CE672119A2DF807"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2A41B6A128A5D390"
+				table_id: 1833485458690183694L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "55B6234878461FE1"
+				title: "系外行星探索"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["65A9CDEED198E1B1"]
+			id: "2831FEBBC4543A29"
+			tasks: [
+				{
+					id: "10649AAA7C3AADF8"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B127DE83A8B6623"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4045A8A610282571"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44ADA2BCE030C06A"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0BAA2BA06193B9AF"]
+			id: "3160D3FE4DB83D6F"
+			tasks: [
+				{
+					id: "0AEBB4932A29D0CF"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2028F1393D0E04E5"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "683DF7D2ECA63282"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D64044CE9A26B4C"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0631C95D0E48648D"]
+			id: "77CCF6417C9E2BF7"
+			tasks: [{
+				id: "33191112D71EF375"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rover"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.5d
+		}
+	]
 	title: "&6外太空之旅"
 }

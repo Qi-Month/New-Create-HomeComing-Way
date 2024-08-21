@@ -7,21 +7,27 @@ StartupEvents.registry("item", (event) => {
 		event.create(MODID + name)
 			.rarity(rarity)
 			.glow(glow)
-			.tag(MODID + "items")
-			.tag(MODID + "food")
 			.food((food) => {
 				food.hunger(hunger)
 				food.saturation(saturation)
 			})
+			.tag(MODID + "items")
+			.tag(MODID + "food")
 	})
-})
 
-// Modify
-ItemEvents.modification((event) => {
-	event.modify(MODID + "chaochi", (item) => {
-		item.foodProperties = (food) => {
+	// 甘蔗
+	event.create("minecraft:sugar_cane")
+		.texture("minecraft:item/sugar_cane")
+		.food((food) => {
+			food.hunger(2)
+			food.saturation(0.5)
 			food.alwaysEdible(true)
-			food.fastToEat(true)
-		}
-	})
+			food.eaten((event) => {
+				const { player } = event
+				player.give("new_create:bagasse")
+				player.give("new_create:sugar_cane_skin")
+			})
+		})
+		.tag(MODID + "items")
+		.tag(MODID + "food")
 })

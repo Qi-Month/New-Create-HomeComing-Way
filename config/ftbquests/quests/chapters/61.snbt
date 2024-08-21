@@ -9,37 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2BB8EC9F1782C4DE"]
-			icon: "immersiveengineering:blastbrick"
-			id: "3A473E646F259743"
-			tasks: [{
-				count: 27L
-				id: "4B3A65445A6A5408"
-				item: "immersiveengineering:blastbrick"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["38383DFF428AF0E9"]
-			id: "6B3FB60CBF3CB68A"
-			shape: "pentagon"
-			size: 2.5d
-			subtitle: "用石磨磨碎"
-			tasks: [{
-				id: "2CB6652C5DAB3F9A"
-				item: "create:crushed_raw_tin"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"6B3FB60CBF3CB68A"
-				"17A15D75F1EC5311"
-			]
+			dependencies: ["4499DD550DC78286"]
 			id: "42B17692177022C8"
 			tasks: [{
 				id: "22E51EF85BDD7183"
@@ -54,8 +24,8 @@
 				type: "item"
 			}]
 			title: "锡"
-			x: -1.5d
-			y: -2.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2BB8EC9F1782C4DE"]
@@ -70,13 +40,14 @@
 				type: "checkmark"
 			}]
 			title: "&6铜工具?"
-			x: -5.0d
-			y: 0.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
-				"54D3E82DA2242218"
 				"42B17692177022C8"
+				"2BB8EC9F1782C4DE"
+				"17A15D75F1EC5311"
 			]
 			id: "2515602CF3C6878B"
 			tasks: [{
@@ -91,8 +62,8 @@
 				title: "青铜"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2515602CF3C6878B"]
@@ -110,8 +81,8 @@
 				type: "item"
 			}]
 			title: "青铜板"
-			x: 1.0d
-			y: 0.5d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2515602CF3C6878B"]
@@ -146,8 +117,8 @@
 				}
 			]
 			title: "&3这是什么?看一下"
-			x: -1.5d
-			y: 2.0d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7EC0F60AA1929893"]
@@ -183,8 +154,8 @@
 				}
 			]
 			title: "&a青铜Tools"
-			x: 1.0d
-			y: 2.0d
+			x: -1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7EC0F60AA1929893"]
@@ -202,20 +173,8 @@
 				type: "item"
 			}]
 			title: "铁锭"
-			x: -1.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2BB8EC9F1782C4DE"]
-			id: "57903FCA47EF155F"
-			tasks: [{
-				count: 27L
-				id: "6742BBDB7CEA3BFE"
-				item: "immersiveengineering:cokebrick"
-				type: "item"
-			}]
-			x: -11.0d
-			y: 0.5d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["797CC6360C318986"]
@@ -233,55 +192,11 @@
 				type: "checkmark"
 			}]
 			title: "我该如何大量获得铁和金?"
-			x: -1.5d
-			y: 7.0d
+			x: -6.5d
+			y: 1.5d
 		}
 		{
-			dependencies: [
-				"3A473E646F259743"
-				"797CC6360C318986"
-			]
-			dependency_requirement: "one_completed"
-			id: "3ED4088F5DEB249F"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "7B36110120CC2812"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/cast_iron"
-					}
-				}
-				title: "Any #forge:ingots/cast_iron"
-				type: "item"
-			}]
-			title: "铸铁!"
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3ED4088F5DEB249F"]
-			id: "4A932B57DA5B2F56"
-			subtitle: "让我用吧!"
-			tasks: [{
-				id: "0D22ED5B3D642CFF"
-				item: {
-					Count: 1
-					id: "new_create:metal_detector"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "&c我不想努力了"
-			x: -3.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["3ED4088F5DEB249F"]
+			dependencies: ["797CC6360C318986"]
 			id: "0331E2E5A91C4EA0"
 			tasks: [{
 				id: "212AE53270DF77D9"
@@ -297,127 +212,18 @@
 			}]
 			title: "&6亮闪闪！"
 			x: -5.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["3ED4088F5DEB249F"]
-			id: "3FC68420B4E84A79"
-			rewards: [{
-				count: 48
-				id: "6400BD07B22A4BC8"
-				item: "new_create:cast_iron_ingot"
-				type: "item"
-			}]
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "42ED46A81010ADF6"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "309446247685F7F9"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2F98114521B7FE35"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2857DA2843D488EA"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "591780113958E0C7"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_hoe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7611052289590266"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "77A04A74E8AB1517"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1FEA0A32EFAD9BCC"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "03D97FBCEE19874A"
-					item: {
-						Count: 1
-						id: "new_create:cast_iron_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
+			dependencies: [
+				"0331E2E5A91C4EA0"
+				"6CE2020A2C487224"
 			]
-			title: "铸铁套"
-			x: -5.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["0331E2E5A91C4EA0"]
 			id: "751A430A5BF08E1C"
+			shape: "gear"
+			size: 2.5d
 			tasks: [{
+				count: 8L
 				id: "67D24C5C6605E307"
 				item: {
 					Count: 1
@@ -429,11 +235,11 @@
 				title: "黑曜石"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 2.5d
+			title: "地狱门"
+			x: -5.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["751A430A5BF08E1C"]
 			id: "6CE2020A2C487224"
 			tasks: [
 				{
@@ -454,46 +260,7 @@
 				}
 			]
 			title: "&6生火"
-			x: -8.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3ED4088F5DEB249F"]
-			id: "6A07C6743F676627"
-			tasks: [
-				{
-					id: "113713DE186687F1"
-					item: "pipez:item_pipe"
-					type: "item"
-				}
-				{
-					id: "72F94EC791F0AE04"
-					item: "pipez:fluid_pipe"
-					type: "item"
-				}
-				{
-					id: "576269F83F46AA4F"
-					item: "pipez:energy_pipe"
-					type: "item"
-				}
-				{
-					id: "0EB5CFFBC215CB87"
-					item: "pipez:universal_pipe"
-					type: "item"
-				}
-				{
-					id: "21087739397286EC"
-					item: "pipez:gas_pipe"
-					type: "item"
-				}
-				{
-					id: "62F8448DA50D4D29"
-					item: "pipez:wrench"
-					type: "item"
-				}
-			]
-			title: "&3各种管道"
-			x: -6.5d
+			x: -7.5d
 			y: 5.0d
 		}
 		{
@@ -527,8 +294,8 @@
 				type: "item"
 			}]
 			title: "&b烧制物品！"
-			x: -13.0d
-			y: -2.0d
+			x: -3.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["19EBCC3BE555DF14"]
@@ -546,11 +313,10 @@
 				type: "item"
 			}]
 			title: "&3砖！"
-			x: -11.0d
-			y: -2.0d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["59A06A813564EA72"]
 			description: [
 				"&a恭喜你发现了新的合成方式&r"
 				"&9通过合金窑，你可以烧制铜锭&r"
@@ -594,11 +360,11 @@
 				}
 			]
 			title: "&3合金窑"
-			x: -9.0d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["17A15D75F1EC5311"]
+			dependencies: ["4499DD550DC78286"]
 			description: [
 				"&a获取你的第一块金属！&r"
 				"&a奖励你一箱马铃薯~&r"
@@ -623,8 +389,28 @@
 				type: "item"
 			}]
 			title: "&3第一块金属"
-			x: -9.0d
-			y: 0.5d
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["59A06A813564EA72"]
+			id: "4499DD550DC78286"
+			tasks: [{
+				id: "1E2BED8F42468732"
+				item: {
+					Count: 1
+					id: "minecraft:bedrock"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"砖炉（占位符）\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
 		}
 	]
 	title: "&6第二节 冶金新纪元"

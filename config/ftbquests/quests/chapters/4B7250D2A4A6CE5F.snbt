@@ -5,7 +5,7 @@
 	group: "07F1CAC005DFF915"
 	icon: "create:brass_casing"
 	id: "4B7250D2A4A6CE5F"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -31,8 +31,8 @@
 				item: "create_mechanical_extruder:mechanical_extruder"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["486C9B56954BA447"]
@@ -55,19 +55,7 @@
 				type: "item"
 			}]
 			title: "&6Crafting Table - 3"
-			x: 0.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["539C27AC7BDA8727"]
-			id: "22EF721A6422F327"
-			subtitle: "&b&m玩构件玩的"
-			tasks: [{
-				id: "496AC7DDB8AC801B"
-				item: "new_create:kinetic_mechanism"
-				type: "item"
-			}]
-			x: 2.5d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -90,7 +78,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["22EF721A6422F327"]
+			dependencies: ["539C27AC7BDA8727"]
 			id: "5C114910264DE84F"
 			tasks: [{
 				count: 2L
@@ -99,110 +87,11 @@
 				type: "item"
 			}]
 			title: "&6一对大家伙！"
-			x: 2.5d
-			y: 0.5d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["5C114910264DE84F"]
-			id: "7EEC8440A5ECEEEA"
-			tasks: [{
-				id: "6B50180BF0970E53"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/obsidian"
-					}
-				}
-				title: "黑曜石粉末"
-				type: "item"
-			}]
-			title: "黑曜石粉末"
-			x: 2.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["5C114910264DE84F"]
-			id: "260A96BFFF557F7A"
-			tasks: [{
-				id: "2E22C28316297DE8"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/iron"
-					}
-				}
-				title: "Any #forge:dusts/iron"
-				type: "item"
-			}]
-			title: "铁粉"
-			x: 4.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["4C94DB9A9438BB63"]
-			id: "0712EE16A99BF165"
-			shape: "gear"
-			size: 2.5d
-			tasks: [{
-				id: "13B44BC931251FB9"
-				item: "create:railway_casing"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["0712EE16A99BF165"]
-			id: "24E3E0BA22419818"
-			tasks: [{
-				id: "1CAA0AE44EA2FD80"
-				item: "create:track_station"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["260A96BFFF557F7A"]
-			id: "26E4F1B18E33BC23"
-			tasks: [{
-				id: "7D100DB6E61429B1"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/steel"
-					}
-				}
-				title: "Any #forge:dusts/steel"
-				type: "item"
-			}]
-			title: "钢粉"
-			x: 6.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["26E4F1B18E33BC23"]
-			id: "2AC46F4E8D1CA776"
-			tasks: [{
-				id: "61EB58C4D24EF694"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
-				}
-				title: "&6钢锭"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["2AC46F4E8D1CA776"]
+			dependencies: ["23072877BB6A116D"]
 			id: "0C62BE100AF4735F"
 			tasks: [{
 				count: 9L
@@ -211,11 +100,11 @@
 				type: "item"
 			}]
 			title: "锅炉锅炉!"
-			x: 9.0d
-			y: 0.5d
+			x: -4.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["0C62BE100AF4735F"]
+			dependencies: ["23072877BB6A116D"]
 			icon: "createoreexcavation:drilling_machine"
 			id: "14D51DA805F70A55"
 			rewards: [{
@@ -239,8 +128,8 @@
 				}
 			]
 			title: "我不要挖矿!"
-			x: 10.5d
-			y: 0.5d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["486C9B56954BA447"]
@@ -253,7 +142,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1D5BA975FF84BAF7"]
@@ -269,16 +158,59 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7EEC8440A5ECEEEA"]
-			id: "4C94DB9A9438BB63"
+			dependencies: ["2BB8EC9F1782C4DE"]
+			id: "57903FCA47EF155F"
 			tasks: [{
-				id: "4C3EAD307EEED615"
-				item: "create:sturdy_sheet"
+				count: 27L
+				id: "6742BBDB7CEA3BFE"
+				item: "immersiveengineering:cokebrick"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.0d
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"486C9B56954BA447"
+				"63D2DACD99E774BD"
+			]
+			id: "7EE8185FF39ABF75"
+			tasks: [{
+				id: "2CFD3CAF0B3C3CF2"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "new_create:firmament"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7EE8185FF39ABF75"]
+			id: "23072877BB6A116D"
+			tasks: [{
+				id: "6E5E4100DE5665E4"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["57903FCA47EF155F"]
+			id: "63D2DACD99E774BD"
+			tasks: [{
+				id: "3B02172A23610BFB"
+				item: "immersiveengineering:coal_coke"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
 		}
 	]
-	title: "&6第二节 黄铜新纪元"
+	title: "&6第三节 黄铜新纪元"
 }

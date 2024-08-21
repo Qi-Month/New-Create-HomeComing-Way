@@ -98,4 +98,16 @@ ServerEvents.recipes((event) => {
 	minecraft.campfire_cooking("new_create:heat_coal_block", [
 		"minecraft:coal_block"
 	])
+
+	// 甘蔗
+	create.compacting([
+		'new_create:bagasse',
+		Fluid.of("new_create:sugarcane_juice", 50)
+	], [
+		'minecraft:sugar_cane'
+	])
+
+	create.compacting(Fluid.of("new_create:sugarcane_juice", 50).withChance(0.3), [
+		'new_create:bagasse'
+	])
 })

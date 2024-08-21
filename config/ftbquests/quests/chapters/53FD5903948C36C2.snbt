@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "53FD5903948C36C2"
+	group: "1C13CB3518C6DB10"
+	id: "53FD5903948C36C2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "&6进阶的机器"
+}

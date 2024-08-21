@@ -529,6 +529,129 @@
 			x: -6.0d
 			y: 3.0d
 		}
+		{
+			dependencies: [
+				"652FC13F4D188579"
+				"44B0126A61D2D8C1"
+			]
+			id: "62689556A86422C4"
+			subtitle: "贪吃的灵梦（需要喂86种食物）"
+			tasks: [{
+				id: "3026CCD5871C2297"
+				item: {
+					Count: 1
+					id: "youkaishomecoming:reimu_hairband"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "车万厨狂喜"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			id: "44B0126A61D2D8C1"
+			tasks: [{
+				id: "6845E79118ED730D"
+				structure: "youkaishomecoming:hakurei_shrine"
+				type: "structure"
+			}]
+			title: "灵梦的家"
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["652FC13F4D188579"]
+			id: "37BBD9ECE86078AA"
+			tasks: [{
+				id: "11DFA43968F3A5BE"
+				structure: "youkaishomecoming:youkai_nest"
+				type: "structure"
+			}]
+			title: "野生的妖怪"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["652FC13F4D188579"]
+			id: "2D6B4804EC6A70F0"
+			subtitle: "击败敌对的灵梦"
+			tasks: [{
+				id: "45F7EE234EC3316D"
+				item: "youkaishomecoming:spell_reimu"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["652FC13F4D188579"]
+			description: [""]
+			id: "567630CE0CE60E2E"
+			tasks: [{
+				id: "12F4A028EAC23BE3"
+				item: {
+					Count: 1
+					id: "youkaishomecoming:koishi_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["37BBD9ECE86078AA"]
+			icon: "youkaishomecoming:white_circle_danmaku"
+			id: "6CF488CC6A73AC0E"
+			subtitle: "与妖怪做交易"
+			tasks: [{
+				id: "3CD745F795E6CCCE"
+				title: "弹幕"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["652FC13F4D188579"]
+			id: "0D6C3BB21B41A351"
+			tasks: [{
+				id: "0DF66AF20C10A29F"
+				item: {
+					Count: 1
+					id: "youkaishomecoming:suwako_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CF488CC6A73AC0E"]
+			description: ["满血秒杀 进入Ex模式"]
+			id: "229D3B0C3CDA3E9E"
+			tasks: [{
+				id: "58DD5713AAE16FB0"
+				item: {
+					Count: 1
+					id: "youkaishomecoming:rumia_hairband"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
 	]
 	title: "&5新奇的小玩意儿"
 }

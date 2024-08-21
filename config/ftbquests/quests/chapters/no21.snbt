@@ -5,7 +5,7 @@
 	group: "07F1CAC005DFF915"
 	icon: "create:wrench"
 	id: "1B2DCAFA2439A323"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -272,8 +272,51 @@
 		{
 			dependencies: ["6DFBC5FD742BF0EA"]
 			id: "404DE2EFF2836D18"
+			rewards: [{
+				id: "5E64D6A3A086B6EC"
+				item: {
+					Count: 1
+					id: "minecraft:player_head"
+					tag: {
+						RepairCost: 0
+						SkullOwner: {
+							Id: [I;
+								-724293499
+								-1921826545
+								-2082982033
+								252101468
+							]
+							Name: "Lex_Eden"
+							Properties: {
+								CustomSkinLoaderInfo: [
+									{
+										Value: "http://textures.minecraft.net/texture/d0941059ed15e4cbcde2235a130631934483ac1720722823c829e161e31f6067"
+									}
+									{
+										Value: "slim"
+									}
+									{
+										Value: "http://textures.minecraft.net/texture/cb40a92e32b57fd732a00fc325e7afb00a7ca74936ad50d8e860152e482cfbde"
+									}
+									{
+										Value: "null"
+									}
+								]
+								textures: [{
+									Value: "ewogICJ0aW1lc3RhbXAiIDogMTcyMjY4MjcyOTAwMiwKICAicHJvZmlsZUlkIiA6ICJkNGQ0Mjg4NThkNzM0MTBmODNkODM3NmYwZjA2YzM1YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZXhfRWRlbiIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kMDk0MTA1OWVkMTVlNGNiY2RlMjIzNWExMzA2MzE5MzQ0ODNhYzE3MjA3MjI4MjNjODI5ZTE2MWUzMWY2MDY3IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0MGE5MmUzMmI1N2ZkNzMyYTAwZmMzMjVlN2FmYjAwYTdjYTc0OTM2YWQ1MGQ4ZTg2MDE1MmU0ODJjZmJkZSIKICAgIH0KICB9Cn0="
+								}]
+							}
+						}
+						display: {
+							Name: "{\"text\":\"水车仙人\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "575个水车可以产生29w4的应力.png"
 			tasks: [{
-				count: 320L
+				count: 575L
 				id: "651DB0263F2392FB"
 				item: "create:large_water_wheel"
 				type: "item"
@@ -305,5 +348,5 @@
 			y: 3.0d
 		}
 	]
-	title: "&6第一节 机械的曙光"
+	title: "&6第二节 机械的曙光"
 }

@@ -5,14 +5,14 @@
  * @param { number } time 
  * 
  * Example:
- * metal_production_line(event, [
-		block,
-		ingot,
-		fluid
-   ], heat, time)
+ * metalProductionLine(event, [
+ *		block,
+ *		ingot,
+ *		fluid
+ * ], heat, time)
 */
 
-function metal_production_line(event, metal, heat, time) {
+function metalProductionLine(event, metal, heat, time) {
 	const { create, kubejs, createmetallurgy } = event.recipes
 
 	create.mixing(Fluid.of(`${metal[2]}`, 810), [

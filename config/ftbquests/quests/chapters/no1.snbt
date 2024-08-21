@@ -5,7 +5,7 @@
 	group: "1C13CB3518C6DB10"
 	icon: "thermal:machine_furnace"
 	id: "25FC0F4076CF1414"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

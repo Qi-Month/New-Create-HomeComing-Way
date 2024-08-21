@@ -84,4 +84,11 @@ StartupEvents.registry("fluid", (event) => {
 		.flowingTexture(otherRegistrations + "obsidian_flowing")
 		.stillTexture(otherRegistrations + "obsidian_still")
 		.tag(MODID + "fluid")
+
+	// 甘蔗汁
+	event.create(MODID + "sugarcane_juice")
+		.flowingTexture(otherRegistrations + "sugarcane_juice_flow")
+		.stillTexture(otherRegistrations + "sugarcane_juice_still")
+		.tag(MODID + "fluid")
+		.noBlock()
 })
