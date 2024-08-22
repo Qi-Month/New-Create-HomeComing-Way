@@ -51,3 +51,16 @@ PlayerEvents.chat((event) => {
 		}
 	}
 })
+
+/* 
+ * 获取Tag下的所有id,会在
+ * "log/kubejs/server.log"
+ * 下打印出来,更换Tag在第二行的Ingredient.of()内更换
+*/
+ServerEvents.loaded((event) => {
+	Ingredient.of("#minecraft:logs")
+		.getItemIds()
+		.forEach((print) => {
+			console.log(print)
+		})
+})
