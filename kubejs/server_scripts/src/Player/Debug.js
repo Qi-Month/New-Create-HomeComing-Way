@@ -1,4 +1,11 @@
-const playerName = ["toleave", "Qi_Month", "hxm", "lex_Eden", "sara_Eden"]
+// 开发者用户信息
+let playerName = [
+	"toleave",
+	"Qi_Month",
+	"hxm",
+	"lex_Eden",
+	"sara_Eden"
+]
 ItemEvents.rightClicked((event) => {
 	const { item, player, server } = event
 
