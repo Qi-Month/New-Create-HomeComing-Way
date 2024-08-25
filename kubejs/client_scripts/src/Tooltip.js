@@ -35,5 +35,3 @@ ItemEvents.tooltip((event) => {
 		event.add(name, Text.translate('tooltip.' + key))
 	})
 })
-
-// 我去定位项目

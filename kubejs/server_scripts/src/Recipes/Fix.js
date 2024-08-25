@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 			],
 			tool: {
 				type: "farmersdelight:tool_action",
-				action: "pickaxe_dig"
+				action: "axe_dig"
 			}
 		}
 	})

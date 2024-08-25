@@ -22,11 +22,13 @@ ItemEvents.armorTierRegistry((event) => {
 		armor.equipSound = "minecraft:item.armor.equip_iron"  // 穿戴音效
 	})
 })
-// 物品贴图照常放在item
-// 身上的贴图要放在assets/new_create/textures/models/armor
-// .tier()方法要在前面跟上ModID
+/* 
+ * 物品贴图照常放在item
+ * 身上的贴图要放在assets/new_create/textures/models/armor
+ * .tier()方法要在前面跟上ModID
+ */
 StartupEvents.registry("item", (event) => {
-	let Item = (name, type, rarity, tire, glow) => {
+	let Armor = (name, type, rarity, tire, glow) => {
 		event.create(MODID + name, type)
 			.tag(MODID + "items")
 			.tag("forge:armor")
@@ -36,13 +38,13 @@ StartupEvents.registry("item", (event) => {
 			.glow(glow)
 	}
 	// 光辉套
-	Item("radiant_helmet", "helmet", "epic", "radiant", true)
-	Item("radiant_chestplate", "chestplate", "epic", "radiant", true)
-	Item("radiant_leggings", "leggings", "epic", "radiant", true)
-	Item("radiant_boots", "boots", "epic", "radiant", true)
+	Armor("radiant_helmet", "helmet", "epic", "radiant", true)
+	Armor("radiant_chestplate", "chestplate", "epic", "radiant", true)
+	Armor("radiant_leggings", "leggings", "epic", "radiant", true)
+	Armor("radiant_boots", "boots", "epic", "radiant", true)
 	// 铸铁
-	Item("cast_iron_helmet", "helmet", "common", "cast_iron", false)
-	Item("cast_iron_chestplate", "chestplate", "common", "cast_iron", false)
-	Item("cast_iron_leggings", "leggings", "common", "cast_iron", false)
-	Item("cast_iron_boots", "boots", "common", "cast_iron", false)
+	Armor("cast_iron_helmet", "helmet", "common", "cast_iron", false)
+	Armor("cast_iron_chestplate", "chestplate", "common", "cast_iron", false)
+	Armor("cast_iron_leggings", "leggings", "common", "cast_iron", false)
+	Armor("cast_iron_boots", "boots", "common", "cast_iron", false)
 })

@@ -1,4 +1,11 @@
 ServerEvents.recipes((event) => {
+	const { custommachinery } = event.recipes
+
+	custommachinery.custom_machine("new_create:iron_making_furnace", 300)
+		.requireItemTag('#forge:raw_materials/iron')
+		.produceFluid(Fluid.of("new_create:molten_raw_iron", 100,), "output")
+		.requireFuel()
+	/*
 	event.custom({
 		"type": "custommachinery:custom_machine",
 		"machine": "new_create:iron_making_furnace",
@@ -34,4 +41,5 @@ ServerEvents.recipes((event) => {
 			}
 		]
 	})
+	*/
 })

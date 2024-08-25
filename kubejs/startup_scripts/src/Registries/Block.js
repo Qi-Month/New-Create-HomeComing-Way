@@ -65,6 +65,7 @@ StartupEvents.registry("block", (event) => {
 		.tagItem(MODID + "blocks")
 		.requiresTool(true)
 
+	/* 这东西是废案,不要看()
 	// 炼铁炉(上半)
 	event.create(MODID + "iron_making_furnace_up", "cardinal")
 		.model("new_create:machine/iron_making_furnace/iron_making_furnace_off_up")
@@ -78,4 +79,5 @@ StartupEvents.registry("block", (event) => {
 		.tagItem(MODID + "items")
 		.tagItem(MODID + "blocks")
 		.requiresTool(true)
+	*/
 })

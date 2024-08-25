@@ -2,17 +2,17 @@
 	"name": "block.new_create.iron_making_furnace",
 	"appearance": {
 		"idle": {
-			"block": "new_create:machine/iron_making_furnace/iron_making_furnace_off_under"
+			"block": "new_create:machine/iron_making_furnace/off"
 		},
 		"running": {
-			"block": "new_create:machine/iron_making_furnace/iron_making_furnace_on",
+			"block": "new_create:machine/iron_making_furnace/on",
 			"lightlevel": 15
 		},
 		"errored": {
-			"block": "new_create:machine/iron_making_furnace/iron_making_furnace_off"
+			"block": "new_create:machine/iron_making_furnace/off"
 		},
 		"paused": {
-			"block": "new_create:machine/iron_making_furnace/iron_making_furnace_off_under"
+			"block": "new_create:machine/iron_making_furnace/off"
 		},
 		"interaction_sound": "minecraft:bricks",
 		"mining_level": "minecraft:needs_wooden_tool",
@@ -28,12 +28,13 @@
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "input1"
+			"id": "input"
 		},
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "input2"
+			"id": "fuel",
+			"variant": "custommachinery:fuel"
 		}
 	],
 	"gui": [
@@ -57,7 +58,12 @@
 		{
 			"type": "custommachinery:progress",
 			"x": 110,
-			"y": 45
+			"y": 40
+		},
+		{
+			"type": "custommachinery:fuel",
+			"x": 113,
+			"y": 58
 		},
 		{
 			"type": "custommachinery:status",
@@ -66,13 +72,13 @@
 		},
 		{
 			"type": "custommachinery:slot",
-			"id": "input1",
+			"id": "fuel",
 			"x": 85,
 			"y": 54
 		},
 		{
 			"type": "custommachinery:slot",
-			"id": "input2",
+			"id": "input",
 			"x": 85,
 			"y": 34
 		},
@@ -113,13 +119,13 @@
 		},
 		{
 			"type": "custommachinery:slot",
-			"id": "input1",
+			"id": "fuel",
 			"x": 85,
 			"y": 54
 		},
 		{
 			"type": "custommachinery:slot",
-			"id": "input2",
+			"id": "input",
 			"x": 85,
 			"y": 34
 		},

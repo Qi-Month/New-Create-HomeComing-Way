@@ -137,7 +137,7 @@
 			id: "6A726C92FF74F0C0"
 			tasks: [{
 				id: "32A4CCE0F8AED48A"
-				item: "new_create:plastic_sheet"
+				item: "pneumaticcraft:plastic"
 				type: "item"
 			}]
 			x: -1.0d

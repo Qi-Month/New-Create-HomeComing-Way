@@ -10,7 +10,9 @@ ServerEvents.recipes((event) => {
 		kubejs,
 		thermal,
 		minecraft,
-		immersiveengineering
+		immersiveengineering,
+		vintageimprovements,
+		farmersdelight
 	} = event.recipes
 
 	// 打磨石板
@@ -110,4 +112,9 @@ ServerEvents.recipes((event) => {
 	create.compacting(Fluid.of("new_create:sugarcane_juice", 50).withChance(0.3), [
 		'new_create:bagasse'
 	])
+
+	// 铁
+	vintageimprovements.hammering("minecraft:iron_ingot", [
+		'new_create:raw_iron_ingot'
+	]).hammerBlows(4)
 })

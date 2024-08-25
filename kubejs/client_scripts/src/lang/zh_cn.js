@@ -47,8 +47,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["7", "⑦元硬币"],
 		["8", "⑧元硬币"],
 		["9", "⑨元硬币"],
-		["in_cogwheel", "齿轮(未完成)"],
-		["in_large_cogwheel", "大齿轮(未完成)"],
 		["cast_iron_ingot", "铸铁锭"],
 		["cast_iron_sheet", "铸铁板"],
 		["primary_bearing", "合成轴承"],
@@ -63,13 +61,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["kinetic_mechanism", "动力构件"],
 		["sealed_mechanism", "密封构件"],
 		["sturdy_mechanism", "坚固构件"],
-		["in_abstruse_mechanism", "幽静构件(未完成)"],
-		["in_calculation_mechanism", "计算构件(未完成)"],
-		["in_inductive_mechanism", "电磁构件(未完成)"],
-		["in_infernal_mechanism", "下界构件(未完成)"],
-		["in_kinetic_mechanism", "动力构件(未完成)"],
-		["in_sealed_mechanism", "密封构件(未完成)"],
-		["in_sturdy_mechanism", "坚固构件(未完成)"],
 		["cast_electron_tube", "铸铁电子管"],
 		["zinc_electron_tube", "锌电子管"],
 		["plating_zinc_ingot", "电镀锌"],
@@ -89,7 +80,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["lapis_sheet", "青金石板"],
 		["chaochi", "炒祺"],
 		["egg_shell", "蛋壳"],
-		["in_chaochi", "未加工的炒祺"],
+
 		["white_flour", "白面"],
 		["processor_press", "空白压印模板"],
 		["tinder", "火绒"],
@@ -104,10 +95,28 @@ ClientEvents.lang("zh_cn", (event) => {
 		["wooden_plate_mold", "板木质铸模"],
 		["wooden_nugget_mold", "粒木质铸模"],
 		["bagasse", "甘蔗渣"],
-		["sugar_cane_skin", "甘蔗皮"]
+		["sugar_cane_skin", "甘蔗皮"],
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${MODID}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
+	}
+
+	// 半成品
+	let inItemResourceLang = [
+		["chaochi", "未加工的炒祺"],
+		["cogwheel", "齿轮(未完成)"],
+		["large_cogwheel", "大齿轮(未完成)"],
+		["abstruse_mechanism", "幽静构件(未完成)"],
+		["calculation_mechanism", "计算构件(未完成)"],
+		["inductive_mechanism", "电磁构件(未完成)"],
+		["infernal_mechanism", "下界构件(未完成)"],
+		["kinetic_mechanism", "动力构件(未完成)"],
+		["sealed_mechanism", "密封构件(未完成)"],
+		["sturdy_mechanism", "坚固构件(未完成)"],
+		["raw_iron_ingot", "未成型的铁"]
+	]
+	for (let i = 0; i < inItemResourceLang.length; i++) {
+		event.add(`item.${MODID}.in_${inItemResourceLang[i][0]}`, inItemResourceLang[i][1])
 	}
 
 	// 方块
@@ -123,7 +132,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["steel_casing", "钢机壳"],
 		["heat_coal_block", "热煤块"],
 		["industrial_iron_block_wall", "工业铁块墙"],
-		["iron_making_furnace_up", "炼铁炉(上半)"]
+		["iron_making_furnace_up", "炼铁炉 - 上半部分"]
 	]
 	for (let i = 0; i < blockResourceLang.length; i++) {
 		event.add(`block.${MODID}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
@@ -168,7 +177,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["bronze", "青铜"],
 		["tin", "锡"],
 		["obsidian", "黑曜石"],
-		["glass", "玻璃"]
+		["glass", "玻璃"],
+		["raw_iron", "粗铁"]
 	]
 	for (let i = 0; i < moltenFluidResourceLang.length; i++) {
 		event.add(`block.${MODID}.molten_${moltenFluidResourceLang[i][0]}`, "熔融" + moltenFluidResourceLang[i][1])
@@ -228,7 +238,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 其它
 	let otherTipLang = [
-		["message.new_create.welcome", "欢迎 %s 来到New Create!"],
+		["message.new_create.welcome", "欢迎来到New Create!\n§b如果有什么BUG还请前往GitHub提交Issues"],
+		["message.new_create.debug", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来\n%s\nTag下的id以打印至logs/kubejs/server.log"],
 		["info.nc.flint", "正在敲击燧石"],
 		["ore.nc.osmium", "锇矿脉"],
 		["ore.nc.aluminum", "铝土矿脉"],
@@ -236,6 +247,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["scheme.nc.structure.2", "方向错了捏"]
 	]
 	otherTipLang.forEach(([key, text]) => {
-		event.add(key, "§b" + text)
+		event.add(key, text)
 	})
 })
