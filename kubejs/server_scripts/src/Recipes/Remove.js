@@ -7,7 +7,9 @@ ServerEvents.recipes((event) => {
 		"createmetallurgy:mechanical_belt_grinder",
 		'#alltheores:ore_hammers',
 		'#create:metal_cogwheel',
-		'#create:metal_large_cogwheel'
+		'#create:metal_large_cogwheel',
+		'farmersdelight:tree_bark',
+		'#minecraft:planks'
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })

@@ -14,6 +14,16 @@
 		"paused": {
 			"block": "new_create:machine/iron_making_furnace/off"
 		},
+		"shape": [
+			[
+				0.0,
+				0.0,
+				0.0,
+				1.0,
+				1.5,
+				1.0
+			]
+		],
 		"interaction_sound": "minecraft:bricks",
 		"mining_level": "minecraft:needs_wooden_tool",
 		"requires_tool": true

@@ -55,6 +55,8 @@ StartupEvents.registry("item", (event) => {
 		["bagasse", common, false], // 甘蔗渣
 		["sugar_cane_skin", common, false], // 甘蔗皮
 		["raw_iron_ingot", common, false], // 未成型的铁
+		["heat_resistant_brick", common, false], // 耐热砖
+		["calcium_carbonate", common, false]
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(MODID + name)

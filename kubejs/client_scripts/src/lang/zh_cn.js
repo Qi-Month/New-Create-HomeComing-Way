@@ -80,7 +80,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["lapis_sheet", "青金石板"],
 		["chaochi", "炒祺"],
 		["egg_shell", "蛋壳"],
-
 		["white_flour", "白面"],
 		["processor_press", "空白压印模板"],
 		["tinder", "火绒"],
@@ -96,6 +95,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["wooden_nugget_mold", "粒木质铸模"],
 		["bagasse", "甘蔗渣"],
 		["sugar_cane_skin", "甘蔗皮"],
+		["heat_resistant_brick", "耐热砖"],
+		["calcium_carbonate", "碳酸钙"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${MODID}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
@@ -132,7 +133,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		["steel_casing", "钢机壳"],
 		["heat_coal_block", "热煤块"],
 		["industrial_iron_block_wall", "工业铁块墙"],
-		["iron_making_furnace_up", "炼铁炉 - 上半部分"]
+		["iron_making_furnace_up", "炼铁炉 - 上半部分"],
+		["iron_making_furnace_under", "炼铁炉 - 下半部分"],
+		["heat_resistant_bricks", "耐热砖块"],
+		["silica_sand", "硅砂"]
 	]
 	for (let i = 0; i < blockResourceLang.length; i++) {
 		event.add(`block.${MODID}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
@@ -212,6 +216,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["nc.heat_coal_block", "也可以用火绒"],
 		["yc.drying_rack", "可以和漏斗交互"],
 		["pp.filter_destination_tool", "该物品会导致莫名的卡顿,已移除"],
+		["nc.calcium_carbonate", "CaCO3"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add("tooltip." + key, "§b" + text)
@@ -219,7 +224,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-		["nc.chaochi", "垣曲炒祺(食其)是垣曲劳动人民长期与大自然和谐相处的产物。过去,人们出远门,有一个难题不好解决,那就是水土不服,常常拉肚子.于是,垣曲人就创造出了这种独特的食品,解决了这一难题.炒祺里带着家乡的水、家乡的土、家乡的面,又耐放易存,几个月都不腐不坏,每天吃一点,就平平安安换了肚子.人们发现,由于炒祺用垣曲独有的白土及绿色原料制作,具有健胃养胃之功效.所以才得以时代流传而不败.成了全国绝无仅有的§l§c国家非物质级[文化遗产"],
+		["nc.chaochi", "垣曲炒祺(食其)是垣曲劳动人民长期与大自然和谐相处的产物。过去,人们出远门,有一个难题不好解决,那就是水土不服,常常拉肚子.于是,垣曲人就创造出了这种独特的食品,解决了这一难题.炒祺里带着家乡的水、家乡的土、家乡的面,又耐放易存,几个月都不腐不坏,每天吃一点,就平平安安换了肚子.人们发现,由于炒祺用垣曲独有的白土及绿色原料制作,具有健胃养胃之功效.所以才得以时代流传而不败.成了全国绝无仅有的§l§c国家非物质级文化遗产"],
 		["mt.melter", "热量等级,\n1级,火把\n2级,营火\n4级,熔岩"],
 		["nc.heat_coal_block", "在灼热的深渊中,黑暗的核心有时会被烈焰赐予新的生命,变得更加炙热和沉重\n\n其中所富含的能量甚至可以让火焰在上方无限燃烧"]
 	]
@@ -238,8 +243,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 其它
 	let otherTipLang = [
-		["message.new_create.welcome", "欢迎来到New Create!\n§b如果有什么BUG还请前往GitHub提交Issues"],
-		["message.new_create.debug", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来\n%s\nTag下的id以打印至logs/kubejs/server.log"],
+		["message.new_create.welcome", "§b欢迎来到New Create!\n§b如果有什么BUG还请前往GitHub提交Issues"],
+		["message.new_create.debug", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来, %s\nTag下的id以打印至logs/kubejs/server.log下"],
+		["message.new_create.debug.getHardness", "这个方块的硬度是: %s"],
 		["info.nc.flint", "正在敲击燧石"],
 		["ore.nc.osmium", "锇矿脉"],
 		["ore.nc.aluminum", "铝土矿脉"],

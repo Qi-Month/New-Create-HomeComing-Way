@@ -29,7 +29,9 @@ ItemEvents.tooltip((event) => {
 		// 晒干架
 		['youkaishomecoming:drying_rack', 'yc.drying_rack'],
 		// 过滤器
-		['pipez:filter_destination_tool', 'pp.filter_destination_tool']
+		['pipez:filter_destination_tool', 'pp.filter_destination_tool'],
+		// 碳酸钙
+		["new_create:calcium_carbonate", "nc.calcium_carbonate"]
 	]
 	addTooltip.forEach(([name, key]) => {
 		event.add(name, Text.translate('tooltip.' + key))

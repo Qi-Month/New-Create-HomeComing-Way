@@ -5,6 +5,7 @@ ServerEvents.recipes((event) => {
 		.requireItemTag('#forge:raw_materials/iron')
 		.produceFluid(Fluid.of("new_create:molten_raw_iron", 100,), "output")
 		.requireFuel()
+		
 	/*
 	event.custom({
 		"type": "custommachinery:custom_machine",

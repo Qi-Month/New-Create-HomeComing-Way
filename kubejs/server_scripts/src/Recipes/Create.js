@@ -11,7 +11,8 @@ ServerEvents.recipes((event) => {
 		kubejs,
 		thermal,
 		immersiveengineering,
-		vintageimprovements
+		vintageimprovements,
+		createsifter
 	} = event.recipes
 
 	// 动力泵

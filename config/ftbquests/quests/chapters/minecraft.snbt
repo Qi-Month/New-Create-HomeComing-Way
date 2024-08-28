@@ -115,7 +115,7 @@
 			}]
 			title: "&3杂草获取"
 			x: 30.0d
-			y: 21.0d
+			y: 21.5d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
@@ -138,40 +138,6 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["5C5120075EDB3ECF"]
-			id: "1B5BBBF90F96D167"
-			rewards: [
-				{
-					count: 4
-					id: "6A1CD9E3C4242CE6"
-					item: "minecraft:flint"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "3AD0BFB861588B45"
-					item: "new_create:grass_string"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "6DD700552F5F531D"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/knives"
-					}
-				}
-				title: "小刀"
-				type: "item"
-			}]
-			title: "&1多功能工具"
-			x: 34.5d
-			y: 19.0d
-		}
-		{
-			dependencies: ["366BC6C1AD97484E"]
 			id: "5E0A98F312F8A995"
 			rewards: [{
 				count: 4
@@ -276,7 +242,6 @@
 		}
 		{
 			dependencies: ["7239DB54A7FD4EE8"]
-			description: ["{image:new_create:textures/images/2.png width:50 height:50 align:1}"]
 			id: "29F8B46988F72E7C"
 			rewards: [{
 				count: 16
@@ -358,49 +323,6 @@
 			title: "&3锤子"
 			x: 41.5d
 			y: 21.0d
-		}
-		{
-			dependencies: ["1B5BBBF90F96D167"]
-			description: [
-				"&2你惊奇的发现&r"
-				"&6可以用燧石小刀将原木切成木板！&r"
-			]
-			id: "366BC6C1AD97484E"
-			rewards: [{
-				count: 4
-				id: "611B8451AE29537E"
-				item: "minecraft:oak_planks"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 8L
-					id: "4BA36E193FA0B561"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:planks"
-						}
-					}
-					title: "Any #minecraft:planks"
-					type: "item"
-				}
-				{
-					id: "5DA46FBFEC259657"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:logs"
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "&3第一块木板"
-			x: 36.5d
-			y: 19.0d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -644,45 +566,90 @@
 			y: 19.0d
 		}
 		{
-			id: "1B4E1D468841CE14"
-			tasks: [{
-				id: "2E93E7232A8A241B"
-				item: "new_create:hay"
-				type: "item"
-			}]
-			title: "干草"
-			x: 36.0d
-			y: 17.5d
-		}
-		{
-			id: "28E47369E04246A4"
-			tasks: [{
-				id: "649041EF8DB687F7"
-				item: "youkaishomecoming:drying_rack"
-				type: "item"
-			}]
-			x: 34.0d
-			y: 17.5d
-		}
-		{
 			id: "2A2E9B781C59A914"
 			tasks: [{
 				id: "0A00714C35223369"
 				item: "new_create:grass_string"
 				type: "item"
 			}]
-			x: 38.0d
-			y: 17.5d
+			x: 32.5d
+			y: 21.5d
 		}
 		{
-			id: "6D307AB343FB38CA"
+			id: "71DB69D51E6D0C59"
 			tasks: [{
-				id: "3456F386C44A0B8D"
-				item: "new_create:drying_web"
+				id: "2D24D8D30801CECC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/wooden"
+					}
+				}
+				title: "Any #forge:rods/wooden"
 				type: "item"
 			}]
-			x: 32.5d
-			y: 17.5d
+			title: "木棍"
+			x: 34.5d
+			y: 21.5d
+		}
+		{
+			id: "6C3EFE2AA42F1082"
+			tasks: [{
+				id: "683510806D393170"
+				item: {
+					Count: 1
+					id: "new_create:flint_handaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 34.5d
+			y: 19.0d
+		}
+		{
+			id: "063B6AB6ECDC4DB4"
+			tasks: [
+				{
+					count: 16L
+					id: "6BD63764EBD7D0A4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+				{
+					id: "011EF770A3A51BDE"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			x: 36.5d
+			y: 19.0d
+		}
+		{
+			id: "0CBA139ED6EB44E9"
+			tasks: [{
+				id: "10406EEAB0B7F64C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
+				type: "item"
+			}]
+			x: 38.0d
+			y: 19.0d
 		}
 	]
 	title: "&6第一节 火与石之歌"

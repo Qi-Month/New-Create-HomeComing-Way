@@ -24,25 +24,27 @@ StartupEvents.registry("block", (event) => {
 	// 定义方块
 	let blockRegisters = [
 		// 烧焦圆石
-		["charred_cobblestone", "stone", 3, "pickaxe", "wooden"],
+		["charred_cobblestone", "stone", 2, "pickaxe", "wooden", true],
 		// 铸铁块
-		["cast_iron_block", "metal", 5, "pickaxe", "stone"],
+		["cast_iron_block", "metal", 5, "pickaxe", "stone", true],
 		// 充电铁块
-		["charge_iron_block", "metal", 5, "pickaxe", "stone"],
+		["charge_iron_block", "metal", 5, "pickaxe", "stone", true],
 		// 铸铁机壳
-		["cast_iron_casing", "wood", 5, "pickaxe", "wooden"],
-		// 尘土
-		["dust", "sand", 1, "shovel", "wooden"],
+		["cast_iron_casing", "wood", 1.5, "pickaxe", "wooden", true],
 		// 原木堆
-		["log_pile", "wood", 1.5, "axe", "wooden"],
+		["log_pile", "wood", 2, "axe", "wooden", false],
 		// 工业机壳
-		["industrial_casing", "metal", 1.5, "pickaxe", "stone"],
+		["industrial_casing", "metal", 1.5, "pickaxe", "stone", true],
 		// 钢机壳
-		["steel_casing", "metal", 1.5, "pickaxe", "stone"],
+		["steel_casing", "metal", 1.5, "pickaxe", "stone", true],
 		// 热煤块
-		["heat_coal_block", "stone", 1.5, "pickaxe", "wooden"]
+		["heat_coal_block", "stone", 5, "pickaxe", "wooden", false],
+		// 耐热砖块
+		["heat_resistant_bricks", "stone", 2, "pickaxe", "wooden", true],
+		// 硅砂
+		["silica_sand", "sand", 0.5, "shovel", "wooden", false]
 	]
-	blockRegisters.forEach(([name, soundType, hardness, tool, level]) => {
+	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(MODID + name)
 			.soundType(soundType)
 			.hardness(hardness)
@@ -51,7 +53,7 @@ StartupEvents.registry("block", (event) => {
 			.tagBlock(miningLevel[level])
 			.tagItem(MODID + "items")
 			.tagItem(MODID + "blocks")
-			.requiresTool(true)
+			.requiresTool(needTool)
 	})
 
 	// 工业铁块墙
@@ -65,19 +67,30 @@ StartupEvents.registry("block", (event) => {
 		.tagItem(MODID + "blocks")
 		.requiresTool(true)
 
-	/* 这东西是废案,不要看()
 	// 炼铁炉(上半)
 	event.create(MODID + "iron_making_furnace_up", "cardinal")
-		.model("new_create:machine/iron_making_furnace/iron_making_furnace_off_up")
+		.model("new_create:machine/iron_making_furnace/up")
 		.soundType("stone")
-		.hardness(1.5)
-		.resistance(1.5)
-		.box(2, 0, 2, 14, 12, 14)
+		.hardness(2)
+		.resistance(2)
+		.box(1, 0, 1, 15, 8, 15)
 		.defaultCutout()
 		.tagBlock(toolType["pickaxe"])
 		.tagBlock(miningLevel["wooden"])
 		.tagItem(MODID + "items")
 		.tagItem(MODID + "blocks")
 		.requiresTool(true)
-	*/
+
+	// 炼铁炉(下半)
+	event.create(MODID + "iron_making_furnace_under", "cardinal")
+		.model("new_create:machine/iron_making_furnace/under")
+		.soundType("stone")
+		.hardness(2)
+		.resistance(2)
+		.defaultCutout()
+		.tagBlock(toolType["pickaxe"])
+		.tagBlock(miningLevel["wooden"])
+		.tagItem(MODID + "items")
+		.tagItem(MODID + "blocks")
+		.requiresTool(true)
 })

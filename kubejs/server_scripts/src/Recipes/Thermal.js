@@ -12,6 +12,4 @@ ServerEvents.recipes((event) => {
 		thermal,
 		immersiveengineering
 	} = event.recipes
-
-	
 })

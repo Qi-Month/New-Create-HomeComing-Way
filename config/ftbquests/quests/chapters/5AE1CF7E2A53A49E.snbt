@@ -575,7 +575,7 @@
 						RepairCost: 1
 						Unbreakable: 1b
 						display: {
-							Name: "{\"text\":\"终极奋斗\"}"
+							Name: "{\"text\":\"彻底疯狂\"}"
 						}
 					}
 				}

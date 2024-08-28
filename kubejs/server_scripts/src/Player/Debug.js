@@ -2,12 +2,11 @@
 let playerName = [
 	"toleave",
 	"Qi_Month",
-	"hxm",
 	"lex_Eden",
 	"sara_Eden"
 ]
 ItemEvents.rightClicked((event) => {
-	const { item, player, server } = event
+	const { item, player } = event
 
 	for (let i = 0; i < playerName.length; i++) {
 		// 潜行+右键获取物品ID
@@ -74,6 +73,22 @@ PlayerEvents.loggedIn((event) => {
 				.forEach((print) => {
 					console.log(print)
 				})
+		}
+	}
+})
+
+BlockEvents.rightClicked((event) => {
+	const { player } = event
+
+	let blockState = event.getBlock().getBlockState()
+	let pos = event.getBlock().getPos()
+	let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
+
+	for (let i = 0; i < playerName.length; i++) {
+		if (event.hand != "MAIN_HAND" &&
+			player.crouching &&
+			player.username === playerName[i]) {
+			event.player.tell(Text.translate("message.new_create.debug.getHardness", [blockHardness]))
 		}
 	}
 })

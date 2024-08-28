@@ -1,16 +1,17 @@
 ServerEvents.recipes((event) => {
-	const { create, kubejs, minecraft, } = event.recipes
+	const { kubejs, minecraft } = event.recipes
 
+	/*
 	let logIDs = Ingredient.of("#minecraft:logs").getItemIds()
+
 	let planksRecipesFix = logIDs.map((logIDs) => {
 		let [namespace, item] = logIDs.split(":")
-		let strippedLogID = `${namespace}:stripped_${item}`
+		let planksIDs = `${namespace}:${item}_planks`
 		return {
 			type: "farmersdelight:cutting",
 			ingredients: [{ item: logIDs }],
 			result: [
-				{ item: strippedLogID },
-				{ item: "farmersdelight:tree_bark" }
+				{ item: planksIDs }
 			],
 			tool: {
 				type: "farmersdelight:tool_action",
@@ -18,21 +19,68 @@ ServerEvents.recipes((event) => {
 			}
 		}
 	})
-	planksRecipesFix.forEach((recipe) => {
-		event.custom(recipe)
+	*/
+
+	/*
+	event.forEachRecipe({
+		type: "minecraft:crafting_shapeless",
+		output: "#minecraft:planks",
+		input: "#minecraft:logs",
+	}, (recipes) => {
+		let Output = recipes.getOriginalRecipeResult().getId()
+		let Input = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		minecraft.crafting_shapeless(`2x ${Output}`, [
+			`${Input}`,
+			"#forge:tools/knives"
+		])
+	})
+	*/
+
+	event.forEachRecipe({
+		type: "minecraft:crafting_shapeless",
+		output: "#minecraft:planks",
+		input: "#minecraft:logs",
+	}, (recipes) => {
+		let Output = recipes.getOriginalRecipeResult().getId()
+		let Input = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+
+		event.custom({
+			"type": "farmersdelight:cutting",
+			"ingredients": [{ item: Input }],
+			"result": [
+				{ "item": Output, "count": 4 }
+			],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			}
+		})
 	})
 
-	// 木板
-	event.forEachRecipe({
-		type: "crafting_shapeless",
-		input: "#minecraft:logs",
-		output: "#minecraft:planks"
-	}, planksRecipesFix => {
-		let { originalRecipeIngredients, originalRecipeResult } = planksRecipesFix
-		kubejs.shapeless(originalRecipeResult.withCount(2), [
-			originalRecipeIngredients.toArray().concat(["#forge:tools/knives"])
-		]).damageIngredient("#forge:tools/knives").id(planksRecipesFix.getId())
+	/*
+	let logIDs = Ingredient.of('#minecraft:logs').getItemIds()
+	let Recipes = logIDs.map(logID => {
+		let [namespace, item] = logID.split(':')
+		let strippedLogID = `${namespace}:stripped_${item}`
+		return {
+			type: "farmersdelight:cutting",
+			ingredients: [{ item: logID }],
+			result: [
+				{ item: strippedLogID },
+				{ item: "farmersdelight:tree_bark" }
+			],
+			tool: {
+				type: "farmersdelight:tool_action",
+				action: "pickaxe_dig"
+			}
+		}
 	})
+
+	
+	Recipes.forEach((recipe) => {
+		event.custom(recipe)
+	})
+	*/
 
 	/*
 	// Fix Thermal tin_block <=> tin_ingot crafting
