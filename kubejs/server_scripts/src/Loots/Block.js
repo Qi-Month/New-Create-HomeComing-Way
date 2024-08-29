@@ -10,21 +10,24 @@ LootJS.modifiers((loots) => {
 		.addAlternativesLoot(
 			LootEntry.of("new_create:flint_knapp")
 				.when((loots) => loots.randomChance(0.3)),
-			LootEntry.of("minecraft:flint").when((loots) => loots.randomChance(0.15)),
-			LootEntry.of("minecraft:gravel").when((loots) => loots.randomChance(1))
+			LootEntry.of("minecraft:flint")
+				.when((loots) => loots.randomChance(0.15)),
+			LootEntry.of("minecraft:gravel")
+				.when((loots) => loots.randomChance(1))
 		)
 
 	// 草丛掉杂草
 	loots.addBlockLootModifier("minecraft:grass")
 		.addAlternativesLoot(
-			LootEntry.of("new_create:grass_fiber").when((loots) => loots.randomChance(0.6)
-			)
+			LootEntry.of("new_create:grass_fiber")
+				.when((loots) => loots.randomChance(0.6))
 		)
 
 	// 纯净石英
 	loots.addBlockLootModifier("#forge:sand")
 		.addAlternativesLoot(
-			LootEntry.of("new_create:pure_quartz").when((loots) => loots.randomChance(0.01))
+			LootEntry.of("new_create:pure_quartz")
+				.when((loots) => loots.randomChance(0.01))
 		)
 
 	// 铁矿掉粉碎铁矿石
@@ -40,8 +43,7 @@ LootJS.modifiers((loots) => {
 	loots.addBlockLootModifier("#forge:ores")
 		.addAlternativesLoot(
 			LootEntry.of("immersiveengineering:slag")
-				.when((loots) =>
-					loots.randomChance(0.35)),
+				.when((loots) => loots.randomChance(0.35)),
 			LootEntry.of("2x immersiveengineering:slag")
 				.when((loots) => loots.randomChance(0.1))
 		)
@@ -57,7 +59,8 @@ LootJS.modifiers((loots) => {
 		.addAlternativesLoot(
 			LootEntry.of("minecraft:campfire")
 				.when((loots) => loots.randomChance(0.5)),
-			LootEntry.of("minecraft:charcoal").when((loots) => loots.randomChance(1))
+			LootEntry.of("minecraft:charcoal")
+				.when((loots) => loots.randomChance(1))
 		)
 
 	// 灵魂篝火
