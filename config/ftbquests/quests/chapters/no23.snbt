@@ -194,7 +194,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["7DB50F72D65346B2"]
 			description: ["&4I gusses you need this&r"]
 			hide_dependency_lines: true
 			id: "0B0EA0A7A063610A"
@@ -313,5 +312,5 @@
 			y: -3.0d
 		}
 	]
-	title: "&6第二节 大家伙问世"
+	title: "&6第二节 大家伙登场"
 }

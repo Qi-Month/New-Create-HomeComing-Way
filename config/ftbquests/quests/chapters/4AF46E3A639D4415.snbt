@@ -1,0 +1,161 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4AF46E3A639D4415"
+	group: "770D53313CEB7050"
+	id: "4AF46E3A639D4415"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["191A73F57F5EBA08"]
+			id: "42197A6BAB858952"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7E8AF383843E2E74"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"42197A6BAB858952"
+				"43A3095E8D791B34"
+			]
+			id: "25B32029AE6C6E87"
+			subtitle: "别忘了燃料"
+			tasks: [{
+				id: "5CFEF6E07683EE71"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["25B32029AE6C6E87"]
+			icon: "ad_astra:moon_globe"
+			id: "51235BE5526FCA95"
+			rewards: [
+				{
+					id: "439C974D47E8E335"
+					item: "ad_astra:moon_globe"
+					type: "item"
+				}
+				{
+					id: "4003C32793014A17"
+					item: "ad_astra:earth_globe"
+					type: "item"
+				}
+			]
+			tasks: [{
+				dimension: "ad_astra:moon"
+				id: "4DF3D6C813D71FE3"
+				type: "dimension"
+			}]
+			title: "月球"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FD07F14D02A590D"]
+			id: "43A3095E8D791B34"
+			tasks: [
+				{
+					id: "7127E9D5ADD68983"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "610AD64CC3D6E594"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66073A7FABE55F30"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32322F4C3816EC9A"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "航天服"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "5FD07F14D02A590D"
+			tasks: [{
+				id: "50CEB5DDC4F7C22F"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			id: "191A73F57F5EBA08"
+			rewards: [
+				{
+					id: "029C71C746B297E6"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "ad_astra:astrodux"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "106D72E99540B3FB"
+					item: "ad_astra:earth_globe"
+					type: "item"
+				}
+			]
+			subtitle: "我们的目标是星辰大海"
+			tasks: [{
+				id: "510EED20F770FF49"
+				title: "外太空之旅"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+	]
+	title: "第一节 挑战破极限"
+}

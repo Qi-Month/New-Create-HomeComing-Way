@@ -1,7 +1,7 @@
 StartupEvents.registry("fluid", (event) => {
 	const MODID = "new_create:"
 	const PATH = "block/fluid/"
-	const otherFluidRegistrations = MODID + PATH
+	const otherFluidRegisters = MODID + PATH
 
 	let fluidRegisters = [
 		// 防腐液
@@ -23,9 +23,8 @@ StartupEvents.registry("fluid", (event) => {
 		event.create(MODID + name)
 			.thinTexture(color)
 			.bucketColor(color)
-			.flowingTexture(otherFluidRegistrations + "flowing")
-			.stillTexture(otherFluidRegistrations + "still")
-			.tag(MODID + "fluid")
+			.flowingTexture(otherFluidRegisters + "flowing")
+			.stillTexture(otherFluidRegisters + "still")
 	})
 
 	// 金属
@@ -49,10 +48,8 @@ StartupEvents.registry("fluid", (event) => {
 		event.create(MODID + "molten_" + name)
 			.thinTexture(color)
 			.bucketColor(color)
-			.flowingTexture(otherFluidRegistrations + "flowing")
-			.stillTexture(otherFluidRegistrations + "still")
-			.tag(MODID + "fluid")
-			.tag(MODID + "molten_materials")
+			.flowingTexture(otherFluidRegisters + "flowing")
+			.stillTexture(otherFluidRegisters + "still")
 			.tag(`forge:molten_${name}`)
 			.tag("forge:molten_materials")
 	})
@@ -61,38 +58,33 @@ StartupEvents.registry("fluid", (event) => {
 
 	// 液态灵魂
 	event.create(MODID + "soul")
+		.flowingTexture(otherFluidRegisters + "soul_flowing")
+		.stillTexture(otherFluidRegisters + "soul_still")
 		.noBucket()
 		.noBlock()
-		.flowingTexture(otherFluidRegistrations + "soul_flowing")
-		.stillTexture(otherFluidRegistrations + "soul_still")
-		.tag(MODID + "fluid")
 
 	// 熔融玻璃
 	event.create(MODID + "molten_glass")
-		.flowingTexture(otherFluidRegistrations + "glass_flowing")
-		.stillTexture(otherFluidRegistrations + "glass_still")
+		.flowingTexture(otherFluidRegisters + "glass_flowing")
+		.stillTexture(otherFluidRegisters + "glass_still")
 		.noBlock()
-		.tag(MODID + "fluid")
 		.tag("forge:molten_glass")
 
 	// 鸡蛋混合液
 	event.create(MODID + "egg_mixture_fluid")
+		.flowingTexture(otherFluidRegisters + "egg_mixture_fluid_flowing")
+		.stillTexture(otherFluidRegisters + "egg_mixture_fluid_stilling")
 		.noBlock()
-		.flowingTexture(otherFluidRegistrations + "egg_mixture_fluid_flowing")
-		.stillTexture(otherFluidRegistrations + "egg_mixture_fluid_stilling")
-		.tag(MODID + "fluid")
 
 	// 黑曜石
 	event.create(MODID + "molten_obsidian")
-		.flowingTexture(otherFluidRegistrations + "obsidian_flowing")
-		.stillTexture(otherFluidRegistrations + "obsidian_still")
+		.flowingTexture(otherFluidRegisters + "obsidian_flowing")
+		.stillTexture(otherFluidRegisters + "obsidian_still")
 		.tag("forge:molten_obsidian")
-		.tag(MODID + "fluid")
 
 	// 甘蔗汁
 	event.create(MODID + "sugarcane_juice")
-		.flowingTexture(otherFluidRegistrations + "sugarcane_juice_flow")
-		.stillTexture(otherFluidRegistrations + "sugarcane_juice_still")
+		.flowingTexture(otherFluidRegisters + "sugarcane_juice_flow")
+		.stillTexture(otherFluidRegisters + "sugarcane_juice_still")
 		.noBlock()
-		.tag(MODID + "fluid")
 })

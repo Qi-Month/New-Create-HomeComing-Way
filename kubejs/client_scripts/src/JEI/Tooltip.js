@@ -1,10 +1,10 @@
 JEIEvents.information((event) => {
 	let addJEIInfo = [
-		['melter:melter', 'mt.melter'],
-		['new_create:chaochi', 'nc.chaochi'],
-		["new_create:heat_coal_block", "nc.heat_coal_block"],
+		"melter:melter",
+		"new_create:chaochi",
+		"new_create:heat_coal_block",
 	]
-	addJEIInfo.forEach(([Name, Key]) => {
-		event.addItem(Name, Text.translate("jei." + Key))
+	addJEIInfo.forEach((name) => {
+		event.addItem(name, Text.translate("jei." + name))
 	})
 })

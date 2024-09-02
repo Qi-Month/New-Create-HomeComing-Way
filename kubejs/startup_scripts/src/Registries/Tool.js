@@ -64,8 +64,6 @@ StartupEvents.registry("item", (event) => {
 			.glow(glow)
 			.unstackable()
 			.tag("forge:tools")
-			.tag(MODID + "items")
-			.tag(MODID + "tools")
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
@@ -80,6 +78,4 @@ StartupEvents.registry("item", (event) => {
 		.maxDamage(8)
 		.unstackable()
 		.tag("forge:tools")
-		.tag(MODID + "items")
-		.tag(MODID + "tools")
 })

@@ -1,5 +1,5 @@
 /*
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
 	//
 	event.custom({
 		"type": "custommachinery:custom_machine",
@@ -238,6 +238,7 @@ ServerEvents.recipes(event => {
 			}
 		]
 	}).id("dut_create:air_liquefaction")
+	
 	event.custom({
 		"type": "custommachinery:custom_machine",
 		"machine": "dut:condenser",

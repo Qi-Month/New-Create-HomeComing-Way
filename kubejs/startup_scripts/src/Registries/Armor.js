@@ -25,14 +25,12 @@ ItemEvents.armorTierRegistry((event) => {
 /* 
  * 物品贴图照常放在item
  * 身上的贴图要放在assets/new_create/textures/models/armor
- * .tier()方法要在前面跟上ModID
+ * tier()方法要在前面跟上ModID
  */
 StartupEvents.registry("item", (event) => {
 	let Armor = (name, type, rarity, tire, glow) => {
 		event.create(MODID + name, type)
-			.tag(MODID + "items")
 			.tag("forge:armor")
-			.tag(MODID + "armor")
 			.rarity(rarity)
 			.tier(MODID + tire)
 			.glow(glow)

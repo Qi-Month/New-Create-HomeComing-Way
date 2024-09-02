@@ -51,8 +51,6 @@ StartupEvents.registry("block", (event) => {
 			.resistance(hardness)
 			.tagBlock(toolType[tool])
 			.tagBlock(miningLevel[level])
-			.tagItem(MODID + "items")
-			.tagItem(MODID + "blocks")
 			.requiresTool(needTool)
 	})
 
@@ -63,8 +61,6 @@ StartupEvents.registry("block", (event) => {
 		.resistance(3)
 		.tagBlock(toolType["pickaxe"])
 		.tagBlock(miningLevel["wooden"])
-		.tagItem(MODID + "items")
-		.tagItem(MODID + "blocks")
 		.requiresTool(true)
 
 	// 炼铁炉(上半)
@@ -77,8 +73,6 @@ StartupEvents.registry("block", (event) => {
 		.defaultCutout()
 		.tagBlock(toolType["pickaxe"])
 		.tagBlock(miningLevel["wooden"])
-		.tagItem(MODID + "items")
-		.tagItem(MODID + "blocks")
 		.requiresTool(true)
 
 	// 炼铁炉(下半)
@@ -90,7 +84,5 @@ StartupEvents.registry("block", (event) => {
 		.defaultCutout()
 		.tagBlock(toolType["pickaxe"])
 		.tagBlock(miningLevel["wooden"])
-		.tagItem(MODID + "items")
-		.tagItem(MODID + "blocks")
 		.requiresTool(true)
 })

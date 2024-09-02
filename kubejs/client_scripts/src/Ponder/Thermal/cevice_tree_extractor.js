@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create('thermal:device_tree_extractor')
-		.scene('thermal:device_tree_extractor', '树汁提取器使用', 'new_create:device_tree_extractor', scene => {
+		.scene('thermal:device_tree_extractor', '树汁提取器使用', 'new_create:device_tree_extractor', (scene) => {
 			// 底盘和整棵树
 			scene.showBasePlate()
 			scene.world.showSection([3, 1, 3, 3, 2, 3], Direction.DOWN)

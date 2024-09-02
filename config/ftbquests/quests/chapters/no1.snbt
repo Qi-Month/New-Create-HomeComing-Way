@@ -2,143 +2,12 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "no1"
-	group: "1C13CB3518C6DB10"
+	group: "7883EB8AF9923823"
 	icon: "thermal:machine_furnace"
 	id: "25FC0F4076CF1414"
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
-		{
-			dependencies: ["1C6690A3F29A7A98"]
-			id: "37CB5D8FF3EBE1F7"
-			shape: "gear"
-			size: 2.5d
-			tasks: [{
-				id: "29865ECE5D6F5453"
-				item: "thermal:energy_cell_frame"
-				type: "item"
-			}]
-			x: -12.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["37CB5D8FF3EBE1F7"]
-			id: "57D1D29330B51315"
-			tasks: [{
-				id: "3EC125D02DCEBF8D"
-				item: "thermal:machine_refinery"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["37CB5D8FF3EBE1F7"]
-			id: "0321E033B2D080B8"
-			tasks: [{
-				id: "389588AF03057611"
-				item: "thermal:machine_pyrolyzer"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"57D1D29330B51315"
-				"0321E033B2D080B8"
-			]
-			dependency_requirement: "one_completed"
-			id: "741F01395998E3C5"
-			tasks: [{
-				id: "5C1FEC318534B413"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tar"
-					}
-				}
-				title: "Any #forge:tar"
-				type: "item"
-			}]
-			title: "焦油"
-			x: -6.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["57D1D29330B51315"]
-			id: "48D4E4D7F258F284"
-			tasks: [
-				{
-					id: "16B6BC734F2C4B30"
-					item: "thermal:heavy_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "77334126DE7AD9D5"
-					item: "thermal:light_oil_bucket"
-					type: "item"
-				}
-			]
-			x: -6.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["48D4E4D7F258F284"]
-			dependency_requirement: "one_completed"
-			id: "7F503F3E9FCF5B90"
-			tasks: [{
-				id: "2A0A19CB0B5B5765"
-				item: "thermal:refined_fuel_bucket"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"7F503F3E9FCF5B90"
-				"741F01395998E3C5"
-			]
-			icon: {
-				Count: 1
-				id: "immersiveengineering:mixer"
-				tag: { }
-			}
-			id: "2F5EF5768AC4284A"
-			tasks: [{
-				id: "7948117D1D82E2BB"
-				title: "&6混合器"
-				type: "checkmark"
-			}]
-			x: -4.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["2F5EF5768AC4284A"]
-			id: "5B5AB021C4F4BFB8"
-			tasks: [{
-				id: "45C8A764B8A289B4"
-				item: "new_create:high_grade_refined_oil_bucket"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5B5AB021C4F4BFB8"]
-			id: "0EA3064E886C9157"
-			tasks: [{
-				count: 128L
-				id: "410733C2EFCFC523"
-				item: "immersiveengineering:toolupgrade_revolver_electro"
-				type: "item"
-			}]
-			title: "&6电子管量产"
-			x: -2.0d
-			y: 0.0d
-		}
 		{
 			dependencies: ["5B5AB021C4F4BFB8"]
 			id: "696726FEA75D95E4"
@@ -162,25 +31,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"2F5EF5768AC4284A"
-				"5B5AB021C4F4BFB8"
-				"008E3859A0DE7117"
-			]
-			id: "627E37F5B45CFC17"
-			tasks: [{
-				id: "56CC4D582DADBB37"
-				item: "new_create:mithril_fluid_bucket"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"627E37F5B45CFC17"
-				"6DF67AF650313D57"
-			]
+			dependencies: ["6DF67AF650313D57"]
 			id: "72E7BB363904DD98"
 			tasks: [{
 				id: "41E902FA7306CD66"
@@ -189,34 +40,6 @@
 			}]
 			x: 1.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["37CB5D8FF3EBE1F7"]
-			hide_dependency_lines: true
-			icon: {
-				Count: 1
-				id: "immersiveengineering:crusher"
-				tag: { }
-			}
-			id: "013311E6F1722D52"
-			tasks: [{
-				id: "7631B0CA6626B2D2"
-				title: "&6粉碎机"
-				type: "checkmark"
-			}]
-			x: -2.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["013311E6F1722D52"]
-			id: "008E3859A0DE7117"
-			tasks: [{
-				id: "04CF0576ED69209F"
-				item: "mekanism:dust_emerald"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 5.0d
 		}
 		{
 			dependencies: ["72E7BB363904DD98"]
@@ -454,5 +277,5 @@
 			y: 2.5d
 		}
 	]
-	title: "&6工业大发展"
+	title: "&6第四节 工业大发展"
 }

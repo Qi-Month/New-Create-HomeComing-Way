@@ -62,7 +62,6 @@ StartupEvents.registry("item", (event) => {
 		event.create(MODID + name)
 			.rarity(rarity)
 			.glow(glow)
-			.tag(MODID + "items")
 	})
 
 	// 半成品注册
@@ -77,8 +76,6 @@ StartupEvents.registry("item", (event) => {
 	]
 	inItemRegisters.forEach((name) => {
 		event.create(MODID + "in_" + name, "create:sequenced_assembly")
-			.tag(MODID + "items")
-			.tag(MODID + "incomplete_items")
 	})
 })
 

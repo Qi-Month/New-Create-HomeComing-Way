@@ -96,7 +96,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["bagasse", "甘蔗渣"],
 		["sugar_cane_skin", "甘蔗皮"],
 		["heat_resistant_brick", "耐热砖"],
-		["calcium_carbonate", "碳酸钙"]
+		["calcium_carbonate", "碳酸钙"],
+		["raw_iron_ingot", "粗铁锭"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${MODID}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
@@ -200,23 +201,24 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// Tooltip
 	let toolTipLang = [
-		["nc.grass_string", "一种勉强可以替代线的绳子,可以做点东西"],
-		["nc.grass_fiber", "在除草的时候可以获得"],
-		["nc.hay", "嫩草晒干后的产物,可以编成草绳"],
-		["nc.pure_quartz", "挖掘沙子有1%的概率掉落"],
-		["mc.stick", "破坏树叶时有概率获得"],
-		["ie.revolver", "似乎是一个很有用的东西"],
-		["mt.melter", "使用思索查看搭建方式"],
-		["mc.blast_furnace", "使用思索查看搭建方式"],
-		["nc.furnace_core", "使用思索查看搭建方式"],
-		["nc.primary_bearing", "只能用于替代传动杆合成"],
-		["cr.millstone", "应力可以从下方输入"],
-		["nc.metal_detector", "§c在服务器不可用!"],
-		["ct.info", "同时兼容注液器"],
-		["nc.heat_coal_block", "也可以用火绒"],
-		["yc.drying_rack", "可以和漏斗交互"],
-		["pp.filter_destination_tool", "该物品会导致莫名的卡顿,已移除"],
-		["nc.calcium_carbonate", "CaCO3"]
+		["new_create:grass_string", "一种勉强可以替代线的绳子,可以做点东西"],
+		["new_create:grass_fiber", "在除草的时候可以获得"],
+		["new_createhay", "嫩草晒干后的产物,可以编成草绳"],
+		["new_create:pure_quartz", "挖掘沙子有1%的概率掉落"],
+		["minecraft:stick", "破坏树叶时有概率获得"],
+		["immersiveengineering:revolver", "似乎是一个很有用的东西"],
+		["melter:melter", "使用思索查看搭建方式"],
+		["minecraft:blast_furnace", "使用思索查看搭建方式"],
+		["new_create:furnace_core", "使用思索查看搭建方式"],
+		["new_create:primary_bearing", "只能用于替代传动杆合成"],
+		["create:millstone", "应力可以从下方输入"],
+		["new_create:metal_detector", "§c在服务器不可用!"],
+		["createmetallurgy:casting_table", "同时兼容注液器"],
+		["createmetallurgy:casting_basin", "同时兼容注液器"],
+		["new_create:heat_coal_block", "也可以用火绒"],
+		["youkaishomecoming:drying_rack", "可以和漏斗交互"],
+		["pipez:filter_destination_tool", "该物品会导致莫名的卡顿,已移除"],
+		["new_create:calcium_carbonate", "CaCO3"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add("tooltip." + key, "§b" + text)
@@ -224,9 +226,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-		["nc.chaochi", "垣曲炒祺(食其)是垣曲劳动人民长期与大自然和谐相处的产物。过去,人们出远门,有一个难题不好解决,那就是水土不服,常常拉肚子.于是,垣曲人就创造出了这种独特的食品,解决了这一难题.炒祺里带着家乡的水、家乡的土、家乡的面,又耐放易存,几个月都不腐不坏,每天吃一点,就平平安安换了肚子.人们发现,由于炒祺用垣曲独有的白土及绿色原料制作,具有健胃养胃之功效.所以才得以时代流传而不败.成了全国绝无仅有的§l§c国家非物质级文化遗产"],
-		["mt.melter", "热量等级,\n1级,火把\n2级,营火\n4级,熔岩"],
-		["nc.heat_coal_block", "在灼热的深渊中,黑暗的核心有时会被烈焰赐予新的生命,变得更加炙热和沉重\n\n其中所富含的能量甚至可以让火焰在上方无限燃烧"]
+		["new_create:chaochi", "垣曲炒祺(食其)是垣曲劳动人民长期与大自然和谐相处的产物。过去,人们出远门,有一个难题不好解决,那就是水土不服,常常拉肚子.于是,垣曲人就创造出了这种独特的食品,解决了这一难题.炒祺里带着家乡的水、家乡的土、家乡的面,又耐放易存,几个月都不腐不坏,每天吃一点,就平平安安换了肚子.人们发现,由于炒祺用垣曲独有的白土及绿色原料制作,具有健胃养胃之功效.所以才得以时代流传而不败.成了全国绝无仅有的§l§c国家非物质级文化遗产"],
+		["melter:melter", "热量等级,\n1级,火把\n2级,营火\n4级,熔岩"],
+		["new_create:heat_coal_block", "在灼热的深渊中,黑暗的核心有时会被烈焰赐予新的生命,变得更加炙热和沉重\n\n其中所富含的能量甚至可以让火焰在上方无限燃烧"]
 	]
 	jeiInfoLang.forEach(([key, text]) => {
 		event.add("jei." + key, "§b" + text)
@@ -243,8 +245,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 其它
 	let otherTipLang = [
-		["message.new_create.welcome", "§b欢迎来到New Create!\n§b如果有什么BUG还请前往GitHub提交Issues"],
-		["message.new_create.debug", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来, %s\nTag下的id以打印至logs/kubejs/server.log下"],
+		["message.new_create.player.welcome", "§b欢迎来到New Create!\n§b如果有什么BUG还请前往GitHub提交Issues"],
+		["message.new_create.debug.logIn", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来, %s\nTag下的id以打印至logs/kubejs/server.log下"],
 		["message.new_create.debug.getHardness", "这个方块的硬度是: %s"],
 		["info.nc.flint", "正在敲击燧石"],
 		["ore.nc.osmium", "锇矿脉"],

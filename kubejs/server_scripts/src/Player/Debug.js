@@ -62,12 +62,12 @@ PlayerEvents.loggedIn((event) => {
 	const { player } = event
 	/* 
 	 * 获取Tag下的所有id,会在
-	 * "log/kubejs/server.log"
+	 * "logs/kubejs/server.log"
 	 * 打印出来,更换Tag在Ingredient.of()内更换
 	*/
 	for (let i = 0; i < playerName.length; i++) {
 		if (player.username === playerName[i]) {
-			player.tell(Text.translate("message.new_create.debug", [player.username]))
+			player.tell(Text.translate("message.new_create.debug.logIn", [player.username]))
 			Ingredient.of("#minecraft:logs")
 				.getItemIds()
 				.forEach((print) => {
@@ -85,9 +85,7 @@ BlockEvents.rightClicked((event) => {
 	let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
 
 	for (let i = 0; i < playerName.length; i++) {
-		if (event.hand != "MAIN_HAND" &&
-			player.crouching &&
-			player.username === playerName[i]) {
+		if (event.hand != "MAIN_HAND" && player.crouching && player.username === playerName[i]) {
 			event.player.tell(Text.translate("message.new_create.debug.getHardness", [blockHardness]))
 		}
 	}

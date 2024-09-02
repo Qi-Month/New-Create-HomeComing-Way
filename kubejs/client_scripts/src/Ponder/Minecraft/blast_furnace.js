@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create('minecraft:blast_furnace')
-		.scene('minecraft:blast_furnace', '高炉结构', (scene, utils) => {
+		.scene('minecraft:blast_furnace', '高炉结构', (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 			// 
@@ -41,7 +41,7 @@ Ponder.registry((event) => {
 			scene.addKeyframe()
 			scene.showControls(
 				30,
-				utils.grid.at(2, 1, 1),
+				[2, 1, 1],
 				'down'
 			).rightClick()
 			scene.idle(20)

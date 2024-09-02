@@ -1,7 +1,7 @@
 Ponder.registry((event) => {
-	event.create('melter:melter')
+	event.create("melter:melter")
 		// 搭建
-		.scene('melter:melter', '搭建', 'new_create:melter', (scene, utils) => {
+		.scene("melter:melter", "搭建", "new_create:melter", (scene, utils) => {
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.scaleSceneView(0.7)
@@ -41,54 +41,54 @@ Ponder.registry((event) => {
 
 			// 锤子
 			scene.addKeyframe()
-			scene.text(30, '§b用锤子右击黏土块')
+			scene.text(30, "§b用锤子右击黏土块")
 			// 右键
 			scene.showControls(
 				30,
 				utils.grid.at(2, 2, 1),
-				'DOWN'
-			).rightClick().withItem('new_create:stone_hammer')
-			scene.overlay.showOutline('blue', {}, [2, 2, 1], 30)
+				"DOWN"
+			).rightClick().withItem("new_create:stone_hammer")
+			scene.overlay.showOutline("blue", {}, [2, 2, 1], 30)
 			scene.idle(30)
 
-			scene.world.setBlocks([4, 1, 0, 0, 6, 4], 'minecraft:air', true)
-			scene.world.createItemEntity([2, 2, 2], Direction.DOWN, '2x melter:melter')
+			scene.world.setBlocks([4, 1, 0, 0, 6, 4], "minecraft:air", true)
+			scene.world.createItemEntity([2, 2, 2], Direction.DOWN, "2x melter:melter")
 			scene.idleSeconds(1)
 		})
 
 		// 使用
-		.scene('melter:melter_use', '使用', (scene, utils) => {
+		.scene("melter:melter_use", "使用", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
-			scene.world.setBlocks([2, 2, 2], 'melter:melter')
+			scene.world.setBlocks([2, 2, 2], "melter:melter")
 			scene.world.showSection([2, 2, 2], Direction.DOWN)
 			scene.idle(20)
-			scene.text(40, '§b熔化锅可以将内部的物品\n§b融化成特定液体', [2, 3, 2])
+			scene.text(40, "§b熔化锅可以将内部的物品\n§b融化成液体", [2, 3, 2])
 			scene.idle(40)
 
-			scene.text(20, '§b将物品从\n§b上方投入熔化锅...')
-			let sand = scene.world.createItemEntity([2, 5, 2], Direction.DOWN, 'minecraft:sand')
+			scene.text(20, "§b将物品从\n§b上方投入熔化锅...")
+			let rubber = scene.world.createItemEntity([2, 5, 2], Direction.DOWN, "thermal:rubber")
 			scene.idle(9)
-			scene.world.removeEntity(sand)
+			scene.world.removeEntity(rubber)
 
 			scene.idleSeconds(1)
-			scene.world.setBlocks([2, 1, 2], 'minecraft:lava')
-			scene.world.setBlocks([2, 1, 3], 'create:framed_glass')
-			scene.world.setBlocks([3, 1, 2], 'create:framed_glass')
-			scene.world.setBlocks([2, 1, 1], 'create:framed_glass')
-			scene.world.setBlocks([1, 1, 2], 'create:framed_glass')
+			scene.world.setBlocks([2, 1, 2], "minecraft:lava")
+			scene.world.setBlocks([2, 1, 3], "create:framed_glass")
+			scene.world.setBlocks([3, 1, 2], "create:framed_glass")
+			scene.world.setBlocks([2, 1, 1], "create:framed_glass")
+			scene.world.setBlocks([1, 1, 2], "create:framed_glass")
 			scene.world.showSection([3, 1, 1, 1, 1, 3], Direction.UP)
-			scene.text(20, '§b添加热量', [2, 2, 2])
+			scene.text(20, "§b添加热量", [2, 2, 2])
 
 			scene.idleSeconds(1)
-			scene.text(40, '§b等待...')
+			scene.text(40, "§b等待...")
 			scene.idle(20)
 
 			scene.showControls(
 				30,
 				[2, 3, 2],
-				'down'
-			).withItem('new_create:molten_glass_bucket')
+				"DOWN"
+			).withItem("thermal:latex_bucket")
 			scene.idleSeconds(1)
 		})
 })

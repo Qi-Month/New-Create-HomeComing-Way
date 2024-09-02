@@ -1,0 +1,38 @@
+
+["CharcoalPit/CokeOven"]
+	#The time charcoal pits take to finish. 1000 Ticks = 1 MC hour
+	#Range: > 1000
+	CharcoalTime = 18000
+	#The time coke ovens take to finish. 1000 Ticks = 1 MC hour
+	#Range: > 1000
+	CokeTime = 36000
+	#Amount of creosote oil in mB produced per log
+	#Range: 0 ~ 1000
+	CharcoalCreosote = 50
+	#Amount of creosote oil in mB produced per coal
+	#Range: 0 ~ 1000
+	CokeCreosote = 100
+
+["Pottery Kiln"]
+	#If rain should put out kilns
+	RainyPottery = true
+	#The time kilns take to finish. 1000 Ticks = 1 MC hour
+	#Range: > 1000
+	PotteryTime = 8000
+	#The amount of straw needed for the kiln
+	#Range: 1 ~ 64
+	StrawAmount = 6
+	#The amount of logs needed for the kiln
+	#Range: 1 ~ 64
+	WoodAmount = 3
+
+[Bloomery]
+	#The minimum time the bloomery takes to finish. 1000 Ticks = 1 MC hour
+	#Range: > 1000
+	BloomeryTime = 4000
+	#The time blooms take to cool down
+	#Range: > 1000
+	BloomCooldown = 2000
+	#If the bloomery should require a higher tier pickaxe to mine. Disabled by default as none exist in vanilla before iron
+	EnableBloomeryPickRequirement = false
+

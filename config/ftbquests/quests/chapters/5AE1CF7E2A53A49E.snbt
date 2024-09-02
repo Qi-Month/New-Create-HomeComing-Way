@@ -94,45 +94,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["56EF12FBD4DD7951"]
-			id: "1A3179CD594FE26C"
-			rewards: [{
-				count: 2
-				id: "7EA5801272486977"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "0F8E6BDC4F97CBC7"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:storage_blocks/redstone"
-						}
-					}
-					title: "红石块"
-					type: "item"
-				}
-				{
-					id: "20FFCB44D6C01805"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:gems/quartz"
-						}
-					}
-					title: "石英"
-					type: "item"
-				}
-			]
-			title: "&3高效合成"
-			x: -6.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["6792817D07E7A2CC"]
 			id: "638114AF83959CA5"
 			subtitle: "一点金属和黏土"
@@ -575,7 +536,7 @@
 						RepairCost: 1
 						Unbreakable: 1b
 						display: {
-							Name: "{\"text\":\"彻底疯狂\"}"
+							Name: "{\"text\":\"终极奋斗\"}"
 						}
 					}
 				}
@@ -590,6 +551,19 @@
 			title: "又或者是挖矿之神"
 			x: -2.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["56EF12FBD4DD7951"]
+			description: ["我有什么用呢 现在不知道哦"]
+			id: "34A1D0679852D9C1"
+			tasks: [{
+				id: "37AD8977497EA0B4"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			title: "&6第一块粉色钻石"
+			x: -6.0d
+			y: -3.0d
 		}
 	]
 	title: "&6第三节 烈狱合金记"

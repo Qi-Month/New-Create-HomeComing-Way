@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create(['minecraft:soul_campfire', 'new_create:tinder'])
-		.scene('minecraft:stick', '生火', (scene, until) => {
+		.scene('minecraft:stick', '生火', (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.world.setBlocks([2, 1, 2], 'minecraft:soul_campfire')
@@ -14,7 +14,7 @@ Ponder.registry((event) => {
 			scene.idle(20)
 			scene.showControls(
 				30,
-				until.grid.at(2, 1, 2),
+				[2, 1, 1],
 				'left'
 			).rightClick().withItem('new_create:tinder')
 			scene.idle(20)

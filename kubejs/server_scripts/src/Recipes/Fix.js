@@ -41,14 +41,14 @@ ServerEvents.recipes((event) => {
 		output: "#minecraft:planks",
 		input: "#minecraft:logs",
 	}, (recipes) => {
-		let Output = recipes.getOriginalRecipeResult().getId()
-		let Input = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		let output = recipes.getOriginalRecipeResult().getId()
+		let input = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 
 		event.custom({
 			"type": "farmersdelight:cutting",
-			"ingredients": [{ item: Input }],
+			"ingredients": [{ item: input }],
 			"result": [
-				{ "item": Output, "count": 4 }
+				{ "item": output, "count": 4 }
 			],
 			"tool": {
 				"type": "farmersdelight:tool_action",

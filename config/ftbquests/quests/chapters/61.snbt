@@ -40,7 +40,7 @@
 				type: "checkmark"
 			}]
 			title: "&6铜工具?"
-			x: -5.5d
+			x: -6.5d
 			y: -2.5d
 		}
 		{
@@ -395,6 +395,20 @@
 		{
 			dependencies: ["59A06A813564EA72"]
 			id: "4499DD550DC78286"
+			tasks: [{
+				id: "1E2BED8F42468732"
+				item: {
+					Count: 1
+					id: "minecraft:bedrock"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"砖炉（占位符）\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
 			x: -3.0d
 			y: -4.5d
 		}
