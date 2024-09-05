@@ -97,7 +97,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		["sugar_cane_skin", "甘蔗皮"],
 		["heat_resistant_brick", "耐热砖"],
 		["calcium_carbonate", "碳酸钙"],
-		["raw_iron_ingot", "粗铁锭"]
+		["raw_iron_ingot", "粗铁锭"],
+		["graphite", "石墨"],
+		["heat_resistant_clay_ball", "耐热黏土球"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${MODID}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
@@ -137,7 +139,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		["iron_making_furnace_up", "炼铁炉 - 上半部分"],
 		["iron_making_furnace_under", "炼铁炉 - 下半部分"],
 		["heat_resistant_bricks", "耐热砖块"],
-		["silica_sand", "硅砂"]
+		["silica_sand", "硅砂"],
+		["graphite_ore", "石墨矿石"],
+		["deepslate_graphite_ore", "深层石墨矿石"]
 	]
 	for (let i = 0; i < blockResourceLang.length; i++) {
 		event.add(`block.${MODID}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
@@ -153,8 +157,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["soul", "液态灵魂"],
 		["high_grade_refined_oil", "高级精炼油"],
 		["egg_mixture_fluid", "鸡蛋混合液"],
-		["rose_quartz_fluid", "玫瑰石英溶液"],
-		["sugarcane_juice", "甘蔗汁"]
+		["sugarcane_juice", "甘蔗汁"],
+		["crude_oil", "毛油"]
 	]
 	for (let i = 0; i < fluidResourceLang.length; i++) {
 		event.add(`block.${MODID}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
@@ -183,7 +187,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["tin", "锡"],
 		["obsidian", "黑曜石"],
 		["glass", "玻璃"],
-		["raw_iron", "粗铁"]
+		["raw_iron", "粗铁"],
+		["rose_quartz", "玫瑰石英"],
 	]
 	for (let i = 0; i < moltenFluidResourceLang.length; i++) {
 		event.add(`block.${MODID}.molten_${moltenFluidResourceLang[i][0]}`, "熔融" + moltenFluidResourceLang[i][1])

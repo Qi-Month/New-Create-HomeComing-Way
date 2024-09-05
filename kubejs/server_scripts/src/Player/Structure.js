@@ -1,5 +1,4 @@
 const $PatchouliAPI = Java.loadClass("vazkii.patchouli.api.PatchouliAPI")
-// const { $PatchouliAPI } = require("packages/vazkii/patchouli/api/PatchouliAPI")
 
 BlockEvents.rightClicked((event) => {
 	const { level, block, player } = event

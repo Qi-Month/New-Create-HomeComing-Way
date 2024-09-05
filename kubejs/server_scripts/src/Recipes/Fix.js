@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	const { kubejs, minecraft } = event.recipes
+	const { kubejs, minecraft, create } = event.recipes
 
 	/*
 	let logIDs = Ingredient.of("#minecraft:logs").getItemIds()
@@ -36,25 +36,53 @@ ServerEvents.recipes((event) => {
 	})
 	*/
 
+	// Planks
 	event.forEachRecipe({
 		type: "minecraft:crafting_shapeless",
 		output: "#minecraft:planks",
 		input: "#minecraft:logs",
 	}, (recipes) => {
-		let output = recipes.getOriginalRecipeResult().getId()
-		let input = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		let outputItem = recipes.getOriginalRecipeResult().getId()
+		let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 
 		event.custom({
 			"type": "farmersdelight:cutting",
-			"ingredients": [{ item: input }],
+			"ingredients": [{ "item": inputItem }],
 			"result": [
-				{ "item": output, "count": 4 }
+				{ "item": outputItem, "count": 2, "chance": 1.0 },
+				{ "item": outputItem, "count": 1, "chance": 0.3 }
 			],
 			"tool": {
 				"type": "farmersdelight:tool_action",
 				"action": "axe_dig"
 			}
 		})
+	})
+
+	event.forEachRecipe({
+		type: "minecraft:crafting_shapeless",
+		output: "#minecraft:planks",
+		input: "#minecraft:logs",
+	}, (recipes) => {
+		let outputItem = recipes.getOriginalRecipeResult().getId()
+		let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+
+		minecraft.stonecutting(Item.of(outputItem, 4), inputItem)
+		// .id(`new_create:planks/stonecutting/${input}/manual_only`)
+	})
+
+	event.forEachRecipe({
+		type: "minecraft:crafting_shapeless",
+		output: "#minecraft:planks",
+		input: "#minecraft:logs",
+	}, (recipes) => {
+		let outputItem = recipes.getOriginalRecipeResult().getId()
+		let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+
+		create.cutting([
+			Item.of(outputItem, 4).withChance(1.0),
+			Item.of(outputItem, 2).withChance(0.3)
+		], inputItem)
 	})
 
 	/*

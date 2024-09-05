@@ -1,7 +1,7 @@
 ﻿{
 	"pack": {
 		"pack_format": 15,
-		"description": "§c请确保这个资源包置于最上层\n§b本ModPack专属Resource",
-		"_comment": "§b本ModPack专属Resource"
+		"description": "§c请确保这个资源包置于最上层\n§b本ModPack专属Resources",
+		"_comment": "§b本ModPack专属Resources"
 	}
 }

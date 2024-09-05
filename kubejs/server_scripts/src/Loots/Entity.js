@@ -1,7 +1,7 @@
-LootJS.modifiers((loots) => {
+LootJS.modifiers((event) => {
 	const All = Ingredient.all
 	// 删除铁傀儡掉落铁锭
-	loots.addEntityLootModifier("minecraft:iron_golem")
+	event.addEntityLootModifier("minecraft:iron_golem")
 		.removeLoot(All)
 		.addLoot("2x minecraft:apple")
 
@@ -11,7 +11,7 @@ LootJS.modifiers((loots) => {
 		"minecraft:copper_ingot"
 	]
 	EntityLoots.forEach((Loots) => {
-		loots.addLootTypeModifier(LootType.ENTITY)
+		event.addLootTypeModifier(LootType.ENTITY)
 			.removeLoot(Loots)
 	})
 })

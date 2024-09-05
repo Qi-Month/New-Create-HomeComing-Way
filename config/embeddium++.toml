@@ -114,7 +114,7 @@
 	[embeddiumplus.others]
 		#Configure if borderless fullscreen option should be attached to F11 or replace vanilla fullscreen
 		#Allowed Values: ATTACH, REPLACE, OFF
-		borderlessAttachModeOnF11 = "ATTACH"
+		borderlessAttachModeOnF11 = "OFF"
 		#Toggles fast language reload
 		#Embeddedt points it maybe cause troubles to JEI, so ¿why not add it as a toggleable option?
 		fastLanguageReload = true

@@ -56,7 +56,9 @@ StartupEvents.registry("item", (event) => {
 		["sugar_cane_skin", common, false], // 甘蔗皮
 		["raw_iron_ingot", common, false], // 未成型的铁
 		["heat_resistant_brick", common, false], // 耐热砖
-		["calcium_carbonate", common, false]
+		["calcium_carbonate", common, false], // 碳酸钙
+		["graphite", common, false], // 石墨
+		["heat_resistant_clay_ball", common, false], // 耐热黏土球
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(MODID + name)
@@ -78,4 +80,3 @@ StartupEvents.registry("item", (event) => {
 		event.create(MODID + "in_" + name, "create:sequenced_assembly")
 	})
 })
-

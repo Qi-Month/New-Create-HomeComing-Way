@@ -42,7 +42,7 @@ StartupEvents.registry("block", (event) => {
 		// 耐热砖块
 		["heat_resistant_bricks", "stone", 2, "pickaxe", "wooden", true],
 		// 硅砂
-		["silica_sand", "sand", 0.5, "shovel", "wooden", false]
+		["silica_sand", "sand", 0.5, "shovel", "wooden", false],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(MODID + name)
@@ -54,9 +54,31 @@ StartupEvents.registry("block", (event) => {
 			.requiresTool(needTool)
 	})
 
+	let oreBlockRegisters = [
+		// 石墨矿石
+		["graphite", [3, 4.5], "stone"]
+	]
+	oreBlockRegisters.forEach(([name, [hardness_1, hardness_2], level]) => {
+		event.create(`${MODID}${name}_ore`)
+			.soundType(SoundType.STONE)
+			.hardness(hardness_1)
+			.resistance(hardness_1)
+			.tagBlock(toolType["pickaxe"])
+			.tagBlock(miningLevel[level])
+			.requiresTool(true)
+
+		event.create(`${MODID}deepslate_${name}_ore`)
+			.soundType(SoundType.DEEPSLATE)
+			.hardness(hardness_2)
+			.resistance(hardness_2)
+			.tagBlock(toolType["pickaxe"])
+			.tagBlock(miningLevel[level])
+			.requiresTool(true)
+	})
+
 	// 工业铁块墙
 	event.create(MODID + "industrial_iron_block_wall", "wall")
-		.soundType("metal")
+		.soundType(SoundType.METAL)
 		.hardness(3)
 		.resistance(3)
 		.tagBlock(toolType["pickaxe"])
@@ -66,7 +88,7 @@ StartupEvents.registry("block", (event) => {
 	// 炼铁炉(上半)
 	event.create(MODID + "iron_making_furnace_up", "cardinal")
 		.model("new_create:machine/iron_making_furnace/up")
-		.soundType("stone")
+		.soundType(SoundType.STONE)
 		.hardness(2)
 		.resistance(2)
 		.box(1, 0, 1, 15, 8, 15)
@@ -78,7 +100,7 @@ StartupEvents.registry("block", (event) => {
 	// 炼铁炉(下半)
 	event.create(MODID + "iron_making_furnace_under", "cardinal")
 		.model("new_create:machine/iron_making_furnace/under")
-		.soundType("stone")
+		.soundType(SoundType.STONE)
 		.hardness(2)
 		.resistance(2)
 		.defaultCutout()

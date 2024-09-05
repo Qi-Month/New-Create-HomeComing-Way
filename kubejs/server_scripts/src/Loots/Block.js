@@ -1,11 +1,11 @@
-LootJS.modifiers((loots) => {
+LootJS.modifiers((event) => {
 	let all = Ingredient.all
 	// 土豆
-	loots.addBlockLootModifier("minecraft:potato")
+	event.addBlockLootModifier("minecraft:potato")
 		.removeLoot("minecraft:poisonous_potato")
 
 	// 砂砾
-	loots.addBlockLootModifier("minecraft:gravel")
+	event.addBlockLootModifier("minecraft:gravel")
 		.removeLoot(all)
 		.addAlternativesLoot(
 			LootEntry.of("new_create:flint_knapp")
@@ -17,21 +17,21 @@ LootJS.modifiers((loots) => {
 		)
 
 	// 草丛掉杂草
-	loots.addBlockLootModifier("minecraft:grass")
+	event.addBlockLootModifier("minecraft:grass")
 		.addAlternativesLoot(
 			LootEntry.of("new_create:grass_fiber")
 				.when((loots) => loots.randomChance(0.6))
 		)
 
 	// 纯净石英
-	loots.addBlockLootModifier("#forge:sand")
+	event.addBlockLootModifier("#forge:sand")
 		.addAlternativesLoot(
 			LootEntry.of("new_create:pure_quartz")
 				.when((loots) => loots.randomChance(0.01))
 		)
 
 	// 铁矿掉粉碎铁矿石
-	loots.addBlockLootModifier("#forge:ores/iron")
+	event.addBlockLootModifier("#forge:ores/iron")
 		.removeLoot(all)
 		.addLoot("2x create:crushed_raw_iron")
 		.addAlternativesLoot(
@@ -40,7 +40,7 @@ LootJS.modifiers((loots) => {
 		)
 
 	// 所有矿石掉落矿渣
-	loots.addBlockLootModifier("#forge:ores")
+	event.addBlockLootModifier("#forge:ores")
 		.addAlternativesLoot(
 			LootEntry.of("immersiveengineering:slag")
 				.when((loots) => loots.randomChance(0.35)),
@@ -49,12 +49,12 @@ LootJS.modifiers((loots) => {
 		)
 
 	// 锌矿掉落粉碎锌矿石
-	loots.addBlockLootModifier("#forge:ores/zinc")
+	event.addBlockLootModifier("#forge:ores/zinc")
 		.removeLoot("create:raw_zinc")
 		.addLoot("2x create:crushed_raw_zinc")
 
 	// 篝火
-	loots.addBlockLootModifier("minecraft:campfire")
+	event.addBlockLootModifier("minecraft:campfire")
 		.removeLoot(all)
 		.addAlternativesLoot(
 			LootEntry.of("minecraft:campfire")
@@ -64,7 +64,7 @@ LootJS.modifiers((loots) => {
 		)
 
 	// 灵魂篝火
-	loots.addBlockLootModifier("minecraft:soul_campfire")
+	event.addBlockLootModifier("minecraft:soul_campfire")
 		.removeLoot(all)
 		.addAlternativesLoot(
 			LootEntry.of("minecraft:soul_campfire")
@@ -76,7 +76,7 @@ LootJS.modifiers((loots) => {
 		)
 
 	// 树叶
-	loots.addBlockLootModifier("#minecraft:leavesf").addAlternativesLoot(
+	event.addBlockLootModifier("#minecraft:leavesf").addAlternativesLoot(
 		LootEntry.of("minecraft:stick")
 			.when((loots) => loots.randomChance(0.3)),
 		LootEntry.of("minecraft:apple")
@@ -84,7 +84,28 @@ LootJS.modifiers((loots) => {
 	)
 
 	// 热煤块
-	loots.addBlockLootModifier("new_create:heat_coal_block")
+	event.addBlockLootModifier("new_create:heat_coal_block")
 		.removeLoot(all)
 		.addLoot("minecraft:coal_block")
+
+	// 石墨
+	let graphiteaa = [
+		"new_create:graphite_ore",
+		"new_create:deepslate_graphite_ore"
+	]
+	graphiteaa.forEach((ores) => {
+		event.addBlockLootModifier(ores)
+			.removeLoot(all)
+			.addLoot("new_create:graphite")
+
+		event.addBlockLootModifier(ores)
+			.randomChanceWithEnchantment("minecraft:silk_touch", [1])
+			.removeLoot(all)
+			.addLoot(ores)
+
+		event.addBlockLootModifier(ores)
+			.randomChanceWithEnchantment("minecraft:fortune", [0, 0.25, 0.5, 1])
+			.removeLoot(all)
+			.addLoot("3x new_create:graphite")
+	})
 })

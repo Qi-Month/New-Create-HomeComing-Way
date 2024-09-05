@@ -75,8 +75,8 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 草绳
-	kubejs.shapeless("3x new_create:grass_string", [
-		"3x new_create:hay"
+	kubejs.shapeless("2x new_create:grass_string", [
+		"3x new_create:grass_fiber"
 	])
 
 	// 模具
@@ -101,8 +101,8 @@ ServerEvents.recipes((event) => {
 		"new_create:wooden_plate_mold",
 		"new_create:wooden_nugget_mold"
 	]
-	woodenCast.forEach((output) => {
-		minecraft.stonecutting(output, "new_create:wooden_blank_mold")
+	woodenCast.forEach((outputItem) => {
+		minecraft.stonecutting(outputItem, "new_create:wooden_blank_mold")
 	})
 
 	// 热煤
@@ -116,10 +116,6 @@ ServerEvents.recipes((event) => {
 		Fluid.of("new_create:sugarcane_juice", 50)
 	], [
 		"minecraft:sugar_cane"
-	])
-
-	create.compacting(Fluid.of("new_create:sugarcane_juice", 50).withChance(0.3), [
-		"new_create:bagasse"
 	])
 
 	// 铁
@@ -136,13 +132,10 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 炼铁炉
-	kubejs.shaped(Item.of('custommachinery:custom_machine_item', '{machine:"new_create:iron_making_furnace"}'), [
-		"A",
-		"B"
-	], {
-		A: "new_create:iron_making_furnace_up",
-		B: "new_create:iron_making_furnace_under",
-	})
+	create.item_application("new_create:iron_making_furnace", [
+		"new_create:iron_making_furnace_under",
+		"new_create:iron_making_furnace_up"
+	])
 
 	// 炼铁炉 - 上
 	kubejs.shaped("new_create:iron_making_furnace_up", [
@@ -154,7 +147,7 @@ ServerEvents.recipes((event) => {
 
 	// 炼铁炉 - 下
 	kubejs.shaped("new_create:iron_making_furnace_under", [
-		"AAA",
+		"A A",
 		"ABA",
 		"AAA"
 	], {
@@ -195,4 +188,15 @@ ServerEvents.recipes((event) => {
 		"create:crushed_raw_lead",
 		"5x new_create:silica_sand"
 	]).heatLevel("melt")
+
+	// 耐热黏土
+	create.mixing("3x new_create:heat_resistant_clay_ball", [
+		"3x minecraft:clay_ball",
+		"2x #forge:graphite",
+		Fluid.of("minecraft:water", 500)
+	])
+
+	// 耐热砖
+	minecraft.smelting("new_create:heat_resistant_brick", ["new_create:heat_resistant_clay_ball"])
+	minecraft.blasting("new_create:heat_resistant_brick", ["new_create:heat_resistant_clay_ball"])
 })

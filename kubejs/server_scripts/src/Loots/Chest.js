@@ -1,4 +1,4 @@
-LootJS.modifiers((loots) => {
+LootJS.modifiers((event) => {
 	// 删除箱子战利品
 	let chestLoots = [
 		"minecraft:iron_ingot",
@@ -18,7 +18,8 @@ LootJS.modifiers((loots) => {
 		"minecraft:furnace",
 		"minecraft:smoker",
 	]
-	chestLoots.forEach((Name) => {
-		loots.addLootTypeModifier(LootType.CHEST).removeLoot(Name)
+	chestLoots.forEach((name) => {
+		event.addLootTypeModifier(LootType.CHEST)
+			.removeLoot(name)
 	})
 })

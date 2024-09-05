@@ -1,6 +1,11 @@
 ServerEvents.recipes((event) => {
 	const { create, createmetallurgy } = event.recipes
 
+	/**
+	 * @param {Special.result} Result 输出
+	 * @param {Special.input} input 输入
+	 */
+
 	// 热量
 	let heatLevel = {
 		heated: "heated",

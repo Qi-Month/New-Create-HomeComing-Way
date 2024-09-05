@@ -14,10 +14,10 @@ StartupEvents.registry("fluid", (event) => {
 		["industrial_fuel", 0xF4A460],
 		// 混合汽油
 		["mixed_gasoline", 0xF0E68C],
-		// 玫瑰石英溶液
-		["rose_quartz_fluid", 0xFF1493],
 		// 精炼油
 		["high_grade_refined_oil", 0xDAA520],
+		// 毛油
+		["crude_oil", 0x8B4513]
 	]
 	fluidRegisters.forEach(([name, color]) => {
 		event.create(MODID + name)
@@ -42,7 +42,9 @@ StartupEvents.registry("fluid", (event) => {
 		// 安山合金
 		["andesite_alloy", 0x808080],
 		// 粗铁
-		["raw_iron", 0xB22222]
+		["raw_iron", 0xB22222],
+		// 玫瑰石英
+		["rose_quartz", 0xFF1493],
 	]
 	moltenFluid.forEach(([name, color]) => {
 		event.create(MODID + "molten_" + name)

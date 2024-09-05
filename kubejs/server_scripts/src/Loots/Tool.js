@@ -1,4 +1,4 @@
-LootJS.modifiers((loots) => {
+LootJS.modifiers((event) => {
 	let ToolLoots = [
 		// 圆石=>砂砾
 		[["#forge:cobblestone", "#new_create:hammer", "minecraft:gravel"], 0.5],
@@ -14,7 +14,7 @@ LootJS.modifiers((loots) => {
 		[["minecraft:grass", "#forge:tools/knives", "new_create:grass_fiber"], 0.5]
 	]
 	ToolLoots.forEach(([[Blocks, Tools, Loots], Chance]) => {
-		loots.addBlockLootModifier(Blocks)
+		event.addBlockLootModifier(Blocks)
 			.matchMainHand(Tools)
 			.addAlternativesLoot(LootEntry.of(Loots)
 				.when(loots => loots.randomChance(Chance)))

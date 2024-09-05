@@ -1,5 +1,5 @@
 Ponder.registry((event) => {
-	event.create(Item.of('custommachinery:custom_machine_item', '{machine:"new_create:firmament"}'))
+	event.create("new_create:firmament")
 		.scene("new_create:firmament", "苍穹 - 817型", "new_create:firmament", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
