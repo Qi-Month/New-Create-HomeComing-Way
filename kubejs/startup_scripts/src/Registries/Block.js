@@ -3,7 +3,7 @@ StartupEvents.registry("block", (event) => {
 	const MODID = "new_create:"
 
 	// 工具类型
-	const toolType = {
+	let toolType = {
 		sword: "minecraft:mineable/sword",
 		pickaxe: "minecraft:mineable/pickaxe",
 		axe: "minecraft:mineable/axe",
@@ -12,7 +12,7 @@ StartupEvents.registry("block", (event) => {
 	}
 
 	// 挖掘等级
-	const miningLevel = {
+	let miningLevel = {
 		wooden: "minecraft:needs_wooden_tool",
 		stone: "minecraft:needs_stone_tool",
 		iron: "minecraft:needs_iron_tool",
@@ -42,7 +42,7 @@ StartupEvents.registry("block", (event) => {
 		// 耐热砖块
 		["heat_resistant_bricks", "stone", 2, "pickaxe", "wooden", true],
 		// 硅砂
-		["silica_sand", "sand", 0.5, "shovel", "wooden", false],
+		["silica_sand", "sand", 0.5, "shovel", "wooden", false]
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(MODID + name)
@@ -52,28 +52,6 @@ StartupEvents.registry("block", (event) => {
 			.tagBlock(toolType[tool])
 			.tagBlock(miningLevel[level])
 			.requiresTool(needTool)
-	})
-
-	let oreBlockRegisters = [
-		// 石墨矿石
-		["graphite", [3, 4.5], "stone"]
-	]
-	oreBlockRegisters.forEach(([name, [hardness_1, hardness_2], level]) => {
-		event.create(`${MODID}${name}_ore`)
-			.soundType(SoundType.STONE)
-			.hardness(hardness_1)
-			.resistance(hardness_1)
-			.tagBlock(toolType["pickaxe"])
-			.tagBlock(miningLevel[level])
-			.requiresTool(true)
-
-		event.create(`${MODID}deepslate_${name}_ore`)
-			.soundType(SoundType.DEEPSLATE)
-			.hardness(hardness_2)
-			.resistance(hardness_2)
-			.tagBlock(toolType["pickaxe"])
-			.tagBlock(miningLevel[level])
-			.requiresTool(true)
 	})
 
 	// 工业铁块墙

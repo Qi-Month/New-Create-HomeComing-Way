@@ -53,7 +53,9 @@ JEIEvents.hideItems((event) => {
 		"alltheores:iron_ore_hammer",
 		"alltheores:bronze_ore_hammer",
 		"alltheores:invar_ore_hammer",
-		"alltheores:platinum_ore_hammer"
+		"alltheores:platinum_ore_hammer",
+		"refinedstorage:cover",
+		"refinedstorage:hollow_cover"
 	]
 	removeItem.forEach((item) => {
 		event.hide(item)

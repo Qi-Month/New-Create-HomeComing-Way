@@ -35,18 +35,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["cast_iron_chestplate", "铸铁胸甲"],
 		["cast_iron_leggings", "铸铁裤腿"],
 		["cast_iron_boots", "铸铁靴子"],
-		["mooncoin", "月币"],
-		["rainbow_mooncoin", "彩虹月币"],
-		["0", "〇元硬币"],
-		["1", "①元硬币"],
-		["2", "②元硬币"],
-		["3", "③元硬币"],
-		["4", "④元硬币"],
-		["5", "⑤元硬币"],
-		["6", "⑥元硬币"],
-		["7", "⑦元硬币"],
-		["8", "⑧元硬币"],
-		["9", "⑨元硬币"],
 		["cast_iron_ingot", "铸铁锭"],
 		["cast_iron_sheet", "铸铁板"],
 		["primary_bearing", "合成轴承"],
@@ -93,13 +81,15 @@ ClientEvents.lang("zh_cn", (event) => {
 		["wooden_ingot_mold", "锭木质铸模"],
 		["wooden_plate_mold", "板木质铸模"],
 		["wooden_nugget_mold", "粒木质铸模"],
+		["raw_iron_ingot", "未成型的铁"],
 		["bagasse", "甘蔗渣"],
 		["sugar_cane_skin", "甘蔗皮"],
 		["heat_resistant_brick", "耐热砖"],
 		["calcium_carbonate", "碳酸钙"],
 		["raw_iron_ingot", "粗铁锭"],
 		["graphite", "石墨"],
-		["heat_resistant_clay_ball", "耐热黏土球"]
+		["heat_resistant_clay_ball", "耐热黏土球"],
+		["titanium_ingot", "钛锭"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${MODID}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
@@ -117,7 +107,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["kinetic_mechanism", "动力构件(未完成)"],
 		["sealed_mechanism", "密封构件(未完成)"],
 		["sturdy_mechanism", "坚固构件(未完成)"],
-		["raw_iron_ingot", "未成型的铁"]
 	]
 	for (let i = 0; i < inItemResourceLang.length; i++) {
 		event.add(`item.${MODID}.in_${inItemResourceLang[i][0]}`, inItemResourceLang[i][1])
@@ -141,10 +130,20 @@ ClientEvents.lang("zh_cn", (event) => {
 		["heat_resistant_bricks", "耐热砖块"],
 		["silica_sand", "硅砂"],
 		["graphite_ore", "石墨矿石"],
-		["deepslate_graphite_ore", "深层石墨矿石"]
+		["deepslate_graphite_ore", "深层石墨矿石"],
 	]
 	for (let i = 0; i < blockResourceLang.length; i++) {
 		event.add(`block.${MODID}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
+	}
+
+	// 矿石
+	let oreBlockResourceLang = [
+		["graphite", "石墨"],
+		["titanium", "钛"]
+	]
+	for (let i = 0; i < oreBlockResourceLang.length; i++) {
+		event.add(`block.${MODID}.${oreBlockResourceLang[i][0]}_ore`, oreBlockResourceLang[i][1] + "矿石")
+		event.add(`block.${MODID}.deepslate${oreBlockResourceLang[i][0]}_ore`, "深层" + oreBlockResourceLang[i][1] + "矿石")
 	}
 
 	// 流体
@@ -177,7 +176,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	// 熔融金属
-	let moltenFluidResourceLang = [
+	let moltenResourceLang = [
 		["bronze", "青铜"],
 		["andesite_alloy", "安山合金"],
 		["cast_iron", "铸铁"],
@@ -189,11 +188,23 @@ ClientEvents.lang("zh_cn", (event) => {
 		["glass", "玻璃"],
 		["raw_iron", "粗铁"],
 		["rose_quartz", "玫瑰石英"],
+		["titanium", "钛"]
 	]
-	for (let i = 0; i < moltenFluidResourceLang.length; i++) {
-		event.add(`block.${MODID}.molten_${moltenFluidResourceLang[i][0]}`, "熔融" + moltenFluidResourceLang[i][1])
-		event.add(`fluid.${MODID}.molten_${moltenFluidResourceLang[i][0]}`, "熔融" + moltenFluidResourceLang[i][1])
-		event.add(`item.${MODID}.molten_${moltenFluidResourceLang[i][0]}_bucket`, "熔融" + moltenFluidResourceLang[i][1] + "桶")
+	for (let i = 0; i < moltenResourceLang.length; i++) {
+		// Item
+		event.add(`item.${MODID}.${moltenResourceLang[i][0]}_ingot`, moltenResourceLang[i][1] + "锭")
+		event.add(`item.${MODID}.${moltenResourceLang[i][0]}_sheet`, moltenResourceLang[i][1] + "板")
+		event.add(`item.${MODID}.raw_${moltenResourceLang[i][0]}`, "粗" + moltenResourceLang[i][1] + "矿")
+
+		// Blocl
+		event.add(`block.${MODID}.${moltenResourceLang[i][0]}_block`, moltenResourceLang[i][1] + "块")
+		event.add(`block.${MODID}.${moltenResourceLang[i][0]}_ore`, moltenResourceLang[i][1] + "矿")
+		event.add(`block.${MODID}.deepslate_${moltenResourceLang[i][0]}_ore`, "深层" + moltenResourceLang[i][1] + "矿")
+
+		// Fluid
+		event.add(`block.${MODID}.molten_${moltenResourceLang[i][0]}`, "熔融" + moltenResourceLang[i][1])
+		event.add(`fluid.${MODID}.molten_${moltenResourceLang[i][0]}`, "熔融" + moltenResourceLang[i][1])
+		event.add(`item.${MODID}.molten_${moltenResourceLang[i][0]}_bucket`, "熔融" + moltenResourceLang[i][1] + "桶")
 	}
 
 	// 其它

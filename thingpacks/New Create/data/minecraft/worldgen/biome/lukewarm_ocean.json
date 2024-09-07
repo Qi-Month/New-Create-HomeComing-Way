@@ -64,7 +64,9 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
       "new_create:ore_graphite",
-      "new_create:ore_graphite_small"
+      "new_create:ore_graphite_small",
+      "new_create:ore_titanium",
+      "new_create:ore_titanium_lower"
     ],
     [],
     [

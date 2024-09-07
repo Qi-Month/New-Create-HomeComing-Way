@@ -10,7 +10,9 @@ ServerEvents.recipes((event) => {
 		'#create:metal_large_cogwheel',
 		'farmersdelight:tree_bark',
 		'#minecraft:planks',
-		'#minecraft:spruce_logs'
+		'#minecraft:spruce_logs',
+		"refinedstorage:cover",
+		"refinedstorage:hollow_cover"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })

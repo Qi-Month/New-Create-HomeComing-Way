@@ -106,8 +106,9 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 热煤
-	minecraft.campfire_cooking("new_create:heat_coal_block", [
-		"minecraft:coal_block"
+	create.item_application("new_create:heat_coal_block", [
+		"minecraft:coal_block",
+		"minecraft:blaze_powder"
 	])
 
 	// 甘蔗

@@ -87,25 +87,26 @@ LootJS.modifiers((event) => {
 	event.addBlockLootModifier("new_create:heat_coal_block")
 		.removeLoot(all)
 		.addLoot("minecraft:coal_block")
-
-	// 石墨
-	let graphiteaa = [
-		"new_create:graphite_ore",
-		"new_create:deepslate_graphite_ore"
-	]
-	graphiteaa.forEach((ores) => {
-		event.addBlockLootModifier(ores)
-			.removeLoot(all)
-			.addLoot("new_create:graphite")
-
-		event.addBlockLootModifier(ores)
-			.randomChanceWithEnchantment("minecraft:silk_touch", [1])
-			.removeLoot(all)
-			.addLoot(ores)
-
-		event.addBlockLootModifier(ores)
-			.randomChanceWithEnchantment("minecraft:fortune", [0, 0.25, 0.5, 1])
-			.removeLoot(all)
-			.addLoot("3x new_create:graphite")
-	})
+	/*
+		// 石墨
+		let graphiteaa = [
+			"new_create:graphite_ore",
+			"new_create:deepslate_graphite_ore"
+		]
+		graphiteaa.forEach((ores) => {
+			event.addBlockLootModifier(ores)
+				.removeLoot(all)
+				.addLoot("new_create:graphite")
+	
+			event.addBlockLootModifier(ores)
+				.randomChanceWithEnchantment("minecraft:silk_touch", [1])
+				.removeLoot(all)
+				.addLoot(ores)
+	
+			event.addBlockLootModifier(ores)
+				.randomChanceWithEnchantment("minecraft:fortune", [0, 0.25, 0.5, 1])
+				.removeLoot(all)
+				.addLoot("3x new_create:graphite")
+		})
+	*/
 })

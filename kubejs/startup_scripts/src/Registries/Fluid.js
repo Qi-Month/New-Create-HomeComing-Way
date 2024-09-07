@@ -48,7 +48,7 @@ StartupEvents.registry("fluid", (event) => {
 	]
 	moltenFluid.forEach(([name, color]) => {
 		event.create(MODID + "molten_" + name)
-			.thinTexture(color)
+			.thickTexture(color)
 			.bucketColor(color)
 			.flowingTexture(otherFluidRegisters + "flowing")
 			.stillTexture(otherFluidRegisters + "still")
