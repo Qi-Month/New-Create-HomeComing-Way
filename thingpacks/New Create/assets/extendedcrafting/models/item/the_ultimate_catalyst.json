@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "extendedcrafting:item/the_ultimate_catalyst",
-    "layer1": "extendedcrafting:item/the_ultimate_catalyst_overlay"
-  }
-}

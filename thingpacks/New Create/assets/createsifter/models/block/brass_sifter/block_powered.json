@@ -1,8 +1,0 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "createsifter:block/brass_sifter/block",
-	"texture_size": [32, 32],
-	"textures": {
-		"4": "createsifter:block/brass_sifter_side_powered"
-	}
-}

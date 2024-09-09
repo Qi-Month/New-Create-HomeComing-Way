@@ -1,3 +1,0 @@
-#Set vanilla potion placable as beverage block
-canPlacePotion = true
-

@@ -11,8 +11,7 @@
 		"toggle.day": true,
 		"toggle.night": true
 	},
-	"ftbchunks": {
-		"chunks": true,
-		"claim_chunks": true
+	"ftbessentials": {
+		"trash_can": true
 	}
 }

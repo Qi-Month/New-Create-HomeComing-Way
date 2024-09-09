@@ -1,9 +1,0 @@
-{
-	"id": "steam_engine_stress",
-	"controllerIds": "mm:steam_engine",
-	"name": "Stress",
-	"type": "mm:create/kinetic",
-	"config": {
-		"stress": 5
-	}
-}

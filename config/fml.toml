@@ -21,7 +21,7 @@ earlyWindowSkipGLVersions = []
 #Max threads for early initialization parallelism,  -1 is based on processor count
 maxThreads = -1
 #Squir?
-earlyWindowSquir = true
+earlyWindowSquir = false
 #Whether to show CPU usage stats in early window
 earlyWindowShowCPU = false
 

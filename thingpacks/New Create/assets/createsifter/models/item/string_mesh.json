@@ -1,6 +1,0 @@
-{
-  "parent": "createsifter:block/meshes/mesh",
-  "textures": {
-    "mesh": "createsifter:item/string_mesh"
-  }
-}

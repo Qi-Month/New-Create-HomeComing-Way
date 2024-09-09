@@ -1,9 +1,0 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "melter:block/melter",
-	"textures": {
-		"iron": "block/bricks",
-		"melter": "melter:block/melter_blaze_burner",
-		"particle": "block/cauldron_side"
-	}
-}

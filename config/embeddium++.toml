@@ -5,10 +5,10 @@
 		#Configure FPS Display mode
 		#Complete mode gives you min FPS count and average count
 		#Allowed Values: OFF, SIMPLE, ADVANCED
-		fpsDisplay = "ADVANCED"
+		fpsDisplay = "OFF"
 		#Shows GPU and memory usage onto FPS display
 		#Allowed Values: OFF, ON, GPU, RAM
-		fpsDisplaySystem = "ON"
+		fpsDisplaySystem = "OFF"
 		#Set Fullscreen mode
 		#Borderless let you change between screens more faster and move your mouse across monitors
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
@@ -19,7 +19,7 @@
 		fpsDisplayGravity = "LEFT"
 		#Toggle FPS Display shadow
 		#In case sometimes you can't see the text
-		fpsDisplayShadow = true
+		fpsDisplayShadow = false
 		#Configure FPS Display margin
 		#Give some space between corner and text
 		#Range: 0 ~ 48
@@ -114,7 +114,7 @@
 	[embeddiumplus.others]
 		#Configure if borderless fullscreen option should be attached to F11 or replace vanilla fullscreen
 		#Allowed Values: ATTACH, REPLACE, OFF
-		borderlessAttachModeOnF11 = "OFF"
+		borderlessAttachModeOnF11 = "ATTACH"
 		#Toggles fast language reload
 		#Embeddedt points it maybe cause troubles to JEI, so ¿why not add it as a toggleable option?
 		fastLanguageReload = true
@@ -130,7 +130,7 @@
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
 		#Range: 0 ~ 512
-		cloudsHeight = 364
+		cloudsHeight = 192
 		#Do not show me your name
 		#disables nametag rendering for players and entities
 		disableNameTagRendering = false
@@ -141,10 +141,10 @@
 		[embeddiumplus.quality.darkness]
 			#Configure fog brightness on nether when darkness is enabled
 			#Range: 0.0 ~ 1.0
-			endFogBright = 1.0
+			endFogBright = 0.5
 			#Configure min moon brightness level with darkness
 			#Range: 0.0 ~ 1.0
-			newMoonBright = 1.0
+			newMoonBright = 0.0
 			#Toggle Darkness on End dimension
 			enableOnEnd = false
 			#Toggle Darkness default mode for modded dimensions
@@ -154,16 +154,16 @@
 			#Allowed Values: TOTAL_DARKNESS, PITCH_BLACK, DARK, DIM, OFF
 			mode = "OFF"
 			#Toggles if moon phases affects darkness in the overworld
-			affectedByMoonPhase = false
+			affectedByMoonPhase = true
 			#List of all dimensions to use True Darkness
 			#This option overrides 'valueByDefault' state
 			dimensionWhitelist = []
 			#Configure max moon brightness level with darkness
 			#Range: 0.0 ~ 1.0
-			fullMoonBright = 1.0
+			fullMoonBright = 0.25
 			#Configure fog brightness on nether when darkness is enabled
 			#Range: 0.0 ~ 1.0
-			netherFogBright = 1.0
+			netherFogBright = 0.5
 			#Toggle Darkness on Nether dimension
 			enableOnNether = false
 			#Toggle darkness when dimension has no SkyLight
@@ -172,5 +172,5 @@
 			#Only affects darkness effect
 			enableBlockLightOnly = false
 			#Toggle Darkness on Overworld dimension
-			enableOnOverworld = false
+			enableOnOverworld = true
 

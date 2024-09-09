@@ -79,12 +79,43 @@
 	#When danmaku hits target, heal youkai health by percentage of max health
 	#Range: 0.0 ~ 1.0
 	danmakuHealOnHitTarget = 0.2
+	#Player item cooldown for using danmaku
+	#Range: 5 ~ 1000
+	playerDanmakuCooldown = 20
+	#Player item cooldown for using laser
+	#Range: 5 ~ 1000
+	playerLaserCooldown = 80
+	#Player item cooldown for using spellcard
+	#Range: 5 ~ 1000
+	playerSpellCooldown = 40
+	#Player laser duration
+	#Range: 5 ~ 1000
+	playerLaserDuration = 100
+
+[rumia]
+	#If Rumia would spawn naturally around her nest if the first one goes too far. Does not affect structure spawn
+	rumiaNaturalSpawn = true
+	#Enable Ex Rumia conversion when Rumia takes too high damage in one hit
+	exRumiaConversion = true
+	#Allow Rumia to cap incoming damage at a factor of max health
+	rumiaDamageCap = true
+	#Enable Rumia healing when having no target
+	rumiaNoTargetHealing = true
+	#Enable Ex Rumia hairband drop
+	rumiaHairbandDrop = true
 
 [reimu]
 	#Summon Reimu when player eats flesh in front of villagers
 	reimuSummonFlesh = true
 	#Summon Reimu when player with youkaified/fying effect kills villager in front of other villagers
 	reimuSummonKill = true
+	#Summon Reimu when player throws emerald or gold into donation box
+	reimuSummonMoney = true
+	#Cost of emerald/gold to summon Reimu
+	#Range: 1 ~ 100000
+	reimuSummonCost = 8
+	#Enable creative flight on Reimu hairband
+	reimuHairbandFlightEnable = true
 
 [cirno]
 	#Toggle for Cirno natural spawns

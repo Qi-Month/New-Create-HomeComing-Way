@@ -1,4 +1,4 @@
-ignoreUpdate:177
+ignoreUpdate:0
 updateNotification:false
 allowInternetAccess:true
 differentiateByServerAddress:true
@@ -30,7 +30,7 @@ closeWaypointsWhenHopping:true
 adjustHeightForCarpetLikeBlocks:true
 onlyCurrentMapWaypoints:false
 minZoomForLocalWaypoints:0.0
-arrowColour:-2
+arrowColour:-1
 minimapRadar:true
 renderWaypoints:true
 partialYTeleportation:true

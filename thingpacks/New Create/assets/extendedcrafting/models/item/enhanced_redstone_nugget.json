@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "extendedcrafting:item/enhanced_redstone_nugget"
-  }
-}

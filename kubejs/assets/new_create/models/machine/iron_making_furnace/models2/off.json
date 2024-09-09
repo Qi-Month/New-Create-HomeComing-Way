@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-		"front": "new_create:block/custom_machine/iron_making_furnace/off",
-		"side": "new_create:block/custom_machine/iron_making_furnace/side",
-		"top": "new_create:block/custom_machine/iron_making_furnace/side"
-	}
-}

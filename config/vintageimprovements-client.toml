@@ -4,10 +4,10 @@
 [client]
 	#.
 	#If enabled, compat items with not loaded mod still appears in the creative tab
-	forceCompatItemsIntoCreativeTab = true
+	forceCompatItemsIntoCreativeTab = false
 	#.
 	#If enabled, Shadow Steel & Refined Radiance items appears in the creative tab
-	legacyMaterialsIntoCreativeTab = true
+	legacyMaterialsIntoCreativeTab = false
 
 	#.
 	#Choose items to hide from creative tab & JEI
