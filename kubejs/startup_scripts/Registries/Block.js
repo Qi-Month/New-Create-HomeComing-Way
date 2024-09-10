@@ -25,7 +25,6 @@ StartupEvents.registry("block", (event) => {
 	let blockRegisters = [
 		// 烧焦圆石
 		["charred_cobblestone", "stone", 2, "pickaxe", "wooden", true],
-		
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(MODID + name)

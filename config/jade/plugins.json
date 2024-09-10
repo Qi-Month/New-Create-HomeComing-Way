@@ -98,6 +98,9 @@
     "entity_name": true,
     "object_name": true
   },
+  "custommachinery": {
+    "machine_component_provider": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,

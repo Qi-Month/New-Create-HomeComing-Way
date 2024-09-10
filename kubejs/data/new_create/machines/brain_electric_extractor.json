@@ -1,0 +1,128 @@
+{
+	"name": "block.new_create.brain_electric_extractor",
+	"appearance": {
+		"idle": {
+			"block": "new_create:machine/brain_electric_extractor/off"
+		},
+		"running": {
+			"block": "new_create:machine/brain_electric_extractor/on",
+			"lightlevel": 15
+		},
+		"errored": {
+			"block": "new_create:machine/brain_electric_extractor/off"
+		},
+		"paused": {
+			"block": "new_create:machine/brain_electric_extractor/off"
+		},
+		"shape": [
+			[
+				0.0,
+				0.0,
+				0.0,
+				1.0,
+				0.5,
+				1.0
+			]
+		],
+		"interaction_sound": "edenring:brain_tree_planks",
+		"requires_tool": true
+	},
+	"components": [
+		{
+			"type": "custommachinery:energy",
+			"id": "output",
+			"mode": "output",
+			"capacity": 2000,
+			"config": {
+				"default": "both"
+			}
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "input",
+			"id": "input"
+		}
+	],
+	"gui": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.brain_electric_extractor",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:progress",
+			"x": 110,
+			"y": 45
+		},
+		{
+			"type": "custommachinery:status",
+			"x": 236,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input",
+			"x": 85,
+			"y": 45
+		},
+		{
+			"type": "custommachinery:energy",
+			"id": "output",
+			"x": 140,
+			"y": 30
+		}
+	],
+	"jei": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.brain_electric_extractor",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:progress",
+			"x": 110,
+			"y": 45
+		},
+		{
+			"type": "custommachinery:status",
+			"x": 236,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input",
+			"x": 75,
+			"y": 45
+		},
+		{
+			"type": "custommachinery:energy",
+			"id": "output",
+			"x": 160,
+			"y": 30
+		}
+	]
+}
