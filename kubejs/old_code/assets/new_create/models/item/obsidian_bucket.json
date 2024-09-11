@@ -1,0 +1,6 @@
+{
+	"parent": "item/bone",
+	"textures": {
+		"layer0": "new_create:item/obsidian_bucket"
+	}
+}

@@ -6,19 +6,15 @@ StartupEvents.registry("item", (event) => {
 	 * 
 	 * 所有的伤害都是[所填数值 +3 = 游戏内面板数值]
 	 * @param {string} swordDamage - 剑伤害
-	 * 
 	 * @param {string} pickaxeDamage - 镐伤害
-	 * 
 	 * @param {string} axeDamage - 斧伤害
-	 * 
 	 * @param {string} shovelDamage - 锹伤害
-	 * 
 	 * @param {string} hoeDamage - 锄伤害
 	*/
 
 	const MODID = "new_create:"
 
-	// id[剑伤, 镐伤, 斧伤, 锹伤, 锄伤], 耐久, 速度, 等级
+	// id[剑伤害, 镐伤害, 斧伤害, 锹伤害, 锄伤害], 耐久, 速度, 等级
 	let toolRegisters = [
 		// 气球菇
 		["balloon_mushroom", [1, 0, 4, -1, 0], 64, 2, 0]
@@ -27,7 +23,7 @@ StartupEvents.registry("item", (event) => {
 		id, [swordDamage, pickaxeDamage, axeDamage, shovelDamage, hoeDamage], use, speed, level
 	]) => {
 		// 剑
-		event.create(`${MODID}${id}_sword`, "sword")
+		event.create(`${MODID + id}_sword`, "sword")
 			.texture(`${MODID}item/tool/${id}/sword`)
 			.attackDamageBaseline(swordDamage)
 			.unstackable()
@@ -39,7 +35,7 @@ StartupEvents.registry("item", (event) => {
 			})
 
 		// 镐
-		event.create(`${MODID}${id}_pickaxe`, "pickaxe")
+		event.create(`${MODID + id}_pickaxe`, "pickaxe")
 			.texture(`${MODID}item/tool/${id}/pickaxe`)
 			.attackDamageBaseline(pickaxeDamage)
 			.unstackable()
@@ -51,7 +47,7 @@ StartupEvents.registry("item", (event) => {
 			})
 
 		// 斧
-		event.create(`${MODID}${id}_axe`, "axe")
+		event.create(`${MODID + id}_axe`, "axe")
 			.texture(`${MODID}item/tool/${id}/axe`)
 			.attackDamageBaseline(axeDamage)
 			.unstackable()
@@ -63,7 +59,7 @@ StartupEvents.registry("item", (event) => {
 			})
 
 		// 锹
-		event.create(`${MODID}${id}_shovel`, "shovel")
+		event.create(`${MODID + id}_shovel`, "shovel")
 			.texture(`${MODID}item/tool/${id}/shovel`)
 			.attackDamageBaseline(shovelDamage)
 			.unstackable()
@@ -75,7 +71,7 @@ StartupEvents.registry("item", (event) => {
 			})
 
 		// 锄
-		event.create(`${MODID}${id}_hoe`, "hoe")
+		event.create(`${MODID + id}_hoe`, "hoe")
 			.texture(`${MODID}item/tool/${id}/hoe`)
 			.attackDamageBaseline(hoeDamage)
 			.unstackable()

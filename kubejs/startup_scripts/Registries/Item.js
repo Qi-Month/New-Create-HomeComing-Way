@@ -22,7 +22,7 @@ StartupEvents.registry("item", (event) => {
 		event.create(MODID + "incomplete_" + name, "create:sequenced_assembly")
 	})
 
-	const moneyRegisters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+	const moneyRegisters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "rainbow_mooncoin"]
 	moneyRegisters.forEach((name) => {
 		event.create(MODID + name)
 			.rarity(epic)

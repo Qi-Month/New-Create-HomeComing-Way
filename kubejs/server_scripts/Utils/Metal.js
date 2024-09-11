@@ -1,4 +1,4 @@
-/*
+/**
  * @param { Internal.RecipesEventJS_ } event 
  * @param { InputItem_[] } metal // block, ingot, fluid
  * @param { String } heat // heated, superheated

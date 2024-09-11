@@ -3,8 +3,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 物品
 	let itemResourceLang = [
-		["graphite", "石墨"],
-		["titanium_ingot", "钛锭"]
+		["rainbow_mooncoin", "彩虹月币"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${MODID}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
@@ -38,13 +37,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	// 矿石
-	let oreBlockResourceLang = [
-		["graphite", "石墨"],
-		["titanium", "钛"]
-	]
+	let oreBlockResourceLang = []
 	for (let i = 0; i < oreBlockResourceLang.length; i++) {
 		event.add(`block.${MODID}.${oreBlockResourceLang[i][0]}_ore`, oreBlockResourceLang[i][1] + "矿石")
-		event.add(`block.${MODID}.deepslate${oreBlockResourceLang[i][0]}_ore`, "深层" + oreBlockResourceLang[i][1] + "矿石")
+		event.add(`block.${MODID}.deepslate_${oreBlockResourceLang[i][0]}_ore`, "深层" + oreBlockResourceLang[i][1] + "矿石")
 	}
 
 	// 流体
@@ -66,20 +62,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	// 熔融金属
-	let moltenResourceLang = [
-		["bronze", "青铜"],
-		["andesite_alloy", "安山合金"],
-		["cast_iron", "铸铁"],
-		["rose_gold", "玫瑰金"],
-		["mithril", "秘银"],
-		["bronze", "青铜"],
-		["tin", "锡"],
-		["obsidian", "黑曜石"],
-		["glass", "玻璃"],
-		["raw_iron", "粗铁"],
-		["rose_quartz", "玫瑰石英"],
-		["titanium", "钛"]
-	]
+	let moltenResourceLang = []
 	for (let i = 0; i < moltenResourceLang.length; i++) {
 		// Item
 		event.add(`item.${MODID}.${moltenResourceLang[i][0]}_ingot`, moltenResourceLang[i][1] + "锭")

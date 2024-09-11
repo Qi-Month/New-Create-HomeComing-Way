@@ -1,0 +1,10 @@
+{
+	"values": [
+		"#forge:tools/wooden",
+		"#forge:tools/stone",
+		"#forge:tools/iron",
+		"#forge:tools/golden",
+		"#forge:tools/diamond",
+		"#forge:tools/netherite"
+	]
+}
