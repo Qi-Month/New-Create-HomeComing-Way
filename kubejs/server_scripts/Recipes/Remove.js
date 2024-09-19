@@ -15,6 +15,13 @@ ServerEvents.recipes((event) => {
 		event.remove({ input: item })
 	})
 
+	let recipeId = [
+		"thermal:machines/crystallizer/crystallizer_amethyst_cluster"
+	]
+	recipeId.forEach((id) => {
+		event.remove({ id: id })
+	})
+
 	// 配方类型
 	let recipeType = [
 
@@ -25,9 +32,9 @@ ServerEvents.recipes((event) => {
 
 	// ModRecipes
 	let mod = [
-		
+
 	]
-	mod.forEach((modid) => {
-		event.remove({ mod: modid })
+	mod.forEach((namespace) => {
+		event.remove({ mod: namespace })
 	})
 })

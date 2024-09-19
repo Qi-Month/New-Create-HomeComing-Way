@@ -1,7 +1,7 @@
-const MODID = 'new_create:'
+const namespace = 'new_create:'
 ItemEvents.armorTierRegistry((event) => {
 	// 光辉
-	event.add(MODID + 'radiant', (armor) => {
+	event.add(namespace + 'radiant', (armor) => {
 		armor.durabilityMultiplier = 70 // 耐久系数,具体得上wiki看公式
 		armor.slotProtections = [6, 8, 10, 6] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
 		armor.toughness = 4  // 韧性
@@ -12,7 +12,7 @@ ItemEvents.armorTierRegistry((event) => {
 	})
 
 	// 铸铁
-	event.add(MODID + 'cast_iron', (armor) => {
+	event.add(namespace + 'cast_iron', (armor) => {
 		armor.durabilityMultiplier = 35 // 耐久系数,具体得上wiki看公式
 		armor.slotProtections = [2, 4, 6, 3] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
 		armor.toughness = 1.2  // 韧性
@@ -24,15 +24,15 @@ ItemEvents.armorTierRegistry((event) => {
 })
 // 物品贴图照常放在item
 // 身上的贴图要放在assets/new_create/textures/models/armor
-// .tier()方法要在前面跟上ModID
+// .tier()方法要在前面跟上namespace
 StartupEvents.registry('item', (event) => {
 	let Item = (name, type, rarity, tire, glow) => {
-		event.create(MODID + name, type)
-			.tag(MODID + 'items')
+		event.create(namespace + name, type)
+			.tag(namespace + 'items')
 			.tag('forge:armor')
-			.tag(MODID + 'armor')
+			.tag(namespace + 'armor')
 			.rarity(rarity)
-			.tier(MODID + tire)
+			.tier(namespace + tire)
 			.glow(glow)
 	}
 	// 光辉套

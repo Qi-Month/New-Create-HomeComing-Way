@@ -1,6 +1,6 @@
 StartupEvents.registry("block", (event) => {
-	// ModID声明如果选择不更改ModID(默认即"kubejs")直接把ModID这个变量取消
-	const MODID = "new_create:"
+	// namespace声明如果选择不更改namespace(默认即"kubejs")直接把namespace这个变量取消
+	let namespace = "new_create:"
 
 	// 工具类型
 	let toolType = {
@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
 		["charred_cobblestone", "stone", 2, "pickaxe", "wooden", true],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
-		event.create(MODID + name)
+		event.create(namespace + name)
 			.soundType(soundType)
 			.hardness(hardness)
 			.resistance(hardness)
@@ -37,7 +37,7 @@ StartupEvents.registry("block", (event) => {
 	})
 
 	// 太阳能发电板
-	event.create(MODID + "soler_panel", "cardinal")
+	event.create(namespace + "soler_panel", "cardinal")
 		.soundType(SoundType.METAL)
 		.hardness(2)
 		.resistance(2)
@@ -47,7 +47,8 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(miningLevel["stone"])
 		.requiresTool(true)
 		.blockEntity((entity) => {
-			entity.attachCapability(CapabilityBuilder.ENERGY.customBlockEntity()
+			entity.attachCapability(CapabilityBuilder.ENERGY
+				.customBlockEntity()
 				.canExtract(() => true)
 				.getEnergyStored(i => 1000)
 				.getMaxEnergyStored(i => 1000)

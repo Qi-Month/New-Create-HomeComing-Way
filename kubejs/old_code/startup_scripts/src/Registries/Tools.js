@@ -1,5 +1,5 @@
 StartupEvents.registry('item', (event) => {
-	const MODID = 'new_create:'
+	const namespace = 'new_create:'
 	let toolRegisters = [
 		// 燧石剑
 		['flint_sword', 'sword', 'common', false, 2, 120, 2, 0],
@@ -58,14 +58,14 @@ StartupEvents.registry('item', (event) => {
 		speed, // 挖掘速度
 		setLevel // 工具等级
 	]) => {
-		event.create(MODID + name, type)
+		event.create(namespace + name, type)
 			.attackDamageBaseline(damage)
 			.rarity(rarity)
 			.glow(glow)
 			.unstackable()
 			.tag('forge:tools')
-			.tag(MODID + 'items')
-			.tag(MODID + 'tools')
+			.tag(namespace + 'items')
+			.tag(namespace + 'tools')
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
@@ -76,10 +76,10 @@ StartupEvents.registry('item', (event) => {
 	// 特殊注册
 
 	// 火绒
-	event.create(MODID + 'tinder')
+	event.create(namespace + 'tinder')
 		.maxDamage(8)
 		.unstackable()
 		.tag('forge:tools')
-		.tag(MODID + 'items')
-		.tag(MODID + 'tools')
+		.tag(namespace + 'items')
+		.tag(namespace + 'tools')
 })

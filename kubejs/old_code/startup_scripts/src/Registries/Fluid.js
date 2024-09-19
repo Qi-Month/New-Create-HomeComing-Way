@@ -1,5 +1,5 @@
 StartupEvents.registry('fluid', (event) => {
-	const MODID = 'new_create:'
+	const namespace = 'new_create:'
 	const PATH = 'block/fluid/'
 	let fluid = [
 		// 安山合金溶液
@@ -26,12 +26,12 @@ StartupEvents.registry('fluid', (event) => {
 		['rose_gold_fluid', 0xFF69B4],
 	]
 	fluid.forEach(([name, color]) => {
-		event.create(MODID + name)
+		event.create(namespace + name)
 			.thickTexture(color)
 			.bucketColor(color)
-			.flowingTexture(MODID + PATH + 'flowing')
-			.stillTexture(MODID + PATH + 'still')
-			.tag(MODID + 'fluid')
+			.flowingTexture(namespace + PATH + 'flowing')
+			.stillTexture(namespace + PATH + 'still')
+			.tag(namespace + 'fluid')
 	})
 
 	// 金属
@@ -45,41 +45,41 @@ StartupEvents.registry('fluid', (event) => {
 		// ['cast_iron_fluid', 0x3E3E3E],
 	]
 	moltenFluid.forEach(([name, color]) => {
-		event.create(MODID + 'molten_' + name)
+		event.create(namespace + 'molten_' + name)
 			.thickTexture(color)
 			.bucketColor(color)
-			.flowingTexture(MODID + PATH + 'flowing')
-			.stillTexture(MODID + PATH + 'still')
-			.tag(MODID + 'fluid')
-			.tag(MODID + 'molten_metal')
+			.flowingTexture(namespace + PATH + 'flowing')
+			.stillTexture(namespace + PATH + 'still')
+			.tag(namespace + 'fluid')
+			.tag(namespace + 'molten_metal')
 	})
 
 	// 特殊注册
 
 	// 液态灵魂
-	event.create(MODID + 'soul')
-		.tag(MODID + 'fluid')
+	event.create(namespace + 'soul')
+		.tag(namespace + 'fluid')
 		.noBucket()
 		.noBlock()
-		.flowingTexture(MODID + PATH + 'soul_flowing')
-		.stillTexture(MODID + PATH + 'soul_still')
+		.flowingTexture(namespace + PATH + 'soul_flowing')
+		.stillTexture(namespace + PATH + 'soul_still')
 
 	// 熔融玻璃
-	event.create(MODID + 'glass')
-		.tag(MODID + 'fluid')
+	event.create(namespace + 'glass')
+		.tag(namespace + 'fluid')
 		.noBlock()
-		.flowingTexture(MODID + PATH + 'glass_flowing')
-		.stillTexture(MODID + PATH + 'glass_still')
+		.flowingTexture(namespace + PATH + 'glass_flowing')
+		.stillTexture(namespace + PATH + 'glass_still')
 
 	// 鸡蛋混合液
-	event.create(MODID + 'egg_mixture_fluid')
-		.tag(MODID + 'fluid')
+	event.create(namespace + 'egg_mixture_fluid')
+		.tag(namespace + 'fluid')
 		.noBlock()
-		.flowingTexture(MODID + PATH + 'egg_mixture_fluid_flowing')
-		.stillTexture(MODID + PATH + 'egg_mixture_fluid_stilling')
+		.flowingTexture(namespace + PATH + 'egg_mixture_fluid_flowing')
+		.stillTexture(namespace + PATH + 'egg_mixture_fluid_stilling')
 
 	// 黑曜石
-	event.create(MODID + 'obsidian')
-		.flowingTexture(MODID + PATH + 'obsidian_flowing')
-		.stillTexture(MODID + PATH + 'obsidian_still')
+	event.create(namespace + 'obsidian')
+		.flowingTexture(namespace + PATH + 'obsidian_flowing')
+		.stillTexture(namespace + PATH + 'obsidian_still')
 })

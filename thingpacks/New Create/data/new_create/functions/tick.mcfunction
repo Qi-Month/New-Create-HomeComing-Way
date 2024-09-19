@@ -1,0 +1,1 @@
+execute unless data storage new_create spawnpoint_structure run execute as @p at @s run function new_create:summon

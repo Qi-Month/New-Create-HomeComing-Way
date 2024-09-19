@@ -1,6 +1,6 @@
 StartupEvents.registry('block', (event) => {
-	// ModID声明如果选择不更改ModID(默认即"kubejs")直接把ModID这个变量取消
-	const MODID = 'new_create:'
+	// namespace声明如果选择不更改namespace(默认即"kubejs")直接把namespace这个变量取消
+	const namespace = 'new_create:'
 
 	// 工具类型
 	const toolType = {
@@ -45,14 +45,14 @@ StartupEvents.registry('block', (event) => {
 		['heat_coal_block', 'stone', 1.5, 1.5, 'pickaxe', 'wooden']
 	]
 	blockRegisters.forEach(([name, soundType, hardness, resisTance, tool, grade]) => {
-		event.create(MODID + name)
+		event.create(namespace + name)
 			.soundType(soundType)
 			.hardness(hardness)
 			.resistance(resisTance)
 			.tagBlock(toolType[tool])
 			.tagBlock(miningLevel[grade])
-			.tagItem(MODID + 'items')
-			.tagItem(MODID + 'blocks')
+			.tagItem(namespace + 'items')
+			.tagItem(namespace + 'blocks')
 			.requiresTool(true)
 	})
 })

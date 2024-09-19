@@ -1,25 +1,25 @@
 let moltenRegisters = []
 moltenRegisters.forEach(([name, color, level]) => {
-	const MODID = "new_create:"
+	let namespace = "new_create:"
 
 	StartupEvents.registry("item", (event) => {
 		// 锭
-		event.create(`${MODID + name}_ingot`)
-			.texture(`${MODID}item/metal/ingot`)
+		event.create(`${namespace + name}_ingot`)
+			.texture(`${namespace}item/metal/ingot`)
 			.color(color)
 			.tag("forge:ingots")
 			.tag(`forge:ingots/${name}`)
 
 		// 板
-		event.create(`${MODID + name}_sheet`)
-			.texture(`${MODID}item/metal/plate`)
+		event.create(`${namespace + name}_sheet`)
+			.texture(`${namespace}item/metal/sheet`)
 			.color(color)
 			.tag("forge:plates")
 			.tag(`forge:plates/${name}`)
 
 		// 矿
-		event.create(`${MODID}raw_${name}`)
-			.texture(`${MODID}item/metal/raw_ore`)
+		event.create(`${namespace}raw_${name}`)
+			.texture(`${namespace}item/metal/raw_ore`)
 			.color(color)
 			.tag("forge:raw_materials")
 			.tag(`forge:raw_materials/${name}`)
@@ -39,8 +39,8 @@ moltenRegisters.forEach(([name, color, level]) => {
 		}
 
 		// 浅层
-		event.create(`${MODID + name}_ore`)
-			.textureAll(`${MODID}block/metal/ore/${name}_ore`)
+		event.create(`${namespace + name}_ore`)
+			.textureAll(`${namespace}block/metal/ore/${name}_ore`)
 			.soundType(SoundType.STONE)
 			.hardness(3)
 			.resistance(3)
@@ -52,8 +52,8 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.requiresTool(true)
 
 		// 深层
-		event.create(`${MODID}deepslate_${name}_ore`)
-			.textureAll(`${MODID}block/metal/ore/deepslate_${name}_ore`)
+		event.create(`${namespace}deepslate_${name}_ore`)
+			.textureAll(`${namespace}block/metal/ore/deepslate_${name}_ore`)
 			.soundType(SoundType.DEEPSLATE)
 			.hardness(4.5)
 			.resistance(4.5)
@@ -65,7 +65,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.requiresTool(true)
 
 		// 块
-		event.create(`${MODID + name}_block`)
+		event.create(`${namespace + name}_block`)
 			.soundType(SoundType.METAL)
 			.hardness((3 + 4.5) / 2 * 1.5)
 			.resistance((3 + 4.5) / 2 * 1.5)
@@ -78,9 +78,9 @@ moltenRegisters.forEach(([name, color, level]) => {
 
 	StartupEvents.registry("fluid", (event) => {
 		const PATH = "block/fluid/"
-		let moltemFluidRegisters = MODID + PATH
+		let moltemFluidRegisters = namespace + PATH
 
-		event.create(`${MODID}molten_${name}`)
+		event.create(`${namespace}molten_${name}`)
 			.thickTexture(color)
 			.bucketColor(color)
 			.flowingTexture(moltemFluidRegisters + "flowing")

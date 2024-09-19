@@ -1,4 +1,5 @@
 edenring:mycotic_forest
+edenring:old_mycotic_forest
 !edenring:air_ocean,
 !minecraft:badlands,
 !minecraft:bamboo_jungle,
