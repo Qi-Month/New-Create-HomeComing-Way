@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " CC",
+        " RC",
+        "R  "
+    ],
+    "key": {
+        "R": {
+            "tag": "forge:rods/wood"
+        },
+        "C": {
+            "tag": "forge:ingots/cast_iron"
+        }
+    },
+    "result": {
+        "item": "new_create:metal_detector"
+    }
+}

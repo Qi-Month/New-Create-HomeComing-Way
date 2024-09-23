@@ -1,6 +1,4 @@
 StartupEvents.registry("block", (event) => {
-	// namespace声明如果选择不更改namespace(默认即"kubejs")直接把namespace这个变量取消
-
 	// 工具类型
 	let toolType = {
 		sword: "minecraft:mineable/sword",
