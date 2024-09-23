@@ -1,6 +1,6 @@
 let displayName = [
-	["new_create", "New Create: Reload"],
-	["kubejs", "New Create: Reload"]
+	["new_create", "New Create: HomeComing Way"],
+	["kubejs", "New Create: HomeComing Way"]
 ]
 displayName.forEach(([namespace, displayName]) => {
 	Platform.getInfo(namespace).name = displayName

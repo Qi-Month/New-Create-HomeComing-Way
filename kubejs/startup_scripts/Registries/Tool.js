@@ -21,8 +21,6 @@ StartupEvents.registry("item", (event) => {
 		* @param {number} hoeDamage - 锄伤害
 		*/
 
-		// 先数值再方法什么的真的太丑啦!为什么不能先方法在数值呀!
-
 		// 剑
 		event.create(`${global.namespace + id}_sword`, "sword")
 			.modifyTier((tool) => {
@@ -55,7 +53,6 @@ StartupEvents.registry("item", (event) => {
 			.attackDamageBaseline(axeDamage)
 			.texture(`${global.namespace}item/tool/${id}/axe`)
 			.tag("forge:tools")
-
 
 		// 锹
 		event.create(`${global.namespace + id}_shovel`, "shovel")

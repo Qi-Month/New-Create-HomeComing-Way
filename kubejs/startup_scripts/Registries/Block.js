@@ -51,11 +51,15 @@ StartupEvents.registry("block", (event) => {
 				.getMaxEnergyStored(i => 1000)
 				.extractEnergy((event) => {
 					let { level, blockPos } = event
-					let block = level.getBlock(blockPos)
+					let getBlockPos = level.getBlock(blockPos)
+					return (level.day && getBlockPos.up.canSeeSky) ? 60 : 0
+					/*
 					if (level.day && block.up.canSeeSky) {
-						return 120
+						return 60
+					} else {
+						return 0
 					}
-					return 0
+					*/
 				})
 			)
 		})

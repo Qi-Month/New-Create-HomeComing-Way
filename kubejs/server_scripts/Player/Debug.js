@@ -68,7 +68,7 @@ PlayerEvents.loggedIn((event) => {
 	*/
 	for (let i = 0; i < DebugUserName.length; i++) {
 		if (player.username === DebugUserName[i]) {
-			player.tell(Component.translate("message.new_create.debug.getId", [player.username]))
+			player.tell(Component.translate("message.new_create.debug.getItemId", [player.username]))
 			// 遍历Tag
 			Ingredient.of("#forge:stone")
 				.getItemIds()
