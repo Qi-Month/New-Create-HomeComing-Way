@@ -1,8 +1,18 @@
 ClientEvents.lang("zh_cn", (event) => {
-	const namespace = "new_create"
+	let namespace = "new_create"
 
 	// 物品
 	let itemResourceLang = [
+		["0", "0元硬币"],
+		["1", "1元硬币"],
+		["2", "2元硬币"],
+		["3", "3元硬币"],
+		["4", "4元硬币"],
+		["5", "5元硬币"],
+		["6", "6元硬币"],
+		["7", "7元硬币"],
+		["8", "8元硬币"],
+		["9", "9元硬币"],
 		["rainbow_mooncoin", "彩虹月币"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
@@ -93,7 +103,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	let toolTipLang = [
 	]
 	toolTipLang.forEach(([key, text]) => {
-		event.add(`tooltip.${key}`, "§b" + text)
+		event.add(`tooltip.${key}`, `§b${text}`.replace(":", "."))
 	})
 
 	// JEI信息
@@ -101,7 +111,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	]
 	jeiInfoLang.forEach(([key, text]) => {
-		event.add(`jei.${key}`, "§b" + text)
+		event.add(`jei.${key}`, `§b${text}`.replace(":", "."))
 	})
 
 	// 热量

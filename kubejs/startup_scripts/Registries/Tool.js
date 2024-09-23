@@ -1,6 +1,4 @@
 StartupEvents.registry("item", (event) => {
-	let namespace = "new_create:"
-
 	// id[剑, 镐, 斧, 锹, 锄], 耐久, 速度, 等级
 	let toolRegisters = [
 		// 气球菇z
@@ -26,59 +24,59 @@ StartupEvents.registry("item", (event) => {
 		// 先数值再方法什么的真的太丑啦!为什么不能先方法在数值呀!
 
 		// 剑
-		event.create(`${namespace + id}_sword`, "sword")
+		event.create(`${global.namespace + id}_sword`, "sword")
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
 				tool.setLevel(level)
 			})
 			.attackDamageBaseline(swordDamage)
-			.texture(`${namespace}item/tool/${id}/sword`)
+			.texture(`${global.namespace}item/tool/${id}/sword`)
 			.tag("forge:tools")
 
 		// 镐
-		event.create(`${namespace + id}_pickaxe`, "pickaxe")
+		event.create(`${global.namespace + id}_pickaxe`, "pickaxe")
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
 				tool.setLevel(level)
 			})
 			.attackDamageBaseline(pickaxeDamage)
-			.texture(`${namespace}item/tool/${id}/pickaxe`)
+			.texture(`${global.namespace}item/tool/${id}/pickaxe`)
 			.tag("forge:tools")
 
 		// 斧
-		event.create(`${namespace + id}_axe`, "axe")
+		event.create(`${global.namespace + id}_axe`, "axe")
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
 				tool.setLevel(level)
 			})
 			.attackDamageBaseline(axeDamage)
-			.texture(`${namespace}item/tool/${id}/axe`)
+			.texture(`${global.namespace}item/tool/${id}/axe`)
 			.tag("forge:tools")
 
 
 		// 锹
-		event.create(`${namespace + id}_shovel`, "shovel")
+		event.create(`${global.namespace + id}_shovel`, "shovel")
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
 				tool.setLevel(level)
 			})
 			.attackDamageBaseline(shovelDamage)
-			.texture(`${namespace}item/tool/${id}/shovel`)
+			.texture(`${global.namespace}item/tool/${id}/shovel`)
 			.tag("forge:tools")
 
 		// 锄
-		event.create(`${namespace + id}_hoe`, "hoe")
+		event.create(`${global.namespace + id}_hoe`, "hoe")
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
 				tool.setLevel(level)
 			})
 			.attackDamageBaseline(hoeDamage)
-			.texture(`${namespace}item/tool/${id}/hoe`)
+			.texture(`${global.namespace}item/tool/${id}/hoe`)
 			.tag("forge:tools")
 	})
 })

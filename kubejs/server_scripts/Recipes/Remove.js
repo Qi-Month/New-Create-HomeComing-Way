@@ -16,7 +16,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	let recipeId = [
-		"thermal:machines/crystallizer/crystallizer_amethyst_cluster"
+		"thermal:machines/crystallizer/crystallizer_amethyst_cluster",
+		"create:tiled_glass_from_glass_colorless_stonecutting",
+		"create:vertical_framed_glass_from_glass_colorless_stonecutting",
+		"create:horizontal_framed_glass_from_glass_colorless_stonecutting",
+		"create:framed_glass_from_glass_colorless_stonecutting"
 	]
 	recipeId.forEach((id) => {
 		event.remove({ id: id })

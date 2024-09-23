@@ -3,6 +3,6 @@ ItemEvents.tooltip((event) => {
 
 	]
 	addTooltip.forEach((id) => {
-		event.add(id, Component.translate(`tooltip.${id}`))
+		event.add(id, Component.translate(`tooltip.${id}`.replace(":", ".")))
 	})
 })

@@ -1,6 +1,5 @@
 StartupEvents.registry("block", (event) => {
 	// namespace声明如果选择不更改namespace(默认即"kubejs")直接把namespace这个变量取消
-	let namespace = "new_create:"
 
 	// 工具类型
 	let toolType = {
@@ -27,7 +26,7 @@ StartupEvents.registry("block", (event) => {
 		["charred_cobblestone", "stone", 2, "pickaxe", "wooden", true],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
-		event.create(namespace + name)
+		event.create(global.namespace + name)
 			.soundType(soundType)
 			.hardness(hardness)
 			.resistance(hardness)
@@ -37,7 +36,7 @@ StartupEvents.registry("block", (event) => {
 	})
 
 	// 太阳能发电板
-	event.create(namespace + "soler_panel", "cardinal")
+	event.create(global.namespace + "soler_panel", "cardinal")
 		.soundType(SoundType.METAL)
 		.hardness(2)
 		.resistance(2)

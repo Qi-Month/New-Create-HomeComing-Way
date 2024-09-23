@@ -1,12 +1,10 @@
 StartupEvents.registry("fluid", (event) => {
-	let namespace = "new_create:"
 	let path = "block/fluid/"
-	let otherFluidRegisters = namespace + path
+	let otherFluidRegisters = global.namespace + path
 
-	let fluidRegisters = [
-	]
+	let fluidRegisters = []
 	fluidRegisters.forEach(([name, color]) => {
-		event.create(namespace + name)
+		event.create(global.namespace + name)
 			.thinTexture(color)
 			.bucketColor(color)
 			.flowingTexture(otherFluidRegisters + "flowing")

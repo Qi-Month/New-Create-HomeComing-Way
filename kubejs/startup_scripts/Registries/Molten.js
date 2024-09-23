@@ -1,25 +1,23 @@
 let moltenRegisters = []
 moltenRegisters.forEach(([name, color, level]) => {
-	let namespace = "new_create:"
-
 	StartupEvents.registry("item", (event) => {
 		// 锭
-		event.create(`${namespace + name}_ingot`)
-			.texture(`${namespace}item/metal/ingot`)
+		event.create(`${global.namespace + name}_ingot`)
+			.texture(`${global.namespace}item/metal/ingot`)
 			.color(color)
 			.tag("forge:ingots")
 			.tag(`forge:ingots/${name}`)
 
 		// 板
-		event.create(`${namespace + name}_sheet`)
-			.texture(`${namespace}item/metal/sheet`)
+		event.create(`${global.namespace + name}_sheet`)
+			.texture(`${global.namespace}item/metal/sheet`)
 			.color(color)
 			.tag("forge:plates")
 			.tag(`forge:plates/${name}`)
 
 		// 矿
-		event.create(`${namespace}raw_${name}`)
-			.texture(`${namespace}item/metal/raw_ore`)
+		event.create(`${global.namespace}raw_${name}`)
+			.texture(`${global.namespace}item/metal/raw_ore`)
 			.color(color)
 			.tag("forge:raw_materials")
 			.tag(`forge:raw_materials/${name}`)
@@ -39,8 +37,8 @@ moltenRegisters.forEach(([name, color, level]) => {
 		}
 
 		// 浅层
-		event.create(`${namespace + name}_ore`)
-			.textureAll(`${namespace}block/metal/ore/${name}_ore`)
+		event.create(`${global.namespace + name}_ore`)
+			.textureAll(`${global.namespace}block/metal/ore/${name}_ore`)
 			.soundType(SoundType.STONE)
 			.hardness(3)
 			.resistance(3)
@@ -52,8 +50,8 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.requiresTool(true)
 
 		// 深层
-		event.create(`${namespace}deepslate_${name}_ore`)
-			.textureAll(`${namespace}block/metal/ore/deepslate_${name}_ore`)
+		event.create(`${global.namespace}deepslate_${name}_ore`)
+			.textureAll(`${global.namespace}block/metal/ore/deepslate_${name}_ore`)
 			.soundType(SoundType.DEEPSLATE)
 			.hardness(4.5)
 			.resistance(4.5)
@@ -65,10 +63,10 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.requiresTool(true)
 
 		// 块
-		event.create(`${namespace + name}_block`)
+		event.create(`${global.namespace + name}_block`)
 			.soundType(SoundType.METAL)
-			.hardness((3 + 4.5) / 2 * 1.5)
-			.resistance((3 + 4.5) / 2 * 1.5)
+			.hardness(5)
+			.resistance(5)
 			.tag("forge:storage_blocks")
 			.tag(`forge:storage_blocks/${name}`)
 			.tagBlock(pickaxe)
@@ -78,13 +76,12 @@ moltenRegisters.forEach(([name, color, level]) => {
 
 	StartupEvents.registry("fluid", (event) => {
 		const PATH = "block/fluid/"
-		let moltemFluidRegisters = namespace + PATH
 
-		event.create(`${namespace}molten_${name}`)
+		event.create(`${global.namespace}molten_${name}`)
 			.thickTexture(color)
 			.bucketColor(color)
-			.flowingTexture(moltemFluidRegisters + "flowing")
-			.stillTexture(moltemFluidRegisters + "still")
+			.flowingTexture(`${global.namespace + PATH}flowing`)
+			.stillTexture(`${global.namespace + PATH}still`)
 			.tag(`forge:molten_${name}`)
 			.tag("forge:molten_materials")
 	})
