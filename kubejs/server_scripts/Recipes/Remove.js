@@ -1,7 +1,9 @@
 ServerEvents.recipes((event) => {
 	// 输出
 	let output = [
-		"#forge:tools"
+		"#forge:tools",
+		"#minecraft:planks",
+		"farmersdelight:tree_bark"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
@@ -41,4 +43,7 @@ ServerEvents.recipes((event) => {
 	mod.forEach((namespace) => {
 		event.remove({ mod: namespace })
 	})
+
+	// 玻璃板
+	event.remove({ type: "minecraft:crafting_shaped", output: "#forge:glass_panes" })
 })

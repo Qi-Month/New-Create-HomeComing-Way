@@ -5,7 +5,7 @@ StartupEvents.registry("item", (event) => {
 	let rare = "rare"
 
 	let itemRegisters = [
-		["flint_knapp", common, false], // 燧石碎片
+		["initial_item_kit", epic, true], // 初始套件
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(global.namespace + name)
@@ -16,7 +16,7 @@ StartupEvents.registry("item", (event) => {
 	// 半成品注册
 	let inItemRegisters = [
 
-	]                                                            
+	]
 	inItemRegisters.forEach((name) => {
 		event.create(`${global.namespace}incomplete_${name}`, "create:sequenced_assembly")
 	})

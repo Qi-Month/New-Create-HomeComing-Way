@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.recipes
+	let { kubejs } = event.recipes
 
 	// 流体漏斗
 	kubejs.shaped("flopper:flopper", [
@@ -21,4 +21,12 @@ ServerEvents.recipes((event) => {
 		B: "edenring:gravilite_block",
 		C: "minecraft:glass_pane"
 	}).id("flopper:recipes/flopper_2")
-})        
+
+	// 砧板
+	kubejs.shaped("farmersdelight:cutting_board", [
+		"AA",
+		"AA"
+	], {
+		A: "#minecraft:logs"
+	}).id("farmersdelight:cutting_board")
+})

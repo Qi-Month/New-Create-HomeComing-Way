@@ -1,0 +1,47 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0282B86F07A82B4C"
+	group: ""
+	icon: "new_create:rainbow_mooncoin"
+	id: "0282B86F07A82B4C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4041D219A7DBCED3"
+			rewards: [{
+				count: 15
+				id: "11B551A88B1CE401"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4422DF81B9E7D726"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			id: "19557F3C13CDE7CD"
+			rewards: [{
+				id: "2975CFA6B8B4BACA"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 50L
+				id: "141D99E01B77BD8A"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -2.0d
+			y: -2.5d
+		}
+	]
+	title: "星际银行"
+}

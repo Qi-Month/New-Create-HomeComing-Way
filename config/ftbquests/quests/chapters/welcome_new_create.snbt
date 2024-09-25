@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_new_create"
+	group: ""
+	id: "533F3C099F0DB632"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "0D8F40B6F45A9EB5"
+		rewards: [{
+			id: "76A0565DF42E44DC"
+			item: "edenring:guide_book"
+			type: "item"
+		}]
+		tasks: [{
+			id: "7AB180DC05F0D213"
+			title: "我该怎么做"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "欢迎来到new create"
+}

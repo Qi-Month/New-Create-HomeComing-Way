@@ -25,6 +25,7 @@
 			]
 		],
 		"interaction_sound": "edenring:brain_tree_planks",
+		"mining_level": "minecraft:needs_wooden_tool",
 		"requires_tool": true
 	},
 	"components": [

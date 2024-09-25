@@ -68,7 +68,7 @@ PlayerEvents.loggedIn((event) => {
 	*/
 	for (let i = 0; i < DebugUserName.length; i++) {
 		if (player.username === DebugUserName[i]) {
-			player.tell(Component.translate("message.new_create.debug.getItemId", [player.username]))
+			player.tell(Text.translate("message.new_create.debug.getItemId", [player.username]))
 			// 遍历Tag
 			Ingredient.of("#forge:stone")
 				.getItemIds()
@@ -89,7 +89,7 @@ BlockEvents.rightClicked((event) => {
 
 	for (let i = 0; i < DebugUserName.length; i++) {
 		if (event.hand !== "MAIN_HAND" && player.crouching && player.username === DebugUserName[i]) {
-			player.tell(Component.translate("message.new_create.debug.getHardness", [blockHardness]))
+			player.tell(Text.translate("message.new_create.debug.getHardness", [blockHardness]))
 		}
 	}
 })

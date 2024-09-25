@@ -1,0 +1,51 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2530ED3CC88F1135"
+	group: ""
+	icon: "new_create:rainbow_mooncoin"
+	id: "2530ED3CC88F1135"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E9AD9B222497551"]
+			disable_toast: true
+			id: "1C11747A8AF02474"
+			rewards: [{
+				id: "0BEFA2B51DD2FC62"
+				item: "new_create:1"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				count: 10L
+				id: "1102CC83E4536FCF"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "是原石"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			hide_dependent_lines: true
+			id: "7E9AD9B222497551"
+			rewards: [{
+				count: 10
+				id: "44B71D2F2E4A9F7A"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2CFA72154613AB33"
+				title: "创业资金"
+				type: "checkmark"
+			}]
+			title: "本地商人"
+			x: -4.0d
+			y: -1.0d
+		}
+	]
+	title: "本地商店"
+}

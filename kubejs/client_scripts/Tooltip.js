@@ -1,8 +1,8 @@
 ItemEvents.tooltip((event) => {
 	let addTooltip = [
-
+		"new_create:easy_rock_gen",
 	]
 	addTooltip.forEach((id) => {
-		event.add(id, Component.translate(`tooltip.${id}`.replace(":", ".")))
+		event.add(id, Text.translate(`tooltip.${id}`.replace(":", ".")))
 	})
 })

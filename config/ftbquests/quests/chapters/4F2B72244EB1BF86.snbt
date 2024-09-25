@@ -1,0 +1,276 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4F2B72244EB1BF86"
+	group: "2726B6E9ECFB77B0"
+	id: "4F2B72244EB1BF86"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			hide: true
+			id: "58B3DF4134ADCFB6"
+			rewards: [{
+				id: "3BD75B95A7BF9438"
+				item: "edenring:guide_book"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "edenring:edenring"
+				id: "54EF854AE6F809C9"
+				title: "这是哪里？"
+				type: "dimension"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58B3DF4134ADCFB6"]
+			description: ["欢迎来到黑市"]
+			hide: false
+			icon: "new_create:0"
+			id: "0F900518AD454B55"
+			rewards: [
+				{
+					id: "5E1948BB3D0E96A5"
+					item: "edenring:auritis_sapling"
+					type: "item"
+				}
+				{
+					id: "6781CA192EEE867D"
+					item: "edenring:pulse_tree_sapling"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5F8C0D59E0B066AA"
+					item: "edenring:gravilite_block"
+					type: "item"
+				}
+			]
+			subtitle: "欢迎来到黑市 "
+			tasks: [{
+				id: "38811405D91E7212"
+				title: "强行高利贷"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["58B3DF4134ADCFB6"]
+			description: ["空岛生存？"]
+			id: "31BD51EA1236C4FC"
+			rewards: [{
+				id: "620898993BD9F598"
+				item: "new_create:initial_item_kit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C0DE8F40D11874E"
+				title: "迫降飞船的基础物资"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D824562ADE8BC08"]
+			id: "2AF0A3B84B243422"
+			tasks: [{
+				biome: "edenring:mycotic_forest"
+				icon: "edenring:balloon_mushroom_barrel"
+				id: "1608978457766EE2"
+				title: "蘑菇森林?"
+				type: "biome"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D824562ADE8BC08"]
+			id: "021F09956431BCE7"
+			tasks: [{
+				biome: "edenring:old_mycotic_forest"
+				icon: "edenring:balloon_mushroom_crafting_table"
+				id: "2B314FA09197EF3C"
+				title: "远古蘑菇森林?"
+				type: "biome"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2AF0A3B84B243422"
+				"021F09956431BCE7"
+			]
+			dependency_requirement: "one_completed"
+			id: "00A13F527F0F8C98"
+			tasks: [{
+				count: 16L
+				id: "5DE3281E2F2ECC06"
+				item: "edenring:balloon_mushroom_log"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00A13F527F0F8C98"]
+			id: "76F0BC383EDE3BDA"
+			rewards: [{
+				id: "67930B7F476E951C"
+				item: {
+					Count: 1
+					id: "immersiveengineering:axe_steel"
+					tag: {
+						Damage: 578
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "我猜有些人会把前面给的斧子用爆"
+			tasks: [
+				{
+					id: "29234729E9D64B35"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "069883486CEDDB93"
+					item: "edenring:balloon_mushroom_planks"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76F0BC383EDE3BDA"]
+			id: "5BE8EF1EE1CCE39F"
+			subtitle: "WAAAAAAAAAAAAAAAAAAAAAAAAAGH!"
+			tasks: [{
+				id: "77E3DEC14BDA2F92"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:workbench"
+					}
+				}
+				title: "工作台"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31BD51EA1236C4FC"]
+			description: ["还有接收器也别忘了"]
+			id: "7D824562ADE8BC08"
+			subtitle: "我记得飞船上有很多年以前留下的造石机,先挖下来吧,以后没准有用"
+			tasks: [
+				{
+					id: "419687894BB4DF3A"
+					item: "new_create:easy_rock_gen"
+					type: "item"
+				}
+				{
+					id: "4F7FD8CA5209E742"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BE8EF1EE1CCE39F"]
+			id: "3CA2DD6F5FA31E73"
+			tasks: [{
+				id: "486E220AB8F25873"
+				item: {
+					Count: 1
+					id: "new_create:balloon_mushroom_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BE8EF1EE1CCE39F"]
+			id: "1E99F30A3A856EE4"
+			tasks: [{
+				id: "2A3B90986E6CB7E4"
+				item: {
+					Count: 1
+					id: "new_create:balloon_mushroom_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5BE8EF1EE1CCE39F"]
+			id: "79CB616A9C2214E2"
+			tasks: [{
+				id: "31C4F065C7841218"
+				item: {
+					Count: 1
+					id: "new_create:balloon_mushroom_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5BE8EF1EE1CCE39F"]
+			id: "4E0AFE68873677CC"
+			tasks: [{
+				id: "5D44FDB407FA03C3"
+				item: {
+					Count: 1
+					id: "new_create:balloon_mushroom_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5BE8EF1EE1CCE39F"]
+			id: "4DA298C410D3A0EF"
+			tasks: [{
+				id: "655F9D5B2CEF3EF3"
+				item: {
+					Count: 1
+					id: "new_create:balloon_mushroom_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.0d
+		}
+	]
+	title: "紧急迫降"
+}

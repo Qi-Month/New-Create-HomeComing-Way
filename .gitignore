@@ -36,7 +36,6 @@
 /config/oculus.properties
 /BTLib.dll
 /ESM
-/data/fabricDefaultResourcePacks.dat
 /fabricloader.log
 /config/fabric/indigo-renderer.properties
 /mods
@@ -49,3 +48,4 @@ caxton_impl.dll
 Xaero*
 一些零散的想法.md
 immersive_paintings_cache
+/data

@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "25BA8A4EC2893749"
+	group: ""
+	icon: "new_create:rainbow_mooncoin"
+	id: "25BA8A4EC2893749"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0F900518AD454B55"]
+			hide: true
+			hide_dependent_lines: true
+			id: "65FC05700BA5FBCE"
+			subtitle: "先还债 小子"
+			tasks: [
+				{
+					id: "4944DC339E0EF2E9"
+					title: "伊甸星环的黑色产业链"
+					type: "checkmark"
+				}
+				{
+					count: 160L
+					id: "0AFE374C98F05807"
+					item: "new_create:1"
+					type: "item"
+				}
+			]
+			title: "欢迎来到黑市"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["65FC05700BA5FBCE"]
+			hide_dependent_lines: true
+			icon: "minecraft:bread"
+			id: "760146A39E128095"
+			rewards: [{
+				id: "19DD1CFFDD70BC98"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "你知道一块面包多少钱吗"
+			tasks: [{
+				count: 500000L
+				id: "6C08F8B4AB1834B1"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "面包"
+			x: 0.0d
+			y: -8.5d
+		}
+	]
+	title: "黑市"
+}

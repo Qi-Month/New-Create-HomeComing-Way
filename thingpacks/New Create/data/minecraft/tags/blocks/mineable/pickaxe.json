@@ -2,6 +2,8 @@
 	"values": [
 		"edenring:brain_tree_block_copper",
 		"edenring:brain_tree_block_iron",
-		"edenring:brain_tree_block_gold"
+		"edenring:brain_tree_block_gold",
+		"new_create:easy_rock_gen",
+		"new_create:brain_electric_extractor"
 	]
 }

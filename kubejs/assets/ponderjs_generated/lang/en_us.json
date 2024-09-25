@@ -1,1 +1,6 @@
-{}
+{
+  "new_create.ponder.easy_rock_gen.header": "简易造石机",
+  "new_create.ponder.easy_rock_gen.text_1": "简易造石机可以通过接触旁边的水和熔岩来制造圆石",
+  "new_create.ponder.easy_rock_gen.text_2": "只需要在两边分别放一桶熔岩和水即可进行工作, 速度为300 Tick(即15秒)一个",
+  "new_create.ponder.easy_rock_gen.text_3": "随后用漏斗或管道接上容器方块就可以等待收货了"
+}
