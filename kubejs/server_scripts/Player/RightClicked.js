@@ -2,7 +2,7 @@ ItemEvents.rightClicked((event) => {
 	let { player, item } = event
 
 	/*
-	* 右键初始物品给予3把缺少耐久的钢斧
+	* 右键初始物品给予3把缺少耐久的钢斧, 还有一把耐久很低的钢镐
 	* 如果不在指定群系的话额外给一个指南针
 	*/
 	let biomeGiveItem = [
@@ -17,7 +17,7 @@ ItemEvents.rightClicked((event) => {
 				player.give(Item.of("immersiveengineering:pickaxe_steel", "{Damage:636}"))
 				item.shrink(1)
 			} else {
-				player.give(Item.of("naturescompass:naturescompass", 1, "{display:{Name:'{\"text\":\"请定位到菌菇森林或远古菌菇森林\"}'}}"))
+				player.give(Item.of("naturescompass:naturescompass", 1))
 				player.give(Item.of("immersiveengineering:axe_steel", 3, "{Damage:578}"))
 				player.give(Item.of("immersiveengineering:pickaxe_steel", "{Damage:636}"))
 				item.shrink(1)

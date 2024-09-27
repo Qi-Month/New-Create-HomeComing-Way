@@ -1,4 +1,6 @@
-let moltenRegisters = []
+let moltenRegisters = [
+	
+]
 moltenRegisters.forEach(([name, color, level]) => {
 	StartupEvents.registry("item", (event) => {
 		// 锭
@@ -39,6 +41,9 @@ moltenRegisters.forEach(([name, color, level]) => {
 		// 浅层
 		event.create(`${global.namespace + name}_ore`)
 			.textureAll(`${global.namespace}block/metal/ore/${name}_ore`)
+			.model(`${global.namespace}block/ore/ore`)
+			.color(0, color)
+			.renderType("cutout")
 			.soundType(SoundType.STONE)
 			.hardness(3)
 			.resistance(3)
@@ -48,10 +53,16 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tagBlock(pickaxe)
 			.tagBlock(miningLevel[level])
 			.requiresTool(true)
+			.item((event) => {
+				event.color(0, color)
+			})
 
 		// 深层
 		event.create(`${global.namespace}deepslate_${name}_ore`)
 			.textureAll(`${global.namespace}block/metal/ore/deepslate_${name}_ore`)
+			.model(`${global.namespace}block/ore/deepslate_ore`)
+			.color(0, color)
+			.renderType("cutout")
 			.soundType(SoundType.DEEPSLATE)
 			.hardness(4.5)
 			.resistance(4.5)
@@ -61,10 +72,15 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tagBlock(pickaxe)
 			.tagBlock(miningLevel[level])
 			.requiresTool(true)
+			.item((event) => {
+				event.color(0, color)
+			})
 
 		// 块
 		event.create(`${global.namespace + name}_block`)
+			.textureAll(`${global.namespace}block/metal/block`)
 			.soundType(SoundType.METAL)
+			.color(color)
 			.hardness(5)
 			.resistance(5)
 			.tag("forge:storage_blocks")
@@ -72,13 +88,17 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tagBlock(pickaxe)
 			.tagBlock(miningLevel[level])
 			.requiresTool(true)
+			.item((item) => {
+				item.color(color)
+			})
 	})
 
 	StartupEvents.registry("fluid", (event) => {
 		const PATH = "block/fluid/"
 
+		// 熔融金属
 		event.create(`${global.namespace}molten_${name}`)
-			.thickTexture(color)
+			.thinTexture(color)
 			.bucketColor(color)
 			.flowingTexture(`${global.namespace + PATH}flowing`)
 			.stillTexture(`${global.namespace + PATH}still`)

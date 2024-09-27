@@ -33,6 +33,21 @@ StartupEvents.registry("block", (event) => {
 			.requiresTool(needTool)
 	})
 
+	// 机壳
+	let casingRegisters = [
+		["steel", "iron"]
+	]
+	casingRegisters.forEach(([id, level]) => {
+		event.create(`${global.namespace + id}_casing`)
+			.textureAll(`${global.namespace}block/casing/${id}/casing`)
+			.soundType(SoundType.METAL)
+			.hardness(1.5)
+			.resistance(1.5)
+			.tagBlock(toolType["pickaxe"])
+			.tagBlock(miningLevel[level])
+			.requiresTool(true)
+	})
+
 	// 太阳能发电板
 	event.create(global.namespace + "soler_panel", "cardinal")
 		.soundType(SoundType.METAL)

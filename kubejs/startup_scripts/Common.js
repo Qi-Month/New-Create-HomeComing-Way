@@ -1,5 +1,7 @@
+// Namespace
 global.namespace = "new_create:"
 
+// 工具
 let NCRTool = {
 	balloon_mushroom_sword: global.namespace + "balloon_mushroom_sword",
 	balloon_mushroom_pickaxe: global.namespace + "balloon_mushroom_pickaxe",

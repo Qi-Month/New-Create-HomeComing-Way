@@ -1,7 +1,6 @@
 JEIEvents.information((event) => {
-	let addJEIInfo = [
-	]
+	let addJEIInfo = []
 	addJEIInfo.forEach((name) => {
-		event.addItem(name, Text.translate(`jei.${name}`.replace(":", ".")))
+		event.addItem(name, Text.translate(`jei.info.${name}`.replace(":", ".")))
 	})
 })

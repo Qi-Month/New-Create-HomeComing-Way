@@ -9,9 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7E9AD9B222497551"]
 			id: "4041D219A7DBCED3"
 			rewards: [{
-				count: 15
+				count: 150
 				id: "11B551A88B1CE401"
 				item: "new_create:1"
 				type: "item"
@@ -26,6 +27,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["7E9AD9B222497551"]
 			id: "19557F3C13CDE7CD"
 			rewards: [{
 				id: "2975CFA6B8B4BACA"
@@ -33,13 +35,13 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 50L
+				count: 150L
 				id: "141D99E01B77BD8A"
 				item: "new_create:1"
 				type: "item"
 			}]
 			title: "汇率"
-			x: -2.0d
+			x: -1.5d
 			y: -2.5d
 		}
 	]

@@ -1,11 +1,11 @@
 StartupEvents.registry("item", (event) => {
-	// id[剑, 镐, 斧, 锹, 锄], 耐久, 速度, 等级
+	// id, 颜色, [剑, 镐, 斧, 锹, 锄], 耐久, 速度, 等级
 	let toolRegisters = [
-		// 气球菇z
-		["balloon_mushroom", [1, 0, 4, -1, 0], 64, 2, 0]
+		// 气球菇
+		["balloon_mushroom", 0xFF69B4, [1, 0, 4, -1, 0], 64, 2, 0]
 	]
 	toolRegisters.forEach(([
-		id, [swordDamage, pickaxeDamage, axeDamage, shovelDamage, hoeDamage], use, speed, level
+		id, color, [swordDamage, pickaxeDamage, axeDamage, shovelDamage, hoeDamage], use, speed, level
 	]) => {
 		/**
 		* @param {string} id - 物品id
@@ -28,8 +28,15 @@ StartupEvents.registry("item", (event) => {
 				tool.speed = speed
 				tool.setLevel(level)
 			})
+			.modelJson({
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": "new_create:item/tool/sword/head",
+					"layer1": "new_create:item/tool/sword/handle"
+				}
+			})
+			.color(0, color)
 			.attackDamageBaseline(swordDamage)
-			.texture(`${global.namespace}item/tool/${id}/sword`)
 			.tag("forge:tools")
 
 		// 镐
@@ -39,8 +46,15 @@ StartupEvents.registry("item", (event) => {
 				tool.speed = speed
 				tool.setLevel(level)
 			})
+			.modelJson({
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": "new_create:item/tool/pickaxe/head",
+					"layer1": "new_create:item/tool/pickaxe/handle"
+				}
+			})
+			.color(0, color)
 			.attackDamageBaseline(pickaxeDamage)
-			.texture(`${global.namespace}item/tool/${id}/pickaxe`)
 			.tag("forge:tools")
 
 		// 斧
@@ -50,8 +64,15 @@ StartupEvents.registry("item", (event) => {
 				tool.speed = speed
 				tool.setLevel(level)
 			})
+			.modelJson({
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": "new_create:item/tool/axe/head",
+					"layer1": "new_create:item/tool/axe/handle"
+				}
+			})
+			.color(0, color)
 			.attackDamageBaseline(axeDamage)
-			.texture(`${global.namespace}item/tool/${id}/axe`)
 			.tag("forge:tools")
 
 		// 锹
@@ -61,8 +82,15 @@ StartupEvents.registry("item", (event) => {
 				tool.speed = speed
 				tool.setLevel(level)
 			})
+			.modelJson({
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": "new_create:item/tool/shovel/head",
+					"layer1": "new_create:item/tool/shovel/handle"
+				}
+			})
+			.color(0, color)
 			.attackDamageBaseline(shovelDamage)
-			.texture(`${global.namespace}item/tool/${id}/shovel`)
 			.tag("forge:tools")
 
 		// 锄
@@ -72,8 +100,15 @@ StartupEvents.registry("item", (event) => {
 				tool.speed = speed
 				tool.setLevel(level)
 			})
+			.modelJson({
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": "new_create:item/tool/hoe/head",
+					"layer1": "new_create:item/tool/hoe/handle"
+				}
+			})
+			.color(0, color)
 			.attackDamageBaseline(hoeDamage)
-			.texture(`${global.namespace}item/tool/${id}/hoe`)
 			.tag("forge:tools")
 	})
 })

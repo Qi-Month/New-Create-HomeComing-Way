@@ -31,24 +31,12 @@
 			hide: false
 			icon: "new_create:0"
 			id: "0F900518AD454B55"
-			rewards: [
-				{
-					id: "5E1948BB3D0E96A5"
-					item: "edenring:auritis_sapling"
-					type: "item"
-				}
-				{
-					id: "6781CA192EEE867D"
-					item: "edenring:pulse_tree_sapling"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "5F8C0D59E0B066AA"
-					item: "edenring:gravilite_block"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 5
+				id: "5F8C0D59E0B066AA"
+				item: "edenring:gravilite_block"
+				type: "item"
+			}]
 			subtitle: "欢迎来到黑市 "
 			tasks: [{
 				id: "38811405D91E7212"
@@ -76,29 +64,29 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7D824562ADE8BC08"]
+			dependencies: ["1CA1E323F1F1947A"]
 			id: "2AF0A3B84B243422"
 			tasks: [{
 				biome: "edenring:mycotic_forest"
-				icon: "edenring:balloon_mushroom_barrel"
-				id: "1608978457766EE2"
-				title: "蘑菇森林?"
+				icon: "edenring:eden_mycelium"
+				id: "7F824603E2CB35BD"
 				type: "biome"
 			}]
-			x: 3.0d
+			title: "蘑菇森林？"
+			x: 2.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["7D824562ADE8BC08"]
+			dependencies: ["1CA1E323F1F1947A"]
 			id: "021F09956431BCE7"
 			tasks: [{
 				biome: "edenring:old_mycotic_forest"
-				icon: "edenring:balloon_mushroom_crafting_table"
-				id: "2B314FA09197EF3C"
-				title: "远古蘑菇森林?"
+				icon: "edenring:balloon_mushroom_stripped_bark"
+				id: "714C90EBB7254454"
 				type: "biome"
 			}]
-			x: 3.0d
+			title: "远古蘑菇森林？！"
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -170,24 +158,44 @@
 			dependencies: ["31BD51EA1236C4FC"]
 			description: ["还有接收器也别忘了"]
 			id: "7D824562ADE8BC08"
-			subtitle: "我记得飞船上有很多年以前留下的造石机,先挖下来吧,以后没准有用"
-			tasks: [
+			rewards: [
 				{
-					id: "419687894BB4DF3A"
+					id: "3507D649E6355651"
 					item: "new_create:easy_rock_gen"
 					type: "item"
 				}
 				{
-					id: "4F7FD8CA5209E742"
+					id: "3DFD2DF2D382674C"
 					item: "ae2:energy_acceptor"
 					type: "item"
 				}
+				{
+					count: 3
+					id: "3C0F314436D57F53"
+					item: "minecraft:iron_door"
+					type: "item"
+				}
 			]
-			x: 1.0d
-			y: 0.0d
+			subtitle: "我记得飞船上有很多年以前留下的造石机,先挖下来吧,以后没准有用"
+			tasks: [{
+				consume_items: true
+				id: "53981E8A1DF3C797"
+				item: {
+					Count: 1
+					id: "immersiveengineering:pickaxe_steel"
+					tag: {
+						Damage: 636
+					}
+				}
+				type: "item"
+			}]
+			title: "拆解飞船 其一"
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
+			description: ["虽然不够持久 但是足够轻便"]
 			id: "3CA2DD6F5FA31E73"
 			tasks: [{
 				id: "486E220AB8F25873"
@@ -200,8 +208,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
@@ -217,7 +225,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
+			x: 10.5d
 			y: -1.0d
 		}
 		{
@@ -234,8 +242,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.0d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
@@ -251,8 +259,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: -2.0d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
@@ -268,8 +276,94 @@
 				}
 				type: "item"
 			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31BD51EA1236C4FC"]
+			id: "1CA1E323F1F1947A"
+			tasks: [{
+				count: 64L
+				id: "1D54E5D9F4B372F2"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D824562ADE8BC08"]
+			id: "48AF7385432AAB73"
+			rewards: [
+				{
+					id: "0DF9AA94DCF740BE"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2B661AAFB6C95C84"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "00C870CC8A762D00"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4B2B8FE66047ACDA"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6F1C3761113C1A1C"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "23673516FACAC08E"
+				title: "拆解飞船 绿植区"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4DA298C410D3A0EF"]
+			description: ["虽然口味不好 但是这里到处都是"]
+			id: "234344AC3844B475"
+			tasks: [{
+				id: "438B2B19877D6D53"
+				item: "edenring:volvox_block"
+				type: "item"
+			}]
 			x: 13.5d
-			y: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"021F09956431BCE7"
+				"2AF0A3B84B243422"
+			]
+			description: ["遇难的商人，一点谢礼"]
+			id: "190BADAD2F082C57"
+			rewards: [{
+				count: 50
+				id: "688D3E34663ED633"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B86B6D95BE20D36"
+				title: "你是？"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
 		}
 	]
 	title: "紧急迫降"

@@ -46,6 +46,14 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${namespace}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
 	}
 
+	// 机壳
+	let casingResourceLang = [
+		["steel", "钢"]
+	]
+	for (let i = 0; i < casingResourceLang.length; i++) {
+		event.add(`block.${namespace}.${casingResourceLang[i][0]}_casing`, casingResourceLang[i][1] + "机壳")
+	}
+
 	// 矿石
 	let oreBlockResourceLang = []
 	for (let i = 0; i < oreBlockResourceLang.length; i++) {
@@ -113,7 +121,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	]
 	jeiInfoLang.forEach(([key, text]) => {
-		event.add(`jei.${key}`, `§b${text}`.replace(":", "."))
+		event.add(`jei.info.${key}`.replace(":", "."), `§b${text}`)
 	})
 
 	// 热量
@@ -121,7 +129,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	]
 	heatedTip.forEach(([key, text]) => {
-		event.add(`create.recipe.heat_requirement.${key}`, + text)
+		event.add(`create.recipe.heat_requirement.${key}`, text)
 	})
 
 	// 其它
