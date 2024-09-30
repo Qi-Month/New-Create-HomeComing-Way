@@ -1,0 +1,1085 @@
+[
+	{
+		"name": "Connector-1.0.0-beta.45+1.20.1"
+	},
+	{
+		"authors": [
+			"Snownee"
+		],
+		"name": "Jade",
+		"version": "11.11.1+forge\r"
+	},
+	{
+		"authors": [
+			"SrRapero720"
+		],
+		"name": "Embeddium++",
+		"version": "1.2.12"
+	},
+	{
+		"name": "Create Sifter",
+		"version": "1.20.1-1.8.1.e-22\r"
+	},
+	{
+		"authors": [
+			"MRH0"
+		],
+		"name": "Create Crafts & Additions",
+		"version": "1.20.1-1.2.3\r"
+	},
+	{
+		"authors": [
+			"Luck"
+		],
+		"name": "spark",
+		"version": "1.10.53"
+	},
+	{
+		"authors": [
+			"LatvianModder"
+		],
+		"name": "KubeJS",
+		"version": "2001.6.5-build.14"
+	},
+	{
+		"authors": [
+			"BlayTheNinth"
+		],
+		"name": "CraftingTweaks",
+		"version": "18.2.5"
+	},
+	{
+		"authors": [
+			"Tapio"
+		],
+		"name": "0Pack2Reload",
+		"version": "1.0.0\r"
+	},
+	{
+		"authors": [
+			"KilaBash, WarmthDawn"
+		],
+		"name": "LowDragLib",
+		"version": "1.0.28"
+	},
+	{
+		"authors": [
+			"simibubi"
+		],
+		"name": "Create",
+		"version": "0.5.1.f\r"
+	},
+	{
+		"authors": [
+			"Tslat"
+		],
+		"name": "TES",
+		"version": "1.5.1"
+	},
+	{
+		"authors": [
+			"ThatGravyBoat, Epic_Oreo"
+		],
+		"name": "Resourceful Lib",
+		"version": "2.1.29"
+	},
+	{
+		"authors": [
+			"Negodya1"
+		],
+		"name": "Create: Vintage Improvements",
+		"version": "1.20.1-0.2.0.3"
+	},
+	{
+		"authors": [
+			"Towdium, MorningSage, 6LeoY"
+		],
+		"name": "Just Enough Calculation",
+		"version": "4.0.4"
+	},
+	{
+		"authors": [
+			"Prunoideae"
+		],
+		"name": "ProbeJS",
+		"version": "6.0.1"
+	},
+	{
+		"authors": [
+			"Jaredlll08"
+		],
+		"name": "Searchables",
+		"version": "1.0.3\r"
+	},
+	{
+		"authors": [
+			"Keksuccino"
+		],
+		"name": "Drippy Loading Screen",
+		"version": "3.0.1"
+	},
+	{
+		"authors": [
+			"shedaniel"
+		],
+		"name": "Architectury",
+		"version": "9.2.14"
+	},
+	{
+		"authors": [
+			"paulevs (code and art)",
+			"y3z0n (music and sounds)",
+			"Firel (Music)",
+			"Erzekawek (port dev)",
+			"ChristopherJ123 (port dev)",
+			"OpenBagTwo (port dev)"
+		],
+		"name": "Eden Ring Reforked",
+		"version": "20.1.20"
+	},
+	{
+		"authors": [
+			"shedaniel"
+		],
+		"name": "Cloth Config v10 API",
+		"version": "11.1.118"
+	},
+	{
+		"authors": [
+			"GSSD_HanDan"
+		],
+		"name": "CCPACRCompact",
+		"version": "1.20.1-forge-0.0.1"
+	},
+	{
+		"name": "Create Mechanical Extruder",
+		"version": "1.20.1-1.5.7.e-22\r"
+	},
+	{
+		"authors": [
+			"MrCrayfish"
+		],
+		"name": "Configured",
+		"version": "2.2.3"
+	},
+	{
+		"authors": [
+			"P3pp3rF1y"
+		],
+		"name": "Sophisticated Core",
+		"version": "0.6.25.632"
+	},
+	{
+		"authors": [
+			"Qi Month"
+		],
+		"name": "No Tree To Destory",
+		"version": "1.0.0"
+	},
+	{
+		"authors": [
+			"latvian.dev, Mozilla"
+		],
+		"name": "Rhino",
+		"version": "2001.2.3-build.6"
+	},
+	{
+		"authors": [
+			"skyecodes"
+		],
+		"name": "IBE Editor",
+		"version": "2.2.8"
+	},
+	{
+		"authors": [
+			"LatvianModder"
+		],
+		"name": "Item Filters",
+		"version": "2001.1.0-build.59"
+	},
+	{
+		"authors": [
+			"Keksuccino"
+		],
+		"name": "Melody",
+		"version": "1.0.2"
+	},
+	{
+		"authors": [
+			"rubensworks (aka kroeser)"
+		],
+		"name": "Flopper",
+		"version": "1.1.5\r"
+	},
+	{
+		"authors": [
+			"Cazsius, Talonos, juliand665"
+		],
+		"name": "Spice of Life: Carrot Edition",
+		"version": "1.15.1"
+	},
+	{
+		"authors": [
+			"King Lemming, Zeldo Kavira, covers1624, skyboy, Cynycal, Drullkus"
+		],
+		"name": "CoFH Core",
+		"version": "11.0.2"
+	},
+	{
+		"authors": [
+			"Almost Reliable"
+		],
+		"name": "AlmostUnified",
+		"version": "1.20.1-0.9.4"
+	},
+	{
+		"authors": [
+			"Ivan Molodetskikh (YaLTeR)"
+		],
+		"name": "Mouse Tweaks",
+		"version": "2.25.1\r"
+	},
+	{
+		"authors": [
+			"Someaddons"
+		],
+		"name": "Connectivity Mod",
+		"version": "1.20.1-5.6\r"
+	},
+	{
+		"authors": [
+			"Sunekaer"
+		],
+		"name": "Yeetus Experimentus",
+		"version": "2.3.1-build.6+mc1.20.1"
+	},
+	{
+		"authors": [
+			"hammertater"
+		],
+		"name": "HT's TreeChop",
+		"version": "0.19.0"
+	},
+	{
+		"authors": [
+			"bre2el"
+		],
+		"name": "Untranslated Items",
+		"version": "1.20.1-1.7"
+	},
+	{
+		"authors": [
+			"Buuz135, Rid"
+		],
+		"name": "Functional Storage",
+		"version": "1.20.1-1.2.10\r"
+	},
+	{
+		"authors": [
+			"Luke100000"
+		],
+		"name": "Immersive Paintings",
+		"version": "0.6.7+1.20.1"
+	},
+	{
+		"authors": [
+			"TonimatasDEV"
+		],
+		"name": "Packet Fixer",
+		"version": "1.4.2"
+	},
+	{
+		"authors": [
+			"AlmostReliable"
+		],
+		"name": "LootJS",
+		"version": "1.20.1-2.12.0"
+	},
+	{
+		"authors": [
+			"Luke100000"
+		],
+		"name": "Immersive Aircraft",
+		"version": "1.0.1+1.20.1"
+	},
+	{
+		"authors": [
+			"P3pp3rF1y, Ridanisaurus"
+		],
+		"name": "Sophisticated Storage",
+		"version": "0.10.26.817"
+	},
+	{
+		"authors": [
+			"Snownee"
+		],
+		"name": "Lychee Tweaker",
+		"version": "5.1.14\r"
+	},
+	{
+		"authors": [
+			"Love, Cheese and small house plants"
+		],
+		"name": "Masterful Machinery",
+		"version": "3-1.20.1-0.1.13\r"
+	},
+	{
+		"authors": [
+			"Su5eD"
+		],
+		"name": "Lazurite",
+		"version": "1.0.4+mc1.20.1\r"
+	},
+	{
+		"name": "InitialDimension",
+		"version": "1.20.1-0.0.2"
+	},
+	{
+		"authors": [
+			"tr7zw"
+		],
+		"name": "EntityCulling",
+		"version": "1.7.0"
+	},
+	{
+		"authors": [
+			"FabricMC"
+		],
+		"name": "Fabric API",
+		"version": "0.92.2+1.20.1"
+	},
+	{
+		"authors": [
+			"P3pp3rF1y, Ridanisaurus"
+		],
+		"name": "Sophisticated Backpacks",
+		"version": "3.20.6.1064"
+	},
+	{
+		"authors": [
+			"Illusive Soulworks"
+		],
+		"name": "Polymorph",
+		"version": "0.49.5+1.20.1"
+	},
+	{
+		"authors": [
+			"CCr4ft3r (this port), isXander (original fabric version)"
+		],
+		"name": "Cull Less Leaves Reforged",
+		"version": "1.20.1-1.0.5\r"
+	},
+	{
+		"name": ".connector"
+	},
+	{
+		"authors": [
+			"Alexander01998"
+		],
+		"name": "WI Zoom",
+		"version": "1.5-MC1.20.1-Forge"
+	},
+	{
+		"authors": [
+			"Luc_Creeper74"
+		],
+		"name": "Create Metallurgy",
+		"version": "0.0.5-1.20.1\r"
+	},
+	{
+		"authors": [
+			"Darkhax"
+		],
+		"name": "AttributeFix",
+		"version": "21.0.4"
+	},
+	{
+		"authors": [
+			"Shadows_of_Fire"
+		],
+		"name": "Placebo",
+		"version": "8.6.2"
+	},
+	{
+		"authors": [
+			"LatvianModder"
+		],
+		"name": "KubeJS Thermal",
+		"version": "2001.1.10-build.2"
+	},
+	{
+		"authors": [
+			"kyrptonaught, Waterpicker, Mysticpasta1"
+		],
+		"name": "Custom Portal Api [Forge]",
+		"version": "0.0.1-beta1-1.20"
+	},
+	{
+		"authors": [
+			"Takkkom"
+		],
+		"name": "Create Tab Fix",
+		"version": "1.0.0+forge-1.20.1"
+	},
+	{
+		"authors": [
+			"ChaosTheDude"
+		],
+		"name": "Explorer's Compass",
+		"version": "1.20.1-1.3.3-forge"
+	},
+	{
+		"authors": [
+			"Traben"
+		],
+		"name": "Entity Texture Features",
+		"version": "6.2.3"
+	},
+	{
+		"authors": [
+			"Alex Nijjar"
+		],
+		"name": "Ad Astra",
+		"version": "1.15.18"
+	},
+	{
+		"authors": [
+			"vectorwing"
+		],
+		"name": "Farmer's Delight",
+		"version": "1.20.1-1.2.4"
+	},
+	{
+		"authors": [
+			"Hurricaaane, Sollace, Paint_Ninja"
+		],
+		"name": "Presence Footsteps (Forge)",
+		"version": "1.20.1-1.9.1-beta.1"
+	},
+	{
+		"authors": [
+			"MrCrayfish"
+		],
+		"name": "Catalogue",
+		"version": "1.8.0"
+	},
+	{
+		"authors": [
+			"CreeperHost"
+		],
+		"name": "FTB Backups 2",
+		"version": "1.0.23"
+	},
+	{
+		"authors": [
+			"Illusive Soulworks"
+		],
+		"name": "Cherished Worlds",
+		"version": "6.1.6+1.20.1"
+	},
+	{
+		"authors": [
+			"tuxed"
+		],
+		"name": "LazyDFU",
+		"version": "0.1.3"
+	},
+	{
+		"authors": [
+			"guy_c, MCreator"
+		],
+		"name": "Create : The Salt",
+		"version": "1.0.0"
+	},
+	{
+		"authors": [
+			"Shadows_of_Fire"
+		],
+		"name": "Fast Suite",
+		"version": "5.0.1"
+	},
+	{
+		"authors": [
+			"Aidancbrady, Thommy101, Thiakil, pupnewfster, dizzyd"
+		],
+		"name": "Mekanism",
+		"version": "10.4.9"
+	},
+	{
+		"authors": [
+			"Darkhax"
+		],
+		"name": "Tips",
+		"version": "12.1.8"
+	},
+	{
+		"authors": [
+			"Duquee_"
+		],
+		"name": "Create Utilities",
+		"version": "0.2.0+1.20.1\r"
+	},
+	{
+		"authors": [
+			"Quiqueck",
+			"paulevs",
+			"Bulldog83"
+		],
+		"name": "BCLib",
+		"version": "3.0.14"
+	},
+	{
+		"authors": [
+			"Someaddon"
+		],
+		"name": "betterchunkloading mod",
+		"version": "1.20.1-4.3\r"
+	},
+	{
+		"authors": [
+			"Keksuccino"
+		],
+		"name": "FancyMenu",
+		"version": "3.2.3"
+	},
+	{
+		"authors": [
+			"FTB Team"
+		],
+		"name": "FTB Teams",
+		"version": "2001.3.0"
+	},
+	{
+		"authors": [
+			"Someaddons"
+		],
+		"name": "Smoothchunk mod",
+		"version": "1.20.1-3.6\r"
+	},
+	{
+		"authors": [
+			"Shadows_of_Fire"
+		],
+		"name": "FastFurnace",
+		"version": "8.0.2"
+	},
+	{
+		"authors": [
+			"LatvianModder"
+		],
+		"name": "KubeJS Mekanism",
+		"version": "2001.1.5.1-build.2"
+	},
+	{
+		"authors": [
+			"brandon3055"
+		],
+		"name": "Custom Starter Gear",
+		"version": "2.0.3"
+	},
+	{
+		"authors": [
+			"Quintinity"
+		],
+		"name": "Better Ping Display",
+		"version": "1.1"
+	},
+	{
+		"authors": [
+			"rubensworks (aka kroeser)"
+		],
+		"name": "Cyclops Core",
+		"version": "1.19.5\r"
+	},
+	{
+		"authors": [
+			"FabricMC, Sinytra"
+		],
+		"name": "Forgified Fabric API",
+		"version": "0.92.2+1.11.8+1.20.1\r"
+	},
+	{
+		"authors": [
+			"gigaherz"
+		],
+		"name": "Json Things",
+		"version": "0.9.2\r"
+	},
+	{
+		"authors": [
+			"Flaxbeard and Maintained by TwistedGate. Updated to this version by ArcAnc"
+		],
+		"name": "Immersive Petroleum",
+		"version": "4.2.0-30\r"
+	},
+	{
+		"authors": [
+			"FTB Team"
+		],
+		"name": "FTB XMod Compat",
+		"version": "2.1.1"
+	},
+	{
+		"authors": [
+			"juliand665 & LostLuma"
+		],
+		"name": "Dynamic FPS",
+		"version": "3.6.3"
+	},
+	{
+		"authors": [
+			"iChun"
+		],
+		"name": "Ding",
+		"version": "1.4.1\r"
+	},
+	{
+		"name": "CreateHeatJS",
+		"version": "1.20.1-0.0.3"
+	},
+	{
+		"authors": [
+			"King Lemming"
+		],
+		"name": "Thermal Expansion",
+		"version": "11.0.1"
+	},
+	{
+		"authors": [
+			"Towdium, yzl210, Death-123, vfyjxf_"
+		],
+		"name": "Just Enough Characters",
+		"version": "4.5.11"
+	},
+	{
+		"authors": [
+			"Tschipp, Purplicious_Cow, cy4n"
+		],
+		"name": "Carry On",
+		"version": "2.1.2.7\r"
+	},
+	{
+		"authors": [
+			"lcy0x1 and SieboldiiHatate"
+		],
+		"name": "Youkai's Homecoming",
+		"version": "2.2.11\r"
+	},
+	{
+		"authors": [
+			"xaero96"
+		],
+		"name": "Xaero's World Map",
+		"version": "1.39.0"
+	},
+	{
+		"authors": [
+			"CodexAdrian"
+		],
+		"name": "Botarium",
+		"version": "2.3.4"
+	},
+	{
+		"authors": [
+			"kamień-bot AKA George VI AKA Jesz"
+		],
+		"name": "Create Diesel Generators",
+		"version": "1.20.1-1.2h"
+	},
+	{
+		"authors": [
+			"kotakotik22, AlmostReliable"
+		],
+		"name": "PonderJS",
+		"version": "1.4.0"
+	},
+	{
+		"authors": [
+			"Qi Month"
+		],
+		"name": "New Create",
+		"version": "1.0.2"
+	},
+	{
+		"authors": [
+			"squeek"
+		],
+		"name": "AppleSkin",
+		"version": "2.5.1+mc1.20.1\r"
+	},
+	{
+		"authors": [
+			"Antarctic Gardens"
+		],
+		"name": "Create: New Age",
+		"version": "1.1.2"
+	},
+	{
+		"authors": [
+			"FTB Team"
+		],
+		"name": "FTB Quests",
+		"version": "2001.4.8"
+	},
+	{
+		"authors": [
+			"Someaddon"
+		],
+		"name": "betterfpsdist mod",
+		"version": "1.20.1-4.4\r"
+	},
+	{
+		"authors": [
+			"Someaddon"
+		],
+		"name": "Gpu memory leak fix",
+		"version": "1.20.1-1.8\r"
+	},
+	{
+		"authors": [
+			"ChaosTheDude"
+		],
+		"name": "Nature's Compass",
+		"version": "1.20.1-1.11.2-forge"
+	},
+	{
+		"authors": [
+			"ILIKEPIEFOO2"
+		],
+		"name": "KubeJS Addditions (Forge)",
+		"version": "4.3.2"
+	},
+	{
+		"authors": [
+			"Rick South"
+		],
+		"name": "Collective",
+		"version": "7.84"
+	},
+	{
+		"authors": [
+			"tom5454"
+		],
+		"name": "Tom's Simple Storage Mod",
+		"version": "1.6.8\r"
+	},
+	{
+		"authors": [
+			"Yuitakaa(Maintainer), StanleyMines(Contributor), Landmaster (Original Author)"
+		],
+		"name": "Inventory Tweaks Refoxed",
+		"version": "1.1.0\r"
+	},
+	{
+		"authors": [
+			"King Lemming"
+		],
+		"name": "Thermal Foundation",
+		"version": "11.0.6"
+	},
+	{
+		"authors": [
+			"thevortex, whatthedrunk"
+		],
+		"name": "AllTheOres",
+		"version": "2.2.4"
+	},
+	{
+		"authors": [
+			"embeddedt"
+		],
+		"name": "ModernFix",
+		"version": "5.19.4+mc1.20.1"
+	},
+	{
+		"authors": [
+			"Olafski"
+		],
+		"name": "Fast Leaf Decay",
+		"version": "32"
+	},
+	{
+		"authors": [
+			"Prunoideae"
+		],
+		"name": "PowerfulJS",
+		"version": "1.6.1"
+	},
+	{
+		"authors": [
+			"C4"
+		],
+		"name": "Caelus API",
+		"version": "3.2.0+1.20.1"
+	},
+	{
+		"authors": [
+			"Max Henkel"
+		],
+		"name": "Pipez",
+		"version": "1.20.1-1.2.5"
+	},
+	{
+		"authors": [
+			"Darkhax"
+		],
+		"name": "Bookshelf",
+		"version": "20.2.13"
+	},
+	{
+		"authors": [
+			"C4"
+		],
+		"name": "Curios API",
+		"version": "5.10.0+1.20.1\r"
+	},
+	{
+		"authors": [
+			"FTB Team"
+		],
+		"name": "FTB Library",
+		"version": "2001.2.4"
+	},
+	{
+		"authors": [
+			"tterrag, Drullkus, minecreatr"
+		],
+		"name": "ConnectedTexturesMod",
+		"version": "1.20.1-1.1.8+6\r"
+	},
+	{
+		"name": "Resourcefulconfig",
+		"version": "2.1.2"
+	},
+	{
+		"name": "CTM_DEV-1.20.1-1.1.8-6-api"
+	},
+	{
+		"authors": [
+			"PepperCode1"
+		],
+		"name": "Continuity",
+		"version": "3.0.0-beta.5+1.20.1"
+	},
+	{
+		"authors": [
+			"Snownee"
+		],
+		"name": "Jade Addons",
+		"version": "5.2.2\r"
+	},
+	{
+		"authors": [
+			"ochotonida"
+		],
+		"name": "Artifacts",
+		"version": "9.5.13"
+	},
+	{
+		"authors": [
+			"BluSunrize and Damien A.W. Hazard"
+		],
+		"name": "Immersive Engineering",
+		"version": "1.20.1-10.1.0-171"
+	},
+	{
+		"authors": [
+			"malte0811"
+		],
+		"name": "Ferrite Core",
+		"version": "6.0.1\r"
+	},
+	{
+		"authors": [
+			"Jaredlll08"
+		],
+		"name": "Controlling",
+		"version": "12.0.2\r"
+	},
+	{
+		"authors": [
+			"mezz"
+		],
+		"name": "Just Enough Items",
+		"version": "15.18.0.79"
+	},
+	{
+		"authors": [
+			"[TeamMoeg] YueSha, khjxiaogu, goumo_g"
+		],
+		"name": "Create: Steam Powered",
+		"version": "1.20.1-3.0.1\r"
+	},
+	{
+		"authors": [
+			"Aidancbrady, Thommy101, Thiakil, pupnewfster, dizzyd"
+		],
+		"name": "Mekanism: Generators",
+		"version": "10.4.9"
+	},
+	{
+		"authors": [
+			"Shadows_of_Fire"
+		],
+		"name": "Fast Workbench",
+		"version": "8.0.4"
+	},
+	{
+		"authors": [
+			"CreeperHost"
+		],
+		"name": "PolyLib",
+		"version": "2000.0.3-build.143"
+	},
+	{
+		"authors": [
+			"dima_dencep, FlashyReese"
+		],
+		"name": "Embeddium Extra",
+		"version": "0.5.4.1+mc1.20.1-build.117"
+	},
+	{
+		"authors": [
+			"tom5454"
+		],
+		"name": "Create Ore Excavation",
+		"version": "1.4.2\r"
+	},
+	{
+		"authors": [
+			"TheCodedOne, Buuz135"
+		],
+		"name": "Titanium",
+		"version": "3.8.32\r"
+	},
+	{
+		"authors": [
+			"Negodya1"
+		],
+		"name": "Vintage KubeJS",
+		"version": "1.20.1-1.0.0rc-2"
+	},
+	{
+		"authors": [
+			"LatvianModder"
+		],
+		"name": "KubeJS Create",
+		"version": "2001.2.5-build.2"
+	},
+	{
+		"authors": [
+			"Someaddon"
+		],
+		"name": "Cupboard utilities",
+		"version": "1.20.1-2.7\r"
+	},
+	{
+		"authors": [
+			"Snownee"
+		],
+		"name": "Lava Clear View",
+		"version": "7.0.0\r"
+	},
+	{
+		"authors": [
+			"xaero96"
+		],
+		"name": "Xaero's Minimap",
+		"version": "24.4.0"
+	},
+	{
+		"authors": [
+			"LeoBeliik"
+		],
+		"name": "Extreme Sound Muffler",
+		"version": "3.48"
+	},
+	{
+		"authors": [
+			"embeddedt"
+		],
+		"name": "Embeddium",
+		"version": "0.3.19+mc1.20.1"
+	},
+	{
+		"authors": [
+			"FTB Team"
+		],
+		"name": "FTB Essentials",
+		"version": "2001.2.2"
+	},
+	{
+		"authors": [
+			"TeamAppliedEnergistics"
+		],
+		"name": "Applied Energistics 2",
+		"version": "15.2.13"
+	},
+	{
+		"authors": [
+			"Frinn"
+		],
+		"name": "Custom Machinery",
+		"version": "0.10.5"
+	},
+	{
+		"authors": [
+			"way2muchnoise"
+		],
+		"name": "Just Enough Resources",
+		"version": "1.4.0.247"
+	},
+	{
+		"authors": [
+			"Jaredlll08"
+		],
+		"name": "Clumps",
+		"version": "12.0.0.4\r"
+	},
+	{
+		"authors": [
+			"BlayTheNinth"
+		],
+		"name": "Balm",
+		"version": "7.3.9"
+	},
+	{
+		"authors": [
+			"Keksuccino"
+		],
+		"name": "Konkrete",
+		"version": "1.8.0"
+	},
+	{
+		"authors": [
+			"SnowShock35"
+		],
+		"name": "JEI Integration",
+		"version": "10.0.0\r"
+	},
+	{
+		"name": "Chisel Reborn",
+		"version": "1.8.0"
+	},
+	{
+		"authors": [
+			"dzwdz, Fourmisain"
+		],
+		"name": "Chat Heads",
+		"version": "0.12.13"
+	},
+	{
+		"authors": [
+			"KilaBash"
+		],
+		"name": "Multiblocked2",
+		"version": "1.0.0"
+	},
+	{
+		"authors": [
+			"SamB440"
+		],
+		"name": "Huge Structure Blocks",
+		"version": "1.0.9"
+	}
+]
