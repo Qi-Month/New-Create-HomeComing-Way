@@ -17,7 +17,7 @@
 
 	[machine.flopper]
 		#The maximum capacity in mB.
-		capacityMb = 5000
+		capacityMb = 1000
 		#If fluids should be pushed into the world.
 		pushFluidsWorld = true
 		#If sounds should be placed when placing or picking up fluids to/from the world.

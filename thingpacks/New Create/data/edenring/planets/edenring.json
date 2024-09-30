@@ -1,7 +1,7 @@
 {
 	"dimension": "edenring:edenring",
 	"solar_system": "ad_astra:solar_system",
-	"gravity": 5,
+	"gravity": 9.807,
 	"oxygen": true,
 	"solar_power": 24,
 	"temperature": 50,

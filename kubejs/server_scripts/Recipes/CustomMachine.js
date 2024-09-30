@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 		.produceEnergy(500)
 
 	// 简易造石机
-	custommachinery.custom_machine("new_create:easy_rock_gen", 300)
+	custommachinery.custom_machine("new_create:easy_rock_gen", 60)
 		.produceItem("minecraft:cobblestone")
 		.requireStructure([
 			[

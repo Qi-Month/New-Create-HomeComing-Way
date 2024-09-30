@@ -1,0 +1,3 @@
+langPath = "kubejs/assets/ponder/lang/%lang%.json"
+lang = "zh_cn"
+autoGenerateLang = true

@@ -1,6 +1,8 @@
 Ponder.registry((event) => {
 	event.create("new_create:easy_rock_gen")
 		.scene("new_create:easy_rock_gen", "简易造石机", (scene) => {
+			let glass = "create:framed_glass"
+
 			scene.addKeyframe()
 			scene.showBasePlate()
 			scene.idle(20)
@@ -15,12 +17,12 @@ Ponder.registry((event) => {
 			scene.idle(45)
 
 			scene.addKeyframe()
-			scene.world.setBlocks([3, 1, 1], "create:framed_glass")
-			scene.world.setBlocks([4, 1, 2], "create:framed_glass")
-			scene.world.setBlocks([3, 1, 3], "create:framed_glass")
-			scene.world.setBlocks([1, 1, 3], "create:framed_glass")
-			scene.world.setBlocks([0, 1, 2], "create:framed_glass")
-			scene.world.setBlocks([1, 1, 1], "create:framed_glass")
+			scene.world.setBlocks([3, 1, 1], glass)
+			scene.world.setBlocks([4, 1, 2], glass)
+			scene.world.setBlocks([3, 1, 3], glass)
+			scene.world.setBlocks([1, 1, 3], glass)
+			scene.world.setBlocks([0, 1, 2], glass)
+			scene.world.setBlocks([1, 1, 1], glass)
 
 			scene.world.setBlocks([3, 1, 2], "minecraft:lava")
 			scene.world.setBlocks([1, 1, 2], "minecraft:water")
@@ -33,13 +35,14 @@ Ponder.registry((event) => {
 			scene.overlay.showOutline("blue", {}, [3, 1, 2], 40)
 			scene.overlay.showOutline("red", {}, [1, 1, 2], 40)
 
-			scene.text(40, "只需要在两边分别放一桶熔岩和水即可进行工作, 速度为300 Tick(即15秒)一个")
+			scene.text(40, "只需要在两边分别放一桶熔岩和水即可进行工作, 速度为60Tick(即3秒)一个")
 			scene.idle(40)
 
 			scene.addKeyframe()
 			scene.world.setBlocks([2, 0, 0], "minecraft:air")
 			scene.world.setBlocks([2, 0, 1], "minecraft:barrel")
-			scene.world.modifyBlock([2, 0, 1], (state) => state.with("facing", "up"), false)
+			scene.world.modifyBlock([2, 0, 1],
+				(state) => state.with("facing", "up"), false)
 
 			scene.overlay.showOutline("red", {}, [2, 0, 1], 40)
 			scene.text(40, "随后用漏斗或管道接上容器方块就可以等待收货了", [2.2, 1.5, 1])

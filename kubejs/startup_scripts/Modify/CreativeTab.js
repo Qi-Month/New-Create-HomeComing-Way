@@ -1,6 +1,6 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setIcon("new_create:brain_electric_extractor")
-	event.setDisplayName(Text.translate("itemGroup.new_create.itemTab"))
+	event.setDisplayName(Text.translate("itemGroup.new_create.all"))
 })
 
 StartupEvents.modifyCreativeTab("flopper:default", (event) => {

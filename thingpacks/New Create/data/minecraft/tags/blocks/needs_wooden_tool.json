@@ -4,6 +4,8 @@
 		"edenring:brain_tree_block_iron",
 		"edenring:brain_tree_block_gold",
 		"new_create:easy_rock_gen",
-		"new_create:brain_electric_extractor"
+		"new_create:brain_electric_extractor",
+		"edenring:volvox_block",
+		"edenring:volvox_block_dense"
 	]
 }

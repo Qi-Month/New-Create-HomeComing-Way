@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		minecraft.stonecutting(Item.of(outputItem, 4), inputItem)
 	})
 
-	// Planks
+	// 木板
 	event.forEachRecipe({
 		type: "minecraft:crafting_shapeless",
 		output: "#minecraft:planks",

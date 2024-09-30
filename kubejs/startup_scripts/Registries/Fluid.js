@@ -10,4 +10,11 @@ StartupEvents.registry("fluid", (event) => {
 			.flowingTexture(otherFluidRegisters + "flowing")
 			.stillTexture(otherFluidRegisters + "still")
 	})
+	// 营养液
+	event.create(`${global.namespace}nutrient_solution`)
+		.thickTexture(0x90EE90)
+		.bucketColor(0x90EE90)
+		.flowingTexture(otherFluidRegisters + "flowing")
+		.stillTexture(otherFluidRegisters + "still")
+		.tag("forge:molten_materials")
 })

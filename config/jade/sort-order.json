@@ -10,6 +10,8 @@
   "ae2:pattern_provider": null,
   "ae2:power_storage": null,
   "ae2:server_data": null,
+  "avaritia:compressor": null,
+  "avaritia:extreme": null,
   "create:backtank_capacity": null,
   "create:blaze_burner": null,
   "create:contraption_inv": null,

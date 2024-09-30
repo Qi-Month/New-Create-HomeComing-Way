@@ -12,8 +12,17 @@ ClientEvents.lang("zh_cn", (event) => {
 		["7", "7元硬币"],
 		["8", "8元硬币"],
 		["9", "9元硬币"],
+		["10", "10元硬币"],
+		["20", "20元硬币"],
+		["50", "50元硬币"],
+		["100", "100元硬币"],
+		["500", "500元硬币"],
+		["1000", "1000元硬币"],
+		["5000", "5000元硬币"],
+		["10000", "10000元硬币"],
 		["rainbow_mooncoin", "彩虹月币"],
-		["initial_item_kit", "初始套件"]
+		["initial_item_kit", "初始套件"],
+		["volvox_ball", "藻球"]
 	]
 	for (let i = 0; i < itemResourceLang.length; i++) {
 		event.add(`item.${namespace}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
@@ -54,15 +63,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${namespace}.${casingResourceLang[i][0]}_casing`, casingResourceLang[i][1] + "机壳")
 	}
 
-	// 矿石
-	let oreBlockResourceLang = []
-	for (let i = 0; i < oreBlockResourceLang.length; i++) {
-		event.add(`block.${namespace}.${oreBlockResourceLang[i][0]}_ore`, oreBlockResourceLang[i][1] + "矿石")
-		event.add(`block.${namespace}.deepslate_${oreBlockResourceLang[i][0]}_ore`, "深层" + oreBlockResourceLang[i][1] + "矿石")
-	}
-
 	// 流体
 	let fluidResourceLang = [
+		["nutrient_solution", "营养液"]
 	]
 	for (let i = 0; i < fluidResourceLang.length; i++) {
 		event.add(`block.${namespace}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
@@ -81,14 +84,16 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	// 熔融金属
-	let moltenResourceLang = []
+	let moltenResourceLang = [
+		["titanium", "钛"]
+	]
 	for (let i = 0; i < moltenResourceLang.length; i++) {
 		// Item
 		event.add(`item.${namespace}.${moltenResourceLang[i][0]}_ingot`, moltenResourceLang[i][1] + "锭")
 		event.add(`item.${namespace}.${moltenResourceLang[i][0]}_sheet`, moltenResourceLang[i][1] + "板")
-		event.add(`item.${namespace}.raw_${moltenResourceLang[i][0]}`, "粗" + moltenResourceLang[i][1] + "矿")
+		event.add(`item.${namespace}.raw_${moltenResourceLang[i][0]}`, "粗" + moltenResourceLang[i][1])
 
-		// Blocl
+		// Block
 		event.add(`block.${namespace}.${moltenResourceLang[i][0]}_block`, moltenResourceLang[i][1] + "块")
 		event.add(`block.${namespace}.${moltenResourceLang[i][0]}_ore`, moltenResourceLang[i][1] + "矿")
 		event.add(`block.${namespace}.deepslate_${moltenResourceLang[i][0]}_ore`, "深层" + moltenResourceLang[i][1] + "矿")
@@ -101,8 +106,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 其它
 	let otherLang = [
-		["itemGroup.new_create.itemTab", "New Create: HomeComing Way"],
-		["itemGroup.new_create.toolTab", "New Create: HomeComing Way - Tool"]
+		["itemGroup.new_create.all", "New Create: HomeComing Way"],
+		["itemGroup.new_create.tool", "New Create: HomeComing Way - Tool"],
+		["itemGroup.new_create.money", "New Create: HomeComing Way - Money"],
+		["itemGroup.new_create.metal", "New Create: HomeComing Way - metal"]
 	]
 	otherLang.forEach(([key, text]) => {
 		event.add(key, text)
@@ -110,7 +117,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// Tooltip
 	let toolTipLang = [
-		["new_create:easy_rock_gen", "如果发现不起效果尝试将熔岩和水的位置互换一下"]
+		["new_create:easy_rock_gen", "如果发现不起效果尝试将熔岩和水的位置互换一下"],
+		["new_create:initial_item_kit", "潜行加右键使用"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${text}`)
@@ -137,7 +145,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		["message.new_create.player.welcome", "§b欢迎来到New Create: HomeComing Way!\n§b如果有什么BUG还请前往GitHub提交Issues"],
 		["message.new_create.debug.getItemId", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来, %s\nTag下的id以打印至logs/kubejs/server.log下"],
 		["message.new_create.debug.getHardness", "这个方块的硬度是: %s"],
-		["planets.edenring.edenring", "伊甸星环"]
+		["planets.edenring.edenring", "伊甸星环"],
+		["custom.youkaishomecoming.red_velvet_cake_slice", "被幽幽子偷吃掉两块红丝绒蛋糕的剩余部分"],
+		["custom.youkaishomecoming.onigili", "速冻饭团"],
+		["custom.naturescompass.naturescompass", "请前往菌菇森林或远古菌菇森林"]
 	]
 	otherTipLang.forEach(([key, text]) => {
 		event.add(key, text)

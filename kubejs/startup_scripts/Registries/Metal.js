@@ -1,9 +1,15 @@
 let moltenRegisters = [
+	// 钛
+	["titanium", 0xD3D3D3, "iron"]
+]
+
+let temp = [
 	
 ]
 moltenRegisters.forEach(([name, color, level]) => {
 	StartupEvents.registry("item", (event) => {
 		// 锭
+		temp.push(`${global.namespace + name}_ingot`)
 		event.create(`${global.namespace + name}_ingot`)
 			.texture(`${global.namespace}item/metal/ingot`)
 			.color(color)
@@ -11,6 +17,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tag(`forge:ingots/${name}`)
 
 		// 板
+		temp.push(`${global.namespace + name}_sheet`)
 		event.create(`${global.namespace + name}_sheet`)
 			.texture(`${global.namespace}item/metal/sheet`)
 			.color(color)
@@ -18,6 +25,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tag(`forge:plates/${name}`)
 
 		// 矿
+		temp.push(`${global.namespace}raw_${name}`)
 		event.create(`${global.namespace}raw_${name}`)
 			.texture(`${global.namespace}item/metal/raw_ore`)
 			.color(color)
@@ -39,8 +47,8 @@ moltenRegisters.forEach(([name, color, level]) => {
 		}
 
 		// 浅层
+		temp.push(`${global.namespace + name}_ore`)
 		event.create(`${global.namespace + name}_ore`)
-			.textureAll(`${global.namespace}block/metal/ore/${name}_ore`)
 			.model(`${global.namespace}block/ore/ore`)
 			.color(0, color)
 			.renderType("cutout")
@@ -58,8 +66,8 @@ moltenRegisters.forEach(([name, color, level]) => {
 			})
 
 		// 深层
+		temp.push(`${global.namespace}deepslate_${name}_ore`)
 		event.create(`${global.namespace}deepslate_${name}_ore`)
-			.textureAll(`${global.namespace}block/metal/ore/deepslate_${name}_ore`)
 			.model(`${global.namespace}block/ore/deepslate_ore`)
 			.color(0, color)
 			.renderType("cutout")
@@ -77,6 +85,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 			})
 
 		// 块
+		temp.push(`${global.namespace + name}_block`)
 		event.create(`${global.namespace + name}_block`)
 			.textureAll(`${global.namespace}block/metal/block`)
 			.soundType(SoundType.METAL)
@@ -97,6 +106,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 		const PATH = "block/fluid/"
 
 		// 熔融金属
+		temp.push(`${global.namespace}molten_${name}_bucket`)
 		event.create(`${global.namespace}molten_${name}`)
 			.thinTexture(color)
 			.bucketColor(color)
@@ -105,4 +115,10 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tag(`forge:molten_${name}`)
 			.tag("forge:molten_materials")
 	})
+})
+StartupEvents.registry("creative_mode_tab", (event) => {
+	event.create(`${global.namespace}metal`, "basic")
+		.icon(() => Item.of("new_create:titanium_ingot"))
+		.content(() => temp)
+		.displayName(Text.translate("itemGroup.new_create.metal"))
 })
