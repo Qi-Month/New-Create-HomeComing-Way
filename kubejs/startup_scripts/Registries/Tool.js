@@ -1,5 +1,6 @@
 StartupEvents.registry("item", (event) => {
 	// id, 颜色, [剑, 镐, 斧, 锹, 锄], 耐久, 速度, 等级
+	
 	let toolRegisters = [
 		// 气球菇
 		["balloon_mushroom", 0xFF69B4, [1, 0, 4, -1, 0], 64, 2, 0]

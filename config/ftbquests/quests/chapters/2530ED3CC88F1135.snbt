@@ -2,37 +2,18 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2530ED3CC88F1135"
-	group: ""
+	group: "11AD432A9027BB39"
 	icon: "new_create:rainbow_mooncoin"
 	id: "2530ED3CC88F1135"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7E9AD9B222497551"]
-			disable_toast: true
-			id: "1C11747A8AF02474"
-			rewards: [{
-				id: "0BEFA2B51DD2FC62"
-				item: "new_create:1"
-				type: "item"
-			}]
-			shape: "circle"
-			tasks: [{
-				count: 10L
-				id: "1102CC83E4536FCF"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			title: "是原石"
-			x: -5.0d
-			y: 1.5d
-		}
-		{
 			dependencies: ["190BADAD2F082C57"]
 			hide: true
 			hide_dependent_lines: true
 			id: "7E9AD9B222497551"
+			subtitle: "上面是买 下面是卖出"
 			tasks: [{
 				id: "2CFA72154613AB33"
 				title: "创业资金"
@@ -41,6 +22,65 @@
 			title: "本地贸易"
 			x: -5.0d
 			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7E9AD9B222497551"]
+			disable_toast: true
+			id: "3883E451BD22EA5B"
+			rewards: [{
+				id: "396A5A827F3C4F4A"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "7F3F97A655885F01"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7E9AD9B222497551"]
+			id: "5A31099EA47B49E9"
+			rewards: [{
+				count: 60
+				id: "000D4D28E9A87CCE"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7E3D0E30230901C4"
+				item: "edenring:gravilite_block"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7E9AD9B222497551"]
+			disable_toast: true
+			id: "4B5B78E0018920C8"
+			rewards: [{
+				id: "2F3BFBA3B7E8B63E"
+				item: "new_create:10"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 160L
+				id: "74A094BECDA00F81"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
 		}
 	]
 	title: "本地商店"

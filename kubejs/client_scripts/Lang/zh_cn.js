@@ -1,7 +1,7 @@
 ClientEvents.lang("zh_cn", (event) => {
 	let namespace = "new_create"
 	// 物品
-	let itemResourceLang = [
+	let itemLang = [
 		["0", "0元硬币"],
 		["1", "1元硬币"],
 		["2", "2元硬币"],
@@ -22,86 +22,100 @@ ClientEvents.lang("zh_cn", (event) => {
 		["10000", "10000元硬币"],
 		["rainbow_mooncoin", "彩虹月币"],
 		["initial_item_kit", "初始套件"],
-		["volvox_ball", "藻球"]
+		["volvox_ball", "藻球"],
+		["drying_volvox_ball", "干燥的藻球"],
+		["gravilite_ingot", "磨制重力水晶"]
 	]
-	for (let i = 0; i < itemResourceLang.length; i++) {
-		event.add(`item.${namespace}.${itemResourceLang[i][0]}`, itemResourceLang[i][1])
+	for (let i = 0; i < itemLang.length; i++) {
+		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
+	}
+
+	// 锭
+	let ingotLang = [
+	]
+	for (let i = 0; i < ingotLang.length; i++) {
+		event.add(`item.${namespace}.${ingotLang[i][0]}_ingot`, ingotLang[i][1] + "锭")
+	}
+
+	// 石头粉
+	let stoneDustLang = [
+		["stone", "石头"],
+		["deepslate", "深板岩"],
+		["tuff", "凝灰岩"],
+		["calcite", "方解石"],
+		["mixed_stone", "混合石头"]
+	]
+	for (let i = 0; i < stoneDustLang.length; i++) {
+		event.add(`item.${namespace}.${stoneDustLang[i][0]}_dust`, stoneDustLang[i][1] + "粉")
 	}
 
 	// 工具
-	let toolResourceLang = [
+	let toolLang = [
 		["balloon_mushroom", "气球菇"]
 	]
-	for (let i = 0; i < toolResourceLang.length; i++) {
-		event.add(`item.${namespace}.${toolResourceLang[i][0]}_sword`, `${toolResourceLang[i][1]}剑`)
-		event.add(`item.${namespace}.${toolResourceLang[i][0]}_pickaxe`, `${toolResourceLang[i][1]}镐`)
-		event.add(`item.${namespace}.${toolResourceLang[i][0]}_axe`, `${toolResourceLang[i][1]}斧`)
-		event.add(`item.${namespace}.${toolResourceLang[i][0]}_shovel`, `${toolResourceLang[i][1]}锹`)
-		event.add(`item.${namespace}.${toolResourceLang[i][0]}_hoe`, `${toolResourceLang[i][1]}锄`)
+	for (let i = 0; i < toolLang.length; i++) {
+		event.add(`item.${namespace}.${toolLang[i][0]}_sword`, `${toolLang[i][1]}剑`)
+		event.add(`item.${namespace}.${toolLang[i][0]}_pickaxe`, `${toolLang[i][1]}镐`)
+		event.add(`item.${namespace}.${toolLang[i][0]}_axe`, `${toolLang[i][1]}斧`)
+		event.add(`item.${namespace}.${toolLang[i][0]}_shovel`, `${toolLang[i][1]}锹`)
+		event.add(`item.${namespace}.${toolLang[i][0]}_hoe`, `${toolLang[i][1]}锄`)
 	}
 
 	// 半成品
-	let inItemResourceLang = [
+	let inItemLang = [
 	]
-	for (let i = 0; i < inItemResourceLang.length; i++) {
-		event.add(`item.${namespace}.incomplete_${inItemResourceLang[i][0]}`, inItemResourceLang[i][1])
-	}
+	for (let i = 0; i < inItemLang.length; i++) {
+		event.add(`item.${namespace}.incomplete_${inItemLang[i][0]}`, inItemLang[i][1])
+	} 
 
 	// 方块
-	let blockResourceLang = [
-		["soler_panel", "简易太阳能电池板"]
+	let blockLang = [
+		["soler_panel", "简易太阳能电池板"],
+		["steel_casing", "钢机壳"]
 	]
-	for (let i = 0; i < blockResourceLang.length; i++) {
-		event.add(`block.${namespace}.${blockResourceLang[i][0]}`, blockResourceLang[i][1])
-	}
-
-	// 机壳
-	let casingResourceLang = [
-		["steel", "钢"]
-	]
-	for (let i = 0; i < casingResourceLang.length; i++) {
-		event.add(`block.${namespace}.${casingResourceLang[i][0]}_casing`, casingResourceLang[i][1] + "机壳")
+	for (let i = 0; i < blockLang.length; i++) {
+		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
 	}
 
 	// 流体
-	let fluidResourceLang = [
+	let fluidLang = [
 		["nutrient_solution", "营养液"]
 	]
-	for (let i = 0; i < fluidResourceLang.length; i++) {
-		event.add(`block.${namespace}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
-		event.add(`fluid.${namespace}.${fluidResourceLang[i][0]}`, fluidResourceLang[i][1])
-		event.add(`item.${namespace}.${fluidResourceLang[i][0]}_bucket`, fluidResourceLang[i][1] + "桶")
+	for (let i = 0; i < fluidLang.length; i++) {
+		event.add(`block.${namespace}.${fluidLang[i][0]}`, fluidLang[i][1])
+		event.add(`fluid.${namespace}.${fluidLang[i][0]}`, fluidLang[i][1])
+		event.add(`item.${namespace}.${fluidLang[i][0]}_bucket`, fluidLang[i][1] + "桶")
 	}
 
 	// 机器
-	let machineResourceLang = [
+	let machineLang = [
 		["brain_electric_extractor", "脑电提取器(超级廉价版)"],
 		["easy_rock_gen", "简易造石机"]
 	]
-	for (let i = 0; i < machineResourceLang.length; i++) {
-		event.add(`block.${namespace}.${machineResourceLang[i][0]}`, machineResourceLang[i][1])
-		event.add(`machine.${namespace}.${machineResourceLang[i][0]}`, machineResourceLang[i][1])
+	for (let i = 0; i < machineLang.length; i++) {
+		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
+		event.add(`machine.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
 	}
 
 	// 熔融金属
-	let moltenResourceLang = [
+	let moltenLang = [
 		["titanium", "钛"]
 	]
-	for (let i = 0; i < moltenResourceLang.length; i++) {
+	for (let i = 0; i < moltenLang.length; i++) {
 		// Item
-		event.add(`item.${namespace}.${moltenResourceLang[i][0]}_ingot`, moltenResourceLang[i][1] + "锭")
-		event.add(`item.${namespace}.${moltenResourceLang[i][0]}_sheet`, moltenResourceLang[i][1] + "板")
-		event.add(`item.${namespace}.raw_${moltenResourceLang[i][0]}`, "粗" + moltenResourceLang[i][1])
+		event.add(`item.${namespace}.${moltenLang[i][0]}_ingot`, moltenLang[i][1] + "锭")
+		event.add(`item.${namespace}.${moltenLang[i][0]}_sheet`, moltenLang[i][1] + "板")
+		event.add(`item.${namespace}.raw_${moltenLang[i][0]}`, "粗" + moltenLang[i][1])
 
 		// Block
-		event.add(`block.${namespace}.${moltenResourceLang[i][0]}_block`, moltenResourceLang[i][1] + "块")
-		event.add(`block.${namespace}.${moltenResourceLang[i][0]}_ore`, moltenResourceLang[i][1] + "矿")
-		event.add(`block.${namespace}.deepslate_${moltenResourceLang[i][0]}_ore`, "深层" + moltenResourceLang[i][1] + "矿")
+		event.add(`block.${namespace}.${moltenLang[i][0]}_block`, moltenLang[i][1] + "块")
+		event.add(`block.${namespace}.${moltenLang[i][0]}_ore`, moltenLang[i][1] + "矿")
+		event.add(`block.${namespace}.deepslate_${moltenLang[i][0]}_ore`, "深层" + moltenLang[i][1] + "矿")
 
 		// Fluid
-		event.add(`block.${namespace}.molten_${moltenResourceLang[i][0]}`, "熔融" + moltenResourceLang[i][1])
-		event.add(`fluid.${namespace}.molten_${moltenResourceLang[i][0]}`, "熔融" + moltenResourceLang[i][1])
-		event.add(`item.${namespace}.molten_${moltenResourceLang[i][0]}_bucket`, "熔融" + moltenResourceLang[i][1] + "桶")
+		event.add(`block.${namespace}.molten_${moltenLang[i][0]}`, "熔融" + moltenLang[i][1])
+		event.add(`fluid.${namespace}.molten_${moltenLang[i][0]}`, "熔融" + moltenLang[i][1])
+		event.add(`item.${namespace}.molten_${moltenLang[i][0]}_bucket`, "熔融" + moltenLang[i][1] + "桶")
 	}
 
 	// 其它
@@ -118,7 +132,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	// Tooltip
 	let toolTipLang = [
 		["new_create:easy_rock_gen", "如果发现不起效果尝试将熔岩和水的位置互换一下"],
-		["new_create:initial_item_kit", "潜行加右键使用"]
+		["new_create:initial_item_kit", "潜行加右键使用"],
+		["new_create:drying_volvox_ball", "太干巴了没法吃啊"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${text}`)
@@ -134,7 +149,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 热量
 	let heatedTip = [
-
+		["frozen", "冰冻"]
 	]
 	heatedTip.forEach(([key, text]) => {
 		event.add(`create.recipe.heat_requirement.${key}`, text)

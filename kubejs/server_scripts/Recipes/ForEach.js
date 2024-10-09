@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, minecraft } = event.recipes
+	let { create, minecraft, kubejs } = event.recipes
 
 	// 玻璃板
 	event.forEachRecipe({
@@ -36,5 +36,20 @@ ServerEvents.recipes((event) => {
 		})
 
 		minecraft.stonecutting(Item.of(outputItem, 4), inputItem)
+	})
+
+	// 台阶木板
+	event.forEachRecipe({
+		type: "crafting_shaped",
+		output: "#minecraft:slabs"
+	}, (recipes) => {
+		let slab_id = recipes.getOriginalRecipeResult().getId()
+		let plank_id = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		kubejs.shaped(plank_id, [
+			"S",
+			"S"
+		], {
+			S: slab_id
+		})
 	})
 })

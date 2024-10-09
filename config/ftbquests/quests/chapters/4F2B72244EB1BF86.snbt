@@ -32,12 +32,12 @@
 			icon: "new_create:0"
 			id: "0F900518AD454B55"
 			rewards: [{
-				count: 5
-				id: "5F8C0D59E0B066AA"
-				item: "edenring:gravilite_block"
+				count: 10
+				id: "70D9F981B1E451A3"
+				item: "new_create:5"
 				type: "item"
 			}]
-			subtitle: "欢迎来到黑市 "
+			subtitle: "欢迎来到黑市  强制高利贷"
 			tasks: [{
 				id: "38811405D91E7212"
 				title: "强行高利贷"
@@ -64,7 +64,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1CA1E323F1F1947A"]
+			dependencies: ["49C3370B7DC77B33"]
 			id: "2AF0A3B84B243422"
 			tasks: [{
 				biome: "edenring:mycotic_forest"
@@ -73,11 +73,11 @@
 				type: "biome"
 			}]
 			title: "蘑菇森林？"
-			x: 2.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["1CA1E323F1F1947A"]
+			dependencies: ["49C3370B7DC77B33"]
 			id: "021F09956431BCE7"
 			tasks: [{
 				biome: "edenring:old_mycotic_forest"
@@ -86,7 +86,7 @@
 				type: "biome"
 			}]
 			title: "远古蘑菇森林？！"
-			x: 2.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -97,7 +97,7 @@
 			dependency_requirement: "one_completed"
 			id: "00A13F527F0F8C98"
 			tasks: [{
-				count: 16L
+				count: 4L
 				id: "5DE3281E2F2ECC06"
 				item: "edenring:balloon_mushroom_log"
 				type: "item"
@@ -133,25 +133,6 @@
 				}
 			]
 			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["76F0BC383EDE3BDA"]
-			id: "5BE8EF1EE1CCE39F"
-			subtitle: "WAAAAAAAAAAAAAAAAAAAAAAAAAGH!"
-			tasks: [{
-				id: "77E3DEC14BDA2F92"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:workbench"
-					}
-				}
-				title: "工作台"
-				type: "item"
-			}]
-			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -194,6 +175,58 @@
 			y: -2.0d
 		}
 		{
+			dependencies: [
+				"021F09956431BCE7"
+				"2AF0A3B84B243422"
+			]
+			dependency_requirement: "one_completed"
+			description: ["遇难的商人，一点谢礼"]
+			id: "190BADAD2F082C57"
+			rewards: [{
+				count: 50
+				id: "688D3E34663ED633"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B86B6D95BE20D36"
+				title: "你是？"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76F0BC383EDE3BDA"]
+			id: "5BE8EF1EE1CCE39F"
+			subtitle: "WAAAAAAAAAAAAAAAAAAAAAAAAAGH!"
+			tasks: [{
+				id: "77E3DEC14BDA2F92"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:workbench"
+					}
+				}
+				title: "工作台"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31BD51EA1236C4FC"]
+			id: "49C3370B7DC77B33"
+			tasks: [{
+				id: "6659DF406D527BAA"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
 			description: ["虽然不够持久 但是足够轻便"]
 			id: "3CA2DD6F5FA31E73"
@@ -208,8 +241,25 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.0d
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5BE8EF1EE1CCE39F"]
+			id: "4E0AFE68873677CC"
+			tasks: [{
+				id: "5D44FDB407FA03C3"
+				item: {
+					Count: 1
+					id: "new_create:balloon_mushroom_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
@@ -225,7 +275,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.5d
 			y: -1.0d
 		}
 		{
@@ -236,23 +286,6 @@
 				item: {
 					Count: 1
 					id: "new_create:balloon_mushroom_sword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 11.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5BE8EF1EE1CCE39F"]
-			id: "4E0AFE68873677CC"
-			tasks: [{
-				id: "5D44FDB407FA03C3"
-				item: {
-					Count: 1
-					id: "new_create:balloon_mushroom_shovel"
 					tag: {
 						Damage: 0
 					}
@@ -276,93 +309,86 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["31BD51EA1236C4FC"]
-			id: "1CA1E323F1F1947A"
-			tasks: [{
-				count: 64L
-				id: "1D54E5D9F4B372F2"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7D824562ADE8BC08"]
-			id: "48AF7385432AAB73"
-			rewards: [
-				{
-					id: "0DF9AA94DCF740BE"
-					item: "minecraft:water_bucket"
-					type: "item"
-				}
-				{
-					id: "2B661AAFB6C95C84"
-					item: "minecraft:lava_bucket"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "00C870CC8A762D00"
-					item: "minecraft:bone_meal"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4B2B8FE66047ACDA"
-					item: "minecraft:potato"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "6F1C3761113C1A1C"
-					item: "minecraft:dirt"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "23673516FACAC08E"
-				title: "拆解飞船 绿植区"
-				type: "checkmark"
-			}]
-			x: -2.0d
-			y: -3.5d
+			x: 11.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4DA298C410D3A0EF"]
-			description: ["虽然口味不好 但是这里到处都是"]
-			id: "234344AC3844B475"
-			tasks: [{
-				id: "438B2B19877D6D53"
-				item: "edenring:volvox_block"
+			id: "2A55D84DFE179AF1"
+			rewards: [{
+				id: "0AE7C9AFE8CCFFA2"
+				item: "minecraft:potato"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.0d
+			tasks: [{
+				id: "7FC8E1DA196791E9"
+				title: "梦回西伯利亚挖土豆"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2A55D84DFE179AF1"]
+			id: "0BEBE718063987F5"
+			tasks: [{
+				id: "01D5B4050260FF80"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"堆肥桶\"}"
+						}
+						value: "composter"
+					}
+				}
+				type: "item"
+			}]
+			title: "堆肥桶"
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0BEBE718063987F5"]
+			id: "1F150C77CCF2A01C"
+			subtitle: "商店解锁骨粉交易"
+			tasks: [{
+				count: 3L
+				id: "4D162F4F3C43D4E0"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			title: "有作物没骨粉怎么行呢"
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3CA2DD6F5FA31E73"]
+			id: "7C8A1D093F5EE259"
+			tasks: [{
+				id: "1836968E85141B2B"
+				item: "edenring:gravilite_block"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"021F09956431BCE7"
-				"2AF0A3B84B243422"
+				"2A55D84DFE179AF1"
+				"7C8A1D093F5EE259"
 			]
-			description: ["遇难的商人，一点谢礼"]
-			id: "190BADAD2F082C57"
-			rewards: [{
-				count: 50
-				id: "688D3E34663ED633"
-				item: "new_create:1"
-				type: "item"
-			}]
+			id: "1AC747F8C5E68984"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
-				id: "6B86B6D95BE20D36"
-				title: "你是？"
+				id: "3C15EACF000913F8"
+				title: "下一章！"
 				type: "checkmark"
 			}]
-			x: 2.5d
+			x: 16.5d
 			y: 0.0d
 		}
 	]

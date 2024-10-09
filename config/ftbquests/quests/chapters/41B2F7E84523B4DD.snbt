@@ -6,15 +6,190 @@
 	id: "41B2F7E84523B4DD"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "37F66F2996FF56AA"
-		tasks: [{
-			id: "346D6A5150D38C16"
-			item: "immersive_aircraft:gyrodyne"
-			type: "item"
-		}]
-		x: -1.0d
-		y: -0.5d
-	}]
+	quests: [
+		{
+			dependencies: [
+				"19E55945A1D4B1E6"
+				"300160B11DC8DA01"
+				"03241FDD6ABBDB84"
+				"3B1F2B71979F3089"
+			]
+			id: "37F66F2996FF56AA"
+			tasks: [{
+				id: "346D6A5150D38C16"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2A55D84DFE179AF1"]
+			id: "19E55945A1D4B1E6"
+			subtitle: "你必须拥有充足的食物 才能使用人力直升机"
+			tasks: [{
+				id: "469628A42D4FB79B"
+				title: "食物"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1AC2AD86FD4135CE"]
+			id: "039CCB2437550123"
+			subtitle: "制作风帆"
+			tasks: [{
+				id: "1C06867C75447F0C"
+				title: "风帆"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1AC2AD86FD4135CE"]
+			id: "4C1A589B775E0F47"
+			subtitle: "制作机身"
+			tasks: [{
+				id: "4C657317B72B9558"
+				title: "机身"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1AC2AD86FD4135CE"]
+			id: "616090A31529AE67"
+			subtitle: "制作螺旋桨"
+			tasks: [{
+				id: "3136C1C91B16E062"
+				title: "螺旋桨"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["039CCB2437550123"]
+			id: "3B7B2012B225ECF0"
+			subtitle: "没有工业大麻？ 打草可以出种子"
+			tasks: [{
+				id: "33AC0F2DD3A4071E"
+				item: "immersiveengineering:hemp_fiber"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B7B2012B225ECF0"]
+			id: "5CFFB3CB7247D92C"
+			tasks: [{
+				id: "676141A7E0B5C50F"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5CFFB3CB7247D92C"]
+			id: "64D259CFEEE7A1A2"
+			tasks: [{
+				id: "679DB6970F761A7B"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["64D259CFEEE7A1A2"]
+			id: "300160B11DC8DA01"
+			tasks: [{
+				id: "17D878773708DFE1"
+				item: "immersive_aircraft:sail"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35729F2D7E020F10"]
+			id: "03241FDD6ABBDB84"
+			tasks: [{
+				id: "21A85D4B09AD794D"
+				item: "immersive_aircraft:hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C1A589B775E0F47"]
+			id: "35729F2D7E020F10"
+			subtitle: "足够轻便可以胜任机身的材料"
+			tasks: [{
+				count: 4L
+				id: "75AEA22C656BC010"
+				item: "edenring:balloon_mushroom_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["616090A31529AE67"]
+			id: "3B1F2B71979F3089"
+			tasks: [{
+				id: "4CAA3FA65024459E"
+				item: "immersive_aircraft:propeller"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C358B087E561859"]
+			id: "1AC2AD86FD4135CE"
+			tasks: [{
+				id: "68B9C4FC9C9250E5"
+				item: "new_create:gravilite_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["41A14FFD75D758B6"]
+			id: "2C358B087E561859"
+			tasks: [{
+				id: "31DC7BA91F70C549"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1AC747F8C5E68984"]
+			id: "41A14FFD75D758B6"
+			tasks: [{
+				id: "675953464AAD5ECF"
+				item: "edenring:gravilite_shards"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 1.0d
+		}
+	]
 	title: "尝试飞行"
 }

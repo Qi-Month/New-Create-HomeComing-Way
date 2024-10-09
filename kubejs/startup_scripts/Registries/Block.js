@@ -70,7 +70,7 @@ StartupEvents.registry("block", (event) => {
 					return (level.day && getBlockPos.up.canSeeSky) ? 60 : 0
 					/*
 					if (level.day && block.up.canSeeSky) {
-						return 60
+						return 60 
 					} else {
 						return 0
 					}

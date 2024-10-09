@@ -1,3 +1,4 @@
-fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 edenring:eden_grass
-fill ~2 ~ ~2 ~-2 ~1 ~-2 minecraft:air
+place template new_create:new_create ~-6 ~ ~-12
+tp @s ~ ~4 ~
+execute at @s run setworldspawn ~ ~ ~
 data modify storage new_create spawnpoint_structure set value "111"

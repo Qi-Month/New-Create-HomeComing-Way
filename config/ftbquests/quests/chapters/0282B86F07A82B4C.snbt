@@ -2,47 +2,2615 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0282B86F07A82B4C"
-	group: ""
+	group: "11AD432A9027BB39"
 	icon: "new_create:rainbow_mooncoin"
 	id: "0282B86F07A82B4C"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7E9AD9B222497551"]
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:1"
 			id: "4041D219A7DBCED3"
 			rewards: [{
-				count: 150
+				count: 200
 				id: "11B551A88B1CE401"
 				item: "new_create:1"
 				type: "item"
 			}]
+			subtitle: "1个换200个1元"
 			tasks: [{
+				consume_items: true
 				id: "4422DF81B9E7D726"
 				item: "new_create:rainbow_mooncoin"
 				type: "item"
 			}]
-			title: "汇率"
-			x: 0.5d
-			y: -2.5d
+			title: "星际货币兑换本地货币"
+			x: -5.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["7E9AD9B222497551"]
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:rainbow_mooncoin"
 			id: "19557F3C13CDE7CD"
 			rewards: [{
 				id: "2975CFA6B8B4BACA"
 				item: "new_create:rainbow_mooncoin"
 				type: "item"
 			}]
+			subtitle: "200个1元换1"
 			tasks: [{
-				count: 150L
+				consume_items: true
+				count: 200L
 				id: "141D99E01B77BD8A"
 				item: "new_create:1"
 				type: "item"
 			}]
+			title: "本地货币换星际货币"
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "01F06B9D5B0BFD93"
+			rewards: [{
+				id: "0F1C6BBEC9B27731"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "5个1元换"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "1CCCDD798AE49FC3"
+				item: "new_create:1"
+				type: "item"
+			}]
 			title: "汇率"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "613BA1682E38212A"
+			rewards: [{
+				id: "1453F8190D7D06D8"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "10个1元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				disable_toast: true
+				id: "59AD50C012DE1929"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "3AA6A038AB01E520"
+			rewards: [{
+				id: "66C418ACCED9EFB9"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "20个1元换"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "403B0D94DDD6DD5B"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "185AD3340DD63A5F"
+			rewards: [{
+				id: "163A052E57F05D94"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "50个1元换"
+			tasks: [{
+				consume_items: true
+				count: 50L
+				id: "173A91B007500409"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "66137274BCBB5F28"
+			rewards: [{
+				id: "4F232EB8C49E8E10"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "100个1元换"
+			tasks: [{
+				consume_items: true
+				count: 100L
+				id: "286FF82E21652C91"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "1D94F75EB6B04DA9"
+			rewards: [{
+				id: "2DEBA242C99D0089"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "500个1元换"
+			tasks: [{
+				consume_items: true
+				count: 500L
+				id: "2FE07947707BBAF7"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "10129E4920DA8CDC"
+			rewards: [{
+				id: "2AD92D2EBB21AAC8"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "1千个1元换"
+			tasks: [{
+				consume_items: true
+				count: 1000L
+				id: "2C2E54EBEF84D197"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "1B16BC3684429306"
+			rewards: [{
+				id: "0FE8A9DA4D140C8F"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "5千个1元换"
+			tasks: [{
+				consume_items: true
+				count: 5000L
+				id: "0ACCE30754092253"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "0237235FBD5F22B3"
+			rewards: [{
+				id: "0D8B11618B1D7DA3"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "1万个1元换"
+			tasks: [{
+				consume_items: true
+				count: 10000L
+				id: "209DE892F4DBB23F"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "17B0245750429B87"
+			rewards: [{
+				count: 40
+				id: "72BF37822483D659"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个换40个5元"
+			tasks: [{
+				consume_items: true
+				id: "1E0146FD531EB01D"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			title: "星际货币兑换本地货币"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "47C720484DE85739"
+			rewards: [{
+				count: 20
+				id: "50E30D0E261EDE7E"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个换20个10元"
+			tasks: [{
+				consume_items: true
+				id: "655AC871291F57A4"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			title: "星际货币兑换本地货币"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "2085B5A709645B60"
+			rewards: [{
+				count: 10
+				id: "66015F65DDDF06D9"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "1个换10个20元"
+			tasks: [{
+				consume_items: true
+				id: "16651453D5B2353E"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			title: "星际货币兑换本地货币"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "2810B88A017B2C00"
+			rewards: [{
+				count: 4
+				id: "004AA9BF4EB57BB4"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "1个换4个50元"
+			tasks: [{
+				consume_items: true
+				id: "70E1B5E4171D08B2"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			title: "星际货币兑换本地货币"
 			x: -1.5d
-			y: -2.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "24359A7567D54D3C"
+			rewards: [{
+				count: 2
+				id: "0E71AEE817E6240A"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "1个换2个100元"
+			tasks: [{
+				consume_items: true
+				id: "290DC7D9FD8F89B8"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			title: "星际货币兑换本地货币"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:rainbow_mooncoin"
+			id: "11510EBA14E66EC5"
+			rewards: [{
+				id: "6949F8B265EF7542"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			subtitle: "40个5元换1"
+			tasks: [{
+				count: 40L
+				id: "620598232B441779"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "本地货币换星际货币"
+			x: -9.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:rainbow_mooncoin"
+			id: "787FBFE2031331DD"
+			rewards: [{
+				id: "7203E6D7BF246351"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			subtitle: "20个10元换1"
+			tasks: [{
+				count: 20L
+				id: "5939F10D682A0107"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "本地货币换星际货币"
+			x: -10.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:rainbow_mooncoin"
+			id: "399B2ED7199625B8"
+			rewards: [{
+				id: "0A5987273A64922D"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "10个20元换1"
+			tasks: [{
+				count: 10L
+				id: "1FE8A51BD8288A2B"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "本地货币换星际货币"
+			x: -11.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:rainbow_mooncoin"
+			id: "125F94ECF2C218FD"
+			rewards: [{
+				id: "04FFE1E851B72831"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			subtitle: "4个50元换1"
+			tasks: [{
+				count: 4L
+				id: "6434F896EBB41973"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "本地货币换星际货币"
+			x: -12.5d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"2174399669A2691A"
+			]
+			disable_toast: true
+			icon: "new_create:rainbow_mooncoin"
+			id: "58A4F2D675E41240"
+			rewards: [{
+				id: "029F65B0E172BCB1"
+				item: "new_create:rainbow_mooncoin"
+				type: "item"
+			}]
+			subtitle: "2个100元换1"
+			tasks: [{
+				count: 2L
+				id: "413CE7D70CB55A54"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "本地货币换星际货币"
+			x: -13.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["09C2DEC2A5D61B0F"]
+			hide: true
+			hide_dependent_lines: true
+			id: "2174399669A2691A"
+			tasks: [{
+				id: "307E0A0E4063CD95"
+				title: "星际货币和本地货币兑换"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09C2DEC2A5D61B0F"]
+			hide: true
+			hide_dependent_lines: true
+			id: "38C7F3A32981ACCE"
+			tasks: [{
+				id: "7A76B73A5844A28C"
+				title: "本地货币兑换面值"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "65F65F6ADEFE1F21"
+			rewards: [{
+				id: "4472F9593618703E"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "2个5元换"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "6295D74419EE4AD6"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "18698C741093397C"
+			rewards: [{
+				id: "684D4CCD6CFED657"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "4个5元换"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "2851AE1DD5C21BD2"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "46A01ADDEE0D5D96"
+			rewards: [{
+				id: "5A01C8B3D1CC49EE"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "2个10元换"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "1878B61B36D3FDF9"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "7773166EB0E94F5C"
+			rewards: [{
+				id: "05319FD082E59AEF"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "10个5元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "5CCE6C547CCB8886"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "10E727FF8054C04F"
+			rewards: [{
+				id: "41ED784F34F6F17B"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "5个10元换"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "22B01D5EF5551383"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "57D60D815F3551DB"
+			rewards: [{
+				id: "1C11E4C74F0F9043"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "10个10元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "66808527017C4D4D"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "5614B13BDD70A9B1"
+			rewards: [{
+				id: "2451F456A95F78AB"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "5个20元换"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "54D99BF8FE7C52F7"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "2E1AFE108149C807"
+			rewards: [{
+				id: "42D5923790B7B66F"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "2个50元换"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "236CBCB0F75E0A73"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "4E07227E21349CC5"
+			rewards: [{
+				id: "257A237F80055BA6"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "20个5元换"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "49B6CA20BE8E7438"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "2742F640B05DFF67"
+			rewards: [{
+				id: "0A5EC810ACB8FD8A"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "200个5元换"
+			tasks: [{
+				consume_items: true
+				count: 200L
+				id: "7ACDE96AA9636499"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "77D81673C3C3D90B"
+			rewards: [{
+				id: "5C68760486BF28AC"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "100个10元换"
+			tasks: [{
+				consume_items: true
+				count: 100L
+				id: "5144C9F1774E89DF"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "6DF615EE3CD06722"
+			rewards: [{
+				id: "37A5D9E564584FC6"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "50个20元换"
+			tasks: [{
+				consume_items: true
+				count: 50L
+				id: "30FA2FA77C308BBA"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "24E71FBA9117F100"
+			rewards: [{
+				id: "35AA8EE8E54B2A97"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "20个50元换"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "5F4E79A1DFA35848"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "22F023AFBA0A3744"
+			rewards: [{
+				id: "196581F1F16D3822"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "10个100元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "3648BEFFC6418FA9"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "5F864C466A70EF92"
+			rewards: [{
+				id: "11B48334F3AB00B0"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "2个500元换"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "25D916DB366390AF"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "0AB54F26C7A1D8B2"
+			rewards: [{
+				id: "58DCA69431F5EABF"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "1千个5元换"
+			tasks: [{
+				consume_items: true
+				count: 1000L
+				id: "682B07053D7F5E99"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "1ACB7B38A5193A9A"
+			rewards: [{
+				id: "6A1566668FC50BAB"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "500个10元换"
+			tasks: [{
+				consume_items: true
+				count: 500L
+				id: "6BA9BDD80F84A93A"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "47A6E1B0F673640C"
+			rewards: [{
+				icon: "new_create:5000"
+				id: "208C6CAB3FA5E49D"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "250个20元换"
+			tasks: [{
+				consume_items: true
+				count: 250L
+				id: "78387576519B2ED8"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "4997C74903B7DDF3"
+			rewards: [{
+				id: "4C7E716828980B90"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "100个50元换"
+			tasks: [{
+				consume_items: true
+				count: 100L
+				id: "4DE9A65AD78AA361"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "0F1BE11E2DF84DAF"
+			rewards: [{
+				id: "3C6FEF7909DDE1A0"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "50个100元换"
+			tasks: [{
+				consume_items: true
+				count: 50L
+				id: "50E3706BB71B1696"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "296B9ABA8D4F0E37"
+			rewards: [{
+				id: "1F9FE53A01638903"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "10个500元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "0B3A0E9CF1D442F2"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "639814014D79A22E"
+			rewards: [{
+				id: "67BB44ECA3F13352"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "5个千1元换"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "60E6AC6640C4D438"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "7700154ED14385BD"
+			rewards: [{
+				id: "7F40249632E93157"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "1千个10元换"
+			tasks: [{
+				consume_items: true
+				count: 1000L
+				id: "77B5B344AA27BA2C"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "6DB405E5BFB22BB5"
+			rewards: [{
+				id: "7B22936C1F0B165A"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "500个20元换"
+			tasks: [{
+				consume_items: true
+				count: 500L
+				id: "1B9A00CDF22EB02E"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "135C0DCA0F30E2C7"
+			rewards: [{
+				id: "30566C44070FE54C"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "200个50元换"
+			tasks: [{
+				consume_items: true
+				count: 200L
+				id: "455ADAB10257BEE5"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "2A0B19044429EA38"
+			rewards: [{
+				id: "5F4AC40B83D91A64"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "100个100元换"
+			tasks: [{
+				consume_items: true
+				count: 100L
+				id: "1BB27E2A62477E9C"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "14CB3412092967DD"
+			rewards: [{
+				id: "09A4C134DB98E942"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "20个500元换"
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "78FB245B8B9D620A"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "3BA396DFA77419F1"
+			rewards: [{
+				id: "0E282F975714BAC9"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "10个1千元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "4AF9EDF569CF1969"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "59BE36ED50C80557"
+			rewards: [{
+				id: "37745665DF9C3B7D"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "2个5千元换"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "490619FE3868FCEA"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			hide: false
+			icon: "new_create:10000"
+			id: "4DBEEEC2021D858F"
+			rewards: [{
+				id: "7FC66C7889505DFC"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			subtitle: "2千个5元换"
+			tasks: [{
+				consume_items: true
+				count: 2000L
+				id: "0BC2257B147B30DA"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			hide_dependent_lines: true
+			id: "09C2DEC2A5D61B0F"
+			tasks: [{
+				id: "4AAAD90DA42C7C14"
+				title: "你要办理什么业务"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "7F2E33482EF4E6E5"
+			rewards: [{
+				id: "2085951A38E7EBE2"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "100个5元换"
+			tasks: [{
+				consume_items: true
+				count: 100L
+				id: "1DD09708950213B9"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "24C4DA87DA1E85C4"
+			rewards: [{
+				id: "54F184E0D506CCE0"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "50个10元换"
+			tasks: [{
+				consume_items: true
+				count: 50L
+				id: "5C6E7B16D7974AAD"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "6B4D01E8127BB0D4"
+			rewards: [{
+				id: "022AC5E157F738CD"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "25个20元换"
+			tasks: [{
+				consume_items: true
+				count: 25L
+				id: "2335ECA2A917DD0F"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "03F5F5B8CC6AFBD1"
+			rewards: [{
+				id: "7BB7BB3B1F4516FB"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "10个50元换"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "0453BB54E4841D18"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7E9AD9B222497551"
+				"38C7F3A32981ACCE"
+			]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "4A59C3CC6321225F"
+			rewards: [{
+				id: "3B9A4231D13241B6"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "5个100元换"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "724B46E6C0AF991E"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "10D48F86E0199076"
+			rewards: [{
+				count: 10000
+				id: "143CEC5A53582DC5"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "71B8EC8143960705"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5000"
+			id: "0913CCEB9E64EA5B"
+			rewards: [{
+				count: 2
+				id: "26A479BACBA58054"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "12B9E0524B703567"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "3D67547AAF626C65"
+			rewards: [{
+				count: 10
+				id: "1D31B3957DF57832"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "51825287645281FD"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "61C733AB7FFB9A1F"
+			rewards: [{
+				count: 20
+				id: "0DB2F287259BEA5B"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "20B48EEF212F3368"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "39364F68FBFA4A33"
+			rewards: [{
+				count: 100
+				id: "28A3FA404C1F13E9"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "7DE2AB0075C6B7F3"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "0AFDF49D43255863"
+			rewards: [{
+				count: 200
+				id: "4F90BF1584CDDB3A"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "6BBFDDF133B8DA43"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -13.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "248681F374ABE3F1"
+			rewards: [{
+				count: 500
+				id: "2893878A5F525C2C"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "2826A6FCCBB83868"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "1CC42B6C48CB99DD"
+			rewards: [{
+				count: 1000
+				id: "4EF6A6CCBC4BD5E8"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "753E55EAD5914898"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "0A0DD78333AB375E"
+			rewards: [{
+				count: 2000
+				id: "7E25541A718EDEC2"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个1万换"
+			tasks: [{
+				consume_items: true
+				id: "7201BEBC8A48462A"
+				item: "new_create:10000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1000"
+			id: "44EFAC5D662516ED"
+			rewards: [{
+				count: 5
+				id: "779CE6CDBEBC854D"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "10593C01173E905A"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "34CE279382EFC857"
+			rewards: [{
+				count: 10
+				id: "315E420B2CD0346F"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "27F67FE1915B658F"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:500"
+			id: "51C40BFD0A55FE39"
+			rewards: [{
+				count: 2
+				id: "5EF9957B7F5D3C8A"
+				item: "new_create:500"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "0901829866B9C28F"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "0F33CF006E260756"
+			rewards: [{
+				count: 50
+				id: "21AE68530776919C"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "65C086691724F14F"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "6527ACDD4CFE7596"
+			rewards: [{
+				count: 10
+				id: "0E339099A07BB42E"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "2E89A6DAA0FC9879"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -12.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:100"
+			id: "72D0361A47E69EA5"
+			rewards: [{
+				count: 5
+				id: "789F51D1C72B0C65"
+				item: "new_create:100"
+				type: "item"
+			}]
+			subtitle: "1个500换"
+			tasks: [{
+				consume_items: true
+				id: "5E15EECC3EAFD3B6"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "54979F231DD08AE9"
+			rewards: [{
+				count: 100
+				id: "2992C32951F45910"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "523C317F58B6E21B"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "04F077133B64C97A"
+			rewards: [{
+				count: 20
+				id: "55040624874DD3B5"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "0F00F8C6D3B28E1B"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -13.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "5C801BFC63B5ECE1"
+			rewards: [{
+				count: 10
+				id: "615A95004A508F78"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "1个500换"
+			tasks: [{
+				consume_items: true
+				id: "7A718B7474B9AB2B"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -13.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "575BDABA40EA4400"
+			rewards: [{
+				count: 2
+				id: "600C1D2CE88A2AA3"
+				item: "new_create:50"
+				type: "item"
+			}]
+			subtitle: "1个100换"
+			tasks: [{
+				consume_items: true
+				id: "648FF286274D6220"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -13.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "5AC9BBADD32E45C4"
+			rewards: [{
+				count: 250
+				id: "01647A1E617429B9"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "14EA3CF04ACF1481"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "45697E1ADE82ED61"
+			rewards: [{
+				count: 50
+				id: "7AEBB0DDE87EDFDE"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "0AA0C331CD24E9D4"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "43FB2099B4B6AD01"
+			rewards: [{
+				count: 25
+				id: "2CDDCC14C82D4E60"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "1个500换"
+			tasks: [{
+				consume_items: true
+				id: "2E3CECA61C5C7058"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "2C66FB0EA3CCBA20"
+			rewards: [{
+				count: 5
+				id: "706717C80F456127"
+				item: "new_create:20"
+				type: "item"
+			}]
+			subtitle: "1个100换"
+			tasks: [{
+				consume_items: true
+				id: "736DF24A57657225"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -14.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "37F4E36CD774B882"
+			rewards: [{
+				count: 500
+				id: "4FDBE807F2B09CC9"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "728CCA1DA56C52F1"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "4B706D2297B3E3CB"
+			rewards: [{
+				count: 100
+				id: "45EE63BB2F4414DE"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "1B08DCA29FFB7A5E"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "664F8897AE5860C8"
+			rewards: [{
+				count: 50
+				id: "2DBFBCAD09DE624B"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个500换"
+			tasks: [{
+				consume_items: true
+				id: "3D404988C12886E9"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "093419531B5BD791"
+			rewards: [{
+				count: 10
+				id: "00647B57B700BCC2"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个100换"
+			tasks: [{
+				consume_items: true
+				id: "302B3836FBB86868"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "3A9866BD0120CB39"
+			rewards: [{
+				count: 5
+				id: "1BE5B7E83E5F65C1"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个50换"
+			tasks: [{
+				consume_items: true
+				id: "78725F1A8F737EF4"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:10"
+			id: "5C4CB9657FD074F7"
+			rewards: [{
+				count: 2
+				id: "6E14FBE4ADBAED8A"
+				item: "new_create:10"
+				type: "item"
+			}]
+			subtitle: "1个20换"
+			tasks: [{
+				consume_items: true
+				id: "2335D2CA081B4B9C"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -15.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "00AFE4A0615CDC9D"
+			rewards: [{
+				count: 1000
+				id: "1AC1B37F4008F210"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "35385DDAA9F9D16D"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "3A679A959232A043"
+			rewards: [{
+				count: 200
+				id: "5CFEDA45C816AC8A"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "6B115ABC1D3A1C7C"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "50CC4BA776A2AB70"
+			rewards: [{
+				count: 2
+				id: "428880085861CABC"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个10换"
+			tasks: [{
+				consume_items: true
+				id: "399334A7AA0A698E"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "48C4C75EC49A78F4"
+			rewards: [{
+				count: 100
+				id: "5363C3FD741378CF"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个500换"
+			tasks: [{
+				consume_items: true
+				id: "0C4E8B8A6849FD9E"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "0779D0F83C3D9CEB"
+			rewards: [{
+				count: 20
+				id: "7FAB9A88EEA2941C"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个100换"
+			tasks: [{
+				consume_items: true
+				id: "60C0AE030A73473B"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "1586F6393792E6F9"
+			rewards: [{
+				count: 10
+				id: "39436465663D1761"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个50换"
+			tasks: [{
+				consume_items: true
+				id: "189FF621F05832BC"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:5"
+			id: "0099EAD1B6433327"
+			rewards: [{
+				count: 4
+				id: "5005F7261CF2EF00"
+				item: "new_create:5"
+				type: "item"
+			}]
+			subtitle: "1个20换"
+			tasks: [{
+				consume_items: true
+				id: "70C251E8879647C1"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -16.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "6D29AF45023CD961"
+			rewards: [{
+				count: 5000
+				id: "4AD28ACF9A2AD665"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个5千换"
+			tasks: [{
+				consume_items: true
+				id: "73D2B5CDC9A9A870"
+				item: "new_create:5000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "4D94CED577CAA73D"
+			rewards: [{
+				count: 1000
+				id: "2572D07F8D6C8F81"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个1千换"
+			tasks: [{
+				consume_items: true
+				id: "3B0344BFEAD999AF"
+				item: "new_create:1000"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "4CF2A2EC99460B2F"
+			rewards: [{
+				count: 500
+				id: "7527FB6C3718FFBA"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个500换"
+			tasks: [{
+				consume_items: true
+				id: "2C6E2298A414003A"
+				item: "new_create:500"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "55FB20AB501080AC"
+			rewards: [{
+				count: 100
+				id: "45B4FAF12E7934BD"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个100换"
+			tasks: [{
+				consume_items: true
+				id: "3B53FC34D9A90E3B"
+				item: "new_create:100"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "46DB343234ED8CBC"
+			rewards: [{
+				count: 50
+				id: "3DF59E70B4093822"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个50换"
+			tasks: [{
+				consume_items: true
+				id: "26725049CB38321A"
+				item: "new_create:50"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "3135ACEFA7022E64"
+			rewards: [{
+				count: 20
+				id: "14B0EE97AB48D22B"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个20换"
+			tasks: [{
+				consume_items: true
+				id: "7222FBC4F2DA5D23"
+				item: "new_create:20"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "0B49422F7D398BBB"
+			rewards: [{
+				count: 10
+				id: "2EC20CF5F4358D9A"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个10换"
+			tasks: [{
+				consume_items: true
+				id: "47DAAD328D2A1635"
+				item: "new_create:10"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:1"
+			id: "14BE9D0ECB479A34"
+			rewards: [{
+				count: 5
+				id: "014CA52B3CA1298B"
+				item: "new_create:1"
+				type: "item"
+			}]
+			subtitle: "1个5换"
+			tasks: [{
+				consume_items: true
+				id: "4BB8AC00A8665B3C"
+				item: "new_create:5"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -17.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["09C2DEC2A5D61B0F"]
+			hide: true
+			hide_dependent_lines: true
+			id: "569D84DDCF0E12E7"
+			tasks: [{
+				id: "4E668838C909D959"
+				title: "琪露诺限定货币"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["569D84DDCF0E12E7"]
+			icon: "new_create:1"
+			id: "71A7DDD749FF52F2"
+			rewards: [{
+				count: 9
+				id: "2E3D8FD131778163"
+				item: "new_create:1"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2D389B51D24E07FC"
+				item: "new_create:9"
+				type: "item"
+			}]
+			title: "兑换1元货币"
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["569D84DDCF0E12E7"]
+			disable_toast: true
+			icon: "new_create:9"
+			id: "49014556B496AADA"
+			rewards: [{
+				id: "3A47C1499CDB7BB0"
+				item: "new_create:9"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 9L
+				id: "660BF580A0863B8B"
+				item: "new_create:1"
+				type: "item"
+			}]
+			title: "baka"
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:50"
+			id: "514FD6AC88048FD2"
+			subtitle: "这个只是为了对称存在的"
+			tasks: [{
+				consume_items: true
+				count: 999999999999999999L
+				id: "2CDCCBA445F3C2D9"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["38C7F3A32981ACCE"]
+			disable_toast: true
+			icon: "new_create:20"
+			id: "0AF0E3A2701D5CEA"
+			subtitle: "这个只是为了对称存在的"
+			tasks: [{
+				consume_items: true
+				count: 999999999999999999L
+				id: "52BAD14777506D73"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "汇率"
+			x: -14.0d
+			y: 3.5d
 		}
 	]
 	title: "星际银行"

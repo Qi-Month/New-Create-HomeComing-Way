@@ -1,17 +1,14 @@
+let temp = []
 let moltenRegisters = [
 	// 钛
 	["titanium", 0xD3D3D3, "iron"]
-]
-
-let temp = [
-	
 ]
 moltenRegisters.forEach(([name, color, level]) => {
 	StartupEvents.registry("item", (event) => {
 		// 锭
 		temp.push(`${global.namespace + name}_ingot`)
 		event.create(`${global.namespace + name}_ingot`)
-			.texture(`${global.namespace}item/metal/ingot`)
+			.texture(`${global.namespace}item/materials/ingot`)
 			.color(color)
 			.tag("forge:ingots")
 			.tag(`forge:ingots/${name}`)
@@ -19,7 +16,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 		// 板
 		temp.push(`${global.namespace + name}_sheet`)
 		event.create(`${global.namespace + name}_sheet`)
-			.texture(`${global.namespace}item/metal/sheet`)
+			.texture(`${global.namespace}item/materials/sheet`)
 			.color(color)
 			.tag("forge:plates")
 			.tag(`forge:plates/${name}`)
@@ -27,7 +24,7 @@ moltenRegisters.forEach(([name, color, level]) => {
 		// 矿
 		temp.push(`${global.namespace}raw_${name}`)
 		event.create(`${global.namespace}raw_${name}`)
-			.texture(`${global.namespace}item/metal/raw_ore`)
+			.texture(`${global.namespace}item/materials/raw_ore`)
 			.color(color)
 			.tag("forge:raw_materials")
 			.tag(`forge:raw_materials/${name}`)
@@ -116,6 +113,44 @@ moltenRegisters.forEach(([name, color, level]) => {
 			.tag("forge:molten_materials")
 	})
 })
+
+StartupEvents.registry("item", (event) => {
+	let ingot = [
+		// 重力水晶
+		["gravilite", 0x5ebee7]
+	]
+	ingot.forEach(([name, color]) => {
+		event.create(`${global.namespace + name}_ingot`)
+			.color(color)
+			.texture(`${global.namespace}item/materials/crystal`)
+			.tag("forge:ingots")
+			.tag(`forge:ingots/${name}`)
+	})
+
+	let stoneDust = [
+		// 石头
+		["stone", 0x7c7c7c],
+		// 深板岩
+		["deepslate", 0x646464],
+		// 凝灰岩
+		["tuff", 0x63655f],
+		// 方解石
+		["calcite", 0xbdbdbc]
+	]
+	stoneDust.forEach(([name, color]) => {
+		event.create(`${global.namespace + name}_dust`)
+			.color(color)
+			.texture(`${global.namespace}item/materials/stone_dust`)
+			.tag("forge:dusts")
+			.tag(`forge:dusts/${name}`)
+	})
+
+	// 混合石头粉末
+	event.create(`${global.namespace}mixed_stone_dust`)
+		.tag("forge:dusts")
+		.tag("forge:dusts/mixed_stone_dust")
+})
+
 StartupEvents.registry("creative_mode_tab", (event) => {
 	event.create(`${global.namespace}metal`, "basic")
 		.icon(() => Item.of("new_create:titanium_ingot"))

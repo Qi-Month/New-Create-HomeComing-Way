@@ -2,13 +2,13 @@
     "credit": "Made with Blockbench",
     "textures": {
         "0": "new_create:block/metal/ore",
-        "1": "minecraft:block/deepslate",
+        "1": "block/deepslate",
         "particle": "new_create:block/metal/ore"
     },
     "elements": [
         {
             "from": [-0.01, -0.01, -0.01],
-            "to": [16.02, 16.02, 16.02],
+            "to": [16.01, 16.01, 16.01],
             "faces": {
                 "north": {"uv": [0, 0, 16, 16], "texture": "#0", "tintindex": 0},
                 "east": {"uv": [0, 0, 16, 16], "texture": "#0", "tintindex": 0},

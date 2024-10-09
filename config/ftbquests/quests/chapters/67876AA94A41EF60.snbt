@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "67876AA94A41EF60"
+	group: "4B912993204305BC"
+	id: "67876AA94A41EF60"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["37F66F2996FF56AA"]
+		id: "76206CF066473BF1"
+		tasks: [{
+			id: "052F2D43CECA3C1B"
+			title: "陆地生物群戏"
+			type: "checkmark"
+		}]
+		x: -0.5d
+		y: 0.5d
+	}]
+	title: "陆地生物群系"
+}

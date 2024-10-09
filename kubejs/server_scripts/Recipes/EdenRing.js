@@ -36,4 +36,50 @@ ServerEvents.recipes((event) => {
 		"edenring:volvox_block_dense",
 		Fluid.of("new_create:nutrient_solution", 250)
 	])
+
+	// 风帆(飞机)
+	kubejs.shaped("immersive_aircraft:sail", [
+		"AAB",
+		"CCD",
+		"AAB"
+	], {
+		A: "#minecraft:wool",
+		B: "#forge:rods/wooden",
+		C: "#forge:string",
+		D: "#minecraft:planks"
+	}).id("immersive_aircraft:sail")
+
+	// 机身
+	kubejs.shaped("immersive_aircraft:hull", [
+		"ABA",
+		"DCD",
+		"ABA"
+	], {
+		A: "edenring:balloon_mushroom_block",
+		B: "#minecraft:wooden_slabs",
+		C: "#forge:ingots/iron",
+		D: "#forge:cobblestone"
+	}).id("immersive_aircraft:hull")
+
+	// 螺旋桨
+	kubejs.shaped("immersive_aircraft:propeller", [
+		"AA ",
+		" B ",
+		" AA"
+	], {
+		A: "new_create:gravilite_ingot",
+		B: "edenring:gravilite_block"
+	}).id("immersive_aircraft:propeller")
+
+	// 固定旋翼机
+	kubejs.shaped("immersive_aircraft:gyrodyne", [
+		" A ",
+		"BCB",
+		"DDD"
+	], {
+		A: "immersive_aircraft:propeller",
+		B: "immersive_aircraft:sail",
+		C: "#forge:chests",
+		D: "immersive_aircraft:hull"
+	}).id("immersive_aircraft:gyrodyne")
 })

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "25BA8A4EC2893749"
-	group: ""
+	group: "11AD432A9027BB39"
 	icon: "new_create:rainbow_mooncoin"
 	id: "25BA8A4EC2893749"
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -21,9 +21,10 @@
 					type: "checkmark"
 				}
 				{
-					count: 160L
+					consume_items: true
+					count: 10L
 					id: "0AFE374C98F05807"
-					item: "new_create:1"
+					item: "new_create:50"
 					type: "item"
 				}
 			]
@@ -33,6 +34,7 @@
 		}
 		{
 			dependencies: ["65FC05700BA5FBCE"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "minecraft:bread"
 			id: "760146A39E128095"
@@ -43,13 +45,56 @@
 			}]
 			subtitle: "你知道一块面包多少钱吗"
 			tasks: [{
-				count: 500000L
-				id: "6C08F8B4AB1834B1"
-				item: "new_create:1"
+				consume_items: true
+				count: 50L
+				disable_toast: true
+				id: "0D16092216656E71"
+				item: "new_create:10000"
 				type: "item"
 			}]
 			title: "面包"
 			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["65FC05700BA5FBCE"]
+			description: ["只接受绿宝石（免费赠送8个）"]
+			disable_toast: true
+			hide_dependent_lines: true
+			icon: "youkaishomecoming:donation_box"
+			id: "0C28FF5ACFDE03CE"
+			rewards: [
+				{
+					id: "3EF7E1A36429746D"
+					item: "youkaishomecoming:donation_box"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0609EEADE3F95B06"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			subtitle: "为什么会有博丽神社的塞钱箱"
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					disable_toast: true
+					id: "57567BF1935D97B0"
+					item: "new_create:10000"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "096470D262DD13CA"
+					item: "new_create:1000"
+					type: "item"
+				}
+			]
+			title: "灵梦的塞钱箱？"
+			x: 2.5d
 			y: -8.5d
 		}
 	]

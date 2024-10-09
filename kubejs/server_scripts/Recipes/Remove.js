@@ -1,9 +1,14 @@
 ServerEvents.recipes((event) => {
 	// 输出
 	let output = [
+		"#alltheores:ore_hammers",
 		"#forge:tools",
 		"#minecraft:planks",
-		"farmersdelight:tree_bark"
+		"farmersdelight:tree_bark",
+		"#edenring:volvox_block",
+		"createmetallurgy:mechanical_belt_grinder",
+		"#create:metal_cogwheel",
+		"#create:metal_large_cogwheel",
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
@@ -11,12 +16,15 @@ ServerEvents.recipes((event) => {
 
 	// 输入
 	let input = [
-		"#alltheores:ore_hammers"
+		"#alltheores:ore_hammers",
+		"immersiveengineering:hammer",
+		"immersiveengineering:wirecutter"
 	]
 	input.forEach((item) => {
 		event.remove({ input: item })
 	})
 
+	// 配方id
 	let recipeId = [
 		"thermal:machines/crystallizer/crystallizer_amethyst_cluster",
 		"create:tiled_glass_from_glass_colorless_stonecutting",
@@ -30,7 +38,7 @@ ServerEvents.recipes((event) => {
 
 	// 配方类型
 	let recipeType = [
-
+		"createmetallurgy:grinding",
 	]
 	recipeType.forEach((type) => {
 		event.remove({ type: type })
@@ -45,5 +53,8 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 玻璃板
-	event.remove({ type: "minecraft:crafting_shaped", output: "#forge:glass_panes" })
+	event.remove({
+		type: "minecraft:crafting_shaped",
+		output: "#forge:glass_panes"
+	})
 })

@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1B779E21AE62B4BF"
+	group: "4B912993204305BC"
+	id: "1B779E21AE62B4BF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["37F66F2996FF56AA"]
+		id: "6A92DA0B7A463A98"
+		tasks: [{
+			id: "2F5217587E16CBA5"
+			title: "洞穴生物群戏"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: 0.5d
+	}]
+	title: "虚空生物群系"
+}
