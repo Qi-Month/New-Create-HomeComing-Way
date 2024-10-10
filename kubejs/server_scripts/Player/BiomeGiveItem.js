@@ -1,11 +1,11 @@
 ItemEvents.rightClicked((event) => {
 	let { player, item } = event
-	
+
 	/*
 	* 右键初始物品给予一部分初始物品
 	* 如果不在指定群系的话额外给一个指南针
 	*/
-	
+
 	let biomeName = [
 		"edenring:mycotic_forest",
 		"edenring:old_mycotic_forest"
@@ -35,9 +35,7 @@ ItemEvents.rightClicked((event) => {
 				.withName(Text.translate("custom.youkaishomecoming.onigili"))
 				.withCount(21)
 			)
-			// 删除手中的物品
-			item.shrink(1)
-
+			
 			// 如果不在指定群系中
 			if (!biome.is(getBiome)) {
 				// 这里不是上面指定群系, 因此额外给个指南针
@@ -46,6 +44,8 @@ ItemEvents.rightClicked((event) => {
 					.withCount(1)
 				)
 			}
+			// 删除手中的物品
+			item.shrink(1)
 		}
 	})
 })

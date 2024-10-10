@@ -7,14 +7,8 @@ ServerEvents.recipes((event) => {
 	]).mold_consumed(true).processingTime(100)
 
 	// TEST RECIPES
-	createmetallurgy.alloying(Fluid.of("createmetallurgy:molten_brass", 1000), [
-		Fluid.of("minecraft:lava", 1000),
-		Fluid.of("minecraft:water", 1000)
-	]).heatRequirement("frozen").id("test:recipes")
-
-	// TEST RECIPES
-	create.mixing(Fluid.of("createmetallurgy:molten_brass", 1000), [
-		Fluid.of("minecraft:lava", 1000),
-		Fluid.of("minecraft:water", 1000)
-	]).heatRequirement("frozen").id("test:recipes_2")
+	createmetallurgy.casting_in_table("create:brass_casing", [
+		Fluid.of("createmetallurgy:molten_brass", 1000),
+		"create:andesite_casing"
+	]).mold_consumed(true).processingTime(100)
 })

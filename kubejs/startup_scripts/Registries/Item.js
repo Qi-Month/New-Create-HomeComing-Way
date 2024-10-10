@@ -29,4 +29,7 @@ StartupEvents.registry("item", (event) => {
 			.rarity(epic)
 			.texture(`${global.namespace}item/money/${name}`)
 	})
+
+	// 脑树树苗(?)
+	event.create(global.namespace + "brain_sapling")
 })

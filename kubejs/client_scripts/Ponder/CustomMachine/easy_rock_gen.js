@@ -41,8 +41,7 @@ Ponder.registry((event) => {
 			scene.addKeyframe()
 			scene.world.setBlocks([2, 0, 0], "minecraft:air")
 			scene.world.setBlocks([2, 0, 1], "minecraft:barrel")
-			scene.world.modifyBlock([2, 0, 1],
-				(state) => state.with("facing", "up"), false)
+			scene.world.modifyBlock([2, 0, 1], (state) => state.with("facing", "up"), false)
 
 			scene.overlay.showOutline("red", {}, [2, 0, 1], 40)
 			scene.text(40, "随后用漏斗或管道接上容器方块就可以等待收货了", [2.2, 1.5, 1])

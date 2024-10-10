@@ -21,11 +21,12 @@ StartupEvents.registry("block", (event) => {
 	// 定义方块
 	let blockRegisters = [
 		// 烧焦圆石
-		["charred_cobblestone", "stone", 2, "pickaxe", "wooden", true],
+		["nutrient_solution_dirt", "gravel", 1, "shovel", "wooden", false],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)
 			.soundType(soundType)
+			// .soundType(SoundType.)
 			.hardness(hardness)
 			.resistance(hardness)
 			.tagBlock(toolType[tool])
@@ -68,6 +69,7 @@ StartupEvents.registry("block", (event) => {
 					let { level, blockPos } = event
 					let getBlockPos = level.getBlock(blockPos)
 					return (level.day && getBlockPos.up.canSeeSky) ? 60 : 0
+
 					/*
 					if (level.day && block.up.canSeeSky) {
 						return 60 

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.recipes
+	let { kubejs } = event.recipes
 
 	// 金属齿轮
 	let metalCogwheelRecipes = [

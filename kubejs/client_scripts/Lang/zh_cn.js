@@ -24,7 +24,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["initial_item_kit", "初始套件"],
 		["volvox_ball", "藻球"],
 		["drying_volvox_ball", "干燥的藻球"],
-		["gravilite_ingot", "磨制重力水晶"]
+		["gravilite_ingot", "磨制重力水晶"],
+		["brain_sapling", "脑树苗"]
 	]
 	for (let i = 0; i < itemLang.length; i++) {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
@@ -66,12 +67,13 @@ ClientEvents.lang("zh_cn", (event) => {
 	]
 	for (let i = 0; i < inItemLang.length; i++) {
 		event.add(`item.${namespace}.incomplete_${inItemLang[i][0]}`, inItemLang[i][1])
-	} 
+	}
 
 	// 方块
 	let blockLang = [
+		["nutrient_solution_dirt", "富含营养的泥土"],
 		["soler_panel", "简易太阳能电池板"],
-		["steel_casing", "钢机壳"]
+		["steel_casing", "钢机壳"],
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
@@ -121,9 +123,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 其它
 	let otherLang = [
 		["itemGroup.new_create.all", "New Create: HomeComing Way"],
-		["itemGroup.new_create.tool", "New Create: HomeComing Way - Tool"],
-		["itemGroup.new_create.money", "New Create: HomeComing Way - Money"],
-		["itemGroup.new_create.metal", "New Create: HomeComing Way - metal"]
+		["itemGroup.new_create.tool", "New Create-Tool"],
+		["itemGroup.new_create.money", "New Create-Money"],
+		["itemGroup.new_create.metal", "New Create-Metal"]
 	]
 	otherLang.forEach(([key, text]) => {
 		event.add(key, text)
@@ -133,7 +135,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	let toolTipLang = [
 		["new_create:easy_rock_gen", "如果发现不起效果尝试将熔岩和水的位置互换一下"],
 		["new_create:initial_item_kit", "潜行加右键使用"],
-		["new_create:drying_volvox_ball", "太干巴了没法吃啊"]
+		["new_create:drying_volvox_ball", "太干巴了没法吃"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${text}`)
@@ -141,7 +143,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-
+		["new_create:brain_sapling", "这种树苗的生长条件非常特殊\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长"]
 	]
 	jeiInfoLang.forEach(([key, text]) => {
 		event.add(`jei.info.${key}`.replace(":", "."), `§b${text}`)

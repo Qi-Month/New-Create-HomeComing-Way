@@ -9,6 +9,8 @@ ServerEvents.recipes((event) => {
 		"createmetallurgy:mechanical_belt_grinder",
 		"#create:metal_cogwheel",
 		"#create:metal_large_cogwheel",
+		"create:cogwheel",
+		"create:large_cogwheel"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
