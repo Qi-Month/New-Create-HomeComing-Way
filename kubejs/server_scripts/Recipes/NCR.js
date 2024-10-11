@@ -51,6 +51,28 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
+	// 安山岩压缩
+	kubejs.shapeless("new_create:compressed_andesite", [
+		"9x minecraft:andesite"
+	])
+	kubejs.shapeless("9x minecraft:andesite", [
+		"new_create:compressed_andesite"
+	])
+
+	kubejs.shapeless("new_create:double_compressed_andesite", [
+		"9x new_create:compressed_andesite"
+	])
+	kubejs.shapeless("9x new_create:compressed_andesite", [
+		"new_create:double_compressed_andesite"
+	])
+
+	kubejs.shapeless("new_create:triple_compressed_andesite", [
+		"9x new_create:double_compressed_andesite"
+	])
+	kubejs.shapeless("9x new_create:double_compressed_andesite", [
+		"new_create:triple_compressed_andesite"
+	])
+
 	// 干巴的藻球
 	minecraft.smoking("new_create:drying_volvox_ball", [
 		"new_create:volvox_ball"

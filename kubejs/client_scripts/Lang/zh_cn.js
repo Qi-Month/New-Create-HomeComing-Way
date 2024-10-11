@@ -74,6 +74,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		["nutrient_solution_dirt", "富含营养的泥土"],
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
+		["compressed_andesite", "一重压缩安山岩"],
+		["double_compressed_andesite", "二重压缩安山岩"],
+		["triple_compressed_andesite", "三重压缩安山岩"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
@@ -92,7 +95,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 机器
 	let machineLang = [
 		["brain_electric_extractor", "脑电提取器(超级廉价版)"],
-		["easy_rock_gen", "简易造石机"]
+		["easy_rock_gen", "简易造石机"],
+		["stone_gen", "结构造石机"]
 	]
 	for (let i = 0; i < machineLang.length; i++) {
 		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])

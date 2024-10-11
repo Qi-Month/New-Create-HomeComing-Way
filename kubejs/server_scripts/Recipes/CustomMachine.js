@@ -25,4 +25,31 @@ ServerEvents.recipes((event) => {
 			L: "minecraft:lava",
 			W: "minecraft:water"
 		})
+
+	/* 结构造石机 */
+	// 安山岩
+	custommachinery.custom_machine("new_create:stone_gen", 20)
+		.produceItem("minecraft:andesite")
+		.requireStructure([
+			[
+				"AAA",
+				"AAA",
+				"ABA"
+			],
+			[
+				"CCC",
+				"CDC",
+				"CmC"
+			],
+			[
+				"AAA",
+				"AAA",
+				"AAA"
+			]
+		], {
+			A: "create:copper_casing",
+			B: "new_create:triple_compressed_andesite",
+			C: "create:framed_glass",
+			D: "minecraft:lava"
+		})
 })

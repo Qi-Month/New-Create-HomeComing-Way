@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	// 输出
 	let output = [
 		"#alltheores:ore_hammers",
-		"#forge:tools",
+		"#forge:tools/wooden",
 		"#minecraft:planks",
 		"farmersdelight:tree_bark",
 		"#edenring:volvox_block",

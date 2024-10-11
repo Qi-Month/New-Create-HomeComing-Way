@@ -1,18 +1,18 @@
 StartupEvents.registry("item", (event) => {
 	// id, 颜色, [剑, 镐, 斧, 锹, 锄], 耐久, 速度, 等级
-	
+
 	let toolRegisters = [
 		// 气球菇
-		["balloon_mushroom", 0xFF69B4, [1, 0, 4, -1, 0], 64, 2, 0]
+		["balloon_mushroom", "wood", 0xFF69B4, [1, 0, 4, -1, 0], 64, 2, 0]
 	]
 	toolRegisters.forEach(([
-		id, color, [swordDamage, pickaxeDamage, axeDamage, shovelDamage, hoeDamage], use, speed, level
+		id, tier, color, [swordDamage, pickaxeDamage, axeDamage, shovelDamage, hoeDamage], use, speed
 	]) => {
 		/**
-		* @param {string} id - 物品id
+		* @param {String} id - 物品id
 		* @param {number} speed - 速度
-		* @param {number} setLevel -工具等级
-		* @param {number} use - 耐久
+		* @param {number} tier -工具等级
+		* @param {String} use - 耐久
 		* 
 		* 所有的伤害都是[所填数值 + 3 = 游戏内面板数值]
 		* @param {number} swordDamage - 剑伤害
@@ -24,10 +24,10 @@ StartupEvents.registry("item", (event) => {
 
 		// 剑
 		event.create(`${global.namespace + id}_sword`, "sword")
+			.tier(tier)
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
-				tool.setLevel(level)
 			})
 			.modelJson({
 				"parent": "minecraft:item/generated",
@@ -42,10 +42,10 @@ StartupEvents.registry("item", (event) => {
 
 		// 镐
 		event.create(`${global.namespace + id}_pickaxe`, "pickaxe")
+			.tier(tier)
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
-				tool.setLevel(level)
 			})
 			.modelJson({
 				"parent": "minecraft:item/generated",
@@ -60,10 +60,10 @@ StartupEvents.registry("item", (event) => {
 
 		// 斧
 		event.create(`${global.namespace + id}_axe`, "axe")
+			.tier(tier)
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
-				tool.setLevel(level)
 			})
 			.modelJson({
 				"parent": "minecraft:item/generated",
@@ -78,10 +78,10 @@ StartupEvents.registry("item", (event) => {
 
 		// 锹
 		event.create(`${global.namespace + id}_shovel`, "shovel")
+			.tier(tier)
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
-				tool.setLevel(level)
 			})
 			.modelJson({
 				"parent": "minecraft:item/generated",
@@ -96,10 +96,10 @@ StartupEvents.registry("item", (event) => {
 
 		// 锄
 		event.create(`${global.namespace + id}_hoe`, "hoe")
+			.tier(tier)
 			.modifyTier((tool) => {
 				tool.uses = use
 				tool.speed = speed
-				tool.setLevel(level)
 			})
 			.modelJson({
 				"parent": "minecraft:item/generated",

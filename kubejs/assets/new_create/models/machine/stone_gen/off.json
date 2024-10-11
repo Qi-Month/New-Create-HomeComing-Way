@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"front": "new_create:block/machine/stone_gen/off",
+		"side": "new_create:block/machine/stone_gen/side",
+		"top": "new_create:block/machine/stone_gen/top"
+	}
+}

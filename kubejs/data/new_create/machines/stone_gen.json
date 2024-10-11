@@ -1,0 +1,77 @@
+{
+	"name": "block.new_create.stone_gen",
+	"appearance": {
+		"idle": {
+			"block": "new_create:machine/stone_gen/off"
+		},
+		"running": {
+			"block": "new_create:machine/stone_gen/on"
+		},
+		"errored": {
+			"block": "new_create:machine/stone_gen/off"
+		},
+		"paused": {
+			"block": "new_create:machine/stone_gen/off"
+		},
+		"interaction_sound": "minecraft:iron_block",
+		"requires_tool": true,
+		"mining_level": "minecraft:needs_stone_tool"
+	},
+	"components": [
+		{
+			"type": "custommachinery:item",
+			"id": "output",
+			"mode": "output"
+		}
+	],
+	"gui": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.stone_gen",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "output",
+			"x": 119,
+			"y": 40
+		}
+	],
+	"jei": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.stone_gen",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "output",
+			"x": 0,
+			"y": 30
+		}
+	]
+}

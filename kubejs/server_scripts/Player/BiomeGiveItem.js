@@ -6,11 +6,11 @@ ItemEvents.rightClicked((event) => {
 	* 如果不在指定群系的话额外给一个指南针
 	*/
 
-	let biomeName = [
+	let biomeGroup = [
 		"edenring:mycotic_forest",
 		"edenring:old_mycotic_forest"
 	]
-	biomeName.forEach((getBiome) => {
+	biomeGroup.forEach((getBiome) => {
 		// 判断手上的物品并且需要潜行
 		if (player.mainHandItem === "new_create:initial_item_kit" && player.crouching) {
 			// 获取生物群系
@@ -35,7 +35,7 @@ ItemEvents.rightClicked((event) => {
 				.withName(Text.translate("custom.youkaishomecoming.onigili"))
 				.withCount(21)
 			)
-			
+
 			// 如果不在指定群系中
 			if (!biome.is(getBiome)) {
 				// 这里不是上面指定群系, 因此额外给个指南针

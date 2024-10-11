@@ -22,11 +22,17 @@ StartupEvents.registry("block", (event) => {
 	let blockRegisters = [
 		// 烧焦圆石
 		["nutrient_solution_dirt", "gravel", 1, "shovel", "wooden", false],
+		// 一重压缩安山岩
+		["compressed_andesite", "stone", 1.5, "pickaxe", "wooden", true],
+		// 二重压缩安山岩
+		["double_compressed_andesite", "stone", 2.5, "pickaxe", "wooden", true],
+		// 三重压缩安山岩
+		["triple_compressed_andesite", "stone", 3.5, "pickaxe", "wooden", true],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)
 			.soundType(soundType)
-			// .soundType(SoundType.)
+			// .soundType(SoundType)
 			.hardness(hardness)
 			.resistance(hardness)
 			.tagBlock(toolType[tool])
@@ -48,6 +54,19 @@ StartupEvents.registry("block", (event) => {
 			.tagBlock(miningLevel[level])
 			.requiresTool(true)
 	})
+
+	/*
+	// 脑树树苗(?)
+	event.create(global.namespace + "brain_sapling")
+		.soundType(SoundType.GRASS)
+		.hardness(0)
+		.resistance(0)
+		.noCollision()
+		.box(2, 0, 2, 14, 12, 14)
+		.notSolid()
+		.noValidSpawns(true)
+		.defaultCutout()
+	*/
 
 	// 太阳能发电板
 	event.create(global.namespace + "soler_panel", "cardinal")
