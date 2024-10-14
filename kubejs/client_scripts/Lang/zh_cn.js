@@ -74,12 +74,21 @@ ClientEvents.lang("zh_cn", (event) => {
 		["nutrient_solution_dirt", "富含营养的泥土"],
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
-		["compressed_andesite", "一重压缩安山岩"],
-		["double_compressed_andesite", "二重压缩安山岩"],
-		["triple_compressed_andesite", "三重压缩安山岩"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
+	}
+
+	// 压缩
+	let compressedBlock = [
+		["andesite", "安山岩"],
+		["tuff", "凝灰岩"],
+		["calcite", "方解石"]
+	]
+	for (let i = 0; i < compressedBlock.length; i++) {
+		event.add(`block.${namespace}.compressed_${compressedBlock[i][0]}`, "一重压缩" + compressedBlock[i][1])
+		event.add(`block.${namespace}.double_compressed_${compressedBlock[i][0]}`, "二重压缩" + compressedBlock[i][1])
+		event.add(`block.${namespace}.triple_compressed_${compressedBlock[i][0]}`, "三重压缩" + compressedBlock[i][1])
 	}
 
 	// 流体
@@ -105,7 +114,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 熔融金属
 	let moltenLang = [
-		["titanium", "钛"]
+		["titanium", "钛"],
+		["andesite_alloy", "安山合金"]
 	]
 	for (let i = 0; i < moltenLang.length; i++) {
 		// Item
@@ -139,7 +149,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	let toolTipLang = [
 		["new_create:easy_rock_gen", "如果发现不起效果尝试将熔岩和水的位置互换一下"],
 		["new_create:initial_item_kit", "潜行加右键使用"],
-		["new_create:drying_volvox_ball", "太干巴了没法吃"]
+		["new_create:drying_volvox_ball", "太干巴了没法吃"],
+		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${text}`)
@@ -147,7 +158,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-		["new_create:brain_sapling", "这种树苗的生长条件非常特殊\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长"]
+		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人工制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长"]
 	]
 	jeiInfoLang.forEach(([key, text]) => {
 		event.add(`jei.info.${key}`.replace(":", "."), `§b${text}`)

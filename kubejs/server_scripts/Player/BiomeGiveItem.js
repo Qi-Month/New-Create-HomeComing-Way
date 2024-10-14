@@ -33,7 +33,15 @@ ItemEvents.rightClicked((event) => {
 
 			player.give(Item.of("youkaishomecoming:onigili")
 				.withName(Text.translate("custom.youkaishomecoming.onigili"))
-				.withCount(21)
+				.withCount(8)
+			)
+
+			player.give(Item.of("farmersdelight:iron_knife")
+				.withCount(1)
+			)
+
+			player.give(Item.of("minecraft:sand")
+				.withCount(4)
 			)
 
 			// 如果不在指定群系中

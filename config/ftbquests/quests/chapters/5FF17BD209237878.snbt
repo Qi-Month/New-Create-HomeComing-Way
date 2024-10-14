@@ -3,19 +3,68 @@
 	default_quest_shape: ""
 	filename: "5FF17BD209237878"
 	group: "4B912993204305BC"
+	icon: "minecraft:stone"
 	id: "5FF17BD209237878"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["37F66F2996FF56AA"]
-		id: "36276674DF1B886D"
-		tasks: [{
-			id: "3CFFE8BF8E607244"
-			title: "虚空生物群戏"
-			type: "checkmark"
-		}]
-		x: 0.5d
-		y: 1.0d
-	}]
+	quests: [
+		{
+			disable_toast: true
+			hide: true
+			id: "759C2EB54783180B"
+			rewards: [{
+				id: "697943991BA3351E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				dimension: "edenring:edenring"
+				id: "139E9B3A3D8E394E"
+				title: "这是哪里？"
+				type: "dimension"
+			}]
+			title: "洞穴生物群系"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["759C2EB54783180B"]
+			description: ["中空洞穴是凭空在岛屿底部生成的一片空缺区域组成的生物群系，是最简单的洞穴生物群系"]
+			icon: "minecraft:stone"
+			id: "2DA61B785796424F"
+			rewards: [{
+				id: "5DC06F1DA73D3F3C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:empty_cave"
+				id: "41DC8B3279089A5C"
+				type: "biome"
+			}]
+			title: "中空洞穴"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["759C2EB54783180B"]
+			description: ["侵蚀洞穴是岛屿下方被水侵蚀后留下的痕迹组成的生物群系，类似于原版溶洞，这里主要由泥土，滴水石块和滴水石锥组成"]
+			icon: "minecraft:dripstone_block"
+			id: "7371EECDC8A1FA0C"
+			rewards: [{
+				id: "1B87D343C179A96C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:eroded_cave"
+				id: "79CB8AE974D05C5E"
+				type: "biome"
+			}]
+			title: "侵蚀洞穴"
+			x: 2.5d
+			y: 0.5d
+		}
+	]
 	title: "洞穴生物群系"
 }

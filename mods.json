@@ -1,501 +1,552 @@
 [
 	{
-		"name": "Presence Footsteps (Forge)",
-		"version": "1.20.1-1.9.1-beta.1"
+		"name": "Cherished Worlds",
+		"version": "6.1.6+1.20.1"
 	},
 	{
-		"name": "Carry On",
-		"version": "2.1.2.7\r"
-	},
-	{
-		"name": "PolyLib",
-		"version": "2000.0.3-build.143"
+		"name": "0Pack2Reload",
+		"version": "1.0.0\r"
 	},
 	{
 		"name": "Clumps",
 		"version": "12.0.0.4\r"
 	},
 	{
-		"name": "Just Enough Calculation",
-		"version": "4.0.4"
+		"name": "Balm",
+		"version": "7.3.9"
 	},
 	{
-		"name": "FastFurnace",
-		"version": "8.0.2"
-	},
-	{
-		"name": "Embeddium Extra",
-		"version": "0.5.4.1+mc1.20.1-build.117"
-	},
-	{
-		"name": "Yeetus Experimentus",
-		"version": "2.3.1-build.6+mc1.20.1"
-	},
-	{
-		"name": "Farmer's Delight",
-		"version": "1.20.1-1.2.4"
-	},
-	{
-		"name": "Controlling",
-		"version": "12.0.2\r"
-	},
-	{
-		"name": "Nature's Compass",
-		"version": "1.20.1-1.11.2-forge"
-	},
-	{
-		"name": "Functional Storage",
-		"version": "1.20.1-1.2.10\r"
-	},
-	{
-		"name": "Cupboard utilities",
-		"version": "1.20.1-2.7\r"
-	},
-	{
-		"name": "AlmostUnified",
-		"version": "1.20.1-0.9.4"
-	},
-	{
-		"name": "TES",
-		"version": "1.5.1"
-	},
-	{
-		"name": "LowDragLib",
-		"version": "1.0.28"
-	},
-	{
-		"name": "Sophisticated Storage",
-		"version": "0.10.26.817"
-	},
-	{
-		"name": "BotanyTrees",
-		"version": "9.0.17"
-	},
-	{
-		"name": "Create Diesel Generators",
-		"version": "1.20.1-1.2h"
-	},
-	{
-		"name": "KubeJS",
-		"version": "2001.6.5-build.14"
-	},
-	{
-		"name": "Connector-1.0.0-beta.45+1.20.1"
-	},
-	{
-		"name": "Custom Portal Api [Forge]",
-		"version": "0.0.1-beta1-1.20"
-	},
-	{
-		"name": "AttributeFix",
-		"version": "21.0.4"
-	},
-	{
-		"name": "Spice of Life: Carrot Edition",
-		"version": "1.15.1"
-	},
-	{
-		"name": "GeckoLib 4",
-		"version": "4.4.9"
-	},
-	{
-		"name": "LootJS",
-		"version": "1.20.1-2.12.0"
-	},
-	{
-		"name": "IBE Editor",
-		"version": "2.2.8"
-	},
-	{
-		"name": "KubeJS Create",
-		"version": "2001.2.5-build.2"
-	},
-	{
-		"name": "Applied Energistics 2",
-		"version": "15.2.13"
-	},
-	{
-		"name": "Dynamic FPS",
-		"version": "3.6.3"
-	},
-	{
-		"name": "ModernFix",
-		"version": "5.19.4+mc1.20.1"
-	},
-	{
-		"name": "FTB Essentials",
-		"version": "2001.2.2"
-	},
-	{
-		"name": "Melody",
-		"version": "1.0.2"
-	},
-	{
-		"name": "Fast Leaf Decay",
-		"version": "32"
-	},
-	{
-		"name": "Create Utilities",
-		"version": "0.2.0+1.20.1\r"
-	},
-	{
-		"name": "Just Enough Items",
-		"version": "15.18.0.79"
-	},
-	{
-		"name": "Create Tab Fix",
-		"version": "1.0.0+forge-1.20.1"
-	},
-	{
-		"name": "CoFH Core",
-		"version": "11.0.2"
-	},
-	{
-		"name": "Create: Vintage Improvements",
-		"version": "1.20.1-0.2.0.3"
-	},
-	{
-		"name": "Packet Fixer",
-		"version": "1.4.2"
-	},
-	{
-		"name": "Chat Heads",
-		"version": "0.12.13"
-	},
-	{
-		"name": "Custom Machinery",
-		"version": "0.10.5"
-	},
-	{
-		"name": "Create Sifter",
-		"version": "1.20.1-1.8.1.e-22\r"
-	},
-	{
-		"name": "Better Ping Display",
-		"version": "1.1"
-	},
-	{
-		"name": "Masterful Machinery",
-		"version": "3-1.20.1-0.1.13\r"
-	},
-	{
-		"name": "New Create",
-		"version": "1.0.2"
-	},
-	{
-		"name": "FTB Library",
-		"version": "2001.2.4"
-	},
-	{
-		"name": "FTB Teams",
-		"version": "2001.3.0"
-	},
-	{
-		"name": ".connector"
-	},
-	{
-		"name": "Architectury",
-		"version": "9.2.14"
-	},
-	{
-		"name": "AppleSkin",
-		"version": "2.5.1+mc1.20.1\r"
-	},
-	{
-		"name": "Collective",
-		"version": "7.84"
-	},
-	{
-		"name": "Titanium",
-		"version": "3.8.32\r"
-	},
-	{
-		"name": "Explorer's Compass",
-		"version": "1.20.1-1.3.3-forge"
-	},
-	{
-		"name": "Bookshelf",
-		"version": "20.2.13"
-	},
-	{
-		"name": "Create Crafts & Additions",
-		"version": "1.20.1-1.2.3\r"
-	},
-	{
-		"name": "Vintage KubeJS",
-		"version": "1.20.1-1.0.0rc-2"
-	},
-	{
-		"name": "Create Metallurgy",
-		"version": "0.0.6-1.20.1\r"
-	},
-	{
-		"name": "Embeddium",
-		"version": "0.3.19+mc1.20.1"
-	},
-	{
-		"name": "Eden Ring Reforked",
-		"version": "20.1.20"
-	},
-	{
-		"name": "Gpu memory leak fix",
-		"version": "1.20.1-1.8\r"
-	},
-	{
-		"name": "Create",
-		"version": "0.5.1.f\r"
-	},
-	{
-		"name": "Fast Suite",
-		"version": "5.0.1"
-	},
-	{
-		"name": "Lychee Tweaker",
-		"version": "5.1.14\r"
-	},
-	{
-		"name": "Untranslated Items",
-		"version": "1.20.1-1.7"
-	},
-	{
-		"name": "KubeJS Mekanism",
-		"version": "2001.1.5.1-build.2"
-	},
-	{
-		"name": "Rhino",
-		"version": "2001.2.3-build.6"
+		"name": "BotanyPots",
+		"version": "13.0.39"
 	},
 	{
 		"name": "Not Enough Recipe Book",
 		"version": "0.4.1"
 	},
 	{
-		"name": "Forgified Fabric API",
-		"version": "0.92.2+1.11.8+1.20.1\r"
+		"name": "Create Crafts & Additions",
+		"version": "1.20.1-1.2.3\r"
 	},
 	{
-		"name": "Ad Astra",
-		"version": "1.15.18"
+		"name": "Gpu memory leak fix",
+		"version": "1.20.1-1.8\r"
 	},
 	{
-		"name": "Curios API",
-		"version": "5.10.0+1.20.1\r"
-	},
-	{
-		"name": "ProbeJS",
-		"version": "6.0.1"
-	},
-	{
-		"name": "Continuity",
-		"version": "3.0.0-beta.5+1.20.1"
+		"name": "FastFurnace",
+		"version": "8.0.2"
 	},
 	{
 		"name": "Fast Workbench",
 		"version": "8.0.4"
 	},
 	{
-		"name": "Konkrete",
-		"version": "1.8.0"
-	},
-	{
-		"name": "Flopper",
-		"version": "1.1.5\r"
-	},
-	{
-		"name": "InitialDimension",
-		"version": "1.20.1-0.0.2"
-	},
-	{
-		"name": "Embeddium++",
-		"version": "1.2.12"
+		"name": "FancyMenu",
+		"version": "3.2.3"
 	},
 	{
 		"name": "Artifacts",
 		"version": "9.5.13"
 	},
 	{
-		"name": "Resourcefulconfig",
-		"version": "2.1.2"
+		"name": "Embeddium++",
+		"version": "1.2.12"
 	},
 	{
-		"name": "Mekanism: Generators",
-		"version": "10.4.9"
+		"name": "Curios API",
+		"version": "5.10.0+1.20.1\r"
 	},
 	{
-		"name": "Pipez",
-		"version": "1.20.1-1.2.5"
+		"name": "Bookshelf",
+		"version": "20.2.13"
 	},
 	{
-		"name": "Thermal Foundation",
-		"version": "11.0.6"
+		"name": "Just Enough Characters",
+		"version": "4.5.11"
 	},
 	{
-		"name": "Botarium",
-		"version": "2.3.4"
+		"name": "Just Enough Items",
+		"version": "15.18.0.79"
 	},
 	{
-		"name": "FTB Quests",
-		"version": "2001.4.8"
-	},
-	{
-		"name": "GeckoJS",
-		"version": "2001forge-1.5.0"
-	},
-	{
-		"name": "JEI Integration",
-		"version": "10.0.0\r"
-	},
-	{
-		"name": "AllTheOres",
-		"version": "2.2.4"
-	},
-	{
-		"name": "Inventory Tweaks Refoxed",
-		"version": "1.1.0\r"
-	},
-	{
-		"name": "Mouse Tweaks",
-		"version": "2.25.1\r"
-	},
-	{
-		"name": "OctoLib",
-		"version": "0.4.2"
-	},
-	{
-		"name": "Cull Less Leaves Reforged",
-		"version": "1.20.1-1.0.5\r"
-	},
-	{
-		"name": "Cloth Config v10 API",
-		"version": "11.1.118"
-	},
-	{
-		"name": "HT's TreeChop",
-		"version": "0.19.0"
-	},
-	{
-		"name": "Just Enough Resources",
-		"version": "1.4.0.247"
-	},
-	{
-		"name": "Balm",
-		"version": "7.3.9"
-	},
-	{
-		"name": "BCLib",
-		"version": "3.0.14"
-	},
-	{
-		"name": "Configured",
-		"version": "2.2.3"
-	},
-	{
-		"name": "Fabric API",
-		"version": "0.92.2+1.20.1"
-	},
-	{
-		"name": "Jade",
-		"version": "11.11.1+forge\r"
+		"name": "AttributeFix",
+		"version": "21.0.4"
 	},
 	{
 		"name": "Mekanism",
 		"version": "10.4.9"
 	},
 	{
-		"name": "Cherished Worlds",
-		"version": "6.1.6+1.20.1"
+		"name": "Carry On",
+		"version": "2.1.2.7\r"
 	},
 	{
-		"name": "betterfpsdist mod",
-		"version": "1.20.1-4.4\r"
+		"name": "Custom Portal Api [Forge]",
+		"version": "0.0.1-beta1-1.20"
 	},
 	{
-		"name": "Smoothchunk mod",
-		"version": "1.20.1-3.6\r"
+		"name": "Jade",
+		"version": "11.11.1+forge\r"
 	},
 	{
-		"name": "CreateHeatJS",
-		"version": "1.20.1-0.0.3"
+		"name": "Tom's Simple Storage Mod",
+		"version": "1.6.8\r"
 	},
 	{
-		"name": "Resourceful Lib",
-		"version": "2.1.29"
+		"name": "Create Sifter",
+		"version": "1.20.1-1.8.1.e-22\r"
 	},
 	{
-		"name": "Immersive Engineering",
-		"version": "1.20.1-10.1.0-171"
+		"name": "KubeJS",
+		"version": "2001.6.5-build.14"
+	},
+	{
+		"name": "Lychee Tweaker",
+		"version": "5.1.14\r"
+	},
+	{
+		"name": "Configured",
+		"version": "2.2.3"
 	},
 	{
 		"name": "Lazurite",
 		"version": "1.0.4+mc1.20.1\r"
 	},
 	{
-		"name": "Create Mechanical Extruder",
-		"version": "1.20.1-1.5.7.e-22\r"
+		"name": "Nature's Compass",
+		"version": "1.20.1-1.11.2-forge"
+	},
+	{
+		"name": "Huge Structure Blocks",
+		"version": "1.0.9"
+	},
+	{
+		"name": "Tips",
+		"version": "12.1.8"
+	},
+	{
+		"name": "Xaero's World Map",
+		"version": "1.39.0"
+	},
+	{
+		"name": "CreateHeatJS",
+		"version": "1.20.1-0.0.3"
+	},
+	{
+		"name": "Flopper",
+		"version": "1.1.5\r"
+	},
+	{
+		"name": "Collective",
+		"version": "7.84"
 	},
 	{
 		"name": "PonderJS",
 		"version": "1.4.0"
 	},
 	{
-		"name": "Multiblocked2",
-		"version": "1.0.0"
+		"name": "FTB Quests",
+		"version": "2001.4.8"
 	},
 	{
-		"name": "CCPACRCompact",
-		"version": "1.20.1-forge-0.0.1"
+		"name": "Controlling",
+		"version": "12.0.2\r"
 	},
 	{
 		"name": "KubejsBotanyPots",
 		"version": "1.2.2\r"
 	},
 	{
-		"name": "FancyMenu",
-		"version": "3.2.3"
+		"name": "Xaero's Minimap",
+		"version": "24.4.0"
 	},
 	{
-		"name": "Create Ore Excavation",
-		"version": "1.4.2\r"
+		"name": "betterchunkloading mod",
+		"version": "1.20.1-4.3\r"
 	},
 	{
 		"name": "Youkai's Homecoming",
 		"version": "2.2.11\r"
 	},
 	{
-		"name": "Connectivity Mod",
-		"version": "1.20.1-5.6\r"
+		"name": "KubeJS Addditions (Forge)",
+		"version": "4.3.2"
 	},
 	{
-		"name": "Lava Clear View",
-		"version": "7.0.0\r"
+		"name": "ModernFix",
+		"version": "5.19.4+mc1.20.1"
 	},
 	{
-		"name": "WI Zoom",
-		"version": "1.5-MC1.20.1-Forge"
+		"name": "JEI Integration",
+		"version": "10.0.0\r"
 	},
 	{
-		"name": "Ferrite Core",
-		"version": "6.0.1\r"
-	},
-	{
-		"name": "Item Filters",
-		"version": "2001.1.0-build.59"
-	},
-	{
-		"name": "ConnectedTexturesMod",
-		"version": "1.20.1-1.1.8+6\r"
+		"name": "Botarium",
+		"version": "2.3.4"
 	},
 	{
 		"name": "Searchables",
 		"version": "1.0.3\r"
 	},
 	{
+		"name": "Forgified Fabric API",
+		"version": "0.92.2+1.11.8+1.20.1\r"
+	},
+	{
+		"name": "Just Enough Resources",
+		"version": "1.4.0.247"
+	},
+	{
+		"name": "Better Ping Display",
+		"version": "1.1"
+	},
+	{
+		"name": "Farmer's Delight",
+		"version": "1.20.1-1.2.4"
+	},
+	{
+		"name": "LowDragLib",
+		"version": "1.0.28"
+	},
+	{
+		"name": "TES",
+		"version": "1.5.1"
+	},
+	{
+		"name": "Fast Suite",
+		"version": "5.0.1"
+	},
+	{
+		"name": "KubeJS Thermal",
+		"version": "2001.1.10-build.2"
+	},
+	{
+		"name": "Smoothchunk mod",
+		"version": "1.20.1-3.6\r"
+	},
+	{
+		"name": "GeckoJS",
+		"version": "2001forge-1.5.0"
+	},
+	{
+		"name": "Spice of Life: Carrot Edition",
+		"version": "1.15.1"
+	},
+	{
+		"name": "Connectivity Mod",
+		"version": "1.20.1-5.6\r"
+	},
+	{
+		"name": "betterfpsdist mod",
+		"version": "1.20.1-4.4\r"
+	},
+	{
+		"name": "New Create",
+		"version": "1.0.2"
+	},
+	{
+		"name": "Json Things",
+		"version": "0.9.2\r"
+	},
+	{
+		"name": "CTM_DEV-1.20.1-1.1.8-6-api"
+	},
+	{
+		"name": "Presence Footsteps (Forge)",
+		"version": "1.20.1-1.9.1-beta.1"
+	},
+	{
+		"name": "IBE Editor",
+		"version": "2.2.8"
+	},
+	{
+		"name": "CCPACRCompact",
+		"version": "1.20.1-forge-0.0.1"
+	},
+	{
+		"name": "OctoLib",
+		"version": "0.4.2"
+	},
+	{
+		"name": "Continuity",
+		"version": "3.0.0-beta.5+1.20.1"
+	},
+	{
+		"name": "Connector-1.0.0-beta.45+1.20.1"
+	},
+	{
+		"name": "ConnectedTexturesMod",
+		"version": "1.20.1-1.1.8+6\r"
+	},
+	{
+		"name": "Resourcefulconfig",
+		"version": "2.1.2"
+	},
+	{
+		"name": "ProbeJS",
+		"version": "6.0.1"
+	},
+	{
+		"name": "HT's TreeChop",
+		"version": "0.19.0"
+	},
+	{
+		"name": "Catalogue",
+		"version": "1.8.0"
+	},
+	{
+		"name": "Just Enough Calculation",
+		"version": "4.0.4"
+	},
+	{
+		"name": "Architectury",
+		"version": "9.2.14"
+	},
+	{
+		"name": "Titanium",
+		"version": "3.8.32\r"
+	},
+	{
+		"name": "Resourceful Lib",
+		"version": "2.1.29"
+	},
+	{
+		"name": "Ding",
+		"version": "1.4.1\r"
+	},
+	{
+		"name": "Create: New Age",
+		"version": "1.1.2"
+	},
+	{
+		"name": "Eden Ring Reforked",
+		"version": "20.1.20"
+	},
+	{
+		"name": "Jade Addons",
+		"version": "5.2.2\r"
+	},
+	{
+		"name": "Cupboard utilities",
+		"version": "1.20.1-2.7\r"
+	},
+	{
+		"name": "Caelus API",
+		"version": "3.2.0+1.20.1"
+	},
+	{
+		"name": "Pipez",
+		"version": "1.20.1-1.2.5"
+	},
+	{
+		"name": "Custom Machinery",
+		"version": "0.10.5"
+	},
+	{
+		"name": "Entity Texture Features",
+		"version": "6.2.3"
+	},
+	{
+		"name": "Masterful Machinery",
+		"version": "3-1.20.1-0.1.13\r"
+	},
+	{
+		"name": "Polymorph",
+		"version": "0.49.5+1.20.1"
+	},
+	{
+		"name": "FTB Library",
+		"version": "2001.2.4"
+	},
+	{
+		"name": "Functional Storage",
+		"version": "1.20.1-1.2.10\r"
+	},
+	{
+		"name": "Applied Energistics 2",
+		"version": "15.2.13"
+	},
+	{
+		"name": "Explorer's Compass",
+		"version": "1.20.1-1.3.3-forge"
+	},
+	{
+		"name": "FTB Backups 2",
+		"version": "1.0.23"
+	},
+	{
+		"name": "Inventory Tweaks Refoxed",
+		"version": "1.1.0\r"
+	},
+	{
+		"name": "Create Tab Fix",
+		"version": "1.0.0+forge-1.20.1"
+	},
+	{
+		"name": "Mouse Tweaks",
+		"version": "2.25.1\r"
+	},
+	{
+		"name": "Sophisticated Storage",
+		"version": "0.10.26.817"
+	},
+	{
+		"name": "Create Metallurgy",
+		"version": "0.0.6-1.20.1\r"
+	},
+	{
+		"name": "Sophisticated Core",
+		"version": "0.6.25.632"
+	},
+	{
+		"name": "Lava Clear View",
+		"version": "7.0.0\r"
+	},
+	{
+		"name": "Embeddium Extra",
+		"version": "0.5.4.1+mc1.20.1-build.117"
+	},
+	{
+		"name": "Fast Leaf Decay",
+		"version": "32"
+	},
+	{
+		"name": "Create: Steam Powered",
+		"version": "1.20.1-3.0.2\r"
+	},
+	{
+		"name": "CoFH Core",
+		"version": "11.0.2"
+	},
+	{
+		"name": "Konkrete",
+		"version": "1.8.0"
+	},
+	{
+		"name": "Mekanism: Generators",
+		"version": "10.4.9"
+	},
+	{
+		"name": "Yeetus Experimentus",
+		"version": "2.3.1-build.6+mc1.20.1"
+	},
+	{
+		"name": "AlmostUnified",
+		"version": "1.20.1-0.9.4"
+	},
+	{
+		"name": "LazyDFU",
+		"version": "0.1.3"
+	},
+	{
+		"name": "PowerfulJS",
+		"version": "1.6.1"
+	},
+	{
+		"name": ".connector"
+	},
+	{
+		"name": "Melody",
+		"version": "1.0.2"
+	},
+	{
+		"name": "Create",
+		"version": "0.5.1.f\r"
+	},
+	{
+		"name": "Item Filters",
+		"version": "2001.1.0-build.59"
+	},
+	{
 		"name": "Drippy Loading Screen",
 		"version": "3.0.1"
 	},
 	{
-		"name": "Immersive Aircraft",
-		"version": "1.0.1+1.20.1"
+		"name": "Cyclops Core",
+		"version": "1.19.5\r"
+	},
+	{
+		"name": "Packet Fixer",
+		"version": "1.4.2"
+	},
+	{
+		"name": "GeckoLib 4",
+		"version": "4.4.9"
+	},
+	{
+		"name": "Chat Heads",
+		"version": "0.12.13"
+	},
+	{
+		"name": "Create Utilities",
+		"version": "0.2.0+1.20.1\r"
+	},
+	{
+		"name": "Embeddium",
+		"version": "0.3.19+mc1.20.1"
+	},
+	{
+		"name": "KubeJS Mekanism",
+		"version": "2001.1.5.1-build.2"
+	},
+	{
+		"name": "AllTheOres",
+		"version": "2.2.4"
+	},
+	{
+		"name": "AppleSkin",
+		"version": "2.5.1+mc1.20.1\r"
+	},
+	{
+		"name": "WI Zoom",
+		"version": "1.5-MC1.20.1-Forge"
+	},
+	{
+		"name": "KubeJS Create",
+		"version": "2001.2.5-build.2"
+	},
+	{
+		"name": "Placebo",
+		"version": "8.6.2"
+	},
+	{
+		"name": "Vintage KubeJS",
+		"version": "1.20.1-1.0.0rc-2"
+	},
+	{
+		"name": "Create Ore Excavation",
+		"version": "1.4.2\r"
+	},
+	{
+		"name": "Fabric API",
+		"version": "0.92.2+1.20.1"
+	},
+	{
+		"name": "Ferrite Core",
+		"version": "6.0.1\r"
+	},
+	{
+		"name": "Thermal Expansion",
+		"version": "11.0.1"
+	},
+	{
+		"name": "Ad Astra",
+		"version": "1.15.18"
+	},
+	{
+		"name": "Multiblocked2",
+		"version": "1.0.0"
+	},
+	{
+		"name": "PolyLib",
+		"version": "2000.0.3-build.143"
+	},
+	{
+		"name": "InitialDimension",
+		"version": "1.20.1-0.0.2"
+	},
+	{
+		"name": "FTB Teams",
+		"version": "2001.3.0"
 	},
 	{
 		"name": "FTB XMod Compat",
@@ -506,134 +557,75 @@
 		"version": "1.10.53"
 	},
 	{
-		"name": "0Pack2Reload",
-		"version": "1.0.0\r"
+		"name": "Create Diesel Generators",
+		"version": "1.20.1-1.2h"
 	},
 	{
-		"name": "Json Things",
-		"version": "0.9.2\r"
+		"name": "Dynamic FPS",
+		"version": "3.6.3"
 	},
 	{
-		"name": "Create: New Age",
-		"version": "1.1.2"
-	},
-	{
-		"name": "Entity Texture Features",
-		"version": "6.2.3"
-	},
-	{
-		"name": "Thermal Expansion",
-		"version": "11.0.1"
-	},
-	{
-		"name": "Caelus API",
-		"version": "3.2.0+1.20.1"
+		"name": "BotanyTrees",
+		"version": "9.0.17"
 	},
 	{
 		"name": "No Tree To Destory",
 		"version": "1.0.0"
 	},
 	{
-		"name": "KubeJS Thermal",
-		"version": "2001.1.10-build.2"
+		"name": "Immersive Engineering",
+		"version": "1.20.1-10.1.0-171"
 	},
 	{
-		"name": "Extreme Sound Muffler",
-		"version": "3.48"
-	},
-	{
-		"name": "Polymorph",
-		"version": "0.49.5+1.20.1"
-	},
-	{
-		"name": "Create: Steam Powered",
-		"version": "1.20.1-3.0.2\r"
-	},
-	{
-		"name": "Xaero's World Map",
-		"version": "1.39.0"
-	},
-	{
-		"name": "LazyDFU",
-		"version": "0.1.3"
-	},
-	{
-		"name": "KubeJS Addditions (Forge)",
-		"version": "4.3.2"
-	},
-	{
-		"name": "Ding",
-		"version": "1.4.1\r"
-	},
-	{
-		"name": "FTB Backups 2",
-		"version": "1.0.23"
-	},
-	{
-		"name": "Jade Addons",
-		"version": "5.2.2\r"
-	},
-	{
-		"name": "CTM_DEV-1.20.1-1.1.8-6-api"
-	},
-	{
-		"name": "EntityCulling",
-		"version": "1.7.0"
-	},
-	{
-		"name": "Just Enough Characters",
-		"version": "4.5.11"
-	},
-	{
-		"name": "Cyclops Core",
-		"version": "1.19.5\r"
-	},
-	{
-		"name": "Placebo",
-		"version": "8.6.2"
-	},
-	{
-		"name": "Tips",
-		"version": "12.1.8"
-	},
-	{
-		"name": "Tom's Simple Storage Mod",
-		"version": "1.6.8\r"
-	},
-	{
-		"name": "betterchunkloading mod",
-		"version": "1.20.1-4.3\r"
-	},
-	{
-		"name": "Sophisticated Backpacks",
-		"version": "3.20.6.1064"
-	},
-	{
-		"name": "Huge Structure Blocks",
-		"version": "1.0.9"
-	},
-	{
-		"name": "PowerfulJS",
-		"version": "1.6.1"
-	},
-	{
-		"name": "Sophisticated Core",
-		"version": "0.6.25.632"
+		"name": "Immersive Aircraft",
+		"version": "1.0.1+1.20.1"
 	},
 	{
 		"name": "Immersive Petroleum",
 		"version": "4.2.0-30\r"
 	},
 	{
-		"name": "BotanyPots",
-		"version": "13.0.39"
+		"name": "BCLib",
+		"version": "3.0.14"
 	},
 	{
-		"name": "Catalogue",
-		"version": "1.8.0"
+		"name": "Cull Less Leaves Reforged",
+		"version": "1.20.1-1.0.5\r"
 	},
 	{
-		"name": "Xaero's Minimap",
-		"version": "24.4.0"
+		"name": "LootJS",
+		"version": "1.20.1-2.12.0"
+	},
+	{
+		"name": "Create: Vintage Improvements",
+		"version": "1.20.1-0.2.0.3"
+	},
+	{
+		"name": "FTB Essentials",
+		"version": "2001.2.2"
+	},
+	{
+		"name": "Extreme Sound Muffler",
+		"version": "3.48"
+	},
+	{
+		"name": "Cloth Config v10 API",
+		"version": "11.1.118"
+	},
+	{
+		"name": "Sophisticated Backpacks",
+		"version": "3.20.6.1064"
+	},
+	{
+		"name": "Thermal Foundation",
+		"version": "11.0.6"
+	},
+	{
+		"name": "EntityCulling",
+		"version": "1.7.0"
+	},
+	{
+		"name": "Rhino",
+		"version": "2001.2.3-build.6"
 	}
 ]

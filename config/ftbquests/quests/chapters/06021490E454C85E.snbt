@@ -1,0 +1,30 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "06021490E454C85E"
+	group: "2726B6E9ECFB77B0"
+	icon: "edenring:brain_tree_block_gold"
+	id: "06021490E454C85E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["37F66F2996FF56AA"]
+		description: [
+			"风暴之脑是一个聚集着大量金属的生物群系，在这里生长的植物的体内都包含着金属。三种脑树在这里巨量的水分蒸发和无尽的风暴中积蓄了大量的电能，当有生物靠近时，脑树会将电能释放出来对其造成伤害，穿戴全套金属盔甲（铁，金和下界合金）可免疫脑树的伤害"
+			""
+			"该生物群系中伊甸草方块为灰色，地下会大量生成苔石，深板岩，凝灰岩，铁矿石，铜矿石，金矿石，粗铁块，粗铜块和粗金块"
+		]
+		icon: "new_create:brain_sapling"
+		id: "2238F880E57A7D0A"
+		subtitle: "真正的第一章开始"
+		tasks: [{
+			biome: "edenring:brainstorm"
+			id: "29D20070712A9D58"
+			type: "biome"
+		}]
+		title: "风暴之脑"
+		x: 0.0d
+		y: -1.0d
+	}]
+	title: "金属岛屿？"
+}

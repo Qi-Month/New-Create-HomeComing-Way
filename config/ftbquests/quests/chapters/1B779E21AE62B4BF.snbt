@@ -3,19 +3,72 @@
 	default_quest_shape: ""
 	filename: "1B779E21AE62B4BF"
 	group: "4B912993204305BC"
+	icon: "minecraft:structure_void"
 	id: "1B779E21AE62B4BF"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["37F66F2996FF56AA"]
-		id: "6A92DA0B7A463A98"
-		tasks: [{
-			id: "2F5217587E16CBA5"
-			title: "洞穴生物群戏"
-			type: "checkmark"
-		}]
-		x: 0.5d
-		y: 0.5d
-	}]
+	quests: [
+		{
+			disable_toast: true
+			hide: true
+			id: "10755F6E0A7F475A"
+			rewards: [{
+				id: "63438744491599F6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				dimension: "edenring:edenring"
+				id: "479CAE3516F74B89"
+				title: "这是哪里？"
+				type: "dimension"
+			}]
+			title: "虚空生物群系"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10755F6E0A7F475A"]
+			description: [
+				"空海是一片由空气组成的“海洋”生物群系，是最简单也是最常见的虚空生物群系"
+				""
+				"伊甸星环中的建筑高度限制范围为0~319，与其它维度不同的是，虚空同时存在于y＜0和y＞319的位置，这意味着飞得太高也会受到虚空伤害"
+			]
+			icon: "minecraft:structure_void"
+			id: "1E8CECDA16AF6AB0"
+			rewards: [{
+				id: "474CA114DFEB5262"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:air_ocean"
+				id: "6F40713502EE482E"
+				type: "biome"
+			}]
+			title: "空海"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10755F6E0A7F475A"]
+			description: ["浮空群落是一个充满团藻球的虚空生物群系，每个团藻球都能凭借内部储存的水自给自足，形成一个独立的生态系统"]
+			icon: "artifacts:cloud_in_a_bottle"
+			id: "367B0A42E0F2E100"
+			rewards: [{
+				id: "18809473E5C97B19"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:sky_colony"
+				id: "7E78BE3E998AAEEF"
+				type: "biome"
+			}]
+			title: "浮空群落"
+			x: 2.5d
+			y: 0.0d
+		}
+	]
 	title: "虚空生物群系"
 }

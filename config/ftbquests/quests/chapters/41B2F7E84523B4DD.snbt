@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "41B2F7E84523B4DD"
 	group: "2726B6E9ECFB77B0"
+	icon: "immersive_aircraft:gyrodyne"
 	id: "41B2F7E84523B4DD"
 	order_index: 1
 	quest_links: [ ]
@@ -14,7 +15,20 @@
 				"03241FDD6ABBDB84"
 				"3B1F2B71979F3089"
 			]
+			description: ["如果运气好 直接出生在下一个任务需要的群戏 这个任务就很无用（"]
 			id: "37F66F2996FF56AA"
+			rewards: [
+				{
+					id: "10823696D076E93C"
+					item: "immersive_aircraft:enhanced_propeller"
+					type: "item"
+				}
+				{
+					id: "387C39634377D10B"
+					item: "immersive_aircraft:hull_reinforcement"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "346D6A5150D38C16"
 				item: "immersive_aircraft:gyrodyne"
@@ -80,7 +94,7 @@
 				item: "immersiveengineering:hemp_fiber"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: 2.5d
 		}
 		{
@@ -91,22 +105,11 @@
 				item: "minecraft:string"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5CFFB3CB7247D92C"]
-			id: "64D259CFEEE7A1A2"
-			tasks: [{
-				id: "679DB6970F761A7B"
-				item: "minecraft:white_wool"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["64D259CFEEE7A1A2"]
 			id: "300160B11DC8DA01"
 			tasks: [{
 				id: "17D878773708DFE1"
@@ -163,7 +166,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["41A14FFD75D758B6"]
+			dependencies: [
+				"41A14FFD75D758B6"
+				"1D5DA9D01623FDD3"
+			]
 			id: "2C358B087E561859"
 			tasks: [{
 				id: "31DC7BA91F70C549"
@@ -180,15 +186,57 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1AC747F8C5E68984"]
+			dependencies: [
+				"1AC747F8C5E68984"
+				"312F7081D16504AA"
+			]
 			id: "41A14FFD75D758B6"
 			tasks: [{
 				id: "675953464AAD5ECF"
 				item: "edenring:gravilite_shards"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["312F7081D16504AA"]
+			id: "1D5DA9D01623FDD3"
+			tasks: [{
+				id: "0BF740715D43B3AC"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			id: "312F7081D16504AA"
+			subtitle: "我手搓飞机 真的假的"
+			tasks: [{
+				id: "4F76EF714B1F804B"
+				title: "让我们来手搓飞机吧"
+				type: "checkmark"
+			}]
+			x: -12.5d
 			y: 1.0d
+		}
+		{
+			can_repeat: true
+			id: "4F6ABD4D26B7EAC3"
+			rewards: [{
+				id: "0AF7129A229AB44E"
+				item: "edenring:limphium_leaf_dryed"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "002773DFBD3CEFEB"
+				item: "new_create:drying_volvox_ball"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
 		}
 	]
 	title: "尝试飞行"

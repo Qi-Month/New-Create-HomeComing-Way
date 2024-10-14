@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "new_create:item/egg_mixture_fluid_bucket"
+	}
+}

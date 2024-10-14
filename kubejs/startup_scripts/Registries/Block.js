@@ -22,12 +22,6 @@ StartupEvents.registry("block", (event) => {
 	let blockRegisters = [
 		// 烧焦圆石
 		["nutrient_solution_dirt", "gravel", 1, "shovel", "wooden", false],
-		// 一重压缩安山岩
-		["compressed_andesite", "stone", 1.5, "pickaxe", "wooden", true],
-		// 二重压缩安山岩
-		["double_compressed_andesite", "stone", 2.5, "pickaxe", "wooden", true],
-		// 三重压缩安山岩
-		["triple_compressed_andesite", "stone", 3.5, "pickaxe", "wooden", true],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)
@@ -38,6 +32,47 @@ StartupEvents.registry("block", (event) => {
 			.tagBlock(toolType[tool])
 			.tagBlock(miningLevel[level])
 			.requiresTool(needTool)
+	})
+
+	// 压缩
+	let compressedBlock = [
+		// 安山
+		["andesite", "wooden"],
+		// 凝灰
+		["tuff", "wooden"],
+		// 方解
+		["calcite", "wooden"]
+	]
+	compressedBlock.forEach(([name, level]) => {
+		// 一重
+		event.create(`${global.namespace}compressed_${name}`)
+			.textureAll(`${global.namespace}block/compressed/${name}/compressed`)
+			.soundType(SoundType.STONE)
+			.hardness(1.5)
+			.resistance(1.5)
+			.tagBlock(toolType["pickaxe"])
+			.tagBlock(miningLevel[level])
+			.requiresTool(true)
+
+		// 二重
+		event.create(`${global.namespace}double_compressed_${name}`)
+			.textureAll(`${global.namespace}block/compressed/${name}/double_compressed`)
+			.soundType(SoundType.STONE)
+			.hardness(2.5)
+			.resistance(2.5)
+			.tagBlock(toolType["pickaxe"])
+			.tagBlock(miningLevel[level])
+			.requiresTool(true)
+
+		// 三重
+		event.create(`${global.namespace}triple_compressed_${name}`)
+			.textureAll(`${global.namespace}block/compressed/${name}/triple_compressed`)
+			.soundType(SoundType.STONE)
+			.hardness(3.5)
+			.resistance(3.5)
+			.tagBlock(toolType["pickaxe"])
+			.tagBlock(miningLevel[level])
+			.requiresTool(true)
 	})
 
 	// 机壳

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "4F2B72244EB1BF86"
 	group: "2726B6E9ECFB77B0"
+	icon: "immersivepetroleum:upgrade_paddles"
 	id: "4F2B72244EB1BF86"
 	order_index: 0
 	quest_links: [ ]
@@ -50,11 +51,30 @@
 			dependencies: ["58B3DF4134ADCFB6"]
 			description: ["空岛生存？"]
 			id: "31BD51EA1236C4FC"
-			rewards: [{
-				id: "620898993BD9F598"
-				item: "new_create:initial_item_kit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "620898993BD9F598"
+					item: "new_create:initial_item_kit"
+					type: "item"
+				}
+				{
+					id: "761641DC14414E98"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1E6427BF3C16D57F"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2C0DE8F40D11874E"
 				title: "迫降飞船的基础物资"
@@ -136,45 +156,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["31BD51EA1236C4FC"]
-			description: ["还有接收器也别忘了"]
-			id: "7D824562ADE8BC08"
-			rewards: [
-				{
-					id: "3507D649E6355651"
-					item: "new_create:easy_rock_gen"
-					type: "item"
-				}
-				{
-					id: "3DFD2DF2D382674C"
-					item: "ae2:energy_acceptor"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "3C0F314436D57F53"
-					item: "minecraft:iron_door"
-					type: "item"
-				}
-			]
-			subtitle: "我记得飞船上有很多年以前留下的造石机,先挖下来吧,以后没准有用"
-			tasks: [{
-				consume_items: true
-				id: "53981E8A1DF3C797"
-				item: {
-					Count: 1
-					id: "immersiveengineering:pickaxe_steel"
-					tag: {
-						Damage: 636
-					}
-				}
-				type: "item"
-			}]
-			title: "拆解飞船 其一"
-			x: -1.0d
-			y: -2.0d
-		}
-		{
 			dependencies: [
 				"021F09956431BCE7"
 				"2AF0A3B84B243422"
@@ -217,6 +198,7 @@
 		}
 		{
 			dependencies: ["31BD51EA1236C4FC"]
+			description: ["看来是空岛生存"]
 			id: "49C3370B7DC77B33"
 			tasks: [{
 				id: "6659DF406D527BAA"
@@ -298,6 +280,20 @@
 		{
 			dependencies: ["5BE8EF1EE1CCE39F"]
 			id: "4DA298C410D3A0EF"
+			rewards: [
+				{
+					count: 5
+					id: "7F783FED69CE7600"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "5EF1EF31E1347BA8"
+					item: "thermal:potato_block"
+					type: "item"
+				}
+			]
+			subtitle: "奖励你种土豆"
 			tasks: [{
 				id: "655F9D5B2CEF3EF3"
 				item: {
@@ -315,21 +311,16 @@
 		{
 			dependencies: ["4DA298C410D3A0EF"]
 			id: "2A55D84DFE179AF1"
-			rewards: [{
-				id: "0AE7C9AFE8CCFFA2"
-				item: "minecraft:potato"
-				type: "item"
-			}]
 			tasks: [{
-				id: "7FC8E1DA196791E9"
-				title: "梦回西伯利亚挖土豆"
-				type: "checkmark"
+				id: "198819CD2F6F8E99"
+				item: "edenring:volvox_block"
+				type: "item"
 			}]
 			x: 13.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["2A55D84DFE179AF1"]
+			dependencies: ["4DA298C410D3A0EF"]
 			id: "0BEBE718063987F5"
 			tasks: [{
 				id: "01D5B4050260FF80"
@@ -347,7 +338,7 @@
 				type: "item"
 			}]
 			title: "堆肥桶"
-			x: 13.0d
+			x: 11.0d
 			y: -2.0d
 		}
 		{
@@ -361,35 +352,58 @@
 				type: "item"
 			}]
 			title: "有作物没骨粉怎么行呢"
-			x: 13.0d
+			x: 11.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["3CA2DD6F5FA31E73"]
-			id: "7C8A1D093F5EE259"
-			tasks: [{
-				id: "1836968E85141B2B"
-				item: "edenring:gravilite_block"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 1.0d
-		}
-		{
 			dependencies: [
+				"2C9624270D8EEDBC"
 				"2A55D84DFE179AF1"
-				"7C8A1D093F5EE259"
+				"312F7081D16504AA"
 			]
 			id: "1AC747F8C5E68984"
+			rewards: [
+				{
+					count: 16
+					id: "66EF5953E5E3BF57"
+					item: "edenring:volvox_block"
+					type: "item"
+				}
+				{
+					id: "4B92A7097B445BFD"
+					item: "new_create:50"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "奖励你"
 			tasks: [{
-				id: "3C15EACF000913F8"
-				title: "下一章！"
-				type: "checkmark"
+				id: "1B4A5B623A90AEB6"
+				item: "new_create:drying_volvox_ball"
+				type: "item"
 			}]
 			x: 16.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3CA2DD6F5FA31E73"]
+			description: ["任何岛屿里都有少量的煤炭"]
+			id: "2C9624270D8EEDBC"
+			tasks: [
+				{
+					id: "2B9E746F02B74EAC"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "2D75EF1E27BC3454"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 1.0d
 		}
 	]
 	title: "紧急迫降"

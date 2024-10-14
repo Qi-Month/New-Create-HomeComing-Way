@@ -3,19 +3,216 @@
 	default_quest_shape: ""
 	filename: "67876AA94A41EF60"
 	group: "4B912993204305BC"
+	icon: "edenring:eden_grass"
 	id: "67876AA94A41EF60"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["37F66F2996FF56AA"]
-		id: "76206CF066473BF1"
-		tasks: [{
-			id: "052F2D43CECA3C1B"
-			title: "陆地生物群戏"
-			type: "checkmark"
-		}]
-		x: -0.5d
-		y: 0.5d
-	}]
-	title: "陆地生物群系"
+	quests: [
+		{
+			disable_toast: true
+			hide: true
+			id: "757F4D2D98A5C84D"
+			rewards: [{
+				id: "0773E05F10416525"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				dimension: "edenring:edenring"
+				id: "09BBD2CF62388F87"
+				title: "这是哪里？"
+				type: "dimension"
+			}]
+			title: "岛屿生物群系"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"风暴之脑是一个聚集着大量金属的生物群系，在这里生长的植物的体内都包含着金属。三种脑树在这里巨量的水分蒸发和无尽的风暴中积蓄了大量的电能，当有生物靠近时，脑树会将电能释放出来对其造成伤害，穿戴全套金属盔甲（铁，金和下界合金）可免疫脑树的伤害"
+				""
+				"该生物群系中伊甸草方块为灰色，地下会大量生成苔石，深板岩，凝灰岩，铁矿石，铜矿石，金矿石，粗铁块，粗铜块和粗金块"
+			]
+			icon: "new_create:brain_sapling"
+			id: "093BEB2388402323"
+			rewards: [{
+				id: "10CD5CD8B9869DE5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:brainstorm"
+				id: "086AE5AC787E07AE"
+				type: "biome"
+			}]
+			title: "风暴之脑"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"金色森林是一个看起来很像秋季的主世界森林的生物群系。温和的气候让这里的植物变成了金黄色。"
+				""
+				"该生物群系中伊甸草方块为棕黄色，地下会大量生成滴水石块，滴水石锥，方解石，苔石和深板岩，有很大概率生成侵蚀洞穴"
+			]
+			icon: "edenring:auritis_sapling"
+			id: "166D91F8F4C788BC"
+			rewards: [{
+				id: "77638FBF0A548DBA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:golden_forest"
+				id: "3C32A111E9A67674"
+				type: "biome"
+			}]
+			title: "金色森林"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"石园是由一片被风侵蚀的岩层组成的生物群系，生长在这样多风且开阔的空间里的植物都很矮小。"
+				""
+				"该生物群系中伊甸草方块为浅绿色，地下会生成方解石，苔石和深板岩"
+			]
+			icon: "minecraft:cobblestone_wall"
+			id: "2D1DCD5997992F1C"
+			rewards: [{
+				id: "12EC70537D861E5A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:stone_garden"
+				id: "32AB4FA8C83B45B7"
+				type: "biome"
+			}]
+			title: "石园"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"湖滨沙漠是一个生长着大量的储水树的生物群系。储水树缓慢地将土壤中的水分抽取出来，使这里的泥土逐渐变成了沙子和沙砾。"
+				""
+				"该生物群系中伊甸草方块为灰黄色，地下由砂岩组成"
+			]
+			icon: "minecraft:sand"
+			id: "68B242EC73CD2F27"
+			rewards: [{
+				id: "4B3793B2705FE7C7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:lakeside_desert"
+				id: "01CF839E6E946602"
+				type: "biome"
+			}]
+			title: "湖滨沙漠"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"微风河谷是一个长期被风吹拂的生物群系，这里的植物的绿色部分都变成了红色"
+				""
+				"该生物群系中伊甸草方块为红色，地下会生成方解石，苔石，凝灰岩和深板岩"
+			]
+			icon: "edenring:parignum"
+			id: "0D01B912B7CEDFC1"
+			rewards: [{
+				id: "1D6072EB8F94ADF8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:wind_valley"
+				id: "130E48C4F6F2A0A0"
+				type: "biome"
+			}]
+			title: "微风河谷"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"菌菇森林是一片长有类似于蘑菇的有机体的生物群系。这里的“蘑菇”依靠内部的低密度气体来保持悬浮，因此被称作气球菇。气球菇块可以直接放置在空中（类似于天使方块），无需对准现有的方块，是很好的建筑材料。"
+				""
+				"该生物群系中伊甸草方块为粉紫色，地下会生成方解石，苔石和凝灰岩"
+			]
+			icon: "edenring:balloon_mushroom_stem"
+			id: "3EEF5183A8AC2908"
+			rewards: [{
+				id: "54C42AD919B73DF6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:mycotic_forest"
+				id: "751379EC9A6D8F57"
+				type: "biome"
+			}]
+			title: "菌菇森林"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"菌菇森林是一片长有类似于蘑菇的有机体的生物群系。这里的“蘑菇”依靠内部的低密度气体来保持悬浮，因此被称作气球菇。气球菇块可以直接放置在空中（类似于天使方块），无需对准现有的方块，是很好的建筑材料"
+				""
+				"该生物群系中伊甸草方块为粉紫色，地下会生成方解石，苔石和凝灰岩"
+				""
+				"菌菇森林的原始变种，在这里还会生长带有菌菇灯笼的巨型气球菇树"
+			]
+			icon: "edenring:balloon_mushroom_log"
+			id: "34084B3EAD53A371"
+			rewards: [{
+				id: "1C5BC354FEDBDB70"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:old_mycotic_forest"
+				id: "2E761903CE23CAAE"
+				type: "biome"
+			}]
+			title: "远古菌菇森林"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["757F4D2D98A5C84D"]
+			description: [
+				"荜木林是一个长有大量类似于竹子的植物的生物群系，放置在这里的植物都带有荧光特效（类似于发光鱿鱼和悦灵）。"
+				""
+				"该生物群系中伊甸草方块为蓝色，地下会生成方解石，苔石，凝灰岩和深板岩"
+			]
+			icon: "edenring:pulse_tree_sapling"
+			id: "6981F9CA44901A93"
+			rewards: [{
+				id: "6546B93463129EAA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				biome: "edenring:pulse_forest"
+				id: "5F03BB396237905D"
+				type: "biome"
+			}]
+			title: "荜木林"
+			x: 1.0d
+			y: 2.0d
+		}
+	]
+	title: "岛屿生物群系"
 }
