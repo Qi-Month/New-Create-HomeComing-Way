@@ -23,7 +23,9 @@ StartupEvents.registry("block", (event) => {
 		// 营养土
 		["nutrient_solution_dirt", "gravel", 1, "shovel", "wooden", false],
 		// 磁性铸铁块
-		["magnetic_cast_iron_block", "metal", 5, "pickaxe", "stone", true]
+		["magnetic_cast_iron_block", "metal", 5, "pickaxe", "stone", true],
+		// 劣质砖块
+		["inferior_bricks", "stone", 2, "pickaxe", "wooden", true],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)

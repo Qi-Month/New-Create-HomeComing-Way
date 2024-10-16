@@ -15,4 +15,19 @@ StartupEvents.registry("fluid", (event) => {
 			.flowingTexture(otherFluidRegisters + "flowing")
 			.stillTexture(otherFluidRegisters + "still")
 	})
+
+	// 金属
+	let moltenRegisters = [
+		// 安山
+		["andesite_alloy", 0x808080]
+	]
+	moltenRegisters.forEach(([name, color]) => {
+		event.create(`${global.namespace}molten_${name}`)
+			.thickTexture(color)
+			.bucketColor(color)
+			.flowingTexture(otherFluidRegisters + "flowing")
+			.stillTexture(otherFluidRegisters + "still")
+			.tag(`forge:molten_${name}`)
+			.tag("forge:molten_materials")
+	})
 })

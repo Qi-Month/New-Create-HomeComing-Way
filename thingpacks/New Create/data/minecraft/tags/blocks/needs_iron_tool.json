@@ -2,18 +2,6 @@
 	"values": [
 		"edenring:brain_tree_fence",
 		"edenring:brain_tree_plate",
-		"edenring:brain_tree_slab",
-		"edenring:copper_framed_brain_tree_log",
-		"edenring:iron_framed_brain_tree_log",
-		"edenring:gold_framed_brain_tree_log",
-		"edenring:brain_tree_log",
-		"edenring:brain_tree_bark",
-		"edenring:brain_tree_stripped_log",
-		"edenring:brain_tree_stripped_bark",
-		"edenring:brain_tree_planks",
-		"edenring:brain_tree_bookshelf",
-		"edenring:brain_tree_stairs",
-		"edenring:brain_tree_gate",
-		"edenring:brain_tree_chair"
+		"edenring:brain_tree_slab"
 	]
 }

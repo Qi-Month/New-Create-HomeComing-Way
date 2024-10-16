@@ -23,7 +23,7 @@ ItemEvents.rightClicked((event) => {
 
 			player.give(Item.of("immersiveengineering:pickaxe_steel")
 				.withCount(1)
-				.withNBT("{Damage:636}")
+				.withNBT("{Damage:578}")
 			)
 
 			player.give(Item.of("youkaishomecoming:red_velvet_cake_slice")

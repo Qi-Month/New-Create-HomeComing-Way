@@ -14,6 +14,31 @@ ServerEvents.recipes((event) => {
 		.produceEnergyPerTick(22.5)
 		.requireItem("edenring:brain_tree_block_gold")
 
+	// 土法高炉
+	event.custom({
+		"type": "custommachinery:custom_machine",
+		"machine": "new_create:soil_blast_furnace",
+		"time": 1000,// 不得给你安排个50秒
+		"hidden": false,
+		"requirements": [
+			{
+				"type": "custommachinery:item",
+				"mode": "input",
+				"item": "#forge:ingots/iron",
+				"amount": 2
+			},
+			{
+				"type": "custommachinery:item",
+				"mode": "output",
+				"item": "new_create:cast_iron_ingot",
+				"amount": 1
+			},
+			{
+				"type": "custommachinery:fuel"
+			}
+		]
+	})
+
 	// 简易造石机
 	custommachinery.custom_machine("new_create:easy_rock_gen", 60)
 		.produceItem("minecraft:cobblestone")

@@ -15,6 +15,6 @@
   "footwear": true,
   "visualiser": false,
   "exclusive": false,
-  "stance": "NONE",
+  "stance": "QUADRUPED",
   "targetEntities": "ALL"
 }

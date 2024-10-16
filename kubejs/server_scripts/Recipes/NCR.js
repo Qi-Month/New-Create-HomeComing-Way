@@ -97,4 +97,21 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/iron",
 		C: "edenring:brain_tree_planks"
 	})
+
+	// 铸铁锭
+	event.custom({
+		"type": "immersiveengineering:alloy",
+		"input0": { "tag": "forge:ingots/iron", "count": 2 },
+		"input1": { "tag": "forge:coal" },
+		"result": { "item": "new_create:cast_iron_ingot" },
+		"time": 200
+	})
+
+	// 劣质砖
+	kubejs.shaped("new_create:inferior_bricks", [
+		"AA",
+		"AA"
+	], {
+		A: "new_create:inferior_brick"
+	})
 })

@@ -25,7 +25,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["volvox_ball", "藻球"],
 		["drying_volvox_ball", "干燥的藻球"],
 		["gravilite_ingot", "磨制重力水晶"],
-		["brain_sapling", "脑树苗"]
+		["brain_sapling", "脑树苗"],
+		["inferior_brick", "劣质砖"]
 	]
 	for (let i = 0; i < itemLang.length; i++) {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
@@ -74,7 +75,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["nutrient_solution_dirt", "营养土"],
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
-		["magnetic_cast_iron_block", "磁性铸铁块"]
+		["magnetic_cast_iron_block", "磁性铸铁块"],
+		["inferior_bricks", "劣质砖块"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
@@ -85,7 +87,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["brain_electric_extractor", "脑电提取器(超级廉价版)"],
 		["easy_rock_gen", "简易造石机"],
 		["stone_gen", "结构造石机"],
-		["oxygen_generator", "制氧机"]
+		["oxygen_generator", "制氧机"],
+		["soil_blast_furnace", "土法高炉"]
 	]
 	for (let i = 0; i < machineLang.length; i++) {
 		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
