@@ -86,9 +86,9 @@
 [cogwheel]
 	#For those who want to make the game more challenging, you can add stress impact to cogwheels!
 	#Range: 0.0 ~ 1.0
-	bronzeCogwheelImpact = 0.0
+	bronzeCogwheelImpact = 0.9
 	#Range: 0.0 ~ 1.0
-	castIronCogwheelImpact = 0.0
+	castIronCogwheelImpact = 1.0
 	#Range: 0.0 ~ 1.0
-	steelCogwheelImpact = 0.0
+	steelCogwheelImpact = 0.8
 

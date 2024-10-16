@@ -1,0 +1,19 @@
+#Should beams make sounds?
+beam_sounds = true
+#Should omnimeters and similar print to vanilla chat?
+#Default is a formatted message overlay
+message_chat = false
+#Should the overlay for the beam cage render while not holding a beam staff?
+#Regardless of setting, it only shows while a beam cage is equipped.
+beam_cage_overlay = true
+#Should electrical arcs make sounds?
+electric_sounds = true
+#Whether beams should be transparent and glowing
+#Default opaque beams are easier to see, but transparent beams are prettier
+#With transparent on, void makes beams more transparent instead of darker, and pure void beams are totally invisible
+transparent_beams = false
+#Should temporal entropy transfer make sounds?
+entropy_sounds = true
+#Should beams visually rotate?
+rotate_beam = true
+

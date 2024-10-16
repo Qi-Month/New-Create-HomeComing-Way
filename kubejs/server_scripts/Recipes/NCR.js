@@ -51,27 +51,33 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
-	// 安山岩压缩
-	kubejs.shapeless("new_create:compressed_andesite", [
-		"9x minecraft:andesite"
-	])
-	kubejs.shapeless("9x minecraft:andesite", [
-		"new_create:compressed_andesite"
-	])
+	// 压缩
+	let levels = ["compressed", "double_compressed", "triple_compressed"]
 
-	kubejs.shapeless("new_create:double_compressed_andesite", [
-		"9x new_create:compressed_andesite"
-	])
-	kubejs.shapeless("9x new_create:compressed_andesite", [
-		"new_create:double_compressed_andesite"
-	])
-
-	kubejs.shapeless("new_create:triple_compressed_andesite", [
-		"9x new_create:double_compressed_andesite"
-	])
-	kubejs.shapeless("9x new_create:double_compressed_andesite", [
-		"new_create:triple_compressed_andesite"
-	])
+	let materials = [
+		"minecraft:andesite",
+		"minecraft:tuff",
+		"minecraft:calcite"
+	]
+	materials.forEach((material) => {
+		kubejs.shapeless(`new_create:compressed_${material.split(':')[1]}`, [
+			`9x ${material}`
+		])
+		kubejs.shapeless(`9x ${material}`, [
+			`new_create:compressed_${material.split(':')[1]}`
+		])
+		levels.forEach((level, index) => {
+			if (index > 0) {
+				let prevLevel = levels[index - 1]
+				kubejs.shapeless(`new_create:${level}_${material.split(':')[1]}`, [
+					`9x new_create:${prevLevel}_${material.split(':')[1]}`
+				])
+				kubejs.shapeless(`9x new_create:${prevLevel}_${material.split(':')[1]}`, [
+					`new_create:${level}_${material.split(':')[1]}`
+				])
+			}
+		})
+	})
 
 	// 干巴的藻球
 	minecraft.smoking("new_create:drying_volvox_ball", [
@@ -80,4 +86,15 @@ ServerEvents.recipes((event) => {
 	minecraft.smelting("new_create:drying_volvox_ball", [
 		"new_create:volvox_ball"
 	])
+
+	// 脑电提取机
+	kubejs.shaped("new_create:brain_electric_extractor", [
+		" A ",
+		"ABA",
+		"CCC"
+	], {
+		A: "#edenring:brain_tree_block",
+		B: "#forge:ingots/iron",
+		C: "edenring:brain_tree_planks"
+	})
 })

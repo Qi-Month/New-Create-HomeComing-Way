@@ -2,7 +2,8 @@ StartupEvents.registry("block", (event) => {
 	let machinery = [
 		"brain_electric_extractor",
 		"easy_rock_gen",
-		"stone_gen"
+		"stone_gen",
+		"oxygen_generator"
 	]
 	machinery.forEach((name) => {
 		event.create(global.namespace + name, "custommachinery")

@@ -1,0 +1,99 @@
+{
+	"name": "block.new_create.oxygen_generator",
+	"appearance": {
+		"idle": {
+			"block": "new_create:machine/oxygen_generator/on"
+		},
+		"running": {
+			"block": "new_create:machine/oxygen_generator/on"
+		},
+		"errored": {
+			"block": "new_create:machine/oxygen_generator/on"
+		},
+		"paused": {
+			"block": "new_create:machine/oxygen_generator/on"
+		},
+		"interaction_sound": "minecraft:oak_planks",
+		"requires_tool": true,
+		"mining_level": "minecraft:needs_stone_tool"
+	},
+	"components": [
+		{
+			"type": "custommachinery:fluid",
+			"id": "input",
+			"mode": "input",
+			"capacity": 10000,
+			"maxInput": 1000,
+			"maxOutput": 1000
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "output",
+			"mode": "output",
+			"capacity": 10000,
+			"maxInput": 1000,
+			"maxOutput": 1000
+		}
+	],
+	"gui": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.oxygen_generator",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:progress",
+			"x": 110,
+			"y": 35
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "input",
+			"x": 80,
+			"y": 20
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "output",
+			"x": 150,
+			"y": 20
+		}
+	],
+	"jei": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.oxygen_generator",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "output",
+			"x": 0,
+			"y": 30
+		}
+	]
+}

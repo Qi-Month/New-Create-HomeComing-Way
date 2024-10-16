@@ -4,7 +4,9 @@ StartupEvents.registry("fluid", (event) => {
 
 	let fluidRegisters = [
 		// 营养液
-		["nutrient_solution", 0x90EE90]
+		["nutrient_solution", 0x90EE90],
+		// 气球菇浆液
+		["balloon_mushroom_slurry", 0xFF69B4],
 	]
 	fluidRegisters.forEach(([name, color]) => {
 		event.create(global.namespace + name)

@@ -10,7 +10,8 @@ ServerEvents.recipes((event) => {
 		"#create:metal_cogwheel",
 		"#create:metal_large_cogwheel",
 		"create:cogwheel",
-		"create:large_cogwheel"
+		"create:large_cogwheel",
+		"thermal:device_rock_gen"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
@@ -28,11 +29,13 @@ ServerEvents.recipes((event) => {
 
 	// 配方id
 	let recipeId = [
+		"create:cutting/andesite_alloy",
 		"thermal:machines/crystallizer/crystallizer_amethyst_cluster",
 		"create:tiled_glass_from_glass_colorless_stonecutting",
 		"create:vertical_framed_glass_from_glass_colorless_stonecutting",
 		"create:horizontal_framed_glass_from_glass_colorless_stonecutting",
-		"create:framed_glass_from_glass_colorless_stonecutting"
+		"create:framed_glass_from_glass_colorless_stonecutting",
+		"ad_astra:oxygen_loading/oxygen_from_oxygen_loading_water"
 	]
 	recipeId.forEach((id) => {
 		event.remove({ id: id })

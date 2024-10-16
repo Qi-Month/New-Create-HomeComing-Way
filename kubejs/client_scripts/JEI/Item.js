@@ -9,6 +9,7 @@ JEIEvents.hideItems((event) => {
 
 JEIEvents.addItems((event) => {
 	let addItem = [
+		"create:chromatic_compound",
 		"create:shadow_steel",
 		"create:shadow_steel_casing",
 		"create:refined_radiance",

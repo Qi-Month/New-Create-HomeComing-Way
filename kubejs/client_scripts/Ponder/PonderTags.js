@@ -28,6 +28,7 @@ Ponder.tags((event) => {
 	// CustomMachine
 	event.createTag("new_create:custommachine", "new_create:stone_gen", "NCR机器", "NCR机器", [
 		"new_create:easy_rock_gen",
-		"new_create:stone_gen"
+		"new_create:stone_gen",
+		"new_create:oxygen_generator"
 	])
 })

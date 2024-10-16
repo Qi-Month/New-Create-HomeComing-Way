@@ -2,17 +2,17 @@ ServerEvents.recipes((event) => {
 	let { custommachinery } = event.recipes
 
 	// 脑电
-	custommachinery.custom_machine("new_create:brain_electric_extractor", 300)
+	custommachinery.custom_machine("new_create:brain_electric_extractor", 1200)
+		.produceEnergyPerTick(7.5)
 		.requireItem("edenring:brain_tree_block_copper")
-		.produceEnergy(150)
 
-	custommachinery.custom_machine("new_create:brain_electric_extractor", 300)
+	custommachinery.custom_machine("new_create:brain_electric_extractor", 1200)
+		.produceEnergyPerTick(15)
 		.requireItem("edenring:brain_tree_block_iron")
-		.produceEnergy(300)
 
-	custommachinery.custom_machine("new_create:brain_electric_extractor", 300)
+	custommachinery.custom_machine("new_create:brain_electric_extractor", 1200)
+		.produceEnergyPerTick(22.5)
 		.requireItem("edenring:brain_tree_block_gold")
-		.produceEnergy(500)
 
 	// 简易造石机
 	custommachinery.custom_machine("new_create:easy_rock_gen", 60)
@@ -25,6 +25,33 @@ ServerEvents.recipes((event) => {
 			L: "minecraft:lava",
 			W: "minecraft:water"
 		})
+
+	// 制氧机
+	custommachinery.custom_machine("new_create:oxygen_generator", 60)
+		.produceFluid(Fluid.of("ad_astra:oxygen", 50), "output")
+		.requireFluid(Fluid.of("minecraft:water", 100), "input")
+		.requireStructure([
+			[
+				"AAA",
+				"AAA",
+				"AmA"
+			],
+			[
+				"BBB",
+				"B B",
+				"BBB"
+			],
+			[
+				"AAA",
+				"ACA",
+				"AAA"
+			]
+		], {
+			A: "create:copper_casing",
+			B: "immersiveengineering:coil_lv",
+			C: "new_create:magnetic_cast_iron_block"
+		})
+
 
 	/* 结构造石机 */
 	// 安山岩
@@ -131,6 +158,60 @@ ServerEvents.recipes((event) => {
 		], {
 			A: "create:copper_casing",
 			B: "new_create:triple_compressed_tuff",
+			C: "create:framed_glass",
+			D: "minecraft:lava"
+		})
+
+	// 方解石
+	custommachinery.custom_machine("new_create:stone_gen", 20)
+		.produceItem("minecraft:calcite")
+		.chance(0.16)
+		.produceItem("minecraft:cobblestone")
+		.chance(0.84)
+		.requireStructure([
+			[
+				"AAA",
+				"AAA",
+				"ABA"
+			],
+			[
+				"CCC",
+				"CDC",
+				"CmC"
+			],
+			[
+				"AAA",
+				"AAA",
+				"AAA"
+			]
+		], {
+			A: "create:copper_casing",
+			B: "new_create:double_compressed_calcite",
+			C: "create:framed_glass",
+			D: "minecraft:lava"
+		})
+
+	custommachinery.custom_machine("new_create:stone_gen", 20)
+		.produceItem("minecraft:calcite")
+		.requireStructure([
+			[
+				"AAA",
+				"AAA",
+				"ABA"
+			],
+			[
+				"CCC",
+				"CDC",
+				"CmC"
+			],
+			[
+				"AAA",
+				"AAA",
+				"AAA"
+			]
+		], {
+			A: "create:copper_casing",
+			B: "new_create:triple_compressed_calcite",
 			C: "create:framed_glass",
 			D: "minecraft:lava"
 		})

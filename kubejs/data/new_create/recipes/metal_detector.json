@@ -7,7 +7,7 @@
     ],
     "key": {
         "R": {
-            "tag": "forge:rods/wood"
+            "tag": "forge:rods/treated_wood"
         },
         "C": {
             "tag": "forge:ingots/cast_iron"

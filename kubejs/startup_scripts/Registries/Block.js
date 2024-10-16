@@ -20,13 +20,15 @@ StartupEvents.registry("block", (event) => {
 
 	// 定义方块
 	let blockRegisters = [
-		// 烧焦圆石
+		// 营养土
 		["nutrient_solution_dirt", "gravel", 1, "shovel", "wooden", false],
+		// 磁性铸铁块
+		["magnetic_cast_iron_block", "metal", 5, "pickaxe", "stone", true]
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)
 			.soundType(soundType)
-			// .soundType(SoundType)
+			// .soundType(SoundType.)
 			.hardness(hardness)
 			.resistance(hardness)
 			.tagBlock(toolType[tool])

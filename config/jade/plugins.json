@@ -97,9 +97,9 @@
     "goggles.detailed": false,
     "placard": true
   },
-  "uti": {
-    "entity_name": true,
-    "object_name": true
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
   },
   "custommachinery": {
     "machine_component_provider": true

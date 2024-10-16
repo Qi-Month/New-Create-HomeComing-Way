@@ -10,7 +10,7 @@ ItemEvents.rightClicked((event) => {
 		"edenring:mycotic_forest",
 		"edenring:old_mycotic_forest"
 	]
-	biomeGroup.forEach((getBiome) => {
+	biomeGroup.forEach((biomeName) => {
 		// 判断手上的物品并且需要潜行
 		if (player.mainHandItem === "new_create:initial_item_kit" && player.crouching) {
 			// 获取生物群系
@@ -45,7 +45,7 @@ ItemEvents.rightClicked((event) => {
 			)
 
 			// 如果不在指定群系中
-			if (!biome.is(getBiome)) {
+			if (!biome.is(biomeName)) {
 				// 这里不是上面指定群系, 因此额外给个指南针
 				player.give(Item.of("naturescompass:naturescompass")
 					.withName(Text.translate("custom.naturescompass.naturescompass"))

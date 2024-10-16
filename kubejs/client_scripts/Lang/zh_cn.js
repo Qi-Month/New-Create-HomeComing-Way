@@ -71,12 +71,25 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 方块
 	let blockLang = [
-		["nutrient_solution_dirt", "富含营养的泥土"],
+		["nutrient_solution_dirt", "营养土"],
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
+		["magnetic_cast_iron_block", "磁性铸铁块"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
+	}
+
+	// 机器
+	let machineLang = [
+		["brain_electric_extractor", "脑电提取器(超级廉价版)"],
+		["easy_rock_gen", "简易造石机"],
+		["stone_gen", "结构造石机"],
+		["oxygen_generator", "制氧机"]
+	]
+	for (let i = 0; i < machineLang.length; i++) {
+		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
+		event.add(`machine.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
 	}
 
 	// 压缩
@@ -93,7 +106,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 流体
 	let fluidLang = [
-		["nutrient_solution", "营养液"]
+		["nutrient_solution", "营养液"],
+		["balloon_mushroom_slurry", "气球菇浆液"]
 	]
 	for (let i = 0; i < fluidLang.length; i++) {
 		event.add(`block.${namespace}.${fluidLang[i][0]}`, fluidLang[i][1])
@@ -101,21 +115,11 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${namespace}.${fluidLang[i][0]}_bucket`, fluidLang[i][1] + "桶")
 	}
 
-	// 机器
-	let machineLang = [
-		["brain_electric_extractor", "脑电提取器(超级廉价版)"],
-		["easy_rock_gen", "简易造石机"],
-		["stone_gen", "结构造石机"]
-	]
-	for (let i = 0; i < machineLang.length; i++) {
-		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
-		event.add(`machine.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
-	}
-
-	// 熔融金属
+	// 金属
 	let moltenLang = [
 		["titanium", "钛"],
-		["andesite_alloy", "安山合金"]
+		["andesite_alloy", "安山合金"],
+		["cast_iron", "铸铁"]
 	]
 	for (let i = 0; i < moltenLang.length; i++) {
 		// Item
@@ -150,7 +154,13 @@ ClientEvents.lang("zh_cn", (event) => {
 		["new_create:easy_rock_gen", "如果发现不起效果尝试将熔岩和水的位置互换一下"],
 		["new_create:initial_item_kit", "潜行加右键使用"],
 		["new_create:drying_volvox_ball", "太干巴了没法吃"],
-		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"]
+		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"],
+		["steampowered:bronze_cogwheel", "应力影响: 0.9"],
+		["steampowered:bronze_large_cogwheel", "应力影响: 0.9"],
+		["steampowered:cast_iron_cogwheel", "应力影响: 1.0"],
+		["steampowered:cast_iron_large_cogwheel", "应力影响: 1.0"],
+		["steampowered:steel_cogwheel", "应力影响: 0.8"],
+		["steampowered:steel_large_cogwheel", "应力影响: 0.8"]
 	]
 	toolTipLang.forEach(([key, text]) => {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${text}`)
@@ -158,7 +168,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人工制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长"]
+		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人为制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长, 而人为干预生长的树则有一定可能掉落树苗(5%)e"]
 	]
 	jeiInfoLang.forEach(([key, text]) => {
 		event.add(`jei.info.${key}`.replace(":", "."), `§b${text}`)

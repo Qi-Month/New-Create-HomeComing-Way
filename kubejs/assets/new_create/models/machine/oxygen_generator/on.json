@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"front": "new_create:block/machine/oxygen_generator/front",
+		"side": "new_create:block/machine/oxygen_generator/side",
+		"top": "new_create:block/machine/oxygen_generator/side"
+	}
+}

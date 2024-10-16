@@ -1,0 +1,19 @@
+{
+	"type": "thermal:tree_extractor",
+	"trunk": {
+		"Name": "edenring:balloon_mushroom_stem",
+		"Properties": {
+			"axis": "y"
+		}
+	},
+	"leaves": {
+		"Name": "edenring:balloon_mushroom_block",
+		"Properties": {
+			"persistent": "false"
+		}
+	},
+	"result": {
+		"fluid": "new_create:balloon_mushroom_slurry",
+		"amount": 50
+	}
+}

@@ -41,7 +41,7 @@ Ponder.registry((event) => {
 			scene.world.showSection([2, 2, 2], Direction.DOWN)
 			scene.idle(20)
 
-			// 
+			//
 			scene.addKeyframe()
 			scene.world.setBlocks([3, 3, 1, 1, 3, 3], casing)
 			let block3 = [

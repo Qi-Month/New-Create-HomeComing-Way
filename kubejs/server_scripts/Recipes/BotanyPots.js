@@ -9,7 +9,8 @@ ServerEvents.recipes((event) => {
 			Item.of("edenring:brain_tree_log").withChance(1),
 			Item.of("edenring:brain_tree_block_copper").withChance(0.25),
 			Item.of("edenring:brain_tree_block_iron").withChance(0.25),
-			Item.of("edenring:brain_tree_block_gold").withChance(0.25)
+			Item.of("edenring:brain_tree_block_gold").withChance(0.25),
+			Item.of("new_create:brain_sapling").withChance(0.05)
 		],
 		60,
 		1
