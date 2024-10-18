@@ -69,4 +69,49 @@ ServerEvents.recipes((event) => {
 			{ "item": "new_create:magnetic_cast_iron_block" }
 		]
 	})
+
+	// 熔铸盖
+	kubejs.shaped("createmetallurgy:foundry_lid", [
+		"AAA",
+		"A A"
+	], {
+		A: "new_create:inferior_brick"
+	}).id("createmetallurgy:foundry_lid")
+
+	// 熔铸盆
+	kubejs.shaped("createmetallurgy:foundry_basin", [
+		"A A",
+		"ABA",
+		"AAA"
+	], {
+		A: "new_create:inferior_brick",
+		B: "new_create:inferior_bricks"
+	}).id("createmetallurgy:foundry_basin")
+
+	// 浇筑盆
+	kubejs.shaped("createmetallurgy:casting_basin", [
+		"A A",
+		"A A",
+		"AAA"
+	], {
+		A: "new_create:inferior_brick"
+	}).id("createmetallurgy:casting_basin")
+
+	// 浇筑台
+	kubejs.shaped("createmetallurgy:casting_table", [
+		"A A",
+		"A A",
+		"AAA"
+	], {
+		A: "new_create:inferior_brick"
+	}).id("createmetallurgy:casting_table")
+
+	// 玻璃熔铸盖
+	kubejs.shaped("createmetallurgy:glassed_foundry_lid", [
+		"ABA",
+		"B B"
+	], {
+		A: "new_create:inferior_brick",
+		B: "#forge:glass"
+	}).id("createmetallurgy:glassed_foundry_lid")
 })

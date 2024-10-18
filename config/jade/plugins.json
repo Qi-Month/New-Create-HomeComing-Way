@@ -8,8 +8,8 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -59,22 +59,6 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
-  "mekanism": {
-    "infuse_type": true,
-    "gas": true,
-    "remove_builtin": true,
-    "pigment": true,
-    "fluid": true,
-    "slurry": true,
-    "energy": true,
-    "tooltip_renderer": true
-  },
-  "pipez": {
-    "pipe": true
-  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -85,17 +69,6 @@
     "coordinates": false,
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
   },
   "expatternprovider": {
     "jade_chamber": true,
@@ -115,5 +88,39 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "remove_builtin": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true,
+    "tooltip_renderer": true
+  },
+  "pipez": {
+    "pipe": true
+  },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
+  "cookingforblockheads": {
+    "fridge": true,
+    "oven": true,
+    "sink": true,
+    "milk_jar": true,
+    "toaster": true
   }
 }

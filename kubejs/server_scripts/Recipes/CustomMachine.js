@@ -18,14 +18,20 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "custommachinery:custom_machine",
 		"machine": "new_create:soil_blast_furnace",
-		"time": 1000,// 不得给你安排个50秒
+		"time": 1000,
 		"hidden": false,
 		"requirements": [
 			{
 				"type": "custommachinery:item",
 				"mode": "input",
 				"item": "#forge:ingots/iron",
-				"amount": 2
+				"amount": 1
+			},
+			{
+				"type": "custommachinery:item",
+				"mode": "input",
+				"item": "#forge:coal",
+				"amount": 1
 			},
 			{
 				"type": "custommachinery:item",
@@ -34,7 +40,15 @@ ServerEvents.recipes((event) => {
 				"amount": 1
 			},
 			{
-				"type": "custommachinery:fuel"
+				"type": "custommachinery:structure",
+				"pattern": [
+					["H"],
+					["m"]
+				],
+				"jei": false,
+				"keys": {
+					H: "minecraft:lava"
+				}
 			}
 		]
 	})

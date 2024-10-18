@@ -7,6 +7,16 @@
 	id: "41CC2C5DB5CB949C"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["434B0475EA86EFBD"]
+		id: "2B2B5F0224648863"
+		tasks: [{
+			id: "69FE09117AFF39C4"
+			item: "create:andesite_casing"
+			type: "item"
+		}]
+		x: -2.5d
+		y: 0.0d
+	}]
 	title: "如何真空生活"
 }

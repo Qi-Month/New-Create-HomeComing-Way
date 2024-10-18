@@ -8,7 +8,8 @@ ItemEvents.tooltip((event) => {
 		"steampowered:cast_iron_cogwheel",
 		"steampowered:cast_iron_large_cogwheel",
 		"steampowered:steel_cogwheel",
-		"steampowered:steel_large_cogwheel"
+		"steampowered:steel_large_cogwheel",
+		"new_create:soil_blast_furnace"
 	]
 	addTooltip.forEach((id) => {
 		event.add(id, Text.translate(`tooltip.${id}`.replace(":", ".")))

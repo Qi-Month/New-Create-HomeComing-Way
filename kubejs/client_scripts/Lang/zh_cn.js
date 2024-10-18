@@ -26,7 +26,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["drying_volvox_ball", "干燥的藻球"],
 		["gravilite_ingot", "磨制重力水晶"],
 		["brain_sapling", "脑树苗"],
-		["inferior_brick", "劣质砖"]
+		["inferior_brick", "土砖"]
 	]
 	for (let i = 0; i < itemLang.length; i++) {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
@@ -76,7 +76,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
 		["magnetic_cast_iron_block", "磁性铸铁块"],
-		["inferior_bricks", "劣质砖块"]
+		["inferior_bricks", "土砖块"],
+		["heat_coal_block", "热煤块"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
@@ -158,6 +159,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["new_create:initial_item_kit", "潜行加右键使用"],
 		["new_create:drying_volvox_ball", "太干巴了没法吃"],
 		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"],
+		["new_create:soil_blast_furnace", "需要在下方放一桶熔岩作为热源"],
+		
 		["steampowered:bronze_cogwheel", "应力影响: 0.9"],
 		["steampowered:bronze_large_cogwheel", "应力影响: 0.9"],
 		["steampowered:cast_iron_cogwheel", "应力影响: 1.0"],
@@ -179,7 +182,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 热量
 	let heatedTip = [
-		["frozen", "冰冻"]
+		["frozen", "冰冻"],
+		["melt", "熔化"]
 	]
 	heatedTip.forEach(([key, text]) => {
 		event.add(`create.recipe.heat_requirement.${key}`, text)

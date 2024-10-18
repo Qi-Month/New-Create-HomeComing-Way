@@ -221,23 +221,6 @@
 			x: -12.5d
 			y: 1.0d
 		}
-		{
-			can_repeat: true
-			id: "4F6ABD4D26B7EAC3"
-			rewards: [{
-				id: "0AF7129A229AB44E"
-				item: "edenring:limphium_leaf_dryed"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "002773DFBD3CEFEB"
-				item: "new_create:drying_volvox_ball"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 2.5d
-		}
 	]
 	title: "尝试飞行"
 }

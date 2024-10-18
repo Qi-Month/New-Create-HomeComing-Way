@@ -26,6 +26,8 @@ StartupEvents.registry("block", (event) => {
 		["magnetic_cast_iron_block", "metal", 5, "pickaxe", "stone", true],
 		// 劣质砖块
 		["inferior_bricks", "stone", 2, "pickaxe", "wooden", true],
+		// 热煤块
+		["heat_coal_block", "stone", 3, "pickaxe", "wooden", true]
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)

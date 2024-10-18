@@ -1,6 +1,11 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create, minecraft } = event.recipes
 
+	// 意义不明的转换
+	kubejs.shapeless("naturescompass:naturescompass", [
+		"naturescompass:naturescompass"
+	])
+
 	// 流体漏斗
 	kubejs.shaped("flopper:flopper", [
 		"ACA",
@@ -33,6 +38,27 @@ ServerEvents.recipes((event) => {
 	// 重力水晶锭
 	create.sandpaper_polishing("new_create:gravilite_ingot", [
 		"edenring:gravilite_shards"
+	])
+
+	// 石头粉
+	let stoneDust = [
+		"stone",
+		"deepslate",
+		"tuff",
+		"calcite"
+	]
+	stoneDust.forEach((name) => {
+		create.milling(`new_create:${name}_dust`, [
+			`minecraft:${name}`
+		])
+	})
+
+	create.milling("new_create:stone_dust", [
+		"minecraft:cobblestone"
+	])
+
+	create.milling("new_create:deepslate_dust", [
+		"minecraft:cobbled_deepslate"
 	])
 
 	// 随机两种 石头粉末 不重复 无序合成获得 混合石头粉末
@@ -98,16 +124,7 @@ ServerEvents.recipes((event) => {
 		C: "edenring:brain_tree_planks"
 	})
 
-	// 铸铁锭
-	event.custom({
-		"type": "immersiveengineering:alloy",
-		"input0": { "tag": "forge:ingots/iron", "count": 2 },
-		"input1": { "tag": "forge:coal" },
-		"result": { "item": "new_create:cast_iron_ingot" },
-		"time": 200
-	})
-
-	// 劣质砖
+	// 土砖
 	kubejs.shaped("new_create:inferior_bricks", [
 		"AA",
 		"AA"

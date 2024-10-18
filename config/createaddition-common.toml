@@ -137,7 +137,7 @@
 	rolling_mill_processing_duration = 120
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
-	rolling_mill_stress = 8
+	rolling_mill_stress = 4
 
 #Misc
 [misc]

@@ -7,24 +7,285 @@
 	id: "06021490E454C85E"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["37F66F2996FF56AA"]
-		description: [
-			"风暴之脑是一个聚集着大量金属的生物群系，在这里生长的植物的体内都包含着金属。三种脑树在这里巨量的水分蒸发和无尽的风暴中积蓄了大量的电能，当有生物靠近时，脑树会将电能释放出来对其造成伤害，穿戴全套金属盔甲（铁，金和下界合金）可免疫脑树的伤害"
-			""
-			"该生物群系中伊甸草方块为灰色，地下会大量生成苔石，深板岩，凝灰岩，铁矿石，铜矿石，金矿石，粗铁块，粗铜块和粗金块"
-		]
-		icon: "new_create:brain_sapling"
-		id: "2238F880E57A7D0A"
-		subtitle: "真正的第一章开始"
-		tasks: [{
-			biome: "edenring:brainstorm"
-			id: "29D20070712A9D58"
-			type: "biome"
-		}]
-		title: "风暴之脑"
-		x: 0.0d
-		y: -1.0d
-	}]
+	quests: [
+		{
+			dependencies: ["37F66F2996FF56AA"]
+			description: [
+				"风暴之脑是一个聚集着大量金属的生物群系，在这里生长的植物的体内都包含着金属。三种脑树在这里巨量的水分蒸发和无尽的风暴中积蓄了大量的电能，当有生物靠近时，脑树会将电能释放出来对其造成伤害，穿戴全套金属盔甲（铁，金和下界合金）可免疫脑树的伤害"
+				""
+				"该生物群系中伊甸草方块为灰色，地下会大量生成苔石，深板岩，凝灰岩，铁矿石，铜矿石，金矿石，粗铁块，粗铜块和粗金块"
+			]
+			icon: "new_create:brain_sapling"
+			id: "2238F880E57A7D0A"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "真正的第一章开始"
+			tasks: [{
+				biome: "edenring:brainstorm"
+				id: "29D20070712A9D58"
+				type: "biome"
+			}]
+			title: "风暴之脑"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2238F880E57A7D0A"]
+			id: "45E14774549A65CE"
+			tasks: [{
+				id: "5ADA152CD2E9B0BD"
+				item: "edenring:brain_tree_log"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2238F880E57A7D0A"]
+			id: "56E09177CF9F6417"
+			tasks: [{
+				id: "7502E48504DD2A64"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"脑树块\"}"
+						}
+						value: "edenring:brain_tree_block"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["45E14774549A65CE"]
+			id: "102E3BF0C45E65E6"
+			tasks: [{
+				id: "6DD949515CDF30BE"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"56E09177CF9F6417"
+				"45E14774549A65CE"
+			]
+			id: "41B4CD03FA88EEFB"
+			tasks: [{
+				id: "66C65614F583FBA3"
+				item: "new_create:brain_electric_extractor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"29FDCE476758F954"
+				"102E3BF0C45E65E6"
+			]
+			id: "4705E2DE68963063"
+			tasks: [
+				{
+					id: "70EDC4DFE951D0EC"
+					item: "steampowered:cast_iron_cogwheel"
+					type: "item"
+				}
+				{
+					id: "08F8E62B24D85FA6"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57675414C36B9F00"]
+			id: "29FDCE476758F954"
+			tasks: [{
+				id: "4AC7109376A5F357"
+				item: "new_create:cast_iron_sheet"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1106BD08318ACBB5"
+				"4BE25A16FEA58308"
+			]
+			id: "57675414C36B9F00"
+			tasks: [{
+				id: "3C7DA1EAF7287200"
+				item: "new_create:cast_iron_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2238F880E57A7D0A"]
+			id: "4BE25A16FEA58308"
+			tasks: [{
+				id: "5A2AB6F239792926"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "53C986C4FFA80F33"
+			tasks: [{
+				id: "535430D03CF42DEC"
+				item: "new_create:inferior_brick"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4705E2DE68963063"]
+			id: "48116DC51985D109"
+			tasks: [{
+				id: "619B7F9C8C1B0EA7"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["641B70AA3DCD264F"]
+			id: "43D2614889F375EA"
+			tasks: [{
+				id: "447797A3730630FE"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["48116DC51985D109"]
+			id: "2451D29BC81EE456"
+			tasks: [{
+				id: "35FF4BA870F1C1BA"
+				item: "new_create:stone_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["48116DC51985D109"]
+			id: "4EB6F22C0B3F5275"
+			tasks: [{
+				id: "617012E8AAB05A9C"
+				title: "其他任意材质食堂粉末"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"4EB6F22C0B3F5275"
+				"2451D29BC81EE456"
+			]
+			id: "1C5B12BF243FFF61"
+			tasks: [{
+				id: "6315E59FD3E2BBFF"
+				item: "new_create:mixed_stone_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C5B12BF243FFF61"]
+			id: "641B70AA3DCD264F"
+			tasks: [{
+				id: "3B229B2FD6632CB0"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["43D2614889F375EA"]
+			id: "6A571491B8E75015"
+			tasks: [{
+				id: "727A3A425CB034BE"
+				item: "immersiveengineering:wire_copper"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A571491B8E75015"]
+			id: "44C95FF259CF8342"
+			tasks: [{
+				id: "05CC64154C70B37C"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"41B4CD03FA88EEFB"
+				"44C95FF259CF8342"
+			]
+			id: "0863E4CE264D496F"
+			subtitle: "还记得开局给的电池吗 需要先把电在电池里累积点哦"
+			tasks: [{
+				id: "66F5870C8BEC87C2"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53C986C4FFA80F33"]
+			id: "1106BD08318ACBB5"
+			tasks: [{
+				id: "103FB8FFFCBDC0AD"
+				item: "new_create:soil_blast_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"641B70AA3DCD264F"
+				"0863E4CE264D496F"
+			]
+			id: "434B0475EA86EFBD"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4A65EF9D8F15B791"
+				title: "机械动力启动"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+	]
 	title: "金属岛屿？"
 }
