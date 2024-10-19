@@ -131,4 +131,13 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "new_create:inferior_brick"
 	})
+
+	// 土法高炉
+	kubejs.shaped("new_create:soil_blast_furnace", [
+		"AAA",
+		"A A",
+		"AAA"
+	], {
+		A: "new_create:inferior_brick"
+	})
 })

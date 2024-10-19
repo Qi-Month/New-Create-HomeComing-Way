@@ -1,0 +1,6 @@
+{
+	"type": "ad_astra:oxygen_conversion",
+	"input": "ad_astra:oxygen",
+	"output": "ad_astra:oxygen",
+	"conversion_ratio": 1
+}

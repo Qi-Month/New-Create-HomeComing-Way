@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 		{ block: "new_create:nutrient_solution_dirt" },
 		["oak_leaves"],
 		100,
-		0.5
+		2.0
 	)
 })
 

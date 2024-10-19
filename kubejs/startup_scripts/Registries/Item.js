@@ -8,6 +8,7 @@ StartupEvents.registry("item", (event) => {
 		["initial_item_kit", epic, true], // 初始套件
 		["drying_volvox_ball", common, false], // 干燥的藻球
 		["inferior_brick", common, false], // 劣质砖
+		["transition_stone", epic, false], // 跃迁石
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(global.namespace + name)

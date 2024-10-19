@@ -26,7 +26,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["drying_volvox_ball", "干燥的藻球"],
 		["gravilite_ingot", "磨制重力水晶"],
 		["brain_sapling", "脑树苗"],
-		["inferior_brick", "土砖"]
+		["inferior_brick", "土砖"],
+		["transition_stone", "跃迁石"]
 	]
 	for (let i = 0; i < itemLang.length; i++) {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
@@ -160,7 +161,15 @@ ClientEvents.lang("zh_cn", (event) => {
 		["new_create:drying_volvox_ball", "太干巴了没法吃"],
 		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"],
 		["new_create:soil_blast_furnace", "需要在下方放一桶熔岩作为热源"],
-		
+		["portality:controller", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:frame", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_energy", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_fluids", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_items", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_interdimensional", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:generator", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:teleportation_token", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+
 		["steampowered:bronze_cogwheel", "应力影响: 0.9"],
 		["steampowered:bronze_large_cogwheel", "应力影响: 0.9"],
 		["steampowered:cast_iron_cogwheel", "应力影响: 1.0"],

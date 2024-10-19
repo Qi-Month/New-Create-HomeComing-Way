@@ -71,8 +71,8 @@ Ponder.registry((event) => {
 
 			//
 			scene.addKeyframe()
-			scene.world.showSection([3, 1, 1, 1, 3, 5], Direction.DOWN)
-			scene.world.showSection([5, 2, 3, 4, 2, 3], Direction.DOWN)
+			scene.world.showSection([3, 1, 1, 1, 3, 5], Direction.SOUTH)
+			scene.world.showSection([5, 2, 3, 4, 2, 3], Direction.SOUTH)
 			scene.idle(20)
 			scene.text(40, "水泵进去后会在60Tick(即3s)后生产一批氧气", [5.5, 2.5, 4])
 			scene.idle(50)

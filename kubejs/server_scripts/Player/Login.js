@@ -6,5 +6,5 @@ PlayerEvents.loggedIn((event) => {
 
 	// 修改规则
 	player.runCommandSilent("gamerule artifacts.diggingClaws.toolTier 3")
-	player.runCommandSilent("gamerule waterSourceConversion false")
+	// player.runCommandSilent("gamerule waterSourceConversion false")
 })
