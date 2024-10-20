@@ -161,14 +161,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["new_create:drying_volvox_ball", "太干巴了没法吃"],
 		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"],
 		["new_create:soil_blast_furnace", "需要在下方放一桶熔岩作为热源"],
-		["portality:controller", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:frame", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:module_energy", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:module_fluids", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:module_items", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:module_interdimensional", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:generator", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
-		["portality:teleportation_token", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
 
 		["steampowered:bronze_cogwheel", "应力影响: 0.9"],
 		["steampowered:bronze_large_cogwheel", "应力影响: 0.9"],
@@ -183,7 +175,15 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人为制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长, 而人为干预生长的树则有一定可能掉落树苗(5%)e"]
+		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人为制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长, 而人为干预生长的树则有一定可能掉落树苗(5%)"],
+		["portality:controller", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:frame", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_energy", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_fluids", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_items", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:module_interdimensional", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:generator", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
+		["portality:teleportation_token", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
 	]
 	jeiInfoLang.forEach(([key, text]) => {
 		event.add(`jei.info.${key}`.replace(":", "."), `§b${text}`)

@@ -9,15 +9,7 @@ ItemEvents.tooltip((event) => {
 		"steampowered:cast_iron_large_cogwheel",
 		"steampowered:steel_cogwheel",
 		"steampowered:steel_large_cogwheel",
-		"new_create:soil_blast_furnace",
-		"portality:controller",
-		"portality:frame",
-		"portality:module_energy",
-		"portality:module_fluids",
-		"portality:module_items",
-		"portality:module_interdimensional",
-		"portality:generator",
-		"portality:teleportation_token"
+		"new_create:soil_blast_furnace"
 	]
 	addTooltip.forEach((id) => {
 		event.add(id, Text.translate(`tooltip.${id}`.replace(":", ".")))
