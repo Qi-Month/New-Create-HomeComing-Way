@@ -114,4 +114,20 @@ ServerEvents.recipes((event) => {
 		A: "new_create:inferior_brick",
 		B: "#forge:glass"
 	}).id("createmetallurgy:glassed_foundry_lid")
+
+	// 工作盆
+	kubejs.shaped("create:basin", [
+		"A A",
+		"AAA"
+	], {
+		A: "new_create:inferior_brick"
+	})
+
+	// 工作盆盖板
+	kubejs.shaped("createdieselgenerators:basin_lid", [
+		"AAA",
+		"AAA"
+	], {
+		A: "new_create:inferior_brick"
+	})
 })

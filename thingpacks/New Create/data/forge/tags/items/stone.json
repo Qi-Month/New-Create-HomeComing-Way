@@ -1,5 +1,6 @@
 {
 	"values": [
-		"#forge:cobblestone"
+		"#forge:cobblestone",
+		"minecraft:smooth_stone"
 	]
 }

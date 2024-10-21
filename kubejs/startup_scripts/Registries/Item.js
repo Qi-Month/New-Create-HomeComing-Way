@@ -1,3 +1,5 @@
+let $Rarity = Java.loadClass("net.minecraft.world.item.Rarity")
+
 StartupEvents.registry("item", (event) => {
 	let common = "common"
 	let uncommon = "uncommon"
@@ -7,8 +9,13 @@ StartupEvents.registry("item", (event) => {
 	let itemRegisters = [
 		["initial_item_kit", epic, true], // 初始套件
 		["drying_volvox_ball", common, false], // 干燥的藻球
-		["inferior_brick", common, false], // 劣质砖
+		["wet_inferior_brick", common, false], // 潮湿的土砖
+		["inferior_brick", common, false], // 土砖
 		["transition_stone", epic, false], // 跃迁石
+		["refractory_clay_ball", common, false], // 耐火黏土
+		["refractory_brick", common, false], // 
+		["quicklime", common, false], // 生石灰
+		["mortar", common, false], // 砂浆
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(global.namespace + name)

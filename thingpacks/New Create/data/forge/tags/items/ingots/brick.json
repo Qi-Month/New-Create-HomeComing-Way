@@ -1,5 +1,6 @@
 {
 	"values": [
-		"new_create:inferior_brick"
+		"new_create:inferior_brick",
+		"new_create:refractory_brick"
 	]
 }

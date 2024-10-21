@@ -26,8 +26,14 @@ ClientEvents.lang("zh_cn", (event) => {
 		["drying_volvox_ball", "干燥的藻球"],
 		["gravilite_ingot", "磨制重力水晶"],
 		["brain_sapling", "脑树苗"],
+		["wet_inferior_brick", "潮湿的土砖"],
 		["inferior_brick", "土砖"],
-		["transition_stone", "跃迁石"]
+		["transition_stone", "跃迁石"],
+		["refractory_clay_ball", "耐火黏土"],
+		["refractory_brick", "耐火砖"],
+		["flux", "助焊剂"],
+		["quicklime", "生石灰"],
+		["mortar", "砂浆"]
 	]
 	for (let i = 0; i < itemLang.length; i++) {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
@@ -74,11 +80,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 方块
 	let blockLang = [
 		["nutrient_solution_dirt", "营养土"],
+		["black_dirt", "黑土"],
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
 		["magnetic_cast_iron_block", "磁性铸铁块"],
 		["inferior_bricks", "土砖块"],
-		["heat_coal_block", "热煤块"]
+		["heat_coal_block", "热煤块"],
+		["refractory_bricks", "耐火砖块"],
+		["refractory_bricks_wall", "耐火砖块墙"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
@@ -90,7 +99,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["easy_rock_gen", "简易造石机"],
 		["stone_gen", "结构造石机"],
 		["oxygen_generator", "制氧机"],
-		["soil_blast_furnace", "土法高炉"]
+		["soil_blast_furnace", "土法高炉"],
+		["blast_furnace", "高炉"]
 	]
 	for (let i = 0; i < machineLang.length; i++) {
 		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
@@ -112,7 +122,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 流体
 	let fluidLang = [
 		["nutrient_solution", "营养液"],
-		["balloon_mushroom_slurry", "气球菇浆液"]
+		["balloon_mushroom_slurry", "气球菇浆液"],
+		["lime_water", "石灰水"]
 	]
 	for (let i = 0; i < fluidLang.length; i++) {
 		event.add(`block.${namespace}.${fluidLang[i][0]}`, fluidLang[i][1])
@@ -161,6 +172,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["new_create:drying_volvox_ball", "太干巴了没法吃"],
 		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"],
 		["new_create:soil_blast_furnace", "需要在下方放一桶熔岩作为热源"],
+		["new_create:black_dirt", "挖土有35%的概率掉落"],
 
 		["steampowered:bronze_cogwheel", "应力影响: 0.9"],
 		["steampowered:bronze_large_cogwheel", "应力影响: 0.9"],

@@ -37,8 +37,8 @@
 				item: "edenring:brain_tree_log"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2238F880E57A7D0A"]
@@ -58,8 +58,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["45E14774549A65CE"]
@@ -69,22 +69,19 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: [
-				"56E09177CF9F6417"
-				"45E14774549A65CE"
-			]
+			dependencies: ["56E09177CF9F6417"]
 			id: "41B4CD03FA88EEFB"
 			tasks: [{
 				id: "66C65614F583FBA3"
 				item: "new_create:brain_electric_extractor"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -95,7 +92,14 @@
 			tasks: [
 				{
 					id: "70EDC4DFE951D0EC"
-					item: "steampowered:cast_iron_cogwheel"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:metal_cogwheel"
+						}
+					}
+					title: "Any #create:metal_cogwheel"
 					type: "item"
 				}
 				{
@@ -104,8 +108,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: -1.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["57675414C36B9F00"]
@@ -116,7 +120,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -129,29 +133,42 @@
 				item: "new_create:cast_iron_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2238F880E57A7D0A"]
 			id: "4BE25A16FEA58308"
-			tasks: [{
-				id: "5A2AB6F239792926"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
+			tasks: [
+				{
+					id: "0F42AC495710612A"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "5837841C330CB5D5"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "174389B14C58CFBB"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["2238F880E57A7D0A"]
 			id: "53C986C4FFA80F33"
 			tasks: [{
 				id: "535430D03CF42DEC"
 				item: "new_create:inferior_brick"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.5d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4705E2DE68963063"]
@@ -161,8 +178,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.0d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["641B70AA3DCD264F"]
@@ -172,8 +189,8 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.0d
+			x: 7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["48116DC51985D109"]
@@ -183,8 +200,8 @@
 				item: "new_create:stone_dust"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.5d
+			x: 7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["48116DC51985D109"]
@@ -194,8 +211,8 @@
 				title: "其他任意材质食堂粉末"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: -0.5d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -208,19 +225,22 @@
 				item: "new_create:mixed_stone_dust"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 8.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["1C5B12BF243FFF61"]
+			dependencies: [
+				"029D58D74CC4504E"
+				"1E3FB66110003AF9"
+			]
 			id: "641B70AA3DCD264F"
 			tasks: [{
 				id: "3B229B2FD6632CB0"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.0d
+			x: 8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["43D2614889F375EA"]
@@ -230,8 +250,8 @@
 				item: "immersiveengineering:wire_copper"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.0d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6A571491B8E75015"]
@@ -241,8 +261,8 @@
 				item: "createaddition:copper_spool"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -267,8 +287,8 @@
 				item: "new_create:soil_blast_furnace"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -285,6 +305,199 @@
 			}]
 			x: 7.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["4BE25A16FEA58308"]
+			id: "74B3084A2271E1A2"
+			tasks: [{
+				id: "11D9ACC24BF6E8D1"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"74B3084A2271E1A2"
+				"4705E2DE68963063"
+			]
+			id: "1E3FB66110003AF9"
+			subtitle: "可以直接管道接入铸造台"
+			tasks: [
+				{
+					id: "11B402C097C6AA38"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "34B712DCD74F0175"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "70750D979D1293C0"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C5B12BF243FFF61"]
+			id: "0510CCECF392C40F"
+			tasks: [
+				{
+					id: "6FB07030EA3592B0"
+					item: "createmetallurgy:casting_basin"
+					type: "item"
+				}
+				{
+					id: "3FDF226BBB2CE4BD"
+					item: "createmetallurgy:foundry_lid"
+					type: "item"
+				}
+				{
+					id: "1EFCDB02F393EBA6"
+					item: "new_create:heat_coal_block"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0510CCECF392C40F"]
+			id: "604A60958833B561"
+			tasks: [{
+				id: "2995FFC6C759E5C8"
+				item: "new_create:molten_andesite_alloy_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["604A60958833B561"]
+			id: "029D58D74CC4504E"
+			tasks: [{
+				id: "617B6A2C02B0C489"
+				item: "createmetallurgy:casting_table"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			id: "13707DCC13797614"
+			tasks: [{
+				id: "1A85E7A5C3641FB9"
+				item: "minecraft:calcite"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			id: "205B0F82A3BABBC6"
+			tasks: [{
+				id: "2A7A37466E0568C3"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			id: "6D08C14BA782CF33"
+			tasks: [{
+				id: "56710D4FBF5E6609"
+				item: "new_create:refractory_clay_ball"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			id: "2EF25361D064E998"
+			tasks: [{
+				id: "03D5859DD2A9A548"
+				item: "new_create:refractory_bricks"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			id: "47A0DAE3E2005773"
+			tasks: [{
+				id: "5B1A5326D69EC259"
+				item: "new_create:refractory_bricks_wall"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			id: "3D7C725819EAFE6F"
+			tasks: [{
+				id: "0C54E0F128BBCDAB"
+				item: "new_create:blast_furnace"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			id: "73AB54A8817342DC"
+			tasks: [{
+				id: "19C21027276C5E22"
+				item: "alltheores:raw_aluminum"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			id: "0C49554EED7B6783"
+			tasks: [{
+				id: "5D8B70BFAF2316C0"
+				item: "alltheores:dirty_aluminum_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			id: "770A55505AF4CD2A"
+			tasks: [{
+				id: "195879DB83C4CD3E"
+				item: "new_create:quicklime"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			id: "148B3198500F0D32"
+			tasks: [{
+				id: "7D8D18BE18D40273"
+				item: "new_create:lime_water_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			id: "00C16F637E9350B7"
+			tasks: [{
+				id: "32AE3670E3D35F57"
+				item: "new_create:mortar"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
 		}
 	]
 	title: "金属岛屿？"

@@ -63,7 +63,7 @@ PlayerEvents.loggedIn((event) => {
 		if (player.username === global.debugUserName[i]) {
 			player.tell(Text.translate("message.new_create.debug.getItemId", [player.username]))
 			// 遍历Tag
-			Ingredient.of("#forge:stone")
+			Ingredient.of("#minecraft:sand")
 				.getItemIds()
 				.forEach((print) => {
 					console.log(print)

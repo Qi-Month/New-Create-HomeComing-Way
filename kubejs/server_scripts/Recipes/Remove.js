@@ -36,7 +36,8 @@ ServerEvents.recipes((event) => {
 		"create:horizontal_framed_glass_from_glass_colorless_stonecutting",
 		"create:framed_glass_from_glass_colorless_stonecutting",
 		"ad_astra:oxygen_loading/oxygen_from_oxygen_loading_water",
-		"ad_astra:conversion/oxygen_from_water"
+		"ad_astra:conversion/oxygen_from_water",
+		"create:milling/calcite"
 	]
 	recipeId.forEach((id) => {
 		event.remove({ id: id })

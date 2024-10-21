@@ -22,12 +22,16 @@ StartupEvents.registry("block", (event) => {
 	let blockRegisters = [
 		// 营养土
 		["nutrient_solution_dirt", "gravel", 1, "shovel", "wooden", false],
+		// 黑土
+		["black_dirt", "gravel", 0.5, "shovel", "wooden", false],
 		// 磁性铸铁块
 		["magnetic_cast_iron_block", "metal", 5, "pickaxe", "stone", true],
-		// 劣质砖块
+		// 土砖块
 		["inferior_bricks", "stone", 2, "pickaxe", "wooden", true],
 		// 热煤块
-		["heat_coal_block", "stone", 3, "pickaxe", "wooden", true]
+		["heat_coal_block", "stone", 3, "pickaxe", "wooden", true],
+		// 耐火砖块
+		["refractory_bricks", "stone", 2, "pickaxe", "stone", true],
 	]
 	blockRegisters.forEach(([name, soundType, hardness, tool, level, needTool]) => {
 		event.create(global.namespace + name)
@@ -108,6 +112,15 @@ StartupEvents.registry("block", (event) => {
 		.noValidSpawns(true)
 		.defaultCutout()
 	*/
+
+	// 耐火砖栏墙
+	event.create(global.namespace + "refractory_bricks_wall", "wall")
+		.soundType(SoundType.STONE)
+		.hardness(2)
+		.resistance(2)
+		.tagBlock(toolType["pickaxe"])
+		.tagBlock(miningLevel["stone"])
+		.requiresTool(true)
 
 	// 太阳能发电板
 	event.create(global.namespace + "soler_panel", "cardinal")

@@ -1,0 +1,19 @@
+{
+	"type": "createdieselgenerators:basin_fermenting",
+	"ingredients": [
+		{
+			"tag": "forge:sand"
+		},
+		{
+			"fluid": "new_create:lime_water",
+			"amount": 500
+		}
+	],
+	"results": [
+		{
+			"item": "new_create:mortar",
+			"count": 1
+		}
+	],
+	"processingTime": 300
+}

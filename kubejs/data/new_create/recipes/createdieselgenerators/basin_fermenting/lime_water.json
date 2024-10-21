@@ -1,0 +1,40 @@
+{
+	"type": "createdieselgenerators:basin_fermenting",
+	"ingredients": [
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"item": "new_create:quicklime"
+		},
+		{
+			"fluid": "minecraft:water",
+			"amount": 1000
+		}
+	],
+	"results": [
+		{
+			"fluid": "new_create:lime_water",
+			"amount": 1000
+		}
+	],
+	"processingTime": 600
+}

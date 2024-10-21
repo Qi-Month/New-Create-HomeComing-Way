@@ -4,7 +4,8 @@ StartupEvents.registry("block", (event) => {
 		"easy_rock_gen",
 		"stone_gen",
 		"oxygen_generator",
-		"soil_blast_furnace"
+		"soil_blast_furnace",
+		"blast_furnace"
 	]
 	machinery.forEach((name) => {
 		event.create(global.namespace + name, "custommachinery")

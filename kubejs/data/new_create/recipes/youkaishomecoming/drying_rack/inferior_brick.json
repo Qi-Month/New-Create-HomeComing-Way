@@ -1,0 +1,9 @@
+{
+	"type": "youkaishomecoming:drying_rack",
+	"cookingtime": 200,
+	"experience": 0.0,
+	"ingredient": {
+		"item": "new_create:wet_inferior_brick"
+	},
+	"result": "new_create:inferior_brick"
+}

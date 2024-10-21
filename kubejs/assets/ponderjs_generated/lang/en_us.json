@@ -33,6 +33,7 @@
   "steampowered.ponder.steam_engine.text_7": "However, power up higher level of engine require higher amount of steam, boiler and burner should match the level.",
   "new_create.ponder.tag.custommachine": "NCR机器",
   "new_create.ponder.tag.custommachine.description": "NCR机器",
+  "new_create.ponder.blast_furnace.header": "高炉(致敬传奇Mod工业长路)",
   "new_create.ponder.easy_rock_gen.header": "简易造石机",
   "new_create.ponder.easy_rock_gen.text_1": "简易造石机可以通过接触旁边的水和熔岩来制造圆石",
   "new_create.ponder.easy_rock_gen.text_2": "只需要在两边分别放一桶熔岩和水即可进行工作, 速度为60Tick(即3秒)一个",

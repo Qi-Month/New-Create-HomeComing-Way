@@ -1,0 +1,150 @@
+{
+	"name": "block.new_create.blast_furnace",
+	"appearance": {
+		"idle": {
+			"block": "new_create:machine/blast_furnace/off"
+		},
+		"running": {
+			"block": "new_create:machine/blast_furnace/on",
+			"lightlevel": 15
+		},
+		"errored": {
+			"block": "new_create:machine/blast_furnace/off"
+		},
+		"paused": {
+			"block": "new_create:machine/blast_furnace/off"
+		},
+		"interaction_sound": "minecraft:bricks",
+		"mining_level": "minecraft:needs_iron_tool",
+		"requires_tool": true
+	},
+	"components": [
+		{
+			"type": "custommachinery:fluid",
+			"id": "output",
+			"mode": "output",
+			"capacity": 1000000
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "input",
+			"id": "input1"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "input",
+			"id": "input2"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "input",
+			"id": "input3"
+		}
+	],
+	"gui": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.blast_furnace",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:progress",
+			"x": 110,
+			"y": 45
+		},
+		{
+			"type": "custommachinery:status",
+			"x": 236,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input1",
+			"x": 85,
+			"y": 54
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input2",
+			"x": 85,
+			"y": 34
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input3",
+			"x": 65,
+			"y": 44
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "output",
+			"x": 140,
+			"y": 30
+		}
+	],
+	"jei": [
+		{
+			"type": "custommachinery:text",
+			"text": "machine.new_create.blast_furnace",
+			"x": 110,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:texture",
+			"texture": "custommachinery:textures/gui/base_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 47,
+			"y": 80
+		},
+		{
+			"type": "custommachinery:progress",
+			"x": 110,
+			"y": 45
+		},
+		{
+			"type": "custommachinery:status",
+			"x": 236,
+			"y": 5
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input1",
+			"x": 85,
+			"y": 54
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input2",
+			"x": 85,
+			"y": 34
+		},
+		{
+			"type": "custommachinery:slot",
+			"id": "input3",
+			"x": 65,
+			"y": 44
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "output",
+			"x": 140,
+			"y": 30
+		}
+	]
+}

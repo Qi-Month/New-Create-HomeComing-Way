@@ -40,12 +40,21 @@ ServerEvents.recipes((event) => {
 		"edenring:gravilite_shards"
 	])
 
+	// 混合桶
+	kubejs.shaped("youkaishomecoming:fermentation_tank", [
+		"ABA",
+		"A A",
+		"AAA"
+	], {
+		A: "new_create:inferior_bricks",
+		B: "#minecraft:wooden_trapdoors"
+	}).id("youkaishomecoming:fermentation_tank")
+
 	// 石头粉
 	let stoneDust = [
 		"stone",
 		"deepslate",
-		"tuff",
-		"calcite"
+		"tuff"
 	]
 	stoneDust.forEach((name) => {
 		create.milling(`new_create:${name}_dust`, [
@@ -121,7 +130,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#edenring:brain_tree_block",
 		B: "#forge:ingots/iron",
-		C: "edenring:brain_tree_planks"
+		C: "minecraft:smooth_stone"
 	})
 
 	// 土砖
@@ -140,4 +149,95 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "new_create:inferior_brick"
 	})
+
+	// 生石灰
+	create.compacting([
+		Item.of("new_create:quicklime").withChance(1),
+		Item.of("new_create:quicklime").withChance(0.5),
+		Item.of("2x new_create:quicklime").withChance(0.25)
+	], [
+		"4x minecraft:calcite"
+	])
+
+	// 高炉
+	kubejs.shaped("new_create:blast_furnace", [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		A: "new_create:refractory_brick",
+		B: "#forge:ingots/iron"
+	})
+
+	// 耐火砖墙
+	minecraft.stonecutting("new_create:refractory_bricks_wall", [
+		"new_create:refractory_bricks"
+	])
+	kubejs.shaped("6x new_create:refractory_bricks_wall", [
+		"AAA",
+		"AAA"
+	], {
+		A: "new_create:refractory_bricks"
+	})
+
+	// 污浊铝粉
+	create.milling("alltheores:dirty_aluminum_dust", [
+		"#forge:raw_materials/aluminum"
+	])
+
+	create.crushing("alltheores:dirty_aluminum_dust", [
+		"#forge:raw_materials/aluminum"
+	])
+
+	// 石英
+	create.milling([
+		Item.of("new_create:calcite_dust").withChance(1),
+		Item.of("minecraft:quartz").withChance(0.5),
+	], [
+		"minecraft:calcite"
+	])
+
+	create.crushing([
+		Item.of("new_create:calcite_dust").withChance(1),
+		Item.of("minecraft:quartz").withChance(1),
+	], [
+		"minecraft:calcite"
+	])
+
+	// 耐火黏土
+	create.mixing("new_create:refractory_clay_ball", [
+		"minecraft:clay_ball",
+		"4x alltheores:dirty_aluminum_dust",
+		"4x #forge:gems/quartz"
+	])
+
+	// 耐火砖块
+	kubejs.shaped("new_create:refractory_bricks", [
+		"ABA",
+		"BAB",
+		"ABA"
+	], {
+		A: "new_create:refractory_brick",
+		B: "new_create:mortar"
+	})
+
+	// 耐火砖
+	minecraft.smelting("new_create:refractory_brick", "new_create:refractory_clay_ball")
+	minecraft.smoking("new_create:inferior_brick", "new_create:refractory_clay_ball")
+	minecraft.blasting("new_create:refractory_brick", "new_create:refractory_clay_ball")
+
+	// 土砖干燥
+	minecraft.campfire_cooking("new_create:inferior_brick", "new_create:wet_inferior_brick")
+	minecraft.smelting("new_create:inferior_brick", "new_create:wet_inferior_brick")
+	minecraft.smoking("new_create:inferior_brick", "new_create:wet_inferior_brick")
+	minecraft.blasting("new_create:inferior_brick", "new_create:wet_inferior_brick")
+
+	// 晾干架
+	kubejs.shaped("youkaishomecoming:drying_rack", [
+		"AAA",
+		"A A",
+		"AAA"
+	], {
+		A: "#forge:rods/wooden"
+	}).id("youkaishomecoming:drying_rack_from_bamboo_block_stonecutting")
 })
