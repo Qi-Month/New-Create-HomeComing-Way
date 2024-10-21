@@ -141,6 +141,12 @@ ServerEvents.recipes((event) => {
 		A: "new_create:inferior_brick"
 	})
 
+	// 潮湿的土砖
+	kubejs.shapeless("new_create:wet_inferior_brick", [
+		"2x new_create:black_dirt",
+		"2x new_create:mixed_stone_dust"
+	])
+
 	// 土法高炉
 	kubejs.shaped("new_create:soil_blast_furnace", [
 		"AAA",
