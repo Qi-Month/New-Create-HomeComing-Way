@@ -37,6 +37,14 @@ ServerEvents.recipes((event) => {
 		"create:chromatic_compound", "create:shadow_steel"
 	))
 
+	// 传送带
+	kubejs.shaped("2x create:belt_connector", [
+		"AAA",
+		"AAA"
+	], {
+		A: "thermal:cured_rubber"
+	}).id("create:crafting/kinetics/belt_connector")
+
 	// 传动杆
 	kubejs.shaped("4x create:shaft", [
 		"A",

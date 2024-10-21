@@ -11,7 +11,9 @@ ServerEvents.recipes((event) => {
 		"#create:metal_large_cogwheel",
 		"create:cogwheel",
 		"create:large_cogwheel",
-		"thermal:device_rock_gen"
+		"thermal:device_rock_gen",
+		"thermal:rubber",
+		"thermal:rubber_block"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
