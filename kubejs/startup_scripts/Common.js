@@ -1,3 +1,5 @@
+// priorty: 0
+
 // Namespace
 global.namespace = "new_create:"
 

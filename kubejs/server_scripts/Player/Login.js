@@ -7,12 +7,23 @@ PlayerEvents.loggedIn((event) => {
 	// 修改规则
 	player.runCommandSilent("gamerule artifacts.diggingClaws.toolTier 3")
 
-	// 如果玩家不是debug用户, 则关闭无限水
 	global.debugUserName.forEach((userName) => {
-		if (player.username !== userName) {
-			player.runCommandSilent("gamerule waterSourceConversion true")
-		} else {
+		if (player.username === userName) {
+			// 规则
 			player.runCommandSilent("gamerule waterSourceConversion false")
+			// Dev发言(一个真的是无聊到不能再无聊的东西)
+			player.paint({
+				devTooltip: {
+					type: "text",
+					x: 11,
+					y: "$screenH - 30",
+					alignX: "left",
+					text: " ● 开发中画面, 实际内容请以正式上线为准",
+					scale: 1.0,
+				}
+			})
+		} else {
+			player.runCommandSilent("gamerule waterSourceConversion true")
 		}
 	})
 })

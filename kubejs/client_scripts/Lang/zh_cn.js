@@ -218,7 +218,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["planets.edenring.edenring", "伊甸星环"],
 		["custom.youkaishomecoming.red_velvet_cake_slice", "被幽幽子偷吃掉两块红丝绒蛋糕的剩余部分"],
 		["custom.youkaishomecoming.onigili", "速冻饭团"],
-		["custom.naturescompass.naturescompass", "请前往菌菇森林或远古菌菇森林"]
+		["custom.naturescompass.naturescompass", "请前往菌菇森林或远古菌菇森林"],
 	]
 	otherTipLang.forEach(([key, text]) => {
 		event.add(key, text)
