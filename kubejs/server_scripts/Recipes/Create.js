@@ -138,4 +138,13 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "new_create:inferior_brick"
 	})
+
+	// 电子管
+	kubejs.shaped("create:electron_tube", [
+		"A",
+		"B"
+	], {
+		A: "#forge:ingots/gravilite",
+		B: "#forge:plates/aluminum"
+	}).id("create:crafting/materials/electron_tube")
 })

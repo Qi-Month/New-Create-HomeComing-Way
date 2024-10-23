@@ -219,6 +219,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		["custom.youkaishomecoming.red_velvet_cake_slice", "被幽幽子偷吃掉两块红丝绒蛋糕的剩余部分"],
 		["custom.youkaishomecoming.onigili", "速冻饭团"],
 		["custom.naturescompass.naturescompass", "请前往菌菇森林或远古菌菇森林"],
+		["text.new_create.dev", " ● 开发中画面, 实际内容请以正式上线为准"],
+		["text.new_create.player", " ● 测试中版本, 不代表最终品质"],
+		["gui.edenring.text.edenring", "伊甸星环"],
+		["gui.touhou.text.touhou", "幻想星"]
 	]
 	otherTipLang.forEach(([key, text]) => {
 		event.add(key, text)

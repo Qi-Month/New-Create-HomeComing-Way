@@ -1,0 +1,132 @@
+{
+    "type": "touhou:touhou",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:amplified",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "biomes": [
+                {
+                    "biome": "minecraft:meadow",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:bamboo_jungle",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.1,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:cherry_grove",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.2,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:forest",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.3,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:lush_caves",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.4,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:old_growth_birch_forest",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.5,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:river",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.6,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:sunflower_plains",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.7,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:plains",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.8,
+                        "weirdness": -0.5
+                    }
+                },
+                {
+                    "biome": "minecraft:stony_peaks",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": -0.5,
+                        "humidity": 0,
+                        "offset": 0,
+                        "temperature": 0.9,
+                        "weirdness": -0.5
+                    }
+                }
+            ]
+        }
+    }
+}

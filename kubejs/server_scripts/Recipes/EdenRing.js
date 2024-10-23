@@ -82,4 +82,31 @@ ServerEvents.recipes((event) => {
 		C: "#forge:chests",
 		D: "immersive_aircraft:hull"
 	}).id("immersive_aircraft:gyrodyne")
+
+	// 反重力活塞
+	kubejs.shaped("edenring:gravity_compressor", [
+		"ABA",
+		"CDC",
+		"EFE"
+	], {
+		A: "#forge:ingots/iron",
+		B: "#minecraft:planks",
+		C: "edenring:gravilite_block",
+		D: "#forge:storage_blocks/copper",
+		E: "#forge:ingots/andesite_alloy",
+		F: "create:andesite_casing"
+	}).id("edenring:gravity_compressor")
+
+	// 飞艇
+	kubejs.shaped("immersive_aircraft:airship", [
+		"ABA",
+		"ACA",
+		"DED"
+	], {
+		A: "immersive_aircraft:sail",
+		B: "edenring:balloon_mushroom_block",
+		C: "#forge:chests",
+		D: "immersive_aircraft:hull",
+		E: "immersive_aircraft:engine"
+	}).id("immersive_aircraft:airship")
 })

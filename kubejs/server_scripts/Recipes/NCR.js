@@ -246,4 +246,16 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:rods/wooden"
 	}).id("youkaishomecoming:drying_rack_from_bamboo_block_stonecutting")
+
+	// 太阳能板
+	kubejs.shaped("new_create:soler_panel", [
+		"AAA",
+		" B ",
+		"CDC"
+	], {
+		A: "#forge:ingots/gravilite",
+		B: "create:electron_tube",
+		C: "#edenring:brain_tree_block",
+		D: "#forge:plates/iron"
+	})
 })

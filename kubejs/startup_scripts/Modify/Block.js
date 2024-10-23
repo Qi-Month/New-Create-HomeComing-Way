@@ -18,7 +18,7 @@ BlockEvents.modification((event) => {
 	]
 	cogwheelSoundType.forEach((id) => {
 		event.modify(id, (modify) => {
-			modify.soundType = "lantern"
+			modify.soundType = SoundType.LANTERN
 		})
 	})
 })

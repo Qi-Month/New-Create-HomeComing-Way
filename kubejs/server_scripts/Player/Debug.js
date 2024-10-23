@@ -1,7 +1,7 @@
 global.debugUserName = [
 	"Toleave",
 	"Qi_Month",
-	"Sara_Eden"
+	"Sara_Eden",
 ]
 ItemEvents.rightClicked((event) => {
 	let { item, player } = event
@@ -81,7 +81,9 @@ BlockEvents.rightClicked((event) => {
 	let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
 
 	for (let i = 0; i < global.debugUserName.length; i++) {
-		if (event.hand !== "MAIN_HAND" && player.crouching && player.username === global.debugUserName[i]) {
+		if (event.hand !== "MAIN_HAND" &&
+			player.crouching &&
+			player.username === global.debugUserName[i]) {
 			player.tell(Text.translate("message.new_create.debug.getHardness", [blockHardness]))
 		}
 	}

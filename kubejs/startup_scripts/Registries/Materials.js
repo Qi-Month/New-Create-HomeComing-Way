@@ -186,7 +186,7 @@ alloyRegisters.forEach(([name, color, level]) => {
 StartupEvents.registry("item", (event) => {
 	let ingot = [
 		// 重力水晶
-		["gravilite", 0x5ebee7]
+		["gravilite", 0x5EBEE7]
 	]
 	ingot.forEach(([name, color]) => {
 		event.create(`${global.namespace + name}_ingot`)
