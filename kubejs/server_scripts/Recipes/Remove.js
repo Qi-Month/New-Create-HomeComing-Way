@@ -23,7 +23,8 @@ ServerEvents.recipes((event) => {
 	let input = [
 		"#alltheores:ore_hammers",
 		"immersiveengineering:hammer",
-		"immersiveengineering:wirecutter"
+		"immersiveengineering:wirecutter",
+		"ad_astra:hammer"
 	]
 	input.forEach((item) => {
 		event.remove({ input: item })
@@ -39,7 +40,9 @@ ServerEvents.recipes((event) => {
 		"create:framed_glass_from_glass_colorless_stonecutting",
 		"ad_astra:oxygen_loading/oxygen_from_oxygen_loading_water",
 		"ad_astra:conversion/oxygen_from_water",
-		"create:milling/calcite"
+		"create:milling/calcite",
+		"createmetallurgy:casting_in_table/bronze/gear",
+		"createmetallurgy:casting_in_table/steel/gear"
 	]
 	recipeId.forEach((id) => {
 		event.remove({ id: id })

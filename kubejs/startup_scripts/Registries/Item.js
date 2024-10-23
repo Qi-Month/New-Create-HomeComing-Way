@@ -16,6 +16,12 @@ StartupEvents.registry("item", (event) => {
 		["refractory_brick", common, false], // 
 		["quicklime", common, false], // 生石灰
 		["mortar", common, false], // 砂浆
+		["incomplete_bronze_cogwheel", common, false], // 半成品青铜齿轮
+		["incomplete_bronze_large_cogwheel", common, false], // 半成品青铜大齿轮
+		["incomplete_cast_iron_cogwheel", common, false], // 半成品铸铁齿轮
+		["incomplete_cast_iron_large_cogwheel", common, false], // 半成品铸铁大齿轮
+		["incomplete_steel_cogwheel", common, false], // 半成品钢齿轮
+		["incomplete_steel_large_cogwheel", common, false], // 半成品钢大齿轮
 	]
 	itemRegisters.forEach(([name, rarity, glow]) => {
 		event.create(global.namespace + name)
@@ -37,6 +43,16 @@ StartupEvents.registry("item", (event) => {
 		event.create(global.namespace + name)
 			.rarity(epic)
 			.texture(`${global.namespace}item/money/${name}`)
+	})
+
+	// 模具
+	let cast = ["ball", "blank", "gear", "ingot", "nugget", "plate", "rod"]
+	cast.forEach((name) => {
+		event.create(`${global.namespace}golden_${name}_cast`)
+			.texture(`${global.namespace}item/cast/${name}`)
+			.rarity($Rarity.UNCOMMON)
+			.tag("new_create:cast")
+			.tag(`new_create:cast/${name}`)
 	})
 
 	// 脑树树苗(?)

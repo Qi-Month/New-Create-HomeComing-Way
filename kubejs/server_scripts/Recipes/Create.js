@@ -16,6 +16,10 @@ ServerEvents.recipes((event) => {
 			"create:shaft",
 			`#forge:plates/${metal}`
 		])
+		kubejs.shapeless(`steampowered:${metal}_cogwheel`, [
+			`new_create:incomplete_${metal}_cogwheel`,
+			"create:shaft"
+		])
 		// 大
 		kubejs.shapeless(`steampowered:${metal}_large_cogwheel`, [
 			`steampowered:${metal}_cogwheel`,
@@ -24,6 +28,10 @@ ServerEvents.recipes((event) => {
 		kubejs.shapeless(`steampowered:${metal}_large_cogwheel`, [
 			"create:shaft",
 			`2x #forge:plates/${metal}`
+		])
+		kubejs.shapeless(`steampowered:${metal}_large_cogwheel`,[
+			`new_create:incomplete_${metal}_large_cogwheel`,
+			"create:shaft"
 		])
 	})
 

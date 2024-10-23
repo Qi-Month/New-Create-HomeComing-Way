@@ -1,0 +1,14 @@
+{
+	"type": "createmetallurgy:casting_in_table",
+	"ingredients": [
+		{
+			"amount": 90,
+			"fluid": "createmetallurgy:molten_gold",
+			"nbt": {}
+		}
+	],
+	"processingTime": 160,
+	"result": {
+		"item": "new_create:golden_blank_cast"
+	}
+}

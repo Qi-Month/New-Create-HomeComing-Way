@@ -33,7 +33,20 @@ ClientEvents.lang("zh_cn", (event) => {
 		["refractory_brick", "耐火砖"],
 		["flux", "助焊剂"],
 		["quicklime", "生石灰"],
-		["mortar", "砂浆"]
+		["mortar", "砂浆"],
+		["incomplete_bronze_cogwheel", "半成品青铜齿轮"],
+		["incomplete_bronze_large_cogwheel", "半成品青铜大齿轮"],
+		["incomplete_cast_iron_cogwheel", "半成品铸铁齿轮"],
+		["incomplete_cast_iron_large_cogwheel", "半成品铸铁大齿轮"],
+		["incomplete_steel_cogwheel", "半成品钢齿轮"],
+		["incomplete_steel_large_cogwheel", "半成品钢大齿轮"],
+		["golden_ball_cast", "球金质铸模"],
+		["golden_blank_cast", "空金质铸模"],
+		["golden_gear_cast", "齿轮金质铸模"],
+		["golden_ingot_cast", "锭金质铸模"],
+		["golden_nugget_cast", "粒金质铸模"],
+		["golden_plate_cast", "板金质铸模"],
+		["golden_rod_cast", "杆金质铸模"]
 	]
 	for (let i = 0; i < itemLang.length; i++) {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])

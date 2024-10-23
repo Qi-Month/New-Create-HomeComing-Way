@@ -9,7 +9,7 @@ PlayerEvents.loggedIn((event) => {
 
 	global.debugUserName.forEach((userName) => {
 		if (player.username === userName) {
-			// 无限水
+			// 无限水限制, 如果username符合开发者id就打开无限水, 否则关闭
 			player.runCommandSilent("gamerule waterSourceConversion false")
 		} else {
 			player.runCommandSilent("gamerule waterSourceConversion true")
@@ -21,11 +21,11 @@ PlayerEvents.loggedIn((event) => {
 			player.paint({
 				devTooltip: {
 					type: "text",
-					x: 10,
-					y: "$screenH - 20",
+					x: 0,
+					y: "$screenH - 30",
 					alignX: "left",
 					text: devInfo,
-					scale: 1.0,
+					scale: 0.9,
 				}
 			})
 		} else {
@@ -34,11 +34,11 @@ PlayerEvents.loggedIn((event) => {
 				player.paint({
 					playerTooltip: {
 						type: "text",
-						x: 10,
-						y: "$screenH - 10",
+						x: 0,
+						y: "$screenH - 40",
 						alignX: "left",
 						text: playerInfo,
-						scale: 1.0,
+						scale: 0.9,
 					}
 				})
 			}

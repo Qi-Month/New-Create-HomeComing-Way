@@ -13,13 +13,13 @@
 */
 
 function metalProductionLine(event, metal, heat, time) {
-	const { create, kubejs, createmetallurgy } = event.recipes
+	let { kubejs, createmetallurgy } = event.recipes
 
-	create.mixing(Fluid.of(`${metal[2]}`, 810), [
+	createmetallurgy.casting_in_basin(Fluid.of(`${metal[2]}`, 810), [
 		metal[0]
 	]).heatRequirement(heat).processingTime(time).id(`createmetallurgy:melting/${metal[0].split(":")[1]}`)
 
-	create.mixing(Fluid.of(`${metal[2]}`, 90), [
+	createmetallurgy.casting_in_basin(Fluid.of(`${metal[2]}`, 90), [
 		metal[1]
 	]).heatRequirement(heat).processingTime(time).id(`createmetallurgy:melting/${metal[1].split(":")[1]}`)
 
