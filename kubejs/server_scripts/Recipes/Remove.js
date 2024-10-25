@@ -13,7 +13,9 @@ ServerEvents.recipes((event) => {
 		"create:large_cogwheel",
 		"thermal:device_rock_gen",
 		"thermal:rubber",
-		"thermal:rubber_block"
+		"thermal:rubber_block",
+		"create:water_wheel",
+		"create:large_water_wheel"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })

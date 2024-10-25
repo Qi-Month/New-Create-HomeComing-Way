@@ -115,8 +115,6 @@ moltenRegisters.forEach(([name, color, level]) => {
 })
 
 let alloyRegisters = [
-	// 铸铁
-	["cast_iron", 0x464646, "stone"]
 ]
 alloyRegisters.forEach(([name, color, level]) => {
 	StartupEvents.registry("item", (event) => {

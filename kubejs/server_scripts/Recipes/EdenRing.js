@@ -109,4 +109,16 @@ ServerEvents.recipes((event) => {
 		D: "immersive_aircraft:hull",
 		E: "immersive_aircraft:engine"
 	}).id("immersive_aircraft:airship")
+
+	// 发动机
+	kubejs.shaped("immersive_aircraft:engine", [
+		" A ",
+		"BCB",
+		"ADA"
+	], {
+		A: "#forge:cobblestone",
+		B: "edenring:gravity_compressor",
+		C: "#forge:storage_blocks/copper",
+		D: "immersive_aircraft:boiler"
+	}).id("immersive_aircraft:engine")
 })

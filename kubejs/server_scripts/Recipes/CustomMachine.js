@@ -15,6 +15,7 @@ ServerEvents.recipes((event) => {
 		.requireItem("edenring:brain_tree_block_gold")
 
 	// 土法高炉
+	/*
 	event.custom({
 		"type": "custommachinery:custom_machine",
 		"machine": "new_create:soil_blast_furnace",
@@ -52,6 +53,7 @@ ServerEvents.recipes((event) => {
 			}
 		]
 	})
+	*/
 
 	// 高炉
 	event.custom({
