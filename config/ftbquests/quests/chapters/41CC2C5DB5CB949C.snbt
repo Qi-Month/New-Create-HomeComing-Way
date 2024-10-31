@@ -3,20 +3,338 @@
 	default_quest_shape: ""
 	filename: "41CC2C5DB5CB949C"
 	group: "2726B6E9ECFB77B0"
-	icon: "ad_astra:oxygen_bucket"
+	icon: "alltheores:steel_ingot"
 	id: "41CC2C5DB5CB949C"
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["434B0475EA86EFBD"]
-		id: "2B2B5F0224648863"
-		tasks: [{
-			id: "69FE09117AFF39C4"
-			item: "create:andesite_casing"
-			type: "item"
-		}]
-		x: -2.5d
-		y: 0.0d
-	}]
-	title: "如何真空生活"
+	quests: [
+		{
+			dependencies: ["434B0475EA86EFBD"]
+			id: "2B2B5F0224648863"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "69FE09117AFF39C4"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B2B5F0224648863"]
+			id: "08A56D3E5FC7B34C"
+			tasks: [{
+				id: "0F039D81464B0044"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B2B5F0224648863"]
+			id: "00ED8D5DC9F240A2"
+			subtitle: "别忘了旁边有一个更好的发电装置啊"
+			tasks: [{
+				id: "655B6587A15A1B3B"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B2B5F0224648863"]
+			id: "0D8AC608FCC0F4AF"
+			tasks: [{
+				id: "01F71EFB14C89D56"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2B2B5F0224648863"]
+			id: "653DC8671B20FE23"
+			tasks: [{
+				id: "03C4CB4AA7A531B0"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B2B5F0224648863"]
+			id: "4D9411A98044397D"
+			tasks: [{
+				id: "49E933F440E5FE17"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B2B5F0224648863"]
+			id: "4DDD098A552A187B"
+			tasks: [{
+				id: "61B90AE216BEF024"
+				item: "edenring:gravity_compressor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4DDD098A552A187B"]
+			id: "12C7AC07BDBAAE42"
+			subtitle: "假如脸好直接出生在湖滨沙漠（"
+			tasks: [{
+				id: "6AC2D880AC7C52B8"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			title: "更好的飞船"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"00C16F637E9350B7"
+				"3DCDF783ABAA244A"
+			]
+			id: "2EF25361D064E998"
+			tasks: [
+				{
+					id: "03D5859DD2A9A548"
+					item: "new_create:refractory_bricks"
+					type: "item"
+				}
+				{
+					id: "3D10F01C6725D271"
+					item: "new_create:refractory_bricks_wall"
+					type: "item"
+				}
+				{
+					id: "79B18EA3C57A4709"
+					item: "new_create:blast_furnace"
+					type: "item"
+				}
+			]
+			title: "高炉"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"205B0F82A3BABBC6"
+				"00ED8D5DC9F240A2"
+				"0C49554EED7B6783"
+			]
+			id: "6D08C14BA782CF33"
+			tasks: [{
+				id: "56710D4FBF5E6609"
+				item: "new_create:refractory_clay_ball"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["148B3198500F0D32"]
+			id: "00C16F637E9350B7"
+			tasks: [{
+				id: "32AE3670E3D35F57"
+				item: "new_create:mortar"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["770A55505AF4CD2A"]
+			id: "148B3198500F0D32"
+			tasks: [{
+				id: "7D8D18BE18D40273"
+				item: "new_create:lime_water_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["73AB54A8817342DC"]
+			id: "0C49554EED7B6783"
+			tasks: [{
+				id: "5D8B70BFAF2316C0"
+				item: "alltheores:dirty_aluminum_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7343B74D27407A5B"]
+			id: "73AB54A8817342DC"
+			tasks: [{
+				id: "19C21027276C5E22"
+				item: "alltheores:raw_aluminum"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["13707DCC13797614"]
+			id: "770A55505AF4CD2A"
+			tasks: [{
+				id: "195879DB83C4CD3E"
+				item: "new_create:quicklime"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"12C7AC07BDBAAE42"
+				"6EBD6FEA5266255B"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:sand"
+			id: "7343B74D27407A5B"
+			tasks: [{
+				biome: "edenring:lakeside_desert"
+				id: "5750855F309E44C0"
+				type: "biome"
+			}]
+			title: "湖滨沙漠"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"08A56D3E5FC7B34C"
+				"786F56D729DE8318"
+			]
+			id: "64815CBB46DD2BD5"
+			tasks: [{
+				id: "7F75A3CB17E21332"
+				item: "alltheores:aluminum_plate"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C49554EED7B6783"]
+			id: "786F56D729DE8318"
+			tasks: [{
+				id: "5D427F7E38BF9C9A"
+				item: "alltheores:aluminum_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4DDD098A552A187B"]
+			id: "6EBD6FEA5266255B"
+			subtitle: "我已经到了湖滨沙漠"
+			tasks: [{
+				id: "37AB287CB401748E"
+				title: "跳过制作飞艇"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"48116DC51985D109"
+				"00ED8D5DC9F240A2"
+			]
+			id: "13707DCC13797614"
+			tasks: [{
+				id: "1A85E7A5C3641FB9"
+				item: "minecraft:calcite"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["13707DCC13797614"]
+			id: "205B0F82A3BABBC6"
+			tasks: [{
+				id: "2A7A37466E0568C3"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6D08C14BA782CF33"]
+			id: "3DCDF783ABAA244A"
+			tasks: [{
+				id: "38FE604FA6259525"
+				item: "new_create:refractory_brick"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["64815CBB46DD2BD5"]
+			id: "7D270882ED9C2E2E"
+			tasks: [{
+				id: "7EBBC0665FAFC068"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7D270882ED9C2E2E"]
+			id: "6561BD07D6274C38"
+			shape: "octagon"
+			subtitle: "连接器从下面接入"
+			tasks: [{
+				id: "0A86962CCCDB90DC"
+				item: "new_create:soler_panel"
+				type: "item"
+			}]
+			title: "更好的应力"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2EF25361D064E998"]
+			id: "61728C0226CB7984"
+			tasks: [{
+				id: "7AD3661509E84584"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7D270882ED9C2E2E"]
+			id: "3D4FABDC58E6BA7E"
+			tasks: [{
+				id: "655136F5C904315E"
+				item: "new_create:stone_gen"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+	]
+	title: "大炼钢铁"
 }

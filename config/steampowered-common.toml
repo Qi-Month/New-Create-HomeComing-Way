@@ -10,18 +10,18 @@
 [boiler]
 	#Maximum HU the boiler intakes. 10HU=1mb of steam. 
 	#Range: 0 ~ 1000000
-	bronzeBoilerHu = 120
+	bronzeBoilerHu = 240
 	#Range: 0 ~ 1000000
-	castIronBoilerHu = 240
+	castIronBoilerHu = 120
 	#Range: 0 ~ 1000000
 	steelBoilerHu = 480
 
 [burner]
 	#Maximum HU the boiler emits. Note that this does not affect steam per fuel tick. 10HU=1mb of steam. 
 	#Range: 0 ~ 1000000
-	bronzeBurnerHu = 120
+	bronzeBurnerHu = 240
 	#Range: 0 ~ 1000000
-	castIronBurnerHu = 240
+	castIronBurnerHu = 120
 	#Range: 0 ~ 1000000
 	steelBurnerHu = 480
 
@@ -30,7 +30,7 @@
 	#Range: 0.0 ~ 1.0
 	bronzeBurnerEfficiency = 0.8
 	#Range: 0.0 ~ 1.0
-	castIronBurnerEfficiency = 0.9
+	castIronBurnerEfficiency = 0.8
 	#Range: 0.0 ~ 1.0
 	steelBurnerEfficiency = 1.0
 
@@ -38,25 +38,25 @@
 
 	[flywheel.bronze_flywheel]
 		#Range: 0 ~ 8192
-		bronzeFlywheelCapacity = 512
+		bronzeFlywheelCapacity = 1024
 		#Range: 0 ~ 8192
 		bronzeFlywheelSpeed = 32
 		#Range: 0 ~ 8192
-		bronzeFlywheelSteamConsumptionPerTick = 12
+		bronzeFlywheelSteamConsumptionPerTick = 24
 		#Range: 0 ~ 1048576
-		bronzeFlywheelSteamStorage = 32000
+		bronzeFlywheelSteamStorage = 64000
 		#Range: 0.0 ~ 1.0
 		bronzeFlywheelSuckEfficiency = 0.7
 
 	[flywheel.cast_iron_flywheel]
 		#Range: 0 ~ 8192
-		castIronFlywheelCapacity = 1024
+		castIronFlywheelCapacity = 512
 		#Range: 0 ~ 8192
 		castIronFlywheelSpeed = 32
 		#Range: 0 ~ 8192
-		castIronFlywheelSteamConsumptionPerTick = 24
+		castIronFlywheelSteamConsumptionPerTick = 12
 		#Range: 0 ~ 1048576
-		castIronFlywheelSteamStorage = 64000
+		castIronFlywheelSteamStorage = 32000
 		#Range: 0.0 ~ 1.0
 		castIronFlywheelSuckEfficiency = 0.7
 

@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "edenring:balloon_mushroom_block",
 		B: "#minecraft:wooden_slabs",
-		C: "#forge:ingots/iron",
+		C: "#forge:ingots/gravilite",
 		D: "#forge:cobblestone"
 	}).id("immersive_aircraft:hull")
 

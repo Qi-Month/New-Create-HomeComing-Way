@@ -17,4 +17,13 @@ ServerEvents.recipes((event) => {
 			`new_create:golden_${name}_cast`
 		)
 	})
+
+	// 原木
+	event.replaceInput({}, "#forge:stripped_logs", "#minecraft:logs")
+
+	// 铁盔甲
+	event.replaceInput("minecraft:iron_helmet", "minecraft:iron_ingot", "#forge:plates/iron")
+	event.replaceInput("minecraft:iron_chestplate", "minecraft:iron_ingot", "#forge:plates/iron")
+	event.replaceInput("minecraft:iron_leggings", "minecraft:iron_ingot", "#forge:plates/iron")
+	event.replaceInput("minecraft:iron_boots", "minecraft:iron_ingot", "#forge:plates/iron")
 })

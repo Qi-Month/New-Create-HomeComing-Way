@@ -52,13 +52,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${namespace}.${itemLang[i][0]}`, itemLang[i][1])
 	}
 
-	// 锭
-	let ingotLang = [
-	]
-	for (let i = 0; i < ingotLang.length; i++) {
-		event.add(`item.${namespace}.${ingotLang[i][0]}_ingot`, ingotLang[i][1] + "锭")
-	}
-
 	// 石头粉
 	let stoneDustLang = [
 		["stone", "石头"],
@@ -96,7 +89,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["black_dirt", "黑土"],
 		["soler_panel", "简易太阳能电池板"],
 		["steel_casing", "钢机壳"],
-		["magnetic_cast_iron_block", "磁性铸铁块"],
+		["magnetic_iron_block", "磁性铁块"],
 		["inferior_bricks", "土砖块"],
 		["heat_coal_block", "热煤块"],
 		["refractory_bricks", "耐火砖块"],
@@ -200,7 +193,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// JEI信息
 	let jeiInfoLang = [
-		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人为制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长, 而人为干预生长的树则有一定可能掉落树苗(5%)"],
+		["new_create:brain_sapling", "这种树苗的生长条件非常特殊, 以至于甚至无法自然掉落, 需要人类人为制造出来\n§b目前人类所能达到的技术只能通过人工干预, 将其种植在特制的盆栽和特制的土壤中才能生长, 而人为干预生长的树则有只有一定可能掉落树苗(5%)"],
 		["portality:controller", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
 		["portality:frame", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
 		["portality:module_energy", "在本Mod的传送门附近挖掘或放置方块都会有一定的显示延迟的bug"],
@@ -232,8 +225,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		["custom.youkaishomecoming.red_velvet_cake_slice", "被幽幽子偷吃掉两块红丝绒蛋糕的剩余部分"],
 		["custom.youkaishomecoming.onigili", "速冻饭团"],
 		["custom.naturescompass.naturescompass", "请前往菌菇森林或远古菌菇森林"],
-		["text.new_create.dev", " ● 开发中画面, 实际内容请以正式版为准"],
-		["text.new_create.player", " ● 测试中版本, 不代表最终品质"],
+		["text.new_create.dev", "开发中画面, 实际内容请以正式版为准"],
+		["text.new_create.player", "测试中版本, 不代表最终品质"],
+		["text.new_create.version", "整合包版本: Alpha-0.0.2"],
 		["gui.edenring.text.edenring", "伊甸星环"],
 		["gui.touhou.text.touhou", "幻想星"]
 	]

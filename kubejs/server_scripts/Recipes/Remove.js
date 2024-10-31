@@ -15,7 +15,9 @@ ServerEvents.recipes((event) => {
 		"thermal:rubber",
 		"thermal:rubber_block",
 		"create:water_wheel",
-		"create:large_water_wheel"
+		"create:large_water_wheel",
+		"create:mechanical_piston",
+		"create:sticky_mechanical_piston"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })
@@ -24,9 +26,7 @@ ServerEvents.recipes((event) => {
 	// 输入
 	let input = [
 		"#alltheores:ore_hammers",
-		"immersiveengineering:hammer",
 		"immersiveengineering:wirecutter",
-		"ad_astra:hammer"
 	]
 	input.forEach((item) => {
 		event.remove({ input: item })
@@ -44,7 +44,16 @@ ServerEvents.recipes((event) => {
 		"ad_astra:conversion/oxygen_from_water",
 		"create:milling/calcite",
 		"createmetallurgy:casting_in_table/bronze/gear",
-		"createmetallurgy:casting_in_table/steel/gear"
+		"createmetallurgy:casting_in_table/steel/gear",
+		"immersiveengineering:crafting/plate_copper_hammering",
+		"immersiveengineering:crafting/plate_iron_hammering",
+		"ad_astra:hammering/iron_plate",
+		"immersiveengineering:crafting/plate_gold_hammering",
+		"create:item_application/andesite_casing_from_wood",
+		"create:item_application/copper_casing_from_wood",
+		"create:item_application/brass_casing_from_wood",
+		"immersiveengineering:blastfurnace/steel",
+		"createmetallurgy:alloying/steel"
 	]
 	recipeId.forEach((id) => {
 		event.remove({ id: id })
@@ -70,5 +79,33 @@ ServerEvents.recipes((event) => {
 	event.remove({
 		type: "minecraft:crafting_shaped",
 		output: "#forge:glass_panes"
+	})
+
+	// 铜锭
+	event.remove({
+		type: "minecraft:smelting",
+		output: "#forge:ingots/copper"
+	})
+	event.remove({
+		type: "minecraft:blasting",
+		output: "#forge:ingots/copper"
+	})
+	// 铁锭
+	event.remove({
+		type: "minecraft:smelting",
+		output: "#forge:ingots/iron"
+	})
+	event.remove({
+		type: "minecraft:blasting",
+		output: "#forge:ingots/iron"
+	})
+	// 金锭
+	event.remove({
+		type: "minecraft:smelting",
+		output: "#forge:ingots/gold"
+	})
+	event.remove({
+		type: "minecraft:blasting",
+		output: "#forge:ingots/gold"
 	})
 })

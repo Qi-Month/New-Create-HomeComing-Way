@@ -25,7 +25,7 @@ StartupEvents.registry("block", (event) => {
 		// 黑土
 		["black_dirt", "gravel", 0.5, "shovel", "wooden", false],
 		// 磁性铸铁块
-		["magnetic_cast_iron_block", "metal", 5, "pickaxe", "stone", true],
+		["magnetic_iron_block", "metal", 5, "pickaxe", "stone", true],
 		// 土砖块
 		["inferior_bricks", "stone", 2, "pickaxe", "wooden", true],
 		// 热煤块

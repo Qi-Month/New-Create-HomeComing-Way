@@ -1,0 +1,14 @@
+{
+	"type": "create_new_age:energising",
+	"energy_needed": 2000,
+	"ingredients": [
+		{
+			"tag": "forge:storage_blocks/iron"
+		}
+	],
+	"results": [
+		{
+			"item": "new_create:magnetic_iron_block"
+		}
+	]
+}

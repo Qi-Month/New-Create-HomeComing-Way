@@ -39,6 +39,9 @@ ServerEvents.recipes((event) => {
 	create.sandpaper_polishing("new_create:gravilite_ingot", [
 		"edenring:gravilite_shards"
 	])
+	create.sandpaper_polishing("new_create:gravilite_ingot", [
+		"edenring:gravilite_block"
+	])
 
 	// 混合桶
 	kubejs.shaped("youkaishomecoming:fermentation_tank", [
@@ -142,9 +145,9 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 潮湿的土砖
-	kubejs.shapeless("new_create:wet_inferior_brick", [
+	kubejs.shapeless("2x new_create:wet_inferior_brick", [
 		"2x new_create:black_dirt",
-		"2x new_create:mixed_stone_dust"
+		"2x #forge:stone"
 	])
 
 	// 土法高炉

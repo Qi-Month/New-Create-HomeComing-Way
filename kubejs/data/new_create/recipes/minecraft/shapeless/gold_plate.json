@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:ingots/gold"
+		},
+		{
+			"tag": "new_create:hammer"
+		}
+	],
+	"result": {
+		"item": "alltheores:gold_plate",
+		"count": 1
+	}
+}

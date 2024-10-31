@@ -15,7 +15,7 @@
 				"03241FDD6ABBDB84"
 				"3B1F2B71979F3089"
 			]
-			description: ["如果运气好 直接出生在下一个任务需要的群戏 这个任务就很无用（"]
+			description: ["如果运气好 直接出生在下一个任务需要的群戏 这个任务就很无用,不是我不给跳过选项，因为前面几项是必要的"]
 			id: "37F66F2996FF56AA"
 			rewards: [
 				{
@@ -94,7 +94,7 @@
 				item: "immersiveengineering:hemp_fiber"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -116,7 +116,7 @@
 				item: "immersive_aircraft:sail"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 2.5d
 		}
 		{
@@ -127,7 +127,7 @@
 				item: "immersive_aircraft:hull"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -0.5d
 		}
 		{
@@ -151,7 +151,7 @@
 				item: "immersive_aircraft:propeller"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: 1.0d
 		}
 		{
@@ -211,6 +211,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["1AC747F8C5E68984"]
 			id: "312F7081D16504AA"
 			subtitle: "我手搓飞机 真的假的"
 			tasks: [{
@@ -218,8 +219,20 @@
 				title: "让我们来手搓飞机吧"
 				type: "checkmark"
 			}]
-			x: -12.5d
+			x: -12.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["37F66F2996FF56AA"]
+			dependency_requirement: "one_started"
+			id: "6E437118FE5710F8"
+			tasks: [{
+				id: "36671C57A104801C"
+				title: "跳过"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	title: "尝试飞行"

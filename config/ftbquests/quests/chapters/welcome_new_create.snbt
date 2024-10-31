@@ -6,20 +6,37 @@
 	id: "533F3C099F0DB632"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "0D8F40B6F45A9EB5"
-		rewards: [{
-			id: "76A0565DF42E44DC"
-			item: "edenring:guide_book"
-			type: "item"
-		}]
-		tasks: [{
-			id: "7AB180DC05F0D213"
-			title: "我该怎么做"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "0D8F40B6F45A9EB5"
+			rewards: [{
+				id: "76A0565DF42E44DC"
+				item: "edenring:guide_book"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AB180DC05F0D213"
+				title: "我该怎么做"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"本包齿轮有磨损, 因此再各种变速方面原本刚好够的应力会出现应力不足的情况"
+				"并且金属齿轮无法使用机壳进行包裹"
+			]
+			id: "64B6A91532294DD6"
+			tasks: [{
+				icon: "steampowered:cast_iron_large_cogwheel"
+				id: "551C38C782F14ACB"
+				title: "关于应力"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "欢迎来到New Create"
 }

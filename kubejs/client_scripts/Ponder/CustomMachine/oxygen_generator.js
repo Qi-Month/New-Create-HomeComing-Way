@@ -52,11 +52,12 @@ Ponder.registry((event) => {
 				scene.world.showSection(pos, Direction.DOWN)
 				scene.idle(2)
 			})
-			scene.world.setBlocks([2, 3, 2], "new_create:magnetic_cast_iron_block")
+			scene.world.setBlocks([2, 3, 2], "new_create:magnetic_iron_block")
 			scene.world.showSection([2, 3, 2], Direction.DOWN)
 
 			scene.idle(20)
 		})
+		
 		.scene("new_create:oxygen_generator_2", "制氧机使用", "new_create:oxygen_generator", (scene) => {
 			//
 			scene.showBasePlate()
@@ -85,8 +86,8 @@ Ponder.registry((event) => {
 			scene.addKeyframe()
 			scene.rotateCameraY(90)
 			scene.idle(20)
-			scene.world.showSection([8, 1, 4, 5, 1, 4], Direction.WEST)
-			scene.world.showSection([7,2,5], Direction.WEST)
+			scene.world.showSection([8, 1, 4, 5, 1, 4], Direction.UP)
+			scene.world.showSection([7,2,5], Direction.UP)
 			scene.idle(20)
 		})
 })

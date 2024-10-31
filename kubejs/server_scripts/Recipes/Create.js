@@ -43,18 +43,6 @@ ServerEvents.recipes((event) => {
 		C: "#forge:stone"
 	}).id("create:crafting/kinetics/millstone")
 
-	// 磁性铸铁块
-	event.custom({
-		"type": "create_new_age:energising",
-		"energy_needed": 2000,
-		"ingredients": [
-			{ "item": "new_create:cast_iron_block" }
-		],
-		"results": [
-			{ "item": "new_create:magnetic_cast_iron_block" }
-		]
-	})
-
 	// 熔铸盖
 	kubejs.shaped("createmetallurgy:foundry_lid", [
 		"AAA",
@@ -124,4 +112,25 @@ ServerEvents.recipes((event) => {
 		A: "#forge:ingots/gravilite",
 		B: "#forge:plates/aluminum"
 	}).id("create:crafting/materials/electron_tube")
+
+	// 手部零件
+	kubejs.shaped("create:brass_hand", [
+		" A ",
+		"BBB",
+		" B "
+	], {
+		A: "#forge:ingots/andesite_alloy",
+		B: "#forge:plates/gold"
+	}).id("create:crafting/kinetics/brass_hand")
+
+	// 电动马达
+	kubejs.shaped("createaddition:electric_motor", [
+		"ABA",
+		"ACA",
+		"ABA"
+	], {
+		A: "#forge:plates/gold",
+		B: "#immersiveengineering:coil",
+		C: "create:shaft"
+	}).id("createaddition:mechanical_crafting/electric_motor")
 })

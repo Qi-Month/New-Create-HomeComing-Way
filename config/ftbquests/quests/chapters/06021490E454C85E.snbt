@@ -9,27 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["37F66F2996FF56AA"]
-			description: [
-				"风暴之脑是一个聚集着大量金属的生物群系，在这里生长的植物的体内都包含着金属。三种脑树在这里巨量的水分蒸发和无尽的风暴中积蓄了大量的电能，当有生物靠近时，脑树会将电能释放出来对其造成伤害，穿戴全套金属盔甲（铁，金和下界合金）可免疫脑树的伤害"
-				""
-				"该生物群系中伊甸草方块为灰色，地下会大量生成苔石，深板岩，凝灰岩，铁矿石，铜矿石，金矿石，粗铁块，粗铜块和粗金块"
-			]
-			icon: "new_create:brain_sapling"
-			id: "2238F880E57A7D0A"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "真正的第一章开始"
-			tasks: [{
-				biome: "edenring:brainstorm"
-				id: "29D20070712A9D58"
-				type: "biome"
-			}]
-			title: "风暴之脑"
-			x: -2.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["2238F880E57A7D0A"]
 			id: "45E14774549A65CE"
 			tasks: [{
@@ -69,7 +48,7 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: -2.5d
 		}
 		{
@@ -89,6 +68,12 @@
 				"102E3BF0C45E65E6"
 			]
 			id: "4705E2DE68963063"
+			rewards: [{
+				count: 8
+				id: "388A109541673395"
+				item: "steampowered:cast_iron_large_cogwheel"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "70EDC4DFE951D0EC"
@@ -108,36 +93,22 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 3.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["57675414C36B9F00"]
+			dependencies: ["4BE25A16FEA58308"]
 			id: "29FDCE476758F954"
 			tasks: [{
-				id: "4AC7109376A5F357"
-				item: "new_create:cast_iron_sheet"
+				id: "780B194BE03A37BD"
+				item: "alltheores:iron_plate"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
-			dependencies: [
-				"1106BD08318ACBB5"
-				"4BE25A16FEA58308"
-			]
-			id: "57675414C36B9F00"
-			tasks: [{
-				id: "3C7DA1EAF7287200"
-				item: "new_create:cast_iron_ingot"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["2238F880E57A7D0A"]
+			dependencies: ["1106BD08318ACBB5"]
 			id: "4BE25A16FEA58308"
 			tasks: [
 				{
@@ -156,8 +127,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 1.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2238F880E57A7D0A"]
@@ -167,8 +138,8 @@
 				item: "new_create:inferior_brick"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.0d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4705E2DE68963063"]
@@ -208,7 +179,7 @@
 			id: "4EB6F22C0B3F5275"
 			tasks: [{
 				id: "617012E8AAB05A9C"
-				title: "其他任意材质食堂粉末"
+				title: "其他任意材质石头粉末"
 				type: "checkmark"
 			}]
 			x: 7.0d
@@ -229,10 +200,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"029D58D74CC4504E"
-				"1E3FB66110003AF9"
-			]
+			dependencies: ["029D58D74CC4504E"]
 			id: "641B70AA3DCD264F"
 			tasks: [{
 				id: "3B229B2FD6632CB0"
@@ -256,11 +224,18 @@
 		{
 			dependencies: ["6A571491B8E75015"]
 			id: "44C95FF259CF8342"
-			tasks: [{
-				id: "05CC64154C70B37C"
-				item: "createaddition:copper_spool"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "05CC64154C70B37C"
+					item: "createaddition:copper_spool"
+					type: "item"
+				}
+				{
+					id: "0A2CD079B979CFEF"
+					item: "createaddition:connector"
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: 1.5d
 		}
@@ -276,7 +251,7 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
@@ -287,8 +262,8 @@
 				item: "new_create:soil_blast_furnace"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.0d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -314,8 +289,8 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.0d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -323,7 +298,7 @@
 				"4705E2DE68963063"
 			]
 			id: "1E3FB66110003AF9"
-			subtitle: "可以直接管道接入铸造台"
+			subtitle: "也可以直接管道接入铸造台"
 			tasks: [
 				{
 					id: "11B402C097C6AA38"
@@ -341,18 +316,14 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -1.0d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1C5B12BF243FFF61"]
 			id: "0510CCECF392C40F"
+			subtitle: "可以和工作盆一样自动连接下方的铸造台"
 			tasks: [
-				{
-					id: "6FB07030EA3592B0"
-					item: "createmetallurgy:casting_basin"
-					type: "item"
-				}
 				{
 					id: "3FDF226BBB2CE4BD"
 					item: "createmetallurgy:foundry_lid"
@@ -361,6 +332,11 @@
 				{
 					id: "1EFCDB02F393EBA6"
 					item: "new_create:heat_coal_block"
+					type: "item"
+				}
+				{
+					id: "66A2374DCF474457"
+					item: "createmetallurgy:foundry_basin"
 					type: "item"
 				}
 			]
@@ -381,6 +357,11 @@
 		{
 			dependencies: ["604A60958833B561"]
 			id: "029D58D74CC4504E"
+			rewards: [{
+				id: "045CB24C489A4A5F"
+				item: "createmetallurgy:casting_basin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "617B6A2C02B0C489"
 				item: "createmetallurgy:casting_table"
@@ -390,114 +371,87 @@
 			y: 1.5d
 		}
 		{
-			id: "13707DCC13797614"
+			dependencies: ["4BE25A16FEA58308"]
+			id: "16CD6863F88B9C15"
+			rewards: [
+				{
+					id: "581EF7AB9DAE0073"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 82
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25B5669E24F4DBFB"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 112
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5542E5964301CC23"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 112
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74032DC5F37A7417"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 97
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "制作铁盔甲即可不受到释放的电流"
 			tasks: [{
-				id: "1A85E7A5C3641FB9"
-				item: "minecraft:calcite"
-				type: "item"
+				id: "447D8ED2D44023CB"
+				title: "领取一套"
+				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 6.5d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
-			id: "205B0F82A3BABBC6"
+			dependencies: [
+				"37F66F2996FF56AA"
+				"6E437118FE5710F8"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"风暴之脑是一个聚集着大量金属的生物群系，在这里生长的植物的体内都包含着金属。三种脑树在这里巨量的水分蒸发和无尽的风暴中积蓄了大量的电能，当有生物靠近时，脑树会将电能释放出来对其造成伤害，穿戴全套金属盔甲（铁，金和下界合金）可免疫脑树的伤害"
+				""
+				"该生物群系中伊甸草方块为灰色，地下会大量生成苔石，深板岩，凝灰岩，铁矿石，铜矿石，金矿石，粗铁块，粗铜块和粗金块"
+			]
+			icon: "new_create:brain_sapling"
+			id: "2238F880E57A7D0A"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "真正的第一章开始"
 			tasks: [{
-				id: "2A7A37466E0568C3"
-				item: "minecraft:quartz"
-				type: "item"
+				biome: "edenring:brainstorm"
+				id: "29D20070712A9D58"
+				type: "biome"
 			}]
-			x: -1.5d
-			y: 6.5d
-		}
-		{
-			id: "6D08C14BA782CF33"
-			tasks: [{
-				id: "56710D4FBF5E6609"
-				item: "new_create:refractory_clay_ball"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 6.5d
-		}
-		{
-			id: "2EF25361D064E998"
-			tasks: [{
-				id: "03D5859DD2A9A548"
-				item: "new_create:refractory_bricks"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 6.0d
-		}
-		{
-			id: "47A0DAE3E2005773"
-			tasks: [{
-				id: "5B1A5326D69EC259"
-				item: "new_create:refractory_bricks_wall"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 7.0d
-		}
-		{
-			id: "3D7C725819EAFE6F"
-			tasks: [{
-				id: "0C54E0F128BBCDAB"
-				item: "new_create:blast_furnace"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 6.5d
-		}
-		{
-			id: "73AB54A8817342DC"
-			tasks: [{
-				id: "19C21027276C5E22"
-				item: "alltheores:raw_aluminum"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 7.5d
-		}
-		{
-			id: "0C49554EED7B6783"
-			tasks: [{
-				id: "5D8B70BFAF2316C0"
-				item: "alltheores:dirty_aluminum_dust"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 7.5d
-		}
-		{
-			id: "770A55505AF4CD2A"
-			tasks: [{
-				id: "195879DB83C4CD3E"
-				item: "new_create:quicklime"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.5d
-		}
-		{
-			id: "148B3198500F0D32"
-			tasks: [{
-				id: "7D8D18BE18D40273"
-				item: "new_create:lime_water_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 5.5d
-		}
-		{
-			id: "00C16F637E9350B7"
-			tasks: [{
-				id: "32AE3670E3D35F57"
-				item: "new_create:mortar"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 5.5d
+			title: "风暴之脑"
+			x: -3.0d
+			y: 0.0d
 		}
 	]
 	title: "金属岛屿？"

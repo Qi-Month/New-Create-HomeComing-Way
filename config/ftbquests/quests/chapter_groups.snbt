@@ -1,6 +1,6 @@
 {
 	chapter_groups: [
-		{ id: "11AD432A9027BB39", title: "商店" }
+		{ id: "11AD432A9027BB39", title: "商店(测试beta)" }
 		{ id: "2726B6E9ECFB77B0", title: "第一章 与众不同" }
 		{ id: "4B912993204305BC", title: "探索伊甸星环" }
 		{ id: "43D1B9CAF64F044E", title: "第二章" }

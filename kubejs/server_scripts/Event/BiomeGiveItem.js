@@ -4,6 +4,7 @@ ItemEvents.rightClicked((event) => {
 	/*
 	* 右键初始物品给予一部分初始物品
 	* 如果不在指定群系的话额外给一个指南针
+	* 如果出生在风暴之脑额外给一套半耐久的铁套装
 	*/
 
 	let biomeGroup = [
@@ -43,7 +44,21 @@ ItemEvents.rightClicked((event) => {
 			player.give(Item.of("minecraft:sand")
 				.withCount(4)
 			)
-
+			// 如果出生在风暴之脑额外给一套半耐久的铁套装
+			if (biome.is("edenring:brainstorm")) {
+				player.give(Item.of("minecraft:iron_helmet")
+					.withNBT("{Damage:82}")
+				)
+				player.give(Item.of("minecraft:iron_chestplate")
+					.withNBT("{Damage:112}")
+				)
+				player.give(Item.of("minecraft:iron_leggings")
+					.withNBT("{Damage:112}")
+				)
+				player.give(Item.of("minecraft:iron_boots")
+					.withNBT("{Damage:97}")
+				)
+			}
 			// 如果不在指定群系中
 			if (!biome.is(biomeName)) {
 				// 这里不是上面指定群系, 因此额外给个指南针
