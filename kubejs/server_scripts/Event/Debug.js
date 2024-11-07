@@ -52,7 +52,7 @@ PlayerEvents.chat((event) => {
 })
 
 PlayerEvents.loggedIn((event) => {
-	let { player } = event
+	let { player, server } = event
 
 	/* 
 	* 获取Tag下的所有id,会在
@@ -62,7 +62,7 @@ PlayerEvents.loggedIn((event) => {
 
 	for (let i = 0; i < global.debugUserName.length; i++) {
 		if (player.username === global.debugUserName[i]) {
-			player.tell(Text.translate("message.new_create.debug.getItemId", [player.username]))
+			server.tell(Text.translate("message.new_create.debug.getItemId", [player.username]))
 			// 遍历Tag
 			Ingredient.of("#minecraft:sand")
 				.getItemIds()

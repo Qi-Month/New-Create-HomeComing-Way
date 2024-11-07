@@ -33,7 +33,7 @@
 			"type": "custommachinery:energy",
 			"id": "output",
 			"mode": "output",
-			"capacity": 2000,
+			"capacity": 200000,
 			"config": {
 				"default": "both"
 			}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mm:block/balloon_mushroom_stress_machine",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "mm:block/balloon_mushroom_stress_machine",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "mm:block/balloon_mushroom_stress_machine"
+    },
+    "facing=west": {
+      "model": "mm:block/balloon_mushroom_stress_machine",
+      "y": 90
+    }
+  }
+}

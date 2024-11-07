@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"front": "new_create:block/controller/balloon_mushroom_stress_machine",
+		"side": "edenring:block/balloon_mushroom_block",
+		"top": "edenring:block/balloon_mushroom_block"
+	}
+}

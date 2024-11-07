@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mm:balloon_mushroom_stress_machine_kinetic_input"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "mm:blocks/balloon_mushroom_stress_machine_kinetic_input"
+}

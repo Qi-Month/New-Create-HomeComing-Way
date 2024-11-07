@@ -113,6 +113,16 @@ StartupEvents.registry("block", (event) => {
 		.defaultCutout()
 	*/
 
+	// 气球菇应力机总方块
+	event.create(`${global.namespace}balloon_mushroom_stress_machine_block`, "cardinal")
+		.textureAll(`${global.namespace}block/controller/balloon_mushroom_stress_machine`)
+		.soundType(SoundType.METAL)
+		.hardness(2)
+		.resistance(2)
+		.tagBlock(toolType["pickaxe"])
+		.tagBlock(miningLevel["stone"])
+		.requiresTool(true)
+
 	// 耐火砖栏墙
 	event.create(global.namespace + "refractory_bricks_wall", "wall")
 		.soundType(SoundType.STONE)
@@ -136,8 +146,8 @@ StartupEvents.registry("block", (event) => {
 			entity.attachCapability(CapabilityBuilder.ENERGY
 				.customBlockEntity()
 				.canExtract(() => true)
-				.getEnergyStored(i => 1000)
-				.getMaxEnergyStored(i => 1000)
+				.getEnergyStored((i) => 1000)
+				.getMaxEnergyStored((i) => 1000)
 				.extractEnergy((event) => {
 					let { level, blockPos } = event
 					let getBlockPos = level.getBlock(blockPos)

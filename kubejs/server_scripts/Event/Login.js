@@ -8,8 +8,8 @@ PlayerEvents.loggedIn((event) => {
 	player.runCommandSilent("gamerule artifacts.diggingClaws.toolTier 3")
 
 	global.debugUserName.forEach((debugUser) => {
+		// 无限水限制, 如果username符合开发者id就打开无限水, 否则关闭
 		if (player.username === debugUser) {
-			// 无限水限制, 如果username符合开发者id就打开无限水, 否则关闭
 			player.runCommandSilent("gamerule waterSourceConversion false")
 		} else if (player.username !== debugUser) {
 			player.runCommandSilent("gamerule waterSourceConversion true")
@@ -19,7 +19,7 @@ PlayerEvents.loggedIn((event) => {
 		if (player.username === debugUser) {
 			let devInfo = Text.translate("text.new_create.dev").getString()
 			player.paint({
-				devTooltip: {
+				devTip: {
 					type: "text",
 					x: 10,
 					y: "$screenH - 40",
@@ -31,7 +31,7 @@ PlayerEvents.loggedIn((event) => {
 		} else if (player.username !== debugUser) {
 			let playerInfo = Text.translate("text.new_create.player").getString()
 			player.paint({
-				playerTooltip: {
+				playerTip: {
 					type: "text",
 					x: 10,
 					y: "$screenH - 30",
@@ -42,7 +42,7 @@ PlayerEvents.loggedIn((event) => {
 			})
 			let modPackVersion = Text.translate("text.new_create.version").getString()
 			player.paint({
-				versionTooltip: {
+				versionTip: {
 					type: "text",
 					x: 10,
 					y: "$screenH - 20",

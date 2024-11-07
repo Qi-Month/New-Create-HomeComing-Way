@@ -77,8 +77,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	// 半成品
-	let inItemLang = [
-	]
+	let inItemLang = []
 	for (let i = 0; i < inItemLang.length; i++) {
 		event.add(`item.${namespace}.incomplete_${inItemLang[i][0]}`, inItemLang[i][1])
 	}
@@ -93,7 +92,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["inferior_bricks", "土砖块"],
 		["heat_coal_block", "热煤块"],
 		["refractory_bricks", "耐火砖块"],
-		["refractory_bricks_wall", "耐火砖块墙"]
+		["refractory_bricks_wall", "耐火砖块墙"],
+		["balloon_mushroom_stress_machine_block", "气球菇应力机总方块"]
 	]
 	for (let i = 0; i < blockLang.length; i++) {
 		event.add(`block.${namespace}.${blockLang[i][0]}`, blockLang[i][1])
@@ -111,6 +111,19 @@ ClientEvents.lang("zh_cn", (event) => {
 	for (let i = 0; i < machineLang.length; i++) {
 		event.add(`block.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
 		event.add(`machine.${namespace}.${machineLang[i][0]}`, machineLang[i][1])
+	}
+
+	// MM控制器
+	let MMLang = [
+		["balloon_mushroom_stress_machine", "气球菇应力机"]
+	]
+	for (let i = 0; i < MMLang.length; i++) {
+		event.add(`controllers.${namespace}.${MMLang[i][0]}`, MMLang[i][1])
+		event.add(`port.${namespace}.${MMLang[i][0]}.item`, MMLang[i] + "物品")
+		event.add(`port.${namespace}.${MMLang[i][0]}.fluid`, MMLang[i] + "流体")
+		event.add(`port.${namespace}.${MMLang[i][0]}.energy`, MMLang[i] + "能量")
+		event.add(`port.${namespace}.${MMLang[i][0]}.kinetic`, MMLang[i] + "应力")
+		event.add(`port.${namespace}.${MMLang[i][0]}.energy`, MMLang[i] + "能量")
 	}
 
 	// 压缩
@@ -178,7 +191,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["new_create:drying_volvox_ball", "太干巴了没法吃"],
 		["new_create:stone_gen", "在更换下方石头的时候需要将机器拆掉重放"],
 		["new_create:soil_blast_furnace", "需要在下方放一桶熔岩作为热源"],
-		["new_create:black_dirt", "挖土有35%的概率掉落"],
+		["new_create:black_dirt", "挖土时有35%的概率掉落"],
+		["megatimestop:time_clock", "砸瓦鲁多!"],
 
 		["steampowered:bronze_cogwheel", "应力影响: 0.9"],
 		["steampowered:bronze_large_cogwheel", "应力影响: 0.9"],
@@ -219,7 +233,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 其它
 	let otherTipLang = [
 		["message.new_create.player.welcome", "§b欢迎来到New Create: HomeComing Way!\n§b如果有什么BUG还请前往GitHub提交Issues"],
-		["message.new_create.debug.getItemId", "验证开发者用户信息, 正确\n验证开发者身份信息, 正确\n欢迎回来, %s\nTag下的id以打印至logs/kubejs/server.log下"],
+		["message.new_create.debug.getItemId", "Tag下的id以打印至logs/kubejs/server.log下"],
 		["message.new_create.debug.getHardness", "这个方块的硬度是: %s"],
 		["planets.edenring.edenring", "伊甸星环"],
 		["custom.youkaishomecoming.red_velvet_cake_slice", "被幽幽子偷吃掉两块红丝绒蛋糕的剩余部分"],

@@ -1,0 +1,10 @@
+{
+	"block.mm.balloon_mushroom_stress_machine": "气球菇应力机",
+	"block.mm.balloon_mushroom_stress_machine_fluid_input": "气球菇应力机-流体 输入",
+	"block.mm.balloon_mushroom_stress_machine_fluid_output": "气球菇应力机-流体 输出",
+	"block.mm.balloon_mushroom_stress_machine_item_input": "气球菇应力机-物品 输入",
+	"block.mm.balloon_mushroom_stress_machine_item_output": "气球菇应力机-物品 输出",
+	"block.mm.balloon_mushroom_stress_machine_kinetic_input": "气球菇应力机-应力 输入",
+	"block.mm.balloon_mushroom_stress_machine_kinetic_output": "气球菇应力机-应力 输出",
+	"item.mm.blueprint": "Blueprint"
+}

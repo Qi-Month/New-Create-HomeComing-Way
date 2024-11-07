@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, kubejs } = event.recipes
 
 	// 橡胶
 	create.compacting([
@@ -8,4 +8,16 @@ ServerEvents.recipes((event) => {
 	], [
 		Fluid.of("new_create:balloon_mushroom_slurry", 250)
 	])
+
+	// 树脂提取器
+	kubejs.shaped("thermal:device_tree_extractor", [
+		"AAA",
+		"BCB",
+		"ADA"
+	], {
+		A: "new_create:inferior_brick",
+		B: "create:copper_casing",
+		C: "flopper:flopper",
+		D: "minecraft:bucket"
+	}).id("thermal:device_tree_extractor")
 })

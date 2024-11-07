@@ -1,1 +1,8 @@
-// 1.20.1	2024-09-30T21:42:13.3874087	Loot Tables
+// 1.20.1	2024-11-07T00:34:31.2744532	Loot Tables
+972bcd9b889dd5d290b183dbfb47dbae9ca43b1e data/mm/loot_tables/blocks/balloon_mushroom_stress_machine.json
+baefcd0b22e3112479b35fd3651f6e16e2f6e4ee data/mm/loot_tables/blocks/balloon_mushroom_stress_machine_fluid_input.json
+dc174a487e923666fd8eab76cd97b887283bf01d data/mm/loot_tables/blocks/balloon_mushroom_stress_machine_fluid_output.json
+e69d6ce51514ffb226a23ba8b1f225e8ec6092b7 data/mm/loot_tables/blocks/balloon_mushroom_stress_machine_item_input.json
+43006bafc5fb5e9047b31d5a4066d06966084e0a data/mm/loot_tables/blocks/balloon_mushroom_stress_machine_item_output.json
+6eacf802c85dc1116020ece0fdb4824b65641aa5 data/mm/loot_tables/blocks/balloon_mushroom_stress_machine_kinetic_input.json
+afc125f8fcd87d2cc73933760c5038c1970b2ad7 data/mm/loot_tables/blocks/balloon_mushroom_stress_machine_kinetic_output.json

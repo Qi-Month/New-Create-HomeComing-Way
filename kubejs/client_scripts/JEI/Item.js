@@ -1,6 +1,8 @@
 JEIEvents.hideItems((event) => {
 	let hideItem = [
-		"createmetallurgy:mechanical_belt_grinder"
+		"createmetallurgy:mechanical_belt_grinder",
+		"create:cogwheel",
+		"create:large_cogwheel"
 	]
 	hideItem.forEach((item) => {
 		event.hide(item)

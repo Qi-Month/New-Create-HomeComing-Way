@@ -17,7 +17,8 @@ ServerEvents.recipes((event) => {
 		"create:water_wheel",
 		"create:large_water_wheel",
 		"create:mechanical_piston",
-		"create:sticky_mechanical_piston"
+		"create:sticky_mechanical_piston",
+		"create:windmill_bearing"
 	]
 	output.forEach((item) => {
 		event.remove({ output: item })

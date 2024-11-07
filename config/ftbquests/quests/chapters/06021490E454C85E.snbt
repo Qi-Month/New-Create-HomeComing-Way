@@ -453,6 +453,37 @@
 			x: -3.0d
 			y: 0.0d
 		}
+		{
+			id: "20ABA87415FE1AFF"
+			tasks: [{
+				id: "3E2540C340C10B62"
+				item: {
+					Count: 1
+					id: "thermal:device_tree_extractor"
+					tag: {
+						BlockEntityTag: {
+							RSControl: {
+								RSMode: 0b
+								RSThreshold: 0b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			id: "08D63B4D4FA8BE26"
+			tasks: [{
+				id: "39393A1D8B1080C7"
+				item: "new_create:balloon_mushroom_slurry_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
 	]
 	title: "金属岛屿？"
 }

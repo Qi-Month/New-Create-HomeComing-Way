@@ -10,7 +10,8 @@ ItemEvents.tooltip((event) => {
 		"steampowered:steel_cogwheel",
 		"steampowered:steel_large_cogwheel",
 		"new_create:soil_blast_furnace",
-		"new_create:black_dirt"
+		"new_create:black_dirt",
+		"megatimestop:time_clock"
 	]
 	addTooltip.forEach((id) => {
 		event.add(id, Text.translate(`tooltip.${id}`.replace(":", ".")))

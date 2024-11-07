@@ -1,3 +1,11 @@
 {
-  "values": []
+  "values": [
+    "mm:balloon_mushroom_stress_machine",
+    "mm:balloon_mushroom_stress_machine_item_input",
+    "mm:balloon_mushroom_stress_machine_item_output",
+    "mm:balloon_mushroom_stress_machine_fluid_input",
+    "mm:balloon_mushroom_stress_machine_fluid_output",
+    "mm:balloon_mushroom_stress_machine_kinetic_input",
+    "mm:balloon_mushroom_stress_machine_kinetic_output"
+  ]
 }

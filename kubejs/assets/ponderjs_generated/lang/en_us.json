@@ -47,5 +47,8 @@
   "new_create.ponder.stone_gen.header": "结构造石机",
   "new_create.ponder.stone_gen.text_1": "结构造石机可以在结构完成后根据自身下方的压缩石头来决定制造什么石头",
   "new_create.ponder.stone_gen.text_2": "如果下方的压缩石头等级为二重压缩, 则有16%的概率生成未压缩过的材料, 有84%的概率生成圆石",
-  "new_create.ponder.stone_gen.text_3": "如果下方的压缩石头等级为三重压缩, 则100%生成未压缩过的材料"
+  "new_create.ponder.stone_gen.text_3": "如果下方的压缩石头等级为三重压缩, 则100%生成未压缩过的材料",
+  "thermal.ponder.device_tree_extractor.header": "树汁提取器使用",
+  "thermal.ponder.device_tree_extractor.text_1": "我们在树下放上机器,\n记得注意朝向",
+  "thermal.ponder.device_tree_extractor.text_2": "一棵树有4个面,\n所以我们可以在4个面都放上机器"
 }
